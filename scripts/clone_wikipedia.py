@@ -108,9 +108,9 @@ def main() -> None:
                 print(f"FAIL {t['id']} {url} {err}", file=sys.stderr)
                 fail += 1
             time.sleep(0.15)
-        if i % 20 == 0 or i == len(topics):
-            print(f"{i}/{len(topics)} ok={ok} skip={skip} fail={fail}")
-    print(f"done ok={ok} skip={skip} fail={fail}")
+        if i % 20 == 0 or i == len(jobs):
+            print(f"{i}/{len(jobs)} ok={ok} skip={skip} fail={fail}", flush=True)
+    print(f"done ok={ok} skip={skip} fail={fail}", flush=True)
     if fail:
         sys.exit(1)
 

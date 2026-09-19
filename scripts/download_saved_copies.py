@@ -6,6 +6,7 @@ import json
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -14,6 +15,25 @@ UA = (
     "cheat-sheets-archive/1.0 "
     "(local research mirror of https://www.cheat-sheets.org/; +https://www.cheat-sheets.org/)"
 )
+
+
+def dest_for(root: Path, sc: dict) -> Path:
+    parsed = urllib.parse.urlparse(sc["url"])
+    path = urllib.parse.unquote(parsed.path)
+    topic = root / sc["path"]
+    if "/saved-copy/" in path:
+        rel = path.split("/saved-copy/", 1)[1].lstrip("/")
+        dest = topic / "saved-copy" / rel
+    elif parsed.netloc.endswith("cheat-sheets.org"):
+        dest = topic / "hosted" / path.lstrip("/")
+    else:
+        dest = topic / "saved-copy" / Path(path).name
+    if dest.suffix == "" or path.endswith("/"):
+        dest = dest / "index.html"
+    dest = dest.resolve()
+    if root.resolve() not in dest.parents:
+        raise RuntimeError(f"refusing to write outside repo: {dest}")
+    return dest
 
 
 def download(url: str, dest: Path, retries: int = 4) -> str:
@@ -29,8 +49,9 @@ def download(url: str, dest: Path, retries: int = 4) -> str:
                 data = resp.read()
                 ctype = resp.headers.get("Content-Type", "")
                 # The site serves the homepage HTML for missing files.
-                if "text/html" in ctype and not dest.suffix.lower() in {".html", ".htm"}:
-                    if data[:32].lstrip().lower().startswith(b"<!doctype") or b"<title>Cheat Sheet" in data[:2000]:
+                if "text/html" in ctype and dest.suffix.lower() not in {".html", ".htm"}:
+                    head = data[:2000]
+                    if b"<title>Cheat Sheet : All Cheat Sheets" in head:
                         return "missing"
             tmp.write_bytes(data)
             tmp.replace(dest)
@@ -52,7 +73,7 @@ def main() -> None:
     workers = 6
 
     def job(sc: dict) -> tuple[str, dict, str | None]:
-        dest = root / sc["path"] / "saved-copy" / sc["filename"]
+        dest = dest_for(root, sc)
         try:
             return download(sc["url"], dest), sc, None
         except Exception as err:  # noqa: BLE001 — log and continue the archive

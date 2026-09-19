@@ -1,0 +1,104 @@
+# Comparison of server-side web frameworks
+
+Cloned from https://en.wikipedia.org/wiki/Comparison_of_server-side_web_frameworks.
+
+Wikipedia text is available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+Page id: 9334615.
+
+This is a comparison of notable web frameworks, software used to build and deploy web applications. This article focuses on frameworks used for building the backend.
+
+
+== General ==
+Basic information about each framework.
+Systems listed on a light purple background are no longer in active development.
+
+
+=== ASP.NET ===
+
+
+=== C++ ===
+
+
+=== ColdFusion Markup Language (CFML) ===
+
+
+=== Elixir ===
+
+
+=== Haskell ===
+
+
+=== Java ===
+
+
+=== JavaScript ===
+
+
+=== Perl ===
+
+
+=== PHP ===
+
+
+=== Python ===
+
+
+=== Ruby ===
+
+
+=== Scala ===
+
+
+=== Others ===
+
+
+== Comparison of features ==
+
+
+=== C++ ===
+
+
+=== ColdFusion Markup Language (CFML) ===
+
+
+=== Java ===
+
+
+=== JavaScript ===
+
+
+=== Perl ===
+
+
+=== PHP ===
+
+
+=== Python ===
+
+
+=== Ruby ===
+
+
+=== Others ===
+
+
+== See also ==
+
+Lists of frameworks for frontend development: 
+
+Comparison of JavaScript-based web frameworks
+CSS framework
+Other:
+
+Common Gateway Interface, used before web frameworks
+Comparison of shopping cart software
+Content management system
+Dynamic web page
+Java view technologies and frameworks
+List of content management systems
+List of rich web application frameworks
+List of web service frameworks
+
+
+== References ==

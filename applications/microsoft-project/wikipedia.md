@@ -1,0 +1,86 @@
+# Microsoft Project
+
+Cloned from https://en.wikipedia.org/wiki/Microsoft_Project.
+
+Wikipedia text is available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+Page id: 1126158.
+
+Microsoft Project was a project management software product, developed and sold by Microsoft.  It is designed to assist a project manager in developing a schedule, assigning resources to tasks, tracking progress, managing budgets, and analyzing workloads. Microsoft Project for the web was set to retire on August 1, 2025. It is now a part of Microsoft Planner.
+Microsoft Project was the company's third Microsoft Windows-based application. Within a few years after its launch, it became the dominant PC-based project management software. From 2015 to 2020 it was the most popular application for project management according to Project Management Zone. The application's proprietary file format is .mpp.
+
+
+== History ==
+
+Project was an MS-DOS software application originally written in C (and some assembly) language for the IBM PC. The idea originated with Ron Bredehoeft, a former IBM systems engineer and PC enthusiast in the early 1980s, as a prank to express the recipe and preparation for a breakfast of eggs Benedict in project management terms. Bredehoeft formed his own company, Microsoft Application Services (MAS) Consulting while creating Project, and the company later entered an OEM agreement with Microsoft Corporation. Alan M. Boyd, Microsoft's Manager of Product Development, introduced the application as an internal tool to help manage the huge number of software projects that were in development at any time inside the company. Boyd wrote the specification and engaged a local Seattle company to develop the prototype.
+The first commercial version of Project was released for MS-DOS in 1984. Microsoft bought the rights to the software in 1985 and released version 2. Version 3 for DOS was released in 1986. Version 4 for DOS was the final DOS version, released in 1986. The first Windows version was released in 1990, and was labeled version 1 for Windows.
+In 1991, a Macintosh version was released. Development continued until the release of Microsoft Project 4.0 for Mac in 1993. Microsoft Project 4 for the Mac included both 68k and PowerMac versions, Visual Basic for Applications, and integration with Microsoft Office 4.2 for the Mac. In 1994, Microsoft ceased development of most of its Mac applications and did not release a new version of Office until 1998, following the creation of the new Microsoft Macintosh Business Unit the previous year. The Mac Business Unit never released an updated version of Project, and the last version does not run natively on macOS.
+Microsoft Project 1.0 was the only version to support Windows 2.x (Windows 2.0 and Windows 2.1x). It came bundled with Windows 2.x runtime but was fully compatible with Windows 3.0, especially Standard and Enhanced modes. The setup program runs in DOS, like most Windows-based applications at the time.
+Microsoft Project 3.0 introduced macro support, toolbars, print preview, DDE and OLE support, spell checking, Resource Allocation view and Planning Wizards and was the last to support Windows 3.0. The setup program now runs in Windows and is based on Microsoft's own setup program, which was also used by applications such as Microsoft Visual Basic 2.0/3.0, Works 2.0, and Access 1.x.
+Microsoft Project 4.0 was the first to use common Office menus, right-click context menus, Acme setup program, and the last to support Windows 3.1x, Windows NT 3.1, and 3.5. It was the last 16-bit version. Additionally it was the first version to use VBA macro language and introduced screen tooltips, Cue Cards, GanttChartWizard, Calendar view, Assign Resources dialog, recurring tasks, workgroup abilities, Drawing toolbar, Microsoft Project Exchange file format support, OLE 2.0 and ability to create reports. This version allowed users to consolidate up to 80 projects.
+Microsoft Project 95 (4.1) was the first 32-bit version, and it was designed for Windows 95, hence the name, even though some components, such as the welcome tour, help components, etc., remained 16-bit. It introduced ODBC support, AutoCorrect, and Answer Wizard, like all Office 95 applications. Updated version, called Microsoft Project 4.1a, improved Windows NT support. Additionally, it was the first version to be available on CD-ROM. Additionally, it was the last version to open Project 3.0 files.
+Microsoft Project 98 was fully 32-bit, and the first to use Tahoma font in the menu bars, to contain Office Assistant, like all Office 97 applications, introduced view bar, AutoFilter, task splitting, Assignment Information dialog, resource availability dates, project status date, user-entered actual costs, new task types, multiple critical paths, in-sheet controls, ability to rename custom fields, Web publishing features, new database format, Task Usage, Tracking Gantt and Resource Usage views, Web features, Web toolbar, PERT analysis features, resource contouring, cost rate tables, effort-driven scheduling, cross-project linking, indicators, progress lines, ability to save project files in HTML format, ability to analyze time-scaled data in Excel, improved limits for the number of tasks, resources, outline levels etc., IntelliMouse and Microsoft Office Binder support, Microsoft Outlook timeline integration, selective data import and export, ability to save as Microsoft Excel pivot tables, Microsoft Project Map, Project menu and allowed user to consolidate 1,000 projects. It was the last version to run on Windows NT 3.51, the last to open Project 4.0/95 files and save in .mpx (Microsoft Project Exchange) file format, the last to use Acme setup program and the last to be available on floppy disks. Project 98 SR-1 was a major service release addressing several issues in Project 98.
+Microsoft Project 2000 was the first to use personalized menus, Microsoft Agent-based Office Assistant, and to use Windows Installer-based setup interface, like all Office 2000 applications, and introduced Microsoft Project Central (later renamed Microsoft Project Server). PERT Chart was renamed Network Diagram and was greatly improved in this version. Notable new features include ability to create personal Gantt charts, ability to apply filters in Network Diagram view, AutoSave, task calendars, ability to create projects based on templates and to specify default save path and format, graphical indicators, material resources, deadline dates, OLE DB, grouping, outline codes, estimated durations, month duration, value lists and formulas custom fields, contoured resource availability, ability to clear baseline, variable row height, in-cell editing, fill handle, ability to set fiscal year in timescale, single document interface, accessibility features, COM add-ins, pluggable language user interface, roaming user and Terminal Services support, ability to set task and project priority up to 1,000 (previously 10) and HTML help. Project 2000 was also the last version to support Find Fast (available in Windows 9x and NT 4.0 only) and to run on Windows 95. Project 2000 SR-1 fixed several bugs.
+Microsoft Project 2002 was the first to contain task panes, safe mode, smart tags, import/setup tracking/new project/calendar/import and export mapping wizards, ability to import tasks from Outlook and to save multiple baselines along with additional baseline fields, Project Guide, EPM/portfolio features (Professional only), Excel task list template, rollup baseline data to summary tasks on a selective baseline save, ability to choose which baseline the earned value calculations are based on, calculation options, multiple project manager support (Project Server is required), Collaborate menu, "Type a question for help" in the top right corner, error reporting along with mandatory product activation, like Office XP and Windows XP and ability to open and save Microsoft Project Data Interchange (.mspdi) files. It was also the last version to run on Windows NT 4.0, 98 (SE) and ME. It was available in two editions for the first time, Standard and Professional. Office Assistant is installed but not enabled by default. Support for accounts with limited rights under Windows 2000/XP was improved. Find Fast was replaced by the Windows 2000/XP Indexing Service.
+Microsoft Project 2003 was the first to support Windows XP visual styles and to contain SharePoint support, XML importing/printing/Copy Picture to Office wizards, built-in Office Online help, ability to create WBS charts in Visio, add-in for comparing projects (available as a freely downloadable add-on for Project 2000 and 2002), resource availability graphs, ability to import resource information from Active Directory and Exchange address book, Windows XP-style icons, like all Office 2003 applications, and the last to contain Office Assistant (not installed by default) and to run on Windows 2000 (Service Pack 3 required).
+Microsoft Project 2007 was the last to contain the menu bar and toolbars. New features include top-level budget planning, multiple-level undo, ability to manage non-working time, background cell highlighting, cost/team resources, change highlighting, visual reports, desktop OLAP cube, and Report menu. Office Assistant was removed entirely.
+Microsoft Project 2010 was the first to contain ribbon and Backstage view, like all Office 2010 applications, contextual guidance, ability to zoom in/out quickly, user-controlled scheduling, top down summary tasks, placeholder text in project fields, timeline view, ability to add columns dynamically, text wrap, expanded color palette and formatting, task inspector, schedule warnings, ability to save as PDF or XPS and to synchronize with SharePoint, enhanced copy/pase and the last to open Microsoft Project 98 and .mpx files and to run on Windows XP and Vista. Additionally, it was the first 64-bit version. Volume licensing activation was introduced in this version.
+Microsoft Project 2013 was the first to feature a Modern UI-based look, introducing Microsoft account and OneDrive integration. New features include integrated communication (Skype for Business is required).
+Microsoft Project 2016 is the last to support Windows 7 and Windows 8(.1). New features include multiple timeline view, Tell Me, colorful/dark gray/white themes, resource engagements, resource manager views, resource capacity heat maps, ability to give feedback directly to Microsoft in the File tab.
+Microsoft Project 2019 runs only on Windows 10, and it contains features carried over from Office 365. New features include the ability to link tasks using a drop-down menu, the Task Summary Name field, timeline bar labels, and task progress, and accessibility improvements.
+Versions for Windows were released in 1990 (v1.0), 1992 (v3.0), 1993 (v4.0), 1995 (Project 95, v4.1a), Project 98 (v8.0), Project 98 SR-1 (1999), Project 2000 (v9.0), Project 2000 SR-1 (2001), Project 2002 (v10.0), Project 2003 (v11.0), Project 2007 (v12.0), Project 2010 (v14.0), Project 2013 (v15.0) and Project 2016 (v16.0). There was no Version 2 on the Windows platform; the original design spec was augmented with the addition of macro capabilities and the extra work required to support a macro language pushed the development schedule out to early 1992 (Version 3).
+
+
+== Features ==
+
+The project creates budgets based on assignment work and resource rates. As resources are assigned to tasks and the work is estimated, the program calculates the cost, which equals the work times the rate. This calculation rolls up to the task level, then to any summary tasks, and finally to the project level. Resource definitions (including people, equipment, and materials) can be shared between projects through a shared resource pool. Each resource can have its own calendar, which defines the days and shifts during which a resource is available. Resource rates are used to calculate resource assignment costs, which are rolled up and summarized at the resource level. Each resource can be assigned to multiple tasks in multiple plans, and each task can be assigned multiple resources. The application schedules task work based on the resource availability as defined in the resource calendars. All resources can be defined in a label without limit.  Therefore, it cannot determine how many finished products can be produced with a given amount of raw materials.  This makes Microsoft Project unsuitable for solving problems of constrained production due to available materials.  Additional software is necessary to manage a complex facility that produces physical goods.
+The application creates critical path schedules, and critical chain and event chain methodology third-party add-ons are also available. Schedules can be resource leveled, and chains are visualized in a Gantt chart. Additionally, Microsoft Project can recognize different user classes.  These different classes of users can have differing access levels to projects, views, and other data. Custom objects such as calendars, views, tables, filters, and fields are stored in an enterprise global, which is shared by all users.
+As of 2021, the Project is available in two editions: Standard and Professional. Both editions are available in either 32-bit or 64-bit options. The Professional edition includes all the features of the Standard version, plus more features like team collaboration tools and the ability to connect to Microsoft Project Server.
+
+
+=== Project 2010 ===
+Microsoft Project 2010 includes the Fluent user interface known as the Ribbon.
+
+Microsoft Project's capabilities were extended with the introduction of Microsoft Office Project Server and Microsoft Project Web Access.  Project Server stores Project data in a central SQL-based database, allowing multiple, independent projects to access a shared resource pool.  Web Access allows authorized users to access a Project Server database across the Internet, and includes timesheets, graphical analysis of resource workloads, and administrative tools.
+User-controlled scheduling offers flexible choices for developing and managing projects.
+The timeline view allowed users to build a basic Visio-style graphical overview of the project schedule. The view can be copied and pasted into PowerPoint, Word, or any other application.
+SharePoint Foundation and Project Professional project task status updates may be synchronized for team members.
+Inactive tasks: helps experiment with project plans and perform what-if analysis
+The Team Planner view: The new Team Planner shows resources and work overtime, and helps spot problems and resolve issues.
+
+
+=== Project 2013 ===
+What's new in Project 2013 included a new Reports section, better integration with other Microsoft products, and appearance of user interface items:
+
+Reports: A Reports section is added to the ribbon for pre-installed reports. Project 2013 includes graphical reports, allowing you to create and add clipart directly without needing to export data to another program.  For example, the  Burndown reports show planned work, completed work, and remaining work as lines on a graph.  Project 2013 adds pre-installed ability to compare projects, create dashboards, and export to Visual Reports.
+Trace task paths: This feature allows you to highlight the link chain (or 'task path') for any task.  When you click on a specific task, all its predecessor tasks appear in one color, and all its successor tasks appear in another color.
+Sharing:  Project 2013 improves the sharing and communication features of its predecessors in multiple ways without leaving Project.  With Lync installed, hovering over a name allowed you to start an IM session, a video chat, an email, or a phone call. You can copy and paste content to any of the Microsoft Office suites. You can sync content to SharePoint or SkyDrive to share without going through Project, and Project Online provides an online project management web app that offers all the functionality of Project 2013 and can be accessed from any web-enabled device.
+
+
+=== Project 2016 ===
+Project 2016 added a new Reports section, backward compatibility with Project Server 2013, better integration with other Microsoft products, and improved appearance of user interface items:
+
+Timeline: Allowed user to customize views to have multiple timeline bars and custom date ranges in a single view.
+Resource agreements:  Gave features for resource planning coordination between Project Manager and Resource Manager.
+Office 2016 style theme and help:  Uses the new Office query 'tell me what you want to do'.
+Backwards compatibility with Microsoft Project Server 2013:  The transition of enterprises from one version to the next may be eased by this product being able to interact with the earlier version of server.
+
+
+== See also ==
+Comparison of project management software
+Schedule (project management)
+
+
+== References ==
+
+
+== External links ==
+Official website 
+Microsoft Project blog
+Project Programmability blog on MSDN Blogs
+Project 2003: Project Guide and Custom Views
+Microsoft Project 2010: Interactive menu to ribbon guide
+The Project Map: Your road map to project management
+Office.com Templates for Project 2013
+MPUG Templates for Project
+Step by Step practice files
