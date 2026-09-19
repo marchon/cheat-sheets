@@ -1,0 +1,356 @@
+<html>
+<head>
+<title>TB Unix Cheat Sheet</title>
+</head>
+
+<body vlink="#ff0000" text="#000000" link="#000000" background="grayrock.20210701.gif" alink="#ff0000">
+<div><a href="http://www.cheat-sheets.org/">&lt;&lt; Cheat-Sheets.org</a></div>
+<center><table cellspacing="6" border="0">
+<tbody><tr><td></td><td align="LEFT"><h1>Treebeard's Unix Cheat Sheet</h1>
+</td></tr></tbody></table></center>
+<blockquote>
+People who use Windows without DOS, or a Macintosh, or PPP without a terminal, or an ISP's menu without the 
+Unix prompt are at a disadvantage. Something is happening, and they don't know what it is. 
+I like to know what's really going on, so I've been learning some Unix.
+<p>
+The Net is a Unix place. I'm no wizard, but I'm comfortable with basic commands and occasionally type "<b>rm</b>" 
+at my DOS prompt instead of "<b>del</b>". This is my Unix cheat sheet, so <em>I</em> can remember. 
+Uppercase and lowercase matter.
+These commands (mostly) work with my C-shell account on <a href="https://web.archive.org/web/20201104112438/http://www.rain.org/">RAIN</a>. 
+Your account might be different, especially if your prompt ends with a "<b>$</b>" (Korn shell) rather than a "<b>%</b>", so be cautious.
+When I need help, I reach for the books <strong>UNIX in a Nutshell</strong> (O'Reilly) and <strong>Unix Unbound</strong> by Harley Hahn (Osborne/McGraw Hill, 1994).
+</p><p>
+This page won't look right without <b>table</b> support.
+Most of this is available in a <a href="https://web.archive.org/web/20201104112438/http://www.rain.org/~mkummel/unix.txt">text version</a>.
+</p><p>
+</p></blockquote>
+
+<table width="100%" border="0">
+<tbody><tr><td colspan="3"><hr>
+
+</td></tr><tr><td colspan="3"><font size="+1">Help on any Unix command. RTFM!</font><br>
+</td></tr><tr>
+<td width="50">
+</td><td width="260"><tt>man {command}</tt></td><td>Type <b>man ls</b> to read the manual for the <b>ls</b> command.<br>
+</td></tr><tr><td></td><td><tt>man {command} &gt; {filename}</tt></td><td>Redirect help to a file to download.<br>
+</td></tr><tr><td></td><td><tt>whatis {command}</tt></td><td>Give short description of command. (Not on RAIN?)<br>
+</td></tr><tr><td></td><td><tt>apropos {keyword}</tt></td><td>Search for all Unix commands that match keyword, eg <b>apropos file</b>. (Not on RAIN?)<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">List a directory</font><br>
+</td></tr><tr><td></td><td><tt>ls {path}</tt></td><td>It's ok to combine attributes, eg <b>ls -laF</b> gets a long listing of all files with types.<br>
+</td></tr><tr><td></td><td><tt>ls {path_1} {path_2}</tt></td><td>List both {path_1} and {path_2}.<br>
+</td></tr><tr><td></td><td><tt>ls -l {path}</tt></td><td>Long listing, with date, size and permisions.<br>
+</td></tr><tr><td></td><td><tt>ls -a {path}</tt></td><td>Show all files, including important .dot files that don't otherwise show.<br>
+</td></tr><tr><td></td><td><tt>ls -F {path}</tt></td><td>Show type of each file. "<b>/</b>" = directory, "<b>*</b>" = executable.<br>
+</td></tr><tr><td></td><td><tt>ls -R {path}</tt></td><td>Recursive listing, with all subdirs.<br>
+</td></tr><tr><td></td><td><tt>ls {path} &gt; {filename}</tt></td><td>Redirect directory to a file.<br>
+</td></tr><tr><td></td><td><tt>ls {path} | more</tt></td><td>Show listing one screen at a time.<br>
+</td></tr><tr><td></td><td><tt>dir {path}</tt></td><td>Useful alias for DOS people, or use with <b>ncftp</b>.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Change to directory</font><br>
+</td></tr><tr><td></td><td><tt>cd {dirname}</tt></td><td>There must be a space between.<br>
+</td></tr><tr><td></td><td><tt>cd ~</tt></td><td>Go back to home directory, useful if you're lost.<br>
+</td></tr><tr><td></td><td><tt>cd ..</tt></td><td>Go back one directory.<br>
+</td></tr><tr><td></td><td><tt>cdup</tt></td><td>Useful alias, like "cd ..", or use with <b>ncftp</b>.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Make a new directory</font><br>
+</td></tr><tr><td></td><td><tt>mkdir {dirname}</tt></td><td><br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Remove a directory</font><br>
+</td></tr><tr><td></td><td><tt>rmdir {dirname}</tt></td><td>Only works if {dirname} is empty.<br>
+</td></tr><tr><td></td><td><tt>rm -r {dirname}</tt></td><td>Remove all files and subdirs. Careful!<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Print working directory</font><br>
+</td></tr><tr><td></td><td><tt>pwd</tt></td><td>Show where you are as full path. Useful if you're lost or exploring.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Copy a file or directory</font><br>
+</td></tr><tr><td></td><td><tt>cp {file1} {file2}</tt></td><td><br>
+</td></tr><tr><td></td><td><tt>cp -r {dir1} {dir2}</tt></td><td>Recursive, copy directory and all subdirs.<br>
+</td></tr><tr><td></td><td><tt>cat {newfile} &gt;&gt; {oldfile}</tt></td><td>Append newfile to end of oldfile.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Move (or rename) a file</font><br>
+</td></tr><tr><td></td><td><tt>mv {oldfile} {newfile}</tt></td><td>Moving a file and renaming it are the same thing.<br>
+</td></tr><tr><td></td><td><tt>mv {oldname} {newname}</tt></td><td><br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Delete a file</font><br>
+</td></tr><tr><td></td><td><tt>rm {filespec}</tt></td><td><b>?</b> and <b>*</b> wildcards work like DOS should. "?" is any character; "*" is any string of characters.<br>
+</td></tr><tr><td></td><td><tt>ls {filespec}<br>rm {filespec}</tt></td><td>Good strategy: first list a group to make sure it's what's you think...<br>...then delete it all at once.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="2"><font size="+1">Download with zmodem</font></td><td>(Use <b>sx</b> with xmodem.)<br>
+</td></tr><tr><td></td><td><tt>sz [-a|b] {filename}</tt></td><td><b>-a</b> = ascii, <b>-b</b> = binary. Use binary for everything. (It's the default?)<br>
+</td></tr><tr><td></td><td><tt>sz *.zip</tt></td><td>Handy after downloading with FTP. Go talk to your spouse while it does it's stuff.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="2"><font size="+1">Upload with zmodem</font></td><td>(Use <b>rx</b> with xmodem.)<br>
+</td></tr><tr><td></td><td><tt>rz [-a|b] (filename}</tt></td><td>Give <b>rz</b> command in Unix, THEN start upload at home. Works fine with multiple files.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">View a text file</font><br>
+</td></tr><tr><td></td><td><tt>more {filename}</tt></td><td>View file one screen at a time.<br>
+</td></tr><tr><td></td><td><tt>less {filename}</tt></td><td>Like <b>more</b>, with extra features.<br>
+</td></tr><tr><td></td><td><tt>cat {filename}</tt></td><td>View file, but it scrolls.<br>
+</td></tr><tr><td></td><td><tt>cat {filename} | more</tt></td><td>View file one screen at a time.<br>
+</td></tr><tr><td></td><td><tt>page {filename}</tt></td><td>Very handy with <b>ncftp</b>.<br>
+</td></tr><tr><td></td><td><tt>pico {filename}</tt></td><td>Use text editor and don't save.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Edit a text file.</font><br>
+</td></tr><tr><td></td><td><tt>pico {filename}</tt></td><td>The same editor PINE uses, so you already know it. <b>vi</b> and <b>emacs</b> are also available.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Create a text file.</font><br>
+</td></tr><tr><td></td><td><tt>cat &gt; {filename}</tt></td><td>Enter your text (multiple lines with <b>enter</b> are ok) and press <b>control-d</b> to save.<br>
+</td></tr><tr><td></td><td><tt>pico {filename}</tt></td><td>Create some text and save it.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Compare two files</font><br>
+</td></tr><tr><td></td><td><tt>diff {file1} {file2}</tt></td><td>Show the differences.<br>
+</td></tr><tr><td></td><td><tt>sdiff {file1} {file2}</tt></td><td>Show files side by side.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Other text commands</font><br>
+</td></tr><tr><td></td><td><tt>grep '{pattern}' {file}</tt></td><td>Find regular expression in file.<br>
+</td></tr><tr><td></td><td><tt>sort {file1} &gt; {file2}</tt></td><td>Sort file1 and save as file2.<br>
+</td></tr><tr><td></td><td><tt>sort -o {file} {file}</tt></td><td>Replace file with sorted version.<br>
+</td></tr><tr><td></td><td><tt>spell {file}</tt></td><td>Display misspelled words.<br>
+</td></tr><tr><td></td><td><tt>wc {file}</tt></td><td>Count words in file.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Find files on system</font><br>
+</td></tr><tr><td></td><td><tt>find {filespec}</tt></td><td>Works with wildcards.  Handy for snooping.<br>
+</td></tr><tr><td></td><td><tt>find {filespec} &gt; {filename}</tt></td><td>Redirect find list to file. Can be big!<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Make an Alias</font><br>
+</td></tr><tr><td></td><td><tt>alias {name} '{command}'</tt></td><td>Put the command in 'single quotes'.  More useful in your <b>.cshrc</b> file.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Wildcards and Shortcuts</font><br>
+</td></tr><tr><td></td><td><tt>*</tt></td><td>Match any string of characters, eg <b>page*</b> gets page1, page10, and page.txt.<br>
+</td></tr><tr><td></td><td><tt>?</tt></td><td>Match any single character, eg <b>page?</b> gets page1 and page2, but not page10.<br>
+</td></tr><tr><td></td><td><tt>[...]</tt></td><td>Match any characters in a range, eg <b>page[1-3]</b> gets page1, page2, and page3.<br>
+</td></tr><tr><td></td><td><tt>~</tt></td><td>Short for your home directory, eg <b>cd ~</b> will take you home, and <b>rm -r ~</b> will destroy it.<br>
+</td></tr><tr><td></td><td><tt>.</tt></td><td>The current directory.<br>
+</td></tr><tr><td></td><td><tt>..</tt></td><td>One directory up the tree, eg <b>ls ..</b>.
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="2"><font size="+1">Pipes and Redirection</font></td><td>(You <b>pipe</b> a command to another command, and <b>redirect</b> it to a file.)<br>
+</td></tr><tr><td></td><td><tt>{command} &gt; {file}</tt></td><td>Redirect output to a file, eg <b>ls &gt; list.txt</b> writes directory to file.<br>
+</td></tr><tr><td></td><td><tt>{command} &gt;&gt; {file}</tt></td><td>Append output to an existing file, eg <b>cat update &gt;&gt; archive</b> adds update to end of archive.<br>
+</td></tr><tr><td></td><td><tt>{command} &lt; {file}</tt></td><td>Get input from a file, eg <b>sort &lt; file.txt</b><br>
+</td></tr><tr><td></td><td><tt>{command} &lt; {file1} &gt; {file2}</tt></td><td>Get input from <tt>file1</tt>, and write to <tt>file2</tt>, eg <b>sort &lt; old.txt &gt; new.txt</b> sorts old.txt and saves as new.txt.
+</td></tr><tr><td></td><td><tt>{command} | {command}</tt></td><td>Pipe one command to another, eg <b>ls | more</b> gets directory and sends it to <b>more</b> to show it one page at a time.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Permissions, important and tricky!</font><br>
+</td></tr><tr><td></td><td colspan="2">
+Unix permissions concern who can <b>read</b> a file or directory, <b>write</b> to it, and <b>execute</b> it.
+Permissions are granted or withheld with a magic 3-digit number.
+The three digits correspond to the <b>owner</b> (you); the <b>group</b> (?); and the <b>world</b> (everyone else).<p>
+Think of each digit as a sum:<br>
+<table width="300" border="0">
+<tbody><tr><td width="30"></td><td>execute permission </td><td>= 1<br></td>
+</tr><tr><td width="30"></td><td>write permission </td><td>= 2<br></td>
+</tr><tr><td width="30"></td><td>write and execute (1+2)</td><td>= 3 <br></td>
+</tr><tr><td width="30"></td><td>read permission </td><td>= 4<br></td>
+</tr><tr><td width="30"></td><td>read and execute (4+1)</td><td>= 5<br></td>
+</tr><tr><td width="30"></td><td>read and write (4+2)</td><td>= 6<br></td>
+</tr><tr><td width="30"></td><td>read, write and execute (4+2+1)</td><td>= 7<br></td>
+</tr></tbody></table>
+</p></td></tr><tr><td></td><td colspan="2">Add the number value of the permissions you want to grant each group to make a three digit number, 
+one digit each for the owner, the group, and the world. Here are some useful combinations. Try to figure them out!<p>
+</p></td></tr><tr><td></td><td><tt>chmod 600 {filespec}</tt></td><td>You can read and write; the world can't. Good for files.<br>
+</td></tr><tr><td></td><td><tt>chmod 700 {filespec}</tt></td><td>You can read, write, and execute; the world can't. Good for scripts.<br>
+</td></tr><tr><td></td><td><tt>chmod 644 {filespec}</tt></td><td>You can read and write; the world can only read. Good for web pages.<br>
+</td></tr><tr><td></td><td><tt>chmod 755 {filespec}</tt></td><td>You can read, write, and execute; the world can read and execute. Good for programs you want to share, and your <tt>public_html</tt> directory.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Permissions, another way</font><br>
+</td></tr><tr><td></td><td colspan="2">
+You can also change file permissions with letters:<p>
+<table width="400" border="0">
+  <tbody><tr><td width="30"></td><td><b>u</b> = user (yourself) </td><td><b>g</b> = group </td><td><b>a</b> = everyone<br></td>
+  </tr><tr><td width="30"></td><td><b>r</b> = read </td><td><b>w</b> = write </td><td><b>x</b> = execute<br></td>
+</tr></tbody></table>
+</p><p>
+</p></td></tr><tr><td></td><td><tt>chmod u+rw {filespec}</tt></td><td>Give yourself read and write permission<br>
+</td></tr><tr><td></td><td><tt>chmod u+x {filespec}</tt></td><td>Give yourself execute permission.<br>
+</td></tr><tr><td></td><td><tt>chmod a+rw {filespec}</tt></td><td>Give read and write permission to everyone.<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">Applications I use</font><br>
+</td></tr><tr><td></td><td><tt>finger {userid}</tt></td><td>Find out what someone's up to.<br>
+</td></tr><tr><td></td><td><tt>gopher</tt></td><td>Gopher.<br>
+</td></tr><tr><td></td><td><tt>irc</tt></td><td>IRC, but not available on RAIN.<br>
+</td></tr><tr><td></td><td><tt>lynx</tt></td><td>Text-based Web browser, fast and lean.<br>
+</td></tr><tr><td></td><td><tt>ncftp</tt></td><td>Better FTP.<br>
+</td></tr><tr><td></td><td><tt>pico {filename}</tt></td><td>Easy text editor, but limited. <b>vi</b> and <b>emacs</b> are available.<br>
+</td></tr><tr><td></td><td><tt>pine</tt></td><td>Email.<br>
+</td></tr><tr><td></td><td><tt>telnet {host}</tt></td><td>Start Telnet session to another host.<br>
+</td></tr><tr><td></td><td><tt>tin</tt></td><td>Usenet.<br>
+</td></tr><tr><td></td><td><tt>uudecode {filename}<br>uuencode {filename}</tt></td><td>Do it on the server to reduce download size about 1/3.<br>
+</td></tr><tr><td></td><td><tt>ytalk {userid}</tt></td><td>Chat with someone else online, eg <b>ytalk mkummel</b>. Please use <b>w</b> first so you don't interrupt a big download!<br>
+
+</td></tr><tr><td colspan="3"><hr>
+</td></tr><tr><td colspan="3"><font size="+1">System info</font><br>
+</td></tr><tr><td></td><td><tt>date</tt></td><td>Show date and time.<br>
+</td></tr><tr><td></td><td><tt>df</tt></td><td>Check system disk capacity.<br>
+</td></tr><tr><td></td><td><tt>du</tt></td><td>Check your disk usage and show bytes in each directory.<br>
+</td></tr><tr><td></td><td><tt>more /etc/motd</tt></td><td>Read message of the day, "motd" is a useful alias..<br>
+</td></tr><tr><td></td><td><tt>printenv</tt></td><td>Show all environmental variables (in C-shell% - use <b>set</b> in Korn shell$).<br>
+</td></tr><tr><td></td><td><tt>quota -v</tt></td><td>Check your total disk use.<br>
+</td></tr><tr><td></td><td><tt>uptime</tt></td><td>Find out system load.<br>
+</td></tr><tr><td></td><td><tt>w</tt></td><td>Who's online and what are they doing?<br>
+</td></tr></tbody></table>
+
+<p></p><hr>
+<font size="+1">Unix Directory Format</font><p>
+</p><blockquote>
+Long listings (<b>ls -l</b>) have this format:<p>
+</p><pre><tt>
+    <b>-</b> file
+    <b>d</b> directory,                                            <b>*</b> executable
+    ^   symbolic links (?)  file size (bytes)   file name   <b>/</b> directory
+    ^           ^               ^                  ^        ^
+    <b>drwxr-xr-x 11 mkummel      2560 Mar  7 23:25 public_html/
+    -rw-r--r--  1 mkummel     10297 Mar  8 23:42 index.html</b>
+                                            ^
+     ^^^        user permission  (rwx)      date and time last modified
+        ^^^     group permission (rwx)
+           ^^^  world permission (rwx)
+</tt></pre>
+</blockquote>
+
+<p></p><hr>
+<font size="+1">How to Make an Alias</font><p>
+</p><blockquote>
+An alias lets you type something simple and do something complex.  It's a shorthand for a command.
+If you want to type "dir" instead of "ls -l" then type <b>alias dir 'ls -l'</b>.  The single quotes tell
+Unix that the enclosed text is one command.
+<p>
+Aliases are more useful if they're permanent so you don't have to think about them. You can do this by 
+adding the alias to your <b>.cshrc</b> file so they're automatically loaded when you start.  
+Type <b>pico .cshrc</b> and look for the alias section and add what you want.
+It will be effective when you start. 
+Just remember that if you make an alias with the name of a Unix command, that command will become unavailable.
+</p><p>
+Here are a few aliases from my <b>.cshrc</b> file:
+</p><p>
+</p><pre>            # enter your aliases here in the form:
+	    # alias     this    means this
+
+            alias       h       history         
+            alias       m       more
+            alias	q	quota -v
+            alias       bye     exit
+            alias 	ls 	ls -F
+            alias       dir     ls
+            alias 	cdup	cd ..
+            alias	motd	more /etc/motd
+
+</pre>
+</blockquote>
+
+<p></p><hr>
+<font size="+1">How to Make a Script</font><p>
+</p><blockquote>
+A Unix script is a text file of commands that can be executed, like a <b>.bat</b> file in DOS.  
+Unix contains a powerful programming language with loops and variables that I don't really understand. 
+Here's a useful example.
+<p>
+Unix can't rename a bunch of files at once the way DOS can.  
+This is a problem if you develop Web pages on a DOS machine and then upload them to your Unix Server.
+You might have a bunch of <b>.htm</b> files that you want to rename as <b>.html</b> files, 
+but Unix makes you do it one by one. This is actually not a defect. (It's a feature!) 
+Unix is just being more consistent than DOS. So make a script!
+</p><p>
+Make a text file (eg with <b>pico</b>) with the following lines.  The first line is special. It tells
+Unix what program or shell should execute the script.  Other # lines are comments.
+</p><pre>    #! /bin/csh
+    # htm2html converts *.htm files to *.html
+    foreach f ( *.htm )
+      set base=`basename $f .htm`
+      mv $f $base.html
+    end
+</pre>
+Save this in your home directory as <b>htm2html</b> (or whatever).  
+Then make it user-executable by typing <strong>chmod 700 htm2html</strong>.
+After this a <b>*</b> will appear by the file name when you <b>ls -F</b>, to show that it's executable. Change to 
+a directory with <b>.htm</b> files and type <b>~/htm2html</b>, and it will do its stuff.
+<p>
+Think about scripts whenever you find yourself doing the same tedious thing over and over.
+</p></blockquote>
+
+<p></p><hr>
+<font size="+1">Dotfiles (aka Hidden Files)</font><p>
+</p><blockquote>
+<b>Dotfile</b> names begin with a "."  These files and directories don't show up when you list a directory unless you
+use the <b>-a</b> option, so they are also called <b>hidden files</b>.  
+Type <b>ls -la</b> in your home directory to see what you have.
+<p>
+Some of these dotfiles are crucial.  They initialize your shell and the programs you use,
+like <b>autoexec.bat</b> in DOS and <b>.ini</b> files in Windows. 
+<b>rc</b> means "run commands". These are all text files that can be edited, but change them at your peril.  
+Make backups first!
+</p><p>
+Here's some of what I get when I type <b>ls -laF</b>:</p><p>
+<table width="500" border="0">
+<tbody><tr><td>.addressbook </td><td>my email addressbook.<br>
+</td></tr><tr><td>.cshrc </td><td>my C-shell startup info, important!<br>
+</td></tr><tr><td>.gopherrc </td><td>my <b>gopher</b> setup.<br>
+</td></tr><tr><td>.history </td><td>list of past commands.<br>
+</td></tr><tr><td>.login </td><td>login init, important!<br>
+</td></tr><tr><td>.lynxrc </td><td>my <b>lynx</b> setup for WWW.<br>
+</td></tr><tr><td>.ncftp/ </td><td>hidden dir of <b>ncftp</b> stuff.<br>
+</td></tr><tr><td>.newsrc </td><td>my list of subscribed newsgroups.<br>
+</td></tr><tr><td>.pinerc </td><td>my <b>pine</b> setup for email.<br>
+</td></tr><tr><td>.plan </td><td>text appears when I'm <b>fingered</b>, ok to edit.<br>
+</td></tr><tr><td>.profile </td><td>Korn shell startup info, important!<br>
+</td></tr><tr><td>.project </td><td>text appears when I'm <b>fingered</b>, ok to edit.<br>
+</td></tr><tr><td>.signature </td><td>my signature file for mail and news, ok to edit.<br>
+</td></tr><tr><td>.tin/ </td><td>hidden dir of my <b>tin</b> stuff for usenet.<br>
+</td></tr><tr><td>.ytalkrc </td><td>my <b>ytalk</b> setup.<br>
+</td></tr></tbody></table>
+</p></blockquote>
+
+<p></p><hr>
+<font size="+1">DOS and UNIX commands</font><p>
+</p><blockquote>
+<table width="500" border="0">
+<tbody><tr align="LEFT"><th>Action</th><th>DOS</th><th>UNIX<br>
+</th></tr><tr><td>change directory</td><td>cd</td><td>cd<br>
+</td></tr><tr><td>change file protection</td><td>attrib</td><td>chmod<br>
+</td></tr><tr><td>compare files</td><td>comp</td><td>diff<br>
+</td></tr><tr><td>copy file</td><td>copy</td><td>cp<br>
+</td></tr><tr><td>delete file</td><td>del</td><td>rm<br>
+</td></tr><tr><td>delete directory</td><td>rd</td><td>rmdir<br>
+</td></tr><tr><td>directory list</td><td>dir</td><td>ls<br>
+</td></tr><tr><td>edit a file</td><td>edit</td><td>pico<br>
+</td></tr><tr><td>environment</td><td>set</td><td>printenv<br>
+</td></tr><tr><td>find string in file</td><td>find</td><td>grep<br>
+</td></tr><tr><td>help</td><td>help</td><td>man<br>
+</td></tr><tr><td>make directory</td><td>md</td><td>mkdir<br>
+</td></tr><tr><td>move file</td><td>move</td><td>mv<br>
+</td></tr><tr><td>rename file</td><td>ren</td><td>mv<br>
+</td></tr><tr><td>show date and time</td><td>date, time</td><td>date<br>
+</td></tr><tr><td>show disk space</td><td>chkdsk</td><td>df<br>
+</td></tr><tr><td>show file</td><td>type</td><td>cat<br>
+</td></tr><tr><td>show file by screens</td><td>type filename | more</td><td>more
+</td></tr><tr><td>sort data</td><td>sort</td><td>sort<br>
+</td></tr></tbody></table>
+</blockquote>
+
+<hr>
+
+<p>Copied from: http://www.rain.org/~mkummel/unix.html; Author: Marc Kummel / mkummel@rain.org</p>
+
+</body></html>

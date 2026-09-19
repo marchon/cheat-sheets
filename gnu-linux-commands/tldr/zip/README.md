@@ -1,0 +1,61 @@
+# zip
+
+TLDR page cloned from https://www.cheat-sheets.org/project/tldr/command/zip/.
+
+Upstream tldr pages are CC BY 4.0 (https://github.com/tldr-pages/tldr).
+
+TLDR
+Search
+JavaScript must be enabled for this application.
+Enter a command. For example:
+drill
+,
+b2sum
+,
+sqlite utils
+,
+kotlin
+.
+zip
+Package and compress (archive) files into zip file.
+See also:
+unzip
+.
+More information:
+https://manned.org/zip
+.
+Add files/directories to a specific archive:
+zip -r {{path/to/compressed.zip}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}
+Remove files/directories from a specific archive:
+zip -d {{path/to/compressed.zip}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}
+Archive files/directories e[x]cluding specified ones:
+zip {{path/to/compressed.zip}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}} -x {{path/to/excluded_files_or_directories}}
+Archive files/directories with a specific compression level (
+0
+- the lowest,
+9
+- the highest):
+zip -r -{{0-9}} {{path/to/compressed.zip}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}
+Create an [e]ncrypted archive with a specific password:
+zip -r -e {{path/to/compressed.zip}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}
+Archive files/directories to a multi-part [s]plit zip file (e.g. 3 GB parts):
+zip -r -s {{3g}} {{path/to/compressed.zip}} {{path/to/file_or_directory1 path/to/file_or_directory2 ...}}
+Print a specific archive contents:
+zip -sf {{path/to/compressed.zip}}
+This is a
+tldr pages
+(
+source
+, CC BY 4.0) web wrapper for
+cheat-sheets.org
+.
+All commands
+,
+popular commands
+,
+most used linux commands
+.
+Referrals
+.
+Progressive Web Application (PWA) version to install on your device
+.

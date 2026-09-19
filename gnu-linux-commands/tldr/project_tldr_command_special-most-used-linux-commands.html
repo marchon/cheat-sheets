@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <meta name="viewport" content="width=device-width">
+  <title> TLDR page</title>
+  <meta name="description" content=" collaborative tldr cheatsheet" />
+  <meta name="keywords" content=", , tldr, tldr pages, tldr page, cheat sheet, cheatsheet, man, shell, console, documentation, terminal, command line, man page, examples, help, manual, hacktoberfest, manpages, man pages" />
+  <meta name="author" content="TLDR page team and Alexander Krassotkin" />
+  <meta name="revision" content="202209161450" />
+  <meta property="og:title" content=" TLDR page" />
+  <meta property="og:description" content=" collaborative tldr cheatsheet" />
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="TLDR page team and Alexander Krassotkin" />
+  <meta property="article:published_time" content="2022-07-05T06:30:05Z" />
+  <meta property="article:modified_time" content="2022-09-16T11:48:45Z" />
+  <meta property="og:url" content="//www.cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="cheat-sheets.org" />
+  <style>
+article {
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:2em;
+ max-width:980px;
+}
+blockquote {
+ background-color: #F5F5F5;
+ border-left: 4px solid #eaecf0;
+ display: block;
+ padding: 0.25em 1em;
+}
+noscript {
+ font-weight:bold;
+ margin-left:auto;
+ margin-right:auto;
+ max-width:39em;
+ text-align:center;
+}
+#commentBlock {
+ text-align:left;
+ padding:1em;
+}
+#searchButton {
+ font-size:1.7em;
+}
+#searchInput {
+ font-size:1.7em;
+ margin:0.5em;
+ padding-left:0.2em;
+ padding-right:0.2em;
+}
+#searchTitle {
+ font-size:2.3em;
+}
+#topBlock {
+ margin:auto;
+ max-width:39em;
+ text-align:center;
+}
+#trafficTable {
+ text-align:right;
+}
+#trafficTable td {
+ padding-left:1em;
+}
+  </style>
+  <script>
+var baseURL = "/project/tldr/";
+var defaultLanguage = "en";
+var defaultOS = "common";
+var defaultVersion = "20220710";
+var language = "en";
+var os = "common";
+var previousCommand = "";
+var version = "20220710";
+
+var bu = ((baseURL === "&" + "baseURL;") ? "/project/tldr/" : baseURL);
+var lu = (language === defaultLanguage) ? "" : ("language/" + language + "/");
+var ou = (os === defaultOS) ? "" : ("os/" + os + "/");
+var vu = (version == defaultVersion) ? "" : ("version/" + version + "/");
+
+function search() {
+ var command = document.getElementById("searchInput").value.trim();
+ if(command.length == 0) return;
+ command = command.replace(/\s+/g, "-"); 
+ window.location.href = "//www.cheat-sheets.org" + bu + "command/" + command + "/" + ou + lu + vu;
+}
+
+window.addEventListener("load", (event) => {
+ var nsel = document.querySelector("noscript");
+ if(nsel) nsel.style.display = "none";
+ document.getElementById("searchButton").addEventListener("click", search);
+ var iel = document.getElementById("searchInput");
+ iel.addEventListener("keydown", function(event) {if(event.keyCode === 13) search();});
+ const end = iel.value.length;
+ iel.setSelectionRange(end, end);
+ iel.focus();
+ document.getElementById("searchTitle").addEventListener("click", function(event) {window.location.href = "https://www.cheat-sheets.org" + bu;});
+});
+  </script>
+ </head>
+
+ <body>
+  <article>
+   <div id="topBlock">
+    <div id="searhBlock">
+     <span id="searchTitle">TLDR</span>
+     <input type="search" id="searchInput" name="searhInput" value="">
+     <button id="searchButton">Search</button>
+    </div>
+    <div id="optionsBlock">
+    </div>
+    <noscript>JavaScript must be enabled for this application.</noscript>
+    <div id="commentBlock">
+     Enter a command. For example: 
+
+     <a class="exampleCommandsItem" href="/project/tldr/command/git-mailinfo/">git mailinfo</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/buku/">buku</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/jwt/">jwt</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/gnomon/">gnomon</a>.
+
+    </div>
+   </div>
+   <div id="content">
+ <div class="topcommandsdiv">
+ <h1>Most used Linux/OSx/Unix/BSD commands</h1>
+ <div>The TOP most used *nix commands with tldr cheat sheets. Every user should know.</div>
+ <section class="clds">
+  <h2 class="cldh">File system, directories</h2>
+  <ul class="cld">
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/pwd/">pwd</a> — print name of current working directory.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/ls/">ls</a> — list directory contents.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/cd/">cd</a> — change the current working directory.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/mkdir/">mkdir</a> — create a directory.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/rm/">rm</a> — remove files or directories.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/rmdir/">rmdir</a> — removes a directory.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/cp/">cp</a> — copy files and directories. </li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/mv/">mv</a> — move or rename files and directories.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/df/">df</a> — dives an overview of the filesystem disk space usage.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/du/">du</a> — disk usage: estimate and summarize file and directory space usage.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/mount/">mount</a> (<a class="commandsItem" href="/project/tldr/command/umount/">umount</a>) — provides access to an entire filesystem in one directory.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/chmod/">chmod</a> — change the access permissions of a file or directory.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/chown/">chown</a> — change user and group ownership of files and directories.</li>
+  </ul>
+ </section>
+ <section class="clds">
+  <h2 class="cldh">Files</h2>
+  <ul class="cld">
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/vim/">vim</a> (vi) — text editor.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/nano/">nano</a> — text editor.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/cat/">cat</a> — creates, prints and concatenates files.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/touch/">touch</a> — creates and changes a file access and modification times.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/emacs/">emacs</a> (<a class="commandsItem" href="/project/tldr/command/emacsclient/">emacsclient</a>) — the extensible, customizable, self-documenting, real-time display editor.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/less/">less</a> — open a file for interactive reading, allowing scrolling and search.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/tail/">tail</a> (<a class="commandsItem" href="/project/tldr/command/head/">head</a>) — display the last (first) part of a file.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/hexdump/">hexdump</a> — an ASCII, decimal, hexadecimal, octal dump.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/xxd/">xxd</a> — create a hexadecimal representation (hexdump) from a binary file, or vice-versa.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/cp/">cp</a> — copy files and directories. </li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/mv/">mv</a> — move or rename files and directories.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/find/">find</a> — find files or directories under the given directory tree, recursively.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/locate/os/linux/">locate (linux)</a>, <a class="commandsItem" href="/project/tldr/command/locate/os/osx/">locate (osx)</a> — find filenames quickly.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/grep/">grep</a> — find patterns in files using regular expressions.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/tar/">tar</a> — archiving utility.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/gzip/">gzip</a> — compress/uncompress files with gzip compression (LZ77).</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/zip/">zip</a> (<a class="commandsItem" href="/project/tldr/command/unzip/">unzip</a>) — package and compress/uncompress files with zip format.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/chmod/">chmod</a> — change the access permissions of a file or directory.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/chown/">chown</a> — change user and group ownership of files and directories.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/wc/">wc</a> — count lines, words, and bytes.</li>
+  </ul>
+ </section>
+ <section class="clds">
+  <h2 class="cldh">Administration, user, process, system, session</h2>
+  <ul class="cld">
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/whoami/">whoami</a> — print the username associated with the current effective user ID.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/tty/">tty</a> — returns terminal name.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/uname/">uname</a> — print details about the current machine and the operating system running on it.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/sudo/">sudo</a> (<a class="commandsItem" href="/project/tldr/command/su/">su</a>) — executes a single command as the superuser or another user (switch shell to another user).</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/useradd/os/linux/">useradd</a> (<a class="commandsItem" href="/project/tldr/command/userdel/os/linux/">userdel</a>) — create (remove) a user.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/chmod/">chmod</a> — change the access permissions of a file or directory.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/chown/">chown</a> — change user and group ownership of files and directories.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/passwd/">passwd</a> — change a user's password.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/exit/">exit</a> — exit the shell.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/shutdown/os/linux/">shutdown (linux)</a>, <a class="commandsItem" href="/project/tldr/command/shutdown/os/osx/">shutdown(osx)</a> — shutdown and reboot the system.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/top/os/linux/">top (linux)</a>, <a class="commandsItem" href="/project/tldr/command/top/os/osx/">top (osx)</a> — display dynamic real-time information about running processes.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/ps/">ps</a> — information about running processes.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/kill/">kill</a> (<a class="commandsItem" href="/project/tldr/command/killall/">killall</a>) — sends a signal to a process, usually related to stopping the process.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/passwd/">passwd</a> — change a user's password.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/free/os/linux/">free</a> — display amount of free and used memory in the system.</li>
+  </ul>
+ </section>
+ <section class="clds">
+  <h2 class="cldh">Packages, programms, applications, apps</h2>
+  <ul class="cld">
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/apt/os/linux/">apt</a> (<a class="commandsItem" href="/project/tldr/command/apt-get/os/linux/">apt-get</a>, <a class="commandsItem" href="/project/tldr/command/dpkg/os/linux/">dpkg</a>) — package management utility for Debian based distributions (f.e. Ubuntu).</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/dnf/os/linux/">dnf</a> — package management utility for RHEL, Fedora, and CentOS (replaces <a class="commandsItem" href="/project/tldr/command/yum/os/linux/">yum</a>).</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/brew/">brew</a> — package manager for macOS and Linux.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/pacman/os/linux/">pacman</a> — Arch Linux package manager utility.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/pip/">pip</a> — Python package manager.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/npm/">npm</a> — JavaScript and Node.js package manager.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/env/">env</a> — show the environment or run a program in a modified environment.</li>
+  </ul>
+ </section>
+ <section class="clds">
+  <h2 class="cldh">Network, internet</h2>
+  <ul class="cld">
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/ping/">ping</a> — ping host (send ICMP ECHO_REQUEST packets to network hosts).</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/traceroute/">traceroute</a> — print the route packets trace to network host.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/wget/">wget</a> — download files from the Web. Supports HTTP, HTTPS, and FTP.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/curl/">curl</a> — transfers data from or to a server.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/host/">host</a> — lookup Domain Name Server.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/nslookup/">nslookup</a> — query name server(s) for various domain records.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/whois/">whois</a> — command-line client for the WHOIS (RFC 3912) protocol.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/dig/">dig</a> — DNS lookup utility.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/ssh/">ssh</a> — Secure Shell is a protocol used to securely log onto remote systems.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/scp/">scp</a> — secure copy files between hosts using Secure Copy Protocol over SSH.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/telnet/">telnet</a> — connect to a specified port of a host using the telnet protocol.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/ftp/">ftp</a> (<a class="commandsItem" href="/project/tldr/command/sftp/">sftp</a>) — tools to interact with a server via File Transfer Protocol.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/firefox/">firefox</a> — a free and open source web browser.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/chromium/">chromium</a> — open-source web browser principally developed and maintained by Google.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/lynx/">lynx</a> — command-line web browser.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/netstat/">netstat</a> — displays network-related information such as open connections, open socket ports, etc.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/ifconfig/">ifconfig</a> — network interface configurator.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/ip/os/linux/">ip</a> — show / manipulate routing, devices, policy routing and tunnels.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/nc/">nc</a> — Netcat is a versatile utility for working with TCP or UDP data.</li>
+  </ul>
+ </section>
+ <section class="clds">
+  <h2 class="cldh">Programming</h2>
+  <ul class="cld">
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/git/">git</a> (<a class="commandsItem" href="/project/tldr/command/git-*/">git *</a>) — distributed version control system.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/gcc/">gcc</a> (<a class="commandsItem" href="/project/tldr/command/g++/">g++</a>) — the GNU preprocessor, compiler (assembler), and linker for C, C++, and other languages.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/gdb/">gdb</a> — the GNU Debugger.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/clang/">clang</a> (<a class="commandsItem" href="/project/tldr/command/clang++/">clang++</a>) — compiler for C, C++, Objective-C, and other source files.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/python/">python</a> — Python language interpreter.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/java/">java</a> (<a class="commandsItem" href="/project/tldr/command/javac/">javac</a>) — Java Application Launcher (Java Application Compiler).</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/go/">go</a> — tool for managing go source code.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/julia/">julia</a> — Julia language tools.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/perl/">perl</a> — the Perl 5 language interpreter.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/awk/">awk</a> — a versatile programming language for working on files.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/make/">make</a> — task runner for targets described in Makefile.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/crontab/">crontab</a> — schedule cron jobs to run on a time interval for the current user.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/env/">env</a> — show the environment or run a program in a modified environment.</li>
+  </ul>
+ </section>
+ <section class="clds">
+  <h2 class="cldh">Help</h2>
+  <ul class="cld">
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/man/">man</a> — format and display manual pages.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/whatis/os/linux/">whatis (linux)</a>, <a class="commandsItem" href="/project/tldr/command/whatis/os/osx">whatis (osx)</a> — display one-line descriptions from manual pages.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/tldr/">tldr</a> — displays simple help pages for command-line tools, from the tldr-pages project.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/which/">which</a> — locate a program in the user's path.</li>
+  </ul>
+ </section>
+ <section class="clds">
+  <h2 class="cldh">Other tools</h2>
+  <ul class="cld">
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/echo/">echo</a> — print given arguments.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/history/">history</a> — command-line history.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/clear/">clear</a> — clears the screen of the terminal.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/youtube-dl/">youtube-dl</a> (<a class="commandsItem" href="/project/tldr/command/yt-dlp/">yt-dlp</a>) — download videos from YouTube and other websites.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/ffmpeg/">ffmpeg</a> — video tools.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/cal/">cal</a> — prints calendar information, with the current day highlighted.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/bc/">bc</a> (<a class="commandsItem" href="/project/tldr/command/dc/">dc</a>) — an arbitrary precision calculator language.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/alias/">alias</a> (<a class="commandsItem" href="/project/tldr/command/unalias/">unalias</a>) — creates (removes) aliases - words that are replaced by a command string.</li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command/uptime/">uptime</a> — tell how long the system has been running and other information.</li>
+  </ul>
+ </section>
+<!--
+ <section class="clds">
+  <h2 class="cldh"></h2>
+  <ul class="cld">
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command//"></a> — </li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command//"></a> — </li>
+   <li class="icld"><a class="commandsItem" href="/project/tldr/command//"></a> — </li>
+  </ul>
+ </section>
+ <section class="clds">
+  <h2 class="cldh"></h2>
+  <ul class="cld">
+  </ul>
+ </section>
+-->
+ <div>&nbsp;</div>
+</div>
+
+
+   </div>
+   <hr>
+   <div class="headTitle">This is a <a href="/project/tldr/">tldr pages</a> (<a href="https://github.com/tldr-pages/tldr">source</a>, CC BY 4.0) web wrapper for <a href="/">cheat-sheets.org</a>. <a href="/project/tldr/command/special-all-language-commands/">All commands</a>, <a href="/project/tldr/command/special-top-commands/">popular commands</a>, <a href="/project/tldr/command/special-most-used-linux-commands/">most used linux commands</a>. <a href="/project/tldr/command/special-referrals/">Referrals</a>. <a href="https://www.cheat-sheets.org/project/tldr-pwa/">Progressive Web Application (PWA) version to install on your device</a>.</div>
+  </article>
+ </body>
+
+</html>
+
+

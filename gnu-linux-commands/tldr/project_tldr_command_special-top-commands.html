@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <meta name="viewport" content="width=device-width">
+  <title> TLDR page</title>
+  <meta name="description" content=" collaborative tldr cheatsheet" />
+  <meta name="keywords" content=", , tldr, tldr pages, tldr page, cheat sheet, cheatsheet, man, shell, console, documentation, terminal, command line, man page, examples, help, manual, hacktoberfest, manpages, man pages" />
+  <meta name="author" content="TLDR page team and Alexander Krassotkin" />
+  <meta name="revision" content="202209161450" />
+  <meta property="og:title" content=" TLDR page" />
+  <meta property="og:description" content=" collaborative tldr cheatsheet" />
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="TLDR page team and Alexander Krassotkin" />
+  <meta property="article:published_time" content="2022-07-05T06:30:05Z" />
+  <meta property="article:modified_time" content="2022-09-16T11:48:45Z" />
+  <meta property="og:url" content="//www.cheat-sheets.org/project/tldr/command/special-top-commands/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="cheat-sheets.org" />
+  <style>
+article {
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:2em;
+ max-width:980px;
+}
+blockquote {
+ background-color: #F5F5F5;
+ border-left: 4px solid #eaecf0;
+ display: block;
+ padding: 0.25em 1em;
+}
+noscript {
+ font-weight:bold;
+ margin-left:auto;
+ margin-right:auto;
+ max-width:39em;
+ text-align:center;
+}
+#commentBlock {
+ text-align:left;
+ padding:1em;
+}
+#searchButton {
+ font-size:1.7em;
+}
+#searchInput {
+ font-size:1.7em;
+ margin:0.5em;
+ padding-left:0.2em;
+ padding-right:0.2em;
+}
+#searchTitle {
+ font-size:2.3em;
+}
+#topBlock {
+ margin:auto;
+ max-width:39em;
+ text-align:center;
+}
+#trafficTable {
+ text-align:right;
+}
+#trafficTable td {
+ padding-left:1em;
+}
+  </style>
+  <script>
+var baseURL = "/project/tldr/";
+var defaultLanguage = "en";
+var defaultOS = "common";
+var defaultVersion = "20220710";
+var language = "en";
+var os = "common";
+var previousCommand = "";
+var version = "20220710";
+
+var bu = ((baseURL === "&" + "baseURL;") ? "/project/tldr/" : baseURL);
+var lu = (language === defaultLanguage) ? "" : ("language/" + language + "/");
+var ou = (os === defaultOS) ? "" : ("os/" + os + "/");
+var vu = (version == defaultVersion) ? "" : ("version/" + version + "/");
+
+function search() {
+ var command = document.getElementById("searchInput").value.trim();
+ if(command.length == 0) return;
+ command = command.replace(/\s+/g, "-"); 
+ window.location.href = "//www.cheat-sheets.org" + bu + "command/" + command + "/" + ou + lu + vu;
+}
+
+window.addEventListener("load", (event) => {
+ var nsel = document.querySelector("noscript");
+ if(nsel) nsel.style.display = "none";
+ document.getElementById("searchButton").addEventListener("click", search);
+ var iel = document.getElementById("searchInput");
+ iel.addEventListener("keydown", function(event) {if(event.keyCode === 13) search();});
+ const end = iel.value.length;
+ iel.setSelectionRange(end, end);
+ iel.focus();
+ document.getElementById("searchTitle").addEventListener("click", function(event) {window.location.href = "https://www.cheat-sheets.org" + bu;});
+});
+  </script>
+ </head>
+
+ <body>
+  <article>
+   <div id="topBlock">
+    <div id="searhBlock">
+     <span id="searchTitle">TLDR</span>
+     <input type="search" id="searchInput" name="searhInput" value="">
+     <button id="searchButton">Search</button>
+    </div>
+    <div id="optionsBlock">
+    </div>
+    <noscript>JavaScript must be enabled for this application.</noscript>
+    <div id="commentBlock">
+     Enter a command. For example: 
+
+     <a class="exampleCommandsItem" href="/project/tldr/command/tlmgr-candidates/">tlmgr candidates</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/pwd/">pwd</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/git-diff-files/">git diff files</a>.
+
+    </div>
+   </div>
+   <div id="content">
+ <div class="topcommandsdiv">
+ <h1>Most popular commands</h1>
+ <div>The TOP 100 most popular (linux, unix, windows, osx, android, etc.) commands on cheat-sheets.org tldr pages web wrapper yesterday.</div>
+    <ul id="commandsList">
+    <li><a class="commandsItem" href="/project/tldr/command/sha256sum/">sha256sum</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/yt-dlp/">yt-dlp</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/hydra/">hydra</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/grep/">grep</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/warp-cli/">warp-cli</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/tailscale-file/">tailscale-file</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/gh-api/">gh-api</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/awk/">awk</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/zsteg/">zsteg</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/openssl-s_client/">openssl-s_client</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/git-check-ignore/">git-check-ignore</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/fsutil/os/windows/">fsutil (windows)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/chmod/">chmod</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/git-ls-remote/">git-ls-remote</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/scp/">scp</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/git-switch/">git-switch</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/adb-reverse/">adb-reverse</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/git-worktree/">git-worktree</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/wpscan/">wpscan</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/chage/os/linux/">chage (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/piactl/">piactl</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/glab-auth/">glab-auth</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/xfreerdp/os/linux/">xfreerdp (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/dua/">dua</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/pdftocairo/">pdftocairo</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/pip-uninstall/">pip-uninstall</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/pacstrap/os/linux/">pacstrap (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/git-status/">git-status</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/ssh/">ssh</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/binwalk/os/linux/">binwalk (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/brew-cask/">brew-cask</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/v4l2-ctl/os/linux/">v4l2-ctl (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/keyctl/os/linux/">keyctl (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/git/">git</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/readelf/os/linux/">readelf (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/gobuster/">gobuster</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/pw-loopback/os/linux/">pw-loopback (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/ed/">ed</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/resolvectl/os/linux/">resolvectl (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/rpcclient/os/linux/">rpcclient (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/emacs/">emacs</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/kdeconnect-cli/">kdeconnect-cli</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/fdupes/">fdupes</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/find/">find</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/sublist3r/">sublist3r</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/az-logout/">az-logout</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/ssh-keygen/">ssh-keygen</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/gdb/">gdb</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/firefox/">firefox</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/gh-release/">gh-release</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/ftp/">ftp</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/brew/">brew</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/rm/">rm</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/minisign/">minisign</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/yay/os/linux/">yay (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/jq/">jq</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/gcalcli/">gcalcli</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/transmission-remote/">transmission-remote</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/gh-pr/">gh-pr</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/scoop/os/windows/">scoop (windows)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/git-commit/">git-commit</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/fc-list/">fc-list</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/dumpcap/">dumpcap</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/arecord/os/linux/">arecord (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/getent/os/linux/">getent (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/less/">less</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/dart/">dart</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/git-add/">git-add</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/java/">java</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/git-push/">git-push</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/wipefs/os/linux/">wipefs (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/diff/">diff</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/pwsh/">pwsh</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/arp-scan/">arp-scan</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/alacritty/">alacritty</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/driverquery/os/windows/">driverquery (windows)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/git-symbolic-ref/">git-symbolic-ref</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/qutebrowser/">qutebrowser</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/git-clone/">git-clone</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/amass-enum/">amass-enum</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/cat/">cat</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/ssh-keyscan/">ssh-keyscan</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/adb-shell/">adb-shell</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/git-init/">git-init</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/mmdc/">mmdc</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/pdbedit/os/linux/">pdbedit (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/fwupdmgr/os/linux/">fwupdmgr (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/powerprofilesctl/os/linux/">powerprofilesctl (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/fd/">fd</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/steghide/os/linux/">steghide (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/brightnessctl/os/linux/">brightnessctl (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/xsv/">xsv</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/lsblk/os/linux/">lsblk (linux)</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/vimdiff/">vimdiff</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/tailscale/">tailscale</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/tailscale-ssh/">tailscale-ssh</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/go/">go</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/nano/">nano</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/ls/">ls</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/zoxide/">zoxide</a></li>
+    <li><a class="commandsItem" href="/project/tldr/command/npm/">npm</a></li>
+   </ul>
+ <div>&nbsp;</div>
+</div>
+
+
+   </div>
+   <hr>
+   <div class="headTitle">This is a <a href="/project/tldr/">tldr pages</a> (<a href="https://github.com/tldr-pages/tldr">source</a>, CC BY 4.0) web wrapper for <a href="/">cheat-sheets.org</a>. <a href="/project/tldr/command/special-all-language-commands/">All commands</a>, <a href="/project/tldr/command/special-top-commands/">popular commands</a>, <a href="/project/tldr/command/special-most-used-linux-commands/">most used linux commands</a>. <a href="/project/tldr/command/special-referrals/">Referrals</a>. <a href="https://www.cheat-sheets.org/project/tldr-pwa/">Progressive Web Application (PWA) version to install on your device</a>.</div>
+  </article>
+ </body>
+
+</html>
+
+

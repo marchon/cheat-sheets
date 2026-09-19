@@ -1,0 +1,922 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0054)http://www.physics.usyd.edu.au/~rennie/LinuxIntro.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>A very brief guide to Linux</title>
+  
+  <meta http-equiv="content-style-type" content="text/css">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta name="author" content="Chris Rennie">
+  <meta name="description" content="Brief guide to linux">
+  <meta name="keywords" content="linux, introduction, commands">
+  <meta name="created" content="12 May 2007">
+  <meta name="robots" content="index,nofollow">
+
+  <style type="text/css">
+        body {
+          background: white;
+          color: black;
+          font-family: Ariel,sans-serif;
+        }
+        h2 {
+          background: #efefef;
+          border-bottom: 1px dotted #aaa; 
+          padding-top: 8px;
+          padding-left: 4px;
+          width: 70%;
+        }
+       .figure { background-color:#f0f0f0; padding:5px; }
+       .programlisting, .screen {
+         font-size: 90%;
+         color: black;
+         margin: 1em 0.5in;
+         padding: 0.5em;
+         background: rgb(240,240,240);
+         border-top: black dotted 1px;
+         border-left: black dotted 1px;
+         border-right: black solid 2px;
+         border-bottom: black solid 2px;
+       }
+       .modifier {font: small-caps medium sans-serif;}
+       table.general {
+         border:black solid 1px; border-spacing:3px;
+         padding:6px;
+         background-color:#FFFFFF;
+       }
+       table.optCmd { 
+           background-color:#f0f0f0; 
+           padding:2px; 
+           margin: 1em 0.5in;
+       }
+       td.optCmd {
+           vertical-align:middle; 
+           font-family:Courier;
+           border:black solid 1px; 
+           padding:4px; 
+         }
+  </style>
+<script>window["_GOOG_TRANS_EXT_VER"] = "1";</script></head>
+
+<body>
+
+<!-- ================================================================== -->
+<div style="text-align:center; font-weight:bold">
+<h1>A very brief guide to Linux</h1>
+<p><a href="http://www.physics.usyd.edu.au/~rennie/">C. J. Rennie</a></p>
+<p>5th April 2011</p>
+</div>
+<hr>
+
+<p>This document is for those who are just beginning with Linux.  It covers
+the really essential commands in some detail, but also gives some impression
+of the great scope of commands that are available.  It says nothing about 
+email clients, browsers, compilers etc, which are either documented elsewhere
+or are sufficiently GUI not to need any documentation such as this.</p>
+
+<!-- ================================================================== -->
+<h2><a name="starting">Logging in and out</a></h2>
+<p>You always need to log in by specifying your user name and your password.  
+Once that is done, the Desktop Environment (usually 'Gnome' or 'KDE') starts, 
+and you will be able to do things like open terminal windows, run the file 
+manager, or browse the Internet.</p>
+
+<p>Log off via the menu options provided by the desktop.</p>
+
+<p>To try out the things described in this document it will help to
+have a 'terminal' window open.  How to do this should be obvious from
+whatever desktop you are using.</p>
+
+<!-- ================================================================== -->
+<h2><a name="directories">Directories</a></h2>
+<p>Whatever computing background you have, you will be familiar with
+the concept of directories (or 'folders'), which are arranged hierarchically,
+and act as containers for files.</p>
+
+<p>There are between 5 and 10 thousand directories on a Linux machine,
+so it is good to have some idea of how they are organized.  The directory
+tree consists of branches having certain functions.   The details differ
+on the various Linux versions, but top level or 'root' directory is
+always designated '<code>/</code>', and contains the following directories</p>
+<table class="general" title="Major Linux directories">
+<tbody><tr><th>Path</th>  <th>Function</th></tr>
+<tr><td><code>/suphys/<em>your_name</em>/</code></td>
+            <td>For the personal use of users</td></tr>
+<tr><td><code>/media/</code></td>  
+            <td>CD-ROMs, floppies, data directories on other machines</td></tr>
+<tr><td><code>/usr/</code></td>  <td>Where most programs are located</td></tr>
+<tr><td><code>/bin/</code></td>  <td>Core operating system programs</td></tr>
+<tr><td><code>/sbin/</code></td> <td>Core operating system programs</td></tr>
+<tr><td><code>/etc/</code></td>  
+            <td>Configuration files for operating system</td></tr>
+</tbody></table>
+<p>amongst others.</p>
+
+<p>The branches are sorted here according to relevance for everyday work, 
+so concern yourself with the first couple do not try to mess with those 
+near the bottom.  (You will be prevented anyway.)</p>
+
+<p>You are free to create directories under your home directory and
+certain other areas (e.g., under <code>/media/floppy</code>), while
+others area may be protected against modifications.  When creating a
+directory (or file), the names are case-sensitive and you can use
+spaces  however spaces are often confusing and annoying (they have
+to be quoted), and I advise against the practice.</p>
+
+<p>You can access directories by specifying their name explicitly (i.e.,
+by giving some path beginning with '<code>/</code>', for example
+<code>/suphys/chris</code>), or by using shortcuts.  The shortcuts are as
+follows: '<code>.</code>' means the current directory; '<code>..</code>' 
+means the next directory up; '<code>~</code>' means your home directory.  
+Thus '<code>~/data</code>' refers to one of your own directories, 
+'<code>data</code>', located under your home directory.</p>
+
+<p>Another great help is auto-completion.  If you are part-way through
+typing a path, then pressing the <span class="modifier">Tab</span> key
+will complete the directory or filename.  If there is ambiguity in how
+to complete the name, then <span class="modifier">Tab</span> will just
+fill in as much as it can, whereupon you can enter another character or two
+to resolve the ambiguity and press <span class="modifier">Tab</span> again.
+Repeat as often as necessary.  If you are unsure how to resolve the
+ambiguity, you can press <span class="modifier">Ctrl-D</span> at any time
+to see what the alternatives are.</p>
+
+<p>If the full path of some directory or file is printed somewhere on
+screen, a common trick for using this name in a command is to cut and
+paste: highlight the block with left-click and drag; paste it with
+middle-click.  (This is the Linux equivalent of
+<span class="modifier">Ctrl-C</span> and
+<span class="modifier">Ctrl-V</span>.)  Another way to highlight is
+by multiple clicks.</p>
+
+<p>Navigating directories on the command line is not as intuitive as with
+a graphical browser, but can still be done, and done surprisingly
+efficiently.</p>
+
+
+<!-- ================================================================== -->
+<h2><a name="essential">Essential commands</a></h2>
+<p>This section gives brief, illustrated descriptions of a few really
+essential commands.  They are basic command for dealing with directories
+and files.</p>
+
+<p>Change you current directory with <code>cd</code>:</p>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">cd ..</td>
+    <td>change to the next directory up</td></tr>
+<tr><td class="optCmd">cd /usr/bin</td>
+    <td>Change to the directory <code>/usr/bin</code></td></tr>
+<tr><td class="optCmd">cd ~</td>
+     <td>Change to your home directory</td></tr>
+</tbody></table>
+
+<p>Listing the contents of directories is done with <code>ls</code>:</p>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">ls</td>
+    <td>Compact listing of the current directory </td></tr>
+<tr><td class="optCmd">ls -l /usr/bin</td>
+    <td>Detailed listing of <code>/usr/bin</code></td></tr>
+<tr><td class="optCmd">ls ~</td>
+    <td>Compact listing of your home directory</td></tr>
+<tr><td class="optCmd">ls -la ~</td>
+    <td>Detailed listing of your home directory, including those the
+    semi-hidden files beginning with '.'</td></tr>
+<tr><td class="optCmd">ls -lt</td>
+    <td>Detailed listing of the current directory, in chronological 
+    order</td></tr>
+</tbody></table>
+
+<p>Copying is done with <code>cp</code>:</p>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">cp <em>filename</em> <em>dir</em></td>
+    <td>Copy a file to some other directory, resulting in 
+    <em>dir/filename</em></td></tr>
+<tr><td class="optCmd">cp <em>filename</em> <em>newname</em></td>
+    <td>Make a copy, named <code>newname</code>, of the specified file</td></tr>
+<tr><td class="optCmd">cp <em>something*</em> <em>dir</em></td>
+    <td>Copy all files with names matching <code><em>something*</em></code> to 
+    the directory <code><em>dir</em></code></td></tr>
+<tr><td class="optCmd">cp -r <em>dir1</em> <em>dir2</em></td>
+    <td>Copy all files and subdirectories in <code><em>dir1</em></code> to a 
+    new directory <code><em>dir2/dir1</em></code></td></tr>
+<tr><td class="optCmd">cp -r <em>dir1/*</em> <em>dir2</em></td>
+    <td>Copy all files and subdirectories in <code><em>dir1</em></code> into the
+    existing directory <code><em>dir2</em></code></td></tr>
+</tbody></table>
+<p style="margin-left:50px">Note the subtle but important difference between 
+copying from <code><em>dir1</em></code> and from <code><em>dir1/*</em></code>.
+</p>
+
+<p>Moving and/or renaming is done with <code>mv</code>:</p>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">mv <em>filename</em> <em>dir</em></td>
+    <td>Move a file to some directory <code><em>dir</em></code></td></tr>
+<tr><td class="optCmd">mv <em>something*</em> <em>dir</em></td>
+    <td>Moves all files with names matching <code><em>something*</em></code> 
+    to the directory <code><em>dir</em></code></td></tr>
+<tr><td class="optCmd">mv -r <em>dir1</em> <em>dir2</em></td>
+    <td>Move all files and subdirectories in <code><em>dir1</em></code> to a 
+    new directory <code><em>dir2/dir1</em></code></td></tr>
+<tr><td class="optCmd">mv -r <em>dir1/*</em> <em>dir2</em></td>
+    <td>Move all files and subdirectories in <code><em>dir1</em></code> into 
+    the existing directory <code><em>dir2</em></code></td></tr>
+<tr><td class="optCmd">mv <em>filename</em> <em>newname</em></td>
+    <td>Rename a file or directory</td></tr>
+<tr><td class="optCmd">mv <em>filename</em> <em>dir/newname</em></td>
+    <td>Move a file to some directory <code><em>dir</em></code> and rename 
+    it</td></tr>
+</tbody></table>
+<p style="margin-left:50px">When moving and copying with <code>mv</code> and 
+<code>cp</code>, the target directory <em>must</em> already exist.</p>
+
+<p>Use <code>mkdir</code> and <code>rmdir</code> to create and remove 
+directories:</p>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">mkdir Aug21</td>
+    <td>Make a new directory within the current directory</td></tr>
+<tr><td class="optCmd">mkdir ~/data/Aug21</td>
+    <td>Make a new directory (<code>Aug21</code> in this case) in 
+    <code>~/data</code></td></tr>
+<tr><td class="optCmd">rmdir ~/data/Aug21</td>
+    <td>Remove a directory (<code>Aug21</code> in this case) from 
+    <code>~/data</code></td></tr>
+</tbody></table>
+<p style="margin-left:50px">But note that Linux prevents you (as a 
+precaution against lapses of judgment) from deleting directories that 
+still contain files.  This can be a lifesaver: bit it can also be a 
+chore to delete all files before being allowed to issue the <code>rmdir</code> 
+command.  However I expect that you will eventually discover the way 
+around this default behaviour, which will enable you to delete a directory 
+and all its contents (including subdirectories) with a single command.</p>
+
+<p>Removing files is done with <code>rm</code>:</p>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">rm <em>filename</em></td>
+    <td>Delete a particular file from the current directory</td></tr>
+<tr><td class="optCmd">rm <code><em>dir/filename*</em></code></td>
+    <td>Delete files matching the pattern <code><em>filename*</em></code> 
+     from the directory <code><em>dir</em></code></td></tr>
+</tbody></table>
+
+<p>The commands described above are just the start.  You will find that
+each command has many, many options  and the way to learn about the
+other options is to consult the 'man' pages:</p>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">man -k PDF</td>
+    <td>Lists all commands connected in any way to PDF</td></tr>
+<tr><td class="optCmd">man ls</td>
+    <td>Tells you <em>everything</em> about <code>ls</code></td></tr>
+<tr><td class="optCmd">man rm</td>
+    <td>Tells you <em>everything</em> about <code>rm</code></td></tr>
+<tr><td class="optCmd">etc</td>
+    <td>etc</td></tr>
+</tbody></table>
+
+<p>With hundreds of commands available <code>man</code> might seem of 
+little use to neophytes.  The <code>man -k <em>keyword</em></code> option is 
+one way to find out what is available; others are the thematic lists in
+<a href="#common">Some common commands</a>, and the excellent
+<em>Linux in a Nutshell</em>.</p>
+ 
+<p>It is also useful to know about <em>redirection</em>.  Output is commonly
+listed on the terminal, but can be redirected to a file with the
+'<code>&gt;</code>' command.  Thus
+</p><pre class="screen">  ls -1 ~/data &gt; names.txt
+</pre>
+<p>stores the output as a file named <code>names.txt</code>, overwriting the
+pre-existing file of this name, if any.  (A variation of this output
+redirection command is '<code>&gt;&gt;</code>', which
+<em>appends</em> the output to an existing file, rather than overwriting.)
+The opposite is '&lt;', which gets input from a file rather than the
+keyboard, e.g.
+</p><pre class="screen">  mail -s 'Hi' &lt; letter.txt
+</pre>
+
+<p>Programs can be run in the 'background' by appending an ampersand
+('&amp;') to the command line.  Thus
+</p><pre class="screen">  gv doc.ps &amp;
+</pre>
+<p>launches ghostview and puts it in the background.  What does 'background'
+mean, and why would you want to do this?  Without the ampersand the program
+runs in the foreground, which means that no new commands can be entered on
+the command line.  Launching the program in the background allows new
+commands to be entered on the command line.  <em>The program operates
+identically in both cases.</em></p>
+
+<p>There are thousands of commands documented in the man pages.  If you
+want to see for yourself, type
+</p><pre class="screen">  find /usr/share -name 'man' -type d | xargs ls -lR
+</pre>
+<p>which also gives you a taste of the sophisticated way in which all
+those commands can be used.  In this example, <code>find</code> is used to
+look for all directories named '<code>man</code>' in the directory
+<code>/usr/share</code>,
+including all its subdirectories.  That produces a list of directories
+that contain <code>man</code> pages.  The list is not printed: instead it is
+'piped' to the <code>xargs</code> command, which constructs commands like
+<code>ls -lR <em>dirname</em></code>, each of which generates a recursive
+directory listing of all files in the man directory, and its
+subdirectories.  The upshot is that the compound command above locates
+and lists all man pages, however scattered they are in the
+<code>/usr/share</code> branch of the directory tree.  You can augment the 
+above command slightly:
+</p><pre class="screen">  find /usr/share -name 'man' -type d | xargs ls -lR | wc -l
+</pre>
+<p>to get an approximate count of the number of man pages.  But even this is 
+a rather elementary example of the power of Unix/Linux commands.</p>
+
+<!-- ================================================================== -->
+<h2><a name="#common">Some common commands</a></h2>
+<p>Here are some more useful commands.  They are a tiny fraction of the 
+command-line programs available, but give a taste of what can be 
+accomplished.  Most of the commands below are core Linux utilities.  See 
+the 'man' pages for more about their purpose, and more about their
+options  wherein lies their real power.  Also listed below
+are several large applications, which tend to have built-in instructions.</p>
+
+<p>If you are a newcomer to Linux you may not understand the point of the
+commands listed below, or doubt their value.  All I can say is that I
+have used them all, and consider each one useful or even invaluable.</p>
+
+<h3>File management</h3>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">a2ps</td>
+    <td>Convert a text file to PostScript, and (by default) print it</td></tr>
+<tr><td class="optCmd">cat</td>
+    <td>Concatenate text files  or simply display text files</td></tr>
+<tr><td class="optCmd">cd</td>
+    <td>Change to some other directory</td></tr>
+<tr><td class="optCmd">chgrp</td>
+    <td>Change the group to which a file belongs</td></tr>
+<tr><td class="optCmd">chmod</td>
+    <td>Change access modes, e.g. <code>chmod go-rwx <em>file1</em></code> 
+        to make a file invisible to others</td></tr>
+<tr><td class="optCmd">chown</td>
+    <td>Change the owner of a file</td></tr>
+<tr><td class="optCmd">cp</td>
+    <td>Copy files</td></tr>
+<tr><td class="optCmd">hd</td>
+    <td>Dump a file, showing both hex and ASCII versions</td></tr>
+<tr><td class="optCmd">head</td>
+    <td>Display the first few lines of a file</td></tr>
+<tr><td class="optCmd">less</td>
+    <td>Display a file, page by page</td></tr>
+<tr><td class="optCmd">ln</td>
+    <td>Create an alias ('link') for a file, e.g. 
+        <code>ln -s <em>current_name new_name</em></code></td></tr>
+<tr><td class="optCmd">ls</td>
+    <td>List files contained in a directory</td></tr>
+<tr><td class="optCmd">mkdir</td>
+    <td>Create a directory</td></tr>
+<tr><td class="optCmd">mv</td>
+    <td>Move or rename files or directories</td></tr>
+<tr><td class="optCmd">pwd</td>
+    <td>Print the present working directory (where am I?)</td></tr>
+<tr><td class="optCmd">rm</td>
+    <td>Remove files</td></tr>
+<tr><td class="optCmd">rmdir</td>
+    <td>Remove a directory</td></tr>
+<tr><td class="optCmd">tail</td>
+    <td>Display the last few lines of a file</td></tr>
+<tr><td class="optCmd">wc</td>
+    <td>Word count  also the line and character count</td></tr>
+</tbody></table>
+
+<h3>Communication</h3>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">scp</td>
+    <td>File transfer </td></tr>
+<tr><td class="optCmd">sftp</td>
+    <td>File transfer </td></tr>
+<tr><td class="optCmd">ssh</td>
+    <td>For terminal-like sessions on remote hosts</td></tr>
+</tbody></table>
+
+<h3>File comparisons</h3>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">cmp</td>
+    <td>Compare two files (usually binary files), byte by byte</td></tr>
+<tr><td class="optCmd">diff</td>
+    <td>Compare two files (usually ASCII files), line by line</td></tr>
+<tr><td class="optCmd">kompare</td>
+    <td>Compare two files graphically</td></tr>
+</tbody></table>
+
+<h3>Graphics</h3>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">display</td>
+    <td>For image viewing and manipulation  moderately elaborate</td>
+    </tr>
+<tr><td class="optCmd">gimp</td>
+    <td>For image manipulation  very elaborate</td></tr>
+<tr><td class="optCmd">ksnapshot</td>
+    <td>For screen capture</td></tr>
+<tr><td class="optCmd">xfig</td>
+    <td>For creating line drawings</td></tr>
+<tr><td class="optCmd">xv</td>
+    <td>For image viewing and manipulation  not too elaborate</td></tr>
+</tbody></table>
+
+<h3>Printing</h3>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">lpq</td>
+    <td>Show contents of printer queue</td></tr>
+<tr><td class="optCmd">lpr</td>
+    <td>Send file to printer</td></tr>
+<tr><td class="optCmd">lprm</td>
+    <td>Remove print job from queue</td></tr>
+</tbody></table>
+
+<h3>Searching</h3>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">apropos</td>
+    <td>Search man pages for given topic</td></tr>
+<tr><td class="optCmd">find</td>
+    <td>Search directory tree for specific filenames</td></tr>
+<tr><td class="optCmd">grep</td>
+    <td>Search text files for specific words</td></tr>
+<tr><td class="optCmd">locate</td>
+    <td>Find files based on partial names</td></tr>
+<tr><td class="optCmd">strings</td>
+    <td>Extract all text from a file</td></tr>
+</tbody></table>
+
+<h3>Bundling of files</h3>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">bzip2</td>
+    <td>Compress a file, producing a <code>.bz2</code> file</td></tr>
+<tr><td class="optCmd">bunzip2</td>
+    <td>Uncompress a <code>.bz2</code> file</td></tr>
+<tr><td class="optCmd">compress</td>
+    <td>Compress a file, producing a <code>.Z</code> file</td></tr>
+<tr><td class="optCmd">gunzip</td>
+    <td>Uncompress either a <code>.gz</code> or <code>.Z</code> file</td></tr>
+<tr><td class="optCmd">gzip</td>
+    <td>Compress file, producing a <code>.gz</code> file</td></tr>
+<tr><td class="optCmd">tar</td>
+    <td>Bundle many files into one</td></tr>
+<tr><td class="optCmd">uncompress</td>
+    <td>Uncompress a <code>.Z</code> file</td></tr>
+</tbody></table>
+
+<h3>Text processing</h3>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">awk</td>
+    <td>Non-interactive editor (line-orientated)</td></tr>
+<tr><td class="optCmd">cut</td>
+    <td>Select particular columns from a text file</td></tr>
+<tr><td class="optCmd">dos2unix</td>
+    <td>Deal with the DOS vs Unix newline difference</td></tr>
+<tr><td class="optCmd">emacs</td>
+    <td>Elaborate text editor</td></tr>
+<tr><td class="optCmd">nedit</td>
+    <td>Friendly text editor</td></tr>
+<tr><td class="optCmd">sed</td>
+    <td>Non-interactive editor (stream-oriented)</td></tr>
+<tr><td class="optCmd">sort</td>
+    <td>Sort or merge files</td></tr>
+<tr><td class="optCmd">tr</td>
+    <td>Translate (redefine or delete) characters, e.g. <code>tr -d ',' &lt; 
+     fil &gt; fil2</code></td></tr>
+<tr><td class="optCmd">unix2dos</td>
+    <td>Deal with the DOS vs Unix newline difference</td></tr>
+<tr><td class="optCmd">vi</td>
+    <td>Classic text editor</td></tr>
+</tbody></table>
+
+<h3>Word processing</h3>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">kword</td>
+    <td>Similar to Word</td></tr>
+<tr><td class="optCmd">ooffice</td>
+    <td>Similar to Word</td></tr>
+<tr><td class="optCmd">latex</td>
+    <td>Utterly unlike Word</td></tr>
+<tr><td class="optCmd">dvips</td>
+    <td>Turns LaTeX output into PostScript</td></tr>
+<tr><td class="optCmd">dvipdf</td>
+    <td>Turns LaTeX output into PDF</td></tr>
+<tr><td class="optCmd">ps2pdf</td>
+    <td>Turns PostScript into PDF</td></tr>
+<tr><td class="optCmd">gv</td>
+    <td>For viewing PostScript and PDF documents</td></tr>
+<tr><td class="optCmd">xpdf</td>
+    <td>For viewing PDF documents</td></tr>
+<tr><td class="optCmd">acroread</td>
+    <td>For viewing PDF documents</td></tr>
+</tbody></table>
+
+<h3>Status</h3>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">df</td>
+    <td>Show the capacity and usage of each partition</td></tr>
+<tr><td class="optCmd">du</td>
+    <td>Show the size of all subdirectories</td></tr>
+<tr><td class="optCmd">env</td>
+    <td>Show all environment variables</td></tr>
+<tr><td class="optCmd">kill</td>
+    <td>Terminate a running program, e.g. <code>kill -9 10283</code></td></tr>
+<tr><td class="optCmd">renice</td>
+    <td>Alter the priority of a running program, e.g. 
+    <code>renice -n 10 12872</code></td></tr>
+<tr><td class="optCmd">ps</td>
+    <td>Show all running programs, e.g. <code>ps -ef</code></td></tr>
+<tr><td class="optCmd">quota</td>
+    <td>Show your disk usage and quota</td></tr>
+<tr><td class="optCmd">top</td>
+    <td>Show active programs</td></tr>
+</tbody></table>
+
+<h3>Miscellaneous</h3>
+<table class="optCmd">
+<tbody><tr><td class="optCmd">clear</td>
+    <td>Clear the terminal window</td></tr>
+<tr><td class="optCmd">finger</td>
+    <td>Find out about a user, e.g. <code>finger paul</code></td></tr>
+<tr><td class="optCmd">ispell</td>
+    <td>Spell checker</td></tr>
+<tr><td class="optCmd">man</td>
+    <td>Display a man page</td></tr>
+<tr><td class="optCmd">passwd</td>
+    <td>Alter your password</td></tr>
+<tr><td class="optCmd">source</td>
+    <td>Run a C shell script, e.g. <code>source ~/.cshrc</code></td></tr>
+<tr><td class="optCmd">w</td>
+    <td>Who is logged on</td></tr>
+<tr><td class="optCmd">which</td>
+    <td>Show the full path of a program</td></tr>
+<tr><td class="optCmd">xargs</td>
+    <td>Organizes multiple command line arguments</td></tr>
+<tr><td class="optCmd">xrdb</td>
+    <td>Manage your X11 resources, e.g. <code>xrdb .Xdefaults</code></td></tr>
+</tbody></table>
+
+<p><strong>Note</strong>: Linux is astonishingly diverse in its manifestations,
+and is evolving rapidly.  Consequently you may find that as many as 5 to 10% of
+the above commands are unavailable on your system.  The common commands
+are quite stable, however.</p>
+
+
+<!-- ================================================================== -->
+<h2><a name="examples">Some examples</a></h2>
+<p>Some of the commands in <a href="#common">Some common commands</a> are so
+common and useful that they deserve a few more comments.</p>
+
+<h3><code>gzip</code> and <code>gunzip</code></h3>
+<p>These are used for compressing and uncompressing files.  Typically you
+will have a file, for example <code>Study0223.tar</code>, that you want to 
+compress before FTP'ing it to some other site.  You just need to enter
+</p><pre class="screen">    gzip Study0223.tar
+</pre>
+<p>and the original file will be replaced by one named 
+<code>Study0223.tar.gz</code>.   Conversely, if you receive a file with 
+the tell-tale extension <code>.gz</code> then entering
+</p><pre class="screen">    gunzip Study0223.tar.gz
+</pre>
+<p>will expand the file to one named <code>Study0223.tar</code>.  The 
+uncompression command <code>gunzip</code> is especially useful since it 
+can deal with several compression formats: <code>gzip</code>, <code>zip</code>,
+<code>compress</code>, and <code>pack</code>.  The detection of the input 
+format is automatic.</p>
+
+<h3><code>tar</code></h3>
+<p>The name <code>tar</code> comes from Tape ARchive, but is more commonly
+used to bundle a group of files and write it to another file, rather 
+than to a tape.  A simple example would be:</p><pre class="screen">    tar cvf <em>tarfile.tar file1.eeg file2.eeg ...</em>
+</pre>
+
+<p>This takes any number of files <code><em>file1.eeg file2.eeg ...</em></code>,
+specified explicitly or using wildcard characters ('<code>*</code>', 
+'<code>?</code>' etc), and bundles them into an output file 
+<code>tarfile.tar</code>.  The options are: <code>c</code> to create an 
+archive, <code>v</code> to do so verbosely, and <code>f</code> to output 
+to a file with the immediately following name.   (The <code>v</code> is 
+optional, but can be reassuring.)</p>
+
+<p>It is probably more common (and more powerful) to specify a
+<em>directory</em> instead of a list of input files, as in:
+</p><pre class="screen">    tar cvf /media/usb/backup.chris.jan.tar /suphys/chris
+</pre>
+<p>which is what I might do to back up my home directory, including all
+subdirectories.  A warning though: it is both illogical and
+<em>bad</em> to <code>tar</code> a directory and write the output file to
+that same directory!</p>
+
+<p>If you receive a tar file, say <code>somefile.tar</code>, then I suggest
+you first look at its contents by</p><pre class="screen">    tar tf somefile.tar
+</pre>
+<p>This will produce a list of the enclosed files, including any
+subdirectories.  When you untar the file, the listed files 
+including subdirectories  can be created in the current directory,
+and this might not be what you want.  It is advisable to use the <code>t</code>
+option to anticipate exactly what will
+happen when you extract the contents of the tar file.  Perhaps you 
+should move the tar file into a suitably-named subdirectory before
+extracting its contents.  What you <em>don't</em> want to do is extract
+lots of files, and then find that they are hopelessly mixed up with
+pre-existing files</p>
+
+<p>When you are satisfied that the tar file is in an appropriate
+location, you can extract everything with</p><pre class="screen">    tar xvf somefile.tar
+</pre>
+<p>where <code>x</code> means extract, and <code>v</code> and <code>f</code> 
+have the usual meanings.  Users will occasionally wish to extract a specific
+file or files: that is easily achieved by appending the names of the
+required files, as in</p><pre class="screen">    tar xvf somefile.tar go-nogo/10038259/slice5.dcm
+</pre>
+<p>The requested file '<code>slice5.dcm</code>' will then be created in a
+subdirectory '<code>go-nogo/10038259/</code>' under the current directory.</p>
+
+<h3><code>find</code></h3>
+<p>While the command <code>locate</code> may be adequate much of the time for 
+tracking down files, the command <code>find</code> is far more powerful.  
+The basic usage is <code>find <em>directory criterion</em></code>.  
+It searches in directory <code><em>directory</em></code>, and all 
+subdirectories, for anything matching <code><em>criterion</em></code>.  
+Thus you could enter
+</p><pre class="screen">    find ~/docs -name thesis.doc
+</pre> 
+<p>to look for <code>thesis.doc</code> among your personal documents, or
+</p><pre class="screen">    find ~ -name 'note*'
+</pre>
+<p>to find files with names matching <code>note*</code>.  (Note that the 
+quotes are <em>essential</em> when using wildcard characters with 
+<code>find</code>.)</p>
+
+<p>You can search for particular directory names, as well as 
+file names.  If you wish to be specific, you could expand the
+criterion by appending <code>-type d</code> or <code>-type f</code>.</p>
+
+<p>The criteria can go far beyond the simple cases above.  Here are
+a few more examples:
+</p><table class="general">
+<tbody><tr><td><code>find ~ -atime -4</code></td>
+    <td>All files under <code>~</code> accessed in last 4 days</td></tr>
+<tr><td><code>find ~ -mtime -4</code></td>
+    <td>All files under <code>~</code> modified in last 4 days</td></tr>
+<tr><td><code>find / -user chris</code></td>
+    <td>List all files owned by <code>chris</code></td></tr>
+<tr><td><code>find ~ -name 'core.*' -exec rm {} \;</code></td>
+    <td>Delete all core dumps</td></tr>
+</tbody></table>
+
+<p>The <code>find</code> command is even more powerful in combination with
+others.  A very common example is this: you want to identify a subset of
+files (<code>*.tex</code>) within some directory (<code>~/docs</code>) and all
+subdirectories; and to search within this subset of files for a particular
+string of characters ('needle').  The way to do this is:
+</p><pre class="screen">    find ~/docs -name '*.tex' | xargs grep -n 'needle'
+</pre>
+<p>The output shows, for each match, the file, line number and the line itself.
+</p>
+
+<p>The following shows progressive elaboration of a <code>find</code>, which 
+ultimately performs a selective archive of all recently modified files.
+</p><table class="general">
+<tbody><tr><td><pre>find ./progs ./tex -ctime -75 -type f</pre></td>
+    <td>All files under <code>./progs</code> and <code>./tex</code> that have 
+    been created, modified, or had their status changed in the last 75 
+    days</td></tr>
+<tr><td><pre>find ./progs ./tex -ctime -75 -type f \
+     -o -path ./progs/corejsf -prune  \
+     -o -path ./progs/jeda/build -prune</pre></td>
+    <td>Ditto, but exclude two subdirectories</td></tr>
+<tr><td><pre>find ./progs ./tex -ctime -75 -type f \
+     -o -path ./progs/corejsf -prune  \
+     -o -path ./progs/jeda/build -prune \
+     | xargs tar cvf backup.tar
+    </pre></td>
+    <td>Ditto, but additionally bundle the files as <code>backup.tar</code>
+    </td></tr>
+</tbody></table>
+
+
+<h3><code>make</code></h3>
+<p>It is very common to use the <code>make</code> utility when compiling
+programs, although <code>make</code> can be used for doing all sorts of
+operations.  This utility looks for a file, conventionally named
+<code>Makefile</code>, and performs any one of several sets of commands.</p>
+
+<p>An example <code>Makefile</code> is as follows:
+</p><pre class="screen">    PROG    =eegfit
+    CC      =gcc
+    
+    # For profiling support add -pg, for which -g3 is a prerequisite
+    CFLAGS_G        = -Wall
+    CFLAGS_D        = -g3 -ggdb
+    CFLAGS_R        = -O 
+    CFLAGS  =$(CFLAGS_G) $(CFLAGS_D)
+    
+    # For profiling support add -pg
+    LFLAGS_G        = -lX11 -lm -lncurses -L/usr/X11R6/lib
+    LFLAGS_D        = 
+    LFLAGS_R        = 
+    LFLAGS  =$(LFLAGS_G) $(LFLAGS_D)
+    
+    SOURCES = eegfit.c spectfit.c xlib.c gammq.c \
+              gser.c gcf.c gammln.c ran1.c gasdev.c
+    OBJECTS = eegfit.o spectfit.o xlib.o gammq.o \
+              gser.o gcf.o gammln.o ran1.o gasdev.o
+    
+    %.o: %.c
+            $(CC) $(CFLAGS) -c $&lt;
+    
+    eegfit: $(OBJECTS)
+            $(CC) -o $@ $(OBJECTS) $(LFLAGS)
+    
+    clean:
+            rm -f *.o $(PROG)
+    
+    all:
+            $(CC) $(CFLAGS) -c $(SOURCES)
+            $(MAKE)
+    
+    tar:
+            tar -cvf eegfit.tar $(SOURCES) *.h makefile
+    
+    # Dependencies
+    eegfit.o:       parameter.h
+    spectfit.o:     parameter.h xlib.h
+    xlib.o:         xlib.h
+</pre>
+
+<p>This example makefile specifies all the files involved in a program,
+<code>eegfit</code>, and all the operations required to achieve certain ends:
+compilation, starting afresh, and creating a tar archive.  Having created
+this makefile, it is then just a matter of typing one of the following:<br>
+</p><table class="general">
+<tbody><tr><td><code>make eegfit</code></td>
+    <td>Compile the application</td></tr>
+<tr><td><code>make</code></td>
+    <td>Ditto</td></tr>
+<tr><td><code>make clean</code></td>
+    <td>Delete the object files and the executable</td></tr>
+<tr><td><code>make tar</code></td>
+    <td>Bundle all source files into <code>eegfit.tar</code></td></tr>
+</tbody></table>
+
+<!-- ================================================================== -->
+<h2><a name="environment">Environment</a></h2>
+<p>The key to convenient program execution is understanding your
+<code>$PATH</code>.  This is an 'environment' variable: it can be
+examined by typing <code>echo $PATH</code>, and it lists all directories
+that are searched automatically whenever you try to run a program.  If
+a program with the name you specify is found in any of the directories
+listed in <code>$PATH</code>, then it is run  otherwise you get a
+message <code>Command not found</code>.</p>
+
+<p>As an example of displaying the <code>$PATH</code>:
+</p><pre class="screen">    echo $PATH
+    /bin:/usr/bin:/usr/bin/X11:/usr/local/bin:/usr/X11R6/bin:.
+</pre>
+
+<p>The presence of '<code>/bin</code>' is the reason you can type 
+<code>vi</code> instead of having to type the full, explicit path 
+<code>/bin/vi</code>, whenever you want to edit a file.  For the same 
+reason the '<code>.</code>' at the end means that programs in your current 
+directory can be run without any directory prefix.</p>
+
+<p>You are free to alter the <code>$PATH</code> variable, and the best way
+to do so is in your <code>.cshrc</code> file.  This is a configuration
+file for your command interpreter or 'shell', and can be viewed by
+<code>less ~/.cshrc</code>.  You will generally see in it references to
+<code>setenv</code> and much else besides.  If you want to prepend some
+directory to your <code>$PATH</code> (your personal program directory
+<code>~/bin</code>, say) then type either of
+</p><pre class="screen">    setenv PATH ~/bin:$PATH
+    set path=(~/bin $path)
+</pre>
+<p>(both do the same thing), and from then on you will be able to run your
+program <code>~/bin/model</code> (say) just by typing <code>model</code>,
+irrespective of your current directory.</p>
+
+<p>Actually it is better to place the above line in your <code>.cshrc</code>
+file  otherwise the change is limited to the terminal window in 
+which you typed it.</p>
+
+<p>Typing <code>printenv</code> will give you a full list of environment
+variables: those you specified in your <code>.cshrc</code> file, plus those
+that the operating system sets automatically.  You will see
+<code>$PATH</code>, discussed above, the environment variable
+<code>$PRINTER</code>, which specified your preferred printer,
+<code>$DISPLAY</code>, which says where graphics are to appear, and much 
+else.</p>
+
+<p>Note the <code>alias</code> commands in <code>.cshrc</code>, which 
+define personal keyboard shortcuts.  For example if you routinely type
+</p><pre class="screen">   ssh joe.physics.usyd.edu.au
+</pre>
+<p>to access the computer '<code>joe</code>' then you can add
+</p><pre class="screen">   alias ssh-joe 'ssh joe.physics.usyd.edu.au'
+</pre>
+<p>to your <code>.cshrc</code> and then access <code>joe</code> just by typing
+<code>ssh-joe</code>.</p>
+
+
+<!-- ================================================================== -->
+<h2><a name="shell">Shell programming</a></h2>
+<p>Once you are comfortable with Unix/Linux commands, you can considering
+even more interesting operations.</p>
+
+<p>Consider the hypothetical problem of separating a collection of
+serially-numbered files with names like <code>mr2366.dcm</code>,
+<code>mr2367.dcm</code>, <code>mr2368.dcm</code>, .  You want to copy
+just the <em>odd</em>-numbered slices to a neighbouring directory named
+<code>Odd</code>, while also renaming the copied files to 
+<code>mrOdd2367.dcm</code>, <code>mrOdd2369.dcm</code>, .  If there 
+were just three or four files needing to be moved, then you could issue a 
+series of explicit <code>mv</code> commands, one per file.  But for any 
+more you should consider using the programming power of the shell.</p>
+
+<p>In the above hypothetical case, the solution would be to enter the
+following three lines at the shell prompt:
+</p><pre class="screen">    foreach f ( *[13579].dcm )
+    mv $f ../Odd/`echo $f | sed 's/mr/mrOdd/'`
+    end
+</pre>
+
+<p>The first line looks for all odd-numbered slices, and for each creates
+a <code>mv</code> command defined by the second line.  As a result, a
+series of commands, like those that you could have typed manually, is
+executed automatically:
+</p><pre class="screen">    mv mr2367.dcm ../Odd/mrOdd2367.dcm
+    mv mr2369.dcm ../Odd/mrOdd2369.dcm
+    :
+</pre>
+
+<p>Shell programming is undoubtedly an advanced topic.  However it is
+often the perfect solution to a problem.  Long or frequently-used sets
+of commands can be bundled into a <em>shell script</em>, and the script 
+can then be run as a single command.  (You will need to <code>chmod</code>
+it as well, to make it executable.)  In the above example, the 3-line
+script might be named <code>extract_odd</code>, and run simply by typing
+this name.  It doesn't get much easier than that.</p>
+
+<p>Scripting can be about moving files and manipulating filenames.  It can
+also be about modifying the contents of files.  <code>sort</code>,
+<code>cut</code> and <code>join</code> can be used to rearrange tabular 
+material very simply.  The utilities <code>sed</code> and <code>gawk</code> 
+provide more powerful programmatic methods for modifying, collating, and 
+extracting values in text files.  For example, if a file contains columns 
+of numbers, and you want to see just the first column and the ratio of the 
+next two, then
+</p><pre class="screen">    gawk '{if(NF&gt;=3) print $1,$2/$3}' dat.txt
+</pre>
+<p>will do the job.</p>
+
+<p>Finally, the code below is a realistic example of a shell script, whose
+goal should be obvious.  To maximize its utility the script (named
+<code>t2ps</code>) is placed in <code>~/bin</code>, which should be made 
+part of your <code>$PATH</code>.</p>
+
+<pre class="screen">#!/bin/tcsh
+if ($#argv == 0) then
+  echo -n "File(s): "
+  set filelist = ($&lt;)
+else
+  set filelist = ($argv[*])
+endif
+
+# Strip extensions, if present
+set filelist = ($filelist:gr)
+
+# Process each file, checking first that each exists
+foreach filename ( $filelist )
+  if ( -e $filename.tex &amp;&amp; -f $filename.tex ) then
+    latex $filename.tex &amp;&amp; dvips $filename -o &amp;&amp; rm $filename.{aux,dvi,log} 
+  else
+    echo "t2ps: input file $filename.tex not found"
+  endif
+end
+</pre>
+
+<p>Shell programming is a big topic.  Reading <code>man tcsh</code> (or 
+<code>man bash</code>) is a start, but a difficult one.  I recommend books like 
+<em>Linux in a Nutshell</em> and <em>Redhat Linux Toolbox</em>, which concisely 
+cover all topics and provide brief examples.  Also I like and recommend the 
+many freely-available reference cards: see, for example, the collection at
+<a href="http://www.cheat-sheets.org/">www.cheat-sheets.org</a>.
+</p>
+
+<!-- ================================================================== -->
+<p>&nbsp;</p>
+<table width="100%" border="1">
+<tbody><tr>
+  <td align="left">
+    Validate
+    <a href="http://validator.w3.org/check?uri=referer" onclick="void(window.open(this.href,&#39;&#39;,&#39;&#39;)); return false;">
+        HTML</a>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" onclick="void(window.open(this.href,&#39;&#39;,&#39;&#39;)); return false;">
+        CSS</a>
+    </td>
+  <td align="center">
+    <span style="font-size:smaller;font-family:Ariel,sans-serif;color:#666666">
+      Last changed 2011-04-05
+    </span></td>
+  <td align="right">
+    <a href="mailto:c.rennie AT physics.usyd.edu.au">Chris Rennie</a></td>
+</tr>
+</tbody></table>
+
+
+
+
+</body></html>
