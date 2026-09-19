@@ -1,0 +1,59 @@
+{
+  "id": "Docker",
+  "slug": "docker",
+  "title": "Docker W",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#Docker",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "docker.com",
+      "url": "https://www.docker.com/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Docker CLI Cheat Sheet by Docker [pdf] (docker.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/docker_cheatsheet_20230106.pdf"
+      ],
+      "online": [
+        "https://docs.docker.com/get-started/docker_cheatsheet.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://docs.docker.com/get-started/docker_cheatsheet.pdf"
+      ]
+    },
+    {
+      "title": "The Ultimate Docker Cheat Sheet by @collabnix [html] (dockerlabs.collabnix.com)",
+      "saved": [],
+      "online": [
+        "https://dockerlabs.collabnix.com/docker/cheatsheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dockerlabs.collabnix.com/docker/cheatsheet/"
+      ]
+    },
+    {
+      "title": "Awesome Docker Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/docker.sh"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/docker.sh"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/docker_cheatsheet_20230106.pdf",
+      "filename": "docker_cheatsheet_20230106.pdf"
+    }
+  ],
+  "path": "cloud-and-devops/docker"
+}

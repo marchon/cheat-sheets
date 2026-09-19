@@ -1,0 +1,109 @@
+{
+  "id": "Markdown",
+  "slug": "markdown",
+  "title": "Markdown (CommonMark)",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#Markdown",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Markdown",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Markdown"
+  ],
+  "official_websites": [
+    {
+      "label": "daringfireball.net/projects/markdown/",
+      "url": "https://daringfireball.net/projects/markdown/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Markdown Syntax [pdf] (github.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/markdown-cheatsheet-online.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Markdown Cheat Sheet (A quick reference to the Markdown syntax) by Matt Cone [html] (markdownguide.org)",
+      "saved": [],
+      "online": [
+        "https://www.markdownguide.org/cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.markdownguide.org/cheat-sheet/"
+      ]
+    },
+    {
+      "title": "Markdown Cheatsheet by Adam Pritchard [html] (github.com)",
+      "saved": [],
+      "online": [
+        "https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"
+      ]
+    },
+    {
+      "title": "Markdown cheat sheet by PaperHive UG [html] (paperhive.org)",
+      "saved": [],
+      "online": [
+        "https://paperhive.org/help/markdown"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://paperhive.org/help/markdown"
+      ]
+    },
+    {
+      "title": "Markdown Cheat Sheet by Zoho Corporation Pvt. Ltd  [html] (site24x7.com)",
+      "saved": [],
+      "online": [
+        "https://www.site24x7.com/help/markdown-cheat-sheet.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.site24x7.com/help/markdown-cheat-sheet.html"
+      ]
+    },
+    {
+      "title": "The Ultimate Markdown Cheat Sheet by Mahbub Zaman [html] (towardsdatascience.com)",
+      "saved": [],
+      "online": [
+        "https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0"
+      ]
+    },
+    {
+      "title": "Markdown cheat sheet [html] (warpedvisions.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/markdown-cheat-sheet.20220709.html"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Markdown: Syntax [html] (daringfireball.net)",
+      "saved": [],
+      "online": [
+        "http://daringfireball.net/projects/markdown/syntax"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://daringfireball.net/projects/markdown/syntax"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/markdown-cheatsheet-online.pdf",
+      "filename": "markdown-cheatsheet-online.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/markdown-cheat-sheet.20220709.html",
+      "filename": "markdown-cheat-sheet.20220709.html"
+    }
+  ],
+  "path": "file-formats/markdown"
+}

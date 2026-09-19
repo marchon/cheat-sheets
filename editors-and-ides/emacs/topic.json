@@ -1,0 +1,71 @@
+{
+  "id": "Emacs",
+  "slug": "emacs",
+  "title": "Emacs",
+  "group": "editors-and-ides",
+  "source_anchor": "https://www.cheat-sheets.org/#Emacs",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Emacs",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Emacs"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.gnu.org/software/emacs/",
+      "url": "http://www.gnu.org/software/emacs/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "GNU Emacs Reference Card by Steven Gildea [pdf] (refcards.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/emacs-refcard-a4.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Bash Emacs Editing Mode Cheat Sheet by Peteris Krumins [html, pdf, tex, txt] (catonmat.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/readline-emacs-editing-mode-cheat-sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/readline-emacs-editing-mode-cheat-sheet.tex",
+        "https://www.cheat-sheets.org/saved-copy/readline-emacs-editing-mode-cheat-sheet.txt"
+      ],
+      "online": [
+        "http://www.catonmat.net/blog/bash-emacs-editing-mode-cheat-sheet/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "tldr emacs [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/project/tldr/command/emacs/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cheat-sheets.org/project/tldr/command/emacs/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/emacs-refcard-a4.pdf",
+      "filename": "emacs-refcard-a4.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/readline-emacs-editing-mode-cheat-sheet.pdf",
+      "filename": "readline-emacs-editing-mode-cheat-sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/readline-emacs-editing-mode-cheat-sheet.tex",
+      "filename": "readline-emacs-editing-mode-cheat-sheet.tex"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/readline-emacs-editing-mode-cheat-sheet.txt",
+      "filename": "readline-emacs-editing-mode-cheat-sheet.txt"
+    }
+  ],
+  "path": "editors-and-ides/emacs"
+}

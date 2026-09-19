@@ -1,0 +1,82 @@
+{
+  "id": "ASP",
+  "slug": "asp",
+  "title": "ASP - Active Server Pages",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#ASP",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Active_Server_Pages",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Active_Server_Pages"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "DotNET",
+      "label": ".NET"
+    },
+    {
+      "id": "WebMatrix",
+      "label": "WebMatrix"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Core ASP.NET by Holger Schwichtenberg [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/core-aspnet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/core-aspnet"
+      ]
+    },
+    {
+      "title": "ASP / VBScript Cheat Sheet by Dave Child [png, pdf] (addedbytes.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/asp_cheat_sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/asp_cheat_sheet.pdf"
+      ],
+      "online": [
+        "http://www.addedbytes.com/asp/asp-vbscript-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.addedbytes.com/asp/asp-vbscript-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "ASP.NET 2.0 Page Life Cycle & Common Events [pdf] (john-sheehan.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/aspnet-life-cycles-events.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Getting Started with ASP.NET MVC 1.0 by Simone Chiaretta and Keyvan Nayyeri [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-aspnet-mvc-10"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-aspnet-mvc-10"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/asp_cheat_sheet.png",
+      "filename": "asp_cheat_sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/asp_cheat_sheet.pdf",
+      "filename": "asp_cheat_sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/aspnet-life-cycles-events.pdf",
+      "filename": "aspnet-life-cycles-events.pdf"
+    }
+  ],
+  "path": "web/asp"
+}

@@ -1,0 +1,110 @@
+{
+  "id": "LaTeX",
+  "slug": "la-te-x",
+  "title": "LaTeX",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#LaTeX",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/LaTeX",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/LaTeX"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.latex-project.org/",
+      "url": "http://www.latex-project.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "MathML",
+      "label": "MathML"
+    },
+    {
+      "id": "TeX",
+      "label": "TeX"
+    },
+    {
+      "id": "LaTeX-Suite",
+      "label": "LaTeX-Suite"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Latex cheat sheet by Winston Chang [pdf, ps, tex, png:page1, png:page2] (www.stdout.org/~winston/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/latexsheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/latexsheet.ps",
+        "https://www.cheat-sheets.org/saved-copy/latexsheet.tex",
+        "https://www.cheat-sheets.org/saved-copy/latexsheet-0.png",
+        "https://www.cheat-sheets.org/saved-copy/latexsheet-1.png"
+      ],
+      "online": [
+        "http://www.stdout.org/~winston/latex/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "LaTeX cheat sheet by Dave Richeson [pdf] (divisbyzero.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/LaTeX_cheat_sheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "AMS-LaTeX Reference Card by Joseph H. Silverman [pdf, dvi, TeX source] (math.brown.edu/~jhs/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/LaTeXRefCard.v2.0.pdf",
+        "https://www.cheat-sheets.org/saved-copy/LaTeXRefCard.v2.0.dvi",
+        "https://www.cheat-sheets.org/saved-copy/LaTeXRefCard.v2.0.tex"
+      ],
+      "online": [
+        "http://www.math.brown.edu/~jhs/ReferenceCards/LaTeXRefCard.v2.0.pdf",
+        "http://www.math.brown.edu/~jhs/ReferenceCards/LaTeXRefCard.v2.0.dvi",
+        "http://www.math.brown.edu/~jhs/ReferenceCards/LaTeXRefCard.v2.0.tex"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/latexsheet.pdf",
+      "filename": "latexsheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/latexsheet.ps",
+      "filename": "latexsheet.ps"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/latexsheet.tex",
+      "filename": "latexsheet.tex"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/latexsheet-0.png",
+      "filename": "latexsheet-0.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/latexsheet-1.png",
+      "filename": "latexsheet-1.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/LaTeX_cheat_sheet.pdf",
+      "filename": "LaTeX_cheat_sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/LaTeXRefCard.v2.0.pdf",
+      "filename": "LaTeXRefCard.v2.0.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/LaTeXRefCard.v2.0.dvi",
+      "filename": "LaTeXRefCard.v2.0.dvi"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/LaTeXRefCard.v2.0.tex",
+      "filename": "LaTeXRefCard.v2.0.tex"
+    }
+  ],
+  "path": "file-formats/la-te-x"
+}

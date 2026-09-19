@@ -1,0 +1,62 @@
+{
+  "id": "MicrosoftExcel",
+  "slug": "microsoft-excel",
+  "title": "Microsoft Excel - Microsoft Office Excel and VBA - Visual Basic for Applications",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#MicrosoftExcel",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Microsoft_Excel",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Microsoft_Excel"
+  ],
+  "official_websites": [
+    {
+      "label": "office.microsoft.com/en-us/excel/",
+      "url": "http://office.microsoft.com/en-us/excel/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "MicrosoftProject",
+      "label": "Microsoft Office"
+    },
+    {
+      "id": "MicrosoftProject",
+      "label": "Microsoft Project (MSP)"
+    },
+    {
+      "id": "MicrosoftVisualStudio",
+      "label": "Microsoft Visual Studio"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Excel III Cheat Sheet - Microsoft Excel XP/2003, Level 300 by SHARED COMPUTING SERVICES [pdf] (scs.unl.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/excel300.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Excel VBA Programming Functions [pdf] (cheat-sheets.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Excel_VBA_Programming_Functions_1.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/excel300.pdf",
+      "filename": "excel300.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Excel_VBA_Programming_Functions_1.pdf",
+      "filename": "Excel_VBA_Programming_Functions_1.pdf"
+    }
+  ],
+  "path": "applications/microsoft-excel"
+}

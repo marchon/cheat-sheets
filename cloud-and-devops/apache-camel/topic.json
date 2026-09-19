@@ -1,0 +1,44 @@
+{
+  "id": "ApacheCamel",
+  "slug": "apache-camel",
+  "title": "Apache Camel",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#ApacheCamel",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Apache_Camel",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Apache_Camel"
+  ],
+  "official_websites": [
+    {
+      "label": "camel.apache.org",
+      "url": "http://camel.apache.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    },
+    {
+      "id": "DesignPattern",
+      "label": "Design Pattern"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Enterprise Integration Patterns W ^ with Apache Camel by Claus Ibsen [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/enterprise-integration",
+        "https://en.wikipedia.org/wiki/Enterprise_Integration_Patterns"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/enterprise-integration"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/apache-camel"
+}

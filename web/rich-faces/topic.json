@@ -1,0 +1,61 @@
+{
+  "id": "RichFaces",
+  "slug": "rich-faces",
+  "title": "RichFaces",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#RichFaces",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/RichFaces",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/RichFaces"
+  ],
+  "official_websites": [
+    {
+      "label": "jboss.org/richfaces/",
+      "url": "http://www.jboss.org/richfaces/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "AJAX",
+      "label": "AJAX"
+    },
+    {
+      "id": "Java",
+      "label": "Java"
+    },
+    {
+      "id": "JavaServerFaces",
+      "label": "JavaServer Faces"
+    },
+    {
+      "id": "Seam",
+      "label": "Seam"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "RichFaces 4.0: A Next Generation JSF Framework by Nick Belaevski, Ilya Shailkovsky, Max Katz, and Jay Balunas [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/richfaces-40-next-generation"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/richfaces-40-next-generation"
+      ]
+    },
+    {
+      "title": "JBoss RichFaces by Nick Belaevski, Ilya Shaikovsky, Jay Balunas, and Max Katz [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/richfaces"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/richfaces"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "web/rich-faces"
+}

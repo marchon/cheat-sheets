@@ -1,0 +1,53 @@
+{
+  "id": "Lucene",
+  "slug": "lucene",
+  "title": "Lucene",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#Lucene",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Lucene",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Lucene"
+  ],
+  "official_websites": [
+    {
+      "label": "lucene.apache.org",
+      "url": "https://lucene.apache.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    },
+    {
+      "id": "ApacheSolr",
+      "label": "Apache Solr"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Understanding Lucene (Powering Better Search Results) by Erik Hatcher [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/lucene"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/lucene"
+      ]
+    },
+    {
+      "title": "Official Documentation [html] (lucene.apache.org)",
+      "saved": [],
+      "online": [
+        "http://lucene.apache.org/java/docs/index.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://lucene.apache.org/java/docs/index.html"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/lucene"
+}

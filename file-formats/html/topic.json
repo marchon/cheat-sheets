@@ -1,0 +1,436 @@
+{
+  "id": "HTML",
+  "slug": "html",
+  "title": "HTML - HyperText Markup Language",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#HTML",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/HTML",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/HTML"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.w3.org/html/",
+      "url": "http://www.w3.org/html/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Characters",
+      "label": "Characters"
+    },
+    {
+      "id": "CSS",
+      "label": "CSS"
+    },
+    {
+      "id": "JavaScript",
+      "label": "JavaScript"
+    },
+    {
+      "id": "OpenGraph",
+      "label": "Open Graph"
+    },
+    {
+      "id": "XHTML",
+      "label": "XHTML"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "HTML/XTML in one page [html] (html.su)",
+      "saved": [],
+      "online": [
+        "https://www.cheat-sheets.org/sites/html.su/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "HTML 5 Cheat Sheet by Jamie Spencer [html, jpg, pdf] (makeawebsitehub.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/HTML5-mega-cheat-sheet.jpg",
+        "https://www.cheat-sheets.org/saved-copy/HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf"
+      ],
+      "online": [
+        "http://makeawebsitehub.com/the-html-5-mega-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://makeawebsitehub.com/the-html-5-mega-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "HTML quick reference by Ian Graham [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/html1_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "CDBurnerXP - XHTML Cheat Sheet in PDF format [pdf] (albany.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/htmlcheatsheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "HTML5 Canvas Cheat Sheet [pdf, png] (nihilogic.dk)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/HTML5_Canvas_Cheat_Sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/HTML5_Canvas_Cheat_Sheet.png"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "HTML Cheat Sheet by Dave Child [png, pdf] (addedbytes.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/html-cheat-sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/html-cheat-sheet.pdf"
+      ],
+      "online": [
+        "https://cheatography.com/davechild/cheat-sheets/html4/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheatography.com/davechild/cheat-sheets/html4/",
+        "https://web.archive.org/web/*/http://www.addedbytes.com/cheat-sheets/html-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "HTML & XHTML Tag Quick Reference [pdf] (albany.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/HTML-XHTML_Tag_Sheet.pdf"
+      ],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/*/http://library.albany.edu/imc/pdf/HTML-XHTML_Tag_Sheet.pdf"
+      ]
+    },
+    {
+      "title": "HTML5 Cheat Sheet by Bryan / ReviewBox [png and pdf, spanish (latin america) jpg and pdf] (hostingreviewbox.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/html5-cheat-sheet-1.png",
+        "https://www.cheat-sheets.org/saved-copy/html5-cheat-sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/html5spanish-page-001.jpg",
+        "https://www.cheat-sheets.org/saved-copy/html5spanish.pdf"
+      ],
+      "online": [
+        "http://www.hostingreviewbox.com/html5-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.hostingreviewbox.com/html5-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "HTML5 Cheat Sheet by Robert Mening [png, pdf] (websitesetup.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/html5-cheat-sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/HTML5-cheat-sheet.pdf"
+      ],
+      "online": [
+        "http://websitesetup.org/html5-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://websitesetup.org/html5-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "The Ultimate HTML 5 Cheat Sheet – 2021 (an easy-to-use HTML 5 cheat sheet for beginners) [jpg, pdf] (wpkube.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/html-chatsheet.20210604.jpg",
+        "https://www.cheat-sheets.org/saved-copy/html-chatsheet.20210604.pdf"
+      ],
+      "online": [
+        "https://www.wpkube.com/html5-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.wpkube.com/html5-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "HTML5: The Evolution of Web Standards by James Sugrue [pdf] (dzone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/6847784-rc-123-html5.pdf"
+      ],
+      "online": [
+        "https://dzone.com/refcardz/html5-new-standards-web-interactivity"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/html5-new-standards-web-interactivity"
+      ]
+    },
+    {
+      "title": "Core HTML by Andy Harris [pdf] (dzone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/rc064-010d-core_html_1.pdf"
+      ],
+      "online": [
+        "https://dzone.com/refcardz/core-html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/core-html"
+      ]
+    },
+    {
+      "title": "HTML 5 Canvas A Web Standard for Dynamic Graphics by Simon Sarris [pdf] (dzone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/rc151-010d-html5-canvas.pdf"
+      ],
+      "online": [
+        "https://dzone.com/refcardz/html5-canvas-web-standard"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/html5-canvas-web-standard"
+      ]
+    },
+    {
+      "title": "HTML5 WebSocket: Full-duplex, Real-time Web Communication by Peter Lubbers [pdf] (dzone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/rc152-010d-websocket_2.pdf"
+      ],
+      "online": [
+        "https://dzone.com/refcardz/html5-websocket"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/html5-websocket"
+      ]
+    },
+    {
+      "title": "HTML Cheat Sheet (For Beginners) by  [pdf] (hostingfacts.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/hf-html-cheat-sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/HTML_CHEAT_SHEET_PNG.png"
+      ],
+      "online": [
+        "https://hostingfacts.com/html-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://hostingfacts.com/html-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "HTML Cheat Sheet + Free PDF Download by Matt Banner [jpg, pdf] (onblastblog.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/HTML_5_Cheat_Sheet.jpg",
+        "https://www.cheat-sheets.org/saved-copy/HTML5-Cheat-Sheet.pdf"
+      ],
+      "online": [
+        "http://www.onblastblog.com/html5-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.onblastblog.com/html5-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "Ultimate HTML Cheatsheet by Matt Ahlgren [png, pdf] (websitehostingrating.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Ultimate_HTML_Cheatsheet.png",
+        "https://www.cheat-sheets.org/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf"
+      ],
+      "online": [
+        "https://www.websitehostingrating.com/html-css-php-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.websitehostingrating.com/html-css-php-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "HTML Cheat Sheet [html] (psacake.com)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20200427204941/http://www.psacake.com/web/dy.asp"
+      ]
+    },
+    {
+      "title": "(X)HTML Elements and Attributes [html] (cookwood.com)",
+      "saved": [],
+      "online": [
+        "http://www.cookwood.com/html/extras/xhtml_ref.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.cookwood.com/html/extras/xhtml_ref.html"
+      ]
+    },
+    {
+      "title": "HTML Tags a free online cheatsheet by VisiBone [html] (html-tags.info)",
+      "saved": [],
+      "online": [
+        "http://html-tags.info/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://html-tags.info/"
+      ]
+    },
+    {
+      "title": "HTML & XHTML CheatSheet [html] (petefreitag.com)",
+      "saved": [],
+      "online": [
+        "http://www.petefreitag.com/cheatsheets/xhtml/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.petefreitag.com/cheatsheets/xhtml/"
+      ]
+    },
+    {
+      "title": "HTML Cheat Sheet: A list of common HTML codes and their purpose. [html] (angelfire.com)",
+      "saved": [],
+      "online": [
+        "http://www.angelfire.com/nm/thehtmlsource/html/cheatsheet.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.angelfire.com/nm/thehtmlsource/html/cheatsheet.html"
+      ]
+    },
+    {
+      "title": "The Funky Useful HTML Cheat Sheet [html] (webhostingsearch.com)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20160309015739/http://www.webhostingsearch.com/articles/html-cheat-sheet.php"
+      ]
+    },
+    {
+      "title": "HTML Cheat Sheet by Robert Duncan [html] (simplehtmlguide.com)",
+      "saved": [],
+      "online": [
+        "http://www.simplehtmlguide.com/cheatsheet.php"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.simplehtmlguide.com/cheatsheet.php"
+      ]
+    },
+    {
+      "title": "HTML CODES CHEAT SHEET [html] (killersites.com)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20071025095134/http://www.killersites.com/HTML_CODES/index.jsp"
+      ]
+    },
+    {
+      "title": "Awesome HTML5 Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/frontend/html5.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/frontend/html5.html"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML5-mega-cheat-sheet.jpg",
+      "filename": "HTML5-mega-cheat-sheet.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf",
+      "filename": "HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/html1_quickref.pdf",
+      "filename": "html1_quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/htmlcheatsheet.pdf",
+      "filename": "htmlcheatsheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML5_Canvas_Cheat_Sheet.pdf",
+      "filename": "HTML5_Canvas_Cheat_Sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML5_Canvas_Cheat_Sheet.png",
+      "filename": "HTML5_Canvas_Cheat_Sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/html-cheat-sheet.png",
+      "filename": "html-cheat-sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/html-cheat-sheet.pdf",
+      "filename": "html-cheat-sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML-XHTML_Tag_Sheet.pdf",
+      "filename": "HTML-XHTML_Tag_Sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/html5-cheat-sheet-1.png",
+      "filename": "html5-cheat-sheet-1.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/html5-cheat-sheet.pdf",
+      "filename": "html5-cheat-sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/html5spanish-page-001.jpg",
+      "filename": "html5spanish-page-001.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/html5spanish.pdf",
+      "filename": "html5spanish.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/html5-cheat-sheet.png",
+      "filename": "html5-cheat-sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML5-cheat-sheet.pdf",
+      "filename": "HTML5-cheat-sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/html-chatsheet.20210604.jpg",
+      "filename": "html-chatsheet.20210604.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/html-chatsheet.20210604.pdf",
+      "filename": "html-chatsheet.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/6847784-rc-123-html5.pdf",
+      "filename": "6847784-rc-123-html5.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/rc064-010d-core_html_1.pdf",
+      "filename": "rc064-010d-core_html_1.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/rc151-010d-html5-canvas.pdf",
+      "filename": "rc151-010d-html5-canvas.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/rc152-010d-websocket_2.pdf",
+      "filename": "rc152-010d-websocket_2.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/hf-html-cheat-sheet.pdf",
+      "filename": "hf-html-cheat-sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML_CHEAT_SHEET_PNG.png",
+      "filename": "HTML_CHEAT_SHEET_PNG.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML_5_Cheat_Sheet.jpg",
+      "filename": "HTML_5_Cheat_Sheet.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML5-Cheat-Sheet.pdf",
+      "filename": "HTML5-Cheat-Sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Ultimate_HTML_Cheatsheet.png",
+      "filename": "Ultimate_HTML_Cheatsheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf",
+      "filename": "HTML_CSS_PHP_cheat_sheet.pdf"
+    }
+  ],
+  "path": "file-formats/html"
+}

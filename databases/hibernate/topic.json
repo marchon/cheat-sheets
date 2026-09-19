@@ -1,0 +1,39 @@
+{
+  "id": "Hibernate",
+  "slug": "hibernate",
+  "title": "Hibernate",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#Hibernate",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Hibernate_(Java)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Hibernate_(Java)"
+  ],
+  "official_websites": [
+    {
+      "label": "hibernate.org",
+      "url": "http://www.hibernate.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Hibernate Search by John Griffin [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-with-hibernate"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-with-hibernate"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "databases/hibernate"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "Doctrine",
+  "slug": "doctrine",
+  "title": "Doctrine",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#Doctrine",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Doctrine_(PHP)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Doctrine_(PHP)"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.doctrine-project.org/",
+      "url": "http://www.doctrine-project.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "PHP",
+      "label": "PHP"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Doctrine Cheat Sheet  [pdf] (phpdoctrine.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Doctrine-Cheat-Sheet-1.1.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Doctrine-Cheat-Sheet-1.1.pdf",
+      "filename": "Doctrine-Cheat-Sheet-1.1.pdf"
+    }
+  ],
+  "path": "databases/doctrine"
+}

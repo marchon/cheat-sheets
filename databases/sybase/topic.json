@@ -1,0 +1,67 @@
+{
+  "id": "Sybase",
+  "slug": "sybase",
+  "title": "Sybase",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#Sybase",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Sybase_SQL_Server",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Sybase_SQL_Server"
+  ],
+  "official_websites": [
+    {
+      "label": "Sybase Database Management Software Official Website",
+      "url": "http://www.sybase.com/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "DB2",
+      "label": "DB2"
+    },
+    {
+      "id": "MySQL",
+      "label": "MySQL"
+    },
+    {
+      "id": "Oracle",
+      "label": "Oracle"
+    },
+    {
+      "id": "PostgreSQL",
+      "label": "PostgreSQL"
+    },
+    {
+      "id": "SQL",
+      "label": "SQL"
+    },
+    {
+      "id": "SQLServer",
+      "label": "SQL Server"
+    },
+    {
+      "id": "SQLite",
+      "label": "SQLite"
+    },
+    {
+      "id": "Sybase",
+      "label": "Sybase"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Sybase SQL Server 11 [html] (selectorweb.com)",
+      "saved": [],
+      "online": [
+        "http://www.selectorweb.com/sql_sybase.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.selectorweb.com/sql_sybase.html"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "databases/sybase"
+}

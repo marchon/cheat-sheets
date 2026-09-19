@@ -1,0 +1,130 @@
+{
+  "id": "Oracle",
+  "slug": "oracle",
+  "title": "Oracle",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#Oracle",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Oracle_database",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Oracle_database"
+  ],
+  "official_websites": [
+    {
+      "label": "oracle.com",
+      "url": "http://www.oracle.com/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "DB2",
+      "label": "DB2"
+    },
+    {
+      "id": "MySQL",
+      "label": "MySQL"
+    },
+    {
+      "id": "PostgreSQL",
+      "label": "PostgreSQL"
+    },
+    {
+      "id": "SQL",
+      "label": "SQL"
+    },
+    {
+      "id": "SQLite",
+      "label": "SQLite"
+    },
+    {
+      "id": "Sybase",
+      "label": "Sybase"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Oracle PL/SQL Cheatsheet [html] (yagc.ndo.co.uk)",
+      "saved": [],
+      "online": [
+        "http://www.yagc.ndo.co.uk/cheatsheets/plsql_cheatsheet.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Oracle Relational SQL Cheatsheet [html] (yagc.ndo.co.uk)",
+      "saved": [],
+      "online": [
+        "http://www.yagc.ndo.co.uk/cheatsheets/sql_cheatsheet.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Oracle Cheat Sheet [html] (vttoth.com)",
+      "saved": [],
+      "online": [
+        "http://www.vttoth.com/oracle.htm"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Oracle SQL quick reference by EM Group [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/oracle_sql_reference.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Oracle Server Architecture by Dr. Lars Ditzel [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/ORACLE%20Server%20Architecture.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "ORACLE Server 8i Quick Reference Card by Dr. Lars Ditzel [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/ORACLE%20Server%208i%20Quick%20Reference%20Card.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Oracle Server 9i - Quick Reference Guide [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/9iquickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "",
+      "saved": [],
+      "online": [
+        "http://radio.weblogs.com/0128037/stories/2003/10/21/oracleScmInstallationCheatSheet.html"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/oracle_sql_reference.pdf",
+      "filename": "oracle_sql_reference.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ORACLE%20Server%20Architecture.pdf",
+      "filename": "ORACLE Server Architecture.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ORACLE%20Server%208i%20Quick%20Reference%20Card.pdf",
+      "filename": "ORACLE Server 8i Quick Reference Card.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/9iquickref.pdf",
+      "filename": "9iquickref.pdf"
+    }
+  ],
+  "path": "databases/oracle"
+}

@@ -1,0 +1,257 @@
+{
+  "id": "Java",
+  "slug": "java",
+  "title": "Java",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Java",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Java_%28programming_language%29",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Java_%28programming_language%29"
+  ],
+  "official_websites": [
+    {
+      "label": "www.oracle.com/technetwork/java/",
+      "url": "http://www.oracle.com/technetwork/java/index.html"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Eclipse",
+      "label": "Eclipse"
+    },
+    {
+      "id": "EJB",
+      "label": "EJB"
+    },
+    {
+      "id": "GlassFish",
+      "label": "GlassFish"
+    },
+    {
+      "id": "Grails",
+      "label": "Grails"
+    },
+    {
+      "id": "GWT",
+      "label": "GWT"
+    },
+    {
+      "id": "Hibernate",
+      "label": "Hibernate"
+    },
+    {
+      "id": "IntelliJIDEA",
+      "label": "IntelliJ IDEA"
+    },
+    {
+      "id": "JavaPersistenceAPI",
+      "label": "Java Persistence API"
+    },
+    {
+      "id": "JavaEE",
+      "label": "Java EE"
+    },
+    {
+      "id": "JavaServerFaces",
+      "label": "JavaServer Faces"
+    },
+    {
+      "id": "JBoss",
+      "label": "JBoss"
+    },
+    {
+      "id": "JDBC",
+      "label": "JDBC"
+    },
+    {
+      "id": "JSP",
+      "label": "JSP"
+    },
+    {
+      "id": "JUnit",
+      "label": "JUnit"
+    },
+    {
+      "id": "Maven",
+      "label": "Maven"
+    },
+    {
+      "id": "NetBeans",
+      "label": "NetBeans"
+    },
+    {
+      "id": "RichFaces",
+      "label": "RichFaces"
+    },
+    {
+      "id": "SpringFramework",
+      "label": "Spring Framework"
+    },
+    {
+      "id": "SpringRoo",
+      "label": "Spring Roo"
+    },
+    {
+      "id": "Tapestry",
+      "label": "Tapestry"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Core Java by Cay S. Horstmann [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/core-java"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/core-java"
+      ]
+    },
+    {
+      "title": "Java 1.5 Cheat Sheet [html] (petefreitag.com)",
+      "saved": [],
+      "online": [
+        "http://www.petefreitag.com/cheatsheets/java/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.petefreitag.com/cheatsheets/java/"
+      ]
+    },
+    {
+      "title": "JAVA Language Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/java_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "JAVA Programming Guide - Quick Reference by Pinnacle Software Solutions [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/JAVA%20Programming%20Guide%20-%20Quick%20Reference.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "SAX 2.0 for Java (Core) by deepx [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/SAX%202.0%20for%20Java%20(Core).pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "SAX 2.0 for Java (Extensions and Helpers) by deepx [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/SAX%202.0%20for%20Java%20(Extensions%20and%20Helpers).pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Java Quick Reference [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/JQREF.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Java cheat sheet for C++ programmers by Erich Kaltofen  [html] (www4.ncsu.edu/%7Ekaltofen/)",
+      "saved": [],
+      "online": [
+        "http://www4.ncsu.edu/%7Ekaltofen/courses/Languages/JavaExamples/cpp_vs_java/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www4.ncsu.edu/%7Ekaltofen/courses/Languages/JavaExamples/cpp_vs_java/"
+      ]
+    },
+    {
+      "title": "Core Java Concurrency by Alex Miller [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/core-java-concurrency"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/core-java-concurrency"
+      ]
+    },
+    {
+      "title": "Using XML in Java by Masoud Kalali [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/using-xml-java"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/using-xml-java"
+      ]
+    },
+    {
+      "title": "Getting Started with Java GUI Development by James Sugrue [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-java-gui"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-java-gui"
+      ]
+    },
+    {
+      "title": "tldr java [html] (cheat-sheets.org). See also: tldr *java*",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/project/tldr/command/java/",
+        "http://cheat-sheets.org/project/tldr/command/*java*/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cheat-sheets.org/project/tldr/command/java/"
+      ]
+    },
+    {
+      "title": "Awesome Java Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/java.md"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/java.md"
+      ]
+    },
+    {
+      "title": "Java SE 6 Documentation [html] (oracle.com)",
+      "saved": [],
+      "online": [
+        "http://docs.oracle.com/javase/7/docs/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://docs.oracle.com/javase/7/docs/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/java_quickref.pdf",
+      "filename": "java_quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/JAVA%20Programming%20Guide%20-%20Quick%20Reference.pdf",
+      "filename": "JAVA Programming Guide - Quick Reference.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/SAX%202.0%20for%20Java%20(Core).pdf",
+      "filename": "SAX 2.0 for Java (Core).pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/SAX%202.0%20for%20Java%20(Extensions%20and%20Helpers).pdf",
+      "filename": "SAX 2.0 for Java (Extensions and Helpers).pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/JQREF.pdf",
+      "filename": "JQREF.pdf"
+    }
+  ],
+  "path": "languages/java"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "OpenSSH",
+  "slug": "open-ssh",
+  "title": "OpenSSH - OpenBSD Secure Shell",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#OpenSSH",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/OpenSSH",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/OpenSSH"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.openssh.org/",
+      "url": "http://www.openssh.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "OpenSSH Configuration Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/OpenSSH_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/OpenSSH_quickref.pdf",
+      "filename": "OpenSSH_quickref.pdf"
+    }
+  ],
+  "path": "gnu-linux-commands/open-ssh"
+}

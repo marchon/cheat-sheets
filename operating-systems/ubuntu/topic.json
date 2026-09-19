@@ -1,0 +1,76 @@
+{
+  "id": "Ubuntu",
+  "slug": "ubuntu",
+  "title": "Ubuntu",
+  "group": "operating-systems",
+  "source_anchor": "https://www.cheat-sheets.org/#Ubuntu",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Ubuntu_%28Linux_distribution%29",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Ubuntu_%28Linux_distribution%29"
+  ],
+  "official_websites": [
+    {
+      "label": "ubuntu.com",
+      "url": "https://ubuntu.com/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Linux",
+      "label": "Linux"
+    },
+    {
+      "id": "Unix",
+      "label": "Unix"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "TLDR Pages [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Most used commands [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+      ]
+    },
+    {
+      "title": "Ubuntu Cheat Sheet by Jacob Peddicord [html] (fosswire.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/ubunturef.pdf"
+      ],
+      "online": [
+        "http://fosswire.com/post/2008/04/ubuntu-cheat-sheet/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Awesome Ubuntu Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/ubuntu.sh"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/ubuntu.sh"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ubunturef.pdf",
+      "filename": "ubunturef.pdf"
+    }
+  ],
+  "path": "operating-systems/ubuntu"
+}

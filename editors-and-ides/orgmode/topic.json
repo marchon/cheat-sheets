@@ -1,0 +1,59 @@
+{
+  "id": "orgmode",
+  "slug": "orgmode",
+  "title": "org-mode",
+  "group": "editors-and-ides",
+  "source_anchor": "https://www.cheat-sheets.org/#orgmode",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Org-mode",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Org-mode"
+  ],
+  "official_websites": [
+    {
+      "label": "orgmode.org",
+      "url": "http://orgmode.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Org-Mode Reference Card by Philip Rooke [pdf] (perforce.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/orgcard.pdf"
+      ],
+      "online": [
+        "http://orgmode.org/orgcard.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "$ cheat orgmode - Org-Mode Reference Card by by Camping, Heroku and, to a lesser extent, GitHub [html] (cheat.errtheblog.com)",
+      "saved": [],
+      "online": [
+        "http://cheat.errtheblog.com/s/orgmode/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Org-mode cheat sheet (russian) by vitya borisov [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/org-mode.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/orgcard.pdf",
+      "filename": "orgcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/org-mode.pdf",
+      "filename": "org-mode.pdf"
+    }
+  ],
+  "path": "editors-and-ides/orgmode"
+}

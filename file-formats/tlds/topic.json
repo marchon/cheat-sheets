@@ -1,0 +1,42 @@
+{
+  "id": "TLDs",
+  "slug": "tlds",
+  "title": "TLDs - Top-level domains",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#TLDs",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/TLDs",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/TLDs"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "VisiBone Country Chart [poster 122cm×61cm or 86cm×43cm, jpg] (visibone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/countrychart_4080.jpg"
+      ],
+      "online": [
+        "http://www.visibone.com/countries/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Country Code Splist     VisiBone's “split list” of Internet Country Codes [html] (visibone.com)",
+      "saved": [],
+      "online": [
+        "http://www.visibone.com/countrycodes/"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/countrychart_4080.jpg",
+      "filename": "countrychart_4080.jpg"
+    }
+  ],
+  "path": "file-formats/tlds"
+}

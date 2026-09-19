@@ -1,0 +1,39 @@
+{
+  "id": "Science",
+  "slug": "science",
+  "title": "Science",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Science",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Science",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Science"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Astronomy",
+      "label": "Astronomy"
+    },
+    {
+      "id": "Chemistry",
+      "label": "Chemistry"
+    },
+    {
+      "id": "ComputerScience",
+      "label": "Computer Science"
+    },
+    {
+      "id": "Math",
+      "label": "Math"
+    },
+    {
+      "id": "Physics",
+      "label": "Physics"
+    }
+  ],
+  "tools": [],
+  "items": [],
+  "saved_copies": [],
+  "path": "mathematics-and-science/science"
+}

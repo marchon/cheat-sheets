@@ -1,0 +1,44 @@
+{
+  "id": "Groovy",
+  "slug": "groovy",
+  "title": "Groovy",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Groovy",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Groovy_(programming_language)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Groovy_(programming_language)"
+  ],
+  "official_websites": [
+    {
+      "label": "groovy.codehaus.org",
+      "url": "http://groovy.codehaus.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Groovy by Dierk König [pdf] (dzone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/https:/dzone.com/refcardz/groovy"
+      ],
+      "online": [
+        "https://dzone.com/refcardz/groovy"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/https:/dzone.com/refcardz/groovy",
+      "filename": "https:/dzone.com/refcardz/groovy"
+    }
+  ],
+  "path": "languages/groovy"
+}

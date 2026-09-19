@@ -1,0 +1,54 @@
+{
+  "id": "SSI",
+  "slug": "ssi",
+  "title": "SSI - Server Side Includes (mod_include)",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#SSI",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Server_Side_Includes",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Server_Side_Includes"
+  ],
+  "official_websites": [
+    {
+      "label": "httpd.apache.org/docs/2.2/mod/mod_include.html",
+      "url": "http://httpd.apache.org/docs/2.2/mod/mod_include.html"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "SSI in one page [html] (ssi.su)",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/ssi.su/"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Server Side Includes Quick Reference Card [pdf] (explainth.at)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/ssiqr.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/sites/ssi.su/",
+      "filename": "/sites/ssi.su/"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ssiqr.pdf",
+      "filename": "ssiqr.pdf"
+    }
+  ],
+  "path": "web/ssi"
+}

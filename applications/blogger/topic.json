@@ -1,0 +1,37 @@
+{
+  "id": "Blogger",
+  "slug": "blogger",
+  "title": "Blogger",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#Blogger",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Blogger_(service)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Blogger_(service)"
+  ],
+  "official_websites": [
+    {
+      "label": "www.blogger.com",
+      "url": "http://www.blogger.com/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Blogger. IDENTIFICADORES Y CLASES EN LAS PLANTILLAS. [pdf] (btemplates.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Blogger-Cheat-Sheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Blogger-Cheat-Sheet.pdf",
+      "filename": "Blogger-Cheat-Sheet.pdf"
+    }
+  ],
+  "path": "applications/blogger"
+}

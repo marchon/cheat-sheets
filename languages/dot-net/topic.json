@@ -1,0 +1,98 @@
+{
+  "id": "DotNET",
+  "slug": "dot-net",
+  "title": ".NET",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#DotNET",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Microsoft_.NET",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Microsoft_.NET"
+  ],
+  "official_websites": [
+    {
+      "label": "dotnet.microsoft.com",
+      "url": "https://dotnet.microsoft.com/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "ADONET",
+      "label": "ADO.NET"
+    },
+    {
+      "id": "ASP",
+      "label": "ASP"
+    },
+    {
+      "id": "CSharp",
+      "label": "C#"
+    },
+    {
+      "id": "MFC",
+      "label": "MFC"
+    },
+    {
+      "id": "Sandcastle",
+      "label": "Sandcastle"
+    },
+    {
+      "id": "VisualBasic",
+      "label": "Visual Basic"
+    },
+    {
+      "id": "WindowsCommunicationFoundation",
+      "label": "Windows Communication Foundation"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Core .NET by Jon Skeet [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/coredotnet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/coredotnet"
+      ]
+    },
+    {
+      "title": ".NET Format String Quick Referencee [pdf] (john-sheehan.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/msnet-formatting-strings.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": ".NET Framework 4 and Extensions [pdf] (msdn.microsoft.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/NETFX4-Poster.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Regular Expression Cheat Sheet (.NET) [html] (regexlib.com)",
+      "saved": [],
+      "online": [
+        "https://regexlib.com/CheatSheet.aspx"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://regexlib.com/CheatSheet.aspx"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/msnet-formatting-strings.pdf",
+      "filename": "msnet-formatting-strings.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/NETFX4-Poster.pdf",
+      "filename": "NETFX4-Poster.pdf"
+    }
+  ],
+  "path": "languages/dot-net"
+}

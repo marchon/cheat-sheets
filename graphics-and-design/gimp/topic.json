@@ -1,0 +1,42 @@
+{
+  "id": "Gimp",
+  "slug": "gimp",
+  "title": "Gimp",
+  "group": "graphics-and-design",
+  "source_anchor": "https://www.cheat-sheets.org/#Gimp",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/GIMP",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/GIMP"
+  ],
+  "official_websites": [
+    {
+      "label": "www.gimp.org",
+      "url": "http://www.gimp.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Photoshop",
+      "label": "Photoshop"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Gimp Quick Reference Card [pdf] (frenchfragfactory.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Gimp.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Gimp.pdf",
+      "filename": "Gimp.pdf"
+    }
+  ],
+  "path": "graphics-and-design/gimp"
+}

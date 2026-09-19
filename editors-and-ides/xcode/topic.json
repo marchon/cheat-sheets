@@ -1,0 +1,58 @@
+{
+  "id": "Xcode",
+  "slug": "xcode",
+  "title": "Xcode",
+  "group": "editors-and-ides",
+  "source_anchor": "https://www.cheat-sheets.org/#Xcode",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Xcode",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Xcode"
+  ],
+  "official_websites": [
+    {
+      "label": "developer.apple.com/xcode/",
+      "url": "https://developer.apple.com/xcode/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "C",
+      "label": "C"
+    },
+    {
+      "id": "CPP",
+      "label": "C++"
+    },
+    {
+      "id": "Objective-C",
+      "label": "Objective-C"
+    },
+    {
+      "id": "OSX",
+      "label": "OS X"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Xcode Cheat Sheet by Tobias Günther [pdf] (git-tower.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/xcode-cheat-sheet.pdf"
+      ],
+      "online": [
+        "https://www.git-tower.com/blog/xcode-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.git-tower.com/blog/xcode-cheat-sheet/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/xcode-cheat-sheet.pdf",
+      "filename": "xcode-cheat-sheet.pdf"
+    }
+  ],
+  "path": "editors-and-ides/xcode"
+}

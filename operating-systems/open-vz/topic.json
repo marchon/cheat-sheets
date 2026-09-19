@@ -1,0 +1,37 @@
+{
+  "id": "OpenVZ",
+  "slug": "open-vz",
+  "title": "OpenVZ - Open operating system-level virtualization",
+  "group": "operating-systems",
+  "source_anchor": "https://www.cheat-sheets.org/#OpenVZ",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/OpenVZ",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/OpenVZ"
+  ],
+  "official_websites": [
+    {
+      "label": "http://openvz.org/",
+      "url": "http://openvz.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "OpenVZ Cheatsheet by Jesse Keys [pdf] (teh.geekosphere.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/openvz-cheatsheet-v1.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/openvz-cheatsheet-v1.pdf",
+      "filename": "openvz-cheatsheet-v1.pdf"
+    }
+  ],
+  "path": "operating-systems/open-vz"
+}

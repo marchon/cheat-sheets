@@ -1,0 +1,88 @@
+{
+  "id": "MATLAB",
+  "slug": "matlab",
+  "title": "MATLAB",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#MATLAB",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/MATLAB",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/MATLAB"
+  ],
+  "official_websites": [
+    {
+      "label": "mathworks.com/products/matlab/",
+      "url": "http://www.mathworks.com/products/matlab/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Maple",
+      "label": "Maple"
+    },
+    {
+      "id": "Math",
+      "label": "Math"
+    },
+    {
+      "id": "Mathematica",
+      "label": "Mathematica"
+    },
+    {
+      "id": "Maxima",
+      "label": "Maxima"
+    },
+    {
+      "id": "PARIGP",
+      "label": "PARI/GP"
+    },
+    {
+      "id": "SageMath",
+      "label": "SageMath"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Matlab Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/matlab_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Matlab toolboxes Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/matlab_toolbox_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "A Matlab Cheat-sheet (MIT 18.06, Fall 2007) [pdf] (mit.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/matlab-cheatsheet-mit-2007.pdf"
+      ],
+      "online": [
+        "http://web.mit.edu/18.06/www/MATLAB/matlab-cheatsheet.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/matlab_quickref.pdf",
+      "filename": "matlab_quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/matlab_toolbox_quickref.pdf",
+      "filename": "matlab_toolbox_quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/matlab-cheatsheet-mit-2007.pdf",
+      "filename": "matlab-cheatsheet-mit-2007.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/matlab"
+}

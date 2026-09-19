@@ -1,0 +1,39 @@
+{
+  "id": "ProbabilityTheory",
+  "slug": "probability-theory",
+  "title": "Probability Theory",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#ProbabilityTheory",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Probability_theory",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Probability_theory"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Math",
+      "label": "Math"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Cheat Sheet for Probability Theory by Ingmar Land [pdf] (kom.aau.dk)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/prob-cheat-sheet.pdf"
+      ],
+      "online": [
+        "http://kom.aau.dk/project/sipcom/SIPCom06/semester7/FP7-5/prob-cheat-sheet.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/prob-cheat-sheet.pdf",
+      "filename": "prob-cheat-sheet.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/probability-theory"
+}

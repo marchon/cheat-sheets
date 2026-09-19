@@ -1,0 +1,45 @@
+{
+  "id": "WebMatrix",
+  "slug": "web-matrix",
+  "title": "WebMatrix",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#WebMatrix",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Microsoft_WebMatrix",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Microsoft_WebMatrix"
+  ],
+  "official_websites": [
+    {
+      "label": "www.microsoft.com/web/webmatrix/",
+      "url": "http://www.microsoft.com/web/webmatrix/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "ASP",
+      "label": "ASP"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "WebMatrix: Advanced Web Development Made Simple by James Sugrue [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/webmatrix"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Learn WebMatrix [html] (microsoft.com)",
+      "saved": [],
+      "online": [
+        "http://www.microsoft.com/web/category/learn"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "web/web-matrix"
+}

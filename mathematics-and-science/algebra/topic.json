@@ -1,0 +1,73 @@
+{
+  "id": "Algebra",
+  "slug": "algebra",
+  "title": "Algebra",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Algebra",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Algebra",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Algebra"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Math",
+      "label": "Math"
+    }
+  ],
+  "tools": [
+    {
+      "label": "WolframAlpha",
+      "url": "https://www.wolframalpha.com/examples/mathematics/algebra/"
+    }
+  ],
+  "items": [
+    {
+      "title": "Algebra Cheat Sheet by Paul Dawkins [pdf, pdf reduced] (tutorial.math.lamar.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Algebra_Cheat_Sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Algebra_Cheat_Sheet_Reduced.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Abstract Algebra Cheat Sheet by Brendan Kidwell, based on Dr. Ward Heilman’s notes for his Abstract Algebra class [pdf] (glump.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Abstract_Algebra_Cheat_Sheet.pdf"
+      ],
+      "online": [
+        "https://www.glump.net/content/abstract_algebra_cheat"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Review of Algebra by Thompson Brooks-Cole [pdf] (docstoc.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/ess-reviewofalgebra.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Algebra_Cheat_Sheet.pdf",
+      "filename": "Algebra_Cheat_Sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Algebra_Cheat_Sheet_Reduced.pdf",
+      "filename": "Algebra_Cheat_Sheet_Reduced.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Abstract_Algebra_Cheat_Sheet.pdf",
+      "filename": "Abstract_Algebra_Cheat_Sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ess-reviewofalgebra.pdf",
+      "filename": "ess-reviewofalgebra.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/algebra"
+}

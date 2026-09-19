@@ -1,0 +1,74 @@
+{
+  "id": "Mathomatic",
+  "slug": "mathomatic",
+  "title": "Mathomatic",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Mathomatic",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Mathomatic",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Mathomatic"
+  ],
+  "official_websites": [
+    {
+      "label": "www.mathomatic.org",
+      "url": "http://www.mathomatic.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Algebra",
+      "label": "Algebra"
+    },
+    {
+      "id": "Math",
+      "label": "Math"
+    },
+    {
+      "id": "Mathematica",
+      "label": "Mathematica"
+    },
+    {
+      "id": "Maxima",
+      "label": "Maxima"
+    },
+    {
+      "id": "PARIGP",
+      "label": "PARI/GP"
+    },
+    {
+      "id": "SageMath",
+      "label": "SageMath"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Mathomatic Quick Reference Sheet by George Gesslein II [pdf] (mathomatic.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/mathomatic.quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Mathomatic Quick Reference Card by George Gesslein II and John Blommers [pdf] (mathomatic.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/mathomaticquickrefcard.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/mathomatic.quickref.pdf",
+      "filename": "mathomatic.quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/mathomaticquickrefcard.pdf",
+      "filename": "mathomaticquickrefcard.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/mathomatic"
+}

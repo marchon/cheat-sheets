@@ -1,0 +1,46 @@
+{
+  "id": "Arduino",
+  "slug": "arduino",
+  "title": "Arduino",
+  "group": "hardware-and-embedded",
+  "source_anchor": "https://www.cheat-sheets.org/#Arduino",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Arduino",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Arduino"
+  ],
+  "official_websites": [
+    {
+      "label": "www.arduino.cc",
+      "url": "http://www.arduino.cc/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Arduino Cheat Sheet by Gavin Smith [pdf, png] (sites.google.com/site/mechatronicsguy/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Arduino-cheat-sheet-v02c.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Arduino-cheat-sheet-v02c.png"
+      ],
+      "online": [
+        "https://sites.google.com/site/mechatronicsguy/arduinocheatsheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://sites.google.com/site/mechatronicsguy/arduinocheatsheet"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Arduino-cheat-sheet-v02c.pdf",
+      "filename": "Arduino-cheat-sheet-v02c.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Arduino-cheat-sheet-v02c.png",
+      "filename": "Arduino-cheat-sheet-v02c.png"
+    }
+  ],
+  "path": "hardware-and-embedded/arduino"
+}

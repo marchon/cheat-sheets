@@ -1,0 +1,217 @@
+{
+  "id": "CPP",
+  "slug": "cpp",
+  "title": "C++",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#CPP",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/C%2B%2B",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/C%2B%2B"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "DotNET",
+      "label": ".NET"
+    },
+    {
+      "id": "ASP",
+      "label": "ASP"
+    },
+    {
+      "id": "C",
+      "label": "C"
+    },
+    {
+      "id": "CSharp",
+      "label": "C#"
+    },
+    {
+      "id": "GDB",
+      "label": "GDB"
+    },
+    {
+      "id": "MFC",
+      "label": "MFC"
+    },
+    {
+      "id": "Objective-C",
+      "label": "Objective-C"
+    },
+    {
+      "id": "OpenMP",
+      "label": "OpenMP"
+    },
+    {
+      "id": "Qt",
+      "label": "Qt"
+    },
+    {
+      "id": "VisualBasic",
+      "label": "Visual Basic"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "C++ Quick Reference Sheet (Cheat Sheet) [pdf] (dreamincode.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/cpp_reference_sheet.pdf"
+      ],
+      "online": [
+        "http://www.dreamincode.net/downloads/ref_sheets/cpp_reference_sheet.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.dreamincode.net/downloads/ref_sheets/cpp_reference_sheet.pdf"
+      ]
+    },
+    {
+      "title": "C/C++ Cheat Sheet (v1) by Jared Schiffman [pdf] (itp.nyu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/c_cheat_sheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "C/C++ Cheat Sheet (For your reference; this sheet will also be included in exams) [pdf] (research.cs.queensu.ca)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/C_Cheat.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "How to Program in C++ by Matt Mahoney [html] (cs.fit.edu/~mmahoney/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/how2cpp.20210603.html"
+      ],
+      "online": [
+        "http://cs.fit.edu/~mmahoney/cse2050/how2cpp.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cs.fit.edu/~mmahoney/cse2050/how2cpp.html"
+      ]
+    },
+    {
+      "title": "C++ QUICK REFERENCE by Matt Mahoney [html] (sourcepole.com/sources/programming/cpp/cppqref.html)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/cppqref.20210603.html"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "STL Quick Reference 1.29 by Yotam Medini [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/STL%20Quick%20Reference%201.29.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "C++ Standard Algorithms, Randomness, Random Sampling Distributions, Sequence Views, Containers, Utilities, Language Rules & Mechanisms, Lambda Expressions Syntax, Non-Standard Libraries, Design Guidelines, Engineering and Terminology by André Müller [html, png] (hackingcpp.com)",
+      "saved": [],
+      "online": [
+        "https://hackingcpp.com/cpp/cheat_sheets.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://hackingcpp.com/cpp/cheat_sheets.html"
+      ]
+    },
+    {
+      "title": "C++ Containers Cheat Sheet [html] (linuxsoftware.co.nz)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/cppcontainers.20210603.html"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "C++ Iterators & Algorithms Cheat Sheet [html] (linuxsoftware.co.nz)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/cppiterators.20210603.html"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Shifting from C to C++ strings [html] (linuxsoftware.co.nz)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/cppstrings.20210603.html"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Cheat Sheet: Unicode-enabling Microsoft C/C++ Source Code [html] (i18nguy.com)",
+      "saved": [],
+      "online": [
+        "http://www.i18nguy.com/unicode/c-unicode.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Understanding C++/Quick Reference [html] (en.wikibooks.org)",
+      "saved": [],
+      "online": [
+        "http://en.wikibooks.org/wiki/Understanding_C%2B%2B/Quick_Reference"
+      ],
+      "archived": []
+    },
+    {
+      "title": "CPPTEST CHEATSHEET by Shane McDonald [pdf] (cpptest.sourceforge.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CPPTEST.CHEATSHEET.pdf"
+      ],
+      "online": [
+        "http://cpptest.sourceforge.net/"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cpp_reference_sheet.pdf",
+      "filename": "cpp_reference_sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/c_cheat_sheet.pdf",
+      "filename": "c_cheat_sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/C_Cheat.pdf",
+      "filename": "C_Cheat.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/how2cpp.20210603.html",
+      "filename": "how2cpp.20210603.html"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cppqref.20210603.html",
+      "filename": "cppqref.20210603.html"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/STL%20Quick%20Reference%201.29.pdf",
+      "filename": "STL Quick Reference 1.29.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cppcontainers.20210603.html",
+      "filename": "cppcontainers.20210603.html"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cppiterators.20210603.html",
+      "filename": "cppiterators.20210603.html"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cppstrings.20210603.html",
+      "filename": "cppstrings.20210603.html"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CPPTEST.CHEATSHEET.pdf",
+      "filename": "CPPTEST.CHEATSHEET.pdf"
+    }
+  ],
+  "path": "languages/cpp"
+}

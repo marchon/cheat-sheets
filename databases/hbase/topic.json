@@ -1,0 +1,39 @@
+{
+  "id": "HBase",
+  "slug": "hbase",
+  "title": "HBase",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#HBase",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/HBase",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/HBase"
+  ],
+  "official_websites": [
+    {
+      "label": "hbase.apache.org",
+      "url": "http://hbase.apache.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Apache HBase: The NoSQL Database for Hadoop and Big Data by Alex Baranau and Otis Gospodnetic [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/hbase"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/hbase"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "databases/hbase"
+}

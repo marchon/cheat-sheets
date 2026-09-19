@@ -1,0 +1,152 @@
+{
+  "id": "Colour",
+  "slug": "colour",
+  "title": "Colour",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#Colour",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Colour",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Colour"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [
+    {
+      "label": "WolframAlpha",
+      "url": "http://www.wolframalpha.com/examples/Colors.html"
+    }
+  ],
+  "items": [
+    {
+      "title": "RGB Hex Colour Chart by Dave Child [png] (addedbytes.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/colourchart.png"
+      ],
+      "online": [
+        "http://www.addedbytes.com/cheat-sheets/colour-chart/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Web Designer's Color Card/Font Card by Bob Stein, VisiBone [poster 22cmx28cm, gif/jpg] (visibone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/card_800.gif",
+        "https://www.cheat-sheets.org/saved-copy/fc_800.jpg"
+      ],
+      "online": [
+        "http://www.visibone.com/color/card.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "The 216-Color Webmaster's Palette Poster by Bob Stein, VisiBone [poster 46cmx61cm, jpg] (visibone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/post1092.jpg"
+      ],
+      "online": [
+        "http://www.visibone.com/color/poster.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Web Designer's Color Chart by Bob Stein, VisiBone [poster 46x61cm, gif] (visibone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/chart_847.gif"
+      ],
+      "online": [
+        "http://www.visibone.com/color/chart.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Web Color KiloChart by Bob Stein, VisiBone [poster 46x61cm, jpg] (visibone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/kilochart_900.jpg"
+      ],
+      "online": [
+        "http://www.visibone.com/color/kilochart.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Web Designer's Color Hexagon Mouse Pad by Bob Stein, VisiBone [Mouse Pad 22cmx24cmx0.6mm, gif] (visibone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/hexagon_800.gif"
+      ],
+      "online": [
+        "http://www.visibone.com/color/hexagon.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "CMYK Reference by VisiBone [pdf] (visibone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/gamutgrid.pdf"
+      ],
+      "online": [
+        "http://www.visibone.com/cmyk/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Web Safe Colors [html] (cookwood.com)",
+      "saved": [],
+      "online": [
+        "http://www.cookwood.com/html/colors/websafecolors.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Colors from the Inside Back Cover [html] (elizabethcastro.com)",
+      "saved": [],
+      "online": [
+        "http://www.elizabethcastro.com/html/colors/backflapcolors.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Reference: Color Codes [html] (webmonkey.com)",
+      "saved": [],
+      "online": [
+        "http://www.webmonkey.com/webmonkey/reference/color_codes/"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/colourchart.png",
+      "filename": "colourchart.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/card_800.gif",
+      "filename": "card_800.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/fc_800.jpg",
+      "filename": "fc_800.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/post1092.jpg",
+      "filename": "post1092.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/chart_847.gif",
+      "filename": "chart_847.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/kilochart_900.jpg",
+      "filename": "kilochart_900.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/hexagon_800.gif",
+      "filename": "hexagon_800.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/gamutgrid.pdf",
+      "filename": "gamutgrid.pdf"
+    }
+  ],
+  "path": "file-formats/colour"
+}

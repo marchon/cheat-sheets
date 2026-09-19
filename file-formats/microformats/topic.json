@@ -1,0 +1,62 @@
+{
+  "id": "Microformats",
+  "slug": "microformats",
+  "title": "Microformats",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#Microformats",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Microformats",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Microformats"
+  ],
+  "official_websites": [
+    {
+      "label": "http://microformats.org/",
+      "url": "http://microformats.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Microformats Cheat Sheet by Dave Child [html] (cheatography.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/microformats_cheat_sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/microformats_cheat_sheet.pdf"
+      ],
+      "online": [
+        "https://www.cheatography.com/davechild/cheat-sheets/microformats/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.cheatography.com/davechild/cheat-sheets/microformats/"
+      ]
+    },
+    {
+      "title": "Microformats Cheat Sheet [pdf] (suda.co.uk)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/microformats.cheatsheet.pdf"
+      ],
+      "online": [
+        "http://suda.co.uk/projects/microformats/cheatsheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://suda.co.uk/projects/microformats/cheatsheet/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/microformats_cheat_sheet.png",
+      "filename": "microformats_cheat_sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/microformats_cheat_sheet.pdf",
+      "filename": "microformats_cheat_sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/microformats.cheatsheet.pdf",
+      "filename": "microformats.cheatsheet.pdf"
+    }
+  ],
+  "path": "file-formats/microformats"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "Debian",
+  "slug": "debian",
+  "title": "Debian",
+  "group": "operating-systems",
+  "source_anchor": "https://www.cheat-sheets.org/#Debian",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Debian",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Debian"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Linux",
+      "label": "Linux"
+    },
+    {
+      "id": "Unix",
+      "label": "Unix"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "TLDR Pages [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Most used commands [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+      ]
+    },
+    {
+      "title": "refcard [pdf] (people.debian.org/~debacle/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/refcard-en-a4.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/refcard-en-a4.pdf",
+      "filename": "refcard-en-a4.pdf"
+    }
+  ],
+  "path": "operating-systems/debian"
+}

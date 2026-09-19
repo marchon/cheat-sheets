@@ -1,0 +1,37 @@
+{
+  "id": "OpenCV",
+  "slug": "open-cv",
+  "title": "OpenCV",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#OpenCV",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/OpenCV",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/OpenCV"
+  ],
+  "official_websites": [
+    {
+      "label": "http://opencv.org/",
+      "url": "http://opencv.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "OpenCV 2.1 Cheat Sheet (C++) [pdf] (opencv.willowgarage.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/opencv_cheatsheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/opencv_cheatsheet.pdf",
+      "filename": "opencv_cheatsheet.pdf"
+    }
+  ],
+  "path": "frameworks-and-libraries/open-cv"
+}

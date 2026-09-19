@@ -1,0 +1,34 @@
+{
+  "id": "JDBC",
+  "slug": "jdbc",
+  "title": "JDBC - Java Database Connectivity",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#JDBC",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Java_Database_Connectivity",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Java_Database_Connectivity"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "JDBC Best Practices by Jesse Davis [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/jdbc-best-practices"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/jdbc-best-practices"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "databases/jdbc"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "Bazaar",
+  "slug": "bazaar",
+  "title": "Bazaar (formerly Bazaar-NG, commandline tool bzr) - distributed revision control system",
+  "group": "version-control",
+  "source_anchor": "https://www.cheat-sheets.org/#Bazaar",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Bazaar_%28software%29",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Bazaar_%28software%29"
+  ],
+  "official_websites": [
+    {
+      "label": "bazaar-vcs.org/",
+      "url": "http://bazaar.canonical.com/en/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "CVS",
+      "label": "CVS"
+    },
+    {
+      "id": "Git",
+      "label": "Git"
+    },
+    {
+      "id": "SVN",
+      "label": "SVN"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Bazaar Quick Start Card [pdf, png, svg] (bazaar-vcs.org/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/quick-start-summary.pdf",
+        "https://www.cheat-sheets.org/saved-copy/quick-start-summary.png",
+        "https://www.cheat-sheets.org/saved-copy/quick-start-summary.svg"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/quick-start-summary.pdf",
+      "filename": "quick-start-summary.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/quick-start-summary.png",
+      "filename": "quick-start-summary.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/quick-start-summary.svg",
+      "filename": "quick-start-summary.svg"
+    }
+  ],
+  "path": "version-control/bazaar"
+}

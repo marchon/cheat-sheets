@@ -1,0 +1,71 @@
+{
+  "id": "Physics",
+  "slug": "physics",
+  "title": "Physics",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Physics",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Physics",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Physics"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [
+    {
+      "label": "WolframAlpha",
+      "url": "http://www.wolframalpha.com/examples/Physics.html"
+    }
+  ],
+  "items": [
+    {
+      "title": "Table of Physical Constants [html] (techtarget.com)",
+      "saved": [],
+      "online": [
+        "http://searchsmb.techtarget.com/sDefinition/0,290660,sid44_gci860994,00.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://searchsmb.techtarget.com/sDefinition/0,290660,sid44_gci860994,00.html"
+      ]
+    },
+    {
+      "title": "Table of Physical Units [html] (techtarget.com)",
+      "saved": [],
+      "online": [
+        "http://whatis.techtarget.com/definition/0,,sid9_gci551931,00.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://whatis.techtarget.com/definition/0,,sid9_gci551931,00.html"
+      ]
+    },
+    {
+      "title": "Physics Equations [pdf] (scribd.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/32514-Physics-Equations.pdf"
+      ],
+      "online": [
+        "http://www.scribd.com/doc/32514/Physics-Equations"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Physical Science Final Exam Cheat Sheet: Energy, Power, Thermodynamics [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/PhysicalScienceFinalEnergyCheatSheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/32514-Physics-Equations.pdf",
+      "filename": "32514-Physics-Equations.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PhysicalScienceFinalEnergyCheatSheet.pdf",
+      "filename": "PhysicalScienceFinalEnergyCheatSheet.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/physics"
+}

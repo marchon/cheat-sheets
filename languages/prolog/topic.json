@@ -1,0 +1,63 @@
+{
+  "id": "Prolog",
+  "slug": "prolog",
+  "title": "Prolog W",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Prolog",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "iso.org/standard/21413.html",
+      "url": "https://www.iso.org/standard/21413.html"
+    },
+    {
+      "label": "iso.org/standard/20775.html",
+      "url": "https://www.iso.org/standard/20775.html"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Prolog CheatSheet by Musa Al-hassy [pdf] (alhassy.github.io)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/PrologCheatSheet.20220802.pdf"
+      ],
+      "online": [
+        "https://alhassy.github.io/PrologCheatSheet/CheatSheet.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://alhassy.github.io/PrologCheatSheet/CheatSheet.pdf"
+      ]
+    },
+    {
+      "title": "Cheatsheet Prolog [html] (programming-idioms.org)",
+      "saved": [],
+      "online": [
+        "https://programming-idioms.org/cheatsheet/Prolog"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://programming-idioms.org/cheatsheet/Prolog"
+      ]
+    },
+    {
+      "title": "PROLOG (PROgramming in LOGic) - Cheat Sheet by R. Odendahl [html] (www.cs.oswego.edu/~odendahl/)",
+      "saved": [],
+      "online": [
+        "https://www.cs.oswego.edu/~odendahl/coursework/notes/prolog/synopsis/con.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.cs.oswego.edu/~odendahl/coursework/notes/prolog/synopsis/con.html"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PrologCheatSheet.20220802.pdf",
+      "filename": "PrologCheatSheet.20220802.pdf"
+    }
+  ],
+  "path": "languages/prolog"
+}

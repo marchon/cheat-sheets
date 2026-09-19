@@ -1,0 +1,100 @@
+{
+  "id": "WordPress",
+  "slug": "word-press",
+  "title": "WordPress",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#WordPress",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/WordPress",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/WordPress"
+  ],
+  "official_websites": [
+    {
+      "label": "http://wordpress.org/",
+      "url": "http://wordpress.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Official WordPress Theme Architecture Outline and Cheat Sheet [html] (wordpress.org)",
+      "saved": [],
+      "online": [
+        "http://codex.wordpress.org/Site_Architecture_1.5"
+      ],
+      "archived": []
+    },
+    {
+      "title": "WordPress Plugin API Cheat Sheet [png] (480x.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/wpcs.png"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "WordPress Theme Cheat Sheet [png] (480x.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/wptcs.png"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "WordPress Cheat Sheet by Andy Wibbels [pdf] (andywibbels.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/WordPress_Cheatsheet_v1.pdf"
+      ],
+      "online": [
+        "http://andywibbels.com/files/WordPress_Cheatsheet_v1.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "HeadZoo WordPress Plugin API Cheatsheet  [png] (headzoo.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/wpcs_headzoo.png"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Wordpress Helper Sheet [txt.zip, txt]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/wp-help-sheet.zip",
+        "https://www.cheat-sheets.org/saved-copy/wp-help-sheet.txt"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/wpcs.png",
+      "filename": "wpcs.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/wptcs.png",
+      "filename": "wptcs.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/WordPress_Cheatsheet_v1.pdf",
+      "filename": "WordPress_Cheatsheet_v1.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/wpcs_headzoo.png",
+      "filename": "wpcs_headzoo.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/wp-help-sheet.zip",
+      "filename": "wp-help-sheet.zip"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/wp-help-sheet.txt",
+      "filename": "wp-help-sheet.txt"
+    }
+  ],
+  "path": "applications/word-press"
+}

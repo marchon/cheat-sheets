@@ -1,0 +1,47 @@
+{
+  "id": "RedHat",
+  "slug": "red-hat",
+  "title": "Red Hat",
+  "group": "operating-systems",
+  "source_anchor": "https://www.cheat-sheets.org/#RedHat",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/RedHat",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/RedHat"
+  ],
+  "official_websites": [
+    {
+      "label": "redhat.com",
+      "url": "http://www.redhat.com/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Fedora",
+      "label": "Fedora"
+    },
+    {
+      "id": "Linux",
+      "label": "Linux"
+    },
+    {
+      "id": "rpm",
+      "label": "rpm"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "RedHat/Fedora command cheat sheet [html] (jd40c.com)",
+      "saved": [],
+      "online": [
+        "http://jd40c.com/linux.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://jd40c.com/linux.html"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "operating-systems/red-hat"
+}

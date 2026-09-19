@@ -1,0 +1,50 @@
+{
+  "id": "MicrosoftProject",
+  "slug": "microsoft-project",
+  "title": "Microsoft Project (MSP)",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#MicrosoftProject",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Microsoft_Project",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Microsoft_Project"
+  ],
+  "official_websites": [
+    {
+      "label": "office.microsoft.com/en-us/project/",
+      "url": "http://office.microsoft.com/en-us/project/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "MicrosoftExcel",
+      "label": "Microsoft Excel"
+    },
+    {
+      "id": "MicrosoftOffice",
+      "label": "Microsoft Office"
+    },
+    {
+      "id": "MicrosoftVisualStudio",
+      "label": "Microsoft Visual Studio"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Microsoft Project 2007 Quick Reference Card by CustomGuide [pdf] (customguide.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/project-quick-reference-2007.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/project-quick-reference-2007.pdf",
+      "filename": "project-quick-reference-2007.pdf"
+    }
+  ],
+  "path": "applications/microsoft-project"
+}

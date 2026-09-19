@@ -1,0 +1,32 @@
+{
+  "id": "db4o",
+  "slug": "db4o",
+  "title": "db4o",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#db4o",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Db4o",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Db4o"
+  ],
+  "official_websites": [
+    {
+      "label": "db4o.com",
+      "url": "http://www.db4o.com/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with db4o: Persisting .NET Object Data by Stefan Edlich and Eric Falsken [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-db4o"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "databases/db4o"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "Lisp",
+  "slug": "lisp",
+  "title": "Lisp",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Lisp",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Lisp_%28programming_language%29",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Lisp_%28programming_language%29"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Common Lisp Quick Reference by Bert Burgemeister [pdf: a4 booklet all, a4 booklet four, a4 consec, letter booklet all, letter booklet four, letter consec; tar.gz (LaTeX source)] (clqr.boundp.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/clqr-a4-booklet-all.2011-10-12.pdf",
+        "https://www.cheat-sheets.org/saved-copy/clqr-a4-booklet-four.2011-10-12.pdf",
+        "https://www.cheat-sheets.org/saved-copy/clqr-a4-consec.2011-10-12.pdf",
+        "https://www.cheat-sheets.org/saved-copy/clqr-letter-booklet-all.2011-10-12.pdf",
+        "https://www.cheat-sheets.org/saved-copy/clqr-letter-booklet-four.2011-10-12.pdf",
+        "https://www.cheat-sheets.org/saved-copy/clqr-letter-consec.2011-10-12.pdf",
+        "https://www.cheat-sheets.org/saved-copy/clqr.2011-10-12.tar.gz"
+      ],
+      "online": [
+        "http://clqr.boundp.org/download.html"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/clqr-a4-booklet-all.2011-10-12.pdf",
+      "filename": "clqr-a4-booklet-all.2011-10-12.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/clqr-a4-booklet-four.2011-10-12.pdf",
+      "filename": "clqr-a4-booklet-four.2011-10-12.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/clqr-a4-consec.2011-10-12.pdf",
+      "filename": "clqr-a4-consec.2011-10-12.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/clqr-letter-booklet-all.2011-10-12.pdf",
+      "filename": "clqr-letter-booklet-all.2011-10-12.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/clqr-letter-booklet-four.2011-10-12.pdf",
+      "filename": "clqr-letter-booklet-four.2011-10-12.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/clqr-letter-consec.2011-10-12.pdf",
+      "filename": "clqr-letter-consec.2011-10-12.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/clqr.2011-10-12.tar.gz",
+      "filename": "clqr.2011-10-12.tar.gz"
+    }
+  ],
+  "path": "languages/lisp"
+}

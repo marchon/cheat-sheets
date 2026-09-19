@@ -1,0 +1,39 @@
+{
+  "id": "Notepad++",
+  "slug": "notepad++",
+  "title": "Notepad++",
+  "group": "editors-and-ides",
+  "source_anchor": "https://www.cheat-sheets.org/#Notepad++",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Notepad%2B%2B",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Notepad%2B%2B"
+  ],
+  "official_websites": [
+    {
+      "label": "notepad-plus-plus.org",
+      "url": "https://notepad-plus-plus.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Notepad++ cheat sheet by Andres Gomez [pdf] (docs.google.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Notepad++_Cheat_Sheet.pdf"
+      ],
+      "online": [
+        "https://docs.google.com/file/d/0B86nuTd5nMTKaENHcmliUC1kdnc/edit"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Notepad++_Cheat_Sheet.pdf",
+      "filename": "Notepad++_Cheat_Sheet.pdf"
+    }
+  ],
+  "path": "editors-and-ides/notepad++"
+}

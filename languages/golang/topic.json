@@ -1,0 +1,155 @@
+{
+  "id": "Golang",
+  "slug": "golang",
+  "title": "Go (Golang)",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Golang",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Go_(programming_language)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Go_(programming_language)"
+  ],
+  "official_websites": [
+    {
+      "label": "golang.org",
+      "url": "https://golang.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Go cheatsheet [html] (devhints.io)",
+      "saved": [],
+      "online": [
+        "https://devhints.io/go"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://devhints.io/go"
+      ]
+    },
+    {
+      "title": "Go Cheat Sheet by a8m [html, odt, pdf] (github.com/a8m/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/go-lang-cheat-sheet-master.20181212/golang_refcard.odt",
+        "https://www.cheat-sheets.org/saved-copy/go-lang-cheat-sheet-master.20181212/golang_refcard.pdf"
+      ],
+      "online": [
+        "https://github.com/a8m/go-lang-cheat-sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/a8m/go-lang-cheat-sheet"
+      ]
+    },
+    {
+      "title": "tldr go [html] (cheat-sheets.org). See also: tldr go *",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/project/tldr/command/go/",
+        "http://cheat-sheets.org/project/tldr/command/go-*/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cheat-sheets.org/project/tldr/command/go/"
+      ]
+    },
+    {
+      "title": "Awesome Golang Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/golang.md"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/golang.md"
+      ]
+    },
+    {
+      "title": "A tour of Go [html] (tour.golang.org)",
+      "saved": [],
+      "online": [
+        "https://tour.golang.org/welcome/1"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://tour.golang.org/welcome/1"
+      ]
+    },
+    {
+      "title": "Golang wiki [html] (github.com/golang/go/)",
+      "saved": [],
+      "online": [
+        "https://github.com/golang/go/wiki"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/golang/go/wiki"
+      ]
+    },
+    {
+      "title": "Awesome Go [html] (awesome-go.com)",
+      "saved": [],
+      "online": [
+        "https://awesome-go.com/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://awesome-go.com/"
+      ]
+    },
+    {
+      "title": "Go by Example by @mmcgrana [html] (gobyexample.com)",
+      "saved": [],
+      "online": [
+        "https://gobyexample.com/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/gobyexample.com"
+      ]
+    },
+    {
+      "title": "Effective Go [html] (golang.org)",
+      "saved": [],
+      "online": [
+        "https://golang.org/doc/effective_go.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://golang.org/doc/effective_go.html"
+      ]
+    },
+    {
+      "title": "JustForFunc: Programming in Go by Francesc Campoy [video] (youtube.com)",
+      "saved": [],
+      "online": [
+        "https://www.youtube.com/channel/UC_BzFbxG2za3bp5NRRRXJSw"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Go Code Review Comments (Style Guide) [html] (github.com/golang/go/)",
+      "saved": [],
+      "online": [
+        "https://github.com/golang/go/wiki/CodeReviewComments"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/golang/go/wiki/CodeReviewComments"
+      ]
+    },
+    {
+      "title": "Your basic Go by Stefan [html] (yourbasic.org/golang/)",
+      "saved": [],
+      "online": [
+        "https://yourbasic.org/golang/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://yourbasic.org/golang/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/go-lang-cheat-sheet-master.20181212/golang_refcard.odt",
+      "filename": "go-lang-cheat-sheet-master.20181212/golang_refcard.odt"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/go-lang-cheat-sheet-master.20181212/golang_refcard.pdf",
+      "filename": "go-lang-cheat-sheet-master.20181212/golang_refcard.pdf"
+    }
+  ],
+  "path": "languages/golang"
+}

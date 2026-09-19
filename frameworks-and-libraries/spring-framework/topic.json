@@ -1,0 +1,84 @@
+{
+  "id": "SpringFramework",
+  "slug": "spring-framework",
+  "title": "Spring Framework",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#SpringFramework",
+  "extra_ids": [],
+  "wikipedia": "http://ru.wikipedia.org/wiki/Spring_Framework",
+  "wikipedia_urls": [
+    "http://ru.wikipedia.org/wiki/Spring_Framework"
+  ],
+  "official_websites": [
+    {
+      "label": "springsource.org",
+      "url": "http://www.springsource.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    },
+    {
+      "id": "SpringRoo",
+      "label": "Spring Roo"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Spring Web Flow W ^ by Craig Walls [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/spring-web-flow",
+        "https://en.wikipedia.org/wiki/Spring_Web_Flow"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/spring-web-flow"
+      ]
+    },
+    {
+      "title": "Spring Annotations by Craig Walls [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/spring-annotations"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/spring-annotations"
+      ]
+    },
+    {
+      "title": "Getting Started with Spring-DM by Craig Walls [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-spring-dm"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-spring-dm"
+      ]
+    },
+    {
+      "title": "Expression-Based Authorization with Spring Security 3 by Willie Wheeler [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/expression-based-authorization"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/expression-based-authorization"
+      ]
+    },
+    {
+      "title": "Eclipse Tools for Spring: The SpringSource Tool Suite by Gordon Dickens, Chariot Solutions [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/eclipse-tools-spring"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/eclipse-tools-spring"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "frameworks-and-libraries/spring-framework"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "htaccess",
+  "slug": "htaccess",
+  "title": ".htaccess",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#htaccess",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Htaccess",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Htaccess"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    },
+    {
+      "id": "mod_rewrite",
+      "label": "mod_rewrite"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "htaccess Cheatsheet [html] (thejackol.com)",
+      "saved": [],
+      "online": [
+        "http://www.thejackol.com/htaccess-cheatsheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.thejackol.com/htaccess-cheatsheet/"
+      ]
+    },
+    {
+      "title": ".htaccess Cheat Sheet by Steve [html] (htaccesscheatsheet.com)",
+      "saved": [],
+      "online": [
+        "http://htaccesscheatsheet.com/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://htaccesscheatsheet.com/"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "web/htaccess"
+}

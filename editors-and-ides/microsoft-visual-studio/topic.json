@@ -1,0 +1,47 @@
+{
+  "id": "MicrosoftVisualStudio",
+  "slug": "microsoft-visual-studio",
+  "title": "Microsoft Visual Studio",
+  "group": "editors-and-ides",
+  "source_anchor": "https://www.cheat-sheets.org/#MicrosoftVisualStudio",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.microsoft.com/visualstudio",
+      "url": "http://www.microsoft.com/visualstudio"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "MicrosoftExcel",
+      "label": "Microsoft Excel"
+    },
+    {
+      "id": "MicrosoftOffice",
+      "label": "Microsoft Office"
+    },
+    {
+      "id": "MicrosoftProject",
+      "label": "Microsoft Project (MSP)"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Visual Studio 2010 by Alessandro Del Sole [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-visual-studio"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-visual-studio"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "editors-and-ides/microsoft-visual-studio"
+}

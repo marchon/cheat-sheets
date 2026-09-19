@@ -1,0 +1,27 @@
+{
+  "id": "Countries",
+  "slug": "countries",
+  "title": "Countries",
+  "group": "other",
+  "source_anchor": "https://www.cheat-sheets.org/#Countries",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Countries",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Countries"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "ISO 3166-1 code list, sorted by English short name of country or territory [html] (wikipedia.org)",
+      "saved": [],
+      "online": [
+        "https://en.wikipedia.org/wiki/ISO_3166-1"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "other/countries"
+}

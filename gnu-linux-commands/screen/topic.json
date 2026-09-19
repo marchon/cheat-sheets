@@ -1,0 +1,44 @@
+{
+  "id": "Screen",
+  "slug": "screen",
+  "title": "Screen - Screen VT100/ANSI Terminal Emulator",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#Screen",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/GNU_Screen",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/GNU_Screen"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Screen VT100/ANSI Terminal Emulator Cheat Sheet by Peteris Krumins [pdf, tex, txt] (catonmat.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/screen.cheat.sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/screen.cheat.sheet.tex",
+        "https://www.cheat-sheets.org/saved-copy/screen.cheat.sheet.txt"
+      ],
+      "online": [
+        "http://www.catonmat.net/blog/screen-terminal-emulator-cheat-sheet/"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/screen.cheat.sheet.pdf",
+      "filename": "screen.cheat.sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/screen.cheat.sheet.tex",
+      "filename": "screen.cheat.sheet.tex"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/screen.cheat.sheet.txt",
+      "filename": "screen.cheat.sheet.txt"
+    }
+  ],
+  "path": "gnu-linux-commands/screen"
+}

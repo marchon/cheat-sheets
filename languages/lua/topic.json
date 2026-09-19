@@ -1,0 +1,126 @@
+{
+  "id": "Lua",
+  "slug": "lua",
+  "title": "Lua",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Lua",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Lua_%28programming_language%29",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Lua_%28programming_language%29"
+  ],
+  "official_websites": [
+    {
+      "label": "lua.org",
+      "url": "https://www.lua.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Lua 5.1 C API short reference (lists all the calls along with a short description of the parameters) by Ewald Arnold [odt, pdf] (aewald-arnold.de)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/lua-apiref.odt",
+        "https://www.cheat-sheets.org/saved-copy/lua-apiref.pdf"
+      ],
+      "online": [
+        "http://www.ewald-arnold.de/lua/lua-apiref.odt",
+        "http://www.ewald-arnold.de/lua/lua-apiref.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Lua 5.1 C API short reference (lists all the calls with even shorter descriptions but also includes the stack layout of the ingoing and outcoming Lua values) by Ewald Arnold [xls, pdf] (aewald-arnold.de)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/lua_capi.xls",
+        "https://www.cheat-sheets.org/saved-copy/lua_capi.pdf"
+      ],
+      "online": [
+        "http://www.ewald-arnold.de/lua/lua_capi.xls",
+        "http://www.ewald-arnold.de/lua/lua_capi.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Lua - Beginners Guide by Rogério Rodrigues de Alcântara (@roalcantara) [html/md] (gist.github.com)",
+      "saved": [],
+      "online": [
+        "https://gist.github.com/roalcantara/49de782ab32385db78357192e6750c8e"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://gist.github.com/roalcantara/49de782ab32385db78357192e6750c8e"
+      ]
+    },
+    {
+      "title": "tldr lua [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/lua/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/lua/"
+      ]
+    },
+    {
+      "title": "A guide to Lua: Learn Lua with this downloadable eBook by Seth Kenlon, CC BY-SA 4.0) [pdf, epub] (opensource.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/osdc_Lua_20230211.pdf",
+        "https://www.cheat-sheets.org/saved-copy/osdc_Lua_20230211.epub"
+      ],
+      "online": [
+        "https://opensource.com/downloads/learn-lua"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://opensource.com/downloads/learn-lua"
+      ]
+    },
+    {
+      "title": "Lua Programming  [html] (en.wikibooks.org)",
+      "saved": [],
+      "online": [
+        "https://en.wikibooks.org/wiki/Lua_Programming"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://en.wikibooks.org/wiki/Lua_Programming"
+      ]
+    },
+    {
+      "title": "Lua/Tutorial  [html] (mediawiki.org)",
+      "saved": [],
+      "online": [
+        "https://www.mediawiki.org/wiki/Lua/Tutorial"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.mediawiki.org/wiki/Lua/Tutorial"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/lua-apiref.odt",
+      "filename": "lua-apiref.odt"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/lua-apiref.pdf",
+      "filename": "lua-apiref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/lua_capi.xls",
+      "filename": "lua_capi.xls"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/lua_capi.pdf",
+      "filename": "lua_capi.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/osdc_Lua_20230211.pdf",
+      "filename": "osdc_Lua_20230211.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/osdc_Lua_20230211.epub",
+      "filename": "osdc_Lua_20230211.epub"
+    }
+  ],
+  "path": "languages/lua"
+}

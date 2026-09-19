@@ -1,0 +1,356 @@
+{
+  "id": "Linux",
+  "slug": "linux",
+  "title": "Linux",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#Linux",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Linux",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Linux"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "chmod",
+      "label": "chmod"
+    },
+    {
+      "id": "Debian",
+      "label": "Debian"
+    },
+    {
+      "id": "Fedora",
+      "label": "Fedora"
+    },
+    {
+      "id": "RedHat",
+      "label": "Red Hat"
+    },
+    {
+      "id": "Ubuntu",
+      "label": "Ubuntu"
+    },
+    {
+      "id": "Unix",
+      "label": "Unix"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "TLDR Pages [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Most used commands [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+      ]
+    },
+    {
+      "title": "Linux Command Line Tips [html] (pixelbeat.org)",
+      "saved": [],
+      "online": [
+        "http://www.pixelbeat.org/cmdline.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.pixelbeat.org/cmdline.html"
+      ]
+    },
+    {
+      "title": "Linux Shortcuts and Commands [html] (linuxshortcuts.shtml)",
+      "saved": [],
+      "online": [
+        "http://www.unixguide.net/linux/linuxshortcuts.shtml"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.unixguide.net/linux/linuxshortcuts.shtml"
+      ]
+    },
+    {
+      "title": "Unix/Linux Command Cheat Sheet by Jacob [pdf] (fosswire.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/fwunixref.pdf",
+        "https://www.cheat-sheets.org/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-021.jpg"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "The One Page Linux Manual by Squadron [pdf] (homepage.powerup.com.au/~squadron/, digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/The%20One%20Page%20Linux%20Manual.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Linux Administrator's Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/linux_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Linux System Calls Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Linux_Syscall_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Linux Security Quick Reference by Dave Wreski & Benjamin Thomas [pdf] (tiger.la.asu.edu, digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/linux_security_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Command Line Interface Commands [jpg]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CliCommandsFull.jpg"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "A very brief guide to Linux by C. J. Rennie [html] (www.physics.usyd.edu.au/~rennie/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/A.very.brief.guide.to.Linux.htm"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Linux Tutorial - Cheat Sheet by Ryan Chadwick [html] (ryanstutorials.net)",
+      "saved": [],
+      "online": [
+        "http://ryanstutorials.net/linuxtutorial/cheatsheet.php"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://ryanstutorials.net/linuxtutorial/cheatsheet.php"
+      ]
+    },
+    {
+      "title": "Unix/Linux Command Reference [jpg] (makeuseof.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-011.jpg"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Linux Commands Cheat Sheet in Black & White by Bobbin Zachariah [pdf] (linoxide.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/linux-cheat-sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/linux-cheat-sheet.png"
+      ],
+      "online": [
+        "http://linoxide.com/linux-command/linux-commands-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://linoxide.com/linux-command/linux-commands-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "[Linux|CLI|Ubuntu] Command line cheat sheet by Patrick Kerwood [gif] (linuxbloggen.dk)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/305883.jpg",
+        "https://www.cheat-sheets.org/saved-copy/clicommandsfull.jpg",
+        "https://www.cheat-sheets.org/saved-copy/linux-cheat-sheet-wallpapers_30985_1920x1080.jpg",
+        "https://www.cheat-sheets.org/saved-copy/linux-command-line-cheat-sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/linuxcommands.png",
+        "https://www.cheat-sheets.org/saved-copy/ubuntucheatsheet.jpg"
+      ],
+      "online": [
+        "https://linuxbloggen.dk/command-line-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://linuxbloggen.dk/command-line-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "Linux Command Line Cheat Sheet by DaveChild [pdf] (cheatography.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/davechild_linux-command-line.pdf"
+      ],
+      "online": [
+        "https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/"
+      ]
+    },
+    {
+      "title": "Linux Cheatsheet by Muppix [html, pdf] (muppix.co)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Muppix_Linux_commands_1.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Muppix_Linux_commands_2.pdf"
+      ],
+      "online": [
+        "http://muppix.co/linux-cheatsheet.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://muppix.co/linux-cheatsheet.html"
+      ]
+    },
+    {
+      "title": "Basic Linux Commands by Muppix [html, pdf] (muppix.co)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Muppix.co_Basic_Linux_Commands.png",
+        "https://www.cheat-sheets.org/saved-copy/Muppix_Basic_Linux_commands.pdf"
+      ],
+      "online": [
+        "http://muppix.co/basic-linux-commands.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://muppix.co/basic-linux-commands.html"
+      ]
+    },
+    {
+      "title": "Linux Essential Terminal Commands by Muppix [html, pdf] (muppix.co)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Muppix_Linux_terminal_navigation.pdf"
+      ],
+      "online": [
+        "http://muppix.co/essential-terminal-commands.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://muppix.co/essential-terminal-commands.html"
+      ]
+    },
+    {
+      "title": "Linux Commands Cheat Sheet by Hitesh Jethva [html] (pcwdld.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/pcwdld.com-linux-commands-cheat-sheet-20211028.png"
+      ],
+      "online": [
+        "https://www.pcwdld.com/linux-commands-cheat-sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.pcwdld.com/linux-commands-cheat-sheet"
+      ]
+    },
+    {
+      "title": "Linux Shell Commands by Cardiff School of Computer Science & Informatics [html] (docs.cs.cf.ac.uk)",
+      "saved": [],
+      "online": [
+        "https://docs.cs.cf.ac.uk/notes/linux-shell-commands/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://docs.cs.cf.ac.uk/notes/linux-shell-commands/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/fwunixref.pdf",
+      "filename": "fwunixref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-021.jpg",
+      "filename": "10-Linux-Unix-Command-Cheat-Sheet-021.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/The%20One%20Page%20Linux%20Manual.pdf",
+      "filename": "The One Page Linux Manual.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/linux_quickref.pdf",
+      "filename": "linux_quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Linux_Syscall_quickref.pdf",
+      "filename": "Linux_Syscall_quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/linux_security_quickref.pdf",
+      "filename": "linux_security_quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CliCommandsFull.jpg",
+      "filename": "CliCommandsFull.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/A.very.brief.guide.to.Linux.htm",
+      "filename": "A.very.brief.guide.to.Linux.htm"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-011.jpg",
+      "filename": "10-Linux-Unix-Command-Cheat-Sheet-011.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/linux-cheat-sheet.pdf",
+      "filename": "linux-cheat-sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/linux-cheat-sheet.png",
+      "filename": "linux-cheat-sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/305883.jpg",
+      "filename": "305883.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/clicommandsfull.jpg",
+      "filename": "clicommandsfull.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/linux-cheat-sheet-wallpapers_30985_1920x1080.jpg",
+      "filename": "linux-cheat-sheet-wallpapers_30985_1920x1080.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/linux-command-line-cheat-sheet.png",
+      "filename": "linux-command-line-cheat-sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/linuxcommands.png",
+      "filename": "linuxcommands.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ubuntucheatsheet.jpg",
+      "filename": "ubuntucheatsheet.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/davechild_linux-command-line.pdf",
+      "filename": "davechild_linux-command-line.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Muppix_Linux_commands_1.pdf",
+      "filename": "Muppix_Linux_commands_1.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Muppix_Linux_commands_2.pdf",
+      "filename": "Muppix_Linux_commands_2.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Muppix.co_Basic_Linux_Commands.png",
+      "filename": "Muppix.co_Basic_Linux_Commands.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Muppix_Basic_Linux_commands.pdf",
+      "filename": "Muppix_Basic_Linux_commands.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Muppix_Linux_terminal_navigation.pdf",
+      "filename": "Muppix_Linux_terminal_navigation.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/pcwdld.com-linux-commands-cheat-sheet-20211028.png",
+      "filename": "pcwdld.com-linux-commands-cheat-sheet-20211028.png"
+    }
+  ],
+  "path": "gnu-linux-commands/linux"
+}

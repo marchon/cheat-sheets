@@ -1,0 +1,39 @@
+{
+  "id": "Mule",
+  "slug": "mule",
+  "title": "Mule",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#Mule",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Mule_(software)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Mule_(software)"
+  ],
+  "official_websites": [
+    {
+      "label": "mulesoft.org",
+      "url": "http://www.mulesoft.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "ServiceMix",
+      "label": "ServiceMix"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Core Mule by Jos Dirksen [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/core-mule"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/core-mule"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/mule"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ColdFusion",
+  "slug": "cold-fusion",
+  "title": "ColdFusion",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#ColdFusion",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/ColdFusion",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/ColdFusion"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.adobe.com/products/coldfusion",
+      "url": "http://www.adobe.com/products/coldfusion/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Adobe",
+      "label": "Adobe Systems"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "ColdFusion Cheat Sheet [html] (petefreitag.com)",
+      "saved": [],
+      "online": [
+        "http://www.petefreitag.com/cheatsheets/coldfusion/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "CFSCRIPT ColdFusion Cheat Sheet [html] (petefreitag.com)",
+      "saved": [],
+      "online": [
+        "http://www.petefreitag.com/cheatsheets/coldfusion/cfscript/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Getting Started with ColdFusion 9 by Terry Ryan [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-coldfusion-9"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Getting Started with Adobe ColdFusion Builder by Terry Ryan [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-adobe"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Leveraging ColdFusion 9 Exposed Services from Java by Mark Mandel [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/leveraging-coldfusion-9"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Adobe® ColdFusion Web Services for PHP Programmers by Marco Tabini [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/adobe-coldfusion-web-services-0"
+      ],
+      "archived": []
+    },
+    {
+      "title": "ColdFusion Builder 2: Faster Coding, Less Errors by Terry Ryan [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/coldfusion-builder-2-faster"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "frameworks-and-libraries/cold-fusion"
+}

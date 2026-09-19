@@ -1,0 +1,36 @@
+{
+  "id": "chmod",
+  "slug": "chmod",
+  "title": "chmod",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#chmod",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Chmod",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Chmod"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Linux",
+      "label": "Linux"
+    },
+    {
+      "id": "Unix",
+      "label": "Unix"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Chmod chart [html] (draac.com)",
+      "saved": [],
+      "online": [
+        "http://www.draac.com/chmodchart.html"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "gnu-linux-commands/chmod"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "Objective-C",
+  "slug": "objective-c",
+  "title": "Objective-C",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Objective-C",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Objective-C",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Objective-C"
+  ],
+  "official_websites": [
+    {
+      "label": "developer.apple.com/.../introObjectiveC.html",
+      "url": "http://developer.apple.com/mac/library/documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "C",
+      "label": "C"
+    },
+    {
+      "id": "CSharp",
+      "label": "C#"
+    },
+    {
+      "id": "CPP",
+      "label": "C++"
+    },
+    {
+      "id": "Cocoa",
+      "label": "Cocoa"
+    },
+    {
+      "id": "Mac",
+      "label": "Mac"
+    },
+    {
+      "id": "OSX",
+      "label": "Mac OS X"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Objective-C for the iPhone and iPad by Ben Ellingson and Matthew McCullough [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/objective-c-iphone-and-ipad"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/objective-c-iphone-and-ipad"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "languages/objective-c"
+}

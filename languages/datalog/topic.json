@@ -1,0 +1,47 @@
+{
+  "id": "Datalog",
+  "slug": "datalog",
+  "title": "Datalog W",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Datalog",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Datalog User Manual by The MITRE Corporation [html] (datalog.sourceforge.net)",
+      "saved": [],
+      "online": [
+        "http://datalog.sourceforge.net/datalog.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://datalog.sourceforge.net/datalog.html"
+      ]
+    },
+    {
+      "title": "Learn Datalog Today [html] (learndatalogtoday.org)",
+      "saved": [],
+      "online": [
+        "http://www.learndatalogtoday.org/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.learndatalogtoday.org/"
+      ]
+    },
+    {
+      "title": "Datalog: Deductive Database Programming by Jay McCarthy [html] (racket-lang.org)",
+      "saved": [],
+      "online": [
+        "https://docs.racket-lang.org/datalog/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://docs.racket-lang.org/datalog/"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "languages/datalog"
+}

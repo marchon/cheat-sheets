@@ -1,0 +1,39 @@
+{
+  "id": "Quicksilver",
+  "slug": "quicksilver",
+  "title": "Quicksilver",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#Quicksilver",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Quicksilver_(software)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Quicksilver_(software)"
+  ],
+  "official_websites": [
+    {
+      "label": "blacktree.com",
+      "url": "http://www.blacktree.com/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Quicksilver Quick Reference [pdf] (mysite.verizon.net/hmelman/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/QSRef.pdf"
+      ],
+      "online": [
+        "http://mysite.verizon.net/hmelman/QSRef.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/QSRef.pdf",
+      "filename": "QSRef.pdf"
+    }
+  ],
+  "path": "applications/quicksilver"
+}

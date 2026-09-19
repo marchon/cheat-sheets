@@ -1,0 +1,62 @@
+{
+  "id": "Maple",
+  "slug": "maple",
+  "title": "Maple",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Maple",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Maple_(software)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Maple_(software)"
+  ],
+  "official_websites": [
+    {
+      "label": "maplesoft.com/products/maple/",
+      "url": "http://www.maplesoft.com/products/maple/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Math",
+      "label": "Math"
+    },
+    {
+      "id": "Mathematica",
+      "label": "Mathematica"
+    },
+    {
+      "id": "MATLAB",
+      "label": "MATLAB"
+    },
+    {
+      "id": "Maxima",
+      "label": "Maxima"
+    },
+    {
+      "id": "PARIGP",
+      "label": "PARI/GP"
+    },
+    {
+      "id": "SageMath",
+      "label": "SageMath"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Maple 11 Cheat Sheet by Margaret Yau. Mt. San Antonio College [pdf] (math.mtsac.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/maple11_cheatsheet1.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/maple11_cheatsheet1.pdf",
+      "filename": "maple11_cheatsheet1.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/maple"
+}

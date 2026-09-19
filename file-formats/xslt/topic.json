@@ -1,0 +1,84 @@
+{
+  "id": "XSLT",
+  "slug": "xslt",
+  "title": "XSLT - Extensible Stylesheet Language Transformations",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#XSLT",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/XSLT",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/XSLT"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.w3.org/Style/XSL/",
+      "url": "http://www.w3.org/Style/XSL/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "MathML",
+      "label": "MathML"
+    },
+    {
+      "id": "XHTML",
+      "label": "XHTML"
+    },
+    {
+      "id": "XML",
+      "label": "XML"
+    },
+    {
+      "id": "XMLSchema",
+      "label": "XML Schema"
+    },
+    {
+      "id": "XPath",
+      "label": "XPath"
+    },
+    {
+      "id": "XSL",
+      "label": "XSL"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "XSLT 1.0 and XPath 1.0 Quick Reference [pdf] (mulberrytech.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/XSLT_1quickref-v2.pdf"
+      ],
+      "online": [
+        "http://www.mulberrytech.com/quickref/XSLT_1quickref-v2.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "XSLT 1.0 Quick Reference by DeepX Ltd [pdf] (refcards.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/XSLT-1.0.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "XSLT Referencee [html] (topxml.com)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20071006192409/http://www.topxml.com/xsl/xsltref.asp"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/XSLT_1quickref-v2.pdf",
+      "filename": "XSLT_1quickref-v2.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/XSLT-1.0.pdf",
+      "filename": "XSLT-1.0.pdf"
+    }
+  ],
+  "path": "file-formats/xslt"
+}

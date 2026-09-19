@@ -1,0 +1,103 @@
+{
+  "id": "Wikipedia",
+  "slug": "wikipedia",
+  "title": "Wikipedia",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#Wikipedia",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Wikipedia",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Wikipedia"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.wikipedia.org/",
+      "url": "http://www.wikipedia.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Wikipedia Cheatsheet [html] (wikipedia.org)",
+      "saved": [],
+      "online": [
+        "https://en.wikipedia.org/wiki/Wikipedia:Cheatsheet"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Wiki-refcard [png] (wikimedia.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Wiki-refcard.png"
+      ],
+      "online": [
+        "http://meta.wikimedia.org/wiki/Help:Reference_card"
+      ],
+      "archived": []
+    },
+    {
+      "title": "User contributions detail [png] (wikipedia.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/User_contributions_detail.png"
+      ],
+      "online": [
+        "https://en.wikipedia.org/wiki/File:User_contributions_detail.png"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Reference card of MediaWiki editing commands, by mjanich. [pdf] (wikipedia.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Wiki-refcard.pdf"
+      ],
+      "online": [
+        "http://commons.wikimedia.org/wiki/File:Wiki-refcard.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Reference card of MediaWiki editing commands, by mjanich. [PNG] (wikipedia.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Wiki-refcard_v0.93d.PNG"
+      ],
+      "online": [
+        "http://commons.wikimedia.org/wiki/File:Wiki-refcard_v0.93d.PNG"
+      ],
+      "archived": []
+    },
+    {
+      "title": "MediaWiki Cheatsheet [pdf] (commons.wikimedia.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Cheatsheet-mediawiki.pdf"
+      ],
+      "online": [
+        "http://commons.wikimedia.org/wiki/File:Cheatsheet-mediawiki.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Wiki-refcard.png",
+      "filename": "Wiki-refcard.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/User_contributions_detail.png",
+      "filename": "User_contributions_detail.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Wiki-refcard.pdf",
+      "filename": "Wiki-refcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Wiki-refcard_v0.93d.PNG",
+      "filename": "Wiki-refcard_v0.93d.PNG"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Cheatsheet-mediawiki.pdf",
+      "filename": "Cheatsheet-mediawiki.pdf"
+    }
+  ],
+  "path": "applications/wikipedia"
+}

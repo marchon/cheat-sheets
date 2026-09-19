@@ -1,0 +1,37 @@
+{
+  "id": "BIRT",
+  "slug": "birt",
+  "title": "BIRT - Business Intelligence and Reporting Tools Project (BIRT Project)",
+  "group": "business-processes",
+  "source_anchor": "https://www.cheat-sheets.org/#BIRT",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/BIRT_Project",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/BIRT_Project"
+  ],
+  "official_websites": [
+    {
+      "label": "eclipse.org/birt/",
+      "url": "http://www.eclipse.org/birt/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Eclipse",
+      "label": "Eclipse"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with BIRT by Virgil Dodson [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/birt"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "business-processes/birt"
+}

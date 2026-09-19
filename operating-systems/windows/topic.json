@@ -1,0 +1,57 @@
+{
+  "id": "Windows",
+  "slug": "windows",
+  "title": "Windows",
+  "group": "operating-systems",
+  "source_anchor": "https://www.cheat-sheets.org/#Windows",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Windows",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Windows"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.microsoft.com/Windows/default.mspx",
+      "url": "http://www.microsoft.com/Windows/default.mspx"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "An A-Z Index of the Windows NT/XP command line [html] (ss64.com)",
+      "saved": [],
+      "online": [
+        "http://www.ss64.com/nt/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Windows Resources Kits Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/ResKit_Quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Windows Important Directories and Files Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Windows_folders_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ResKit_Quickref.pdf",
+      "filename": "ResKit_Quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Windows_folders_quickref.pdf",
+      "filename": "Windows_folders_quickref.pdf"
+    }
+  ],
+  "path": "operating-systems/windows"
+}

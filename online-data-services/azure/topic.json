@@ -1,0 +1,43 @@
+{
+  "id": "Azure",
+  "slug": "azure",
+  "title": "Azure (Azure Services Platform, Windows Azure Platform)",
+  "group": "online-data-services",
+  "source_anchor": "https://www.cheat-sheets.org/#Azure",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Azure_Services_Platform",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Azure_Services_Platform"
+  ],
+  "official_websites": [
+    {
+      "label": "www.microsoft.com/windowsazure/",
+      "url": "http://www.microsoft.com/windowsazure/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "CloudComputing",
+      "label": "Cloud Computing"
+    },
+    {
+      "id": "Windows",
+      "label": "Windows"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Cloud Computing with Windows Azure Platform by Brian H. Prince [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/cloud-computing-windows-azure"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/cloud-computing-windows-azure"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "online-data-services/azure"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "JUnit",
+  "slug": "junit",
+  "title": "JUnit",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#JUnit",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/JUnit",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/JUnit"
+  ],
+  "official_websites": [
+    {
+      "label": "junit.org",
+      "url": "http://junit.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "JUnit Quick Reference by Delphi Consultants [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/JUnit%20Quick%20Reference.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "JUnit and EasyMock by Michael T Minella [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/junit-and-easymock"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/junit-and-easymock"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/JUnit%20Quick%20Reference.pdf",
+      "filename": "JUnit Quick Reference.pdf"
+    }
+  ],
+  "path": "frameworks-and-libraries/junit"
+}

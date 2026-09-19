@@ -1,0 +1,34 @@
+{
+  "id": "VeritasCluster",
+  "slug": "veritas-cluster",
+  "title": "VxCFS, VCS - Veritas Cluster File System",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#VeritasCluster",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Veritas_Cluster_File_System",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Veritas_Cluster_File_System"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Veritas Cluster Cheat sheet [pdf] (scribd.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/2675288-Veritas-Cluster-Cheat-Sheet.pdf"
+      ],
+      "online": [
+        "http://www.scribd.com/doc/2675288/Veritas-Cluster-Cheat-Sheet"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/2675288-Veritas-Cluster-Cheat-Sheet.pdf",
+      "filename": "2675288-Veritas-Cluster-Cheat-Sheet.pdf"
+    }
+  ],
+  "path": "cloud-and-devops/veritas-cluster"
+}

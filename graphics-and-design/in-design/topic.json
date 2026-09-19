@@ -1,0 +1,52 @@
+{
+  "id": "InDesign",
+  "slug": "in-design",
+  "title": "InDesign",
+  "group": "graphics-and-design",
+  "source_anchor": "https://www.cheat-sheets.org/#InDesign",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Adobe_InDesign",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Adobe_InDesign"
+  ],
+  "official_websites": [
+    {
+      "label": "adobe.com/products/indesign.html",
+      "url": "http://www.adobe.com/products/indesign.html"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Adobe",
+      "label": "Adobe Systems"
+    },
+    {
+      "id": "Illustrator",
+      "label": "Illustrator"
+    },
+    {
+      "id": "Photoshop",
+      "label": "Photoshop"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "InDesign CC 2015 by Ton Haarmans [pdf] (wideopenwindows.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/indesign_CC2015_Win.pdf"
+      ],
+      "online": [
+        "https://www.wideopenwindows.be/cheatsheets/indesign_CC2015_Win.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/indesign_CC2015_Win.pdf",
+      "filename": "indesign_CC2015_Win.pdf"
+    }
+  ],
+  "path": "graphics-and-design/in-design"
+}

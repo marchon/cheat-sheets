@@ -1,0 +1,39 @@
+{
+  "id": "ApacheAnt",
+  "slug": "apache-ant",
+  "title": "Apache Ant",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#ApacheAnt",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Apache_Ant",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Apache_Ant"
+  ],
+  "official_websites": [
+    {
+      "label": "ant.apache.org",
+      "url": "http://ant.apache.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Apache Ant by James Sugrue [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-apache-ant?oid=hom24765"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-apache-ant?oid=hom24765"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/apache-ant"
+}

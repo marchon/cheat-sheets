@@ -1,0 +1,32 @@
+{
+  "id": "HTTP",
+  "slug": "http",
+  "title": "HTTP - Hypertext Transfer Protocol",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#HTTP",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Http",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Http"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "HTTP/1.1 Status Codes by Bryan English [html] (bluelinecity.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/http-response-codes-1.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/http-response-codes-1.pdf",
+      "filename": "http-response-codes-1.pdf"
+    }
+  ],
+  "path": "web/http"
+}

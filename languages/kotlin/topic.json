@@ -1,0 +1,105 @@
+{
+  "id": "Kotlin",
+  "slug": "kotlin",
+  "title": "Kotlin W",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Kotlin",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "kotlinlang.org",
+      "url": "https://kotlinlang.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Kotlin Cheat Sheet by Kt. Academy [pdf] (kt.academy)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Kotlin_Cheat_Sheet.pdf"
+      ],
+      "online": [
+        "https://kt.academy/Kotlin_Cheat_Sheet.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://kt.academy/Kotlin_Cheat_Sheet.pdf"
+      ]
+    },
+    {
+      "title": "Kotlin cheatsheet [html] (devhints.io)",
+      "saved": [],
+      "online": [
+        "https://devhints.io/kotlin"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://devhints.io/kotlin"
+      ]
+    },
+    {
+      "title": "Kotlin Cheat Sheet by Kt. Academy [png] (blog.kotlin-academy.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/kotlin-cheat-sheet_1.png",
+        "https://www.cheat-sheets.org/saved-copy/kotlin-cheat-sheet_2.png",
+        "https://www.cheat-sheets.org/saved-copy/kotlin-cheat-sheet_3.png"
+      ],
+      "online": [
+        "https://blog.kotlin-academy.com/kotlin-cheat-sheet-1137588c75a"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.kotlin-academy.com/kotlin-cheat-sheet-1137588c75a"
+      ]
+    },
+    {
+      "title": "Kotlin Programming Language Cheat Sheet Part 1 by Dody Gunawinata (dodyg) [html] (gist.github.com)",
+      "saved": [],
+      "online": [
+        "https://gist.github.com/dodyg/5823184"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://gist.github.com/dodyg/5823184"
+      ]
+    },
+    {
+      "title": "tldr kotlin [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/project/tldr/command/kotlin/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cheat-sheets.org/project/tldr/command/kotlin/"
+      ]
+    },
+    {
+      "title": "tldr kotlinc [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/project/tldr/command/kotlinc/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cheat-sheets.org/project/tldr/command/kotlinc/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Kotlin_Cheat_Sheet.pdf",
+      "filename": "Kotlin_Cheat_Sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/kotlin-cheat-sheet_1.png",
+      "filename": "kotlin-cheat-sheet_1.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/kotlin-cheat-sheet_2.png",
+      "filename": "kotlin-cheat-sheet_2.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/kotlin-cheat-sheet_3.png",
+      "filename": "kotlin-cheat-sheet_3.png"
+    }
+  ],
+  "path": "languages/kotlin"
+}

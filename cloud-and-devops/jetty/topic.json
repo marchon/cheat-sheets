@@ -1,0 +1,38 @@
+{
+  "id": "Jetty",
+  "slug": "jetty",
+  "title": "Jetty",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#Jetty",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Jetty_(Web_server)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Jetty_(Web_server)"
+  ],
+  "official_websites": [
+    {
+      "label": "www.eclipse.org/jetty/",
+      "url": "http://www.eclipse.org/jetty/"
+    },
+    {
+      "label": "jetty.codehaus.org/jetty/",
+      "url": "http://jetty.codehaus.org/jetty/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Jetty: A Lightweight, Open-Source Web Server and Servlet Container by Jos Dirksen [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/jetty"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/jetty"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/jetty"
+}

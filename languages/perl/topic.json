@@ -1,0 +1,191 @@
+{
+  "id": "Perl",
+  "slug": "perl",
+  "title": "Perl",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Perl",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Perl",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Perl"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.perl.org/",
+      "url": "http://www.perl.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Catalyst",
+      "label": "Catalyst"
+    },
+    {
+      "id": "mod_perl",
+      "label": "mod_perl"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "perlcheat - Perl 5 Cheat Sheet by  [html] (perldoc.perl.org)",
+      "saved": [],
+      "online": [
+        "http://perldoc.perl.org/perlcheat.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://perldoc.perl.org/perlcheat.html"
+      ]
+    },
+    {
+      "title": "perlcheat (5.8.7) - Perl 5 Cheat Sheet [html] (cpan.org)",
+      "saved": [],
+      "online": [
+        "http://search.cpan.org/~nwclark/perl-5.8.7/pod/perlcheat.pod"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://search.cpan.org/~nwclark/perl-5.8.7/pod/perlcheat.pod"
+      ]
+    },
+    {
+      "title": "Perl Cheat Sheet [html] (juerd.nl)",
+      "saved": [],
+      "online": [
+        "http://juerd.nl/site.plp/perlcheat"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://juerd.nl/site.plp/perlcheat"
+      ]
+    },
+    {
+      "title": "Perl Quick Reference Card [pdf] (johnbokma.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/perl-quick-reference-card.pdf"
+      ],
+      "online": [
+        "http://johnbokma.com/perl/perl-quick-reference-card.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Perl Regular Expressions by Iain Truskett [pdf] (refcards.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/perl-regexp-refcard-a4.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Perl Regular Expression - Quick Reference [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/PerlQuickRef.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Perl Predefined Variables (perl's special variable cheat sheet) by Peteris Krumins [doc, pdf] (catonmat.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/perl.predefined.variables.doc",
+        "https://www.cheat-sheets.org/saved-copy/perl.predefined.variables.pdf"
+      ],
+      "online": [
+        "http://www.catonmat.net/blog/perls-special-variable-cheat-sheet/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Perl pack/unpack Summary (perl's pack/unpack and printf cheat sheet) by Peteris Krumins [doc, pdf] (catonmat.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/perl.pack.unpack.printf.cheat.sheet.doc",
+        "https://www.cheat-sheets.org/saved-copy/perl.pack.unpack.printf.cheat.sheet.pdf"
+      ],
+      "online": [
+        "http://www.catonmat.net/blog/perl-pack-unpack-printf-cheat-sheet/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Perl Scripting Language Quick Reference by Johan Vromans [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/perl_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "PERL Win32 Quick Reference by Jialong He [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/PERL%20Win32%20Quick%20Reference.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Perl Reference Card by Michael Goerz [pdf, odt] (users.physik.fu-berlin.de/~goerz/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/perl_refcard.pdf",
+        "https://www.cheat-sheets.org/saved-copy/perl_refcard.odt"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Perl Cheat Sheet by Hitesh Jethva (Hitesh J) [html] (pcwdld.com)",
+      "saved": [],
+      "online": [
+        "https://www.pcwdld.com/perl-cheat-sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.pcwdld.com/perl-cheat-sheet"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/perl-quick-reference-card.pdf",
+      "filename": "perl-quick-reference-card.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/perl-regexp-refcard-a4.pdf",
+      "filename": "perl-regexp-refcard-a4.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PerlQuickRef.pdf",
+      "filename": "PerlQuickRef.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/perl.predefined.variables.doc",
+      "filename": "perl.predefined.variables.doc"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/perl.predefined.variables.pdf",
+      "filename": "perl.predefined.variables.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/perl.pack.unpack.printf.cheat.sheet.doc",
+      "filename": "perl.pack.unpack.printf.cheat.sheet.doc"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/perl.pack.unpack.printf.cheat.sheet.pdf",
+      "filename": "perl.pack.unpack.printf.cheat.sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/perl_quickref.pdf",
+      "filename": "perl_quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PERL%20Win32%20Quick%20Reference.pdf",
+      "filename": "PERL Win32 Quick Reference.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/perl_refcard.pdf",
+      "filename": "perl_refcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/perl_refcard.odt",
+      "filename": "perl_refcard.odt"
+    }
+  ],
+  "path": "languages/perl"
+}

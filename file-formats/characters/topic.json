@@ -1,0 +1,148 @@
+{
+  "id": "Characters",
+  "slug": "characters",
+  "title": "Characters",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#Characters",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Character_%28computing%29",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Character_%28computing%29"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "ASCII",
+      "label": "ASCII"
+    }
+  ],
+  "tools": [
+    {
+      "label": "WolframAlpha",
+      "url": "http://www.wolframalpha.com/examples/CharacterEncodings.html"
+    }
+  ],
+  "items": [
+    {
+      "title": "HTML/XHTML Character Entities in one page [html] (html.su)",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/html.su/entities.html"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "URL Encoded Characters [html] (html.su)",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/html.su/urlencoding.html"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "HTML Character Entities Cheat Sheet by Dave Child [png, pdf] (addedbytes.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/characters_cheat_sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/characters_cheat_sheet.pdf"
+      ],
+      "online": [
+        "http://www.addedbytes.com/cheat-sheets/html-character-entities-cheat-sheet/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Character Entity References in HTML 4 and XHTML 1.0 [html] (cookwood.com)",
+      "saved": [],
+      "online": [
+        "http://www.elizabethcastro.com/html/extras/entities.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Reference: Special Characters [html] (webmonkey.com)",
+      "saved": [],
+      "online": [
+        "http://www.webmonkey.com/webmonkey/reference/special_characters/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "HTML Entities Cheatsheet & Online Reference [html] (explainth.at)",
+      "saved": [],
+      "online": [
+        "http://www.explainth.at/en/qr/hent.shtml"
+      ],
+      "archived": []
+    },
+    {
+      "title": "The Unicode Character Code Charts [html] (utf.ru)",
+      "saved": [],
+      "online": [
+        "http://www.utf.ru/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Free Unicode Fonts [html] (font.su)",
+      "saved": [],
+      "online": [
+        "https://www.cheat-sheets.org/sites/font.su/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Windows - Alt Key Numeric Codes [html] (tlt.its.psu.edu)",
+      "saved": [],
+      "online": [
+        "http://tlt.its.psu.edu/suggestions/international/accents/codealt.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "HTML Characters, Alpha Codes by Bob Stein, VisiBone [html] (visibone.com)",
+      "saved": [],
+      "online": [
+        "http://www.visibone.com/htmlref/char/ceralpha.htm"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Webdings, special nearly useless symbols (e.g.  ‘  O  6  þ  ) Also DingbatsOne, DingbatsTwo, Wingdings, Zapf Dingbats BT by Bob Stein, VisiBone [html] (visibone.com)",
+      "saved": [],
+      "online": [
+        "http://www.visibone.com/htmlref/char/webdings.html",
+        "http://www.visibone.com/htmlref/char/DingbatsOne.html",
+        "http://www.visibone.com/htmlref/char/DingbatsTwo.html",
+        "http://www.visibone.com/htmlref/char/ZapfDingbatsBt.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "HTML Entiteiten (Dutch) by Ton Haarmans [html] (wideopenwin.com)",
+      "saved": [],
+      "online": [
+        "http://www.wideopenwin.com/html-entiteiten"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/sites/html.su/entities.html",
+      "filename": "/sites/html.su/entities.html"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/sites/html.su/urlencoding.html",
+      "filename": "/sites/html.su/urlencoding.html"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/characters_cheat_sheet.png",
+      "filename": "characters_cheat_sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/characters_cheat_sheet.pdf",
+      "filename": "characters_cheat_sheet.pdf"
+    }
+  ],
+  "path": "file-formats/characters"
+}

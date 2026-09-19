@@ -1,0 +1,477 @@
+{
+  "id": "Git",
+  "slug": "git",
+  "title": "Git",
+  "group": "version-control",
+  "source_anchor": "https://www.cheat-sheets.org/#Git",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Git_(software)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Git_(software)"
+  ],
+  "official_websites": [
+    {
+      "label": "git-scm.com",
+      "url": "http://git-scm.com/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Bazaar",
+      "label": "Bazaar"
+    },
+    {
+      "id": "CVS",
+      "label": "CVS"
+    },
+    {
+      "id": "SVN",
+      "label": "SVN"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Git cheat sheet (the most important and commonly used Git commands for easy reference) [pdf] (education.github.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-education.20211117.pdf"
+      ],
+      "online": [
+        "https://education.github.com/git-cheat-sheet-education.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://education.github.com/git-cheat-sheet-education.pdf"
+      ]
+    },
+    {
+      "title": "GitCheatSheet by Zack Rusin [html, png, pdf, svg] (git.or.cz)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-large.png",
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet.svg"
+      ],
+      "online": [
+        "http://git.or.cz/gitwiki/GitCheatSheet"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Git cheat sheet, extended edition prepared by Jan Krueger [svg front, svg back, pdf, pdf.zip] (git.or.cz)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-front.svg",
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-back.svg",
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2.pdf",
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2.zip"
+      ],
+      "online": [
+        "http://jan-krueger.net/development/git-cheat-sheet-extended-edition"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Git Quick Reference by Juan Pablo Justiniano [pdf] (jpjustiniano.wordpress.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Git_Quick_Reference.2011-09-04.pdf"
+      ],
+      "online": [
+        "http://jpjustiniano.wordpress.com/2011/05/22/git-quick-reference/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Git cheat sheet [pdf] (git-tower.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Git_Cheat_Sheet_grey.pdf"
+      ],
+      "online": [
+        "http://www.git-tower.com/files/cheatsheet/Git_Cheat_Sheet_grey.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Getting Started with Git by Matthew McCullough [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-git"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-git"
+      ]
+    },
+    {
+      "title": "Top 20 Git Commands With Examples by  Sahiti Kappagantula [html] (dzone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Top_20_Git_Commands_With_Examples.png"
+      ],
+      "online": [
+        "https://dzone.com/articles/top-20-git-commands-with-examples"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/articles/top-20-git-commands-with-examples"
+      ]
+    },
+    {
+      "title": "Git Cheat Sheet - GitHub Training [pdf] (training.github.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/github-git-cheat-sheet-20220806.pdf"
+      ],
+      "online": [
+        "https://training.github.com/downloads/github-git-cheat-sheet.pdf",
+        "https://training.github.com/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://training.github.com/downloads/github-git-cheat-sheet.pdf",
+        "https://web.archive.org/web/*/https://training.github.com/"
+      ]
+    },
+    {
+      "title": "Git for Subversion Users - A Cheat Sheet by Tobias Günther [pdf] (git-tower.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Git_for_Subversion_Users.pdf"
+      ],
+      "online": [
+        "https://www.git-tower.com/blog/git-for-subversion-users-cheat-sheet/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "The Simple Git Cheat Sheet – A Helpful Illustrated Guide [pdf] (finxter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/12_git_cheat_sheet.20210604.pdf"
+      ],
+      "online": [
+        "https://blog.finxter.com/wp-content/uploads/2019/05/12_git_cheat_sheet.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.finxter.com/wp-content/uploads/2019/05/12_git_cheat_sheet.pdf"
+      ]
+    },
+    {
+      "title": "Basic Git commands  [html] (atlassian.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Basic_Git_commands_20211117.png"
+      ],
+      "online": [
+        "https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html"
+      ]
+    },
+    {
+      "title": "Git for the lazy [html] (spheredev.org)",
+      "saved": [],
+      "online": [
+        "https://wiki.spheredev.org/index.php/Git_for_the_lazy"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://wiki.spheredev.org/index.php/Git_for_the_lazy"
+      ]
+    },
+    {
+      "title": "Git from the inside out by Mary Rose Cook [html] (codewords.recurse.com)",
+      "saved": [],
+      "online": [
+        "https://codewords.recurse.com/issues/two/git-from-the-inside-out"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://codewords.recurse.com/issues/two/git-from-the-inside-out"
+      ]
+    },
+    {
+      "title": "Common Git Commands by Brian Kerr [html] (guides.beanstalkapp.com/)",
+      "saved": [],
+      "online": [
+        "http://guides.beanstalkapp.com/version-control/common-git-commands.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://guides.beanstalkapp.com/version-control/common-git-commands.html"
+      ]
+    },
+    {
+      "title": "13 Git Commands Every Developer Must Know by Vikash Koushik [html] (rovitpm.com)",
+      "saved": [],
+      "online": [
+        "https://rovitpm.com/13-git-commands/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://rovitpm.com/13-git-commands/"
+      ]
+    },
+    {
+      "title": "GIT Bash Commands by Adam Lusted /etoxin/ [html, md] (github.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.png",
+        "https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.md"
+      ],
+      "online": [
+        "https://gist.github.com/etoxin/1acb257550b1de60fe99"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://gist.github.com/etoxin/1acb257550b1de60fe99"
+      ]
+    },
+    {
+      "title": "git memory knots (git commands extremely short cheat sheet) by Alexander Krassotkin [html] (cheat-sheets.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/git.memory.knots.html"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Git Cheat Sheet [pdf] (atlassian.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf"
+      ],
+      "online": [
+        "https://wac-cdn.atlassian.com/dam/jcr:e7e22f25-bba2-4ef1-a197-53f46b6df4a5/SWTM-2088_Atlassian-Git-Cheatsheet.pdf",
+        "https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://wac-cdn.atlassian.com/dam/jcr:e7e22f25-bba2-4ef1-a197-53f46b6df4a5/SWTM-2088_Atlassian-Git-Cheatsheet.pdf",
+        "https://web.archive.org/web/*/https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet"
+      ]
+    },
+    {
+      "title": "Git Cheat Sheet by GitLab [pdf] (gitlab.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/gitlab-git-cheat-sheet-20220806.pdf"
+      ],
+      "online": [
+        "https://about.gitlab.com/images/press/git-cheat-sheet.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://about.gitlab.com/images/press/git-cheat-sheet.pdf"
+      ]
+    },
+    {
+      "title": "Yet Another Git Cheatsheet by Dumb Down Demistifying Dev (henryong92) [html] (dev.to)",
+      "saved": [],
+      "online": [
+        "https://dev.to/henryong92/yet-another-git-cheatsheet-4gjk"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dev.to/henryong92/yet-another-git-cheatsheet-4gjk"
+      ]
+    },
+    {
+      "title": "Start a new git repository by Karl Broman [html] (kbroman.org)",
+      "saved": [],
+      "online": [
+        "https://kbroman.org/github_tutorial/pages/init.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://kbroman.org/github_tutorial/pages/init.html"
+      ]
+    },
+    {
+      "title": "Oh Shit, Git!?! by Katie Sylor-Miller (ksylor) [html] (ohshitgit.com)",
+      "saved": [],
+      "online": [
+        "https://ohshitgit.com/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://ohshitgit.com/"
+      ]
+    },
+    {
+      "title": "Git: Cheat Sheet (advanced) by Maxence Poutord (maxpou) [html] (dev.to)",
+      "saved": [],
+      "online": [
+        "https://dev.to/maxpou/git-cheat-sheet-advanced-3a17"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dev.to/maxpou/git-cheat-sheet-advanced-3a17"
+      ]
+    },
+    {
+      "title": "Git Cheat Sheet: Commands and Best Practices by Simon Maple [html] (jrebel.com)",
+      "saved": [],
+      "online": [
+        "https://www.jrebel.com/blog/git-cheat-sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.jrebel.com/blog/git-cheat-sheet"
+      ]
+    },
+    {
+      "title": "tldr git [html] (cheat-sheets.org) See also: git init , git clone , git add , git status , git commit , git remote , git push , git pull , etc.",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/project/tldr/command/git/",
+        "http://cheat-sheets.org/project/tldr/command/git-init/",
+        "http://cheat-sheets.org/project/tldr/command/git-clone/",
+        "http://cheat-sheets.org/project/tldr/command/git-add/",
+        "http://cheat-sheets.org/project/tldr/command/git-status/",
+        "http://cheat-sheets.org/project/tldr/command/git-commit/",
+        "http://cheat-sheets.org/project/tldr/command/git-remote/",
+        "http://cheat-sheets.org/project/tldr/command/git-push/",
+        "http://cheat-sheets.org/project/tldr/command/git-pull/",
+        "http://cheat-sheets.org/project/tldr/command/git*/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cheat-sheets.org/project/tldr/command/git/"
+      ]
+    },
+    {
+      "title": "Awesome Git Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/git.sh"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/git.sh"
+      ]
+    },
+    {
+      "title": "Git /The official Git site/  [html] (git-scm.com)",
+      "saved": [],
+      "online": [
+        "https://git-scm.com/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://git-scm.com/"
+      ]
+    },
+    {
+      "title": "Pro Git book, written by Scott Chacon and Ben Straub [pdf] (git-scm.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/progit.20211117.pdf"
+      ],
+      "online": [
+        "https://git-scm.com/book/en/v2"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://git-scm.com/book/en/v2"
+      ]
+    },
+    {
+      "title": "Official Git tutorial [html] (kernel.org)",
+      "saved": [],
+      "online": [
+        "http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html"
+      ]
+    },
+    {
+      "title": "Everyday GIT With 20 Commands Or So [html] (kernel.org)",
+      "saved": [],
+      "online": [
+        "https://www.kernel.org/pub/software/scm/git/docs/giteveryday.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.kernel.org/pub/software/scm/git/docs/giteveryday.html"
+      ]
+    },
+    {
+      "title": "Git User’s Manual (for version 1.5.3 or newer) [html] (kernel.org)",
+      "saved": [],
+      "online": [
+        "http://www.kernel.org/pub/software/scm/git/docs/user-manual.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.kernel.org/pub/software/scm/git/docs/user-manual.html"
+      ]
+    },
+    {
+      "title": "Start using Git on the command line [html] (gitlab.com)",
+      "saved": [],
+      "online": [
+        "https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-education.20211117.pdf",
+      "filename": "git-cheat-sheet-education.20211117.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-large.png",
+      "filename": "git-cheat-sheet-large.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf",
+      "filename": "git-cheat-sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet.svg",
+      "filename": "git-cheat-sheet.svg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-front.svg",
+      "filename": "git-cheat-sheet-v2-front.svg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-back.svg",
+      "filename": "git-cheat-sheet-v2-back.svg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2.pdf",
+      "filename": "git-cheat-sheet-v2.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2.zip",
+      "filename": "git-cheat-sheet-v2.zip"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Git_Quick_Reference.2011-09-04.pdf",
+      "filename": "Git_Quick_Reference.2011-09-04.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Git_Cheat_Sheet_grey.pdf",
+      "filename": "Git_Cheat_Sheet_grey.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Top_20_Git_Commands_With_Examples.png",
+      "filename": "Top_20_Git_Commands_With_Examples.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/github-git-cheat-sheet-20220806.pdf",
+      "filename": "github-git-cheat-sheet-20220806.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Git_for_Subversion_Users.pdf",
+      "filename": "Git_for_Subversion_Users.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/12_git_cheat_sheet.20210604.pdf",
+      "filename": "12_git_cheat_sheet.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Basic_Git_commands_20211117.png",
+      "filename": "Basic_Git_commands_20211117.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.png",
+      "filename": "GIT_Bash_Commands.20211117.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.md",
+      "filename": "GIT_Bash_Commands.20211117.md"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/git.memory.knots.html",
+      "filename": "git.memory.knots.html"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf",
+      "filename": "SWTM-2088_Atlassian-Git-Cheatsheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/gitlab-git-cheat-sheet-20220806.pdf",
+      "filename": "gitlab-git-cheat-sheet-20220806.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/progit.20211117.pdf",
+      "filename": "progit.20211117.pdf"
+    }
+  ],
+  "path": "version-control/git"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "TLS",
+  "slug": "tls",
+  "title": "TLS - Transport Layer Security; SSL - Secure Sockets Layer",
+  "group": "networking-and-protocols",
+  "source_anchor": "https://www.cheat-sheets.org/#TLS",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Transport_Layer_Security",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Transport_Layer_Security"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "SSL Handshake With Two Way Authentication with Certificates by Christian Friedrich [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf",
+      "filename": "Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf"
+    }
+  ],
+  "path": "networking-and-protocols/tls"
+}

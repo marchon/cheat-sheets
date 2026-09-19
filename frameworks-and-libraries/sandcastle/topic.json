@@ -1,0 +1,69 @@
+{
+  "id": "Sandcastle",
+  "slug": "sandcastle",
+  "title": "Sandcastle",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#Sandcastle",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Sandcastle_(software)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Sandcastle_(software)"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "DotNET",
+      "label": ".NET"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Sandcastle and Sandcastle Help File Builder by Michael Sorens [pdf] (red-gate.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sandcastle-wallchart.pdf"
+      ],
+      "online": [
+        "http://www.red-gate.com/products/dotnet-development/ants-performance-profiler/entrypage/code-profiling-made-easy-sandcastlechart"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Taming Sandcastle: A .NET Programmer's Guide to Documenting Your Code by Michael Sorens [pdf] (red-gate.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Taming-Sandcastle.pdf"
+      ],
+      "online": [
+        "http://www.simple-talk.com/dotnet/.net-tools/taming-sandcastle-a-.net-programmers-guide-to-documenting-your-code/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Sandcastle - sandcastle.codeplex.com",
+      "saved": [],
+      "online": [
+        "http://sandcastle.codeplex.com/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Sandcastle Help File Builder (SHFB) - shfb.codeplex.com",
+      "saved": [],
+      "online": [
+        "http://shfb.codeplex.com/"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sandcastle-wallchart.pdf",
+      "filename": "sandcastle-wallchart.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Taming-Sandcastle.pdf",
+      "filename": "Taming-Sandcastle.pdf"
+    }
+  ],
+  "path": "frameworks-and-libraries/sandcastle"
+}

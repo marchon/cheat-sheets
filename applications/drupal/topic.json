@@ -1,0 +1,37 @@
+{
+  "id": "Drupal",
+  "slug": "drupal",
+  "title": "Drupal",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#Drupal",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Drupal",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Drupal"
+  ],
+  "official_websites": [
+    {
+      "label": "drupal.org",
+      "url": "http://drupal.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "DRUPAL 6 PHPTEMPLATE THEMING CHEAT SHEET by Matt Vance [pdf] (minezone.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/drupal-6-theming-cheat-sheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/drupal-6-theming-cheat-sheet.pdf",
+      "filename": "drupal-6-theming-cheat-sheet.pdf"
+    }
+  ],
+  "path": "applications/drupal"
+}

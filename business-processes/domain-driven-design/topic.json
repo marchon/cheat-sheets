@@ -1,0 +1,32 @@
+{
+  "id": "DomainDrivenDesign",
+  "slug": "domain-driven-design",
+  "title": "Domain-driven design (DDD)",
+  "group": "business-processes",
+  "source_anchor": "https://www.cheat-sheets.org/#DomainDrivenDesign",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Domain-driven_design",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Domain-driven_design"
+  ],
+  "official_websites": [
+    {
+      "label": "dddcommunity.org",
+      "url": "http://www.dddcommunity.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Domain-Driven Design by Aslam Khan [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-domain-driven"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "business-processes/domain-driven-design"
+}

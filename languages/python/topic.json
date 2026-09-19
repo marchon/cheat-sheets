@@ -1,0 +1,409 @@
+{
+  "id": "Python",
+  "slug": "python",
+  "title": "Python",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Python",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Python_%28programming_language%29",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Python_%28programming_language%29"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.python.org/",
+      "url": "http://www.python.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Django",
+      "label": "Django"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Python Quick Reference Card by Laurent Pointal [odt, pdf] (laurent.pointal.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/PQRC-2.4-A4-latest.odt",
+        "https://www.cheat-sheets.org/saved-copy/PQRC-2.4-A4-latest.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Python Cheat Sheet by Dave Child [png, pdf] (cheatography.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/python-cheat-sheet-v1.png",
+        "https://www.cheat-sheets.org/saved-copy/python-cheat-sheet-v1.pdf"
+      ],
+      "online": [
+        "https://www.cheatography.com/davechild/cheat-sheets/python/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.cheatography.com/davechild/cheat-sheets/python/"
+      ]
+    },
+    {
+      "title": "Python Quick Reference by Laurent Pointal [pdf] (laurent.pointal.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/python.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Python 3 Cheat Sheet by Laurent Pointal [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/mementopython3-english.20210604.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Python Beginner Cheat Sheet [pdf] (nostarch.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/beginners_python_cheat_sheet_pcc_all.20210604.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "The Ultimate Python Cheat Sheet [pdf] (finxter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Finxter_WorldsMostDensePythonCheatSheet.20210604.pdf"
+      ],
+      "online": [
+        "https://blog.finxter.com/wp-content/uploads/2020/07/Finxter_WorldsMostDensePythonCheatSheet.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.finxter.com/wp-content/uploads/2020/07/Finxter_WorldsMostDensePythonCheatSheet.pdf"
+      ]
+    },
+    {
+      "title": "Python Keywords Cheat Sheet [pdf] (finxter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-1-Keywords-1.20210604.pdf"
+      ],
+      "online": [
+        "https://blog.finxter.com/wp-content/uploads/2018/06/CheatSheet-Python-1-Keywords-1.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.finxter.com/wp-content/uploads/2018/06/CheatSheet-Python-1-Keywords-1.pdf"
+      ]
+    },
+    {
+      "title": "Python Cheat Sheet: Basic Data Types [pdf] (finxter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-2_-Data-Structures.20210604.pdf"
+      ],
+      "online": [
+        "https://blog.finxter.com/wp-content/uploads/2019/02/CheatSheet-Python-2_-Data-Structures.docx.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.finxter.com/wp-content/uploads/2019/02/CheatSheet-Python-2_-Data-Structures.docx.pdf"
+      ]
+    },
+    {
+      "title": "Python Complex Data Types Cheat Sheet [pdf] (finxter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-3_-Complex-Data-Types.20210604.pdf"
+      ],
+      "online": [
+        "https://blog.finxter.com/wp-content/uploads/2019/02/CheatSheet-Python-3_-Complex-Data-Types.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.finxter.com/wp-content/uploads/2019/02/CheatSheet-Python-3_-Complex-Data-Types.pdf"
+      ]
+    },
+    {
+      "title": "Python List Methods Cheat Sheet [pdf] (finxter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Python-List-Methods-Cheat-Sheet.20210604.pdf"
+      ],
+      "online": [
+        "https://blog.finxter.com/wp-content/uploads/2020/04/Python-List-Methods-Cheat-Sheet.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.finxter.com/wp-content/uploads/2020/04/Python-List-Methods-Cheat-Sheet.pdf"
+      ]
+    },
+    {
+      "title": "Python Set Methods Cheat Sheet [pdf] (finxter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Python-Set-Methods-Cheat-Sheet.20210604.pdf"
+      ],
+      "online": [
+        "https://blog.finxter.com/wp-content/uploads/2021/05/Python-Set-Methods-Cheat-Sheet.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.finxter.com/wp-content/uploads/2021/05/Python-Set-Methods-Cheat-Sheet.pdf"
+      ]
+    },
+    {
+      "title": "Python Object Orientation Terminology Cheat Sheet [pdf] (finxter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-8_-OO-Terminology.20210604.pdf"
+      ],
+      "online": [
+        "https://blog.finxter.com/wp-content/uploads/2019/03/CheatSheet-Python-8_-OO-Terminology.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.finxter.com/wp-content/uploads/2019/03/CheatSheet-Python-8_-OO-Terminology.pdf"
+      ]
+    },
+    {
+      "title": "Python Classes Cheat Sheet [pdf] (finxter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-4_-Classes.20210604.pdf"
+      ],
+      "online": [
+        "https://blog.finxter.com/wp-content/uploads/2019/02/CheatSheet-Python-4_-Classes.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.finxter.com/wp-content/uploads/2019/02/CheatSheet-Python-4_-Classes.pdf"
+      ]
+    },
+    {
+      "title": "Python Functions and Tricks Cheat Sheet [pdf] (finxter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-5_-Functions-and-Tricks.20210604.pdf"
+      ],
+      "online": [
+        "https://blog.finxter.com/wp-content/uploads/2019/02/CheatSheet-Python-5_-Functions-and-Tricks.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.finxter.com/wp-content/uploads/2019/02/CheatSheet-Python-5_-Functions-and-Tricks.pdf"
+      ]
+    },
+    {
+      "title": "Python Interview Questions Cheat Sheet [pdf] (finxter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-6_-Coding-Interview-Questions.20210604.pdf"
+      ],
+      "online": [
+        "https://blog.finxter.com/wp-content/uploads/2019/02/CheatSheet-Python-6_-Coding-Interview-Questions.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.finxter.com/wp-content/uploads/2019/02/CheatSheet-Python-6_-Coding-Interview-Questions.pdf"
+      ]
+    },
+    {
+      "title": "Python NumPy Cheat Sheet [pdf] (finxter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-7_-NumPy-1.20210604.pdf"
+      ],
+      "online": [
+        "https://blog.finxter.com/wp-content/uploads/2019/04/CheatSheet-Python-7_-NumPy-1.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://blog.finxter.com/wp-content/uploads/2019/04/CheatSheet-Python-7_-NumPy-1.pdf"
+      ]
+    },
+    {
+      "title": "Python For Data Science Cheat Sheet: Python Basics [pdf] (datacamp.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/PythonForDataScience.20210604.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Python 2.6 Quick Reference [html] (rgruet.free.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Python%202.6%20Quick%20Reference.htm"
+      ],
+      "online": [
+        "http://rgruet.free.fr/PQR26/PQR2.6.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Python 2.5 Reference Card by Michael Goerz [pdf, odt] (users.physik.fu-berlin.de/~goerz/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/python_refcard.pdf",
+        "https://www.cheat-sheets.org/saved-copy/python_refcard.odt"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Dataquest Data Science Cheat Sheet – Python Basics [pdf] (dataquest.io)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/python-cheat-sheet-basic.20210604.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Dataquest Data Science Cheat Sheet – Intermediate [pdf] (dataquest.io)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/python-cheat-sheet-intermediate.20210604.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Python Regular Expressions Data Science Cheat Sheet [pdf] (dataquest.io)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/python-regular-expressions-cheat-sheet.20210604.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Data Science Cheat Sheet [pdf] (dataquest.io)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/numpy-cheat-sheet.20210604.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Python network programming cheat sheet by Tim Keary [jpg] (comparitech.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Network-Programming-with-Python-Cheat-Sheet-5.jpg"
+      ],
+      "online": [
+        "https://www.comparitech.com/net-admin/python-network-programming-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.comparitech.com/net-admin/python-network-programming-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "NumPy / SciPy / Pandas Cheat Sheet by  [pdf] (quandl.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/NumPy_SciPy_Pandas_Quandl_Cheat_Sheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Awesome Python Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/python.md"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/python.md"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PQRC-2.4-A4-latest.odt",
+      "filename": "PQRC-2.4-A4-latest.odt"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PQRC-2.4-A4-latest.pdf",
+      "filename": "PQRC-2.4-A4-latest.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/python-cheat-sheet-v1.png",
+      "filename": "python-cheat-sheet-v1.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/python-cheat-sheet-v1.pdf",
+      "filename": "python-cheat-sheet-v1.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/python.pdf",
+      "filename": "python.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/mementopython3-english.20210604.pdf",
+      "filename": "mementopython3-english.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/beginners_python_cheat_sheet_pcc_all.20210604.pdf",
+      "filename": "beginners_python_cheat_sheet_pcc_all.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Finxter_WorldsMostDensePythonCheatSheet.20210604.pdf",
+      "filename": "Finxter_WorldsMostDensePythonCheatSheet.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-1-Keywords-1.20210604.pdf",
+      "filename": "CheatSheet-Python-1-Keywords-1.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-2_-Data-Structures.20210604.pdf",
+      "filename": "CheatSheet-Python-2_-Data-Structures.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-3_-Complex-Data-Types.20210604.pdf",
+      "filename": "CheatSheet-Python-3_-Complex-Data-Types.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Python-List-Methods-Cheat-Sheet.20210604.pdf",
+      "filename": "Python-List-Methods-Cheat-Sheet.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Python-Set-Methods-Cheat-Sheet.20210604.pdf",
+      "filename": "Python-Set-Methods-Cheat-Sheet.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-8_-OO-Terminology.20210604.pdf",
+      "filename": "CheatSheet-Python-8_-OO-Terminology.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-4_-Classes.20210604.pdf",
+      "filename": "CheatSheet-Python-4_-Classes.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-5_-Functions-and-Tricks.20210604.pdf",
+      "filename": "CheatSheet-Python-5_-Functions-and-Tricks.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-6_-Coding-Interview-Questions.20210604.pdf",
+      "filename": "CheatSheet-Python-6_-Coding-Interview-Questions.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CheatSheet-Python-7_-NumPy-1.20210604.pdf",
+      "filename": "CheatSheet-Python-7_-NumPy-1.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PythonForDataScience.20210604.pdf",
+      "filename": "PythonForDataScience.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Python%202.6%20Quick%20Reference.htm",
+      "filename": "Python 2.6 Quick Reference.htm"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/python_refcard.pdf",
+      "filename": "python_refcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/python_refcard.odt",
+      "filename": "python_refcard.odt"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/python-cheat-sheet-basic.20210604.pdf",
+      "filename": "python-cheat-sheet-basic.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/python-cheat-sheet-intermediate.20210604.pdf",
+      "filename": "python-cheat-sheet-intermediate.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/python-regular-expressions-cheat-sheet.20210604.pdf",
+      "filename": "python-regular-expressions-cheat-sheet.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/numpy-cheat-sheet.20210604.pdf",
+      "filename": "numpy-cheat-sheet.20210604.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Network-Programming-with-Python-Cheat-Sheet-5.jpg",
+      "filename": "Network-Programming-with-Python-Cheat-Sheet-5.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/NumPy_SciPy_Pandas_Quandl_Cheat_Sheet.pdf",
+      "filename": "NumPy_SciPy_Pandas_Quandl_Cheat_Sheet.pdf"
+    }
+  ],
+  "path": "languages/python"
+}

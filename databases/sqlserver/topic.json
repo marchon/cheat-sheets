@@ -1,0 +1,76 @@
+{
+  "id": "SQLServer",
+  "slug": "sqlserver",
+  "title": "SQL Server",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#SQLServer",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Microsoft_SQL_Server",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Microsoft_SQL_Server"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.microsoft.com/sql/",
+      "url": "http://www.microsoft.com/sql/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "DB2",
+      "label": "DB2"
+    },
+    {
+      "id": "MySQL",
+      "label": "MySQL"
+    },
+    {
+      "id": "Oracle",
+      "label": "Oracle"
+    },
+    {
+      "id": "PostgreSQL",
+      "label": "PostgreSQL"
+    },
+    {
+      "id": "SQL",
+      "label": "SQL"
+    },
+    {
+      "id": "SQLite",
+      "label": "SQLite"
+    },
+    {
+      "id": "Sybase",
+      "label": "Sybase"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "SQL Server Cheat Sheet by Dave Child [html, png, pdf] (cheatography.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sql-server-cheat-sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/sql-server-cheat-sheet.pdf"
+      ],
+      "online": [
+        "https://www.cheatography.com/davechild/cheat-sheets/sql-server/",
+        "http://www.addedbytes.com/cheat-sheets/sql-server-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.cheatography.com/davechild/cheat-sheets/sql-server/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sql-server-cheat-sheet.png",
+      "filename": "sql-server-cheat-sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sql-server-cheat-sheet.pdf",
+      "filename": "sql-server-cheat-sheet.pdf"
+    }
+  ],
+  "path": "databases/sqlserver"
+}

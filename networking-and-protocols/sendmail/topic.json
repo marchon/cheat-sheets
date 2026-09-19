@@ -1,0 +1,37 @@
+{
+  "id": "Sendmail",
+  "slug": "sendmail",
+  "title": "Sendmail",
+  "group": "networking-and-protocols",
+  "source_anchor": "https://www.cheat-sheets.org/#Sendmail",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Sendmail",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Sendmail"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.sendmail.org/",
+      "url": "http://www.sendmail.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Sendmail Configuration Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Sendmail_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Sendmail_quickref.pdf",
+      "filename": "Sendmail_quickref.pdf"
+    }
+  ],
+  "path": "networking-and-protocols/sendmail"
+}

@@ -1,0 +1,99 @@
+{
+  "id": "CSharp",
+  "slug": "csharp",
+  "title": "C#",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#CSharp",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+  ],
+  "official_websites": [
+    {
+      "label": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "C",
+      "label": "C"
+    },
+    {
+      "id": "CPP",
+      "label": "C++"
+    },
+    {
+      "id": "Java",
+      "label": "Java"
+    },
+    {
+      "id": "Objective-C",
+      "label": "Objective-C"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "C# Development by Jon Jarboe and Eric Lippert  [pdf] (dzone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/rc16-010d-csharp_1.pdf"
+      ],
+      "online": [
+        "https://dzone.com/refcardz/csharp"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/csharp"
+      ]
+    },
+    {
+      "title": "Core C# and .NET Quick Reference by Stephen C. Perry [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Core%20CSharp%20and%20.NET%20Quick%20Reference.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "C# and VB.NET Comparison Cheat Sheet by Steven Swafford [html, pdf, doc] (aspalliance.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CheatSheetCSharpVsVB.pdf",
+        "https://www.cheat-sheets.org/saved-copy/CheatSheetCSharpVsVBdoc.doc"
+      ],
+      "online": [
+        "http://aspalliance.com/625"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Awesome C# Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/C%23.txt"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/C%23.txt"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/rc16-010d-csharp_1.pdf",
+      "filename": "rc16-010d-csharp_1.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Core%20CSharp%20and%20.NET%20Quick%20Reference.pdf",
+      "filename": "Core CSharp and .NET Quick Reference.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CheatSheetCSharpVsVB.pdf",
+      "filename": "CheatSheetCSharpVsVB.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CheatSheetCSharpVsVBdoc.doc",
+      "filename": "CheatSheetCSharpVsVBdoc.doc"
+    }
+  ],
+  "path": "languages/csharp"
+}

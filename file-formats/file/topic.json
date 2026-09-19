@@ -1,0 +1,29 @@
+{
+  "id": "File",
+  "slug": "file",
+  "title": "File",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#File",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Computer_file",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Computer_file"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Every File Extension in the World [html] (techtarget.com)",
+      "saved": [],
+      "online": [
+        "http://whatis.techtarget.com/file-extension-list/A"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://whatis.techtarget.com/file-extension-list/A"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "file-formats/file"
+}

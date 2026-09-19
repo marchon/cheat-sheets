@@ -1,0 +1,37 @@
+{
+  "id": "XSS",
+  "slug": "xss",
+  "title": "XSS - Cross Site Scripting",
+  "group": "security",
+  "source_anchor": "https://www.cheat-sheets.org/#XSS",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/XSS",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/XSS"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "XSS Filter Evasion Cheat Sheet [html] (owasp.org)",
+      "saved": [],
+      "online": [
+        "https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet"
+      ]
+    },
+    {
+      "title": "XSS (Cross Site Scripting) Cheat Sheet [html] (ha.ckers.org)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20120502015433/http://ha.ckers.org/xss.html"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "security/xss"
+}

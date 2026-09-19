@@ -1,0 +1,55 @@
+{
+  "id": "FirefoxAddOns",
+  "slug": "firefox-add-ons",
+  "title": "Firefox Add-ons",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#FirefoxAddOns",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Mozilla_Add-ons",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Mozilla_Add-ons"
+  ],
+  "official_websites": [
+    {
+      "label": "http://addons.mozilla.org/",
+      "url": "http://addons.mozilla.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Vimperator Keyboard Shortcuts Visual Sheet by simplicityroad [gif] (simplicityroad.livejournal.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/dhffkc6q_97fsjrgmd7.gif"
+      ],
+      "online": [
+        "https://en.wikipedia.org/wiki/Vimperator",
+        "http://www.vimperator.org/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Vimperator Cheat Sheet at Tux Training [pdf] (tuxtraining.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/vimperator_cheatsheet.pdf"
+      ],
+      "online": [
+        "https://en.wikipedia.org/wiki/Vimperator",
+        "http://www.vimperator.org/"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/dhffkc6q_97fsjrgmd7.gif",
+      "filename": "dhffkc6q_97fsjrgmd7.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/vimperator_cheatsheet.pdf",
+      "filename": "vimperator_cheatsheet.pdf"
+    }
+  ],
+  "path": "applications/firefox-add-ons"
+}

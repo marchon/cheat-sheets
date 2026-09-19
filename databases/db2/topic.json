@@ -1,0 +1,86 @@
+{
+  "id": "DB2",
+  "slug": "db2",
+  "title": "DB2 (IBM DB2)",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#DB2",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/IBM_DB2",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/IBM_DB2"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www-01.ibm.com/software/data/db2/",
+      "url": "http://www-01.ibm.com/software/data/db2/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "MySQL",
+      "label": "MySQL"
+    },
+    {
+      "id": "Oracle",
+      "label": "Oracle"
+    },
+    {
+      "id": "PostgreSQL",
+      "label": "PostgreSQL"
+    },
+    {
+      "id": "SQL",
+      "label": "SQL"
+    },
+    {
+      "id": "SQLite",
+      "label": "SQLite"
+    },
+    {
+      "id": "Sybase",
+      "label": "Sybase"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Db2 Cheat Sheet for development by Andres Gomez Casanova [pdf] (github.com/angoca/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Db2CheatSheetForDev20210323.pdf"
+      ],
+      "online": [
+        "https://github.com/angoca/db2-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/angoca/db2-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "DB2 cheat sheet by Alex Staveley [pdf] (dublintech.blogspot.com)",
+      "saved": [],
+      "online": [
+        "http://dublintech.blogspot.com/2011/10/db2-cheat-sheet.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://dublintech.blogspot.com/2011/10/db2-cheat-sheet.html"
+      ]
+    },
+    {
+      "title": "The A to Z of DB2 by Alex Staveley [pdf] (dublintech.blogspot.com)",
+      "saved": [],
+      "online": [
+        "http://dublintech.blogspot.com/2011/10/a-to-z-of-db2.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://dublintech.blogspot.com/2011/10/a-to-z-of-db2.html"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Db2CheatSheetForDev20210323.pdf",
+      "filename": "Db2CheatSheetForDev20210323.pdf"
+    }
+  ],
+  "path": "databases/db2"
+}

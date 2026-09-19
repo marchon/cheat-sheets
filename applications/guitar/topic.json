@@ -1,0 +1,44 @@
+{
+  "id": "Guitar",
+  "slug": "guitar",
+  "title": "Guitar",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#Guitar",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Guitar",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Guitar"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Music",
+      "label": "Music"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Tom's Guitar Cheat Sheet [gif, pdf] (halfhill.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Tom-s-guitar-cheatsheet.gif",
+        "https://www.cheat-sheets.org/saved-copy/Tom-s-guitar-cheatsheet.pdf"
+      ],
+      "online": [
+        "http://www.halfhill.com/guitar.html"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Tom-s-guitar-cheatsheet.gif",
+      "filename": "Tom-s-guitar-cheatsheet.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Tom-s-guitar-cheatsheet.pdf",
+      "filename": "Tom-s-guitar-cheatsheet.pdf"
+    }
+  ],
+  "path": "applications/guitar"
+}

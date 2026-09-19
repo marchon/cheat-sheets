@@ -1,0 +1,66 @@
+{
+  "id": "OSX",
+  "slug": "osx",
+  "title": "Mac OS X",
+  "group": "operating-systems",
+  "source_anchor": "https://www.cheat-sheets.org/#OSX",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/OS_X",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/OS_X"
+  ],
+  "official_websites": [
+    {
+      "label": "apple.com/macosx/",
+      "url": "http://www.apple.com/macosx/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Cocoa",
+      "label": "Cocoa"
+    },
+    {
+      "id": "Mac",
+      "label": "Macintosh"
+    },
+    {
+      "id": "Objective-C",
+      "label": "Objective-C"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "The OS X Keyboard Cheat Sheet by Amduus Information Works, Inc. [pdf] (amduus.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/OSX_KeyCombo_Reference_Guide.pdf"
+      ],
+      "online": [
+        "http://www.extensions.in.th/post/rescue/OSX_KeyCombo_Reference_Guide.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Apple Mac OS X Terminal Commands list [pdf] (scribd.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/2084227-Mac-OS-X-Terminal-Commands-list.pdf"
+      ],
+      "online": [
+        "http://www.scribd.com/doc/2084227/Mac-OS-X-Terminal-Commands-list"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/OSX_KeyCombo_Reference_Guide.pdf",
+      "filename": "OSX_KeyCombo_Reference_Guide.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/2084227-Mac-OS-X-Terminal-Commands-list.pdf",
+      "filename": "2084227-Mac-OS-X-Terminal-Commands-list.pdf"
+    }
+  ],
+  "path": "operating-systems/osx"
+}

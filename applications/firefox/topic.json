@@ -1,0 +1,108 @@
+{
+  "id": "Firefox",
+  "slug": "firefox",
+  "title": "Firefox",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#Firefox",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Firefox",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Firefox"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.mozilla.com/firefox/",
+      "url": "http://www.mozilla.com/firefox/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Keyboard shortcuts - Perform common Firefox tasks quickly [html] (mozilla.org)",
+      "saved": [],
+      "online": [
+        "https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly"
+      ]
+    },
+    {
+      "title": "Use mouse shortcuts to perform common tasks in Firefox [html] (mozilla.org)",
+      "saved": [],
+      "online": [
+        "https://support.mozilla.org/en-US/kb/mouse-shortcuts-perform-common-tasks"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://support.mozilla.org/en-US/kb/mouse-shortcuts-perform-common-tasks"
+      ]
+    },
+    {
+      "title": "MOZILLA FIREFOX CHEAT SHEET [html] (lesliefranke.com)",
+      "saved": [],
+      "online": [
+        "https://lesliefranke.com/files/reference/firefoxcheatsheet.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://lesliefranke.com/files/reference/firefoxcheatsheet.html"
+      ]
+    },
+    {
+      "title": "Firefox Keyboard Shortcuts [pdf] (websupportblog.wordpress.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/firefox-shortcuts.pdf"
+      ],
+      "online": [
+        "https://websupportblog.wordpress.com/files/2006/10/firefox-shortcuts.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Firefox Shortcuts Sheet [html] (mouserunner.com)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20180126141124/http://www.mouserunner.com/FF_Shortcuts1Printable.html"
+      ]
+    },
+    {
+      "title": "Mozila Firefox Cheatsheet Infographic [pdf, png] (independent-software.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/firefox-cheat-sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/firefox-cheat-sheet.png"
+      ],
+      "online": [
+        "http://www.independent-software.com/faster-firefox-sweet-cheat-sheet-with-all-the-shortcuts/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.independent-software.com/faster-firefox-sweet-cheat-sheet-with-all-the-shortcuts/"
+      ]
+    },
+    {
+      "title": "tldr firefox [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/project/tldr/command/firefox/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cheat-sheets.org/project/tldr/command/firefox/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/firefox-shortcuts.pdf",
+      "filename": "firefox-shortcuts.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/firefox-cheat-sheet.pdf",
+      "filename": "firefox-cheat-sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/firefox-cheat-sheet.png",
+      "filename": "firefox-cheat-sheet.png"
+    }
+  ],
+  "path": "applications/firefox"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "MIME",
+  "slug": "mime",
+  "title": "MIME - Multipurpose Internet Mail Extensions",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#MIME",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/MIME",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/MIME"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "IANA MIME Media Types [html] (iana.org)",
+      "saved": [],
+      "online": [
+        "http://www.iana.org/assignments/media-types/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.iana.org/assignments/media-types/"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "file-formats/mime"
+}

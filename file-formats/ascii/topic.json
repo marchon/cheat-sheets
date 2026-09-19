@@ -1,0 +1,82 @@
+{
+  "id": "ASCII",
+  "slug": "ascii",
+  "title": "ASCII - American Standard Code for Information Interchange",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#ASCII",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/ASCII",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/ASCII"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Characters",
+      "label": "Characters"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "ASCII Table by Alexander Krassotkin [html] (ascii.ru)",
+      "saved": [],
+      "online": [
+        "http://ascii.ru/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://ascii.ru/"
+      ]
+    },
+    {
+      "title": "ASCII Character Codes Table & Cheat Sheet [html] (petefreitag.com)",
+      "saved": [],
+      "online": [
+        "https://www.petefreitag.com/cheatsheets/ascii-codes/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.petefreitag.com/cheatsheets/ascii-codes/"
+      ]
+    },
+    {
+      "title": "Web ASCII, aka Windows-1252 Character Encoding by Bob Stein, VisiBone [html] (visibone.com)",
+      "saved": [],
+      "online": [
+        "http://www.visibone.com/htmlref/char/webascii.htm"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.visibone.com/htmlref/char/webascii.htm"
+      ]
+    },
+    {
+      "title": "ASCII Table by Michael Goerz [tex, a4 pdf, letter pdf, png] (users.physik.fu-berlin.de/~goerz/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/ascii.tex",
+        "https://www.cheat-sheets.org/saved-copy/ascii_a4.pdf",
+        "https://www.cheat-sheets.org/saved-copy/ascii_letter.pdf",
+        "https://www.cheat-sheets.org/saved-copy/ascii.png"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ascii.tex",
+      "filename": "ascii.tex"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ascii_a4.pdf",
+      "filename": "ascii_a4.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ascii_letter.pdf",
+      "filename": "ascii_letter.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ascii.png",
+      "filename": "ascii.png"
+    }
+  ],
+  "path": "file-formats/ascii"
+}

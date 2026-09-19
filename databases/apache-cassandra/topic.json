@@ -1,0 +1,34 @@
+{
+  "id": "ApacheCassandra",
+  "slug": "apache-cassandra",
+  "title": "Apache Cassandra",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#ApacheCassandra",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Apache_Cassandra",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Apache_Cassandra"
+  ],
+  "official_websites": [
+    {
+      "label": "cassandra.apache.org",
+      "url": "http://cassandra.apache.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Apache Cassandra: A Fault-Tolerant, Massively Scalable NoSQL Database by Brian O’Neill [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/apache-cassandra"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/apache-cassandra"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "databases/apache-cassandra"
+}

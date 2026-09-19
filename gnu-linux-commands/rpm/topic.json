@@ -1,0 +1,57 @@
+{
+  "id": "rpm",
+  "slug": "rpm",
+  "title": "rpm - Red Hat Package Manager",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#rpm",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/RPM_Package_Manager",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/RPM_Package_Manager"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.rpm.org/",
+      "url": "http://www.rpm.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Linux",
+      "label": "Linux"
+    },
+    {
+      "id": "Fedora",
+      "label": "Fedora"
+    },
+    {
+      "id": "RedHat",
+      "label": "Red Hat"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "rpm command cheat sheet for Linux [html] (cyberciti.biz)",
+      "saved": [],
+      "online": [
+        "http://www.cyberciti.biz/howto/question/linux/linux-rpm-cheat-sheet.php"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.cyberciti.biz/howto/question/linux/linux-rpm-cheat-sheet.php"
+      ]
+    },
+    {
+      "title": "RPM Cheat Sheet [html] (michal.guerquin.com)",
+      "saved": [],
+      "online": [
+        "http://michal.guerquin.com/rpmcheatsheet.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://michal.guerquin.com/rpmcheatsheet.html"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "gnu-linux-commands/rpm"
+}

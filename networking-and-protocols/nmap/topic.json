@@ -1,0 +1,45 @@
+{
+  "id": "NMAP",
+  "slug": "nmap",
+  "title": "NMAP",
+  "group": "networking-and-protocols",
+  "source_anchor": "https://www.cheat-sheets.org/#NMAP",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Nmap",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Nmap"
+  ],
+  "official_websites": [
+    {
+      "label": "nmap.org",
+      "url": "http://nmap.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "NMAP quick reference by Alejandro Ramos [pdf (eng), pdf (esp)] (SecurityByDefault.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Nmap5.cheatsheet.eng.v1.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Nmap5.cheatsheet.esp.v1.pdf"
+      ],
+      "online": [
+        "http://sbdtools.googlecode.com/files/Nmap5%20cheatsheet%20eng%20v1.pdf",
+        "http://sbdtools.googlecode.com/files/Nmap5%20cheatsheet%20esp%20v1.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Nmap5.cheatsheet.eng.v1.pdf",
+      "filename": "Nmap5.cheatsheet.eng.v1.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Nmap5.cheatsheet.esp.v1.pdf",
+      "filename": "Nmap5.cheatsheet.esp.v1.pdf"
+    }
+  ],
+  "path": "networking-and-protocols/nmap"
+}

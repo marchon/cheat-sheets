@@ -1,0 +1,85 @@
+{
+  "id": "Julia",
+  "slug": "julia",
+  "title": "Julia",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Julia",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Julia_%28programming_language%29",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Julia_%28programming_language%29"
+  ],
+  "official_websites": [
+    {
+      "label": "julialang.org",
+      "url": "http://julialang.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "The Fast Track to Julia / A quick and dirty overview of Julia by Freepik [pdf] (juliadocs.github.io)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/The_Fast_Track_to_Julia_2021-05-22/"
+      ],
+      "online": [
+        "https://juliadocs.github.io/Julia-Cheat-Sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://juliadocs.github.io/Julia-Cheat-Sheet/"
+      ]
+    },
+    {
+      "title": "Julia Reference Card by John Lynch [pdf, odt] (github.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/JuliaReferenceCard.pdf",
+        "https://www.cheat-sheets.org/saved-copy/JuliaReferenceCard.odt"
+      ],
+      "online": [
+        "https://github.com/john9631/JuliaDocs/blob/master/JuliaReferenceCard.pdf",
+        "https://github.com/john9631/JuliaDocs/blob/master/JuliaReferenceCard.odt"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Julia Colors by John Lynch [odt] (github.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Julia%20Colors.odt"
+      ],
+      "online": [
+        "https://github.com/john9631/JuliaDocs/blob/master/Julia%20Colors.odt"
+      ],
+      "archived": []
+    },
+    {
+      "title": "tldr julia [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/project/tldr/command/julia/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cheat-sheets.org/project/tldr/command/julia/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/The_Fast_Track_to_Julia_2021-05-22/",
+      "filename": "The_Fast_Track_to_Julia_2021-05-22/"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/JuliaReferenceCard.pdf",
+      "filename": "JuliaReferenceCard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/JuliaReferenceCard.odt",
+      "filename": "JuliaReferenceCard.odt"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Julia%20Colors.odt",
+      "filename": "Julia Colors.odt"
+    }
+  ],
+  "path": "languages/julia"
+}

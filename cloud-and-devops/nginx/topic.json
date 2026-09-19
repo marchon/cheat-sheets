@@ -1,0 +1,32 @@
+{
+  "id": "Nginx",
+  "slug": "nginx",
+  "title": "Nginx W",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#Nginx",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "nginx.org",
+      "url": "https://nginx.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Awesome Nginx Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/nginx.sh"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/nginx.sh"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/nginx"
+}

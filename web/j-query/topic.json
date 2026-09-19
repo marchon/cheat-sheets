@@ -1,0 +1,160 @@
+{
+  "id": "jQuery",
+  "slug": "j-query",
+  "title": "jQuery",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#jQuery",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/JQuery",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/JQuery"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "AJAX",
+      "label": "AJAX"
+    },
+    {
+      "id": "CSS",
+      "label": "CSS"
+    },
+    {
+      "id": "DOM",
+      "label": "DOM"
+    },
+    {
+      "id": "HTML",
+      "label": "HTML"
+    },
+    {
+      "id": "JavaScript",
+      "label": "JavaScript"
+    },
+    {
+      "id": "Prototype",
+      "label": "Prototype"
+    },
+    {
+      "id": "XHTML",
+      "label": "XHTML"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "The jQuery Mega Cheat Sheet 2015 by Jamie Spencer [html, jpg] (makeawebsitehub.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/jquery-mega-cheat-sheet-20152.jpg"
+      ],
+      "online": [
+        "http://makeawebsitehub.com/jquery-mega-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://makeawebsitehub.com/jquery-mega-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "jQuery 1.5 Visual Cheat Sheet by Antonio Lupetti [pdf] (woorkup.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf"
+      ],
+      "online": [
+        "http://woorkup.com/2011/02/19/jquery-1-5-visual-cheat-sheet/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "jQuery 1.3 Visual Cheat Sheet by Antonio Lupetti (WOORK) [pdf] (woork.blogspot.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Beginner’s essential jQuery Cheat Sheet by Robert Mening [pdf, png] (websitesetup.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/wsu-jquery-cheat-sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/JQUERY-CHEAT-SHEET-a.png"
+      ],
+      "online": [
+        "https://websitesetup.org/wp-content/uploads/2017/01/wsu-jquery-cheat-sheet.pdf",
+        "https://websitesetup.org/wp-content/uploads/2017/01/JQUERY-CHEAT-SHEET-a.png"
+      ],
+      "archived": []
+    },
+    {
+      "title": "jQuery 1.2 Cheat Sheet [pdf, png, bw pdf, bw png] (labs.colorcharge.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.pdf",
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.png",
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.pdf",
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.png"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "jQuery 1.2 by Adrien Gibrat [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Jquery-Cheat-Sheet-1.2.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "jQuery Selectors by Bear Bibeault & Yehuda Katz [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/jquery-selectors"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/jquery-selectors"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/jquery-mega-cheat-sheet-20152.jpg",
+      "filename": "jquery-mega-cheat-sheet-20152.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf",
+      "filename": "jQuery-1.5-Visual-Cheat-Sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf",
+      "filename": "jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/wsu-jquery-cheat-sheet.pdf",
+      "filename": "wsu-jquery-cheat-sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/JQUERY-CHEAT-SHEET-a.png",
+      "filename": "JQUERY-CHEAT-SHEET-a.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.pdf",
+      "filename": "jquery12_colorcharge.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.png",
+      "filename": "jquery12_colorcharge.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.pdf",
+      "filename": "jquery12_colorcharge_bw.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.png",
+      "filename": "jquery12_colorcharge_bw.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Jquery-Cheat-Sheet-1.2.pdf",
+      "filename": "Jquery-Cheat-Sheet-1.2.pdf"
+    }
+  ],
+  "path": "web/j-query"
+}

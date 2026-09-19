@@ -1,0 +1,37 @@
+{
+  "id": "Android",
+  "slug": "android",
+  "title": "Android",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#Android",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Android_(operating_system)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Android_(operating_system)"
+  ],
+  "official_websites": [
+    {
+      "label": "www.android.com",
+      "url": "https://www.android.com/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Android Classes (Android SDK) by Frank Hunleth [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Android_Classes.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Android_Classes.pdf",
+      "filename": "Android_Classes.pdf"
+    }
+  ],
+  "path": "applications/android"
+}

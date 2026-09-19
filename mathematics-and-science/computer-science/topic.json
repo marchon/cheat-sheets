@@ -1,0 +1,43 @@
+{
+  "id": "ComputerScience",
+  "slug": "computer-science",
+  "title": "Computer Science",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#ComputerScience",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Computer_Science",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Computer_Science"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "DesignPattern",
+      "label": "Design Pattern"
+    },
+    {
+      "id": "Math",
+      "label": "Mathematics"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Theoretical Computer Science Cheat Sheet [pdf] (tug.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/cheat.pdf"
+      ],
+      "online": [
+        "http://www.tug.org/texshowcase/cheat.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cheat.pdf",
+      "filename": "cheat.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/computer-science"
+}

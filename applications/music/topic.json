@@ -1,0 +1,44 @@
+{
+  "id": "Music",
+  "slug": "music",
+  "title": "Music",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#Music",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Music",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Music"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Guitar",
+      "label": "Guitar"
+    }
+  ],
+  "tools": [
+    {
+      "label": "WolframAlpha",
+      "url": "http://www.wolframalpha.com/examples/Music.html"
+    }
+  ],
+  "items": [
+    {
+      "title": "Dan’s Music Theory 101 Cheat Sheet by Dan Goodspeed [pdf] (tutorial.math.lamar.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/musictheory.pdf"
+      ],
+      "online": [
+        "http://www.rkstar.com/links/musictheory.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/musictheory.pdf",
+      "filename": "musictheory.pdf"
+    }
+  ],
+  "path": "applications/music"
+}

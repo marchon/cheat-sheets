@@ -1,0 +1,122 @@
+{
+  "id": "TypeScript",
+  "slug": "type-script",
+  "title": "TypeScript W",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#TypeScript",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "typescriptlang.org",
+      "url": "https://www.typescriptlang.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "JavaScript",
+      "label": "JavaScript"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Cheatsheet for TypeScript by Rico Sta. Cruz [html] (devhints.io)",
+      "saved": [],
+      "online": [
+        "https://devhints.io/typescript"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://devhints.io/typescript"
+      ]
+    },
+    {
+      "title": "TypeScript Control Flow Analysis [png, pdf] (typescriptlang.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/TypeScript_Control_Flow_Analysis_20221226.png",
+        "https://www.cheat-sheets.org/saved-copy/TypeScript_Control_Flow_Analysis_20221226.pdf"
+      ],
+      "online": [
+        "https://www.typescriptlang.org/static/TypeScript%20Control%20Flow%20Analysis-8a549253ad8470850b77c4c5c351d457.png"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.typescriptlang.org/static/TypeScript%20Control%20Flow%20Analysis-8a549253ad8470850b77c4c5c351d457.png"
+      ]
+    },
+    {
+      "title": "TypeScript Classes [png, pdf] (typescriptlang.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/TypeScript_Classes_20221226.png",
+        "https://www.cheat-sheets.org/saved-copy/TypeScript_Classes_20221226.pdf"
+      ],
+      "online": [
+        "https://www.typescriptlang.org/static/TypeScript%20Classes-83cc6f8e42ba2002d5e2c04221fa78f9.png"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.typescriptlang.org/static/TypeScript%20Classes-83cc6f8e42ba2002d5e2c04221fa78f9.png"
+      ]
+    },
+    {
+      "title": "TypeScript Interfaces [png, pdf] (typescriptlang.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/TypeScript_Interfaces_20221226.png",
+        "https://www.cheat-sheets.org/saved-copy/TypeScript_Interfaces_20221226.pdf"
+      ],
+      "online": [
+        "https://www.typescriptlang.org/static/TypeScript%20Interfaces-34f1ad12132fb463bd1dfe5b85c5b2e6.png"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.typescriptlang.org/static/TypeScript%20Interfaces-34f1ad12132fb463bd1dfe5b85c5b2e6.png"
+      ]
+    },
+    {
+      "title": "TypeScript Types [png, pdf] (typescriptlang.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/TypeScript_Types_20221226.png",
+        "https://www.cheat-sheets.org/saved-copy/TypeScript_Types_20221226.pdf"
+      ],
+      "online": [
+        "https://www.typescriptlang.org/static/TypeScript%20Types-ae199d69aeecf7d4a2704a528d0fd3f9.png"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.typescriptlang.org/static/TypeScript%20Types-ae199d69aeecf7d4a2704a528d0fd3f9.png"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/TypeScript_Control_Flow_Analysis_20221226.png",
+      "filename": "TypeScript_Control_Flow_Analysis_20221226.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/TypeScript_Control_Flow_Analysis_20221226.pdf",
+      "filename": "TypeScript_Control_Flow_Analysis_20221226.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/TypeScript_Classes_20221226.png",
+      "filename": "TypeScript_Classes_20221226.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/TypeScript_Classes_20221226.pdf",
+      "filename": "TypeScript_Classes_20221226.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/TypeScript_Interfaces_20221226.png",
+      "filename": "TypeScript_Interfaces_20221226.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/TypeScript_Interfaces_20221226.pdf",
+      "filename": "TypeScript_Interfaces_20221226.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/TypeScript_Types_20221226.png",
+      "filename": "TypeScript_Types_20221226.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/TypeScript_Types_20221226.pdf",
+      "filename": "TypeScript_Types_20221226.pdf"
+    }
+  ],
+  "path": "languages/type-script"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "Statistics",
+  "slug": "statistics",
+  "title": "Statistics and Data Analysis",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Statistics",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Statistics",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Statistics"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Math",
+      "label": "Math"
+    },
+    {
+      "id": "R",
+      "label": "R"
+    }
+  ],
+  "tools": [
+    {
+      "label": "WolframAlpha",
+      "url": "http://www.wolframalpha.com/examples/Statistics.html"
+    }
+  ],
+  "items": [
+    {
+      "title": "Statistics Reference Cheatsheet: The Basic Principles Of Statistics For Introductory Courses [pdf] (scribd.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/427513-Statistics-Reference-Cheatsheet.pdf"
+      ],
+      "online": [
+        "http://www.scribd.com/doc/427513/Statistics-Reference-Cheatsheet"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Statistics Cheat Sheet by Mr. Roth [pdf, doc] (docstoc.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/statistic-cheat-sheet-mr-roth-2004.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Statistics_Cheat_Sheet-mr-roth-2004.doc"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Engineering Statistics Cheat Sheet #1 [pdf] (docstoc.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Engineering-Statistic-Cheat-Sheet-1.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/427513-Statistics-Reference-Cheatsheet.pdf",
+      "filename": "427513-Statistics-Reference-Cheatsheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/statistic-cheat-sheet-mr-roth-2004.pdf",
+      "filename": "statistic-cheat-sheet-mr-roth-2004.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Statistics_Cheat_Sheet-mr-roth-2004.doc",
+      "filename": "Statistics_Cheat_Sheet-mr-roth-2004.doc"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Engineering-Statistic-Cheat-Sheet-1.pdf",
+      "filename": "Engineering-Statistic-Cheat-Sheet-1.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/statistics"
+}

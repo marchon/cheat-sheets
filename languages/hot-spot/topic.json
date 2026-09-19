@@ -1,0 +1,34 @@
+{
+  "id": "HotSpot",
+  "slug": "hot-spot",
+  "title": "Java HotSpot Virtual Machine",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#HotSpot",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/HotSpot_(virtual_machine)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/HotSpot_(virtual_machine)"
+  ],
+  "official_websites": [
+    {
+      "label": "openjdk.java.net/groups/hotspot/",
+      "url": "http://openjdk.java.net/groups/hotspot/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Java HotSpot VM Options by Oracle [pdf] (oracle.com)",
+      "saved": [],
+      "online": [
+        "https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "languages/hot-spot"
+}

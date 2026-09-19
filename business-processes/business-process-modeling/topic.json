@@ -1,0 +1,33 @@
+{
+  "id": "BusinessProcessModeling",
+  "slug": "business-process-modeling",
+  "title": "Business Process Modeling (BPM) and Business Process Modelling Notation (BPMN)",
+  "group": "business-processes",
+  "source_anchor": "https://www.cheat-sheets.org/#BusinessProcessModeling",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Business_process_modeling",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Business_process_modeling",
+    "https://en.wikipedia.org/wiki/Business_Process_Modeling_Notation"
+  ],
+  "official_websites": [
+    {
+      "label": "bpmn.org",
+      "url": "http://www.bpmn.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Effective Process Modeling with BPM & BPMN by Matjaz Juric and Ana Sasa [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/bpm-bpmn"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "business-processes/business-process-modeling"
+}

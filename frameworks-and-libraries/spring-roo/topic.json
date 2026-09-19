@@ -1,0 +1,43 @@
+{
+  "id": "SpringRoo",
+  "slug": "spring-roo",
+  "title": "Spring Roo",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#SpringRoo",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Spring_Roo",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Spring_Roo"
+  ],
+  "official_websites": [
+    {
+      "label": "www.springsource.org/roo",
+      "url": "http://www.springsource.org/roo"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    },
+    {
+      "id": "SpringFramework",
+      "label": "Spring Framework"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Spring Roo: Open-Source Rapid Application Development for Java by Stefan Schmidt [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/spring-roo-open-source-rapid"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/spring-roo-open-source-rapid"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "frameworks-and-libraries/spring-roo"
+}

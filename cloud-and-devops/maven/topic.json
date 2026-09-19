@@ -1,0 +1,53 @@
+{
+  "id": "Maven",
+  "slug": "maven",
+  "title": "Maven (Apache Maven)",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#Maven",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Apache_Maven",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Apache_Maven"
+  ],
+  "official_websites": [
+    {
+      "label": "maven.apache.org",
+      "url": "http://maven.apache.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    },
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Apache Maven 2 by Matthew McCullough [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/apache-maven-2"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/apache-maven-2"
+      ]
+    },
+    {
+      "title": "Getting Started with Maven Repository Management by Jason Van Zyl [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-repository"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-repository"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/maven"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "Chemistry",
+  "slug": "chemistry",
+  "title": "Chemistry",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Chemistry",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Chemistry",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Chemistry"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [
+    {
+      "label": "WolframAlpha",
+      "url": "http://www.wolframalpha.com/examples/Chemistry.html"
+    }
+  ],
+  "items": [
+    {
+      "title": "Periodic Table of the Chemical Elements [html] (chemistry.su)",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/chemistry.su/periodic-table-chemical-elements-chemistry.html"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Periodic table [html] (wikipedia.org)",
+      "saved": [],
+      "online": [
+        "https://en.wikipedia.org/wiki/Periodic_Table_of_the_Elements"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Math for Chemistry Cheat Sheet [pdf] (chemistrysurvival.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/ChemMastery_MathCard_Sample.pdf"
+      ],
+      "online": [
+        "http://www.chemistrysurvival.com/pdf/ChemMastery_MathCard_Sample.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "200 Ways to Pass the Chemistry Physical Setting Regents Exam [pdf] (newyorkscienceteacher.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/200WaysChem.pdf"
+      ],
+      "online": [
+        "http://www.newyorkscienceteacher.com/sci/files/user-submitted/200WaysChem.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Chemistry Salt Analysis Cheatsheet by Ankur Banerjee [pdf] (scribd.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/14012060-Chemistry-Salt-Analysis-Cheatsheet.pdf"
+      ],
+      "online": [
+        "http://www.scribd.com/doc/14012060/Chemistry-Salt-Analysis-Cheatsheet"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Basic Chemistry Conversion Cheat Sheet by B.Espinoza [doc, pdf] (starmail.adams12.org/~mica.brougham@Adams12.org/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Basic_Chemistry_Conversion_Cheat_Sheet.pdf"
+      ],
+      "online": [
+        "http://www.starmail.adams12.org/~mica.brougham@Adams12.org/FOV5-0004A732/FOV5-0004A73C/CP%20Chemistry%200809%20Basic%20Conversion%20Sheet.doc?FCItemID=S0B72B2A3&Plugin=Loft"
+      ],
+      "archived": []
+    },
+    {
+      "title": "AP Chemistry 2004 Free-Response Questions by CollegeBoard [pdf] (collegeboard.com)",
+      "saved": [],
+      "online": [
+        "http://www.collegeboard.com/prod_downloads/ap/students/chemistry/ap04_frq_chemistry.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/sites/chemistry.su/periodic-table-chemical-elements-chemistry.html",
+      "filename": "/sites/chemistry.su/periodic-table-chemical-elements-chemistry.html"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ChemMastery_MathCard_Sample.pdf",
+      "filename": "ChemMastery_MathCard_Sample.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/200WaysChem.pdf",
+      "filename": "200WaysChem.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/14012060-Chemistry-Salt-Analysis-Cheatsheet.pdf",
+      "filename": "14012060-Chemistry-Salt-Analysis-Cheatsheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Basic_Chemistry_Conversion_Cheat_Sheet.pdf",
+      "filename": "Basic_Chemistry_Conversion_Cheat_Sheet.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/chemistry"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "MachineLearning",
+  "slug": "machine-learning",
+  "title": "Machine Learning",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#MachineLearning",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Machine_learning",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Machine_learning"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Big Data Machine Learning: Patterns for Predictive Analytics by Ricky Ho [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/machine-learning-predictive"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/machine-learning-predictive"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "mathematics-and-science/machine-learning"
+}

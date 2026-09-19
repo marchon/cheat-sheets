@@ -1,0 +1,64 @@
+{
+  "id": "Illustrator",
+  "slug": "illustrator",
+  "title": "Illustrator",
+  "group": "graphics-and-design",
+  "source_anchor": "https://www.cheat-sheets.org/#Illustrator",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Adobe_Illustrator",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Adobe_Illustrator"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.adobe.com/products/illustrator/",
+      "url": "http://www.adobe.com/products/illustrator/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Adobe",
+      "label": "Adobe Systems"
+    },
+    {
+      "id": "InDesign",
+      "label": "InDesign"
+    },
+    {
+      "id": "Photoshop",
+      "label": "Photoshop"
+    },
+    {
+      "id": "Gimp",
+      "label": "Gimp"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Illustrator CC 2015 by Ton Haarmans [pdf] (wideopenwindows.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/illustrator_CC2015_Win.pdf"
+      ],
+      "online": [
+        "https://www.wideopenwindows.be/cheatsheets/illustrator_CC2015_Win.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Adobe Illustrator CS5 (Engels > Nederlands + sneltoetsen; Mac | Win) by Ton Haarmans [html] (wideopenwin.com)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20130719193131/http://www.wideopenwin.com/ilcs5.html"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/illustrator_CC2015_Win.pdf",
+      "filename": "illustrator_CC2015_Win.pdf"
+    }
+  ],
+  "path": "graphics-and-design/illustrator"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "Delphi",
+  "slug": "delphi",
+  "title": "Delphi",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Delphi",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Borland_Delphi",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Borland_Delphi"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.codegear.com/products/delphi/",
+      "url": "http://www.codegear.com/products/delphi/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Delphi Technical Reference Card 7.20 by Gulf Coastal Software  [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Delphi%20Technical%20Reference%20Card%207.20.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Delphi Quick Reference Card [pdf] (explainth.at)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/dquick.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Delphi%20Technical%20Reference%20Card%207.20.pdf",
+      "filename": "Delphi Technical Reference Card 7.20.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/dquick.pdf",
+      "filename": "dquick.pdf"
+    }
+  ],
+  "path": "languages/delphi"
+}

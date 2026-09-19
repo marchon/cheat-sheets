@@ -1,0 +1,99 @@
+{
+  "id": "Dart",
+  "slug": "dart",
+  "title": "Dart W",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Dart",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "dart.dev",
+      "url": "https://dart.dev/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Dart language cheatsheet [html] (dart.dev)",
+      "saved": [],
+      "online": [
+        "https://dart.dev/guides/language/cheatsheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dart.dev/guides/language/cheatsheet"
+      ]
+    },
+    {
+      "title": "Dart cheatsheet codelab [html] (dart.dev)",
+      "saved": [],
+      "online": [
+        "https://dart.dev/codelabs/dart-cheatsheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dart.dev/codelabs/dart-cheatsheet"
+      ]
+    },
+    {
+      "title": "Dart 2 Cheat Sheet and Quick Reference by Razewarre LLC. [pdf] (raywenderlich.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/RW-Dart-Cheatsheet-1.0.2.pdf"
+      ],
+      "online": [
+        "https://koenig-media.raywenderlich.com/uploads/2019/08/RW-Dart-Cheatsheet-1.0.2.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://koenig-media.raywenderlich.com/uploads/2019/08/RW-Dart-Cheatsheet-1.0.2.pdf"
+      ]
+    },
+    {
+      "title": "Dart cheatsheet [html] (quickref.me)",
+      "saved": [],
+      "online": [
+        "https://quickref.me/dart"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://quickref.me/dart"
+      ]
+    },
+    {
+      "title": "dart-cheat-sheet by Temidayo Adefioye (Temidtech) [html] (github.com/Temidtech)",
+      "saved": [],
+      "online": [
+        "https://github.com/Temidtech/dart-cheat-sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/Temidtech/dart-cheat-sheet"
+      ]
+    },
+    {
+      "title": "Dart Cheat Sheet [html] (simplecheatsheet.com)",
+      "saved": [],
+      "online": [
+        "https://simplecheatsheet.com/tag/dart-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://simplecheatsheet.com/tag/dart-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "tldr dart [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/dart/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/dart/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/RW-Dart-Cheatsheet-1.0.2.pdf",
+      "filename": "RW-Dart-Cheatsheet-1.0.2.pdf"
+    }
+  ],
+  "path": "languages/dart"
+}

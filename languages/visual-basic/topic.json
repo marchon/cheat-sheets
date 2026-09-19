@@ -1,0 +1,81 @@
+{
+  "id": "VisualBasic",
+  "slug": "visual-basic",
+  "title": "Visual Basic",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#VisualBasic",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Visual_Basic",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Visual_Basic",
+    "https://en.wikipedia.org/wiki/Visual_Basic_.NET"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "DotNET",
+      "label": ".NET"
+    },
+    {
+      "id": "ASP",
+      "label": "ASP"
+    },
+    {
+      "id": "CSharp",
+      "label": "C#"
+    },
+    {
+      "id": "VisualBasic",
+      "label": "Visual Basic"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Microsoft Visual Basic Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/vbasic_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "VB.NET Quick Reference by Kellerman Software [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/VB.NET%20Quick%20Reference.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "C# and VB.NET Comparison Cheat Sheet by Steven Swafford [html, pdf, doc] (aspalliance.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CheatSheetCSharpVsVB.pdf",
+        "https://www.cheat-sheets.org/saved-copy/CheatSheetCSharpVsVBdoc.doc"
+      ],
+      "online": [
+        "http://aspalliance.com/625"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/vbasic_quickref.pdf",
+      "filename": "vbasic_quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/VB.NET%20Quick%20Reference.pdf",
+      "filename": "VB.NET Quick Reference.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CheatSheetCSharpVsVB.pdf",
+      "filename": "CheatSheetCSharpVsVB.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CheatSheetCSharpVsVBdoc.doc",
+      "filename": "CheatSheetCSharpVsVBdoc.doc"
+    }
+  ],
+  "path": "languages/visual-basic"
+}

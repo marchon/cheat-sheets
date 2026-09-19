@@ -1,0 +1,32 @@
+{
+  "id": "MFC",
+  "slug": "mfc",
+  "title": "MFC - Microsoft Foundation Class Library",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#MFC",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Microsoft_Foundation_Class_Library",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Microsoft_Foundation_Class_Library"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Microsoft Foundation Class Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/MFC_QuickRef.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/MFC_QuickRef.pdf",
+      "filename": "MFC_QuickRef.pdf"
+    }
+  ],
+  "path": "frameworks-and-libraries/mfc"
+}

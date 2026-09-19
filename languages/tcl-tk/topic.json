@@ -1,0 +1,37 @@
+{
+  "id": "TclTk",
+  "slug": "tcl-tk",
+  "title": "Tcl/Tk - Tool Command Language",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#TclTk",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Tcl/Tk",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Tcl/Tk"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.tcl.tk/",
+      "url": "http://www.tcl.tk/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Tcl/Tk Sripting Language Quick Reference by Paul Raines [pdf] (refcards.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/TclTk_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/TclTk_quickref.pdf",
+      "filename": "TclTk_quickref.pdf"
+    }
+  ],
+  "path": "languages/tcl-tk"
+}

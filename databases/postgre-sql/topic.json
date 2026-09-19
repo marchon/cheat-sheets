@@ -1,0 +1,94 @@
+{
+  "id": "PostgreSQL",
+  "slug": "postgre-sql",
+  "title": "PostgreSQL",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#PostgreSQL",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/PostgreSQL",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/PostgreSQL"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.postgresql.org/",
+      "url": "http://www.postgresql.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "DB2",
+      "label": "DB2"
+    },
+    {
+      "id": "MySQL",
+      "label": "MySQL"
+    },
+    {
+      "id": "Oracle",
+      "label": "Oracle"
+    },
+    {
+      "id": "SQL",
+      "label": "SQL"
+    },
+    {
+      "id": "SQLite",
+      "label": "SQLite"
+    },
+    {
+      "id": "Sybase",
+      "label": "Sybase"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "PostgreSQL [html] (petefreitag.com)",
+      "saved": [],
+      "online": [
+        "http://www.petefreitag.com/cheatsheets/postgresql/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.petefreitag.com/cheatsheets/postgresql/"
+      ]
+    },
+    {
+      "title": "Lorenzo Alberton. PostgreSQL cheat sheet [gif, pdf, png] (alberton.info)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/postgresql-cheat-sheet.gif",
+        "https://www.cheat-sheets.org/saved-copy/postgresql-cheat-sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/postgresql-cheat-sheet.png"
+      ],
+      "online": [
+        "http://www.alberton.info/postgresql_cheat_sheet.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Essential PostgreSQL by Leo Hsu and Regina Obe [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/essential-postgresql"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/essential-postgresql"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/postgresql-cheat-sheet.gif",
+      "filename": "postgresql-cheat-sheet.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/postgresql-cheat-sheet.pdf",
+      "filename": "postgresql-cheat-sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/postgresql-cheat-sheet.png",
+      "filename": "postgresql-cheat-sheet.png"
+    }
+  ],
+  "path": "databases/postgre-sql"
+}

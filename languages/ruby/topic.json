@@ -1,0 +1,96 @@
+{
+  "id": "Ruby",
+  "slug": "ruby",
+  "title": "Ruby",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Ruby",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Ruby_%28programming_language%29",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Ruby_%28programming_language%29"
+  ],
+  "official_websites": [
+    {
+      "label": "ruby-lang.org",
+      "url": "https://www.ruby-lang.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "RubyRails",
+      "label": "Ruby on Rails"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Ruby QuickRef [html] (zenspider.com)",
+      "saved": [],
+      "online": [
+        "http://www.zenspider.com/Languages/Ruby/QuickRef.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.zenspider.com/Languages/Ruby/QuickRef.html"
+      ]
+    },
+    {
+      "title": "Ruby Cheatsheet [pdf, png:page1, png:page2] (cenophobie.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/RubyCheat.pdf",
+        "https://www.cheat-sheets.org/saved-copy/RubyCheat1.png",
+        "https://www.cheat-sheets.org/saved-copy/RubyCheat2.png"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Ruby Language QuickRef by Ryan Davis with Austin Ziegler [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Ruby%20Language%20QuickRef.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Ruby Library QuickRef by Ryan Davis with Austin Ziegler [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Ruby%20Library%20QuickRef.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Essential Ruby by Melchior Brislinger and Peter Cooper [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/essential-ruby"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/essential-ruby"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/RubyCheat.pdf",
+      "filename": "RubyCheat.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/RubyCheat1.png",
+      "filename": "RubyCheat1.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/RubyCheat2.png",
+      "filename": "RubyCheat2.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Ruby%20Language%20QuickRef.pdf",
+      "filename": "Ruby Language QuickRef.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Ruby%20Library%20QuickRef.pdf",
+      "filename": "Ruby Library QuickRef.pdf"
+    }
+  ],
+  "path": "languages/ruby"
+}

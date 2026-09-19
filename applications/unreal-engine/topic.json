@@ -1,0 +1,39 @@
+{
+  "id": "UnrealEngine",
+  "slug": "unreal-engine",
+  "title": "Unreal Engine",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#UnrealEngine",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Unreal_Engine",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Unreal_Engine"
+  ],
+  "official_websites": [
+    {
+      "label": "unrealengine.com",
+      "url": "https://www.unrealengine.com/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "UnrealScript (UScript) Cheat Sheet [png] (udn.epicgames.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/UnrealScript_Cheat_Sheet.png"
+      ],
+      "online": [
+        "http://udn.epicgames.com/Three/rsrc/Three/UnrealScriptCheatSheet/UnrealScript_Cheat_Sheet.png"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/UnrealScript_Cheat_Sheet.png",
+      "filename": "UnrealScript_Cheat_Sheet.png"
+    }
+  ],
+  "path": "applications/unreal-engine"
+}

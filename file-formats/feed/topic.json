@@ -1,0 +1,34 @@
+{
+  "id": "Feed",
+  "slug": "feed",
+  "title": "Feed (Web Feed) : Atom , RSS",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#Feed",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Web_feed",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Web_feed",
+    "https://en.wikipedia.org/wiki/Atom_(standard)",
+    "https://en.wikipedia.org/wiki/RSS"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "XML",
+      "label": "XML"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "RSS and Atom by Dave Johnson [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/rss-and-atom"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "file-formats/feed"
+}

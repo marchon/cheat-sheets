@@ -1,0 +1,65 @@
+{
+  "id": "NetBeans",
+  "slug": "net-beans",
+  "title": "NetBeans",
+  "group": "editors-and-ides",
+  "source_anchor": "https://www.cheat-sheets.org/#NetBeans",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/NetBeans",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/NetBeans"
+  ],
+  "official_websites": [
+    {
+      "label": "netbeans.org",
+      "url": "http://www.netbeans.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Eclipse",
+      "label": "Eclipse"
+    },
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "NetBeans Platform 7.0: A Framework for Building Pluggable Enterprise Applications by Heiko Böck, Anton Epple, Miloš Šilhánek, Andreas Stefik, Geertjan Wielenga, and Tom Wheeler [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/netbeans-platform-70"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Essential NetBeans Platform by Heiko Böck, Anton Epple, Miloš Šilhánek, Andreas Stefik, Geertjan Wielenga, and Tom Wheeler [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/essential-netbeans-platform"
+      ],
+      "archived": []
+    },
+    {
+      "title": "NetBeans Java Editor by Geertjan Wielenga and Patrick Keegan [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/netbeans-java-editor-68"
+      ],
+      "archived": []
+    },
+    {
+      "title": "NetBeans Tutorials and Articles  [html] (netbeans.org)",
+      "saved": [],
+      "online": [
+        "http://netbeans.org/kb/kb.html"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "editors-and-ides/net-beans"
+}

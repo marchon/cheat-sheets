@@ -1,0 +1,42 @@
+{
+  "id": "Solaris",
+  "slug": "solaris",
+  "title": "Solaris",
+  "group": "operating-systems",
+  "source_anchor": "https://www.cheat-sheets.org/#Solaris",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Solaris_%28operating_system%29",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Solaris_%28operating_system%29"
+  ],
+  "official_websites": [
+    {
+      "label": "sun.com/solaris/",
+      "url": "http://sun.com/solaris/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Unix",
+      "label": "Unix"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Sun Solaris Administrator's Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Solaris_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Solaris_quickref.pdf",
+      "filename": "Solaris_quickref.pdf"
+    }
+  ],
+  "path": "operating-systems/solaris"
+}

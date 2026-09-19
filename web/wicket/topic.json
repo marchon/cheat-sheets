@@ -1,0 +1,37 @@
+{
+  "id": "Wicket",
+  "slug": "wicket",
+  "title": "Wicket (Apache Wicket)",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#Wicket",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Apache_Wicket",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Apache_Wicket"
+  ],
+  "official_websites": [
+    {
+      "label": "wicket.apache.org",
+      "url": "http://wicket.apache.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Apache Wicket by Andrew Lombardi [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-apache-wicket"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "web/wicket"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "Seam",
+  "slug": "seam",
+  "title": "Seam",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#Seam",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/JBoss_Seam",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/JBoss_Seam"
+  ],
+  "official_websites": [
+    {
+      "label": "seamframework.org",
+      "url": "http://www.seamframework.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "JavaServerFaces",
+      "label": "JavaServer Faces"
+    },
+    {
+      "id": "RichFaces",
+      "label": "RichFaces"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Core Seam by Jacob Orshalick [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/core-seam"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/core-seam"
+      ]
+    },
+    {
+      "title": "Seam UI by Jacob Orshalick [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/seam-ui"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/seam-ui"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "frameworks-and-libraries/seam"
+}

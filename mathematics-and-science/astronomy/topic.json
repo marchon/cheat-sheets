@@ -1,0 +1,37 @@
+{
+  "id": "Astronomy",
+  "slug": "astronomy",
+  "title": "Astronomy",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Astronomy",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Advanced_Packaging_Tool",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Advanced_Packaging_Tool"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [
+    {
+      "label": "WolframAlpha",
+      "url": "http://www.wolframalpha.com/examples/Astronomy.html"
+    }
+  ],
+  "items": [
+    {
+      "title": "SOLAR SYSTEM CHEAT SHEET (metric) by Bryan English [pdf] (bluelinecity.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/solarsystem-1.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/solarsystem-1.pdf",
+      "filename": "solarsystem-1.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/astronomy"
+}

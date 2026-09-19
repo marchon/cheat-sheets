@@ -1,0 +1,53 @@
+{
+  "id": "AmazonWebServices",
+  "slug": "amazon-web-services",
+  "title": "Amazon Web Services (AWS)",
+  "group": "online-data-services",
+  "source_anchor": "https://www.cheat-sheets.org/#AmazonWebServices",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Amazon_Web_Services",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Amazon_Web_Services"
+  ],
+  "official_websites": [
+    {
+      "label": "aws.amazon.com",
+      "url": "https://aws.amazon.com/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "AWS Command Line Interface User Guide [html, pdf] (aws.amazon.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/aws-cli.pdf"
+      ],
+      "online": [
+        "https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
+        "https://docs.aws.amazon.com/cli/latest/userguide/aws-cli.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html",
+        "https://web.archive.org/web/*/docs.aws.amazon.com/cli/latest/userguide/aws-cli.pdf"
+      ]
+    },
+    {
+      "title": "Awesome AWS Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/aws.sh"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/aws.sh"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/aws-cli.pdf",
+      "filename": "aws-cli.pdf"
+    }
+  ],
+  "path": "online-data-services/amazon-web-services"
+}

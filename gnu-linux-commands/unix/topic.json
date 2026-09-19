@@ -1,0 +1,179 @@
+{
+  "id": "Unix",
+  "slug": "unix",
+  "title": "Unix",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#Unix",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Unix",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Unix"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "chmod",
+      "label": "chmod"
+    },
+    {
+      "id": "Debian",
+      "label": "Debian"
+    },
+    {
+      "id": "Linux",
+      "label": "Linux"
+    },
+    {
+      "id": "Solaris",
+      "label": "Solaris"
+    },
+    {
+      "id": "Ubuntu",
+      "label": "Ubuntu"
+    },
+    {
+      "id": "Vi",
+      "label": "Vi"
+    },
+    {
+      "id": "Vim",
+      "label": "Vim"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "TLDR Pages [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Most used commands [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+      ]
+    },
+    {
+      "title": "Commonly used UNIX commands by Indiana Univ [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/unix_command_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "UNIX commands reference card by University Technology Information Services [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/UNIX%20commands%20reference%20card.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Treebeard's Unix Cheat Sheet [html] by Marc Kummel (rain.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/TB_Unix_Cheat_Sheet_20210701.html"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "UNIX BASH shell Quick Reference by Arnold Robbins [pdf] (tiger.la.asu.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/bash_quickref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Set Operations in the Unix Shell Simplified by Peteris Krumins [html, pdf, txt] (catonmat.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/setops.pdf",
+        "https://www.cheat-sheets.org/saved-copy/setops.txt"
+      ],
+      "online": [
+        "https://catonmat.net/set-operations-in-unix-shell-simplified"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://catonmat.net/set-operations-in-unix-shell-simplified/"
+      ]
+    },
+    {
+      "title": "The Definitive Guide to Bash Command Line History by Peteris Krumins [html, pdf, tex, txt] (catonmat.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/bash-history-cheat-sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/bash-history-cheat-sheet.tex",
+        "https://www.cheat-sheets.org/saved-copy/bash-history-cheat-sheet.txt"
+      ],
+      "online": [
+        "https://catonmat.net/the-definitive-guide-to-bash-command-line-history"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://catonmat.net/the-definitive-guide-to-bash-command-line-history"
+      ]
+    },
+    {
+      "title": "Unix Systems Programming Cheat Sheet by Jacob Strieb [github pdf] (github.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Unix_Systems_Programming_Cheat_Sheet_20210701.pdf"
+      ],
+      "online": [
+        "https://github.com/jstrieb/systems-programming-cheat-sheet/",
+        "https://github.com/jstrieb/systems-programming-cheat-sheet/raw/master/Cheat%20Sheet.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/jstrieb/systems-programming-cheat-sheet/raw/master/Cheat%20Sheet.pdf"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/unix_command_quickref.pdf",
+      "filename": "unix_command_quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/UNIX%20commands%20reference%20card.pdf",
+      "filename": "UNIX commands reference card.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/TB_Unix_Cheat_Sheet_20210701.html",
+      "filename": "TB_Unix_Cheat_Sheet_20210701.html"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/bash_quickref.pdf",
+      "filename": "bash_quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/setops.pdf",
+      "filename": "setops.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/setops.txt",
+      "filename": "setops.txt"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/bash-history-cheat-sheet.pdf",
+      "filename": "bash-history-cheat-sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/bash-history-cheat-sheet.tex",
+      "filename": "bash-history-cheat-sheet.tex"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/bash-history-cheat-sheet.txt",
+      "filename": "bash-history-cheat-sheet.txt"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Unix_Systems_Programming_Cheat_Sheet_20210701.pdf",
+      "filename": "Unix_Systems_Programming_Cheat_Sheet_20210701.pdf"
+    }
+  ],
+  "path": "gnu-linux-commands/unix"
+}

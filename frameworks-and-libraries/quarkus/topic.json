@@ -1,0 +1,57 @@
+{
+  "id": "Quarkus",
+  "slug": "quarkus",
+  "title": "Quarkus",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#Quarkus",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Quarkus",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Quarkus"
+  ],
+  "official_websites": [
+    {
+      "label": "quarkus.io",
+      "url": "https://quarkus.io/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Quarkus Cheat-Sheet by @alexsotobJ [pdf] (lordofthejars.github.io)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/quarkus-cheat-sheet.pdf"
+      ],
+      "online": [
+        "https://lordofthejars.github.io/quarkus-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://lordofthejars.github.io/quarkus-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "Getting Started With Quarkus by Alex Soto [pdf] (dzone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/14667762-refcard-319-getting-started-with-quarkus-2021.pdf"
+      ],
+      "online": [
+        "https://dzone.com/refcardz/quarkus-1"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/quarkus-1"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/quarkus-cheat-sheet.pdf",
+      "filename": "quarkus-cheat-sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/14667762-refcard-319-getting-started-with-quarkus-2021.pdf",
+      "filename": "14667762-refcard-319-getting-started-with-quarkus-2021.pdf"
+    }
+  ],
+  "path": "frameworks-and-libraries/quarkus"
+}

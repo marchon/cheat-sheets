@@ -1,0 +1,36 @@
+{
+  "id": "Image",
+  "slug": "image",
+  "title": "Image",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#Image",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Image",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Image"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Image Formats Cheat Sheet – All you need to know about JPEGs, TIFFS, GIFs, PNGs & BMPs by Jamie Spencer [html, jpg] ()",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/jpg-png-gif-bmp-tiff-mega-cheat-sheet1.jpg"
+      ],
+      "online": [
+        "http://makeawebsitehub.com/image-formats-mega-cheat-sheets/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://makeawebsitehub.com/image-formats-mega-cheat-sheets/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/jpg-png-gif-bmp-tiff-mega-cheat-sheet1.jpg",
+      "filename": "jpg-png-gif-bmp-tiff-mega-cheat-sheet1.jpg"
+    }
+  ],
+  "path": "file-formats/image"
+}

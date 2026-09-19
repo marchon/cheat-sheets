@@ -1,0 +1,29 @@
+{
+  "id": "Doctypes",
+  "slug": "doctypes",
+  "title": "Doctypes",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#Doctypes",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Document_Type_Definition",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Document_Type_Definition"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Doctypes for XHTML docs / Doctypes for HTML docs [html] (cookwood.com)",
+      "saved": [],
+      "online": [
+        "http://www.cookwood.com/html/extras/doctypes.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.cookwood.com/html/extras/doctypes.html"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "file-formats/doctypes"
+}

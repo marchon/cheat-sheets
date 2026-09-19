@@ -1,0 +1,74 @@
+{
+  "id": "Unicode",
+  "slug": "unicode",
+  "title": "Unicode",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#Unicode",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Unicode",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Unicode"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.unicode.org/",
+      "url": "http://www.unicode.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Characters",
+      "label": "Characters"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "The Unicode Character Code Charts [html] (utf.ru)",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/utf.ru/"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Free Unicode Fonts [html] (font.su)",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/font.su/"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Die Unicode-Datenbank [html] (sql-und-xml.de)",
+      "saved": [],
+      "online": [
+        "http://www.sql-und-xml.de/unicode-database/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.sql-und-xml.de/unicode-database/"
+      ]
+    },
+    {
+      "title": "HTML Characters, Numeric Codes, 0-65535  by Bob Stein, VisiBone [html] (visibone.com)",
+      "saved": [],
+      "online": [
+        "http://www.visibone.com/htmlref/char/cer.htm"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.visibone.com/htmlref/char/cer.htm"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/sites/utf.ru/",
+      "filename": "/sites/utf.ru/"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/sites/font.su/",
+      "filename": "/sites/font.su/"
+    }
+  ],
+  "path": "file-formats/unicode"
+}

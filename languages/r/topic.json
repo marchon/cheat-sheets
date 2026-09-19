@@ -1,0 +1,66 @@
+{
+  "id": "R",
+  "slug": "r",
+  "title": "R",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#R",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/R_(programming_language)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/R_(programming_language)"
+  ],
+  "official_websites": [
+    {
+      "label": "r-project.org",
+      "url": "http://www.r-project.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Statistics",
+      "label": "Statistics"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "R Reference Card by Tom Short [pdf] (cran.za.r-project.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/R-Short-refcard.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "R reference card by Jonathan Baron [pdf] (cran.za.r-project.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/R-refcard.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "R Cheat Sheet by Quandl [pdf] (quandl.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Quandl_-_R_Cheat_Sheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/R-Short-refcard.pdf",
+      "filename": "R-Short-refcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/R-refcard.pdf",
+      "filename": "R-refcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Quandl_-_R_Cheat_Sheet.pdf",
+      "filename": "Quandl_-_R_Cheat_Sheet.pdf"
+    }
+  ],
+  "path": "languages/r"
+}

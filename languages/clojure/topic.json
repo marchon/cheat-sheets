@@ -1,0 +1,41 @@
+{
+  "id": "Clojure",
+  "slug": "clojure",
+  "title": "Clojure",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Clojure",
+  "extra_ids": [],
+  "wikipedia": "http://ru.wikipedia.org/wiki/Clojure",
+  "wikipedia_urls": [
+    "http://ru.wikipedia.org/wiki/Clojure"
+  ],
+  "official_websites": [
+    {
+      "label": "http://clojure.org/",
+      "url": "http://clojure.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Erlang",
+      "label": "Erlang"
+    },
+    {
+      "id": "Haskell",
+      "label": "Haskell"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Functional Programming with Clojure Simple Concurrency on the JVM by Tim Berglund and Matthew McCullough [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/functional-programming-clojure"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "languages/clojure"
+}

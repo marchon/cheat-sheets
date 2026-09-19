@@ -1,0 +1,44 @@
+{
+  "id": "LotusDomino",
+  "slug": "lotus-domino",
+  "title": "Lotus Domino",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#LotusDomino",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/IBM_Lotus_Domino",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/IBM_Lotus_Domino"
+  ],
+  "official_websites": [
+    {
+      "label": "ibm.com/software/lotus/products/domino/",
+      "url": "http://www.ibm.com/software/lotus/products/domino/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Lotus Domino URL sheet (Domino URL cheat sheet) by Tara Hall [html] (ibm.com)",
+      "saved": [],
+      "online": [
+        "http://www.ibm.com/developerworks/lotus/library/ls-Domino_URL_cheat_sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.ibm.com/developerworks/lotus/library/ls-Domino_URL_cheat_sheet/"
+      ]
+    },
+    {
+      "title": "Lotus Domino Search commands  (Searching via Domino URL commands) by Bruno Grange and Kevin Giles [html] (lotus.com)",
+      "saved": [],
+      "online": [
+        "http://www-10.lotus.com/ldd/ddwiki.nsf/dx/07282008102129AMKMKJU2.htm"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www-10.lotus.com/ldd/ddwiki.nsf/dx/07282008102129AMKMKJU2.htm"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "applications/lotus-domino"
+}

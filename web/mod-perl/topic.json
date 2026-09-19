@@ -1,0 +1,46 @@
+{
+  "id": "mod_perl",
+  "slug": "mod-perl",
+  "title": "mod_perl",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#mod_perl",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Mod_perl",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Mod_perl"
+  ],
+  "official_websites": [
+    {
+      "label": "http://perl.apache.org/",
+      "url": "http://perl.apache.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    },
+    {
+      "id": "Perl",
+      "label": "Perl"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Mod_perl Quick Reference Card by Andrew Ford [pdf] (refcards.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/mod_perl-refcard-a4.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/mod_perl-refcard-a4.pdf",
+      "filename": "mod_perl-refcard-a4.pdf"
+    }
+  ],
+  "path": "web/mod-perl"
+}

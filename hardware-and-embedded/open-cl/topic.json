@@ -1,0 +1,53 @@
+{
+  "id": "OpenCL",
+  "slug": "open-cl",
+  "title": "OpenCL",
+  "group": "hardware-and-embedded",
+  "source_anchor": "https://www.cheat-sheets.org/#OpenCL",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/OpenCL",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/OpenCL"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.khronos.org/opencl/",
+      "url": "http://www.khronos.org/opencl/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "OpenCL API 1.2 Reference Card by Khronos Group [pdf] (khronos.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/opencl-1-2-quick-reference-card.pdf"
+      ],
+      "online": [
+        "http://www.khronos.org/files/opencl-1-2-quick-reference-card.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "OpenCLTM API 1.0 Quick Reference Card by Khronos Group [pdf] (khronos.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/opencl-1-1-quick-reference-card.pdf"
+      ],
+      "online": [
+        "http://www.khronos.org/files/opencl-1-1-quick-reference-card.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/opencl-1-2-quick-reference-card.pdf",
+      "filename": "opencl-1-2-quick-reference-card.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/opencl-1-1-quick-reference-card.pdf",
+      "filename": "opencl-1-1-quick-reference-card.pdf"
+    }
+  ],
+  "path": "hardware-and-embedded/open-cl"
+}

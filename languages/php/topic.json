@@ -1,0 +1,249 @@
+{
+  "id": "PHP",
+  "slug": "php",
+  "title": "PHP",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#PHP",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/PHP",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/PHP"
+  ],
+  "official_websites": [
+    {
+      "label": "http://php.net/",
+      "url": "http://php.net/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Doctrine",
+      "label": "Doctrine"
+    },
+    {
+      "id": "PHPFrameworks",
+      "label": "PHP Frameworks"
+    },
+    {
+      "id": "Symfony",
+      "label": "Symfony"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "PHP Cheat Sheet by Dave Child [html, png, pdf] (cheatography.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/php_cheat_sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/php_cheat_sheet.pdf"
+      ],
+      "online": [
+        "https://www.cheatography.com/davechild/cheat-sheets/php/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.cheatography.com/davechild/cheat-sheets/php/"
+      ]
+    },
+    {
+      "title": "The VisiBone PHP Skinny Sheet [8.5\" x 11\" (A4) size Laminated , gif] (visibone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage1.gif",
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage2.gif",
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage3.gif",
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage4.gif",
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage5.gif",
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage6.gif",
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage7.gif",
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage8.gif"
+      ],
+      "online": [
+        "http://www.visibone.com/php/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "PHP 4 Quick Reference Card by Steven R. Gould [pdf, ps, tex] (stevengould.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/PHPRefCard.pdf",
+        "https://www.cheat-sheets.org/saved-copy/PHPRefCard.ps",
+        "https://www.cheat-sheets.org/saved-copy/PHPRefCard.tex"
+      ],
+      "online": [
+        "http://www.stevengould.org/portfolio/independent.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "PHP cheat sheet (Classes and objects, functions, output control, regex) by Daniel Dev [pdf, png]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/PHP-cheatsheet.Daniel.pdf",
+        "https://www.cheat-sheets.org/saved-copy/PHP-cheatsheet.Daniel.png"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Ultimate PHO Cheatsheet by Matt Ahlgren [png, pdf] (websitehostingrating.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Ultimate_PHP_Cheatsheet.png",
+        "https://www.cheat-sheets.org/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf"
+      ],
+      "online": [
+        "https://www.websitehostingrating.com/html-css-php-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.websitehostingrating.com/html-css-php-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "PHP Cheat Sheet with special php syntax [html] (blueshoes.org)",
+      "saved": [],
+      "online": [
+        "http://www.blueshoes.org/en/developer/php_cheat_sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.blueshoes.org/en/developer/php_cheat_sheet/"
+      ]
+    },
+    {
+      "title": "PHP Variable Comparison, PHP Arithmetic Operations and PHP Variable Testing by Juliette Reinders Folmer [html] (phpcheatsheets.com)",
+      "saved": [],
+      "online": [
+        "http://phpcheatsheets.com/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://phpcheatsheets.com/"
+      ]
+    },
+    {
+      "title": "Smarty cheat sheet for template designers [pdf, gif] (somewherein.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/SmartyCheatSheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/135700437_bb5093e48c_o.gif"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Adobe® ColdFusion Web Services for PHP Programmers by Marco Tabini [pdf] (dzone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/rc116-010d-coldfusionws_php.pdf"
+      ],
+      "online": [
+        "https://dzone.com/refcardz/adobe-coldfusion-web-services-0"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/adobe-coldfusion-web-services-0"
+      ]
+    },
+    {
+      "title": "PHPUnit: PHP Test-Driven Development Automated Tools to Improve Your PHP Code Quality by Giorgio Sironi [pdf] (dzone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/rc124-010d-phpunit_1.pdf"
+      ],
+      "online": [
+        "https://dzone.com/refcardz/phpunit-php-test-driven"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/phpunit-php-test-driven"
+      ]
+    },
+    {
+      "title": "Awesome Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/php.php"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/php.php"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/php_cheat_sheet.png",
+      "filename": "php_cheat_sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/php_cheat_sheet.pdf",
+      "filename": "php_cheat_sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/phpbigbookpage1.gif",
+      "filename": "phpbigbookpage1.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/phpbigbookpage2.gif",
+      "filename": "phpbigbookpage2.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/phpbigbookpage3.gif",
+      "filename": "phpbigbookpage3.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/phpbigbookpage4.gif",
+      "filename": "phpbigbookpage4.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/phpbigbookpage5.gif",
+      "filename": "phpbigbookpage5.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/phpbigbookpage6.gif",
+      "filename": "phpbigbookpage6.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/phpbigbookpage7.gif",
+      "filename": "phpbigbookpage7.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/phpbigbookpage8.gif",
+      "filename": "phpbigbookpage8.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PHPRefCard.pdf",
+      "filename": "PHPRefCard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PHPRefCard.ps",
+      "filename": "PHPRefCard.ps"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PHPRefCard.tex",
+      "filename": "PHPRefCard.tex"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PHP-cheatsheet.Daniel.pdf",
+      "filename": "PHP-cheatsheet.Daniel.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PHP-cheatsheet.Daniel.png",
+      "filename": "PHP-cheatsheet.Daniel.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Ultimate_PHP_Cheatsheet.png",
+      "filename": "Ultimate_PHP_Cheatsheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf",
+      "filename": "HTML_CSS_PHP_cheat_sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/SmartyCheatSheet.pdf",
+      "filename": "SmartyCheatSheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/135700437_bb5093e48c_o.gif",
+      "filename": "135700437_bb5093e48c_o.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/rc116-010d-coldfusionws_php.pdf",
+      "filename": "rc116-010d-coldfusionws_php.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/rc124-010d-phpunit_1.pdf",
+      "filename": "rc124-010d-phpunit_1.pdf"
+    }
+  ],
+  "path": "languages/php"
+}

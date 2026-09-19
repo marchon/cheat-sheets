@@ -1,0 +1,88 @@
+{
+  "id": "JSP",
+  "slug": "jsp",
+  "title": "JSP - JavaServer Pages",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#JSP",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/JavaServer_Pages",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/JavaServer_Pages"
+  ],
+  "official_websites": [
+    {
+      "label": "http://java.sun.com/products/jsp/",
+      "url": "http://java.sun.com/products/jsp/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "JSP™ SYNTAX version 2.0 [pdf] (java.sun.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/card20.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "JSP Quick Reference Card [pdf] (adobe.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/jspqr.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "JSP Syntax [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/JSP%20Syntax.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "JSP Quick Reference Card [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/JSP%20Quick%20Reference%20Card.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Essential JSP Expression Language by Bear Bibeault [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/essential-jsp-expression"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/essential-jsp-expression"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/card20.pdf",
+      "filename": "card20.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/jspqr.pdf",
+      "filename": "jspqr.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/JSP%20Syntax.pdf",
+      "filename": "JSP Syntax.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/JSP%20Quick%20Reference%20Card.pdf",
+      "filename": "JSP Quick Reference Card.pdf"
+    }
+  ],
+  "path": "web/jsp"
+}

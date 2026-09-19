@@ -1,0 +1,36 @@
+{
+  "id": "IRC",
+  "slug": "irc",
+  "title": "IRC - Internet Relay Chat",
+  "group": "networking-and-protocols",
+  "source_anchor": "https://www.cheat-sheets.org/#IRC",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Internet_Relay_Chat",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Internet_Relay_Chat"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "wikiHow:IRC Cheat Sheet [html, pdf] (wikihow.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/wikiHow_IRC_Cheat_Sheet.pdf"
+      ],
+      "online": [
+        "http://www.wikihow.com/wikiHow:IRC-Cheat-Sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.wikihow.com/wikiHow:IRC-Cheat-Sheet"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/wikiHow_IRC_Cheat_Sheet.pdf",
+      "filename": "wikiHow_IRC_Cheat_Sheet.pdf"
+    }
+  ],
+  "path": "networking-and-protocols/irc"
+}

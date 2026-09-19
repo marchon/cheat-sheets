@@ -1,0 +1,34 @@
+{
+  "id": "Inkscape",
+  "slug": "inkscape",
+  "title": "Inkscape",
+  "group": "graphics-and-design",
+  "source_anchor": "https://www.cheat-sheets.org/#Inkscape",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Inkscape",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Inkscape"
+  ],
+  "official_websites": [
+    {
+      "label": "inkscape.org",
+      "url": "https://inkscape.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Inkscape keys (keyboard) and mouse reference [html] (inkscape.org)",
+      "saved": [],
+      "online": [
+        "https://inkscape.org/en/doc/keys046.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://inkscape.org/en/doc/keys046.html"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "graphics-and-design/inkscape"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "MVVM",
+  "slug": "mvvm",
+  "title": "MVVM (Model View ViewModel)",
+  "group": "business-processes",
+  "source_anchor": "https://www.cheat-sheets.org/#MVVM",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Model_View_ViewModel",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Model_View_ViewModel"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "The MVVM Design Pattern: A Formula for Elegant, Maintainable Mobile Apps by Colin Melia [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/mvvm-design-pattern-formula"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/mvvm-design-pattern-formula"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "business-processes/mvvm"
+}

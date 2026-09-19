@@ -1,0 +1,64 @@
+{
+  "id": "DesignPattern",
+  "slug": "design-pattern",
+  "title": "Design Pattern",
+  "group": "business-processes",
+  "source_anchor": "https://www.cheat-sheets.org/#DesignPattern",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Design_pattern",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Design_pattern"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "ApacheCamel",
+      "label": "Apache Camel"
+    },
+    {
+      "id": "ComputerScience",
+      "label": "Computer Science"
+    },
+    {
+      "id": "Tapestry",
+      "label": "Tapestry"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Design Pattern Quick Reference by Jason S. McDonald [pdf] (mcdonaldland.info)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/designpatternscard1.pdf"
+      ],
+      "online": [
+        "http://www.mcdonaldland.info/2007/11/28/40/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Design Patterns by Jason McDonald [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/design-patterns"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Enterprise Integration Patterns W ^ with Apache Camel by Claus Ibsen [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/enterprise-integration",
+        "https://en.wikipedia.org/wiki/Enterprise_Integration_Patterns"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/designpatternscard1.pdf",
+      "filename": "designpatternscard1.pdf"
+    }
+  ],
+  "path": "business-processes/design-pattern"
+}

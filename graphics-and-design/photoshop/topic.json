@@ -1,0 +1,156 @@
+{
+  "id": "Photoshop",
+  "slug": "photoshop",
+  "title": "Photoshop",
+  "group": "graphics-and-design",
+  "source_anchor": "https://www.cheat-sheets.org/#Photoshop",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Photoshop",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Photoshop"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.adobe.com/products/photoshop/",
+      "url": "http://www.adobe.com/products/photoshop/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Adobe",
+      "label": "Adobe Systems"
+    },
+    {
+      "id": "Illustrator",
+      "label": "Illustrator"
+    },
+    {
+      "id": "InDesign",
+      "label": "InDesign"
+    },
+    {
+      "id": "Gimp",
+      "label": "Gimp"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Photoshop 7.0 Quick Reference Card for Windows [pdf] (frenchfragfactory.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Photoshop.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Photoshop CS2 Keyboard Shortcuts (Windows) [pdf] (creativetechs.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/PSCS2_Shortcuts_Windows.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Photoshop CS2 Keyboard Shortcuts (Macintosh) [pdf] (creativetechs.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/PSCS2_Shortcuts_Mac.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Handy Photoshop Toolbox Reference Guide [html] (simplephotoshop.com)",
+      "saved": [],
+      "online": [
+        "http://simplephotoshop.com/photoshop_tools/index.htm"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://simplephotoshop.com/photoshop_tools/index.htm"
+      ]
+    },
+    {
+      "title": "Photoshop NL 2024 | 2025 by Ton Haarmans [pdf] (wideopenwindows.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/photoshop_2024_nl_20241206.pdf"
+      ],
+      "online": [
+        "https://wideopenwindows.be/pdfs/photoshop_2024_nl.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://wideopenwindows.be/pdfs/photoshop_2024_nl.pdf"
+      ]
+    },
+    {
+      "title": "Photoshop CC 2015 by Ton Haarmans [pdf] (wideopenwindows.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/photoshop_CC2015_Win.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Spiekbrief | Adobe Photoshop CS6 | Mac | PC by Ton Haarmans [html] (wideopenwin.com)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20130925185536/http://www.wideopenwin.com/pscs6.html"
+      ]
+    },
+    {
+      "title": "Adobe Photoshop CS5 | Engels > Nederlands + sneltoetsen (Mac | Win) by Ton Haarmans [html] (wideopenwin.com)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20130902051257/http://www.wideopenwin.com/pscs4.html"
+      ]
+    },
+    {
+      "title": "English to Dutch menu's and shortcuts for Photoshop CS4 (Mac | Win) by Ton Haarmans [html] (wideopenwin.com)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20130902041904/http://www.wideopenwin.com/pscs5.html"
+      ]
+    },
+    {
+      "title": "2015 Adobe Photoshop Keyboard Shortcuts Cheat Sheet by Jamie Spencer [html, jpg] (makeawebsitehub.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/2015-adobe-photoshop-keyboard-shortcuts-cheat-sheet.jpg"
+      ],
+      "online": [
+        "http://makeawebsitehub.com/adobe-photoshop-keyboard-shortcuts/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://makeawebsitehub.com/adobe-photoshop-keyboard-shortcuts/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Photoshop.pdf",
+      "filename": "Photoshop.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PSCS2_Shortcuts_Windows.pdf",
+      "filename": "PSCS2_Shortcuts_Windows.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PSCS2_Shortcuts_Mac.pdf",
+      "filename": "PSCS2_Shortcuts_Mac.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/photoshop_2024_nl_20241206.pdf",
+      "filename": "photoshop_2024_nl_20241206.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/photoshop_CC2015_Win.pdf",
+      "filename": "photoshop_CC2015_Win.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/2015-adobe-photoshop-keyboard-shortcuts-cheat-sheet.jpg",
+      "filename": "2015-adobe-photoshop-keyboard-shortcuts-cheat-sheet.jpg"
+    }
+  ],
+  "path": "graphics-and-design/photoshop"
+}

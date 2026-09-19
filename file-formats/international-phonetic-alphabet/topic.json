@@ -1,0 +1,39 @@
+{
+  "id": "InternationalPhoneticAlphabet",
+  "slug": "international-phonetic-alphabet",
+  "title": "International Phonetic Alphabet W",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#InternationalPhoneticAlphabet",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "internationalphoneticassociation.org",
+      "url": "https://www.internationalphoneticassociation.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "The official chart of the International Phonetic Alphabet (IPA), revised in 2020 by International Phonetic Association [svg] (wikimedia.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/IPA_chart_2020.svg"
+      ],
+      "online": [
+        "https://upload.wikimedia.org/wikipedia/commons/8/8f/IPA_chart_2020.svg"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://upload.wikimedia.org/wikipedia/commons/8/8f/IPA_chart_2020.svg"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/IPA_chart_2020.svg",
+      "filename": "IPA_chart_2020.svg"
+    }
+  ],
+  "path": "file-formats/international-phonetic-alphabet"
+}

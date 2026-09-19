@@ -1,0 +1,37 @@
+{
+  "id": "Gmail",
+  "slug": "gmail",
+  "title": "Gmail",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#Gmail",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Gmail",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Gmail"
+  ],
+  "official_websites": [
+    {
+      "label": "gmail.com",
+      "url": "http://www.gmail.com/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Google",
+      "label": "Google"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Gmail Shortcuts [html] (evhead.com)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20140208115706/http://r.evhead.com/hodgepodge/gmail-shortcuts.html"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "applications/gmail"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "Hardware",
+  "slug": "hardware",
+  "title": "Hardware",
+  "group": "hardware-and-embedded",
+  "source_anchor": "https://www.cheat-sheets.org/#Hardware",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Hardware",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Hardware"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Computer hardware poster 1.7 by =Sonic840 [png] (sonic84.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Computer_hardware_poster_1_7_by_Sonic840.png"
+      ],
+      "online": [
+        "http://sonic840.deviantart.com/art/Computer-hardware-poster-1-7-111402099"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Computer_hardware_poster_1_7_by_Sonic840.png",
+      "filename": "Computer_hardware_poster_1_7_by_Sonic840.png"
+    }
+  ],
+  "path": "hardware-and-embedded/hardware"
+}

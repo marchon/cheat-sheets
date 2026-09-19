@@ -1,0 +1,52 @@
+{
+  "id": "WindowsPowerShell",
+  "slug": "windows-power-shell",
+  "title": "Windows PowerShell",
+  "group": "operating-systems",
+  "source_anchor": "https://www.cheat-sheets.org/#WindowsPowerShell",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Windows_PowerShell",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Windows_PowerShell"
+  ],
+  "official_websites": [
+    {
+      "label": "microsoft.com/powershell",
+      "url": "http://www.microsoft.com/powershell"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Windows",
+      "label": "Windows"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Windows PowerShell 2 | Cheat Sheet by Markus Widl [pdf] (de - galileocomputing.de)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/windows_powershell2_cheat_sheet.pdf"
+      ],
+      "online": [
+        "http://www.galileocomputing.de/download/startseiten/windows_powershell2_cheat_sheet.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "WindowsPowerShell by Bruce Payette [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/windows-powershell"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/windows_powershell2_cheat_sheet.pdf",
+      "filename": "windows_powershell2_cheat_sheet.pdf"
+    }
+  ],
+  "path": "operating-systems/windows-power-shell"
+}

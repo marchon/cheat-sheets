@@ -1,0 +1,74 @@
+{
+  "id": "MathML",
+  "slug": "math-ml",
+  "title": "MathML - Mathematical Markup Language",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#MathML",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/MathML",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/MathML"
+  ],
+  "official_websites": [
+    {
+      "label": "w3.org/Math/",
+      "url": "http://www.w3.org/Math/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "XML",
+      "label": "XHTML"
+    },
+    {
+      "id": "XML",
+      "label": "XML"
+    },
+    {
+      "id": "XMLSchema",
+      "label": "XML Schema"
+    },
+    {
+      "id": "XPath",
+      "label": "XPath"
+    },
+    {
+      "id": "XSL",
+      "label": "XSL"
+    },
+    {
+      "id": "XSLT",
+      "label": "XSLT"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "MathML in one page [xhtml+mathml]",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/mathml.su/"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "MathML: elements - attributes [pdf] (zvon.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sheet_mathML_el_attr.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/sites/mathml.su/",
+      "filename": "/sites/mathml.su/"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sheet_mathML_el_attr.pdf",
+      "filename": "sheet_mathML_el_attr.pdf"
+    }
+  ],
+  "path": "file-formats/math-ml"
+}

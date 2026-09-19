@@ -1,0 +1,32 @@
+{
+  "id": "Virtualization",
+  "slug": "virtualization",
+  "title": "Virtualization",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#Virtualization",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Virtual_machine",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Virtual_machine"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "VMware",
+      "label": "VMware"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Virtualization by Edward L. Haletky [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-virtualization"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/virtualization"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "Nano",
+  "slug": "nano",
+  "title": "Nano",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#Nano",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/GNU_nano",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/GNU_nano"
+  ],
+  "official_websites": [
+    {
+      "label": "nano-editor.org",
+      "url": "https://www.nano-editor.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Nano Cheat Sheet by Hans Van Slooten [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "tldr nano [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/nano/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/nano/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf",
+      "filename": "Nano_Cheat_Sheet.pdf"
+    }
+  ],
+  "path": "gnu-linux-commands/nano"
+}

@@ -1,0 +1,191 @@
+{
+  "id": "MySQL",
+  "slug": "my-sql",
+  "title": "MySQL",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#MySQL",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/MySQL",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/MySQL"
+  ],
+  "official_websites": [
+    {
+      "label": "mysql.com",
+      "url": "https://www.mysql.com/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "DB2",
+      "label": "DB2"
+    },
+    {
+      "id": "Oracle",
+      "label": "Oracle"
+    },
+    {
+      "id": "PostgreSQL",
+      "label": "PostgreSQL"
+    },
+    {
+      "id": "SQL",
+      "label": "SQL"
+    },
+    {
+      "id": "SQLite",
+      "label": "SQLite"
+    },
+    {
+      "id": "Sybase",
+      "label": "Sybase"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "SQL (Structured Query Language) in one page by Alexander Krassotkin [html] (cheat-sheets.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/sql.su/"
+      ],
+      "online": [
+        "http://cheat-sheets.org/sites/sql.su/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cheat-sheets.org/sites/sql.su/"
+      ]
+    },
+    {
+      "title": "MySQL Cheat Sheet by Dave Child [html, png, pdf] (cheatography.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/mysql_cheat_sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/mysql_cheat_sheet.pdf"
+      ],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.cheatography.com/davechild/cheat-sheets/mysql/"
+      ]
+    },
+    {
+      "title": "MySQL cheatsheets by Bob Stein, VisiBone [two wall posters 43cmx61cm or 61cmx87cm, jpg] (visibone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/mysqlstatchart_1180.jpg",
+        "https://www.cheat-sheets.org/saved-copy/mysqlfuncchart_1180.jpg"
+      ],
+      "online": [
+        "http://www.visibone.com/sql/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "MySQL Cheat Sheet [html] (nparikh.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/MySQL-Neal-Parikh.html"
+      ],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.nparikh.org/unix/mysql.php"
+      ]
+    },
+    {
+      "title": "MySQL Database Quick Reference by DeepX [pdf] (deepX.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/MySQL_QuickRef.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "MySQL Cheat Sheet: Complete Cheat Sheet by Nick Schäferhoff (Editor in Chief) [pdf, webp] (websitesetup.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/MySQL-Cheat-Sheet-websitesetup.org_.pdf",
+        "https://www.cheat-sheets.org/saved-copy/MySQL-Cheat-Sheet-Summary.webp"
+      ],
+      "online": [
+        "https://websitesetup.org/mysql-cheat-sheet/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Essential MySQL by W. Jason Gilmore [pdf] (dzone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/rc029-010d-essential-admin-mysql5.5_1.pdf"
+      ],
+      "online": [
+        "https://dzone.com/refcardz/essential-mysql"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/essential-mysql"
+      ]
+    },
+    {
+      "title": "Database Partitioning with MySQL: Improving Performance, Availability, and Manageability by Narayana Maruvada [pdf] (dzone.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/rc157-010d-dbpartitioning_2.pdf"
+      ],
+      "online": [
+        "https://dzone.com/refcardz/database-partitioning"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/database-partitioning"
+      ]
+    },
+    {
+      "title": "Awesome MySQL Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/databases/mysql.sh"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/databases/mysql.sh"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/sites/sql.su/",
+      "filename": "/sites/sql.su/"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/mysql_cheat_sheet.png",
+      "filename": "mysql_cheat_sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/mysql_cheat_sheet.pdf",
+      "filename": "mysql_cheat_sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/mysqlstatchart_1180.jpg",
+      "filename": "mysqlstatchart_1180.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/mysqlfuncchart_1180.jpg",
+      "filename": "mysqlfuncchart_1180.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/MySQL-Neal-Parikh.html",
+      "filename": "MySQL-Neal-Parikh.html"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/MySQL_QuickRef.pdf",
+      "filename": "MySQL_QuickRef.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/MySQL-Cheat-Sheet-websitesetup.org_.pdf",
+      "filename": "MySQL-Cheat-Sheet-websitesetup.org_.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/MySQL-Cheat-Sheet-Summary.webp",
+      "filename": "MySQL-Cheat-Sheet-Summary.webp"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/rc029-010d-essential-admin-mysql5.5_1.pdf",
+      "filename": "rc029-010d-essential-admin-mysql5.5_1.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/rc157-010d-dbpartitioning_2.pdf",
+      "filename": "rc157-010d-dbpartitioning_2.pdf"
+    }
+  ],
+  "path": "databases/my-sql"
+}

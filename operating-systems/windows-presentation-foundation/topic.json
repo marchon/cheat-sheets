@@ -1,0 +1,86 @@
+{
+  "id": "WindowsPresentationFoundation",
+  "slug": "windows-presentation-foundation",
+  "title": "Windows Presentation Foundation (WPF)",
+  "group": "operating-systems",
+  "source_anchor": "https://www.cheat-sheets.org/#WindowsPresentationFoundation",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation"
+  ],
+  "official_websites": [
+    {
+      "label": "MSDN Windows Presentation Foundation SDK",
+      "url": "http://msdn.microsoft.com/en-us/library/ms754130.aspx"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Windows",
+      "label": "Windows"
+    },
+    {
+      "id": "DotNET",
+      "label": ".NET"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "WPF Binding CheatSheet version 1.1 by NBD Tech [pdf] (nbdtech.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/WpfBinding.pdf"
+      ],
+      "online": [
+        "http://www.nbdtech.com/Blog/archive/2009/02/02/wpf-xaml-data-binding-cheat-sheet.aspx"
+      ],
+      "archived": []
+    },
+    {
+      "title": "XAML for WPF Cheat Sheet by Blueboxes.co.uk [pdf] (blueboxes.co.uk)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/wpfcheatsheet.pdf"
+      ],
+      "online": [
+        "http://blog.blueboxes.co.uk/2009/02/03/xaml-for-wpf-cheatsheet/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Getting Started with Windows Presentation Foundation by Christopher Bennage and Rob Eisenberg [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-windows"
+      ],
+      "archived": []
+    },
+    {
+      "title": "WPF Controls - A Visual Quick Start by Josh Fischer [html] (codeproject.com)",
+      "saved": [],
+      "online": [
+        "http://www.codeproject.com/KB/WPF/WPFControlsQS.aspx"
+      ],
+      "archived": []
+    },
+    {
+      "title": "WPF Wonders: An Alphabetical Compendium of WPF Controls by Rod Stephens [html] (devx.com)",
+      "saved": [],
+      "online": [
+        "http://www.devx.com/dotnet/Article/41560/1954?pf=true"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/WpfBinding.pdf",
+      "filename": "WpfBinding.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/wpfcheatsheet.pdf",
+      "filename": "wpfcheatsheet.pdf"
+    }
+  ],
+  "path": "operating-systems/windows-presentation-foundation"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "Nodejs",
+  "slug": "nodejs",
+  "title": "Node.js",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#Nodejs",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Nodejs",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Nodejs"
+  ],
+  "official_websites": [
+    {
+      "label": "nodejs.org",
+      "url": "http://nodejs.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "JavaScript",
+      "label": "JavaScript"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Node.js: Building for Scalability with Server-Side JavaScript by Todd Eichel [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/nodejs-building-scalability"
+      ],
+      "archived": []
+    },
+    {
+      "title": "tldr npm [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/npm/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/npm/"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "web/nodejs"
+}

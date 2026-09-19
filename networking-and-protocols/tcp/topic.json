@@ -1,0 +1,27 @@
+{
+  "id": "TCP",
+  "slug": "tcp",
+  "title": "TCP - Transmission Control Protocol",
+  "group": "networking-and-protocols",
+  "source_anchor": "https://www.cheat-sheets.org/#TCP",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "TCP Ports list [html] (refcards.com)",
+      "saved": [],
+      "online": [
+        "http://www.gasmi.net/docs/tcp.html"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "networking-and-protocols/tcp"
+}

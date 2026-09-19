@@ -1,0 +1,52 @@
+{
+  "id": "OpenMP",
+  "slug": "open-mp",
+  "title": "OpenMP (Open Multi-Processing)",
+  "group": "hardware-and-embedded",
+  "source_anchor": "https://www.cheat-sheets.org/#OpenMP",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/OpenMP",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/OpenMP"
+  ],
+  "official_websites": [
+    {
+      "label": "http://openmp.org/",
+      "url": "http://openmp.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "C",
+      "label": "C"
+    },
+    {
+      "id": "CPP",
+      "label": "C++"
+    },
+    {
+      "id": "Fortran",
+      "label": "Fortran"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "OpenMP Reference Sheet for C/C++ [pdf] (plutospin.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/OpenMP_reference.pdf"
+      ],
+      "online": [
+        "http://www.plutospin.com/files/OpenMP_reference.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/OpenMP_reference.pdf",
+      "filename": "OpenMP_reference.pdf"
+    }
+  ],
+  "path": "hardware-and-embedded/open-mp"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "JBoss",
+  "slug": "jboss",
+  "title": "JBoss",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#JBoss",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/JBoss",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/JBoss"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.jboss.com/products/platforms/application/",
+      "url": "http://www.jboss.com/products/platforms/application/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with JBoss Enterprise Application Platform 5 by Scott Marlow, Jaikiran Pai, Shelly McGowan, Brian Stansberry, and Len DiMaggio [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-jboss"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-jboss"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/jboss"
+}

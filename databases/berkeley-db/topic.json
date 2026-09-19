@@ -1,0 +1,32 @@
+{
+  "id": "BerkeleyDB",
+  "slug": "berkeley-db",
+  "title": "Berkeley DB (BDB, Oracle Berkeley DB)",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#BerkeleyDB",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Berkeley_DB",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Berkeley_DB"
+  ],
+  "official_websites": [
+    {
+      "label": "oracle.com/database/berkeley-db/db/",
+      "url": "http://www.oracle.com/database/berkeley-db/db/index.html"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Oracle Berkeley DB by Masoud Kalali [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-oracle"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "databases/berkeley-db"
+}

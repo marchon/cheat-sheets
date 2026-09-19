@@ -1,0 +1,85 @@
+{
+  "id": "Haskell",
+  "slug": "haskell",
+  "title": "Haskell",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Haskell",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Haskell_(programming_language)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Haskell_(programming_language)"
+  ],
+  "official_websites": [
+    {
+      "label": "http://haskell.org/",
+      "url": "http://haskell.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Clojure",
+      "label": "Clojure"
+    },
+    {
+      "id": "Erlang",
+      "label": "Erlang"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Haskell Cheat Sheet by Justin Bailey [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Haskell.CheatSheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Haskell.6520470-Haskel-Cheat-Sheet.pdf"
+      ],
+      "online": [
+        "http://www.scribd.com/doc/6520470/Haskel-Cheat-Sheet"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Haskell cheat sheet by Wincent Colaiuta [pdf] (rails.wincent.com)",
+      "saved": [],
+      "online": [
+        "https://wincent.com/wiki/Haskell_cheat_sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://wincent.com/wiki/Haskell_cheat_sheet"
+      ]
+    },
+    {
+      "title": "Haskell Cheat Sheet by Scott Turner [pdf] (pkturner.org)",
+      "saved": [],
+      "online": [
+        "http://www.pkturner.org/programming/Haskellcheatsheet.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.pkturner.org/programming/Haskellcheatsheet.html"
+      ]
+    },
+    {
+      "title": "Haskell Cheat Sheet by Christopher Maneu [pdf] (maneu.fr | c-maneu.developpez.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Haskell.Haskell_Cheat_Sheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Haskell.CheatSheet.pdf",
+      "filename": "Haskell.CheatSheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Haskell.6520470-Haskel-Cheat-Sheet.pdf",
+      "filename": "Haskell.6520470-Haskel-Cheat-Sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Haskell.Haskell_Cheat_Sheet.pdf",
+      "filename": "Haskell.Haskell_Cheat_Sheet.pdf"
+    }
+  ],
+  "path": "languages/haskell"
+}

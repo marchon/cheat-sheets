@@ -1,0 +1,49 @@
+{
+  "id": "Rebol",
+  "slug": "rebol",
+  "title": "Rebol",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Rebol",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Rebol",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Rebol"
+  ],
+  "official_websites": [
+    {
+      "label": "www.rebol.com",
+      "url": "http://www.rebol.com/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "REBOL Quick Reference Card by REBOL Technologies [html] (rebol.com)",
+      "saved": [],
+      "online": [
+        "http://www.rebol.com/docs/reference.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.rebol.com/docs/reference.html"
+      ]
+    },
+    {
+      "title": "Rebol examples by  Nick Antonaccio [txt] (re-bol.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/re-bol.com.examples.txt"
+      ],
+      "online": [
+        "http://re-bol.com/examples.txt"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/re-bol.com.examples.txt",
+      "filename": "re-bol.com.examples.txt"
+    }
+  ],
+  "path": "languages/rebol"
+}

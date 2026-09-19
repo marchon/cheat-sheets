@@ -1,0 +1,40 @@
+{
+  "id": "CloudComputing",
+  "slug": "cloud-computing",
+  "title": "Cloud Computing",
+  "group": "online-data-services",
+  "source_anchor": "https://www.cheat-sheets.org/#CloudComputing",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Cloud_Computing",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Cloud_Computing"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "GoogleAppEngine",
+      "label": "Google App Engine"
+    },
+    {
+      "id": "ScalabilityHighAvailability",
+      "label": "Scalability and High Availability"
+    },
+    {
+      "id": "Azure",
+      "label": "Windows Azure"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Cloud Computing by Daniel Rubio [html] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-cloud"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "online-data-services/cloud-computing"
+}

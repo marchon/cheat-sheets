@@ -1,0 +1,42 @@
+{
+  "id": "DTD",
+  "slug": "dtd",
+  "title": "DTD - Document Type Declaration",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#DTD",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Document_Type_Declaration",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Document_Type_Declaration"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Recommended DTDs to use in your Web document [html] (w3.org)",
+      "saved": [],
+      "online": [
+        "http://www.w3.org/QA/2002/04/valid-dtd-list.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.w3.org/QA/2002/04/valid-dtd-list.html"
+      ]
+    },
+    {
+      "title": "DTD in one page [html] (xml.su)",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/xml.su/dtd.html"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/sites/xml.su/dtd.html",
+      "filename": "/sites/xml.su/dtd.html"
+    }
+  ],
+  "path": "file-formats/dtd"
+}

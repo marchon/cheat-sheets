@@ -1,0 +1,32 @@
+{
+  "id": "FitNesse",
+  "slug": "fit-nesse",
+  "title": "FitNesse",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#FitNesse",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/FitNesse",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/FitNesse"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.fitnesse.org/",
+      "url": "http://www.fitnesse.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with FitNesse by Erik Pragt [gif] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-fitnesse"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "frameworks-and-libraries/fit-nesse"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ContinuousIntegration",
+  "slug": "continuous-integration",
+  "title": "Continuous Integration (CI)",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#ContinuousIntegration",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Continuous_integration",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Continuous_integration"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Continuous Integration: Patterns and Anti-Patterns by Paul M. Duvall [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/continuous-integration"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Continuous Integration: Servers and Tools by Paul M. Duvall [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/continuous-integration-servers"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/continuous-integration"
+}

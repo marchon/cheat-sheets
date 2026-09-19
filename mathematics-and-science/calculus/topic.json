@@ -1,0 +1,130 @@
+{
+  "id": "Calculus",
+  "slug": "calculus",
+  "title": "Calculus and Analysis",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Calculus",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Calculus",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Calculus"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Math",
+      "label": "Math"
+    }
+  ],
+  "tools": [
+    {
+      "label": "WolframAlpha",
+      "url": "http://www.wolframalpha.com/examples/Calculus.html"
+    }
+  ],
+  "items": [
+    {
+      "title": "Complete Calculus Cheat Sheet by Paul Dawkins [pdf, pdf reduced] (tutorial.math.lamar.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_All.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_All_Reduced.pdf"
+      ],
+      "online": [
+        "http://tutorial.math.lamar.edu/pdf/Calculus_Cheat_Sheet_All.pdf",
+        "http://tutorial.math.lamar.edu/pdf/Calculus_Cheat_Sheet_All_Reduced.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Limits Cheat Sheet by Paul Dawkins [pdf, pdf reduced] (tutorial.math.lamar.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_Limits.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_Limits_Reduced.pdf"
+      ],
+      "online": [
+        "http://tutorial.math.lamar.edu/pdf/Calculus_Cheat_Sheet_Limits.pdf",
+        "http://tutorial.math.lamar.edu/pdf/Calculus_Cheat_Sheet_Limits_Reduced.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Derivatives Cheat Sheet by Paul Dawkins [pdf, pdf reduced] (tutorial.math.lamar.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_Derivatives.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_Derivatives_Reduced.pdf"
+      ],
+      "online": [
+        "http://tutorial.math.lamar.edu/pdf/Calculus_Cheat_Sheet_Derivatives.pdf",
+        "http://tutorial.math.lamar.edu/pdf/Calculus_Cheat_Sheet_Derivatives_Reduced.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Integrals Cheat Sheet by Paul Dawkins [pdf, pdf reduced] (tutorial.math.lamar.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_Integrals.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_Integrals_Reduced.pdf"
+      ],
+      "online": [
+        "http://tutorial.math.lamar.edu/pdf/Calculus_Cheat_Sheet_Integrals.pdf",
+        "http://tutorial.math.lamar.edu/pdf/Calculus_Cheat_Sheet_Integrals_Reduced.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Common Derivatives and Integrals by Paul Dawkins [pdf, pdf reduced] (tutorial.math.lamar.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Common_Derivatives_Integrals.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Common_Derivatives_Integrals_Reduced.pdf"
+      ],
+      "online": [
+        "http://tutorial.math.lamar.edu/pdf/Common_Derivatives_Integrals.pdf",
+        "http://tutorial.math.lamar.edu/pdf/Common_Derivatives_Integrals_Reduced.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_All.pdf",
+      "filename": "Calculus_Cheat_Sheet_All.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_All_Reduced.pdf",
+      "filename": "Calculus_Cheat_Sheet_All_Reduced.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_Limits.pdf",
+      "filename": "Calculus_Cheat_Sheet_Limits.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_Limits_Reduced.pdf",
+      "filename": "Calculus_Cheat_Sheet_Limits_Reduced.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_Derivatives.pdf",
+      "filename": "Calculus_Cheat_Sheet_Derivatives.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_Derivatives_Reduced.pdf",
+      "filename": "Calculus_Cheat_Sheet_Derivatives_Reduced.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_Integrals.pdf",
+      "filename": "Calculus_Cheat_Sheet_Integrals.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Calculus_Cheat_Sheet_Integrals_Reduced.pdf",
+      "filename": "Calculus_Cheat_Sheet_Integrals_Reduced.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Common_Derivatives_Integrals.pdf",
+      "filename": "Common_Derivatives_Integrals.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Common_Derivatives_Integrals_Reduced.pdf",
+      "filename": "Common_Derivatives_Integrals_Reduced.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/calculus"
+}

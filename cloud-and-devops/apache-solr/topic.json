@@ -1,0 +1,43 @@
+{
+  "id": "ApacheSolr",
+  "slug": "apache-solr",
+  "title": "Apache Solr",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#ApacheSolr",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Apache_Solr",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Apache_Solr"
+  ],
+  "official_websites": [
+    {
+      "label": "http://lucene.apache.org/solr/",
+      "url": "http://lucene.apache.org/solr/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    },
+    {
+      "id": "Lucene",
+      "label": "Lucene"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Apache Solr: Getting Optimal Search Results by Chris Hostetter [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/solr-essentials"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/solr-essentials"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/apache-solr"
+}

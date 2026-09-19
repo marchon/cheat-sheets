@@ -1,0 +1,45 @@
+{
+  "id": "Trigonometry",
+  "slug": "trigonometry",
+  "title": "Trigonometry, Trig",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Trigonometry",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Trigonometry",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Trigonometry"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Math",
+      "label": "Math"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Trig Cheat Sheet by Paul Dawkins [pdf, pdf reduced] (tutorial.math.lamar.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Trig_Cheat_Sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Trig_Cheat_Sheet_Reduced.pdf"
+      ],
+      "online": [
+        "http://tutorial.math.lamar.edu/pdf/Trig_Cheat_Sheet.pdf",
+        "http://tutorial.math.lamar.edu/pdf/Trig_Cheat_Sheet_Reduced.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Trig_Cheat_Sheet.pdf",
+      "filename": "Trig_Cheat_Sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Trig_Cheat_Sheet_Reduced.pdf",
+      "filename": "Trig_Cheat_Sheet_Reduced.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/trigonometry"
+}

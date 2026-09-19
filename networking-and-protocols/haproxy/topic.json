@@ -1,0 +1,91 @@
+{
+  "id": "HAProxy",
+  "slug": "haproxy",
+  "title": "HAProxy",
+  "group": "networking-and-protocols",
+  "source_anchor": "https://www.cheat-sheets.org/#HAProxy",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/HAProxy",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/HAProxy"
+  ],
+  "official_websites": [
+    {
+      "label": "haproxy.org",
+      "url": "https://www.haproxy.org/"
+    },
+    {
+      "label": "haproxy.com/blog/",
+      "url": "https://www.haproxy.com/blog/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "HAProxy® Configuration Reference Card – version 1.0 by Zenetys [pdf] (zenetys.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/HAPROXY-Configuration-Reference-Card-v1.0.pdf"
+      ],
+      "online": [
+        "https://www.zenetys.com/wp-content/uploads/2020/03/HAPROXY-Configuration-Reference-Card-v1.0.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.zenetys.com/wp-content/uploads/2020/03/HAPROXY-Configuration-Reference-Card-v1.0.pdf"
+      ]
+    },
+    {
+      "title": "HAProxy® Troubleshooting Reference Card – version 1.0 by Zenetys [pdf] (zenetys.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf"
+      ],
+      "online": [
+        "https://www.zenetys.com/wp-content/uploads/2020/03/HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.zenetys.com/wp-content/uploads/2020/03/HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf"
+      ]
+    },
+    {
+      "title": "HAProxy version 2.2.7 - Starter Guide [html] (cbonte.github.io)",
+      "saved": [],
+      "online": [
+        "http://cbonte.github.io/haproxy-dconv/2.2/intro.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cbonte.github.io/haproxy-dconv/2.2/intro.html"
+      ]
+    },
+    {
+      "title": "HAProxy version 2.2.7 - Configuration Manual [html] (cbonte.github.io)",
+      "saved": [],
+      "online": [
+        "http://cbonte.github.io/haproxy-dconv/2.2/configuration.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cbonte.github.io/haproxy-dconv/2.2/configuration.html"
+      ]
+    },
+    {
+      "title": "HAProxy version 2.2.7 - Management Guide [html] (cbonte.github.io)",
+      "saved": [],
+      "online": [
+        "http://cbonte.github.io/haproxy-dconv/2.2/management.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cbonte.github.io/haproxy-dconv/2.2/management.html"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HAPROXY-Configuration-Reference-Card-v1.0.pdf",
+      "filename": "HAPROXY-Configuration-Reference-Card-v1.0.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf",
+      "filename": "HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf"
+    }
+  ],
+  "path": "networking-and-protocols/haproxy"
+}

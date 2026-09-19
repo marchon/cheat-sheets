@@ -1,0 +1,39 @@
+{
+  "id": "Griffon",
+  "slug": "griffon",
+  "title": "Griffon",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#Griffon",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Griffon_(framework)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Griffon_(framework)"
+  ],
+  "official_websites": [
+    {
+      "label": "griffon.codehaus.org",
+      "url": "http://griffon.codehaus.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Griffon by Hamlet D’Arcy [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-griffon"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-griffon"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "frameworks-and-libraries/griffon"
+}

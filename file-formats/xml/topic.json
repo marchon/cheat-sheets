@@ -1,0 +1,94 @@
+{
+  "id": "XML",
+  "slug": "xml",
+  "title": "XML - eXtensible Markup Language",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#XML",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/XML",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/XML"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.w3.org/XML/",
+      "url": "http://www.w3.org/XML/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Feed",
+      "label": "Feed"
+    },
+    {
+      "id": "MathML",
+      "label": "MathML"
+    },
+    {
+      "id": "VoiceXML",
+      "label": "VoiceXML"
+    },
+    {
+      "id": "XHTML",
+      "label": "XHTML"
+    },
+    {
+      "id": "XMLSchema",
+      "label": "XML Schema"
+    },
+    {
+      "id": "XPath",
+      "label": "XPath"
+    },
+    {
+      "id": "XSL",
+      "label": "XSL"
+    },
+    {
+      "id": "XSLT",
+      "label": "XSLT"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "XML in one page [html] (xml.su)",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/xml.su/"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "XML 1.0 Syntax Quick Reference by Mulberry Technologies, Inc. [pdf] (mulberrytech.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/XMLquickref.pdf"
+      ],
+      "online": [
+        "http://www.mulberrytech.com/quickref/XMLquickref.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Using XML in Java by Masoud Kalali [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/using-xml-java"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/using-xml-java"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/sites/xml.su/",
+      "filename": "/sites/xml.su/"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/XMLquickref.pdf",
+      "filename": "XMLquickref.pdf"
+    }
+  ],
+  "path": "file-formats/xml"
+}

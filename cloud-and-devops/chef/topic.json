@@ -1,0 +1,32 @@
+{
+  "id": "Chef",
+  "slug": "chef",
+  "title": "Chef",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#Chef",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Chef_(software)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Chef_(software)"
+  ],
+  "official_websites": [
+    {
+      "label": "www.opscode.com/chef/",
+      "url": "http://www.opscode.com/chef/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Chef: An Open Source Tool for Scalable Cloud and Data Center Automation by Jeffrey Hulten [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/chef-open-source-tool-scalable"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/chef"
+}

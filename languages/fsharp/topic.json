@@ -1,0 +1,32 @@
+{
+  "id": "FSharp",
+  "slug": "fsharp",
+  "title": "F#",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#FSharp",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/F_Sharp_(programming_language)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/F_Sharp_(programming_language)"
+  ],
+  "official_websites": [
+    {
+      "label": "F# at Microsoft Research",
+      "url": "http://research.microsoft.com/en-us/um/cambridge/projects/fsharp/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Essential F# by Chance Coble and Ted Neward [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/essential-f"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "languages/fsharp"
+}

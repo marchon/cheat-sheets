@@ -1,0 +1,59 @@
+{
+  "id": "FTP",
+  "slug": "ftp",
+  "title": "FTP - File Transfer Protocol",
+  "group": "networking-and-protocols",
+  "source_anchor": "https://www.cheat-sheets.org/#FTP",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/FTP",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/FTP"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Basic FTP Commands [html] (cs.colostate.edu)",
+      "saved": [],
+      "online": [
+        "http://www.cs.colostate.edu/helpdocs/ftp.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.cs.colostate.edu/helpdocs/ftp.html"
+      ]
+    },
+    {
+      "title": "List of FTP commands for the Microsoft command-line FTP client [html] (nsftools.com)",
+      "saved": [],
+      "online": [
+        "http://www.nsftools.com/tips/MSFTP.htm"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.nsftools.com/tips/MSFTP.htm"
+      ]
+    },
+    {
+      "title": "tldr ftp [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/project/tldr/command/ftp/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cheat-sheets.org/project/tldr/command/ftp/"
+      ]
+    },
+    {
+      "title": "tldr ftp (windows) [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/project/tldr/command/ftp/os/windows/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cheat-sheets.org/project/tldr/command/ftp/os/windows/"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "networking-and-protocols/ftp"
+}

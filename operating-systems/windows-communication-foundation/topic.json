@@ -1,0 +1,41 @@
+{
+  "id": "WindowsCommunicationFoundation",
+  "slug": "windows-communication-foundation",
+  "title": "Windows Communication Foundation (WCF)",
+  "group": "operating-systems",
+  "source_anchor": "https://www.cheat-sheets.org/#WindowsCommunicationFoundation",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Windows_Communication_Foundation",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Windows_Communication_Foundation"
+  ],
+  "official_websites": [
+    {
+      "label": "Windows Communication Foundation",
+      "url": "http://msdn.microsoft.com/en-us/netframework/aa663324.aspx"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Windows",
+      "label": "Windows"
+    },
+    {
+      "id": "DotNET",
+      "label": ".NET"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Windows Communication Foundation 4.0 by Scott Seely [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-windows-0"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "operating-systems/windows-communication-foundation"
+}

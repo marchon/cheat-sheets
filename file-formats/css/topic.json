@@ -1,0 +1,283 @@
+{
+  "id": "CSS",
+  "slug": "css",
+  "title": "CSS - Cascading Style Sheets",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#CSS",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/CSS",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/CSS"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.w3.org/Style/CSS/",
+      "url": "http://www.w3.org/Style/CSS/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Blueprint",
+      "label": "Blueprint"
+    },
+    {
+      "id": "DOM",
+      "label": "DOM"
+    },
+    {
+      "id": "HTML",
+      "label": "HTML"
+    },
+    {
+      "id": "JavaScript",
+      "label": "JavaScript"
+    },
+    {
+      "id": "Selenium",
+      "label": "Selenium"
+    },
+    {
+      "id": "XHTML",
+      "label": "XHTML"
+    },
+    {
+      "id": "XPath",
+      "label": "XPath"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "CSS in one page [html] (css.su)",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/css.su/"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "CSS Level 1 Quick Reference DeepX Ltd [pdf] (refcards.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CSS1.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "CSS Level 2 Quick Reference Benjamin Jung [pdf] (refcards.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/css2.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "2016 CSS Cheat Sheet Infographic by Jamie Spencer [html, jpg] (makeawebsitehub.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/css-cheat-sheet-2016.jpg"
+      ],
+      "online": [
+        "http://makeawebsitehub.com/css-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://makeawebsitehub.com/css-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "CSS Cheat Sheet by Dave Child [html, png, pdf] (cheatography.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/css_cheat_sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/css_cheat_sheet.pdf"
+      ],
+      "online": [
+        "https://www.cheatography.com/davechild/cheat-sheets/css2/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.cheatography.com/davechild/cheat-sheets/css2/"
+      ]
+    },
+    {
+      "title": "CSS Cheat Sheet [html] (petefreitag.com)",
+      "saved": [],
+      "online": [
+        "http://www.petefreitag.com/cheatsheets/css/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.petefreitag.com/cheatsheets/css/"
+      ]
+    },
+    {
+      "title": "CSS Properties and Values by Dave Child [html] (elizabethcastro.com)",
+      "saved": [],
+      "online": [
+        "http://www.elizabethcastro.com/html/extras/cssref.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.elizabethcastro.com/html/extras/cssref.html"
+      ]
+    },
+    {
+      "title": "CSS 2 - Quick Reference Guide [pdf] (veign.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/qrg0007.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "CSS2.1 Quick Reference Card [pdf] (explainth.at)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/cssquick.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Apple’s CSS Cheat Sheet [html.zip] (apple.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CSS_Cheat_Sheet.zip"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "CSS CHEAT SHEET [html] (lesliefranke.com)",
+      "saved": [],
+      "online": [
+        "http://lesliefranke.com/files/reference/csscheatsheet.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://lesliefranke.com/files/reference/csscheatsheet.html"
+      ]
+    },
+    {
+      "title": "Cascading Style Sheets 1.0 [pdf] (digilife.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Cascading%20Style%20Sheets%201.0.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "CSS Property Index [html] (blooberry.com)",
+      "saved": [],
+      "online": [
+        "http://www.blooberry.com/indexdot/css/propindex/all.htm"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.blooberry.com/indexdot/css/propindex/all.htm"
+      ]
+    },
+    {
+      "title": "CSS Shorthand Guide [html] (dustindiaz.com)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20120114210754/http://www.dustindiaz.com/css-shorthand/"
+      ]
+    },
+    {
+      "title": "XPath, CSS, DOM and Selenium: The Rosetta Stone by Michael Sorens [pdf: Locators table, Locators groups] (simple-talk.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Locators_table_1_0_2.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Locators_groups_1_0_2.pdf"
+      ],
+      "online": [
+        "http://www.simple-talk.com/dotnet/.net-framework/xpath,-css,-dom-and-selenium-the-rosetta-stone/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "CSS Cheat Sheet by Robert Duncan [html] (simplehtmlguide.com)",
+      "saved": [],
+      "online": [
+        "http://www.simplehtmlguide.com/csscheatsheet.php"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.simplehtmlguide.com/csscheatsheet.php"
+      ]
+    },
+    {
+      "title": "Ultimate CSS Cheatsheet by Matt Ahlgren [png, pdf] (websitehostingrating.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Ultimate_CSS_Cheatsheet.png",
+        "https://www.cheat-sheets.org/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf"
+      ],
+      "online": [
+        "https://www.websitehostingrating.com/html-css-php-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.websitehostingrating.com/html-css-php-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "Awesome CSS3 Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/frontend/css3.css"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/frontend/css3.css"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/sites/css.su/",
+      "filename": "/sites/css.su/"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CSS1.pdf",
+      "filename": "CSS1.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/css2.pdf",
+      "filename": "css2.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/css-cheat-sheet-2016.jpg",
+      "filename": "css-cheat-sheet-2016.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/css_cheat_sheet.png",
+      "filename": "css_cheat_sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/css_cheat_sheet.pdf",
+      "filename": "css_cheat_sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/qrg0007.pdf",
+      "filename": "qrg0007.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cssquick.pdf",
+      "filename": "cssquick.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CSS_Cheat_Sheet.zip",
+      "filename": "CSS_Cheat_Sheet.zip"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Cascading%20Style%20Sheets%201.0.pdf",
+      "filename": "Cascading Style Sheets 1.0.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Locators_table_1_0_2.pdf",
+      "filename": "Locators_table_1_0_2.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Locators_groups_1_0_2.pdf",
+      "filename": "Locators_groups_1_0_2.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Ultimate_CSS_Cheatsheet.png",
+      "filename": "Ultimate_CSS_Cheatsheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf",
+      "filename": "HTML_CSS_PHP_cheat_sheet.pdf"
+    }
+  ],
+  "path": "file-formats/css"
+}

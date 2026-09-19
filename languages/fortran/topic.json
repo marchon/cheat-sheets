@@ -1,0 +1,46 @@
+{
+  "id": "Fortran",
+  "slug": "fortran",
+  "title": "Fortran",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Fortran",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Fortran",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Fortran"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "GDB",
+      "label": "GDB"
+    },
+    {
+      "id": "OpenMP",
+      "label": "OpenMP"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Fortran 90 Reference Card by Michael Goerz [pdf, odt] (users.physik.fu-berlin.de/~goerz/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/fortran90_refcard.pdf",
+        "https://www.cheat-sheets.org/saved-copy/fortran90_refcard.odt"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/fortran90_refcard.pdf",
+      "filename": "fortran90_refcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/fortran90_refcard.odt",
+      "filename": "fortran90_refcard.odt"
+    }
+  ],
+  "path": "languages/fortran"
+}

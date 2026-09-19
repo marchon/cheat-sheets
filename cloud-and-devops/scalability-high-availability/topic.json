@@ -1,0 +1,45 @@
+{
+  "id": "ScalabilityHighAvailability",
+  "slug": "scalability-high-availability",
+  "title": "Scalability and High Availability",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#ScalabilityHighAvailability",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Scalability",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Scalability",
+    "https://en.wikipedia.org/wiki/High_availability"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "CloudComputing",
+      "label": "Cloud Computing"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Scalability & High Availability by Eugene Ciurana [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/scalability"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/scalability"
+      ]
+    },
+    {
+      "title": "Getting Started with NoSQL and Data Scalability by Eugene Ciurana [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-nosql-and-data"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-nosql-and-data"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/scalability-high-availability"
+}

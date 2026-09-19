@@ -1,0 +1,95 @@
+{
+  "id": "Fedora",
+  "slug": "fedora",
+  "title": "Fedora",
+  "group": "operating-systems",
+  "source_anchor": "https://www.cheat-sheets.org/#Fedora",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Fedora_(operating_system)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Fedora_(operating_system)"
+  ],
+  "official_websites": [
+    {
+      "label": "fedoraproject.org",
+      "url": "http://fedoraproject.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "RedHat",
+      "label": "Red Hat"
+    },
+    {
+      "id": "Linux",
+      "label": "Linux"
+    },
+    {
+      "id": "rpm",
+      "label": "rpm"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "TLDR Pages [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Most used commands [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+      ]
+    },
+    {
+      "title": "RedHat/Fedora command cheat sheet [html] (jd40c.com)",
+      "saved": [],
+      "online": [
+        "http://jd40c.com/linux.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://jd40c.com/linux.html"
+      ]
+    },
+    {
+      "title": "Yum Command Cheat Sheet for Red Hat Enterprise Linux by Red Hat [html, gif, pdf] (redhat.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/yumcheat_01_0.png",
+        "https://www.cheat-sheets.org/saved-copy/yumcheat_02_0.png",
+        "https://www.cheat-sheets.org/saved-copy/rh_yum_cheatsheet_1214_jcs_print-1.pdf"
+      ],
+      "online": [
+        "https://access.redhat.com/articles/yum-cheat-sheet",
+        "https://access.redhat.com/sites/default/files/images/yumcheat_01_0.png",
+        "https://access.redhat.com/sites/default/files/images/yumcheat_02_0.png",
+        "https://access.redhat.com/node/1284753/40/0"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://access.redhat.com/articles/yum-cheat-sheet"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/yumcheat_01_0.png",
+      "filename": "yumcheat_01_0.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/yumcheat_02_0.png",
+      "filename": "yumcheat_02_0.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/rh_yum_cheatsheet_1214_jcs_print-1.pdf",
+      "filename": "rh_yum_cheatsheet_1214_jcs_print-1.pdf"
+    }
+  ],
+  "path": "operating-systems/fedora"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Erlang",
+  "slug": "erlang",
+  "title": "Erlang",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Erlang",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Erlang_%28programming_language%29",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Erlang_%28programming_language%29"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Clojure",
+      "label": "Clojure"
+    },
+    {
+      "id": "Haskell",
+      "label": "Haskell"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Erlang Cheat Sheet by Nauman Leghari [pdf] (weblogs.asp.net/nleghari/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Erlang.CheatSheet(1.0).pdf"
+      ],
+      "online": [
+        "http://weblogs.asp.net/nleghari/archive/2007/12/29/erlang-cheat-sheet.aspx"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Erlang.CheatSheet(1.0).pdf",
+      "filename": "Erlang.CheatSheet(1.0).pdf"
+    }
+  ],
+  "path": "languages/erlang"
+}

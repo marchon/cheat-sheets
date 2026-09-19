@@ -1,0 +1,130 @@
+{
+  "id": "ShellScript",
+  "slug": "shell-script",
+  "title": "Shell script",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#ShellScript",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Shell_script",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Shell_script",
+    "https://en.wikipedia.org/wiki/Bash"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "TLDR Pages [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Most used commands [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+      ]
+    },
+    {
+      "title": "UNIX / Linux Shell Cheat Sheet by Steve Parker [pdf] (steve-parker.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/shellscripcheatsheet.pdf"
+      ],
+      "online": [
+        "http://steve-parker.org/sh/cheatsheet.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "SHELL PROGRAMMING QUICK REFERENCE GUIDE by Michael Oliveri [pdf] (mikeoliveri.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/shellcheatsheet.pdf"
+      ],
+      "online": [
+        "http://www.mikeoliveri.com/utils/shellcheatsheet.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Bourne Shell Quick Reference Card by Hooman Baradaran [pdf] (hoomanb.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/bash_ref.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Unix/Linux shell script reference by  Alvin Alexander [html] (alvinalexander.com)",
+      "saved": [],
+      "online": [
+        "http://alvinalexander.com/blog/post/linux-unix/unix-linux-shell-script-reference-cheat-sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://alvinalexander.com/blog/post/linux-unix/unix-linux-shell-script-reference-cheat-sheet"
+      ]
+    },
+    {
+      "title": "Advanced Bash-Scripting Guide [pdf] (linuxtopia.org)",
+      "saved": [],
+      "online": [
+        "http://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/refcards.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/refcards.html"
+      ]
+    },
+    {
+      "title": "Awesome Bash Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh"
+      ]
+    },
+    {
+      "title": "Linux metacharacters cheat sheet by Seth Kenlon, David Both, Don Watkins / CC BY-SA 4.0 [pdf, txt] (opensource.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/OSDC_cheatsheet-metacharacters-2023.02.09.pdf",
+        "https://www.cheat-sheets.org/saved-copy/OSDC_metacharacters-2023.02.09.txt"
+      ],
+      "online": [
+        "https://opensource.com/downloads/linux-metacharacters-cheat-sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://opensource.com/downloads/linux-metacharacters-cheat-sheet"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/shellscripcheatsheet.pdf",
+      "filename": "shellscripcheatsheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/shellcheatsheet.pdf",
+      "filename": "shellcheatsheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/bash_ref.pdf",
+      "filename": "bash_ref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/OSDC_cheatsheet-metacharacters-2023.02.09.pdf",
+      "filename": "OSDC_cheatsheet-metacharacters-2023.02.09.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/OSDC_metacharacters-2023.02.09.txt",
+      "filename": "OSDC_metacharacters-2023.02.09.txt"
+    }
+  ],
+  "path": "gnu-linux-commands/shell-script"
+}

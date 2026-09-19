@@ -1,0 +1,37 @@
+{
+  "id": "Thunderbird",
+  "slug": "thunderbird",
+  "title": "Mozilla Thunderbird",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#Thunderbird",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Mozilla_Thunderbird",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Mozilla_Thunderbird"
+  ],
+  "official_websites": [
+    {
+      "label": "mozilla.com/thunderbird/",
+      "url": "http://www.mozilla.com/thunderbird/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "MOZILLA THUNDERBIRD CHEAT SHEET by David Tenser [pdf] (mozilla.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/thunderbirdcheatsheet-1.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/thunderbirdcheatsheet-1.pdf",
+      "filename": "thunderbirdcheatsheet-1.pdf"
+    }
+  ],
+  "path": "applications/thunderbird"
+}

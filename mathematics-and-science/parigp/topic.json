@@ -1,0 +1,251 @@
+{
+  "id": "PARIGP",
+  "slug": "parigp",
+  "title": "PARI/GP",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#PARIGP",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/PARI/GP",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/PARI/GP"
+  ],
+  "official_websites": [
+    {
+      "label": "pari.math.u-bordeaux.fr",
+      "url": "http://pari.math.u-bordeaux.fr/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Maple",
+      "label": "Algebra"
+    },
+    {
+      "id": "Maple",
+      "label": "Maple"
+    },
+    {
+      "id": "Math",
+      "label": "Math"
+    },
+    {
+      "id": "Mathematica",
+      "label": "Mathematica"
+    },
+    {
+      "id": "MATLAB",
+      "label": "MATLAB"
+    },
+    {
+      "id": "Mathomatic",
+      "label": "Mathomatic"
+    },
+    {
+      "id": "Maxima",
+      "label": "Maxima"
+    },
+    {
+      "id": "SageMath",
+      "label": "SageMath"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Basic GP: Pari-GP reference card by K. Belabas based on an earlier version by Joseph H. Silverman [pdf] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Basic_GP_refcard.pdf"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.11.0/refcard.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Number Fields: Algebraic Number Theory by K. Belabas based on an earlier version by Joseph H. Silverman [pdf] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/refcard-nf.pdf"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.11.0/refcard-nf.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Elliptic Curves by K. Belabas based on an earlier version by Joseph H. Silverman [pdf] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/refcard-ell.pdf"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.11.0/refcard-ell.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "L-functions by K. Belabas based on an earlier version by Joseph H. Silverman [pdf] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/refcard-lfun.pdf"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.11.0/refcard-lfun.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Modular forms and modular symbols by K. Belabas based on an earlier version by Joseph H. Silverman [pdf] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/refcard-mf.pdf"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.11.0/refcard-mf.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Online User's Guide: This is an html documentation of\nfunctions available under the PARI/GP calculator by PARI/GP team [html.tgz] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/PARIGP_Online_User's_Guide_html-stable.tgz"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/dochtml/html-stable/",
+        "http://pari.math.u-bordeaux.fr/dochtml/html-stable.tgz"
+      ],
+      "archived": []
+    },
+    {
+      "title": "GNU Readline Library by PARI/GP team [html] (pari.math.u-bordeaux.fr)",
+      "saved": [],
+      "online": [
+        "https://tiswww.cwru.edu/php/chet/readline/rluserman.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://tiswww.cwru.edu/php/chet/readline/rluserman.html"
+      ]
+    },
+    {
+      "title": "Users' Guide to PARI/GP by The PARI Group [pdf] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Users_Guide_to_PARIGP_users.pdf"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.11.0/users.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Users' Guide to the PARI library by The PARI Group [pdf] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/libpari.pdf"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.11.0/libpari.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Developer's Guide to the PARI library by The PARI Group [pdf] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Developer_s_Guide_to_the_PARI_library_develop.pdf"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.11.0/develop.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Installation Guide by The PARI Group [pdf] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Installation_Guide_PARI_GP_INSTALL.pdf"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.11.0/INSTALL.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "GP Tutorial by The PARI Group [pdf] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/GP_Tutorial_tutorial.pdf"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.11.0/tutorial.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Tutorial for modular forms by Henri Cohen [pdf] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/tutorial-mf.pdf"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.11.0/tutorial-mf.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Introduction to parallel GP by The PARI Group [pdf] (pari.math.u-bordeaux.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/parallel_GP.pdf"
+      ],
+      "online": [
+        "http://pari.math.u-bordeaux.fr/pub/pari/manuals/2.11.0/parallel.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Basic_GP_refcard.pdf",
+      "filename": "Basic_GP_refcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/refcard-nf.pdf",
+      "filename": "refcard-nf.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/refcard-ell.pdf",
+      "filename": "refcard-ell.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/refcard-lfun.pdf",
+      "filename": "refcard-lfun.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/refcard-mf.pdf",
+      "filename": "refcard-mf.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/PARIGP_Online_User's_Guide_html-stable.tgz",
+      "filename": "PARIGP_Online_User's_Guide_html-stable.tgz"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Users_Guide_to_PARIGP_users.pdf",
+      "filename": "Users_Guide_to_PARIGP_users.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/libpari.pdf",
+      "filename": "libpari.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Developer_s_Guide_to_the_PARI_library_develop.pdf",
+      "filename": "Developer_s_Guide_to_the_PARI_library_develop.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Installation_Guide_PARI_GP_INSTALL.pdf",
+      "filename": "Installation_Guide_PARI_GP_INSTALL.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/GP_Tutorial_tutorial.pdf",
+      "filename": "GP_Tutorial_tutorial.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/tutorial-mf.pdf",
+      "filename": "tutorial-mf.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/parallel_GP.pdf",
+      "filename": "parallel_GP.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/parigp"
+}

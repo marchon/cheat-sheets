@@ -1,0 +1,45 @@
+{
+  "id": "Tapestry",
+  "slug": "tapestry",
+  "title": "Tapestry",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#Tapestry",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Tapestry_(programming)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Tapestry_(programming)"
+  ],
+  "official_websites": [
+    {
+      "label": "tapestry.apache.org",
+      "url": "http://tapestry.apache.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    },
+    {
+      "id": "DesignPattern",
+      "label": "Design Pattern"
+    },
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Apache Tapestry 5.0 by Howard M. Lewis Ship [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/apache-tapestry-50"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "frameworks-and-libraries/tapestry"
+}

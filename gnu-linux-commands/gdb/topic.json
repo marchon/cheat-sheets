@@ -1,0 +1,60 @@
+{
+  "id": "GDB",
+  "slug": "gdb",
+  "title": "GDB - GNU Debugger",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#GDB",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/GNU_Debugger",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/GNU_Debugger"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.gnu.org/software/gdb/",
+      "url": "http://www.gnu.org/software/gdb/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "C",
+      "label": "C"
+    },
+    {
+      "id": "CPP",
+      "label": "C++"
+    },
+    {
+      "id": "Fortran",
+      "label": "Fortran"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "GDB Refcard by Roland H. Pesch [pdf] (gnu.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/gdb-refcard-a4.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "tldr gdb [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/project/tldr/command/gdb/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://cheat-sheets.org/project/tldr/command/gdb/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/gdb-refcard-a4.pdf",
+      "filename": "gdb-refcard-a4.pdf"
+    }
+  ],
+  "path": "gnu-linux-commands/gdb"
+}

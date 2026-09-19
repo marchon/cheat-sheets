@@ -1,0 +1,190 @@
+{
+  "id": "Symfony",
+  "slug": "symfony",
+  "title": "Symfony",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#Symfony",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Symfony",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Symfony"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.symfony-project.org/",
+      "url": "http://www.symfony-project.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "PHP",
+      "label": "PHP"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Admin Generator cheat sheet [pdf] (symfony-project.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sfAdminGeneratorRefCard.pdf"
+      ],
+      "online": [
+        "http://www.symfony-project.com/weblog/2006/04/25/admin-generator-cheat-sheet.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "symfony cheat-sheet: Criteria/Criterion/RS by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sfmodelcriteriacriterionrsrefcard_enus.pdf"
+      ],
+      "online": [
+        "http://andreiabohner.wordpress.com/2008/01/04/symfony-cheat-sheet-criteriacriterionrs/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Symfony Cheat-Sheet - Database Schema by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sfmodelsecondpartrefcard.pdf"
+      ],
+      "online": [
+        "http://andreiabohner.wordpress.com/2007/09/01/symfony-cheat-sheet-schema/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Symfony Cheat-Sheet - Model (Modelo) by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sfmodelfirstpartrefcard.pdf"
+      ],
+      "online": [
+        "http://andreiabohner.wordpress.com/2007/08/29/symfony-cheat-sheet-modelo/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Symfony Cheat-Sheet - View: partials, components, slots and component slots (DRY - Partials, Components, Slots e Component Slots do symfony) by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sfviewsecondpartrefcard.pdf"
+      ],
+      "online": [
+        "http://andreiabohner.wordpress.com/2007/08/12/dry-partials-components-slots-e-component-slots-do-symfony/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Symfony Cheat-Sheet - View by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sfviewfirstpartrefcard.pdf"
+      ],
+      "online": [
+        "http://andreiabohner.wordpress.com/2007/08/06/symfony-cheat-sheet-view/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Symfony Cheat-Sheet - Server Validation (Validação no Servidor) by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sfservervalidationrefcard.pdf"
+      ],
+      "online": [
+        "http://andreiabohner.wordpress.com/2007/07/14/symfony-cheat-sheet-validacao-no-servidor/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Symfony Cheat-Sheet - Helpers Part 2 - FORMS (Form Helpers) by Andréia Bohner [pdf, jpg] (andreiabohner.wordpress.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/cheatsymfony004forms.pdf",
+        "https://www.cheat-sheets.org/saved-copy/cheatsymfony004forms.jpg"
+      ],
+      "online": [
+        "http://andreiabohner.wordpress.com/2007/06/28/symfony-cheat-sheet-form-helpers/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Symfony Cheat-Sheet - Helpers Part 1 - JAVASCRIP (JS) and AJAX (remote calls) (Helpers Javascript e Ajax) by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/cheatsymfonyjshelper_enus.pdf"
+      ],
+      "online": [
+        "http://andreiabohner.wordpress.com/2007/06/08/symfony-cheat-cheet-helpers-javascript-e-ajax/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Symfony Cheat Sheet - Directory Structure and CLI (Estrutura de diretório e CLI (linha de comando)) by Andréia Bohner [pdf, jpg] (andreiabohner.wordpress.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/cheatsheetsymfony001_enus.pdf",
+        "https://www.cheat-sheets.org/saved-copy/cheatsheetsymfony001_enus.jpg"
+      ],
+      "online": [
+        "http://andreiabohner.wordpress.com/2007/03/03/symfony-cheat-sheet-estrutura-de-diretorio-e-cli-linha-de-comando/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "tldr *php* [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/*php*/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/*php*/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sfAdminGeneratorRefCard.pdf",
+      "filename": "sfAdminGeneratorRefCard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sfmodelcriteriacriterionrsrefcard_enus.pdf",
+      "filename": "sfmodelcriteriacriterionrsrefcard_enus.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sfmodelsecondpartrefcard.pdf",
+      "filename": "sfmodelsecondpartrefcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sfmodelfirstpartrefcard.pdf",
+      "filename": "sfmodelfirstpartrefcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sfviewsecondpartrefcard.pdf",
+      "filename": "sfviewsecondpartrefcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sfviewfirstpartrefcard.pdf",
+      "filename": "sfviewfirstpartrefcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sfservervalidationrefcard.pdf",
+      "filename": "sfservervalidationrefcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cheatsymfony004forms.pdf",
+      "filename": "cheatsymfony004forms.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cheatsymfony004forms.jpg",
+      "filename": "cheatsymfony004forms.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cheatsymfonyjshelper_enus.pdf",
+      "filename": "cheatsymfonyjshelper_enus.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cheatsheetsymfony001_enus.pdf",
+      "filename": "cheatsheetsymfony001_enus.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cheatsheetsymfony001_enus.jpg",
+      "filename": "cheatsheetsymfony001_enus.jpg"
+    }
+  ],
+  "path": "frameworks-and-libraries/symfony"
+}

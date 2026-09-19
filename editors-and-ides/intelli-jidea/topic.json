@@ -1,0 +1,39 @@
+{
+  "id": "IntelliJIDEA",
+  "slug": "intelli-jidea",
+  "title": "IntelliJ IDEA",
+  "group": "editors-and-ides",
+  "source_anchor": "https://www.cheat-sheets.org/#IntelliJIDEA",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/IntelliJ_IDEA",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/IntelliJ_IDEA"
+  ],
+  "official_websites": [
+    {
+      "label": "jetbrains.com/idea/",
+      "url": "http://www.jetbrains.com/idea/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "IntelliJ IDEA by Hamlet D’Arcy [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/intellij-idea-update"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/intellij-idea-update"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "editors-and-ides/intelli-jidea"
+}

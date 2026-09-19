@@ -1,0 +1,141 @@
+{
+  "id": "Eclipse",
+  "slug": "eclipse",
+  "title": "Eclipse",
+  "group": "editors-and-ides",
+  "source_anchor": "https://www.cheat-sheets.org/#Eclipse",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Eclipse_%28software%29",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Eclipse_%28software%29"
+  ],
+  "official_websites": [
+    {
+      "label": "eclipse.org",
+      "url": "http://www.eclipse.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "BIRT",
+      "label": "BIRT"
+    },
+    {
+      "id": "Java",
+      "label": "Java"
+    },
+    {
+      "id": "NetBeans",
+      "label": "NetBeans"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Eclipse CDT Keyboard Shortcuts Cheat Sheet by Etienne Savard [pdf, png 300 dpi, png 600 dpi] (symbiosoft.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/eclipse_cdt_6_0_cheatsheet_0.1.pdf",
+        "https://www.cheat-sheets.org/saved-copy/eclipse_cdt_cheatsheet_300dpi.png",
+        "https://www.cheat-sheets.org/saved-copy/eclipse_cdt_cheatsheet_600dpi.png"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Eclipse Keyboard Shortcuts by Jesper Kamstrup Linnet [pdf, rtf] (eclipse-tools.sourceforge.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/EclipseEmacsKeybindings_3_1.pdf",
+        "https://www.cheat-sheets.org/saved-copy/EclipseEmacsKeybindings_3_1.rtf"
+      ],
+      "online": [
+        "http://eclipse-tools.sourceforge.net/shortcuts.html"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Eclipse CDT 8.0 Cheat Sheet [pdf] (triada.si)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/eclipseCDT8.0-cheatsheet.pdf"
+      ],
+      "online": [
+        "http://www.triada.si/download/eclipseCDT8.0-cheatsheet.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Getting Started with Eclipse by Ed Burnette & Adam Houghton [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-eclipse"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Getting Started with Eclipse RCP by James Sugrue [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-eclipse-rcp"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Eclipse Plug-in Development by James Sugrue [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/eclipse-plug-development"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Eclipse Modeling Framework: Essential EMF by Ed Merks and James Sugrue [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/essential-emf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Getting Started with MyEclipse by Riyad Kalla & Jens Eckels [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/myeclipse"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Eclipse Tools for Spring: The SpringSource Tool Suite by Gordon Dickens, Chariot Solutions [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/eclipse-tools-spring"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/eclipse_cdt_6_0_cheatsheet_0.1.pdf",
+      "filename": "eclipse_cdt_6_0_cheatsheet_0.1.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/eclipse_cdt_cheatsheet_300dpi.png",
+      "filename": "eclipse_cdt_cheatsheet_300dpi.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/eclipse_cdt_cheatsheet_600dpi.png",
+      "filename": "eclipse_cdt_cheatsheet_600dpi.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/EclipseEmacsKeybindings_3_1.pdf",
+      "filename": "EclipseEmacsKeybindings_3_1.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/EclipseEmacsKeybindings_3_1.rtf",
+      "filename": "EclipseEmacsKeybindings_3_1.rtf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/eclipseCDT8.0-cheatsheet.pdf",
+      "filename": "eclipseCDT8.0-cheatsheet.pdf"
+    }
+  ],
+  "path": "editors-and-ides/eclipse"
+}

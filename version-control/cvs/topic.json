@@ -1,0 +1,87 @@
+{
+  "id": "CVS",
+  "slug": "cvs",
+  "title": "CVS - Concurrent Versions System",
+  "group": "version-control",
+  "source_anchor": "https://www.cheat-sheets.org/#CVS",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Concurrent_Versions_System",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Concurrent_Versions_System"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Bazaar",
+      "label": "Bazaar"
+    },
+    {
+      "id": "Git",
+      "label": "Git"
+    },
+    {
+      "id": "SVN",
+      "label": "SVN"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "CVS Cheat-sheet [html] (slac.stanford.edu)",
+      "saved": [],
+      "online": [
+        "http://www.slac.stanford.edu/grp/cd/soft/cvs/cvs_cheatsheet.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.slac.stanford.edu/grp/cd/soft/cvs/cvs_cheatsheet.html"
+      ]
+    },
+    {
+      "title": "CVS Quick Reference Card Andrew Ford [pdf] (refcards.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/cvs-refcard-a4.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "CVS Quick Reference Card by Laurent Grégoire [dvi, pdf, TeX] (tnerual.eriogerg.free.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/cvsqrc.dvi",
+        "https://www.cheat-sheets.org/saved-copy/cvsqrc.pdf",
+        "https://www.cheat-sheets.org/saved-copy/cvsqrc.tex"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "tldr cvs [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/cvs/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/cvs/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cvs-refcard-a4.pdf",
+      "filename": "cvs-refcard-a4.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cvsqrc.dvi",
+      "filename": "cvsqrc.dvi"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cvsqrc.pdf",
+      "filename": "cvsqrc.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/cvsqrc.tex",
+      "filename": "cvsqrc.tex"
+    }
+  ],
+  "path": "version-control/cvs"
+}

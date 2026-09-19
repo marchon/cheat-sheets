@@ -1,0 +1,78 @@
+{
+  "id": "XMLSchema",
+  "slug": "xmlschema",
+  "title": "XML Schema",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#XMLSchema",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/XML_Schema",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/XML_Schema"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.w3.org/XML/Schema",
+      "url": "http://www.w3.org/XML/Schema"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "MathML",
+      "label": "MathML"
+    },
+    {
+      "id": "XHTML",
+      "label": "XHTML"
+    },
+    {
+      "id": "XML",
+      "label": "XML"
+    },
+    {
+      "id": "XPath",
+      "label": "XPath"
+    },
+    {
+      "id": "XSL",
+      "label": "XSL"
+    },
+    {
+      "id": "XSLT",
+      "label": "XSLT"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "XML Schema - Structures Quick Reference Card by Dan Vint [pdf] (dvint.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/SchemaStructuresQR-2.pdf"
+      ],
+      "online": [
+        "http://www.xml.dvint.com/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "XML Schema - Data Types Quick Reference Card by Dan Vint [pdf] (dvint.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/SchemaDataTypesQR-2.pdf"
+      ],
+      "online": [
+        "http://www.xml.dvint.com/"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/SchemaStructuresQR-2.pdf",
+      "filename": "SchemaStructuresQR-2.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/SchemaDataTypesQR-2.pdf",
+      "filename": "SchemaDataTypesQR-2.pdf"
+    }
+  ],
+  "path": "file-formats/xmlschema"
+}

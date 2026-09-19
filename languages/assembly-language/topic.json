@@ -1,0 +1,145 @@
+{
+  "id": "AssemblyLanguage",
+  "slug": "assembly-language",
+  "title": "Assembly Language",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#AssemblyLanguage",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Assembly_language",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Assembly_language"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Intel Assembly 80x86 CodeTable by Roger Jegerlehner [pdf] (www.jegerlehner.ch/intel)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/IntelCodeTable.pdf"
+      ],
+      "online": [
+        "http://www.jegerlehner.ch/intel/IntelCodeTable.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Win32 Assembly Cheat Sheet by Peter Kankowski [png] (strchr.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Win32AssemblyCheatSheet.png"
+      ],
+      "online": [
+        "http://www.strchr.com/assembly_cheat_sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.strchr.com/assembly_cheat_sheet"
+      ]
+    },
+    {
+      "title": "gcc x86 Assembly Quick Reference (\"Cheat Sheet\") by Peter O. Lawlor [html] (cs.uaf.edu)",
+      "saved": [],
+      "online": [
+        "http://www.cs.uaf.edu/2005/fall/cs301/support/x86/index.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.cs.uaf.edu/2005/fall/cs301/support/x86/index.html"
+      ]
+    },
+    {
+      "title": "Intel x86-64 Architecture by Michael Stumpfl [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Intel.x86-64.Architecture.2012011000.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "6502 (65xx) Microprocessor Instant Reference Card (instruction set and conversion) by James D. Lewis [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/6502_65xx_Instant_Reference_Card.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "SY6500 Instruction Set Summary and Assembler Directives (6502 - Reference Cards) by ATARI [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/6502_-_Reference_Cards.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Assembly languages [html, pdf] (wikibooks.org)",
+      "saved": [],
+      "online": [
+        "http://en.wikibooks.org/wiki/Subject:Assembly_languages"
+      ],
+      "archived": []
+    },
+    {
+      "title": "ASM Community • The Assembly Language Resource  [html] (asmcommunity.net)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20121203163445/http://www.asmcommunity.net/book"
+      ]
+    },
+    {
+      "title": "Programming from the Ground Up by Jonathan Bartlet; Edited by Dominick Bruno, Jr [html, pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/ProgrammingGroundUp-1-0-booksize.2012011000.pdf"
+      ],
+      "online": [
+        "http://programminggroundup.blogspot.com/",
+        "http://download-mirror.savannah.gnu.org/releases/pgubook/ProgrammingGroundUp-1-0-booksize.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://programminggroundup.blogspot.com/"
+      ]
+    },
+    {
+      "title": "PC Assembly Language by Paul A. Carter [pdf] (drpaulcarter.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/pcasm-book.2012011000.pdf"
+      ],
+      "online": [
+        "http://drpaulcarter.com/pcasm/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://drpaulcarter.com/pcasm/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/IntelCodeTable.pdf",
+      "filename": "IntelCodeTable.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Win32AssemblyCheatSheet.png",
+      "filename": "Win32AssemblyCheatSheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Intel.x86-64.Architecture.2012011000.pdf",
+      "filename": "Intel.x86-64.Architecture.2012011000.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/6502_65xx_Instant_Reference_Card.pdf",
+      "filename": "6502_65xx_Instant_Reference_Card.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/6502_-_Reference_Cards.pdf",
+      "filename": "6502_-_Reference_Cards.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ProgrammingGroundUp-1-0-booksize.2012011000.pdf",
+      "filename": "ProgrammingGroundUp-1-0-booksize.2012011000.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/pcasm-book.2012011000.pdf",
+      "filename": "pcasm-book.2012011000.pdf"
+    }
+  ],
+  "path": "languages/assembly-language"
+}

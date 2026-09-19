@@ -1,0 +1,192 @@
+{
+  "id": "JavaScript",
+  "slug": "java-script",
+  "title": "JavaScript",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#JavaScript",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/JavaScript",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/JavaScript"
+  ],
+  "official_websites": [
+    {
+      "label": "http://developer.mozilla.org/en/docs/JavaScript",
+      "url": "http://developer.mozilla.org/en/docs/JavaScript"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "AJAX",
+      "label": "AJAX"
+    },
+    {
+      "id": "CSS",
+      "label": "CSS"
+    },
+    {
+      "id": "DOM",
+      "label": "DOM"
+    },
+    {
+      "id": "GWT",
+      "label": "GWT"
+    },
+    {
+      "id": "HTML",
+      "label": "HTML"
+    },
+    {
+      "id": "jQuery",
+      "label": "jQuery"
+    },
+    {
+      "id": "MooTools",
+      "label": "MooTools"
+    },
+    {
+      "id": "Nodejs",
+      "label": "Node.js"
+    },
+    {
+      "id": "Prototype",
+      "label": "Prototype"
+    },
+    {
+      "id": "TypeScript",
+      "label": "TypeScript"
+    },
+    {
+      "id": "XHTML",
+      "label": "XHTML"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "JavaScript in one page [html] (javascript.su)",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/javascript.su/"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "JavaScript Cheat Sheet by Dave Child [html, png, pdf] (cheatography.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/javascript_cheat_sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/javascript_cheat_sheet.pdf"
+      ],
+      "online": [
+        "https://www.cheatography.com/davechild/cheat-sheets/javascript/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.cheatography.com/davechild/cheat-sheets/javascript/"
+      ]
+    },
+    {
+      "title": "JavaScript a free online quick reference by VisiBone [html] (javascript-reference.info)",
+      "saved": [],
+      "online": [
+        "http://javascript-reference.info/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://javascript-reference.info/"
+      ]
+    },
+    {
+      "title": "JavaScript Quick Reference Card [pdf] (explainth.at)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/jsquick.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "JavaScript and Browser Objects Quick Reference [html] (javascript-reference.info)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/JSB6RefBooklet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Regular Expressions for client-side JavaScript a free online quick reference by VisiBone [html] (visibone.com)",
+      "saved": [],
+      "online": [
+        "http://www.visibone.com/regular-expressions/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.visibone.com/regular-expressions/"
+      ]
+    },
+    {
+      "title": "JavaScript language a- z cheat sheet by Alex Staveley [pdf] (dublintech.blogspot.com)",
+      "saved": [],
+      "online": [
+        "http://dublintech.blogspot.com/2012/04/javascript-language-z-cheat-sheet.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://dublintech.blogspot.com/2012/04/javascript-language-z-cheat-sheet.html"
+      ]
+    },
+    {
+      "title": "Javascript Cheat Sheet by Nick Schäferhoff [html, pdf] (websitesetup.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/wsu-js-cheat-sheet.pdf"
+      ],
+      "online": [
+        "https://websitesetup.org/javascript-cheat-sheet/",
+        "https://websitesetup.org/wp-content/uploads/2018/04/wsu-js-cheat-sheet.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "165+ JavaScript terms you need to know by Sachin Samal [html] (opensource.com)",
+      "saved": [],
+      "online": [
+        "https://opensource.com/article/22/9/javascript-glossary"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://opensource.com/article/22/9/javascript-glossary"
+      ]
+    },
+    {
+      "title": "Awesome JavaScript Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/javascript.js"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/javascript.js"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/sites/javascript.su/",
+      "filename": "/sites/javascript.su/"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/javascript_cheat_sheet.png",
+      "filename": "javascript_cheat_sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/javascript_cheat_sheet.pdf",
+      "filename": "javascript_cheat_sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/jsquick.pdf",
+      "filename": "jsquick.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/JSB6RefBooklet.pdf",
+      "filename": "JSB6RefBooklet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/wsu-js-cheat-sheet.pdf",
+      "filename": "wsu-js-cheat-sheet.pdf"
+    }
+  ],
+  "path": "languages/java-script"
+}

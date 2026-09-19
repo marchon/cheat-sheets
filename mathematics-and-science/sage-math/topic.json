@@ -1,0 +1,200 @@
+{
+  "id": "SageMath",
+  "slug": "sage-math",
+  "title": "SageMath (Sage, SAGE)",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#SageMath",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/SageMath",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/SageMath"
+  ],
+  "official_websites": [
+    {
+      "label": "sagemath.org",
+      "url": "http://www.sagemath.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Maple",
+      "label": "Algebra"
+    },
+    {
+      "id": "Maple",
+      "label": "Maple"
+    },
+    {
+      "id": "Math",
+      "label": "Math"
+    },
+    {
+      "id": "Mathematica",
+      "label": "Mathematica"
+    },
+    {
+      "id": "MATLAB",
+      "label": "MATLAB"
+    },
+    {
+      "id": "Mathomatic",
+      "label": "Mathomatic"
+    },
+    {
+      "id": "Maxima",
+      "label": "Maxima"
+    },
+    {
+      "id": "PARIGP",
+      "label": "PARI/GP"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Sage Quick Reference by William Stein (based on work of P. Jipsen) [pdf] (wiki.sagemath.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sage_quickref.pdf"
+      ],
+      "online": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=quickref.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Sage Quick Reference: Linear Algebra by Robert A. Beezer (Based on work by Peter Jipsen, William Stein)  [pdf] (wiki.sagemath.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/quickref-linalg.pdf"
+      ],
+      "online": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=quickref-linalg.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Sage Quick Reference: Elementary Number Theory by William Stein [pdf] (wiki.sagemath.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/quickref-nt.pdf"
+      ],
+      "online": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=quickref-nt.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Sage Quick Reference: Calculus by William Stein [pdf] (wiki.sagemath.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/quickref-calc.pdf"
+      ],
+      "online": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=quickref-calc.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Sage Quick Reference (Basic Math) by Peter Jipsen [pdf] (wiki.sagemath.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Basic_Math_sage-quickref.pdf"
+      ],
+      "online": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=sage-quickref.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Sage Quick Reference: Graph Theory by Steven Rafael Turner [pdf] (wiki.sagemath.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/quickref-graphtheory.pdf"
+      ],
+      "online": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=quickref-graphtheory.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Sage Quick Reference: Abstract Algebra by B. Balof, T. W. Judson, D. Perkinson, R. Potluri (based on work by P. Jipsen, W. Stein, R. Beezer) [pdf] (wiki.sagemath.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sage-quickref-algebra.pdf"
+      ],
+      "online": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=quickref-algebra.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Sage Dynamics Ref Card v3.0 by B. Hutz, J. Silverman [pdf] (wiki.sagemath.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/dynamics_ref.pdf"
+      ],
+      "online": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=dynamics_ref.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Sage Quick Reference Cards in different languages [html -> pdf] (wiki.sagemath.org)",
+      "saved": [],
+      "online": [
+        "https://wiki.sagemath.org/quickref/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://wiki.sagemath.org/quickref/"
+      ]
+    },
+    {
+      "title": "SageMath Help [html] (sagemath.org)",
+      "saved": [],
+      "online": [
+        "http://www.sagemath.org/help.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.sagemath.org/help.html"
+      ]
+    },
+    {
+      "title": "SageMath Documentation [html] (doc.sagemath.org)",
+      "saved": [],
+      "online": [
+        "http://doc.sagemath.org/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://doc.sagemath.org/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sage_quickref.pdf",
+      "filename": "sage_quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/quickref-linalg.pdf",
+      "filename": "quickref-linalg.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/quickref-nt.pdf",
+      "filename": "quickref-nt.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/quickref-calc.pdf",
+      "filename": "quickref-calc.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Basic_Math_sage-quickref.pdf",
+      "filename": "Basic_Math_sage-quickref.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/quickref-graphtheory.pdf",
+      "filename": "quickref-graphtheory.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sage-quickref-algebra.pdf",
+      "filename": "sage-quickref-algebra.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/dynamics_ref.pdf",
+      "filename": "dynamics_ref.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/sage-math"
+}

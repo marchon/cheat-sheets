@@ -1,0 +1,75 @@
+{
+  "id": "vvvv",
+  "slug": "vvvv",
+  "title": "vvvv",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#vvvv",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Vvvv",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Vvvv"
+  ],
+  "official_websites": [
+    {
+      "label": "http://vvvv.org/",
+      "url": "http://vvvv.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "don't panic - the nodes guide to vvvv [pdf] (vvvv.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/vvvv.dontpanic_45beta25_1_0.2012010500.pdf"
+      ],
+      "online": [
+        "http://vvvv.org/sites/default/files/uploads/dontpanic_45beta25_1_0.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Documentation  [html] (vvvv.org)",
+      "saved": [],
+      "online": [
+        "http://vvvv.org/documentation/documentation"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Linear Spread: illustrated guide to vvvv for newbies in computer arts  [pdf eng] (vvvv.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/vvvv.illustrated.beta_ENG.2012010500.pdf"
+      ],
+      "online": [
+        "http://vvvv.org/sites/default/files/uploads/vvvv%20illustrated%20beta_ENG.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Linear Spread: иллюстрированное руководство по vvvv для новичков в интерактивных искусствах [pdf rus] (vvvv.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/vvvv.illustrated.beta_RUS.2012010500.pdf"
+      ],
+      "online": [
+        "http://vvvv.org/sites/default/files/uploads/vvvv%20illustrated%20beta_RUS.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/vvvv.dontpanic_45beta25_1_0.2012010500.pdf",
+      "filename": "vvvv.dontpanic_45beta25_1_0.2012010500.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/vvvv.illustrated.beta_ENG.2012010500.pdf",
+      "filename": "vvvv.illustrated.beta_ENG.2012010500.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/vvvv.illustrated.beta_RUS.2012010500.pdf",
+      "filename": "vvvv.illustrated.beta_RUS.2012010500.pdf"
+    }
+  ],
+  "path": "applications/vvvv"
+}

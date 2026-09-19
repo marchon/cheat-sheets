@@ -1,0 +1,121 @@
+{
+  "id": "SVN",
+  "slug": "svn",
+  "title": "SVN (Apache Subversion) - version control system",
+  "group": "version-control",
+  "source_anchor": "https://www.cheat-sheets.org/#SVN",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Apache_Subversion",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Apache_Subversion"
+  ],
+  "official_websites": [
+    {
+      "label": "http://subversion.apache.org/",
+      "url": "http://subversion.apache.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Bazaar",
+      "label": "Bazaar"
+    },
+    {
+      "id": "CVS",
+      "label": "CVS"
+    },
+    {
+      "id": "Git",
+      "label": "Git"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Subversion Cheat Sheet by Dave Child [html, pdf, png] (cheatography.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/subversion-cheat-sheet-v1.pdf",
+        "https://www.cheat-sheets.org/saved-copy/subversion-cheat-sheet-v1.png"
+      ],
+      "online": [
+        "https://www.cheatography.com/davechild/cheat-sheets/subversion/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.cheatography.com/davechild/cheat-sheets/subversion/"
+      ]
+    },
+    {
+      "title": "Subversion Cheat Sheet [html] (abbeyworkshop.com)",
+      "saved": [],
+      "online": [
+        "http://www.abbeyworkshop.com/howto/misc/svn01/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.abbeyworkshop.com/howto/misc/svn01/"
+      ]
+    },
+    {
+      "title": "Subversion Quick Reference Card by Cezary Sobaniec [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/svn-refcard.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Cheat Sheet Subversion by Lucas Baltes [pdf] (cs.put.poznan.pl)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Cheat%20Sheet%20Subversion.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Subversion® Quick Reference Card by collab.net [pdf] (collab.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/CollabNet_SVNQuickReferenceCard.pdf"
+      ],
+      "online": [
+        "http://www.collab.net/community/subversion/articles/CollabNet_SVNQuickReferenceCard.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Git for Subversion Users - A Cheat Sheet by Tobias Günther [pdf] (git-tower.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Git_for_Subversion_Users.pdf"
+      ],
+      "online": [
+        "https://www.git-tower.com/blog/git-for-subversion-users-cheat-sheet/"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/subversion-cheat-sheet-v1.pdf",
+      "filename": "subversion-cheat-sheet-v1.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/subversion-cheat-sheet-v1.png",
+      "filename": "subversion-cheat-sheet-v1.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/svn-refcard.pdf",
+      "filename": "svn-refcard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Cheat%20Sheet%20Subversion.pdf",
+      "filename": "Cheat Sheet Subversion.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/CollabNet_SVNQuickReferenceCard.pdf",
+      "filename": "CollabNet_SVNQuickReferenceCard.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Git_for_Subversion_Users.pdf",
+      "filename": "Git_for_Subversion_Users.pdf"
+    }
+  ],
+  "path": "version-control/svn"
+}

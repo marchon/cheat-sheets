@@ -1,0 +1,41 @@
+{
+  "id": "OpenSearch",
+  "slug": "open-search",
+  "title": "OpenSearch",
+  "group": "online-data-services",
+  "source_anchor": "https://www.cheat-sheets.org/#OpenSearch",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/OpenSearch",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/OpenSearch"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.opensearch.org/",
+      "url": "http://www.opensearch.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "OpenSearch Cheat Sheet by Gareth J M Saunders [pdf] (garethjmsaunders.co.uk)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/OpenSearch.pdf"
+      ],
+      "online": [
+        "http://www.scribd.com/doc/6114752/OpenSearch-Cheat-Sheet-15"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.scribd.com/doc/6114752/OpenSearch-Cheat-Sheet-15"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/OpenSearch.pdf",
+      "filename": "OpenSearch.pdf"
+    }
+  ],
+  "path": "online-data-services/open-search"
+}

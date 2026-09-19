@@ -1,0 +1,44 @@
+{
+  "id": "Kubernetes",
+  "slug": "kubernetes",
+  "title": "Kubernetes",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#Kubernetes",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Kubernetes",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Kubernetes"
+  ],
+  "official_websites": [
+    {
+      "label": "kubernetes.io",
+      "url": "https://kubernetes.io/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "kubectl Cheat Sheet [html] (kubernetes.io)",
+      "saved": [],
+      "online": [
+        "https://kubernetes.io/docs/reference/kubectl/cheatsheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://kubernetes.io/docs/reference/kubectl/cheatsheet/"
+      ]
+    },
+    {
+      "title": "Awesome Kubernetes Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/kubernetes.md"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/kubernetes.md"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/kubernetes"
+}

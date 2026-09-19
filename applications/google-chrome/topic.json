@@ -1,0 +1,52 @@
+{
+  "id": "GoogleChrome",
+  "slug": "google-chrome",
+  "title": "Google Chrome",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#GoogleChrome",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Google_Chrome",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Google_Chrome"
+  ],
+  "official_websites": [
+    {
+      "label": "www.google.com/chrome/",
+      "url": "http://www.google.com/chrome/"
+    },
+    {
+      "label": "code.google.com/chromium/",
+      "url": "http://code.google.com/chromium/"
+    },
+    {
+      "label": "dev.chromium.org/",
+      "url": "http://dev.chromium.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Google",
+      "label": "Google"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "ChromePlus Mouse Gestures CheatSheet by Jakob Krarup [jpg] (jake.dk)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/ChromePlus_Mouse_Gestures_CheatSheet_version_1.0.jpg"
+      ],
+      "online": [
+        "http://www.jake.dk/Download/ChromePlus_Mouse_Gestures_CheatSheet_version_1.0.jpg"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ChromePlus_Mouse_Gestures_CheatSheet_version_1.0.jpg",
+      "filename": "ChromePlus_Mouse_Gestures_CheatSheet_version_1.0.jpg"
+    }
+  ],
+  "path": "applications/google-chrome"
+}

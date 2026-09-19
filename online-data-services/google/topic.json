@@ -1,0 +1,88 @@
+{
+  "id": "Google",
+  "slug": "google",
+  "title": "Google",
+  "group": "online-data-services",
+  "source_anchor": "https://www.cheat-sheets.org/#Google",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Google",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Google"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.google.com/",
+      "url": "http://www.google.com/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Gmail",
+      "label": "Gmail"
+    },
+    {
+      "id": "GoogleChrome",
+      "label": "Google Chrome"
+    },
+    {
+      "id": "GoogleMaps",
+      "label": "Google Maps"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Google Help : Cheat Sheet [html] (google.com)",
+      "saved": [],
+      "online": [
+        "http://www.google.com/help/cheatsheet.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.google.com/help/cheatsheet.html"
+      ]
+    },
+    {
+      "title": "GoogleGuide [html] (googleguide.com)",
+      "saved": [],
+      "online": [
+        "http://www.googleguide.com/advanced_operators_reference.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.googleguide.com/advanced_operators_reference.html"
+      ]
+    },
+    {
+      "title": "Google Cheat Sheets [pdf, png:page1, png:page2]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Google%20Cheat%20Sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/google_page1.png",
+        "https://www.cheat-sheets.org/saved-copy/google_page2.png"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "PhD in Googling [html] (onlinephd.org)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20121212192159/http://onlinephd.org/phd-in-googling/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Google%20Cheat%20Sheet.pdf",
+      "filename": "Google Cheat Sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/google_page1.png",
+      "filename": "google_page1.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/google_page2.png",
+      "filename": "google_page2.png"
+    }
+  ],
+  "path": "online-data-services/google"
+}

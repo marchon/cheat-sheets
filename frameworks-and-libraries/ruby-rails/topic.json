@@ -1,0 +1,91 @@
+{
+  "id": "RubyRails",
+  "slug": "ruby-rails",
+  "title": "Ruby on Rails",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#RubyRails",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Ruby_on_Rails",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Ruby_on_Rails"
+  ],
+  "official_websites": [
+    {
+      "label": "rubyonrails.org",
+      "url": "https://rubyonrails.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Ruby",
+      "label": "Ruby"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Ruby on Rails Cheat Sheet by Dave Child [png, pdf] (addedbytes.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/ruby_on_rails_cheat_sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/ruby_on_rails_cheat_sheet.pdf"
+      ],
+      "online": [
+        "http://www.addedbytes.com/cheat-sheets/ruby-on-rails-cheat-sheet/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "RubyOnRails-Cheatsheet by Blaine Kendall [pdf] (blainekendall.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/RubyOnRails-Cheatsheet-BlaineKendall.pdf"
+      ],
+      "online": [
+        "http://www.blainekendall.com/index.php/rubyonrailscheatsheet/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Ruby on Rails cheat sheet guide [pdf] (slash7.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/form_helpers.pdf"
+      ],
+      "online": [
+        "http://slash7.com/cheats/form_helpers.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "What Goes Where a Ruby on Rails cheat sheet by Amy Hoy [pdf] (slash7.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/rails_files_cheatsheet.pdf"
+      ],
+      "online": [
+        "http://slash7.com/cheats/rails_files_cheatsheet.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ruby_on_rails_cheat_sheet.png",
+      "filename": "ruby_on_rails_cheat_sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/ruby_on_rails_cheat_sheet.pdf",
+      "filename": "ruby_on_rails_cheat_sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/RubyOnRails-Cheatsheet-BlaineKendall.pdf",
+      "filename": "RubyOnRails-Cheatsheet-BlaineKendall.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/form_helpers.pdf",
+      "filename": "form_helpers.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/rails_files_cheatsheet.pdf",
+      "filename": "rails_files_cheatsheet.pdf"
+    }
+  ],
+  "path": "frameworks-and-libraries/ruby-rails"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "Numbers",
+  "slug": "numbers",
+  "title": "Numbers",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Numbers",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Number",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Number"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Hexadecimal Chart [html] (cookwood.com)",
+      "saved": [],
+      "online": [
+        "http://www.cookwood.com/html/extras/hexchart.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.cookwood.com/html/extras/hexchart.html"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "mathematics-and-science/numbers"
+}

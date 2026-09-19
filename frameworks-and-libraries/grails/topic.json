@@ -1,0 +1,39 @@
+{
+  "id": "Grails",
+  "slug": "grails",
+  "title": "Grails",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#Grails",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Grails_(framework)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Grails_(framework)"
+  ],
+  "official_websites": [
+    {
+      "label": "grails.org",
+      "url": "http://grails.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Grails by Dave Klein [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-grails"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-grails"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "frameworks-and-libraries/grails"
+}

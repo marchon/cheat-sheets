@@ -1,0 +1,70 @@
+{
+  "id": "Maxima",
+  "slug": "maxima",
+  "title": "Maxima",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Maxima",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Maxima_(software)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Maxima_(software)"
+  ],
+  "official_websites": [
+    {
+      "label": "maxima.sourceforge.net",
+      "url": "http://maxima.sourceforge.net/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Maple",
+      "label": "Maple"
+    },
+    {
+      "id": "Math",
+      "label": "Math"
+    },
+    {
+      "id": "MATLAB",
+      "label": "MATLAB"
+    },
+    {
+      "id": "Mathematica",
+      "label": "Mathematica"
+    },
+    {
+      "id": "Mathomatic",
+      "label": "Mathomatic"
+    },
+    {
+      "id": "PARIGP",
+      "label": "PARI/GP"
+    },
+    {
+      "id": "SageMath",
+      "label": "SageMath"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "A 10 minute tutorial for solving Math problems with Maxima by Antonio Cangiano [html, pdf] (math-blog.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Maxima_tutorial.pdf"
+      ],
+      "online": [
+        "http://math-blog.com/2007/06/04/a-10-minute-tutorial-for-solving-math-problems-with-maxima/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://math-blog.com/2007/06/04/a-10-minute-tutorial-for-solving-math-problems-with-maxima/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Maxima_tutorial.pdf",
+      "filename": "Maxima_tutorial.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/maxima"
+}

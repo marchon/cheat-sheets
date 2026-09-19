@@ -1,0 +1,44 @@
+{
+  "id": "PlayFramework",
+  "slug": "play-framework",
+  "title": "Play Framework",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#PlayFramework",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Play_Framework",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Play_Framework"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.playframework.org/",
+      "url": "http://www.playframework.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Play! Framework Cheat Sheet [html] (playframework.org)",
+      "saved": [],
+      "online": [
+        "http://www.playframework.org/documentation/1.2.3/cheatsheet/commandLine"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.playframework.org/documentation/1.2.3/cheatsheet/commandLine"
+      ]
+    },
+    {
+      "title": "Official Documentation: Manual, tutorials & references  [html] (playframework.org)",
+      "saved": [],
+      "online": [
+        "http://www.playframework.org/documentation/1.2.3/home"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.playframework.org/documentation/1.2.3/home"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "frameworks-and-libraries/play-framework"
+}

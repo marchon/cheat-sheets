@@ -1,0 +1,29 @@
+{
+  "id": "REST",
+  "slug": "rest",
+  "title": "REST (Representational State Transfer)",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#REST",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Representational_State_Transfer",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Representational_State_Transfer"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "REST: Foundations of RESTful Architecture by Brian Sletten [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/rest-foundations-restful"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/rest-foundations-restful"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "web/rest"
+}

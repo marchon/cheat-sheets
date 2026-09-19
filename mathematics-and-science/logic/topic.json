@@ -1,0 +1,39 @@
+{
+  "id": "Logic",
+  "slug": "logic",
+  "title": "Logic",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Logic",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Logic",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Logic"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Logic gate [html] (wikipedia.org)",
+      "saved": [],
+      "online": [
+        "https://en.wikipedia.org/wiki/Logic_gate"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://en.wikipedia.org/wiki/Logic_gate"
+      ]
+    },
+    {
+      "title": "logic gate [html] (techtarget.com)",
+      "saved": [],
+      "online": [
+        "http://whatis.techtarget.com/definition/logic-gate-AND-OR-XOR-NOT-NAND-NOR-and-XNOR"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://whatis.techtarget.com/definition/logic-gate-AND-OR-XOR-NOT-NAND-NOR-and-XNOR"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "mathematics-and-science/logic"
+}

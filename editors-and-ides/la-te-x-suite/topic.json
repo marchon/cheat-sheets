@@ -1,0 +1,49 @@
+{
+  "id": "LaTeX-Suite",
+  "slug": "la-te-x-suite",
+  "title": "LaTeX-Suite (aka Vim-LaTeX)",
+  "group": "editors-and-ides",
+  "source_anchor": "https://www.cheat-sheets.org/#LaTeX-Suite",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "vim-latex.sourceforge.net/",
+      "url": "http://vim-latex.sourceforge.net/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "LaTeX",
+      "label": "LaTeX"
+    },
+    {
+      "id": "Vim",
+      "label": "Vim"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "LatexSuite Reference Card by Michael Goerz [pdf, tex] (users.physik.fu-berlin.de/~goerz/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/vimlatexqrc.pdf",
+        "https://www.cheat-sheets.org/saved-copy/vimlatexqrc.tex"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/vimlatexqrc.pdf",
+      "filename": "vimlatexqrc.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/vimlatexqrc.tex",
+      "filename": "vimlatexqrc.tex"
+    }
+  ],
+  "path": "editors-and-ides/la-te-x-suite"
+}

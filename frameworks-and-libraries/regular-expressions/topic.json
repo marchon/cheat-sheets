@@ -1,0 +1,51 @@
+{
+  "id": "RegularExpressions",
+  "slug": "regular-expressions",
+  "title": "Regular Expressions",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#RegularExpressions",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Regular_Expression",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Regular_Expression"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Regular Expressions Cheat Sheet [html, png, pdf] (cheatography.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/regular_expressions_cheat_sheet.png",
+        "https://www.cheat-sheets.org/saved-copy/regular_expressions_cheat_sheet.pdf"
+      ],
+      "online": [
+        "https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
+      ]
+    },
+    {
+      "title": "Regular Expression Cheat Sheet (.NET) [html] (regexlib.com)",
+      "saved": [],
+      "online": [
+        "http://regexlib.com/CheatSheet.aspx"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://regexlib.com/CheatSheet.aspx"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/regular_expressions_cheat_sheet.png",
+      "filename": "regular_expressions_cheat_sheet.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/regular_expressions_cheat_sheet.pdf",
+      "filename": "regular_expressions_cheat_sheet.pdf"
+    }
+  ],
+  "path": "frameworks-and-libraries/regular-expressions"
+}

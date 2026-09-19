@@ -1,0 +1,68 @@
+{
+  "id": "NeuralNetwork",
+  "slug": "neural-network",
+  "title": "Neural Network",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#NeuralNetwork",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Neural_network",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Neural_network"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "An informative chart to build Neural Network Cells by Fjodor van Veen [png] (asimovinstitute.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/neural_network_cells_asimovinstitute.org.png"
+      ],
+      "online": [
+        "https://www.asimovinstitute.org/wp-content/uploads/2016/12/neuralnetworkcells.png"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.asimovinstitute.org/wp-content/uploads/2016/12/neuralnetworkcells.png"
+      ]
+    },
+    {
+      "title": "An informative chart to build Neural Network Graphs by Fjodor van Veen [png] (asimovinstitute.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/neural_network_graphs_asimovinstitute.org.png"
+      ],
+      "online": [
+        "https://www.asimovinstitute.org/wp-content/uploads/2016/12/neuralnetworkgraphs.png"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.asimovinstitute.org/wp-content/uploads/2016/12/neuralnetworkgraphs.png"
+      ]
+    },
+    {
+      "title": "A Mostly Complete Chart of Neural Networks by Fjodor van Veen [png] (asimovinstitute.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/A_Mostly_Complete_Chart_of_Neural_Network_Zoo_20042019-1400x2380_asimovinstitute.org.png"
+      ],
+      "online": [
+        "https://www.asimovinstitute.org/wp-content/uploads/2019/04/NeuralNetworkZoo20042019-1400x2380.png"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.asimovinstitute.org/wp-content/uploads/2019/04/NeuralNetworkZoo20042019-1400x2380.png"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/neural_network_cells_asimovinstitute.org.png",
+      "filename": "neural_network_cells_asimovinstitute.org.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/neural_network_graphs_asimovinstitute.org.png",
+      "filename": "neural_network_graphs_asimovinstitute.org.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/A_Mostly_Complete_Chart_of_Neural_Network_Zoo_20042019-1400x2380_asimovinstitute.org.png",
+      "filename": "A_Mostly_Complete_Chart_of_Neural_Network_Zoo_20042019-1400x2380_asimovinstitute.org.png"
+    }
+  ],
+  "path": "mathematics-and-science/neural-network"
+}

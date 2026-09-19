@@ -1,0 +1,52 @@
+{
+  "id": "JavaServerFaces",
+  "slug": "java-server-faces",
+  "title": "JavaServer Faces (JSF)",
+  "group": "web",
+  "source_anchor": "https://www.cheat-sheets.org/#JavaServerFaces",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/JavaServer_Faces",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/JavaServer_Faces"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    },
+    {
+      "id": "RichFaces",
+      "label": "RichFaces"
+    },
+    {
+      "id": "Seam",
+      "label": "Seam"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "JavaServer Faces by Cay S. Horstmann [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/javaserver-faces"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/javaserver-faces"
+      ]
+    },
+    {
+      "title": "JavaServer Faces 2.0 by Cay Horstmann [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/javaserver-faces-20"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/javaserver-faces-20"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "web/java-server-faces"
+}

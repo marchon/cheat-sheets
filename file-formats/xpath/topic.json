@@ -1,0 +1,107 @@
+{
+  "id": "XPath",
+  "slug": "xpath",
+  "title": "XPath",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#XPath",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/XPath",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/XPath"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.w3.org/Style/XSL/",
+      "url": "http://www.w3.org/Style/XSL/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "CSS",
+      "label": "CSS"
+    },
+    {
+      "id": "DOM",
+      "label": "DOM"
+    },
+    {
+      "id": "MathML",
+      "label": "MathML"
+    },
+    {
+      "id": "Selenium",
+      "label": "Selenium"
+    },
+    {
+      "id": "XHTML",
+      "label": "XHTML"
+    },
+    {
+      "id": "XML",
+      "label": "XML"
+    },
+    {
+      "id": "XMLSchema",
+      "label": "XML Schema"
+    },
+    {
+      "id": "XSL",
+      "label": "XSL"
+    },
+    {
+      "id": "XSLT",
+      "label": "XSLT"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "XSLT 1.0 and XPath 1.0 Quick Reference [pdf] (mulberrytech.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/XSLT_1quickref-v2.pdf"
+      ],
+      "online": [
+        "http://www.mulberrytech.com/quickref/XSLT_1quickref-v2.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "XPath by DeepX Ltd [pdf] (refcards.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/XPath-1.0.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "XPath, CSS, DOM and Selenium: The Rosetta Stone by Michael Sorens [pdf: Locators table, Locators groups] (simple-talk.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Locators_table_1_0_2.pdf",
+        "https://www.cheat-sheets.org/saved-copy/Locators_groups_1_0_2.pdf"
+      ],
+      "online": [
+        "http://www.simple-talk.com/dotnet/.net-framework/xpath,-css,-dom-and-selenium-the-rosetta-stone/"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/XSLT_1quickref-v2.pdf",
+      "filename": "XSLT_1quickref-v2.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/XPath-1.0.pdf",
+      "filename": "XPath-1.0.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Locators_table_1_0_2.pdf",
+      "filename": "Locators_table_1_0_2.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Locators_groups_1_0_2.pdf",
+      "filename": "Locators_groups_1_0_2.pdf"
+    }
+  ],
+  "path": "file-formats/xpath"
+}

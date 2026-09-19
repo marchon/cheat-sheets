@@ -1,0 +1,77 @@
+{
+  "id": "Rust",
+  "slug": "rust",
+  "title": "Rust W",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Rust",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "rust-lang.org",
+      "url": "https://www.rust-lang.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Rust Language Cheat Sheet by Dr. Ralf Biedert [html, pdf] (cheats.rs)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/rust_cheat_sheet_20230106.pdf"
+      ],
+      "online": [
+        "https://cheats.rs/",
+        "https://s3.eu-central-1.amazonaws.com/cheats.rs/rust_cheat_sheet.pdf"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheats.rs/",
+        "https://web.archive.org/web/*/https://s3.eu-central-1.amazonaws.com/cheats.rs/rust_cheat_sheet.pdf"
+      ]
+    },
+    {
+      "title": "Rust cheat sheet by Seth Kenlon [pdf] (opensource.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/osdc_cheatsheet-rust-2021.11.11.pdf"
+      ],
+      "online": [
+        "https://opensource.com/downloads/rust-cheat-sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://opensource.com/downloads/rust-cheat-sheet"
+      ]
+    },
+    {
+      "title": "Rust cheatsheet by @Fechin [html] (quickref.me)",
+      "saved": [],
+      "online": [
+        "https://quickref.me/rust"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://quickref.me/rust"
+      ]
+    },
+    {
+      "title": "cheat sheet for rust language by @donbright [heml] (github.com/donbright)",
+      "saved": [],
+      "online": [
+        "https://github.com/donbright/rust-lang-cheat-sheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/donbright/rust-lang-cheat-sheet"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/rust_cheat_sheet_20230106.pdf",
+      "filename": "rust_cheat_sheet_20230106.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/osdc_cheatsheet-rust-2021.11.11.pdf",
+      "filename": "osdc_cheatsheet-rust-2021.11.11.pdf"
+    }
+  ],
+  "path": "languages/rust"
+}

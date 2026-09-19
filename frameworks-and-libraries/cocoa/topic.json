@@ -1,0 +1,50 @@
+{
+  "id": "Cocoa",
+  "slug": "cocoa",
+  "title": "Cocoa",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#Cocoa",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Cocoa_(API)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Cocoa_(API)"
+  ],
+  "official_websites": [
+    {
+      "label": "http://developer.apple.com/documentation/Cocoa/Cocoa.html",
+      "url": "http://developer.apple.com/documentation/Cocoa/Cocoa.html"
+    },
+    {
+      "label": "http://developer.apple.com/devcenter/ios/",
+      "url": "http://developer.apple.com/devcenter/ios/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "OSX",
+      "label": "Mac OS X"
+    },
+    {
+      "id": "Objective-C",
+      "label": "Objective-C"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Cocoa Framework (iOS SDK 3.0) by Alexey Nazaroff [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Cocoa_iOS_3.0_cheatsheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Cocoa_iOS_3.0_cheatsheet.pdf",
+      "filename": "Cocoa_iOS_3.0_cheatsheet.pdf"
+    }
+  ],
+  "path": "frameworks-and-libraries/cocoa"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Camera",
+  "slug": "camera",
+  "title": "Camera",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#Camera",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Camera",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Camera"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Complete listing of common camera symbols [html] (photonotes.org)",
+      "saved": [],
+      "online": [
+        "http://photonotes.org/cgi-bin/view.pl?letter=!"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "applications/camera"
+}

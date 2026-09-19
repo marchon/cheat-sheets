@@ -1,0 +1,34 @@
+{
+  "id": "OpenSCAD",
+  "slug": "open-scad",
+  "title": "OpenSCAD",
+  "group": "graphics-and-design",
+  "source_anchor": "https://www.cheat-sheets.org/#OpenSCAD",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/OpenSCAD",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/OpenSCAD"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.openscad.org/",
+      "url": "http://www.openscad.org/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "OpenSCAD CheatSheet [html] (openscad.org)",
+      "saved": [],
+      "online": [
+        "http://www.openscad.org/cheatsheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.openscad.org/cheatsheet/"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "graphics-and-design/open-scad"
+}

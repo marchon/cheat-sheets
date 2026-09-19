@@ -1,0 +1,32 @@
+{
+  "id": "SVG",
+  "slug": "svg",
+  "title": "SVG - Scalable Vector Graphics",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#SVG",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Svg",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Svg"
+  ],
+  "official_websites": [
+    {
+      "label": "w3.org/Graphics/SVG/",
+      "url": "http://www.w3.org/Graphics/SVG/"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "SVG Visual Cheat Sheet by Alexander Krassotkin [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/own/svg/index.xhtml"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "file-formats/svg"
+}

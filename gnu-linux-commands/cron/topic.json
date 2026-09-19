@@ -1,0 +1,29 @@
+{
+  "id": "Cron",
+  "slug": "cron",
+  "title": "Cron",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#Cron",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Cron",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Cron"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Cron cheatsheet by Rico (@rstacruz) [html] (devhints.io)",
+      "saved": [],
+      "online": [
+        "https://devhints.io/cron"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://devhints.io/cron"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "gnu-linux-commands/cron"
+}

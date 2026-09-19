@@ -1,0 +1,40 @@
+{
+  "id": "DOTlanguage",
+  "slug": "dotlanguage",
+  "title": "DOT language",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#DOTlanguage",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/DOT_language",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/DOT_language"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Dot by Sridhar Sarnobat [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/dot.language.2011-12-09.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "The DOT Language by Graphviz - Graph Visualization Software [html] (graphviz.org)",
+      "saved": [],
+      "online": [
+        "http://graphviz.org/content/dot-language"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/dot.language.2011-12-09.pdf",
+      "filename": "dot.language.2011-12-09.pdf"
+    }
+  ],
+  "path": "file-formats/dotlanguage"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "less",
+  "slug": "less",
+  "title": "less",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#less",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Less_(Unix)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Less_(Unix)"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "less cheat sheet by Mischa Poslawsky [html] (shiar.nl)",
+      "saved": [],
+      "online": [
+        "http://sheet.shiar.nl/less"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://sheet.shiar.nl/less"
+      ]
+    },
+    {
+      "title": "less tldr page [html] (cheat-sheets.org)",
+      "saved": [],
+      "online": [
+        "https://cheat-sheets.org/project/tldr/command/less/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://cheat-sheets.org/project/tldr/command/less/"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "gnu-linux-commands/less"
+}

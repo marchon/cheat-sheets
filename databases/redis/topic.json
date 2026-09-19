@@ -1,0 +1,41 @@
+{
+  "id": "Redis",
+  "slug": "redis",
+  "title": "Redis W",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#Redis",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "redis.io",
+      "url": "https://redis.io/"
+    },
+    {
+      "label": "github.com/redis",
+      "url": "https://github.com/redis"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "",
+      "label": ""
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Awesome Redis Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/databases/mysql.sh"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/databases/mysql.sh"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "databases/redis"
+}

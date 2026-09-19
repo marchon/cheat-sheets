@@ -1,0 +1,32 @@
+{
+  "id": "BPEL",
+  "slug": "bpel",
+  "title": "BPEL - Web Services Business Process Execution Language (WS-BPEL)",
+  "group": "business-processes",
+  "source_anchor": "https://www.cheat-sheets.org/#BPEL",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Business_Process_Execution_Language",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Business_Process_Execution_Language"
+  ],
+  "official_websites": [
+    {
+      "label": "OASIS WSBPEL TC Webpage",
+      "url": "http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wsbpel"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Core WS-BPEL: Business Process Execution Language by Matjaz B. Juric [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/core-ws-bpel-business-process"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "business-processes/bpel"
+}

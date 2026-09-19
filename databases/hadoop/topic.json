@@ -1,0 +1,49 @@
+{
+  "id": "Hadoop",
+  "slug": "hadoop",
+  "title": "Hadoop",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#Hadoop",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Hadoop",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Hadoop"
+  ],
+  "official_websites": [
+    {
+      "label": "http://hadoop.apache.org/",
+      "url": "http://hadoop.apache.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Apache Hadoop by Eugene Ciurana and Masoud Kalali [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-apache-hadoop"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-apache-hadoop"
+      ]
+    },
+    {
+      "title": "Apache Hadoop Deployment: A Blueprint for Reliable Distributed Computing by Eugene Ciurana [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/deploying-hadoop"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/deploying-hadoop"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "databases/hadoop"
+}

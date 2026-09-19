@@ -1,0 +1,67 @@
+{
+  "id": "JavaEE",
+  "slug": "java-ee",
+  "title": "Java EE - Java Platform, Enterprise Edition",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#JavaEE",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.oracle.com/technetwork/java/javaee/",
+      "url": "http://www.oracle.com/technetwork/java/javaee/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Java",
+      "label": "Java"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Getting Started with Java EE Security by Masoud Kalali [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-java-ee"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-java-ee"
+      ]
+    },
+    {
+      "title": "Contexts and Dependency Injection for the Java EE Platform by Norman Richards [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/contexts-and-depencency"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/contexts-and-depencency"
+      ]
+    },
+    {
+      "title": "Java Enterprise Edition 6: The Most Elegant Enterprise Java Yet by Andrew Lee Rubinger [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/java-enterprise-edition-6-most"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/java-enterprise-edition-6-most"
+      ]
+    },
+    {
+      "title": "JavaTM Platform, Enterprise Edition 6  API Specification  [html] (oracle.com)",
+      "saved": [],
+      "online": [
+        "http://download.oracle.com/javaee/6/api/"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [],
+  "path": "frameworks-and-libraries/java-ee"
+}

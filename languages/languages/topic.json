@@ -1,0 +1,29 @@
+{
+  "id": "Languages",
+  "slug": "languages",
+  "title": "Languages",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Languages",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Languages",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Languages"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Codes for the Representation of Names of Languages (alpha-3/ISO 639-2, alpha-2/ISO 639-1) [html] (loc.gov)",
+      "saved": [],
+      "online": [
+        "http://www.loc.gov/standards/iso639-2/php/code_list.php"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.loc.gov/standards/iso639-2/php/code_list.php"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "languages/languages"
+}

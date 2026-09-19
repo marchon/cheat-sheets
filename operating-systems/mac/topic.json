@@ -1,0 +1,39 @@
+{
+  "id": "Mac",
+  "slug": "mac",
+  "title": "Mac, Macintosh",
+  "group": "operating-systems",
+  "source_anchor": "https://www.cheat-sheets.org/#Mac",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Macintosh",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Macintosh"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "OSX",
+      "label": "Mac OS X"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Mac-friendly Terminal Cheat Sheet [pdf] (alexyoung.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/OSX_KeyCombo_Reference_Guide.pdf"
+      ],
+      "online": [
+        "http://alexyoung.org/2006/09/06/macfriendly-terminal-cheat-sheet/"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/OSX_KeyCombo_Reference_Guide.pdf",
+      "filename": "OSX_KeyCombo_Reference_Guide.pdf"
+    }
+  ],
+  "path": "operating-systems/mac"
+}

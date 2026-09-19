@@ -1,0 +1,55 @@
+{
+  "id": "Catalyst",
+  "slug": "catalyst",
+  "title": "Catalyst",
+  "group": "frameworks-and-libraries",
+  "source_anchor": "https://www.cheat-sheets.org/#Catalyst",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Catalyst_(software)",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Catalyst_(software)"
+  ],
+  "official_websites": [
+    {
+      "label": "catalystframework.org",
+      "url": "http://www.catalystframework.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Perl",
+      "label": "Perl"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Catalyst Quick Reference Card by Andrew Ford [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Catalyst-Quick-Reference-Card.2011-12-12.pdf",
+        "https://www.cheat-sheets.org/saved-copy/catalyst-refcard-a4.2011-12-12.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "Catalyst::Manual [pdf] (cpan.org)",
+      "saved": [],
+      "online": [
+        "http://search.cpan.org/dist/Catalyst-Manual/lib/Catalyst/Manual.pm"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Catalyst-Quick-Reference-Card.2011-12-12.pdf",
+      "filename": "Catalyst-Quick-Reference-Card.2011-12-12.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/catalyst-refcard-a4.2011-12-12.pdf",
+      "filename": "catalyst-refcard-a4.2011-12-12.pdf"
+    }
+  ],
+  "path": "frameworks-and-libraries/catalyst"
+}

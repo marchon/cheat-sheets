@@ -1,0 +1,138 @@
+{
+  "id": "XHTML",
+  "slug": "xhtml",
+  "title": "XHTML - eXtensible HyperText Markup Language",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#XHTML",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/XHTML",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/XHTML"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.w3.org/MarkUp/",
+      "url": "http://www.w3.org/MarkUp/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "CSS",
+      "label": "CSS"
+    },
+    {
+      "id": "DOM",
+      "label": "DOM"
+    },
+    {
+      "id": "HTML",
+      "label": "HTML"
+    },
+    {
+      "id": "JavaScript",
+      "label": "JavaScript"
+    },
+    {
+      "id": "MathML",
+      "label": "MathML"
+    },
+    {
+      "id": "VoiceXML",
+      "label": "VoiceXML"
+    },
+    {
+      "id": "XML",
+      "label": "XML"
+    },
+    {
+      "id": "XMLSchema",
+      "label": "XML Schema"
+    },
+    {
+      "id": "XPath",
+      "label": "XPath"
+    },
+    {
+      "id": "XSL",
+      "label": "XSL"
+    },
+    {
+      "id": "XSLT",
+      "label": "XSLT"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "HTML/XHTML in one page by Alexander Krassotkin [html] (html.su)",
+      "saved": [],
+      "online": [
+        "http://cheat-sheets.org/sites/html.su/"
+      ],
+      "archived": []
+    },
+    {
+      "title": "XHTML Cheat Sheet [pdf] (cdburnerxp.se)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/htmlcheatsheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "(X)HTML Elements and Attributes [html] (cookwood.com)",
+      "saved": [],
+      "online": [
+        "http://www.cookwood.com/html/extras/xhtml_ref.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.cookwood.com/html/extras/xhtml_ref.html"
+      ]
+    },
+    {
+      "title": "HTML & XHTML CheatSheet [html] (petefreitag.com)",
+      "saved": [],
+      "online": [
+        "http://www.petefreitag.com/cheatsheets/xhtml/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.petefreitag.com/cheatsheets/xhtml/"
+      ]
+    },
+    {
+      "title": "HTML & XHTML Tag Quick Reference [pdf] (albany.edu)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/HTML-XHTML_Tag_Sheet.pdf"
+      ],
+      "online": [
+        "http://library.albany.edu/imc/pdf/HTML-XHTML_Tag_Sheet.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "fcXHTML Reference [html.zip] (apple.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/fcXHTML-Reference.wdgt.zip"
+      ],
+      "online": [
+        "http://www.apple.com/downloads/dashboard/developer/fcxhtmlreference.html"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/htmlcheatsheet.pdf",
+      "filename": "htmlcheatsheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/HTML-XHTML_Tag_Sheet.pdf",
+      "filename": "HTML-XHTML_Tag_Sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/fcXHTML-Reference.wdgt.zip",
+      "filename": "fcXHTML-Reference.wdgt.zip"
+    }
+  ],
+  "path": "file-formats/xhtml"
+}

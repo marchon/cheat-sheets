@@ -1,0 +1,7 @@
+.grok-session
+restart.sh
+__pycache__/
+*.pyc
+.DS_Store
+*.part
+.firecrawl/

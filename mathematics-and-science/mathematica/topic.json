@@ -1,0 +1,66 @@
+{
+  "id": "Mathematica",
+  "slug": "mathematica",
+  "title": "Mathematica",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#Mathematica",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Mathematica",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Mathematica"
+  ],
+  "official_websites": [
+    {
+      "label": "wolfram.com/products/mathematica/",
+      "url": "http://www.wolfram.com/products/mathematica/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Maple",
+      "label": "Maple"
+    },
+    {
+      "id": "Math",
+      "label": "Math"
+    },
+    {
+      "id": "Mathomatic",
+      "label": "Mathomatic"
+    },
+    {
+      "id": "MATLAB",
+      "label": "MATLAB"
+    },
+    {
+      "id": "Maxima",
+      "label": "Maxima"
+    },
+    {
+      "id": "PARIGP",
+      "label": "PARI/GP"
+    },
+    {
+      "id": "SageMath",
+      "label": "SageMath"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Just Enough Mathematica to Make you Dangerous by Joe St Sauver, Ph.D. [pdf] (uoregon.edu/~joe/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/mathematica-cheat-sheet.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/mathematica-cheat-sheet.pdf",
+      "filename": "mathematica-cheat-sheet.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/mathematica"
+}

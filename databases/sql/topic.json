@@ -1,0 +1,166 @@
+{
+  "id": "SQL",
+  "slug": "sql",
+  "title": "SQL - Structured Query Language",
+  "group": "databases",
+  "source_anchor": "https://www.cheat-sheets.org/#SQL",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/SQL",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/SQL"
+  ],
+  "official_websites": [],
+  "see_also": [
+    {
+      "id": "DB2",
+      "label": "DB2"
+    },
+    {
+      "id": "MySQL",
+      "label": "MySQL"
+    },
+    {
+      "id": "Oracle",
+      "label": "Oracle"
+    },
+    {
+      "id": "PostgreSQL",
+      "label": "PostgreSQL"
+    },
+    {
+      "id": "SQLServer",
+      "label": "SQL Server"
+    },
+    {
+      "id": "SQLite",
+      "label": "SQLite"
+    },
+    {
+      "id": "Sybase",
+      "label": "Sybase"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "SQL in one page [html] (sql.su)",
+      "saved": [
+        "https://www.cheat-sheets.org/sites/sql.su/"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "SQL Cheatsheet [html] (3gwt.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/SQL_Cheatsheet.html"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "SQL Cheat Sheet [pdf, gif] (sqltutorial.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sqlcheetsheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/sqlcheetsheet.gif"
+      ],
+      "online": [
+        "http://www.sqltutorial.org/sql-cheat-sheet.aspx"
+      ],
+      "archived": []
+    },
+    {
+      "title": "SQL Cheat Sheet  [pdf] (sql-tutorial.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/SQL-Cheat-Sheet.pdf"
+      ],
+      "online": [
+        "http://www.sql-tutorial.net/SQL-Cheat-Sheet.pdf"
+      ],
+      "archived": []
+    },
+    {
+      "title": "SQL Tutorial - Learn SQL  [html] (sql-tutorial.net)",
+      "saved": [],
+      "online": [
+        "http://www.sql-tutorial.net/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.sql-tutorial.net/"
+      ]
+    },
+    {
+      "title": "SQL Commands by Muppix [html, pdf] (muppix.co)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/Muppix_SQL_commands.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "SQL Injection Cheat Sheet [html] (netsparker.com)",
+      "saved": [],
+      "online": [],
+      "archived": [
+        "https://web.archive.org/web/20210301162443/https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "SQL Injection Cheat Sheet [html] (invicti.com)",
+      "saved": [],
+      "online": [
+        "https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "SQL Injection  [html] (websec.ca)",
+      "saved": [],
+      "online": [
+        "http://www.websec.ca/kb/sql_injection"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.websec.ca/kb/sql_injection"
+      ]
+    },
+    {
+      "title": "SQL Injection [html] (hacktricks.xyz)",
+      "saved": [],
+      "online": [
+        "https://book.hacktricks.xyz/pentesting-web/sql-injection"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://book.hacktricks.xyz/pentesting-web/sql-injection"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/sites/sql.su/",
+      "filename": "/sites/sql.su/"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/SQL_Cheatsheet.html",
+      "filename": "SQL_Cheatsheet.html"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sqlcheetsheet.pdf",
+      "filename": "sqlcheetsheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sqlcheetsheet.gif",
+      "filename": "sqlcheetsheet.gif"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/SQL-Cheat-Sheet.pdf",
+      "filename": "SQL-Cheat-Sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/Muppix_SQL_commands.pdf",
+      "filename": "Muppix_SQL_commands.pdf"
+    }
+  ],
+  "path": "databases/sql"
+}

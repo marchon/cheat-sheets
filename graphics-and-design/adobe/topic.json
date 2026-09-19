@@ -1,0 +1,94 @@
+{
+  "id": "Adobe",
+  "slug": "adobe",
+  "title": "Adobe Systems",
+  "group": "graphics-and-design",
+  "source_anchor": "https://www.cheat-sheets.org/#Adobe",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Adobe_Systems",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Adobe_Systems"
+  ],
+  "official_websites": [
+    {
+      "label": "adobe.com",
+      "url": "https://www.adobe.com/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "AdobeAcrobat",
+      "label": "Adobe Acrobat"
+    },
+    {
+      "id": "ColdFusion",
+      "label": "Adobe ColdFusion"
+    },
+    {
+      "id": "Illustrator",
+      "label": "Adobe Illustrator"
+    },
+    {
+      "id": "InDesign",
+      "label": "InDesign"
+    },
+    {
+      "id": "Photoshop",
+      "label": "Adobe Photoshop"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "The Ultimate Adobe Creative Cloud Keyboard Shortcuts Cheat Sheet by Jamie Spencer [html, jpg] (makeawebsitehub.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/2015-ultimate-adobe-cc-keyboard-shortcuts-cheatsheet.jpg"
+      ],
+      "online": [
+        "https://makeawebsitehub.com/adobe-creative-cloud-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://makeawebsitehub.com/adobe-creative-cloud-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "Adobe CC Keyboard Cheat Sheet For Web Designers 2016 by Jamie Spencer [html, jpg] (makeawebsitehub.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/adobe-cc-cheat-sheet-for-web-developers-2016.jpg"
+      ],
+      "online": [
+        "https://makeawebsitehub.com/adobe-web-designer-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://makeawebsitehub.com/adobe-web-designer-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "Adobe CC Photographers Keyboard Shortcuts Cheat Sheet 2016 by Jamie Spencer [html, jpg] (makeawebsitehub.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/adobe-cc-keyboard-shortcuts-cheat-sheet-for-photographers-2016.jpg"
+      ],
+      "online": [
+        "https://makeawebsitehub.com/adobe-cc-photographers-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://makeawebsitehub.com/adobe-cc-photographers-cheat-sheet/"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/2015-ultimate-adobe-cc-keyboard-shortcuts-cheatsheet.jpg",
+      "filename": "2015-ultimate-adobe-cc-keyboard-shortcuts-cheatsheet.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/adobe-cc-cheat-sheet-for-web-developers-2016.jpg",
+      "filename": "adobe-cc-cheat-sheet-for-web-developers-2016.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/adobe-cc-keyboard-shortcuts-cheat-sheet-for-photographers-2016.jpg",
+      "filename": "adobe-cc-keyboard-shortcuts-cheat-sheet-for-photographers-2016.jpg"
+    }
+  ],
+  "path": "graphics-and-design/adobe"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "Solidity",
+  "slug": "solidity",
+  "title": "Solidity W",
+  "group": "languages",
+  "source_anchor": "https://www.cheat-sheets.org/#Solidity",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "github.com/ethereum/solidity",
+      "url": "https://github.com/ethereum/solidity"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Solidity v0.8.15 cheatsheet by Ethereum [html] (soliditylang.org)",
+      "saved": [],
+      "online": [
+        "https://docs.soliditylang.org/en/v0.8.15/cheatsheet.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://docs.soliditylang.org/en/v0.8.15/cheatsheet.html"
+      ]
+    },
+    {
+      "title": "Solidity Cheatsheet and Best practices by Manoj (manojpramesh) [html] (github.com)",
+      "saved": [],
+      "online": [
+        "https://github.com/manojpramesh/solidity-cheatsheet"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/manojpramesh/solidity-cheatsheet"
+      ]
+    },
+    {
+      "title": "Solidity Cheatsheet for version 0.4.25 by topmonks [html] (topmonks.github.io)",
+      "saved": [],
+      "online": [
+        "https://topmonks.github.io/solidity_quick_ref/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://topmonks.github.io/solidity_quick_ref/"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "languages/solidity"
+}

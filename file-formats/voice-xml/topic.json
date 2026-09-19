@@ -1,0 +1,64 @@
+{
+  "id": "VoiceXML",
+  "slug": "voice-xml",
+  "title": "VoiceXML - Voice Markup Language",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#VoiceXML",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/VoiceXML",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/VoiceXML"
+  ],
+  "official_websites": [
+    {
+      "label": "http://www.w3.org/Voice/",
+      "url": "http://www.w3.org/Voice/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "XML",
+      "label": "XHTML"
+    },
+    {
+      "id": "XML",
+      "label": "XML"
+    },
+    {
+      "id": "XMLSchema",
+      "label": "XML Schema"
+    },
+    {
+      "id": "XPath",
+      "label": "XPath"
+    },
+    {
+      "id": "XSL",
+      "label": "XSL"
+    },
+    {
+      "id": "XSLT",
+      "label": "XSLT"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "VoiceXML: elements - attributes [pdf] (zvon.org)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sheet_voiceXML_el_attr.pdf"
+      ],
+      "online": [
+        "http://www.zvon.org/download2_cheatsheet.php/sheet_voiceXML_el_attr.pdf?title=VoiceXML%3A+elements+-+attributes"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sheet_voiceXML_el_attr.pdf",
+      "filename": "sheet_voiceXML_el_attr.pdf"
+    }
+  ],
+  "path": "file-formats/voice-xml"
+}

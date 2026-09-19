@@ -1,0 +1,26 @@
+{
+  "id": "OpenGraph",
+  "slug": "open-graph",
+  "title": "The Open Graph protocol (og:)",
+  "group": "file-formats",
+  "source_anchor": "https://www.cheat-sheets.org/#OpenGraph",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "ogp.me",
+      "url": "https://ogp.me/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "HTML",
+      "label": "HTML"
+    }
+  ],
+  "tools": [],
+  "items": [],
+  "saved_copies": [],
+  "path": "file-formats/open-graph"
+}

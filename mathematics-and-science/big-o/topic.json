@@ -1,0 +1,48 @@
+{
+  "id": "BigO",
+  "slug": "big-o",
+  "title": "Big O",
+  "group": "mathematics-and-science",
+  "source_anchor": "https://www.cheat-sheets.org/#BigO",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Big_O_notation",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Big_O_notation"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "BIG-O-CHEATSHEET [png] (bigocheatsheet.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/big-o-cheat-sheet-poster.png"
+      ],
+      "online": [
+        "http://bigocheatsheet.com/img/big-o-cheat-sheet-poster.png"
+      ],
+      "archived": []
+    },
+    {
+      "title": "Big-O Poster by ro31337 [pdf] (github.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/bigoposter.pdf"
+      ],
+      "online": [
+        "https://github.com/ro31337/bigoposter/blob/master/bigoposter.pdf"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/big-o-cheat-sheet-poster.png",
+      "filename": "big-o-cheat-sheet-poster.png"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/bigoposter.pdf",
+      "filename": "bigoposter.pdf"
+    }
+  ],
+  "path": "mathematics-and-science/big-o"
+}

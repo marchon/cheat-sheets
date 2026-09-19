@@ -1,0 +1,44 @@
+{
+  "id": "Sed",
+  "slug": "sed",
+  "title": "Sed - Stream EDitor",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#Sed",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Sed",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Sed"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Sed Command Summary (sed cheat sheet) by Peteris Krumins [doc, pdf, txt] (catonmat.net)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/sed.stream.editor.cheat.sheet.doc",
+        "https://www.cheat-sheets.org/saved-copy/sed.stream.editor.cheat.sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/sed.stream.editor.cheat.sheet.txt"
+      ],
+      "online": [
+        "http://www.catonmat.net/blog/sed-stream-editor-cheat-sheet/"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sed.stream.editor.cheat.sheet.doc",
+      "filename": "sed.stream.editor.cheat.sheet.doc"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sed.stream.editor.cheat.sheet.pdf",
+      "filename": "sed.stream.editor.cheat.sheet.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/sed.stream.editor.cheat.sheet.txt",
+      "filename": "sed.stream.editor.cheat.sheet.txt"
+    }
+  ],
+  "path": "gnu-linux-commands/sed"
+}

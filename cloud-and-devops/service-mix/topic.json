@@ -1,0 +1,43 @@
+{
+  "id": "ServiceMix",
+  "slug": "service-mix",
+  "title": "ServiceMix (Apache ServiceMix)",
+  "group": "cloud-and-devops",
+  "source_anchor": "https://www.cheat-sheets.org/#ServiceMix",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Apache_ServiceMix",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Apache_ServiceMix"
+  ],
+  "official_websites": [
+    {
+      "label": "servicemix.apache.org",
+      "url": "http://servicemix.apache.org/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Apache",
+      "label": "Apache"
+    },
+    {
+      "id": "Mule",
+      "label": "Mule"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "ServiceMix 4.2: The Apache Open Source ESB by Jos Dirksen [pdf] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/servicemix"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/servicemix"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "cloud-and-devops/service-mix"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "MicrosoftOffice",
+  "slug": "microsoft-office",
+  "title": "Microsoft Office",
+  "group": "applications",
+  "source_anchor": "https://www.cheat-sheets.org/#MicrosoftOffice",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Microsoft_Office",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Microsoft_Office"
+  ],
+  "official_websites": [
+    {
+      "label": "www.office.com",
+      "url": "https://www.office.com/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "MicrosoftExcel",
+      "label": "Microsoft Excel"
+    },
+    {
+      "id": "MicrosoftProject",
+      "label": "Microsoft Project (MSP)"
+    },
+    {
+      "id": "MicrosoftVisualStudio",
+      "label": "Microsoft Visual Studio"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Quick Reference for Math in Microsoft Office by Hugues Hoppe [pdf, docx] (research.microsoft.com/~hoppe/)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/quick_reference_math_in_microsoft_office.pdf",
+        "https://www.cheat-sheets.org/saved-copy/quick_reference_math_in_microsoft_office.docx"
+      ],
+      "online": [
+        "http://research.microsoft.com/~hoppe/quick_reference_math_in_microsoft_office.pdf",
+        "http://research.microsoft.com/~hoppe/quick_reference_math_in_microsoft_office.docx"
+      ],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/quick_reference_math_in_microsoft_office.pdf",
+      "filename": "quick_reference_math_in_microsoft_office.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/quick_reference_math_in_microsoft_office.docx",
+      "filename": "quick_reference_math_in_microsoft_office.docx"
+    }
+  ],
+  "path": "applications/microsoft-office"
+}

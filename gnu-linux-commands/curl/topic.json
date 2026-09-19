@@ -1,0 +1,36 @@
+{
+  "id": "Curl",
+  "slug": "curl",
+  "title": "curl (cURL, Curl) W",
+  "group": "gnu-linux-commands",
+  "source_anchor": "https://www.cheat-sheets.org/#Curl",
+  "extra_ids": [],
+  "wikipedia": null,
+  "wikipedia_urls": [],
+  "official_websites": [
+    {
+      "label": "curl.se",
+      "url": "https://curl.se/"
+    },
+    {
+      "label": "github.com/curl",
+      "url": "https://github.com/curl"
+    }
+  ],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Awesome Curl Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "saved": [],
+      "online": [
+        "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/curl.sh"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/curl.sh"
+      ]
+    }
+  ],
+  "saved_copies": [],
+  "path": "gnu-linux-commands/curl"
+}

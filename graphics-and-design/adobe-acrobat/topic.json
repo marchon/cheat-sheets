@@ -1,0 +1,70 @@
+{
+  "id": "AdobeAcrobat",
+  "slug": "adobe-acrobat",
+  "title": "Adobe Acrobat",
+  "group": "graphics-and-design",
+  "source_anchor": "https://www.cheat-sheets.org/#AdobeAcrobat",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Adobe_Acrobat",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Adobe_Acrobat"
+  ],
+  "official_websites": [
+    {
+      "label": "adobe.com/products/acrobat/",
+      "url": "http://www.adobe.com/products/acrobat/"
+    }
+  ],
+  "see_also": [
+    {
+      "id": "Adobe",
+      "label": "Adobe Systems"
+    }
+  ],
+  "tools": [],
+  "items": [
+    {
+      "title": "Adobe Acrobat Quick Reference, Abobe Acrobat 8 Cheat Sheet [pdf]",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/acrobat-quick-reference-8.pdf"
+      ],
+      "online": [],
+      "archived": []
+    },
+    {
+      "title": "2015 Adobe Acrobat DC Keyboard Shortcuts Cheat Sheet by Jamie Spencer [html, jpg] (makeawebsitehub.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/2015-acrobat-dc-cheat-sheet.jpg"
+      ],
+      "online": [
+        "https://makeawebsitehub.com/acrobat-dc-keyboard-shortcuts-cheat-sheet/"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://makeawebsitehub.com/acrobat-dc-keyboard-shortcuts-cheat-sheet/"
+      ]
+    },
+    {
+      "title": "Acrobat Pro DC by Ton Haarmans [pdf] (wideopenwindows.be)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/acrobat_DC_Pro_Win.pdf"
+      ],
+      "online": [],
+      "archived": []
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/acrobat-quick-reference-8.pdf",
+      "filename": "acrobat-quick-reference-8.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/2015-acrobat-dc-cheat-sheet.jpg",
+      "filename": "2015-acrobat-dc-cheat-sheet.jpg"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/acrobat_DC_Pro_Win.pdf",
+      "filename": "acrobat_DC_Pro_Win.pdf"
+    }
+  ],
+  "path": "graphics-and-design/adobe-acrobat"
+}

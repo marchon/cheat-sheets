@@ -1,0 +1,62 @@
+{
+  "id": "UML",
+  "slug": "uml",
+  "title": "UML - Unified Modeling Language",
+  "group": "business-processes",
+  "source_anchor": "https://www.cheat-sheets.org/#UML",
+  "extra_ids": [],
+  "wikipedia": "https://en.wikipedia.org/wiki/Unified_Modeling_Language",
+  "wikipedia_urls": [
+    "https://en.wikipedia.org/wiki/Unified_Modeling_Language"
+  ],
+  "official_websites": [],
+  "see_also": [],
+  "tools": [],
+  "items": [
+    {
+      "title": "Allen Holub's UML Quick Reference [html] (holub.com)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/UML%20Reference%20Card.pdf"
+      ],
+      "online": [
+        "http://www.holub.com/goodies/uml/index.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://www.holub.com/goodies/uml/index.html"
+      ]
+    },
+    {
+      "title": "UML Quick Reference Card by Laurent Grégoire [pdf] (tnerual.eriogerg.free.fr)",
+      "saved": [
+        "https://www.cheat-sheets.org/saved-copy/umlqrc.pdf"
+      ],
+      "online": [
+        "http://tnerual.eriogerg.free.fr/uml.html"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/http://tnerual.eriogerg.free.fr/uml.html"
+      ]
+    },
+    {
+      "title": "Getting Started with UML by James Sugrue [pdf zip] (dzone.com)",
+      "saved": [],
+      "online": [
+        "https://dzone.com/refcardz/getting-started-uml"
+      ],
+      "archived": [
+        "https://web.archive.org/web/*/https://dzone.com/refcardz/getting-started-uml"
+      ]
+    }
+  ],
+  "saved_copies": [
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/UML%20Reference%20Card.pdf",
+      "filename": "UML Reference Card.pdf"
+    },
+    {
+      "url": "https://www.cheat-sheets.org/saved-copy/umlqrc.pdf",
+      "filename": "umlqrc.pdf"
+    }
+  ],
+  "path": "business-processes/uml"
+}
