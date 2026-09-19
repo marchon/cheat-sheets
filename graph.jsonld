@@ -2479,7 +2479,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/ada/#saved-2",
       "name": "Ada Reference Card.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/ada/saved-copy/Ada%2520Reference%2520Card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/ada/saved-copy/Ada%20Reference%20Card.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/ada/#topic"
@@ -2520,7 +2520,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/ada/#saved-3",
       "name": "Ada Syntax Card.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/ada/saved-copy/Ada%2520Syntax%2520Card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/ada/saved-copy/Ada%20Syntax%20Card.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/ada/#topic"
@@ -11064,7 +11064,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/csharp/#saved-2",
       "name": "Core CSharp and .NET Quick Reference.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/csharp/saved-copy/Core%2520CSharp%2520and%2520.NET%2520Quick%2520Reference.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/csharp/saved-copy/Core%20CSharp%20and%20.NET%20Quick%20Reference.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/csharp/#topic"
@@ -11781,7 +11781,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/cpp/#saved-6",
       "name": "STL Quick Reference 1.29.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/cpp/saved-copy/STL%2520Quick%2520Reference%25201.29.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/cpp/saved-copy/STL%20Quick%20Reference%201.29.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/cpp/#topic"
@@ -18607,7 +18607,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/css/#saved-10",
       "name": "Cascading Style Sheets 1.0.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/file-formats/css/saved-copy/Cascading%2520Style%2520Sheets%25201.0.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/file-formats/css/saved-copy/Cascading%20Style%20Sheets%201.0.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/css/#topic"
@@ -21550,7 +21550,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/delphi/#saved-1",
       "name": "Delphi Technical Reference Card 7.20.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/delphi/saved-copy/Delphi%2520Technical%2520Reference%2520Card%25207.20.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/delphi/saved-copy/Delphi%20Technical%20Reference%20Card%207.20.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/delphi/#topic"
@@ -25212,7 +25212,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#saved-1",
       "name": "EJB 2.0 Matrix.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/saved-copy/EJB%25202.0%2520Matrix.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/saved-copy/EJB%202.0%20Matrix.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#topic"
@@ -25253,7 +25253,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#saved-2",
       "name": "Exception Handling in EJB 2.0.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/saved-copy/Exception%2520Handling%2520in%2520EJB%25202.0.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/saved-copy/Exception%20Handling%20in%20EJB%202.0.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#topic"
@@ -33502,7 +33502,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/online-data-services/google/#saved-1",
       "name": "Google Cheat Sheet.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/online-data-services/google/saved-copy/Google%2520Cheat%2520Sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/online-data-services/google/saved-copy/Google%20Cheat%20Sheet.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/online-data-services/google/#topic"
@@ -41393,7 +41393,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/java/#saved-2",
       "name": "JAVA Programming Guide - Quick Reference.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/java/saved-copy/JAVA%2520Programming%2520Guide%2520-%2520Quick%2520Reference.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/java/saved-copy/JAVA%20Programming%20Guide%20-%20Quick%20Reference.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/java/#topic"
@@ -41434,7 +41434,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/java/#saved-3",
       "name": "SAX 2.0 for Java (Core).pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/java/saved-copy/SAX%25202.0%2520for%2520Java%2520%28Core%29.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/java/saved-copy/SAX%202.0%20for%20Java%20%28Core%29.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/java/#topic"
@@ -41475,7 +41475,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/java/#saved-4",
       "name": "SAX 2.0 for Java (Extensions and Helpers).pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/java/saved-copy/SAX%25202.0%2520for%2520Java%2520%28Extensions%2520and%2520Helpers%29.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/java/saved-copy/SAX%202.0%20for%20Java%20%28Extensions%20and%20Helpers%29.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/java/#topic"
@@ -45418,7 +45418,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#saved-3",
       "name": "JSP Syntax.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/web/jsp/saved-copy/JSP%2520Syntax.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/jsp/saved-copy/JSP%20Syntax.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
@@ -45459,7 +45459,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#saved-4",
       "name": "JSP Quick Reference Card.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/web/jsp/saved-copy/JSP%2520Quick%2520Reference%2520Card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/jsp/saved-copy/JSP%20Quick%20Reference%20Card.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
@@ -45819,7 +45819,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/junit/#saved-1",
       "name": "JUnit Quick Reference.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/junit/saved-copy/JUnit%2520Quick%2520Reference.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/junit/saved-copy/JUnit%20Quick%20Reference.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/junit/#topic"
@@ -46193,7 +46193,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/julia/#saved-4",
       "name": "Julia Colors.odt",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/julia/saved-copy/Julia%2520Colors.odt",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/julia/saved-copy/Julia%20Colors.odt",
       "encodingFormat": "application/vnd.oasis.opendocument.text",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/julia/#topic"
@@ -48639,7 +48639,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-3",
       "name": "The One Page Linux Manual.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/The%2520One%2520Page%2520Linux%2520Manual.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/The%20One%20Page%20Linux%20Manual.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
@@ -63778,7 +63778,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#saved-2",
       "name": "ORACLE Server Architecture.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/databases/oracle/saved-copy/ORACLE%2520Server%2520Architecture.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/oracle/saved-copy/ORACLE%20Server%20Architecture.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
@@ -63819,7 +63819,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#saved-3",
       "name": "ORACLE Server 8i Quick Reference Card.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/databases/oracle/saved-copy/ORACLE%2520Server%25208i%2520Quick%2520Reference%2520Card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/oracle/saved-copy/ORACLE%20Server%208i%20Quick%20Reference%20Card.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
@@ -66599,7 +66599,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-9",
       "name": "PERL Win32 Quick Reference.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/PERL%2520Win32%2520Quick%2520Reference.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/PERL%20Win32%20Quick%20Reference.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
@@ -72777,7 +72777,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/python/#saved-20",
       "name": "Python 2.6 Quick Reference.htm",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/python/saved-copy/Python%25202.6%2520Quick%2520Reference.htm",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/python/saved-copy/Python%202.6%20Quick%20Reference.htm",
       "encodingFormat": "text/html",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/python/#topic"
@@ -76951,7 +76951,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/ruby/#saved-4",
       "name": "Ruby Language QuickRef.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/ruby/saved-copy/Ruby%2520Language%2520QuickRef.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/ruby/saved-copy/Ruby%20Language%20QuickRef.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/ruby/#topic"
@@ -76992,7 +76992,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/ruby/#saved-5",
       "name": "Ruby Library QuickRef.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/ruby/saved-copy/Ruby%2520Library%2520QuickRef.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/ruby/saved-copy/Ruby%20Library%20QuickRef.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/ruby/#topic"
@@ -85841,7 +85841,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/version-control/svn/#saved-4",
       "name": "Cheat Sheet Subversion.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/version-control/svn/saved-copy/Cheat%2520Sheet%2520Subversion.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/svn/saved-copy/Cheat%20Sheet%20Subversion.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/version-control/svn/#topic"
@@ -88762,7 +88762,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-8",
       "name": "AMSTeX Reference Card 1.3.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/saved-copy/AMSTeX%2520Reference%2520Card%25201.3.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/saved-copy/AMSTeX%20Reference%20Card%201.3.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#topic"
@@ -91181,7 +91181,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#saved-1",
       "name": "UML Reference Card.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/saved-copy/UML%2520Reference%2520Card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/saved-copy/UML%20Reference%20Card.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#topic"
@@ -91997,7 +91997,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-2",
       "name": "UNIX commands reference card.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/saved-copy/UNIX%2520commands%2520reference%2520card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/saved-copy/UNIX%20commands%20reference%20card.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
@@ -96188,7 +96188,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-16",
       "name": "Vi Reference Card.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/Vi%2520Reference%2520Card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/Vi%20Reference%20Card.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
@@ -96270,7 +96270,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-18",
       "name": "vi Reference Card (HP).pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi%2520Reference%2520Card%2520%28HP%29.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi%20Reference%20Card%20%28HP%29.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
@@ -96311,7 +96311,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-19",
       "name": "vi Quick Reference.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi%2520Quick%2520Reference.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi%20Quick%20Reference.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
@@ -97807,7 +97807,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/languages/visual-basic/#saved-2",
       "name": "VB.NET Quick Reference.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/visual-basic/saved-copy/VB.NET%2520Quick%2520Reference.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/visual-basic/saved-copy/VB.NET%20Quick%20Reference.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/languages/visual-basic/#topic"
@@ -104245,7 +104245,7 @@
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/xsl/#saved-1",
       "name": "Extensible Stylesheet Language (XSL) 1.0.pdf",
-      "url": "https://cheat-sheet-index.georgelambert.org/file-formats/xsl/saved-copy/Extensible%2520Stylesheet%2520Language%2520%28XSL%29%25201.0.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/file-formats/xsl/saved-copy/Extensible%20Stylesheet%20Language%20%28XSL%29%201.0.pdf",
       "encodingFormat": "application/pdf",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/xsl/#topic"

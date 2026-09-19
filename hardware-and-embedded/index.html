@@ -1284,6 +1284,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 </style>
 </head>
 <body>
@@ -1293,6 +1295,16 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Hardware, embedded boards, and parallel compute APIs.</p>
   </header>
   <main>
+    <h2>Printable quick references</h2>
+    <ul class="printables">
+      <li><a href="/hardware-and-embedded/arduino/saved-copy/Arduino-cheat-sheet-v02c.pdf">Arduino — Arduino-cheat-sheet-v02c.pdf</a></li>
+      <li><a href="/hardware-and-embedded/arduino/saved-copy/Arduino-cheat-sheet-v02c.png">Arduino — Arduino-cheat-sheet-v02c.png</a></li>
+      <li><a href="/hardware-and-embedded/hardware/saved-copy/Computer_hardware_poster_1_7_by_Sonic840.png">Hardware — Computer_hardware_poster_1_7_by_Sonic840.png</a></li>
+      <li><a href="/hardware-and-embedded/open-cl/saved-copy/opencl-1-2-quick-reference-card.pdf">OpenCL — opencl-1-2-quick-reference-card.pdf</a></li>
+      <li><a href="/hardware-and-embedded/open-cl/saved-copy/opencl-1-1-quick-reference-card.pdf">OpenCL — opencl-1-1-quick-reference-card.pdf</a></li>
+      <li><a href="/hardware-and-embedded/open-mp/saved-copy/OpenMP_reference.pdf">OpenMP (Open Multi-Processing) — OpenMP_reference.pdf</a></li>
+    </ul>
+    <h2>Topics</h2>
     <ul>
       <li><a href="/hardware-and-embedded/arduino/">Arduino</a></li>
       <li><a href="/hardware-and-embedded/hardware/">Hardware</a></li>

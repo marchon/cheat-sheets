@@ -937,6 +937,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 </style>
 </head>
 <body>
@@ -946,43 +948,26 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Eclipse cheat sheets from cheat-sheets.org.</p>
   </header>
   <main>
-    <p><a href="https://www.cheat-sheets.org/#Eclipse">Original listing on cheat-sheets.org</a></p>
-    <h2>Official websites</h2>
-    <ul>
-      <li><a href="http://www.eclipse.org/">eclipse.org</a></li>
+    <p class="meta">Group: <a href="/editors-and-ides/">Editors and IDEs</a></p>
+    <h2>Printable quick references</h2>
+    <ul class="printables">
+      <li><a href="/editors-and-ides/eclipse/saved-copy/eclipse_cdt_6_0_cheatsheet_0.1.pdf">eclipse_cdt_6_0_cheatsheet_0.1.pdf</a></li>
+      <li><a href="/editors-and-ides/eclipse/saved-copy/eclipse_cdt_cheatsheet_300dpi.png">eclipse_cdt_cheatsheet_300dpi.png</a></li>
+      <li><a href="/editors-and-ides/eclipse/saved-copy/eclipse_cdt_cheatsheet_600dpi.png">eclipse_cdt_cheatsheet_600dpi.png</a></li>
+      <li><a href="/editors-and-ides/eclipse/saved-copy/EclipseEmacsKeybindings_3_1.pdf">EclipseEmacsKeybindings_3_1.pdf</a></li>
+      <li><a href="/editors-and-ides/eclipse/saved-copy/EclipseEmacsKeybindings_3_1.rtf">EclipseEmacsKeybindings_3_1.rtf</a></li>
+      <li><a href="/editors-and-ides/eclipse/saved-copy/eclipseCDT8.0-cheatsheet.pdf">eclipseCDT8.0-cheatsheet.pdf</a></li>
     </ul>
-    <h2>Wikipedia</h2>
-    <ul>
-      <li><a href="https://en.wikipedia.org/wiki/Eclipse_%28software%29">https://en.wikipedia.org/wiki/Eclipse_%28software%29</a> · <a href="wikipedia.md">local clone</a></li>
-    </ul>
-    <h2>Saved copies</h2>
-    <ul>
-      <li><a href="saved-copy/eclipse_cdt_6_0_cheatsheet_0.1.pdf">eclipse_cdt_6_0_cheatsheet_0.1.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/eclipse_cdt_6_0_cheatsheet_0.1.pdf">source</a></li>
-      <li><a href="saved-copy/eclipse_cdt_cheatsheet_300dpi.png">eclipse_cdt_cheatsheet_300dpi.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/eclipse_cdt_cheatsheet_300dpi.png">source</a></li>
-      <li><a href="saved-copy/eclipse_cdt_cheatsheet_600dpi.png">eclipse_cdt_cheatsheet_600dpi.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/eclipse_cdt_cheatsheet_600dpi.png">source</a></li>
-      <li><a href="saved-copy/EclipseEmacsKeybindings_3_1.pdf">EclipseEmacsKeybindings_3_1.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/EclipseEmacsKeybindings_3_1.pdf">source</a></li>
-      <li><a href="saved-copy/EclipseEmacsKeybindings_3_1.rtf">EclipseEmacsKeybindings_3_1.rtf</a> · <a href="https://www.cheat-sheets.org/saved-copy/EclipseEmacsKeybindings_3_1.rtf">source</a></li>
-      <li><a href="saved-copy/eclipseCDT8.0-cheatsheet.pdf">eclipseCDT8.0-cheatsheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/eclipseCDT8.0-cheatsheet.pdf">source</a></li>
-    </ul>
-    <h2>Cheat sheets</h2>
-    <ul>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/eclipse_cdt_6_0_cheatsheet_0.1.pdf">Eclipse CDT Keyboard Shortcuts Cheat Sheet by Etienne Savard [pdf, png 300 dpi, png 600 dpi] (symbiosoft.net)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/EclipseEmacsKeybindings_3_1.pdf">Eclipse Keyboard Shortcuts by Jesper Kamstrup Linnet [pdf, rtf] (eclipse-tools.sourceforge.net)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/eclipseCDT8.0-cheatsheet.pdf">Eclipse CDT 8.0 Cheat Sheet [pdf] (triada.si)</a></li>
-      <li><a href="https://dzone.com/refcardz/getting-started-eclipse">Getting Started with Eclipse by Ed Burnette &amp; Adam Houghton [pdf] (dzone.com)</a></li>
-      <li><a href="https://dzone.com/refcardz/getting-started-eclipse-rcp">Getting Started with Eclipse RCP by James Sugrue [pdf] (dzone.com)</a></li>
-      <li><a href="https://dzone.com/refcardz/eclipse-plug-development">Eclipse Plug-in Development by James Sugrue [pdf] (dzone.com)</a></li>
-      <li><a href="https://dzone.com/refcardz/essential-emf">Eclipse Modeling Framework: Essential EMF by Ed Merks and James Sugrue [pdf] (dzone.com)</a></li>
-      <li><a href="https://dzone.com/refcardz/myeclipse">Getting Started with MyEclipse by Riyad Kalla &amp; Jens Eckels [pdf] (dzone.com)</a></li>
-      <li><a href="https://dzone.com/refcardz/eclipse-tools-spring">Eclipse Tools for Spring: The SpringSource Tool Suite by Gordon Dickens, Chariot Solutions [pdf] (dzone.com)</a></li>
-    </ul>
+    <h2>Other local files</h2>
+    <p>None stored locally.</p>
+    <h2>Wikipedia (local)</h2>
+    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
     <h2>See also</h2>
     <ul>
       <li><a href="/business-processes/birt/">BIRT</a></li>
       <li><a href="/languages/java/">Java</a></li>
       <li><a href="/editors-and-ides/net-beans/">NetBeans</a></li>
     </ul>
-    <p class="meta">Group: <a href="/editors-and-ides/">Editors and IDEs</a></p>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

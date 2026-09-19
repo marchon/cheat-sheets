@@ -691,6 +691,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 </style>
 </head>
 <body>
@@ -700,34 +702,19 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Markdown (CommonMark) cheat sheets from cheat-sheets.org.</p>
   </header>
   <main>
-    <p><a href="https://www.cheat-sheets.org/#Markdown">Original listing on cheat-sheets.org</a></p>
-    <h2>Official websites</h2>
-    <ul>
-      <li><a href="https://daringfireball.net/projects/markdown/">daringfireball.net/projects/markdown/</a></li>
+    <p class="meta">Group: <a href="/file-formats/">File formats</a></p>
+    <h2>Printable quick references</h2>
+    <ul class="printables">
+      <li><a href="/file-formats/markdown/saved-copy/markdown-cheatsheet-online.pdf">markdown-cheatsheet-online.pdf</a></li>
     </ul>
-    <h2>Wikipedia</h2>
+    <h2>Other local files</h2>
     <ul>
-      <li><a href="https://en.wikipedia.org/wiki/Markdown">https://en.wikipedia.org/wiki/Markdown</a> · <a href="wikipedia.md">local clone</a></li>
+      <li><a href="/file-formats/markdown/saved-copy/markdown-cheat-sheet.20220709.html">markdown-cheat-sheet.20220709.html</a></li>
     </ul>
-    <h2>Saved copies</h2>
-    <ul>
-      <li><a href="saved-copy/markdown-cheatsheet-online.pdf">markdown-cheatsheet-online.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/markdown-cheatsheet-online.pdf">source</a></li>
-      <li><a href="saved-copy/markdown-cheat-sheet.20220709.html">markdown-cheat-sheet.20220709.html</a> · <a href="https://www.cheat-sheets.org/saved-copy/markdown-cheat-sheet.20220709.html">source</a></li>
-    </ul>
-    <h2>Cheat sheets</h2>
-    <ul>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/markdown-cheatsheet-online.pdf">Markdown Syntax [pdf] (github.com)</a></li>
-      <li><a href="https://www.markdownguide.org/cheat-sheet/">Markdown Cheat Sheet (A quick reference to the Markdown syntax) by Matt Cone [html] (markdownguide.org)</a></li>
-      <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet by Adam Pritchard [html] (github.com)</a></li>
-      <li><a href="https://paperhive.org/help/markdown">Markdown cheat sheet by PaperHive UG [html] (paperhive.org)</a></li>
-      <li><a href="https://www.site24x7.com/help/markdown-cheat-sheet.html">Markdown Cheat Sheet by Zoho Corporation Pvt. Ltd  [html] (site24x7.com)</a></li>
-      <li><a href="https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0">The Ultimate Markdown Cheat Sheet by Mahbub Zaman [html] (towardsdatascience.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/markdown-cheat-sheet.20220709.html">Markdown cheat sheet [html] (warpedvisions.org)</a></li>
-      <li><a href="http://daringfireball.net/projects/markdown/syntax">Markdown: Syntax [html] (daringfireball.net)</a></li>
-    </ul>
+    <h2>Wikipedia (local)</h2>
+    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
     <h2>See also</h2>
     <p>None listed.</p>
-    <p class="meta">Group: <a href="/file-formats/">File formats</a></p>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

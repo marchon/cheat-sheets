@@ -2605,6 +2605,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 </style>
 </head>
 <body>
@@ -2614,81 +2616,42 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Git cheat sheets from cheat-sheets.org.</p>
   </header>
   <main>
-    <p><a href="https://www.cheat-sheets.org/#Git">Original listing on cheat-sheets.org</a></p>
-    <h2>Official websites</h2>
-    <ul>
-      <li><a href="http://git-scm.com/">git-scm.com</a></li>
+    <p class="meta">Group: <a href="/version-control/">Version control</a></p>
+    <h2>Printable quick references</h2>
+    <ul class="printables">
+      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-education.20211117.pdf">git-cheat-sheet-education.20211117.pdf</a></li>
+      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-large.png">git-cheat-sheet-large.png</a></li>
+      <li><a href="/version-control/git/saved-copy/git-cheat-sheet.pdf">git-cheat-sheet.pdf</a></li>
+      <li><a href="/version-control/git/saved-copy/git-cheat-sheet.svg">git-cheat-sheet.svg</a></li>
+      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-v2-front.svg">git-cheat-sheet-v2-front.svg</a></li>
+      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-v2-back.svg">git-cheat-sheet-v2-back.svg</a></li>
+      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-v2.pdf">git-cheat-sheet-v2.pdf</a></li>
+      <li><a href="/version-control/git/saved-copy/Git_Quick_Reference.2011-09-04.pdf">Git_Quick_Reference.2011-09-04.pdf</a></li>
+      <li><a href="/version-control/git/saved-copy/Git_Cheat_Sheet_grey.pdf">Git_Cheat_Sheet_grey.pdf</a></li>
+      <li><a href="/version-control/git/saved-copy/Top_20_Git_Commands_With_Examples.png">Top_20_Git_Commands_With_Examples.png</a></li>
+      <li><a href="/version-control/git/saved-copy/github-git-cheat-sheet-20220806.pdf">github-git-cheat-sheet-20220806.pdf</a></li>
+      <li><a href="/version-control/git/saved-copy/Git_for_Subversion_Users.pdf">Git_for_Subversion_Users.pdf</a></li>
+      <li><a href="/version-control/git/saved-copy/12_git_cheat_sheet.20210604.pdf">12_git_cheat_sheet.20210604.pdf</a></li>
+      <li><a href="/version-control/git/saved-copy/Basic_Git_commands_20211117.png">Basic_Git_commands_20211117.png</a></li>
+      <li><a href="/version-control/git/saved-copy/GIT_Bash_Commands.20211117.png">GIT_Bash_Commands.20211117.png</a></li>
+      <li><a href="/version-control/git/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf">SWTM-2088_Atlassian-Git-Cheatsheet.pdf</a></li>
+      <li><a href="/version-control/git/saved-copy/gitlab-git-cheat-sheet-20220806.pdf">gitlab-git-cheat-sheet-20220806.pdf</a></li>
+      <li><a href="/version-control/git/saved-copy/progit.20211117.pdf">progit.20211117.pdf</a></li>
     </ul>
-    <h2>Wikipedia</h2>
+    <h2>Other local files</h2>
     <ul>
-      <li><a href="https://en.wikipedia.org/wiki/Git_(software)">https://en.wikipedia.org/wiki/Git_(software)</a> · <a href="wikipedia.md">local clone</a></li>
+      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-v2.zip">git-cheat-sheet-v2.zip</a></li>
+      <li><a href="/version-control/git/saved-copy/GIT_Bash_Commands.20211117.md">GIT_Bash_Commands.20211117.md</a></li>
+      <li><a href="/version-control/git/saved-copy/git.memory.knots.html">git.memory.knots.html</a></li>
     </ul>
-    <h2>Saved copies</h2>
-    <ul>
-      <li><a href="saved-copy/git-cheat-sheet-education.20211117.pdf">git-cheat-sheet-education.20211117.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-education.20211117.pdf">source</a></li>
-      <li><a href="saved-copy/git-cheat-sheet-large.png">git-cheat-sheet-large.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-large.png">source</a></li>
-      <li><a href="saved-copy/git-cheat-sheet.pdf">git-cheat-sheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf">source</a></li>
-      <li><a href="saved-copy/git-cheat-sheet.svg">git-cheat-sheet.svg</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet.svg">source</a></li>
-      <li><a href="saved-copy/git-cheat-sheet-v2-front.svg">git-cheat-sheet-v2-front.svg</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-front.svg">source</a></li>
-      <li><a href="saved-copy/git-cheat-sheet-v2-back.svg">git-cheat-sheet-v2-back.svg</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-back.svg">source</a></li>
-      <li><a href="saved-copy/git-cheat-sheet-v2.pdf">git-cheat-sheet-v2.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2.pdf">source</a></li>
-      <li><a href="saved-copy/git-cheat-sheet-v2.zip">git-cheat-sheet-v2.zip</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2.zip">source</a></li>
-      <li><a href="saved-copy/Git_Quick_Reference.2011-09-04.pdf">Git_Quick_Reference.2011-09-04.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Git_Quick_Reference.2011-09-04.pdf">source</a></li>
-      <li><a href="saved-copy/Git_Cheat_Sheet_grey.pdf">Git_Cheat_Sheet_grey.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Git_Cheat_Sheet_grey.pdf">source</a></li>
-      <li><a href="saved-copy/Top_20_Git_Commands_With_Examples.png">Top_20_Git_Commands_With_Examples.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/Top_20_Git_Commands_With_Examples.png">source</a></li>
-      <li><a href="saved-copy/github-git-cheat-sheet-20220806.pdf">github-git-cheat-sheet-20220806.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/github-git-cheat-sheet-20220806.pdf">source</a></li>
-      <li><a href="saved-copy/Git_for_Subversion_Users.pdf">Git_for_Subversion_Users.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Git_for_Subversion_Users.pdf">source</a></li>
-      <li><a href="saved-copy/12_git_cheat_sheet.20210604.pdf">12_git_cheat_sheet.20210604.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/12_git_cheat_sheet.20210604.pdf">source</a></li>
-      <li><a href="saved-copy/Basic_Git_commands_20211117.png">Basic_Git_commands_20211117.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/Basic_Git_commands_20211117.png">source</a></li>
-      <li><a href="saved-copy/GIT_Bash_Commands.20211117.png">GIT_Bash_Commands.20211117.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.png">source</a></li>
-      <li><a href="saved-copy/GIT_Bash_Commands.20211117.md">GIT_Bash_Commands.20211117.md</a> · <a href="https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.md">source</a></li>
-      <li><a href="saved-copy/git.memory.knots.html">git.memory.knots.html</a> · <a href="https://www.cheat-sheets.org/saved-copy/git.memory.knots.html">source</a></li>
-      <li><a href="saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf">SWTM-2088_Atlassian-Git-Cheatsheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf">source</a></li>
-      <li><a href="saved-copy/gitlab-git-cheat-sheet-20220806.pdf">gitlab-git-cheat-sheet-20220806.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/gitlab-git-cheat-sheet-20220806.pdf">source</a></li>
-      <li><a href="saved-copy/progit.20211117.pdf">progit.20211117.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/progit.20211117.pdf">source</a></li>
-    </ul>
-    <h2>Cheat sheets</h2>
-    <ul>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-education.20211117.pdf">Git cheat sheet (the most important and commonly used Git commands for easy reference) [pdf] (education.github.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-large.png">GitCheatSheet by Zack Rusin [html, png, pdf, svg] (git.or.cz)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-front.svg">Git cheat sheet, extended edition prepared by Jan Krueger [svg front, svg back, pdf, pdf.zip] (git.or.cz)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/Git_Quick_Reference.2011-09-04.pdf">Git Quick Reference by Juan Pablo Justiniano [pdf] (jpjustiniano.wordpress.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/Git_Cheat_Sheet_grey.pdf">Git cheat sheet [pdf] (git-tower.com)</a></li>
-      <li><a href="https://dzone.com/refcardz/getting-started-git">Getting Started with Git by Matthew McCullough [pdf] (dzone.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/Top_20_Git_Commands_With_Examples.png">Top 20 Git Commands With Examples by  Sahiti Kappagantula [html] (dzone.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/github-git-cheat-sheet-20220806.pdf">Git Cheat Sheet - GitHub Training [pdf] (training.github.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/Git_for_Subversion_Users.pdf">Git for Subversion Users - A Cheat Sheet by Tobias Günther [pdf] (git-tower.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/12_git_cheat_sheet.20210604.pdf">The Simple Git Cheat Sheet – A Helpful Illustrated Guide [pdf] (finxter.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/Basic_Git_commands_20211117.png">Basic Git commands  [html] (atlassian.com)</a></li>
-      <li><a href="https://wiki.spheredev.org/index.php/Git_for_the_lazy">Git for the lazy [html] (spheredev.org)</a></li>
-      <li><a href="https://codewords.recurse.com/issues/two/git-from-the-inside-out">Git from the inside out by Mary Rose Cook [html] (codewords.recurse.com)</a></li>
-      <li><a href="http://guides.beanstalkapp.com/version-control/common-git-commands.html">Common Git Commands by Brian Kerr [html] (guides.beanstalkapp.com/)</a></li>
-      <li><a href="https://rovitpm.com/13-git-commands/">13 Git Commands Every Developer Must Know by Vikash Koushik [html] (rovitpm.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.png">GIT Bash Commands by Adam Lusted /etoxin/ [html, md] (github.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/git.memory.knots.html">git memory knots (git commands extremely short cheat sheet) by Alexander Krassotkin [html] (cheat-sheets.org)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf">Git Cheat Sheet [pdf] (atlassian.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/gitlab-git-cheat-sheet-20220806.pdf">Git Cheat Sheet by GitLab [pdf] (gitlab.com)</a></li>
-      <li><a href="https://dev.to/henryong92/yet-another-git-cheatsheet-4gjk">Yet Another Git Cheatsheet by Dumb Down Demistifying Dev (henryong92) [html] (dev.to)</a></li>
-      <li><a href="https://kbroman.org/github_tutorial/pages/init.html">Start a new git repository by Karl Broman [html] (kbroman.org)</a></li>
-      <li><a href="https://ohshitgit.com/">Oh Shit, Git!?! by Katie Sylor-Miller (ksylor) [html] (ohshitgit.com)</a></li>
-      <li><a href="https://dev.to/maxpou/git-cheat-sheet-advanced-3a17">Git: Cheat Sheet (advanced) by Maxence Poutord (maxpou) [html] (dev.to)</a></li>
-      <li><a href="https://www.jrebel.com/blog/git-cheat-sheet">Git Cheat Sheet: Commands and Best Practices by Simon Maple [html] (jrebel.com)</a></li>
-      <li><a href="http://cheat-sheets.org/project/tldr/command/git/">tldr git [html] (cheat-sheets.org) See also: git init , git clone , git add , git status , git commit , git remote , git push , git pull , etc.</a></li>
-      <li><a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/git.sh">Awesome Git Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)</a></li>
-      <li><a href="https://git-scm.com/">Git /The official Git site/  [html] (git-scm.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/progit.20211117.pdf">Pro Git book, written by Scott Chacon and Ben Straub [pdf] (git-scm.com)</a></li>
-      <li><a href="http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html">Official Git tutorial [html] (kernel.org)</a></li>
-      <li><a href="https://www.kernel.org/pub/software/scm/git/docs/giteveryday.html">Everyday GIT With 20 Commands Or So [html] (kernel.org)</a></li>
-      <li><a href="http://www.kernel.org/pub/software/scm/git/docs/user-manual.html">Git User’s Manual (for version 1.5.3 or newer) [html] (kernel.org)</a></li>
-      <li><a href="https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html">Start using Git on the command line [html] (gitlab.com)</a></li>
-    </ul>
+    <h2>Wikipedia (local)</h2>
+    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
     <h2>See also</h2>
     <ul>
       <li><a href="/version-control/bazaar/">Bazaar</a></li>
       <li><a href="/version-control/cvs/">CVS</a></li>
       <li><a href="/version-control/svn/">SVN</a></li>
     </ul>
-    <p class="meta">Group: <a href="/version-control/">Version control</a></p>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
-from urllib.parse import quote, urlparse
+from urllib.parse import quote, unquote, urlparse
 
 from classify import GROUPS
 
@@ -81,19 +81,19 @@ def group_id(group_id: str) -> str:
 def local_saved_url(topic: dict, sc: dict) -> str:
     raw = sc.get("url") or ""
     parsed = urlparse(raw)
-    path = parsed.path
+    path = unquote(parsed.path)
     if "/saved-copy/" in path:
         rel = path.split("/saved-copy/", 1)[1].lstrip("/")
         if not rel or rel.endswith("/") or not Path(rel).suffix:
             rel = rel.rstrip("/") + "/index.html"
-        return f"{BASE}/{topic['path']}/saved-copy/{quote(rel)}"
+        return f"{BASE}/{topic['path']}/saved-copy/{quote(rel, safe='/')}"
     if parsed.netloc.endswith("cheat-sheets.org"):
         rel = path.lstrip("/")
         if not rel or rel.endswith("/") or not Path(rel).suffix:
             rel = rel.rstrip("/") + "/index.html"
-        return f"{BASE}/{topic['path']}/hosted/{quote(rel)}"
+        return f"{BASE}/{topic['path']}/hosted/{quote(rel, safe='/')}"
     name = Path(path).name or "file"
-    return f"{BASE}/{topic['path']}/saved-copy/{quote(name)}"
+    return f"{BASE}/{topic['path']}/saved-copy/{quote(name, safe='/')}"
 
 
 def saved_node_id(topic: dict, index: int) -> str:

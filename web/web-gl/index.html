@@ -658,6 +658,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 </style>
 </head>
 <body>
@@ -667,33 +669,20 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">WebGL (Web-based Graphics Library) cheat sheets from cheat-sheets.org.</p>
   </header>
   <main>
-    <p><a href="https://www.cheat-sheets.org/#WebGL">Original listing on cheat-sheets.org</a></p>
-    <h2>Official websites</h2>
-    <ul>
-      <li><a href="http://www.khronos.org/webgl/">http://www.khronos.org/webgl/</a></li>
+    <p class="meta">Group: <a href="/web/">Web</a></p>
+    <h2>Printable quick references</h2>
+    <ul class="printables">
+      <li><a href="/web/web-gl/saved-copy/webgl-reference-card-1_0.pdf">webgl-reference-card-1_0.pdf</a></li>
+      <li><a href="/web/web-gl/saved-copy/WebGL_Cheat_Sheet.pdf">WebGL_Cheat_Sheet.pdf</a></li>
     </ul>
-    <h2>Wikipedia</h2>
+    <h2>Other local files</h2>
     <ul>
-      <li><a href="https://en.wikipedia.org/wiki/WebGL">https://en.wikipedia.org/wiki/WebGL</a> · <a href="wikipedia.md">local clone</a></li>
+      <li><a href="/web/web-gl/saved-copy/WebGL_Cheat_Sheet.htm">WebGL_Cheat_Sheet.htm</a></li>
     </ul>
-    <h2>Saved copies</h2>
-    <ul>
-      <li><a href="saved-copy/webgl-reference-card-1_0.pdf">webgl-reference-card-1_0.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/webgl-reference-card-1_0.pdf">source</a></li>
-      <li><a href="saved-copy/WebGL_Cheat_Sheet.htm">WebGL_Cheat_Sheet.htm</a> · <a href="https://www.cheat-sheets.org/saved-copy/WebGL_Cheat_Sheet.htm">source</a></li>
-      <li><a href="saved-copy/WebGL_Cheat_Sheet.pdf">WebGL_Cheat_Sheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/WebGL_Cheat_Sheet.pdf">source</a></li>
-    </ul>
-    <h2>Cheat sheets</h2>
-    <ul>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/webgl-reference-card-1_0.pdf">Official WebGL 1.0 API Quick Reference Card by Khronos Group &amp; Miller &amp; Mattson [pdf] (khronos.org/webgl/ &amp; millermattson.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/WebGL_Cheat_Sheet.htm">WebGL Cheat Sheet v0.2 by Jacob Seidelin [htm, pdf] (nihilogic.dk)</a></li>
-      <li><a href="https://www.khronos.org/registry/webgl/specs/1.0/">WebGL Specification Version 1.0 by Khronos Group [html] (khronos.org)</a></li>
-      <li><a href="http://www.khronos.org/webgl/wiki/Main_Page">WebGL Public Wiki by Khronos Group  [html] (khronos.org)</a></li>
-      <li><a href="https://developer.mozilla.org/en/WebGL">WebGL articles by Mozilla [html] (mozilla.org)</a></li>
-      <li><a href="http://learningwebgl.com/blog/?page_id=1217">The series of lessons as a way of teaching myself WebGL by Giles [html] (learningwebgl.com)</a></li>
-    </ul>
+    <h2>Wikipedia (local)</h2>
+    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
     <h2>See also</h2>
     <p>None listed.</p>
-    <p class="meta">Group: <a href="/web/">Web</a></p>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

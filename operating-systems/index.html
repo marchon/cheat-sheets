@@ -3646,6 +3646,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 </style>
 </head>
 <body>
@@ -3655,6 +3657,25 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Desktop/server OS families and distributions (See also: Linux, Unix).</p>
   </header>
   <main>
+    <h2>Printable quick references</h2>
+    <ul class="printables">
+      <li><a href="/operating-systems/debian/saved-copy/refcard-en-a4.pdf">Debian — refcard-en-a4.pdf</a></li>
+      <li><a href="/operating-systems/fedora/saved-copy/yumcheat_01_0.png">Fedora — yumcheat_01_0.png</a></li>
+      <li><a href="/operating-systems/fedora/saved-copy/yumcheat_02_0.png">Fedora — yumcheat_02_0.png</a></li>
+      <li><a href="/operating-systems/fedora/saved-copy/rh_yum_cheatsheet_1214_jcs_print-1.pdf">Fedora — rh_yum_cheatsheet_1214_jcs_print-1.pdf</a></li>
+      <li><a href="/operating-systems/mac/saved-copy/OSX_KeyCombo_Reference_Guide.pdf">Mac, Macintosh — OSX_KeyCombo_Reference_Guide.pdf</a></li>
+      <li><a href="/operating-systems/osx/saved-copy/OSX_KeyCombo_Reference_Guide.pdf">Mac OS X — OSX_KeyCombo_Reference_Guide.pdf</a></li>
+      <li><a href="/operating-systems/osx/saved-copy/2084227-Mac-OS-X-Terminal-Commands-list.pdf">Mac OS X — 2084227-Mac-OS-X-Terminal-Commands-list.pdf</a></li>
+      <li><a href="/operating-systems/open-vz/saved-copy/openvz-cheatsheet-v1.pdf">OpenVZ - Open operating system-level virtualization — openvz-cheatsheet-v1.pdf</a></li>
+      <li><a href="/operating-systems/solaris/saved-copy/Solaris_quickref.pdf">Solaris — Solaris_quickref.pdf</a></li>
+      <li><a href="/operating-systems/ubuntu/saved-copy/ubunturef.pdf">Ubuntu — ubunturef.pdf</a></li>
+      <li><a href="/operating-systems/windows/saved-copy/ResKit_Quickref.pdf">Windows — ResKit_Quickref.pdf</a></li>
+      <li><a href="/operating-systems/windows/saved-copy/Windows_folders_quickref.pdf">Windows — Windows_folders_quickref.pdf</a></li>
+      <li><a href="/operating-systems/windows-presentation-foundation/saved-copy/WpfBinding.pdf">Windows Presentation Foundation (WPF) — WpfBinding.pdf</a></li>
+      <li><a href="/operating-systems/windows-presentation-foundation/saved-copy/wpfcheatsheet.pdf">Windows Presentation Foundation (WPF) — wpfcheatsheet.pdf</a></li>
+      <li><a href="/operating-systems/windows-power-shell/saved-copy/windows_powershell2_cheat_sheet.pdf">Windows PowerShell — windows_powershell2_cheat_sheet.pdf</a></li>
+    </ul>
+    <h2>Topics</h2>
     <ul>
       <li><a href="/operating-systems/debian/">Debian</a></li>
       <li><a href="/operating-systems/fedora/">Fedora</a></li>

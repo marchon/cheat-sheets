@@ -6,6 +6,8 @@ import json
 import re
 from pathlib import Path
 
+from urllib.parse import quote, unquote, urlparse
+
 from classify import GROUPS
 from jsonld import (
     BASE,
@@ -144,6 +146,25 @@ PAGE = """<!DOCTYPE html>
     }
     section.group[hidden], article[hidden] { display: none; }
     section.group h2 { margin: 0 0 0.35rem; font-size: 1.2rem; }
+    .printables {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+      gap: 0.4rem;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1rem;
+    }
+    .printables a {
+      display: block;
+      min-height: 48px;
+      padding: 0.55rem 0.7rem;
+      border: 1px solid var(--line);
+      background: var(--bg);
+      text-decoration: none;
+      color: var(--ink);
+      border-radius: 0.35rem;
+    }
+    .printables a:hover { border-color: var(--accent); color: var(--accent); }
     .meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.8rem; }
     .topics {
       display: grid;
@@ -236,9 +257,44 @@ PAGE = """<!DOCTYPE html>
         .replaceAll('"', "&quot;");
     }
 
+    const PRINTABLE = new Set([".pdf", ".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".ps", ".dvi", ".odt", ".doc", ".docx", ".rtf", ".epub"]);
+
     function localSaved(topic, file) {
-      const name = file.filename.replace(/^\\/+/, "");
-      return encodeURI(`${topic.path}/saved-copy/${name}`);
+      const url = file.url || "";
+      let rel = "";
+      if (url.includes("/saved-copy/")) {
+        rel = decodeURIComponent(url.split("/saved-copy/")[1] || "");
+        if (!rel || rel.endsWith("/") || !rel.split("/").pop().includes(".")) rel = rel.replace(/\\/+$/, "") + "/index.html";
+        return encodeURI(`/${topic.path}/saved-copy/${rel}`);
+      }
+      if (url.includes("cheat-sheets.org") && (url.includes("/sites/") || url.includes("/own/"))) {
+        try {
+          rel = decodeURIComponent(new URL(url).pathname.replace(/^\\//, ""));
+        } catch { rel = file.filename || ""; }
+        if (!rel || rel.endsWith("/") || !rel.split("/").pop().includes(".")) rel = rel.replace(/\\/+$/, "") + "/index.html";
+        return encodeURI(`/${topic.path}/hosted/${rel}`);
+      }
+      const name = (file.filename || "").replace(/^\\/+/, "");
+      return encodeURI(`/${topic.path}/saved-copy/${name}`);
+    }
+
+    function isPrintable(file) {
+      const name = (file.filename || file.url || "").split("?")[0];
+      const ext = name.includes(".") ? ("." + name.split(".").pop().toLowerCase()) : "";
+      return PRINTABLE.has(ext);
+    }
+
+    function printableList(members) {
+      const items = [];
+      for (const t of members) {
+        for (const s of t.saved_copies || []) {
+          if (!isPrintable(s)) continue;
+          const label = (s.filename || "file").split("/").pop();
+          items.push(`<li><a href="${localSaved(t, s)}">${escapeHtml(t.title)} — ${escapeHtml(label)}</a></li>`);
+        }
+      }
+      if (!items.length) return "";
+      return `<h3>Printable quick references</h3><ul class="printables">${items.join("")}</ul>`;
     }
 
     function render() {
@@ -255,6 +311,7 @@ PAGE = """<!DOCTYPE html>
         return `<section class="group" id="${g.id}">
           <h2>${escapeHtml(g.title)}</h2>
           <p class="meta">${escapeHtml(g.description)} · ${g.topic_count} topics · ${g.saved_copy_count} saved copies</p>
+          ${printableList(members)}
           <div class="topics">${cards}</div>
         </section>`;
       }).join("");
@@ -265,14 +322,14 @@ PAGE = """<!DOCTYPE html>
       const t = byId[id];
       if (!t) return;
       dialogTitle.textContent = t.title;
-      const wiki = (t.wikipedia_urls && t.wikipedia_urls.length ? t.wikipedia_urls : (t.wikipedia ? [t.wikipedia] : []));
-      const saved = (t.saved_copies || []).map((s) => {
-        const local = localSaved(t, s);
-        return `<li><a href="${local}">${escapeHtml(s.filename)}</a> · <a href="${s.url}">source</a></li>`;
+      const copies = t.saved_copies || [];
+      const printable = copies.filter(isPrintable).map((s) => {
+        const label = (s.filename || "file").split("/").pop();
+        return `<li><a href="${localSaved(t, s)}">${escapeHtml(label)}</a></li>`;
       }).join("");
-      const sheets = (t.items || []).map((item) => {
-        const href = (item.saved && item.saved[0]) || (item.online && item.online[0]) || t.source_anchor;
-        return `<li><a href="${href}">${escapeHtml(item.title)}</a></li>`;
+      const otherLocal = copies.filter((s) => !isPrintable(s)).map((s) => {
+        const label = (s.filename || "file").split("/").pop();
+        return `<li><a href="${localSaved(t, s)}">${escapeHtml(label)}</a></li>`;
       }).join("");
       const see = (t.see_also || []).map((s) => {
         const other = byId[s.id];
@@ -282,16 +339,13 @@ PAGE = """<!DOCTYPE html>
         return `<li>${escapeHtml(s.label || s.id)}</li>`;
       }).join("");
       dialogBody.innerHTML = `
-        <p><a href="${t.path}/">topic page</a>
-        · <a href="${t.source_anchor}">cheat-sheets.org#${escapeHtml(t.id)}</a></p>
-        <h2>Official websites</h2>
-        ${linkList(t.official_websites, "url", "label")}
-        <h2>Wikipedia</h2>
-        ${wiki.length ? "<ul>" + wiki.map((u, i) => `<li><a href="${u}">${escapeHtml(u)}</a>${i === 0 ? ` · <a href="${t.path}/wikipedia.md">local clone</a>` : ""}</li>`).join("") + "</ul>" : "<p>None listed.</p>"}
-        <h2>Saved copies</h2>
-        ${saved ? "<ul>" + saved + "</ul>" : "<p>None listed.</p>"}
-        <h2>Cheat sheets</h2>
-        ${sheets ? "<ul>" + sheets + "</ul>" : "<p>None listed.</p>"}
+        <p><a href="/${t.path}/">Open local topic page</a></p>
+        <h2>Printable quick references</h2>
+        ${printable ? `<ul class="printables">${printable}</ul>` : "<p>None stored locally.</p>"}
+        <h2>Other local files</h2>
+        ${otherLocal ? `<ul>${otherLocal}</ul>` : "<p>None stored locally.</p>"}
+        <h2>Wikipedia (local)</h2>
+        ${t.wikipedia ? `<p><a href="/${t.path}/wikipedia.md">Local Wikipedia clone</a></p>` : "<p>None stored locally.</p>"}
         <h2>See also</h2>
         ${see ? "<ul>" + see + "</ul>" : "<p>None listed.</p>"}
       `;
@@ -398,6 +452,61 @@ def slim_catalog(catalog: dict) -> dict:
     }
 
 
+PRINTABLE_EXTS = {
+    ".pdf",
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".gif",
+    ".webp",
+    ".svg",
+    ".ps",
+    ".dvi",
+    ".odt",
+    ".doc",
+    ".docx",
+    ".rtf",
+    ".epub",
+}
+
+
+def is_printable(sc: dict) -> bool:
+    name = sc.get("filename") or urlparse(sc.get("url") or "").path
+    return Path(unquote(name)).suffix.lower() in PRINTABLE_EXTS
+
+
+def local_asset_path(topic: dict, sc: dict) -> str:
+    parsed = urlparse(sc.get("url") or "")
+    path = unquote(parsed.path)
+    if "/saved-copy/" in path:
+        rel = path.split("/saved-copy/", 1)[1].lstrip("/")
+        if not rel or rel.endswith("/") or not Path(rel).suffix:
+            rel = rel.rstrip("/") + "/index.html"
+        return f"{topic['path']}/saved-copy/{rel}"
+    if parsed.netloc.endswith("cheat-sheets.org"):
+        rel = path.lstrip("/")
+        if not rel or rel.endswith("/") or not Path(rel).suffix:
+            rel = rel.rstrip("/") + "/index.html"
+        return f"{topic['path']}/hosted/{rel}"
+    name = Path(path).name or (sc.get("filename") or "file").lstrip("/")
+    return f"{topic['path']}/saved-copy/{name}"
+
+
+def display_name(sc: dict) -> str:
+    name = sc.get("filename") or urlparse(sc.get("url") or "").path
+    return Path(unquote(name.rstrip("/"))).name or unquote(name)
+
+
+def href_for(path: str) -> str:
+    return "/" + quote(path.lstrip("/"), safe="/")
+
+
+def sorted_saved(copies: list[dict]) -> tuple[list[dict], list[dict]]:
+    printable = [s for s in copies if is_printable(s)]
+    other = [s for s in copies if not is_printable(s)]
+    return printable, other
+
+
 CREDIT_HTML = (
     'Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: '
     '<a href="https://georgelambert.org/">George Lambert</a> '
@@ -425,6 +534,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 """
 
 
@@ -491,10 +602,22 @@ def write_static_files(root: Path, catalog: dict, slim: dict) -> None:
 
     for g in groups:
         members = by_group.get(g["id"], [])
-        items = "\n".join(
+        printable_links = []
+        for t in members:
+            for s in t.get("saved_copies") or []:
+                if is_printable(s):
+                    printable_links.append(
+                        f'      <li><a href="{escape(href_for(local_asset_path(t, s)))}">{escape(t["title"])} — {escape(display_name(s))}</a></li>'
+                    )
+        topic_links = "\n".join(
             f'      <li><a href="/{t["path"]}/">{escape(t["title"])}</a></li>' for t in members
         )
-        body = f"    <ul>\n{items}\n    </ul>"
+        body = ""
+        if printable_links:
+            body += "    <h2>Printable quick references</h2>\n    <ul class=\"printables\">\n"
+            body += "\n".join(printable_links)
+            body += "\n    </ul>\n"
+        body += "    <h2>Topics</h2>\n    <ul>\n" + topic_links + "\n    </ul>"
         ld = page_graph(
             [
                 person_node(),
@@ -523,45 +646,28 @@ def write_static_files(root: Path, catalog: dict, slim: dict) -> None:
 
     for t in topics:
         wiki_urls = t.get("wikipedia_urls") or ([t["wikipedia"]] if t.get("wikipedia") else [])
-        official = t.get("official_websites") or []
         saved = t.get("saved_copies") or []
-        items = t.get("items") or []
         see = t.get("see_also") or []
         by_id = {x["id"]: x for x in topics}
+        printable, other = sorted_saved(saved)
 
-        def ul(entries: list[str]) -> str:
+        def ul(entries: list[str], cls: str = "") -> str:
             if not entries:
-                return "    <p>None listed.</p>"
-            return "    <ul>\n" + "\n".join(f"      <li>{e}</li>" for e in entries) + "\n    </ul>"
+                return "    <p>None stored locally.</p>"
+            cls_attr = f' class="{cls}"' if cls else ""
+            return f"    <ul{cls_attr}>\n" + "\n".join(f"      <li>{e}</li>" for e in entries) + "\n    </ul>"
+
+        def local_link(s: dict) -> str:
+            return f'<a href="{escape(href_for(local_asset_path(t, s)))}">{escape(display_name(s))}</a>'
 
         body_parts = [
-            f'    <p><a href="{escape(t.get("source_anchor") or SOURCE)}">Original listing on cheat-sheets.org</a></p>',
-            "    <h2>Official websites</h2>",
-            ul([f'<a href="{escape(o["url"])}">{escape(o.get("label") or o["url"])}</a>' for o in official]),
-            "    <h2>Wikipedia</h2>",
-            ul(
-                [
-                    f'<a href="{escape(u)}">{escape(u)}</a>'
-                    + (f' · <a href="wikipedia.md">local clone</a>' if i == 0 else "")
-                    for i, u in enumerate(wiki_urls)
-                ]
-            ),
-            "    <h2>Saved copies</h2>",
-            ul(
-                [
-                    f'<a href="saved-copy/{escape(s["filename"])}">{escape(s["filename"])}</a> · <a href="{escape(s["url"])}">source</a>'
-                    if not str(s["filename"]).startswith("/")
-                    else f'<a href="{escape(s["url"])}">{escape(s["filename"])}</a>'
-                    for s in saved
-                ]
-            ),
-            "    <h2>Cheat sheets</h2>",
-            ul(
-                [
-                    f'<a href="{escape((i.get("saved") or i.get("online") or [SOURCE])[0])}">{escape(i["title"])}</a>'
-                    for i in items
-                ]
-            ),
+            f'    <p class="meta">Group: <a href="/{t["group"]}/">{escape(GROUPS.get(t["group"], {}).get("title", t["group"]))}</a></p>',
+            "    <h2>Printable quick references</h2>",
+            ul([local_link(s) for s in printable], "printables"),
+            "    <h2>Other local files</h2>",
+            ul([local_link(s) for s in other]),
+            "    <h2>Wikipedia (local)</h2>",
+            ("    <p><a href=\"wikipedia.md\">Local Wikipedia clone</a></p>" if wiki_urls else "    <p>None stored locally.</p>"),
             "    <h2>See also</h2>",
             ul(
                 [
@@ -570,8 +676,9 @@ def write_static_files(root: Path, catalog: dict, slim: dict) -> None:
                     else escape(s.get("label") or s.get("id"))
                     for s in see
                 ]
-            ),
-            f'    <p class="meta">Group: <a href="/{t["group"]}/">{escape(GROUPS.get(t["group"], {}).get("title", t["group"]))}</a></p>',
+            )
+            if see
+            else "    <p>None listed.</p>",
         ]
         ld = page_graph(
             [

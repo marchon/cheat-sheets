@@ -1050,6 +1050,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 </style>
 </head>
 <body>
@@ -1059,36 +1061,24 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">jQuery cheat sheets from cheat-sheets.org.</p>
   </header>
   <main>
-    <p><a href="https://www.cheat-sheets.org/#jQuery">Original listing on cheat-sheets.org</a></p>
-    <h2>Official websites</h2>
-    <p>None listed.</p>
-    <h2>Wikipedia</h2>
-    <ul>
-      <li><a href="https://en.wikipedia.org/wiki/JQuery">https://en.wikipedia.org/wiki/JQuery</a> · <a href="wikipedia.md">local clone</a></li>
+    <p class="meta">Group: <a href="/web/">Web</a></p>
+    <h2>Printable quick references</h2>
+    <ul class="printables">
+      <li><a href="/web/j-query/saved-copy/jquery-mega-cheat-sheet-20152.jpg">jquery-mega-cheat-sheet-20152.jpg</a></li>
+      <li><a href="/web/j-query/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf">jQuery-1.5-Visual-Cheat-Sheet.pdf</a></li>
+      <li><a href="/web/j-query/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf">jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf</a></li>
+      <li><a href="/web/j-query/saved-copy/wsu-jquery-cheat-sheet.pdf">wsu-jquery-cheat-sheet.pdf</a></li>
+      <li><a href="/web/j-query/saved-copy/JQUERY-CHEAT-SHEET-a.png">JQUERY-CHEAT-SHEET-a.png</a></li>
+      <li><a href="/web/j-query/saved-copy/jquery12_colorcharge.pdf">jquery12_colorcharge.pdf</a></li>
+      <li><a href="/web/j-query/saved-copy/jquery12_colorcharge.png">jquery12_colorcharge.png</a></li>
+      <li><a href="/web/j-query/saved-copy/jquery12_colorcharge_bw.pdf">jquery12_colorcharge_bw.pdf</a></li>
+      <li><a href="/web/j-query/saved-copy/jquery12_colorcharge_bw.png">jquery12_colorcharge_bw.png</a></li>
+      <li><a href="/web/j-query/saved-copy/Jquery-Cheat-Sheet-1.2.pdf">Jquery-Cheat-Sheet-1.2.pdf</a></li>
     </ul>
-    <h2>Saved copies</h2>
-    <ul>
-      <li><a href="saved-copy/jquery-mega-cheat-sheet-20152.jpg">jquery-mega-cheat-sheet-20152.jpg</a> · <a href="https://www.cheat-sheets.org/saved-copy/jquery-mega-cheat-sheet-20152.jpg">source</a></li>
-      <li><a href="saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf">jQuery-1.5-Visual-Cheat-Sheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf">source</a></li>
-      <li><a href="saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf">jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf">source</a></li>
-      <li><a href="saved-copy/wsu-jquery-cheat-sheet.pdf">wsu-jquery-cheat-sheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/wsu-jquery-cheat-sheet.pdf">source</a></li>
-      <li><a href="saved-copy/JQUERY-CHEAT-SHEET-a.png">JQUERY-CHEAT-SHEET-a.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/JQUERY-CHEAT-SHEET-a.png">source</a></li>
-      <li><a href="saved-copy/jquery12_colorcharge.pdf">jquery12_colorcharge.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.pdf">source</a></li>
-      <li><a href="saved-copy/jquery12_colorcharge.png">jquery12_colorcharge.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.png">source</a></li>
-      <li><a href="saved-copy/jquery12_colorcharge_bw.pdf">jquery12_colorcharge_bw.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.pdf">source</a></li>
-      <li><a href="saved-copy/jquery12_colorcharge_bw.png">jquery12_colorcharge_bw.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.png">source</a></li>
-      <li><a href="saved-copy/Jquery-Cheat-Sheet-1.2.pdf">Jquery-Cheat-Sheet-1.2.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Jquery-Cheat-Sheet-1.2.pdf">source</a></li>
-    </ul>
-    <h2>Cheat sheets</h2>
-    <ul>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/jquery-mega-cheat-sheet-20152.jpg">The jQuery Mega Cheat Sheet 2015 by Jamie Spencer [html, jpg] (makeawebsitehub.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf">jQuery 1.5 Visual Cheat Sheet by Antonio Lupetti [pdf] (woorkup.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf">jQuery 1.3 Visual Cheat Sheet by Antonio Lupetti (WOORK) [pdf] (woork.blogspot.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/wsu-jquery-cheat-sheet.pdf">Beginner’s essential jQuery Cheat Sheet by Robert Mening [pdf, png] (websitesetup.org)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.pdf">jQuery 1.2 Cheat Sheet [pdf, png, bw pdf, bw png] (labs.colorcharge.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/Jquery-Cheat-Sheet-1.2.pdf">jQuery 1.2 by Adrien Gibrat [pdf]</a></li>
-      <li><a href="https://dzone.com/refcardz/jquery-selectors">jQuery Selectors by Bear Bibeault &amp; Yehuda Katz [pdf] (dzone.com)</a></li>
-    </ul>
+    <h2>Other local files</h2>
+    <p>None stored locally.</p>
+    <h2>Wikipedia (local)</h2>
+    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
     <h2>See also</h2>
     <ul>
       <li><a href="/web/ajax/">AJAX</a></li>
@@ -1099,7 +1089,6 @@ nav a { margin-inline-end: 0.75rem; }
       <li><a href="/web/prototype/">Prototype</a></li>
       <li><a href="/file-formats/xhtml/">XHTML</a></li>
     </ul>
-    <p class="meta">Group: <a href="/web/">Web</a></p>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

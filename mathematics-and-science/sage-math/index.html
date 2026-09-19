@@ -1147,6 +1147,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 </style>
 </head>
 <body>
@@ -1156,40 +1158,22 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">SageMath (Sage, SAGE) cheat sheets from cheat-sheets.org.</p>
   </header>
   <main>
-    <p><a href="https://www.cheat-sheets.org/#SageMath">Original listing on cheat-sheets.org</a></p>
-    <h2>Official websites</h2>
-    <ul>
-      <li><a href="http://www.sagemath.org/">sagemath.org</a></li>
+    <p class="meta">Group: <a href="/mathematics-and-science/">Mathematics and science</a></p>
+    <h2>Printable quick references</h2>
+    <ul class="printables">
+      <li><a href="/mathematics-and-science/sage-math/saved-copy/sage_quickref.pdf">sage_quickref.pdf</a></li>
+      <li><a href="/mathematics-and-science/sage-math/saved-copy/quickref-linalg.pdf">quickref-linalg.pdf</a></li>
+      <li><a href="/mathematics-and-science/sage-math/saved-copy/quickref-nt.pdf">quickref-nt.pdf</a></li>
+      <li><a href="/mathematics-and-science/sage-math/saved-copy/quickref-calc.pdf">quickref-calc.pdf</a></li>
+      <li><a href="/mathematics-and-science/sage-math/saved-copy/Basic_Math_sage-quickref.pdf">Basic_Math_sage-quickref.pdf</a></li>
+      <li><a href="/mathematics-and-science/sage-math/saved-copy/quickref-graphtheory.pdf">quickref-graphtheory.pdf</a></li>
+      <li><a href="/mathematics-and-science/sage-math/saved-copy/sage-quickref-algebra.pdf">sage-quickref-algebra.pdf</a></li>
+      <li><a href="/mathematics-and-science/sage-math/saved-copy/dynamics_ref.pdf">dynamics_ref.pdf</a></li>
     </ul>
-    <h2>Wikipedia</h2>
-    <ul>
-      <li><a href="https://en.wikipedia.org/wiki/SageMath">https://en.wikipedia.org/wiki/SageMath</a> · <a href="wikipedia.md">local clone</a></li>
-    </ul>
-    <h2>Saved copies</h2>
-    <ul>
-      <li><a href="saved-copy/sage_quickref.pdf">sage_quickref.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/sage_quickref.pdf">source</a></li>
-      <li><a href="saved-copy/quickref-linalg.pdf">quickref-linalg.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/quickref-linalg.pdf">source</a></li>
-      <li><a href="saved-copy/quickref-nt.pdf">quickref-nt.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/quickref-nt.pdf">source</a></li>
-      <li><a href="saved-copy/quickref-calc.pdf">quickref-calc.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/quickref-calc.pdf">source</a></li>
-      <li><a href="saved-copy/Basic_Math_sage-quickref.pdf">Basic_Math_sage-quickref.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Basic_Math_sage-quickref.pdf">source</a></li>
-      <li><a href="saved-copy/quickref-graphtheory.pdf">quickref-graphtheory.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/quickref-graphtheory.pdf">source</a></li>
-      <li><a href="saved-copy/sage-quickref-algebra.pdf">sage-quickref-algebra.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/sage-quickref-algebra.pdf">source</a></li>
-      <li><a href="saved-copy/dynamics_ref.pdf">dynamics_ref.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/dynamics_ref.pdf">source</a></li>
-    </ul>
-    <h2>Cheat sheets</h2>
-    <ul>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/sage_quickref.pdf">Sage Quick Reference by William Stein (based on work of P. Jipsen) [pdf] (wiki.sagemath.org)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/quickref-linalg.pdf">Sage Quick Reference: Linear Algebra by Robert A. Beezer (Based on work by Peter Jipsen, William Stein)  [pdf] (wiki.sagemath.org)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/quickref-nt.pdf">Sage Quick Reference: Elementary Number Theory by William Stein [pdf] (wiki.sagemath.org)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/quickref-calc.pdf">Sage Quick Reference: Calculus by William Stein [pdf] (wiki.sagemath.org)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/Basic_Math_sage-quickref.pdf">Sage Quick Reference (Basic Math) by Peter Jipsen [pdf] (wiki.sagemath.org)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/quickref-graphtheory.pdf">Sage Quick Reference: Graph Theory by Steven Rafael Turner [pdf] (wiki.sagemath.org)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/sage-quickref-algebra.pdf">Sage Quick Reference: Abstract Algebra by B. Balof, T. W. Judson, D. Perkinson, R. Potluri (based on work by P. Jipsen, W. Stein, R. Beezer) [pdf] (wiki.sagemath.org)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/dynamics_ref.pdf">Sage Dynamics Ref Card v3.0 by B. Hutz, J. Silverman [pdf] (wiki.sagemath.org)</a></li>
-      <li><a href="https://wiki.sagemath.org/quickref/">Sage Quick Reference Cards in different languages [html -&gt; pdf] (wiki.sagemath.org)</a></li>
-      <li><a href="http://www.sagemath.org/help.html">SageMath Help [html] (sagemath.org)</a></li>
-      <li><a href="http://doc.sagemath.org/">SageMath Documentation [html] (doc.sagemath.org)</a></li>
-    </ul>
+    <h2>Other local files</h2>
+    <p>None stored locally.</p>
+    <h2>Wikipedia (local)</h2>
+    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
     <h2>See also</h2>
     <ul>
       <li><a href="/mathematics-and-science/maple/">Algebra</a></li>
@@ -1201,7 +1185,6 @@ nav a { margin-inline-end: 0.75rem; }
       <li><a href="/mathematics-and-science/maxima/">Maxima</a></li>
       <li><a href="/mathematics-and-science/parigp/">PARI/GP</a></li>
     </ul>
-    <p class="meta">Group: <a href="/mathematics-and-science/">Mathematics and science</a></p>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

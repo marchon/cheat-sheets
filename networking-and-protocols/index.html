@@ -2013,6 +2013,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 </style>
 </head>
 <body>
@@ -2022,6 +2024,17 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Network protocols, mail, chat, and scanning tools.</p>
   </header>
   <main>
+    <h2>Printable quick references</h2>
+    <ul class="printables">
+      <li><a href="/networking-and-protocols/haproxy/saved-copy/HAPROXY-Configuration-Reference-Card-v1.0.pdf">HAProxy — HAPROXY-Configuration-Reference-Card-v1.0.pdf</a></li>
+      <li><a href="/networking-and-protocols/haproxy/saved-copy/HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf">HAProxy — HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf</a></li>
+      <li><a href="/networking-and-protocols/irc/saved-copy/wikiHow_IRC_Cheat_Sheet.pdf">IRC - Internet Relay Chat — wikiHow_IRC_Cheat_Sheet.pdf</a></li>
+      <li><a href="/networking-and-protocols/nmap/saved-copy/Nmap5.cheatsheet.eng.v1.pdf">NMAP — Nmap5.cheatsheet.eng.v1.pdf</a></li>
+      <li><a href="/networking-and-protocols/nmap/saved-copy/Nmap5.cheatsheet.esp.v1.pdf">NMAP — Nmap5.cheatsheet.esp.v1.pdf</a></li>
+      <li><a href="/networking-and-protocols/sendmail/saved-copy/Sendmail_quickref.pdf">Sendmail — Sendmail_quickref.pdf</a></li>
+      <li><a href="/networking-and-protocols/tls/saved-copy/Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf">TLS - Transport Layer Security; SSL - Secure Sockets Layer — Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf</a></li>
+    </ul>
+    <h2>Topics</h2>
     <ul>
       <li><a href="/networking-and-protocols/ftp/">FTP - File Transfer Protocol</a></li>
       <li><a href="/networking-and-protocols/haproxy/">HAProxy</a></li>

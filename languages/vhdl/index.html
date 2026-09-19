@@ -842,6 +842,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 </style>
 </head>
 <body>
@@ -851,38 +853,24 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">VHDL cheat sheets from cheat-sheets.org.</p>
   </header>
   <main>
-    <p><a href="https://www.cheat-sheets.org/#VHDL">Original listing on cheat-sheets.org</a></p>
-    <h2>Official websites</h2>
-    <ul>
-      <li><a href="https://opensource.ieee.org/vasg">opensource.ieee.org/vasg</a></li>
+    <p class="meta">Group: <a href="/languages/">Languages</a></p>
+    <h2>Printable quick references</h2>
+    <ul class="printables">
+      <li><a href="/languages/vhdl/saved-copy/VHDL_QRC_01_tcnj.edu_20221226.pdf">VHDL_QRC_01_tcnj.edu_20221226.pdf</a></li>
+      <li><a href="/languages/vhdl/saved-copy/vhdl_cheatsheet_vhdlweb.com_20221226.pdf">vhdl_cheatsheet_vhdlweb.com_20221226.pdf</a></li>
+      <li><a href="/languages/vhdl/saved-copy/VHDL_Cheat_Sheet_ee.hacettepe.edu.tr_20221226.pdf">VHDL_Cheat_Sheet_ee.hacettepe.edu.tr_20221226.pdf</a></li>
+      <li><a href="/languages/vhdl/saved-copy/vhdl_quickref_synthworks.com_20221226.pdf">vhdl_quickref_synthworks.com_20221226.pdf</a></li>
+      <li><a href="/languages/vhdl/saved-copy/vhdlqrc_Qualis_20221226.pdf">vhdlqrc_Qualis_20221226.pdf</a></li>
+      <li><a href="/languages/vhdl/saved-copy/VHDL_Lang_atlas.20221226.pdf">VHDL_Lang_atlas.20221226.pdf</a></li>
     </ul>
-    <h2>Wikipedia</h2>
-    <p>None listed.</p>
-    <h2>Saved copies</h2>
-    <ul>
-      <li><a href="saved-copy/VHDL_QRC_01_tcnj.edu_20221226.pdf">VHDL_QRC_01_tcnj.edu_20221226.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/VHDL_QRC_01_tcnj.edu_20221226.pdf">source</a></li>
-      <li><a href="saved-copy/vhdl_cheatsheet_vhdlweb.com_20221226.pdf">vhdl_cheatsheet_vhdlweb.com_20221226.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/vhdl_cheatsheet_vhdlweb.com_20221226.pdf">source</a></li>
-      <li><a href="saved-copy/VHDL_Cheat_Sheet_ee.hacettepe.edu.tr_20221226.pdf">VHDL_Cheat_Sheet_ee.hacettepe.edu.tr_20221226.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/VHDL_Cheat_Sheet_ee.hacettepe.edu.tr_20221226.pdf">source</a></li>
-      <li><a href="saved-copy/vhdl_quickref_synthworks.com_20221226.pdf">vhdl_quickref_synthworks.com_20221226.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/vhdl_quickref_synthworks.com_20221226.pdf">source</a></li>
-      <li><a href="saved-copy/vhdlqrc_Qualis_20221226.pdf">vhdlqrc_Qualis_20221226.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/vhdlqrc_Qualis_20221226.pdf">source</a></li>
-      <li><a href="saved-copy/VHDL_Lang_atlas.20221226.pdf">VHDL_Lang_atlas.20221226.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/VHDL_Lang_atlas.20221226.pdf">source</a></li>
-    </ul>
-    <h2>Cheat sheets</h2>
-    <ul>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/VHDL_QRC_01_tcnj.edu_20221226.pdf">VHDL Quick Reference Card [pdf] (owd.tcnj.edu)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/vhdl_cheatsheet_vhdlweb.com_20221226.pdf">ES 4 VHDL reference sheet [pdf] (vhdlweb.com)</a></li>
-      <li><a href="https://github.com/ismailelbadawy/vhdl-cheat-sheet">VHDL Cheat Sheet by Ismail El Badawy [html] (github.com/ismailelbadawy/)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/VHDL_Cheat_Sheet_ee.hacettepe.edu.tr_20221226.pdf">VHDL Cheat-Sheet by Bryan J. Mealy [pdf] (ee.hacettepe.edu.tr)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/vhdl_quickref_synthworks.com_20221226.pdf">VHDL Quick Reference by SynthWorks Design Inc. [pdf] (synthworks.com)</a></li>
-      <li><a href="https://www.viesurip.fr/en/mes-projets/memos/memo-vhdl/">VHDL cheat sheet [html] (viesurip.fr)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/vhdlqrc_Qualis_20221226.pdf">VHDL QUICK REFERENCE CARD by Qualis Design Corporation [pdf] (isy.liu.se)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/VHDL_Lang_atlas.20221226.pdf">VHDL Syntax Reference by Prof. Taek M. Kwon EE Dept, University of Minnesota Duluth [pdf] (atlas.physics.arizona.edu)</a></li>
-    </ul>
+    <h2>Other local files</h2>
+    <p>None stored locally.</p>
+    <h2>Wikipedia (local)</h2>
+    <p>None stored locally.</p>
     <h2>See also</h2>
     <ul>
       <li><a href="/languages/verilog/">Verilog</a></li>
     </ul>
-    <p class="meta">Group: <a href="/languages/">Languages</a></p>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

@@ -3879,6 +3879,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 </style>
 </head>
 <body>
@@ -3888,6 +3890,14 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Servers, containers, orchestration, CI, and infrastructure tools.</p>
   </header>
   <main>
+    <h2>Printable quick references</h2>
+    <ul class="printables">
+      <li><a href="/cloud-and-devops/apache/saved-copy/apache-refcard-a4.pdf">Apache — apache-refcard-a4.pdf</a></li>
+      <li><a href="/cloud-and-devops/docker/saved-copy/docker_cheatsheet_20230106.pdf">Docker — docker_cheatsheet_20230106.pdf</a></li>
+      <li><a href="/cloud-and-devops/veritas-cluster/saved-copy/2675288-Veritas-Cluster-Cheat-Sheet.pdf">VxCFS, VCS - Veritas Cluster File System — 2675288-Veritas-Cluster-Cheat-Sheet.pdf</a></li>
+      <li><a href="/cloud-and-devops/vmware/saved-copy/vmreferenceVI3card1.2.1.pdf">VMware (VI) — vmreferenceVI3card1.2.1.pdf</a></li>
+    </ul>
+    <h2>Topics</h2>
     <ul>
       <li><a href="/cloud-and-devops/apache/">Apache</a></li>
       <li><a href="/cloud-and-devops/apache-ant/">Apache Ant</a></li>

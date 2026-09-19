@@ -878,6 +878,8 @@ h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
 main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
+.printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
+.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
 </style>
 </head>
 <body>
@@ -887,31 +889,21 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Math, Mathematics cheat sheets from cheat-sheets.org.</p>
   </header>
   <main>
-    <p><a href="https://www.cheat-sheets.org/#Math">Original listing on cheat-sheets.org</a></p>
-    <h2>Official websites</h2>
-    <p>None listed.</p>
-    <h2>Wikipedia</h2>
-    <ul>
-      <li><a href="https://en.wikipedia.org/wiki/Mathematics">https://en.wikipedia.org/wiki/Mathematics</a> · <a href="wikipedia.md">local clone</a></li>
+    <p class="meta">Group: <a href="/mathematics-and-science/">Mathematics and science</a></p>
+    <h2>Printable quick references</h2>
+    <ul class="printables">
+      <li><a href="/mathematics-and-science/math/saved-copy/Laplace_Table.pdf">Laplace_Table.pdf</a></li>
+      <li><a href="/mathematics-and-science/math/saved-copy/MATH.CHEAT.SHEET---too.cool.and.imp--MUST.pdf">MATH.CHEAT.SHEET---too.cool.and.imp--MUST.pdf</a></li>
+      <li><a href="/mathematics-and-science/math/saved-copy/A-Cheat-Sheet-of-Maths.pdf">A-Cheat-Sheet-of-Maths.pdf</a></li>
+      <li><a href="/mathematics-and-science/math/saved-copy/Jones-mathcheatsheet2008.pdf">Jones-mathcheatsheet2008.pdf</a></li>
+      <li><a href="/mathematics-and-science/math/saved-copy/ineq.pdf">ineq.pdf</a></li>
     </ul>
-    <h2>Saved copies</h2>
+    <h2>Other local files</h2>
     <ul>
-      <li><a href="saved-copy/Laplace_Table.pdf">Laplace_Table.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Laplace_Table.pdf">source</a></li>
-      <li><a href="saved-copy/MATH.CHEAT.SHEET---too.cool.and.imp--MUST.pdf">MATH.CHEAT.SHEET---too.cool.and.imp--MUST.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/MATH.CHEAT.SHEET---too.cool.and.imp--MUST.pdf">source</a></li>
-      <li><a href="saved-copy/A-Cheat-Sheet-of-Maths.pdf">A-Cheat-Sheet-of-Maths.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/A-Cheat-Sheet-of-Maths.pdf">source</a></li>
-      <li><a href="saved-copy/Jones-mathcheatsheet2008.pdf">Jones-mathcheatsheet2008.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Jones-mathcheatsheet2008.pdf">source</a></li>
-      <li><a href="saved-copy/ineq.pdf">ineq.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/ineq.pdf">source</a></li>
-      <li><a href="saved-copy/ineq.ps.gz">ineq.ps.gz</a> · <a href="https://www.cheat-sheets.org/saved-copy/ineq.ps.gz">source</a></li>
+      <li><a href="/mathematics-and-science/math/saved-copy/ineq.ps.gz">ineq.ps.gz</a></li>
     </ul>
-    <h2>Cheat sheets</h2>
-    <ul>
-      <li><a href="http://searchdatacenter.techtarget.com/definition/Mathematical-Symbols">Mathematical Symbols [html] (techtarget.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/Laplace_Table.pdf">Table of Laplace Transforms W ^ by Paul Dawkins [pdf, html] (tutorial.math.lamar.edu)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/MATH.CHEAT.SHEET---too.cool.and.imp--MUST.pdf">MATH CHEAT SHEET by Cliff Notes [pdf] (onestopgre.com)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/A-Cheat-Sheet-of-Maths.pdf">MATH 1401 SPRING 2000 CHEAT SHEET FINAL by JAN MANDEL [pdf]</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/Jones-mathcheatsheet2008.pdf">Mathematics Cheat Sheet for Population Biology by James Holland Jones [pdf] (stanford.edu/~jhj1/)</a></li>
-      <li><a href="https://www.cheat-sheets.org/saved-copy/ineq.pdf">Useful Inequalities W ^ by Laszlo Kozma [pdf, ps.gz] (lkozma.net)</a></li>
-    </ul>
+    <h2>Wikipedia (local)</h2>
+    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
     <h2>See also</h2>
     <ul>
       <li><a href="/mathematics-and-science/algebra/">Algebra</a></li>
@@ -931,7 +923,6 @@ nav a { margin-inline-end: 0.75rem; }
       <li><a href="/mathematics-and-science/statistics/">Statistics</a></li>
       <li><a href="/mathematics-and-science/trigonometry/">Trigonometry</a></li>
     </ul>
-    <p class="meta">Group: <a href="/mathematics-and-science/">Mathematics and science</a></p>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
