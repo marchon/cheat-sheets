@@ -7,6 +7,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 UA = (
@@ -48,24 +49,32 @@ def main() -> None:
     if only_group:
         items = [s for s in items if s["group"] == only_group]
     ok = exists = missing = fail = 0
-    for i, sc in enumerate(items, 1):
+    workers = 6
+
+    def job(sc: dict) -> tuple[str, dict, str | None]:
         dest = root / sc["path"] / "saved-copy" / sc["filename"]
         try:
-            status = download(sc["url"], dest)
+            return download(sc["url"], dest), sc, None
         except Exception as err:  # noqa: BLE001 — log and continue the archive
-            print(f"FAIL {sc['url']} {err}", file=sys.stderr)
-            fail += 1
-            continue
-        if status == "ok":
-            ok += 1
-        elif status == "exists":
-            exists += 1
-        else:
-            missing += 1
-            print(f"MISSING {sc['filename']}")
-        if i % 25 == 0 or i == len(items):
-            print(f"{i}/{len(items)} ok={ok} exists={exists} missing={missing} fail={fail}")
-    print(f"done ok={ok} exists={exists} missing={missing} fail={fail}")
+            return "fail", sc, str(err)
+
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [pool.submit(job, sc) for sc in items]
+        for i, fut in enumerate(as_completed(futures), 1):
+            status, sc, err = fut.result()
+            if status == "ok":
+                ok += 1
+            elif status == "exists":
+                exists += 1
+            elif status == "missing":
+                missing += 1
+                print(f"MISSING {sc['filename']}")
+            else:
+                fail += 1
+                print(f"FAIL {sc['url']} {err}", file=sys.stderr)
+            if i % 25 == 0 or i == len(items):
+                print(f"{i}/{len(items)} ok={ok} exists={exists} missing={missing} fail={fail}", flush=True)
+    print(f"done ok={ok} exists={exists} missing={missing} fail={fail}", flush=True)
     if fail:
         sys.exit(1)
 
