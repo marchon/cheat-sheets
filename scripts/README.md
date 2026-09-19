@@ -19,6 +19,8 @@ PYTHONPATH=scripts python3 scripts/write_tree.py
 PYTHONPATH=scripts python3 scripts/download_saved_copies.py
 PYTHONPATH=scripts python3 scripts/clone_wikipedia.py
 PYTHONPATH=scripts python3 scripts/fetch_tldr.py
+PYTHONPATH=scripts python3 scripts/build_site.py
+python3 -m http.server 8765
 ```
 
 Pass a group id to limit downloads, for example `python3 scripts/download_saved_copies.py languages`.

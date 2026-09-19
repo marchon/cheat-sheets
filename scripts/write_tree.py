@@ -279,6 +279,8 @@ def main() -> None:
             meta_path.write_text(json.dumps(t, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     print("wrote tree for", catalog["topic_count"], "topics")
+    from build_site import main as build_site
+    build_site()
 
 
 if __name__ == "__main__":

@@ -35,7 +35,16 @@ python3 scripts/clone_wikipedia.py
 python3 scripts/fetch_tldr.py
 ```
 
-Browse groups under the directories listed below. Each topic folder keeps official websites, See also links, `saved-copy/` files, and a Wikipedia clone.
+Open the web index (searchable groups and topic pages):
+
+```sh
+python3 scripts/build_site.py
+python3 -m http.server 8765
+```
+
+Then visit [http://127.0.0.1:8765/](http://127.0.0.1:8765/). The page is `index.html` at the repository root.
+
+Browse group folders directly if you prefer files. Each topic folder keeps official websites, See also links, `saved-copy/` files, and a Wikipedia clone.
 
 ## Background
 
