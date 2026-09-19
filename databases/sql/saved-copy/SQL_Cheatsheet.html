@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <title>SQL Cheatsheet</title>
+  <meta name="revision" content="201604271710">
+ </head>
+ 
+ <body>
+  <h1>SQL Cheatsheet</h1>
+  <pre> KEY
+ ---
+ Curly braces group alternatives together,
+   and alternatives are separated by pipes:  {this | that | t'other}
+ Clauses in brackets are optional:            You [and john] can come.
+ An asterisk indicates 0 or more instances:   I like to eat[ and eat]*.
+ A plus-sign indicates 1 or more instances:   Run fast,[ go]+!
+ A plus-sign also indicates addition:         select (1 + 3) from dual;
+
+ Elements are defined in terms of other elements.
+   &lt;number&gt; : [0-9]+  means that a number is composed of one or more digits.
+   &lt;datatype&gt;: {integer | char(&lt;number&gt;) | varchar2(&lt;number&gt;) | date}
+ means that a &lt;datatype&gt; element is one of the four strings shown.
+   &lt;column-set&gt;: &lt;column&gt; = &lt;expression&gt;
+ means that a &lt;column-set&gt; element is composed of a &lt;column&gt;, followed by
+ an equals sign and an &lt;expression&gt;.
+
+ Readability of PL/SQL is much improved by highlighting certain keywords;
+ this is why some word are in all caps.  ---
+
+ INSERTS and UPDATES
+ -------------------
+ &lt;insert&gt;: insert into &lt;tablename&gt; [&lt;columns&gt;] {values &lt;values&gt; | &lt;select&gt;}
+ &lt;select&gt;: select [distinct] &lt;columns&gt; from &lt;tables&gt; [&lt;where&gt;] [group-by]
+ &lt;select-union&gt;:  &lt;select&gt; union &lt;select&gt; [&lt;order-by&gt;]
+ &lt;select-order&gt;:  &lt;select&gt; &lt;order-by&gt;
+
+ &lt;update&gt;    : update &lt;tablename&gt; set &lt;column-set&gt; [, &lt;column-set&gt;] [&lt;where&gt;]
+ &lt;column-set&gt;: &lt;column&gt; = &lt;expression&gt;
+ &lt;update-from-query&gt;: update &lt;tablename&gt; set &lt;columns&gt; = &lt;select&gt; [&lt;where&gt;]
+
+ FUNDAMENTALS
+ ------------
+ &lt;name&gt;    : [a-zA-Z][a-zA-Z0-9_]*   - that is, a string of alphanumeric chars
+                                    and underscores starting with an alpha char.
+ &lt;number&gt;  : [0-9]+
+ &lt;datatype&gt;: {integer | char(&lt;number&gt;) | varchar2(&lt;number&gt;) | date}
+
+ &lt;ora-alias&gt;: a temporary nickname for a table or column, for the purposes
+              of condensing a query.
+
+ LITERALS 
+ --------
+ &lt;value&gt;      : {&lt;number&gt; | &lt;string&gt; | &lt;number-expr&gt; | &lt;string-expr&gt;}
+ &lt;values&gt;     : ( &lt;value&gt; [, &lt;value&gt;]* )
+ &lt;number-expr&gt;: {&lt;number&gt; | &lt;column-name&gt;} +  [&lt;number&gt; | &lt;column-name&gt;]*
+ &lt;string-expr&gt;: {&lt;string&gt; | &lt;column-name&gt;} || [&lt;string&gt; | &lt;column-name&gt;]*
+
+ NAMES and DEFINITIONS
+ ---------------------
+ &lt;column-name&gt;: name of a column in a table in the current scope
+ &lt;columns&gt;    : ( &lt;column-name&gt; &lt;ora-alias&gt; [, &lt;column-name&gt; &lt;ora-alias&gt;]* )
+ &lt;new-column&gt; : &lt;name&gt; &lt;column-def&gt;
+ &lt;new-columns&gt;: &lt;new-column&gt; [, &lt;new-column&gt;]*
+ &lt;column-def&gt; : &lt;datatype&gt; [default &lt;value&gt;] [&lt;constraint&gt;]*
+
+ &lt;table-name&gt; : name of a table in the current scope
+ &lt;tables&gt;     : &lt;table-name&gt; &lt;ora-alias&gt; [, &lt;table-name&gt; &lt;ora-alias&gt;]*
+
+ &lt;constraint&gt; : {not null | primary key | references &lt;table-name&gt;}
+
+<p>
+</p>
+ CREATION
+ --------
+ &lt;create-table-new&gt; : create table &lt;name&gt; ( &lt;new-columns&gt; )
+ &lt;create-table-from&gt;: create table &lt;name&gt; as &lt;select&gt;
+
+ &lt;create-tablespace&gt;: create tablespace &lt;name&gt; datafile '&lt;filespec&gt;'
+            size 50m autoextend on default storage (pctincrease 1);
+ &lt;filespec&gt;         :  /opt/ora8/m02/oradata/ora8/&lt;name&gt;01.dbf
+
+ &lt;create-user&gt; : create user &lt;name&gt; identified by &lt;db-password&gt;
+        default tablespace &lt;name&gt; temporary tablespace temp quota
+        unlimited on &lt;name&gt;;
+ &lt;grant-user&gt;  : grant connect, resource, ctxapp to &lt;name&gt;;
+                 grant javasyspriv to &lt;name&gt;;
+
+ ADDING, DROPPING, AND DELETION
+ ------------------------------
+ &lt;add-column&gt; : alter table &lt;table-name&gt; add ( &lt;new-columns&gt; )
+ &lt;drop-column&gt;: alter table &lt;table-name&gt; drop column &lt;column-name&gt;
+
+ &lt;drop&gt;  : drop {table|view|sequence|function} &lt;name&gt;
+ &lt;delete&gt;: delete from &lt;table-name&gt; [&lt;where&gt;]
+
+ PL-SQL BASICS
+ -------------
+ &lt;var-name&gt; : A variable passed into a function, or definied in &lt;declarations&gt;
+ &lt;argument&gt; : &lt;name&gt; IN &lt;datatype&gt;
+ &lt;arguments&gt;: &lt;argument&gt; [, &lt;argument&gt;]*
+ &lt;args&gt;     :    &lt;value&gt; [, &lt;value&gt;]*
+
+ PL-SQL
+ ------
+ &lt;create-function&gt;: create or replace function &lt;name&gt; ( &lt;arguments&gt; )
+             return &lt;datatype&gt; AS [&lt;declarations&gt;] BEGIN &lt;function-body&gt; END;
+
+ &lt;declarations&gt; : &lt;name&gt; &lt;datatype&gt;[:= &lt;value&gt;];
+ &lt;function-body&gt;: [{&lt;statement&gt; | &lt;loop&gt;};]*
+                     return {&lt;var-name&gt; | &lt;value&gt;};
+
+ &lt;statement&gt;: { &lt;var-name&gt; := {&lt;expression&gt; | &lt;function&gt;} |
+                open cursor &lt;cursor-name&gt;                 |
+                fetch &lt;cursor-name&gt; into &lt;var-name&gt;}      |
+
+ &lt;loop&gt;     : LOOP [{&lt;statement&gt; | &lt;loop&gt;};]*
+                exit when &lt;condition&gt;
+              END LOOP;
+
+ &lt;ora-call-function&gt;: select &lt;name&gt;(&lt;args&gt;) from dual;
+  </pre>
+ </body>
+</html>
+

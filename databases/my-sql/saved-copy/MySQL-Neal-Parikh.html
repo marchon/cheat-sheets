@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <title>MySQL Cheat Sheet</title>
+  <meta name="revision" content="202105231000" />
+ </head>
+
+ <body>
+  <div style="text-align:left"><a href="http://www.cheat-sheets.org/">&lt;&lt; Cheat-Sheets.org</a></div>
+  <article style="margin:auto;max-width:800px">
+  <h1>MySQL Cheat Sheet</h1>
+<pre>
+<b>Selecting a database:</b>
+
+mysql&gt; USE database;
+
+<b>Listing databases:</b>
+
+mysql&gt; SHOW DATABASES;
+
+<b>Listing tables in a db:</b>
+
+mysql&gt; SHOW TABLES;
+
+<b>Describing the format of a table:</b>
+
+mysql&gt; DESCRIBE table;
+
+<b>Creating a database:</b>
+
+mysql&gt; CREATE DATABASE db_name;
+
+<b>Creating a table:</b>
+
+mysql&gt; CREATE TABLE table_name (field1_name TYPE(SIZE), field2_name TYPE(SIZE));
+Ex: mysql&gt; CREATE TABLE pet (name VARCHAR(20), sex CHAR(1), birth DATE);
+
+<b>Load tab-delimited data into a table:</b>
+
+mysql&gt; LOAD DATA LOCAL INFILE "infile.txt" INTO TABLE table_name;
+(Use \n for NULL)
+
+<b>Inserting one row at a time:</b>
+
+mysql&gt; INSERT INTO table_name VALUES ('MyName', 'MyOwner', '2002-08-31');
+(Use NULL for NULL)
+
+<b>Retrieving information (general):</b>
+
+mysql&gt; SELECT from_columns FROM table WHERE conditions;
+All values: SELECT * FROM table;
+Some values: SELECT * FROM table WHERE rec_name = "value";
+Multiple critera: SELECT * FROM TABLE WHERE rec1 = "value1" AND rec2 = "value2";
+
+<b>Reloading a new data set into existing table:</b>
+
+mysql&gt; SET AUTOCOMMIT=1; # used for quick recreation of table
+mysql&gt; DELETE FROM pet;
+mysql&gt; LOAD DATA LOCAL INFILE "infile.txt" INTO TABLE table;
+
+<b>Fixing all records with a certain value:</b>
+
+mysql&gt; UPDATE table SET column_name = "new_value" WHERE record_name = "value";
+
+<b>Selecting specific columns:</b>
+
+mysql&gt; SELECT column_name FROM table;
+
+<b>Retrieving unique output records:</b>
+
+mysql&gt; SELECT DISTINCT column_name FROM table;
+
+<b>Sorting:</b>
+
+mysql&gt; SELECT col1, col2 FROM table ORDER BY col2;
+Backwards: SELECT col1, col2 FROM table ORDER BY col2 DESC;
+
+<b>Date calculations:</b>
+
+mysql&gt; SELECT CURRENT_DATE, (YEAR(CURRENT_DATE)-YEAR(date_col)) AS time_diff [FROM table];
+MONTH(some_date) extracts the month value and DAYOFMONTH() extracts day.
+
+<b>Pattern Matching:</b>
+
+mysql&gt; SELECT * FROM table WHERE rec LIKE "blah%";
+(% is wildcard - arbitrary # of chars)
+Find 5-char values: SELECT * FROM table WHERE rec like "_____";
+(_ is any single character)
+
+<b>Extended Regular Expression Matching:</b>
+
+mysql&gt; SELECT * FROM table WHERE rec RLIKE "^b$";
+(. for char, [...] for char class, * for 0 or more instances
+^ for beginning, {n} for repeat n times, and $ for end)
+(RLIKE or REGEXP)
+To force case-sensitivity, use "REGEXP BINARY"
+
+<b>Counting Rows:</b>
+
+mysql&gt; SELECT COUNT(*) FROM table;
+
+<b>Grouping with Counting:</b>
+
+mysql&gt; SELECT owner, COUNT(*) FROM table GROUP BY owner;
+(GROUP BY groups together all records for each 'owner')
+
+<b>Selecting from multiple tables:</b>
+
+(Example)
+mysql&gt; SELECT pet.name, comment FROM pet, event WHERE pet.name = event.name;
+(You can join a table to itself to compare by using 'AS')
+
+<b>Currently selected database:</b>
+
+mysql&gt; SELECT DATABASE();
+
+<b>Maximum value:</b>
+
+mysql&gt; SELECT MAX(col_name) AS label FROM table;
+
+<b>Auto-incrementing rows:</b>
+
+mysql&gt; CREATE TABLE table (number INT NOT NULL AUTO_INCREMENT, name CHAR(10) NOT NULL);
+mysql&gt; INSERT INTO table (name) VALUES ("tom"),("dick"),("harry");
+
+<b>Adding a column to an already-created table:</b>
+
+mysql&gt; ALTER TABLE tbl ADD COLUMN [column_create syntax] AFTER col_name;
+
+<b>Removing a column:</b>
+
+mysql&gt; ALTER TABLE tbl DROP COLUMN col;
+
+<b>Batch mode (feeding in a script):</b>
+
+# mysql -u user -p &lt; batch_file
+(Use -t for nice table layout and -vvv for command echoing.)
+Alternatively: mysql&gt; source batch_file;
+
+<b>Backing up a database with mysqldump:</b>
+
+# mysqldump --opt -u username -p database &gt; database_backup.sql
+(Use 'mysqldump --opt --all-databases &gt; all_backup.sql' to backup everything.)
+</pre>
+  </article>
+  <div style="text-align:left"><a href="http://www.cheat-sheets.org/">&lt;&lt; Cheat-Sheets.org</a></div>
+ </body>
+
+</html>
