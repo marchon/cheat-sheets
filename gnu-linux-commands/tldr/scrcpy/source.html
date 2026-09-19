@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <meta name="viewport" content="width=device-width">
+  <title>scrcpy TLDR page</title>
+  <meta name="description" content="scrcpy collaborative tldr cheatsheet" />
+  <meta name="keywords" content="scrcpy, scrcpy, tldr, tldr pages, tldr page, cheat sheet, cheatsheet, man, shell, console, documentation, terminal, command line, man page, examples, help, manual, hacktoberfest, manpages, man pages" />
+  <meta name="author" content="TLDR page team and Alexander Krassotkin" />
+  <meta name="revision" content="202209161450" />
+  <meta property="og:title" content="scrcpy TLDR page" />
+  <meta property="og:description" content="scrcpy collaborative tldr cheatsheet" />
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="TLDR page team and Alexander Krassotkin" />
+  <meta property="article:published_time" content="2022-07-05T06:30:05Z" />
+  <meta property="article:modified_time" content="2022-09-16T11:48:45Z" />
+  <meta property="og:url" content="//www.cheat-sheets.org/project/tldr/command/scrcpy/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="cheat-sheets.org" />
+  <style>
+article {
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:2em;
+ max-width:980px;
+}
+blockquote {
+ background-color: #F5F5F5;
+ border-left: 4px solid #eaecf0;
+ display: block;
+ padding: 0.25em 1em;
+}
+noscript {
+ font-weight:bold;
+ margin-left:auto;
+ margin-right:auto;
+ max-width:39em;
+ text-align:center;
+}
+#commentBlock {
+ text-align:left;
+ padding:1em;
+}
+#searchButton {
+ font-size:1.7em;
+}
+#searchInput {
+ font-size:1.7em;
+ margin:0.5em;
+ padding-left:0.2em;
+ padding-right:0.2em;
+}
+#searchTitle {
+ font-size:2.3em;
+}
+#topBlock {
+ margin:auto;
+ max-width:39em;
+ text-align:center;
+}
+#trafficTable {
+ text-align:right;
+}
+#trafficTable td {
+ padding-left:1em;
+}
+  </style>
+  <script>
+var baseURL = "/project/tldr/";
+var defaultLanguage = "en";
+var defaultOS = "common";
+var defaultVersion = "20220710";
+var language = "en";
+var os = "common";
+var previousCommand = "scrcpy";
+var version = "20220710";
+
+var bu = ((baseURL === "&" + "baseURL;") ? "/project/tldr/" : baseURL);
+var lu = (language === defaultLanguage) ? "" : ("language/" + language + "/");
+var ou = (os === defaultOS) ? "" : ("os/" + os + "/");
+var vu = (version == defaultVersion) ? "" : ("version/" + version + "/");
+
+function search() {
+ var command = document.getElementById("searchInput").value.trim();
+ if(command.length == 0) return;
+ command = command.replace(/\s+/g, "-"); 
+ window.location.href = "//www.cheat-sheets.org" + bu + "command/" + command + "/" + ou + lu + vu;
+}
+
+window.addEventListener("load", (event) => {
+ var nsel = document.querySelector("noscript");
+ if(nsel) nsel.style.display = "none";
+ document.getElementById("searchButton").addEventListener("click", search);
+ var iel = document.getElementById("searchInput");
+ iel.addEventListener("keydown", function(event) {if(event.keyCode === 13) search();});
+ const end = iel.value.length;
+ iel.setSelectionRange(end, end);
+ iel.focus();
+ document.getElementById("searchTitle").addEventListener("click", function(event) {window.location.href = "https://www.cheat-sheets.org" + bu;});
+});
+  </script>
+ </head>
+
+ <body>
+  <article>
+   <div id="topBlock">
+    <div id="searhBlock">
+     <span id="searchTitle">TLDR</span>
+     <input type="search" id="searchInput" name="searhInput" value="scrcpy">
+     <button id="searchButton">Search</button>
+    </div>
+    <div id="optionsBlock">
+    </div>
+    <noscript>JavaScript must be enabled for this application.</noscript>
+    <div id="commentBlock">
+     Enter a command. For example: 
+
+     <a class="exampleCommandsItem" href="/project/tldr/command/croc/">croc</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/go-generate/">go generate</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/sccmap/">sccmap</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/lt/">lt</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/scrapy/">scrapy</a>.
+
+    </div>
+   </div>
+   <div id="content">
+    <!--<hr>-->
+   <div id="tldrPage">
+<h1>scrcpy</h1>
+<div class="emptyString">&nbsp;</div>
+<blockquote>Display and control your Android device on a desktop.
+More information: <a href="https://github.com/Genymobile/scrcpy">https://github.com/Genymobile/scrcpy</a>.
+</blockquote>
+<div class="emptyString">&nbsp;</div>
+<ul>
+<li>Display a mirror of a connected device:
+<div class="emptyString">&nbsp;</div>
+<code>scrcpy</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Display a mirror of a specific device based on its ID or IP address (find it under the <code>adb devices</code> command):
+<div class="emptyString">&nbsp;</div>
+<code>scrcpy --serial {{0123456789abcdef|192.168.0.1:5555}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Start display in fullscreen mode:
+<div class="emptyString">&nbsp;</div>
+<code>scrcpy --fullscreen</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Rotate the display screen. Each incremental value adds a 90 degree counterclockwise rotation:
+<div class="emptyString">&nbsp;</div>
+<code>scrcpy --rotation {{0|1|2|3}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Show touches on physical device:
+<div class="emptyString">&nbsp;</div>
+<code>scrcpy --show-touches</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Record display screen:
+<div class="emptyString">&nbsp;</div>
+<code>scrcpy --record {{path/to/file.mp4}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Set target directory for pushing files to device by drag and drop (non-APK):
+<div class="emptyString">&nbsp;</div>
+<code>scrcpy --push-target {{path/to/directory}}</code>
+</li>
+</ul>
+
+   </div>
+
+   </div>
+   <hr>
+   <div class="headTitle">This is a <a href="/project/tldr/">tldr pages</a> (<a href="https://github.com/tldr-pages/tldr">source</a>, CC BY 4.0) web wrapper for <a href="/">cheat-sheets.org</a>. <a href="/project/tldr/command/special-all-language-commands/">All commands</a>, <a href="/project/tldr/command/special-top-commands/">popular commands</a>, <a href="/project/tldr/command/special-most-used-linux-commands/">most used linux commands</a>. <a href="/project/tldr/command/special-referrals/">Referrals</a>. <a href="https://www.cheat-sheets.org/project/tldr-pwa/">Progressive Web Application (PWA) version to install on your device</a>.</div>
+  </article>
+ </body>
+
+</html>
+
+

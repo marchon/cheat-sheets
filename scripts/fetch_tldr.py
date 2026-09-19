@@ -7,6 +7,7 @@ import re
 import time
 import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from bs4 import BeautifulSoup
@@ -123,27 +124,37 @@ def main() -> None:
             continue
         seen.add(k)
         uniq.append(n)
-    print(f"commands to fetch: {len(uniq)}")
+    print(f"commands to fetch: {len(uniq)}", flush=True)
     ok = skip = fail = 0
-    for i, cmd in enumerate(uniq, 1):
+
+    def fetch_one(cmd: str) -> str:
         folder = dest_root / cmd.replace("/", "-")
         folder.mkdir(exist_ok=True)
         md = folder / "README.md"
         if md.exists() and md.stat().st_size > 80:
-            skip += 1
-            continue
+            return "skip"
         url = f"https://www.cheat-sheets.org/project/tldr/command/{urllib.parse.quote(cmd)}/"
-        try:
-            html = get(url)
-            (folder / "source.html").write_text(html, encoding="utf-8")
-            md.write_text(article_markdown(cmd, html), encoding="utf-8")
-            ok += 1
-        except Exception as err:  # noqa: BLE001
-            print(f"FAIL {cmd} {err}")
-            fail += 1
-        time.sleep(0.08)
-        if i % 50 == 0 or i == len(uniq):
-            print(f"{i}/{len(uniq)} ok={ok} skip={skip} fail={fail}")
+        html = get(url)
+        (folder / "source.html").write_text(html, encoding="utf-8")
+        md.write_text(article_markdown(cmd, html), encoding="utf-8")
+        return "ok"
+
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        futures = {pool.submit(fetch_one, cmd): cmd for cmd in uniq}
+        for i, fut in enumerate(as_completed(futures), 1):
+            cmd = futures[fut]
+            try:
+                status = fut.result()
+            except Exception as err:  # noqa: BLE001
+                print(f"FAIL {cmd} {err}", flush=True)
+                fail += 1
+            else:
+                if status == "skip":
+                    skip += 1
+                else:
+                    ok += 1
+            if i % 100 == 0 or i == len(uniq):
+                print(f"{i}/{len(uniq)} ok={ok} skip={skip} fail={fail}", flush=True)
     index = {
         "source": "https://www.cheat-sheets.org/project/tldr/",
         "most_used": LIST_URL,

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <meta name="viewport" content="width=device-width">
+  <title>rekor cli TLDR page</title>
+  <meta name="description" content="rekor-cli collaborative tldr cheatsheet" />
+  <meta name="keywords" content="rekor cli, rekor-cli, tldr, tldr pages, tldr page, cheat sheet, cheatsheet, man, shell, console, documentation, terminal, command line, man page, examples, help, manual, hacktoberfest, manpages, man pages" />
+  <meta name="author" content="TLDR page team and Alexander Krassotkin" />
+  <meta name="revision" content="202209161450" />
+  <meta property="og:title" content="rekor cli TLDR page" />
+  <meta property="og:description" content="rekor-cli collaborative tldr cheatsheet" />
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="TLDR page team and Alexander Krassotkin" />
+  <meta property="article:published_time" content="2022-07-05T06:30:05Z" />
+  <meta property="article:modified_time" content="2022-09-16T11:48:45Z" />
+  <meta property="og:url" content="//www.cheat-sheets.org/project/tldr/command/rekor-cli/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="cheat-sheets.org" />
+  <style>
+article {
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:2em;
+ max-width:980px;
+}
+blockquote {
+ background-color: #F5F5F5;
+ border-left: 4px solid #eaecf0;
+ display: block;
+ padding: 0.25em 1em;
+}
+noscript {
+ font-weight:bold;
+ margin-left:auto;
+ margin-right:auto;
+ max-width:39em;
+ text-align:center;
+}
+#commentBlock {
+ text-align:left;
+ padding:1em;
+}
+#searchButton {
+ font-size:1.7em;
+}
+#searchInput {
+ font-size:1.7em;
+ margin:0.5em;
+ padding-left:0.2em;
+ padding-right:0.2em;
+}
+#searchTitle {
+ font-size:2.3em;
+}
+#topBlock {
+ margin:auto;
+ max-width:39em;
+ text-align:center;
+}
+#trafficTable {
+ text-align:right;
+}
+#trafficTable td {
+ padding-left:1em;
+}
+  </style>
+  <script>
+var baseURL = "/project/tldr/";
+var defaultLanguage = "en";
+var defaultOS = "common";
+var defaultVersion = "20220710";
+var language = "en";
+var os = "common";
+var previousCommand = "rekor-cli";
+var version = "20220710";
+
+var bu = ((baseURL === "&" + "baseURL;") ? "/project/tldr/" : baseURL);
+var lu = (language === defaultLanguage) ? "" : ("language/" + language + "/");
+var ou = (os === defaultOS) ? "" : ("os/" + os + "/");
+var vu = (version == defaultVersion) ? "" : ("version/" + version + "/");
+
+function search() {
+ var command = document.getElementById("searchInput").value.trim();
+ if(command.length == 0) return;
+ command = command.replace(/\s+/g, "-"); 
+ window.location.href = "//www.cheat-sheets.org" + bu + "command/" + command + "/" + ou + lu + vu;
+}
+
+window.addEventListener("load", (event) => {
+ var nsel = document.querySelector("noscript");
+ if(nsel) nsel.style.display = "none";
+ document.getElementById("searchButton").addEventListener("click", search);
+ var iel = document.getElementById("searchInput");
+ iel.addEventListener("keydown", function(event) {if(event.keyCode === 13) search();});
+ const end = iel.value.length;
+ iel.setSelectionRange(end, end);
+ iel.focus();
+ document.getElementById("searchTitle").addEventListener("click", function(event) {window.location.href = "https://www.cheat-sheets.org" + bu;});
+});
+  </script>
+ </head>
+
+ <body>
+  <article>
+   <div id="topBlock">
+    <div id="searhBlock">
+     <span id="searchTitle">TLDR</span>
+     <input type="search" id="searchInput" name="searhInput" value="rekor cli">
+     <button id="searchButton">Search</button>
+    </div>
+    <div id="optionsBlock">
+    </div>
+    <noscript>JavaScript must be enabled for this application.</noscript>
+    <div id="commentBlock">
+     Enter a command. For example: 
+
+     <a class="exampleCommandsItem" href="/project/tldr/command/glow/">glow</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/cargo-build/">cargo build</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/ssh-copy-id/">ssh copy id</a>.
+
+    </div>
+   </div>
+   <div id="content">
+    <!--<hr>-->
+   <div id="tldrPage">
+<h1>rekor-cli</h1>
+<div class="emptyString">&nbsp;</div>
+<blockquote>Immutable tamper resistant ledger of metadata generated within a software projects supply chain.
+More information: <a href="https://github.com/sigstore/rekor">https://github.com/sigstore/rekor</a>.
+</blockquote>
+<div class="emptyString">&nbsp;</div>
+<ul>
+<li>Upload an artifact to Rekor:
+<div class="emptyString">&nbsp;</div>
+<code>rekor-cli upload --artifact {{path/to/file.ext}} --signature {{path/to/file.ext.sig}} --pki-format={{x509}} --public-key={{path/to/key.pub}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Get information regarding entries in the Transparency Log:
+<div class="emptyString">&nbsp;</div>
+<code>rekor-cli get --uuid={{0e81b4d9299e2609e45b5c453a4c0e7820ac74e02c4935a8b830d104632fd2d1}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Search the Rekor index to find entries by Artifact:
+<div class="emptyString">&nbsp;</div>
+<code>rekor-cli search --artifact {{path/to/file.ext}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Search the Rekor index to find entries by a specific hash:
+<div class="emptyString">&nbsp;</div>
+<code>rekor-cli search --sha {{6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b}}</code>
+</li>
+</ul>
+
+   </div>
+
+   </div>
+   <hr>
+   <div class="headTitle">This is a <a href="/project/tldr/">tldr pages</a> (<a href="https://github.com/tldr-pages/tldr">source</a>, CC BY 4.0) web wrapper for <a href="/">cheat-sheets.org</a>. <a href="/project/tldr/command/special-all-language-commands/">All commands</a>, <a href="/project/tldr/command/special-top-commands/">popular commands</a>, <a href="/project/tldr/command/special-most-used-linux-commands/">most used linux commands</a>. <a href="/project/tldr/command/special-referrals/">Referrals</a>. <a href="https://www.cheat-sheets.org/project/tldr-pwa/">Progressive Web Application (PWA) version to install on your device</a>.</div>
+  </article>
+ </body>
+
+</html>
+
+

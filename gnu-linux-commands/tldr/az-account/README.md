@@ -1,0 +1,57 @@
+# az-account
+
+TLDR page cloned from https://www.cheat-sheets.org/project/tldr/command/az-account/.
+
+Upstream tldr pages are CC BY 4.0 (https://github.com/tldr-pages/tldr).
+
+TLDR
+Search
+JavaScript must be enabled for this application.
+Enter a command. For example:
+xdelta
+,
+pgbench
+,
+patchwork
+,
+direnv
+.
+az account
+Manage Azure subscription information.
+Part of
+az
+, the command-line client for Microsoft Azure.
+More information:
+https://docs.microsoft.com/cli/azure/account
+.
+Print a list of subscriptions for the logged in account:
+az account list
+Set a
+subscription
+to be the currently active subscription:
+az account set --subscription {{subscription_id}}
+List supported regions for the currently active subscription:
+az account list-locations
+Print an access token to be used with
+MS Graph API
+:
+az account get-access-token --resource-type {{ms-graph}}
+Print details of the currently active subscription in a specific format:
+az account show --output {{json|tsv|table|yaml}}
+This is a
+tldr pages
+(
+source
+, CC BY 4.0) web wrapper for
+cheat-sheets.org
+.
+All commands
+,
+popular commands
+,
+most used linux commands
+.
+Referrals
+.
+Progressive Web Application (PWA) version to install on your device
+.

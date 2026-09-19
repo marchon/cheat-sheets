@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <meta name="viewport" content="width=device-width">
+  <title>cmake TLDR page</title>
+  <meta name="description" content="cmake collaborative tldr cheatsheet" />
+  <meta name="keywords" content="cmake, cmake, tldr, tldr pages, tldr page, cheat sheet, cheatsheet, man, shell, console, documentation, terminal, command line, man page, examples, help, manual, hacktoberfest, manpages, man pages" />
+  <meta name="author" content="TLDR page team and Alexander Krassotkin" />
+  <meta name="revision" content="202209161450" />
+  <meta property="og:title" content="cmake TLDR page" />
+  <meta property="og:description" content="cmake collaborative tldr cheatsheet" />
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="TLDR page team and Alexander Krassotkin" />
+  <meta property="article:published_time" content="2022-07-05T06:30:05Z" />
+  <meta property="article:modified_time" content="2022-09-16T11:48:45Z" />
+  <meta property="og:url" content="//www.cheat-sheets.org/project/tldr/command/cmake/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="cheat-sheets.org" />
+  <style>
+article {
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:2em;
+ max-width:980px;
+}
+blockquote {
+ background-color: #F5F5F5;
+ border-left: 4px solid #eaecf0;
+ display: block;
+ padding: 0.25em 1em;
+}
+noscript {
+ font-weight:bold;
+ margin-left:auto;
+ margin-right:auto;
+ max-width:39em;
+ text-align:center;
+}
+#commentBlock {
+ text-align:left;
+ padding:1em;
+}
+#searchButton {
+ font-size:1.7em;
+}
+#searchInput {
+ font-size:1.7em;
+ margin:0.5em;
+ padding-left:0.2em;
+ padding-right:0.2em;
+}
+#searchTitle {
+ font-size:2.3em;
+}
+#topBlock {
+ margin:auto;
+ max-width:39em;
+ text-align:center;
+}
+#trafficTable {
+ text-align:right;
+}
+#trafficTable td {
+ padding-left:1em;
+}
+  </style>
+  <script>
+var baseURL = "/project/tldr/";
+var defaultLanguage = "en";
+var defaultOS = "common";
+var defaultVersion = "20220710";
+var language = "en";
+var os = "common";
+var previousCommand = "cmake";
+var version = "20220710";
+
+var bu = ((baseURL === "&" + "baseURL;") ? "/project/tldr/" : baseURL);
+var lu = (language === defaultLanguage) ? "" : ("language/" + language + "/");
+var ou = (os === defaultOS) ? "" : ("os/" + os + "/");
+var vu = (version == defaultVersion) ? "" : ("version/" + version + "/");
+
+function search() {
+ var command = document.getElementById("searchInput").value.trim();
+ if(command.length == 0) return;
+ command = command.replace(/\s+/g, "-"); 
+ window.location.href = "//www.cheat-sheets.org" + bu + "command/" + command + "/" + ou + lu + vu;
+}
+
+window.addEventListener("load", (event) => {
+ var nsel = document.querySelector("noscript");
+ if(nsel) nsel.style.display = "none";
+ document.getElementById("searchButton").addEventListener("click", search);
+ var iel = document.getElementById("searchInput");
+ iel.addEventListener("keydown", function(event) {if(event.keyCode === 13) search();});
+ const end = iel.value.length;
+ iel.setSelectionRange(end, end);
+ iel.focus();
+ document.getElementById("searchTitle").addEventListener("click", function(event) {window.location.href = "https://www.cheat-sheets.org" + bu;});
+});
+  </script>
+ </head>
+
+ <body>
+  <article>
+   <div id="topBlock">
+    <div id="searhBlock">
+     <span id="searchTitle">TLDR</span>
+     <input type="search" id="searchInput" name="searhInput" value="cmake">
+     <button id="searchButton">Search</button>
+    </div>
+    <div id="optionsBlock">
+    </div>
+    <noscript>JavaScript must be enabled for this application.</noscript>
+    <div id="commentBlock">
+     Enter a command. For example: 
+
+     <a class="exampleCommandsItem" href="/project/tldr/command/searchsploit/">searchsploit</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/kill/">kill</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/autojump/">autojump</a>.
+
+    </div>
+   </div>
+   <div id="content">
+    <!--<hr>-->
+   <div id="tldrPage">
+<h1>cmake</h1>
+<div class="emptyString">&nbsp;</div>
+<blockquote>Cross-platform build automation system, that generates recipes for native build systems.
+More information: <a href="https://cmake.org/cmake/help/latest/manual/cmake.1.html">https://cmake.org/cmake/help/latest/manual/cmake.1.html</a>.
+</blockquote>
+<div class="emptyString">&nbsp;</div>
+<ul>
+<li>Generate a build recipe in the current directory with <code>CMakeLists.txt</code> from a project directory:
+<div class="emptyString">&nbsp;</div>
+<code>cmake {{path/to/project_directory}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Generate a build recipe, with build type set to <code>Release</code> with CMake variable:
+<div class="emptyString">&nbsp;</div>
+<code>cmake {{path/to/project_directory}} -D {{CMAKE_BUILD_TYPE=Release}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Use a generated recipe in a given directory to build artifacts:
+<div class="emptyString">&nbsp;</div>
+<code>cmake --build {{path/to/build_directory}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Install the build artifacts into <code>/usr/local/</code> and strip debugging symbols:
+<div class="emptyString">&nbsp;</div>
+<code>cmake --install {{path/to/build_directory}} --strip</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Install the build artifacts using the custom prefix for paths:
+<div class="emptyString">&nbsp;</div>
+<code>cmake --install {{path/to/build_directory}} --strip --prefix {{path/to/directory}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Run a custom build target:
+<div class="emptyString">&nbsp;</div>
+<code>cmake --build {{path/to/build_directory}} --target {{target_name}}</code>
+</li>
+</ul>
+
+   </div>
+
+   </div>
+   <hr>
+   <div class="headTitle">This is a <a href="/project/tldr/">tldr pages</a> (<a href="https://github.com/tldr-pages/tldr">source</a>, CC BY 4.0) web wrapper for <a href="/">cheat-sheets.org</a>. <a href="/project/tldr/command/special-all-language-commands/">All commands</a>, <a href="/project/tldr/command/special-top-commands/">popular commands</a>, <a href="/project/tldr/command/special-most-used-linux-commands/">most used linux commands</a>. <a href="/project/tldr/command/special-referrals/">Referrals</a>. <a href="https://www.cheat-sheets.org/project/tldr-pwa/">Progressive Web Application (PWA) version to install on your device</a>.</div>
+  </article>
+ </body>
+
+</html>
+
+

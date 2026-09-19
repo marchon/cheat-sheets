@@ -1,0 +1,56 @@
+# textql
+
+TLDR page cloned from https://www.cheat-sheets.org/project/tldr/command/textql/.
+
+Upstream tldr pages are CC BY 4.0 (https://github.com/tldr-pages/tldr).
+
+TLDR
+Search
+JavaScript must be enabled for this application.
+Enter a command. For example:
+minisign
+,
+7zr
+,
+pio team
+,
+httprobe
+.
+textql
+Execute SQL against structured text like csv or tsv files.
+More information:
+https://github.com/dinedal/textql
+.
+Print the lines in the specified
+.csv
+file that match a SQL query to stdout:
+textql -sql "{{SELECT * FROM filename}}" {{path/to/filename.csv}}
+Query
+.tsv
+file:
+textql -dlm=tab -sql "{{SELECT * FROM filename}}" {{path/to/filename.tsv}}
+Query file with header row:
+textql -dlm={{delimiter}} -header -sql "{{SELECT * FROM filename}}" {{path/to/filename.csv}}
+Read data from stdin:
+cat {{path/to/file}} | textql -sql "{{SELECT * FROM stdin}}"
+Join two files on a specified common column:
+textql -header -sql "SELECT * FROM {{file1}} JOIN {{file2}} ON {{file1}}.{{c1}} = {{file2}}.{{c1}} LIMIT {{10}}" -output-header {{path/to/file1.csv}} {{path/to/file2.csv}}
+Format output using an output delimiter with an output header line:
+textql -output-dlm={{delimiter}} -output-header -sql "SELECT {{column}} AS {{alias}} FROM {{filename}}" {{path/to/filename.csv}}
+This is a
+tldr pages
+(
+source
+, CC BY 4.0) web wrapper for
+cheat-sheets.org
+.
+All commands
+,
+popular commands
+,
+most used linux commands
+.
+Referrals
+.
+Progressive Web Application (PWA) version to install on your device
+.

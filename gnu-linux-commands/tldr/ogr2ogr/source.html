@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <meta name="viewport" content="width=device-width">
+  <title>ogr2ogr TLDR page</title>
+  <meta name="description" content="ogr2ogr collaborative tldr cheatsheet" />
+  <meta name="keywords" content="ogr2ogr, ogr2ogr, tldr, tldr pages, tldr page, cheat sheet, cheatsheet, man, shell, console, documentation, terminal, command line, man page, examples, help, manual, hacktoberfest, manpages, man pages" />
+  <meta name="author" content="TLDR page team and Alexander Krassotkin" />
+  <meta name="revision" content="202209161450" />
+  <meta property="og:title" content="ogr2ogr TLDR page" />
+  <meta property="og:description" content="ogr2ogr collaborative tldr cheatsheet" />
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="TLDR page team and Alexander Krassotkin" />
+  <meta property="article:published_time" content="2022-07-05T06:30:05Z" />
+  <meta property="article:modified_time" content="2022-09-16T11:48:45Z" />
+  <meta property="og:url" content="//www.cheat-sheets.org/project/tldr/command/ogr2ogr/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="cheat-sheets.org" />
+  <style>
+article {
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:2em;
+ max-width:980px;
+}
+blockquote {
+ background-color: #F5F5F5;
+ border-left: 4px solid #eaecf0;
+ display: block;
+ padding: 0.25em 1em;
+}
+noscript {
+ font-weight:bold;
+ margin-left:auto;
+ margin-right:auto;
+ max-width:39em;
+ text-align:center;
+}
+#commentBlock {
+ text-align:left;
+ padding:1em;
+}
+#searchButton {
+ font-size:1.7em;
+}
+#searchInput {
+ font-size:1.7em;
+ margin:0.5em;
+ padding-left:0.2em;
+ padding-right:0.2em;
+}
+#searchTitle {
+ font-size:2.3em;
+}
+#topBlock {
+ margin:auto;
+ max-width:39em;
+ text-align:center;
+}
+#trafficTable {
+ text-align:right;
+}
+#trafficTable td {
+ padding-left:1em;
+}
+  </style>
+  <script>
+var baseURL = "/project/tldr/";
+var defaultLanguage = "en";
+var defaultOS = "common";
+var defaultVersion = "20220710";
+var language = "en";
+var os = "common";
+var previousCommand = "ogr2ogr";
+var version = "20220710";
+
+var bu = ((baseURL === "&" + "baseURL;") ? "/project/tldr/" : baseURL);
+var lu = (language === defaultLanguage) ? "" : ("language/" + language + "/");
+var ou = (os === defaultOS) ? "" : ("os/" + os + "/");
+var vu = (version == defaultVersion) ? "" : ("version/" + version + "/");
+
+function search() {
+ var command = document.getElementById("searchInput").value.trim();
+ if(command.length == 0) return;
+ command = command.replace(/\s+/g, "-"); 
+ window.location.href = "//www.cheat-sheets.org" + bu + "command/" + command + "/" + ou + lu + vu;
+}
+
+window.addEventListener("load", (event) => {
+ var nsel = document.querySelector("noscript");
+ if(nsel) nsel.style.display = "none";
+ document.getElementById("searchButton").addEventListener("click", search);
+ var iel = document.getElementById("searchInput");
+ iel.addEventListener("keydown", function(event) {if(event.keyCode === 13) search();});
+ const end = iel.value.length;
+ iel.setSelectionRange(end, end);
+ iel.focus();
+ document.getElementById("searchTitle").addEventListener("click", function(event) {window.location.href = "https://www.cheat-sheets.org" + bu;});
+});
+  </script>
+ </head>
+
+ <body>
+  <article>
+   <div id="topBlock">
+    <div id="searhBlock">
+     <span id="searchTitle">TLDR</span>
+     <input type="search" id="searchInput" name="searhInput" value="ogr2ogr">
+     <button id="searchButton">Search</button>
+    </div>
+    <div id="optionsBlock">
+    </div>
+    <noscript>JavaScript must be enabled for this application.</noscript>
+    <div id="commentBlock">
+     Enter a command. For example: 
+
+     <a class="exampleCommandsItem" href="/project/tldr/command/zlib-flate/">zlib flate</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/virsh-pool-undefine/">virsh pool undefine</a>.
+
+    </div>
+   </div>
+   <div id="content">
+    <!--<hr>-->
+   <div id="tldrPage">
+<h1>ogr2ogr</h1>
+<div class="emptyString">&nbsp;</div>
+<blockquote>Convert geospatial vector data between file formats.
+More information: <a href="https://gdal.org/programs/ogr2ogr.html">https://gdal.org/programs/ogr2ogr.html</a>.
+</blockquote>
+<div class="emptyString">&nbsp;</div>
+<ul>
+<li>Convert a Shapefile into a GeoPackage:
+<div class="emptyString">&nbsp;</div>
+<code>ogr2ogr -f GPKG {{path/to/output}}.gpkg {{path/to/input}}.shp</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Reduce a GeoJSON to features matching a condition:
+<div class="emptyString">&nbsp;</div>
+<code>ogr2ogr -where '{{myProperty > 42}}' -f {{GeoJSON}} {{path/to/output.geojson}} {{path/to/input.geojson}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Change coordinate reference system of a GeoPackage from <code>EPSG:4326</code> to <code>EPSG:3857</code>:
+<div class="emptyString">&nbsp;</div>
+<code>ogr2ogr -s_srs {{EPSG:4326}} -t_srs {{EPSG:3857}} -f GPKG {{path/to/output}}.gpkg {{path/to/input}}.gpkg</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Convert a CSV file into a GeoPackage, specifying the names of the coordinate columns and assigning a coordinate reference system:
+<div class="emptyString">&nbsp;</div>
+<code>ogr2ogr -f GPKG {{path/to/output}}.gpkg {{path/to/input}}.csv -oo X_POSSIBLE_NAMES={{longitude}} -oo Y_POSSIBLE_NAMES={{latitude}} -a_srs {{EPSG:4326}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Load a GeoPackage into a PostGIS database:
+<div class="emptyString">&nbsp;</div>
+<code>ogr2ogr -f PostgreSQL PG:dbname="{{database_name}}" {{path/to/input}}.gpkg</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Clip layers of a GeoPackage file to the given bounding box:
+<div class="emptyString">&nbsp;</div>
+<code>ogr2ogr -spat {{min_x}} {{min_y}} {{max_x}} {{max_y}} -f GPKG {{path/to/output}}.gpkg {{path/to/input}}.gpkg</code>
+</li>
+</ul>
+
+   </div>
+
+   </div>
+   <hr>
+   <div class="headTitle">This is a <a href="/project/tldr/">tldr pages</a> (<a href="https://github.com/tldr-pages/tldr">source</a>, CC BY 4.0) web wrapper for <a href="/">cheat-sheets.org</a>. <a href="/project/tldr/command/special-all-language-commands/">All commands</a>, <a href="/project/tldr/command/special-top-commands/">popular commands</a>, <a href="/project/tldr/command/special-most-used-linux-commands/">most used linux commands</a>. <a href="/project/tldr/command/special-referrals/">Referrals</a>. <a href="https://www.cheat-sheets.org/project/tldr-pwa/">Progressive Web Application (PWA) version to install on your device</a>.</div>
+  </article>
+ </body>
+
+</html>
+
+

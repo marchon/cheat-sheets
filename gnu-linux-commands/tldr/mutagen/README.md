@@ -1,0 +1,54 @@
+# mutagen
+
+TLDR page cloned from https://www.cheat-sheets.org/project/tldr/command/mutagen/.
+
+Upstream tldr pages are CC BY 4.0 (https://github.com/tldr-pages/tldr).
+
+TLDR
+Search
+JavaScript must be enabled for this application.
+Enter a command. For example:
+atom
+,
+lldb
+,
+recsel
+,
+qemu img
+,
+git reset
+.
+mutagen
+Real-time file synchronization and network forwarding tool.
+More information:
+https://mutagen.io
+.
+Start a synchronization session between a local directory and a remote host:
+mutagen sync create --name={{session_name}} {{/path/to/local/directory/}} {{user}}@{{host}}:{{/path/to/remote/directory/}}
+Start a synchronization session between a local directory and a Docker container:
+mutagen sync create --name={{session_name}} {{/path/to/local/directory/}} docker://{{user}}@{{container_name}}{{/path/to/remote/directory/}}
+Stop a running session:
+mutagen sync terminate {{session_name}}
+Start a project:
+mutagen project start
+Stop a project:
+mutagen project terminate
+List running sessions for the current project:
+mutagen project list
+This is a
+tldr pages
+(
+source
+, CC BY 4.0) web wrapper for
+cheat-sheets.org
+.
+All commands
+,
+popular commands
+,
+most used linux commands
+.
+Referrals
+.
+Progressive Web Application (PWA) version to install on your device
+.

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <meta name="viewport" content="width=device-width">
+  <title>aws ecr TLDR page</title>
+  <meta name="description" content="aws-ecr collaborative tldr cheatsheet" />
+  <meta name="keywords" content="aws ecr, aws-ecr, tldr, tldr pages, tldr page, cheat sheet, cheatsheet, man, shell, console, documentation, terminal, command line, man page, examples, help, manual, hacktoberfest, manpages, man pages" />
+  <meta name="author" content="TLDR page team and Alexander Krassotkin" />
+  <meta name="revision" content="202209161450" />
+  <meta property="og:title" content="aws ecr TLDR page" />
+  <meta property="og:description" content="aws-ecr collaborative tldr cheatsheet" />
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="TLDR page team and Alexander Krassotkin" />
+  <meta property="article:published_time" content="2022-07-05T06:30:05Z" />
+  <meta property="article:modified_time" content="2022-09-16T11:48:45Z" />
+  <meta property="og:url" content="//www.cheat-sheets.org/project/tldr/command/aws-ecr/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="cheat-sheets.org" />
+  <style>
+article {
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:2em;
+ max-width:980px;
+}
+blockquote {
+ background-color: #F5F5F5;
+ border-left: 4px solid #eaecf0;
+ display: block;
+ padding: 0.25em 1em;
+}
+noscript {
+ font-weight:bold;
+ margin-left:auto;
+ margin-right:auto;
+ max-width:39em;
+ text-align:center;
+}
+#commentBlock {
+ text-align:left;
+ padding:1em;
+}
+#searchButton {
+ font-size:1.7em;
+}
+#searchInput {
+ font-size:1.7em;
+ margin:0.5em;
+ padding-left:0.2em;
+ padding-right:0.2em;
+}
+#searchTitle {
+ font-size:2.3em;
+}
+#topBlock {
+ margin:auto;
+ max-width:39em;
+ text-align:center;
+}
+#trafficTable {
+ text-align:right;
+}
+#trafficTable td {
+ padding-left:1em;
+}
+  </style>
+  <script>
+var baseURL = "/project/tldr/";
+var defaultLanguage = "en";
+var defaultOS = "common";
+var defaultVersion = "20220710";
+var language = "en";
+var os = "common";
+var previousCommand = "aws-ecr";
+var version = "20220710";
+
+var bu = ((baseURL === "&" + "baseURL;") ? "/project/tldr/" : baseURL);
+var lu = (language === defaultLanguage) ? "" : ("language/" + language + "/");
+var ou = (os === defaultOS) ? "" : ("os/" + os + "/");
+var vu = (version == defaultVersion) ? "" : ("version/" + version + "/");
+
+function search() {
+ var command = document.getElementById("searchInput").value.trim();
+ if(command.length == 0) return;
+ command = command.replace(/\s+/g, "-"); 
+ window.location.href = "//www.cheat-sheets.org" + bu + "command/" + command + "/" + ou + lu + vu;
+}
+
+window.addEventListener("load", (event) => {
+ var nsel = document.querySelector("noscript");
+ if(nsel) nsel.style.display = "none";
+ document.getElementById("searchButton").addEventListener("click", search);
+ var iel = document.getElementById("searchInput");
+ iel.addEventListener("keydown", function(event) {if(event.keyCode === 13) search();});
+ const end = iel.value.length;
+ iel.setSelectionRange(end, end);
+ iel.focus();
+ document.getElementById("searchTitle").addEventListener("click", function(event) {window.location.href = "https://www.cheat-sheets.org" + bu;});
+});
+  </script>
+ </head>
+
+ <body>
+  <article>
+   <div id="topBlock">
+    <div id="searhBlock">
+     <span id="searchTitle">TLDR</span>
+     <input type="search" id="searchInput" name="searhInput" value="aws ecr">
+     <button id="searchButton">Search</button>
+    </div>
+    <div id="optionsBlock">
+    </div>
+    <noscript>JavaScript must be enabled for this application.</noscript>
+    <div id="commentBlock">
+     Enter a command. For example: 
+
+     <a class="exampleCommandsItem" href="/project/tldr/command/git-format-patch/">git format patch</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/pueue-group/">pueue group</a>.
+
+    </div>
+   </div>
+   <div id="content">
+    <!--<hr>-->
+   <div id="tldrPage">
+<h1>aws ecr</h1>
+<div class="emptyString">&nbsp;</div>
+<blockquote>Push, pull, and manage container images.
+More information: <a href="https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/index.html">https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/index.html</a>.
+</blockquote>
+<div class="emptyString">&nbsp;</div>
+<ul>
+<li>Authenticate Docker with the default registry (username is AWS):
+<div class="emptyString">&nbsp;</div>
+<code>aws ecr get-login-password --region {{region}} | {{docker login}} --username AWS --password-stdin {{aws_account_id}}.dkr.ecr.{{region}}.amazonaws.com</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Create a repository:
+<div class="emptyString">&nbsp;</div>
+<code>aws ecr create-repository --repository-name {{repository}} --image-scanning-configuration scanOnPush={{true|false}} --region {{region}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Tag a local image for ECR:
+<div class="emptyString">&nbsp;</div>
+<code>docker tag {{container_name}}:{{tag}} {{aws_account_id}}.dkr.ecr.{{region}}.amazonaws.com/{{container_name}}:{{tag}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Push an image to a repository:
+<div class="emptyString">&nbsp;</div>
+<code>docker push {{aws_account_id}}.dkr.ecr.{{region}}.amazonaws.com/{{container_name}}:{{tag}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Pull an image from a repository:
+<div class="emptyString">&nbsp;</div>
+<code>docker pull {{aws_account_id}}.dkr.ecr.{{region}}.amazonaws.com/{{container_name}}:{{tag}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Delete an image from a repository:
+<div class="emptyString">&nbsp;</div>
+<code>aws ecr batch-delete-image  --repository-name {{repository}} --image-ids imageTag={{latest}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Delete a repository:
+<div class="emptyString">&nbsp;</div>
+<code>aws ecr delete-repository --repository-name {{repository}} --force</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>List images within a repository:
+<div class="emptyString">&nbsp;</div>
+<code>aws ecr list-images --repository-name {{repository}}</code>
+</li>
+</ul>
+
+   </div>
+
+   </div>
+   <hr>
+   <div class="headTitle">This is a <a href="/project/tldr/">tldr pages</a> (<a href="https://github.com/tldr-pages/tldr">source</a>, CC BY 4.0) web wrapper for <a href="/">cheat-sheets.org</a>. <a href="/project/tldr/command/special-all-language-commands/">All commands</a>, <a href="/project/tldr/command/special-top-commands/">popular commands</a>, <a href="/project/tldr/command/special-most-used-linux-commands/">most used linux commands</a>. <a href="/project/tldr/command/special-referrals/">Referrals</a>. <a href="https://www.cheat-sheets.org/project/tldr-pwa/">Progressive Web Application (PWA) version to install on your device</a>.</div>
+  </article>
+ </body>
+
+</html>
+
+

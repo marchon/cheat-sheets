@@ -1,0 +1,57 @@
+# lsof
+
+TLDR page cloned from https://www.cheat-sheets.org/project/tldr/command/lsof/.
+
+Upstream tldr pages are CC BY 4.0 (https://github.com/tldr-pages/tldr).
+
+TLDR
+Search
+JavaScript must be enabled for this application.
+Enter a command. For example:
+serve
+,
+flake8
+,
+pio system
+,
+fswebcam
+.
+lsof
+Lists open files and the corresponding processes.
+Note: Root privileges (or sudo) is required to list files opened by others.
+More information:
+https://manned.org/lsof
+.
+Find the processes that have a given file open:
+lsof {{path/to/file}}
+Find the process that opened a local internet port:
+lsof -i :{{port}}
+Only output the process ID (PID):
+lsof -t {{path/to/file}}
+List files opened by the given user:
+lsof -u {{username}}
+List files opened by the given command or process:
+lsof -c {{process_or_command_name}}
+List files opened by a specific process, given its PID:
+lsof -p {{PID}}
+List open files in a directory:
+lsof +D {{path/to/directory}}
+Find the process that is listening on a local IPv6 TCP port and don't convert network or port numbers:
+lsof -i6TCP:{{port}} -sTCP:LISTEN -n -P
+This is a
+tldr pages
+(
+source
+, CC BY 4.0) web wrapper for
+cheat-sheets.org
+.
+All commands
+,
+popular commands
+,
+most used linux commands
+.
+Referrals
+.
+Progressive Web Application (PWA) version to install on your device
+.

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <meta name="viewport" content="width=device-width">
+  <title>tlmgr TLDR page</title>
+  <meta name="description" content="tlmgr collaborative tldr cheatsheet" />
+  <meta name="keywords" content="tlmgr, tlmgr, tldr, tldr pages, tldr page, cheat sheet, cheatsheet, man, shell, console, documentation, terminal, command line, man page, examples, help, manual, hacktoberfest, manpages, man pages" />
+  <meta name="author" content="TLDR page team and Alexander Krassotkin" />
+  <meta name="revision" content="202209161450" />
+  <meta property="og:title" content="tlmgr TLDR page" />
+  <meta property="og:description" content="tlmgr collaborative tldr cheatsheet" />
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="TLDR page team and Alexander Krassotkin" />
+  <meta property="article:published_time" content="2022-07-05T06:30:05Z" />
+  <meta property="article:modified_time" content="2022-09-16T11:48:45Z" />
+  <meta property="og:url" content="//www.cheat-sheets.org/project/tldr/command/tlmgr/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="cheat-sheets.org" />
+  <style>
+article {
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:2em;
+ max-width:980px;
+}
+blockquote {
+ background-color: #F5F5F5;
+ border-left: 4px solid #eaecf0;
+ display: block;
+ padding: 0.25em 1em;
+}
+noscript {
+ font-weight:bold;
+ margin-left:auto;
+ margin-right:auto;
+ max-width:39em;
+ text-align:center;
+}
+#commentBlock {
+ text-align:left;
+ padding:1em;
+}
+#searchButton {
+ font-size:1.7em;
+}
+#searchInput {
+ font-size:1.7em;
+ margin:0.5em;
+ padding-left:0.2em;
+ padding-right:0.2em;
+}
+#searchTitle {
+ font-size:2.3em;
+}
+#topBlock {
+ margin:auto;
+ max-width:39em;
+ text-align:center;
+}
+#trafficTable {
+ text-align:right;
+}
+#trafficTable td {
+ padding-left:1em;
+}
+  </style>
+  <script>
+var baseURL = "/project/tldr/";
+var defaultLanguage = "en";
+var defaultOS = "common";
+var defaultVersion = "20220710";
+var language = "en";
+var os = "common";
+var previousCommand = "tlmgr";
+var version = "20220710";
+
+var bu = ((baseURL === "&" + "baseURL;") ? "/project/tldr/" : baseURL);
+var lu = (language === defaultLanguage) ? "" : ("language/" + language + "/");
+var ou = (os === defaultOS) ? "" : ("os/" + os + "/");
+var vu = (version == defaultVersion) ? "" : ("version/" + version + "/");
+
+function search() {
+ var command = document.getElementById("searchInput").value.trim();
+ if(command.length == 0) return;
+ command = command.replace(/\s+/g, "-"); 
+ window.location.href = "//www.cheat-sheets.org" + bu + "command/" + command + "/" + ou + lu + vu;
+}
+
+window.addEventListener("load", (event) => {
+ var nsel = document.querySelector("noscript");
+ if(nsel) nsel.style.display = "none";
+ document.getElementById("searchButton").addEventListener("click", search);
+ var iel = document.getElementById("searchInput");
+ iel.addEventListener("keydown", function(event) {if(event.keyCode === 13) search();});
+ const end = iel.value.length;
+ iel.setSelectionRange(end, end);
+ iel.focus();
+ document.getElementById("searchTitle").addEventListener("click", function(event) {window.location.href = "https://www.cheat-sheets.org" + bu;});
+});
+  </script>
+ </head>
+
+ <body>
+  <article>
+   <div id="topBlock">
+    <div id="searhBlock">
+     <span id="searchTitle">TLDR</span>
+     <input type="search" id="searchInput" name="searhInput" value="tlmgr">
+     <button id="searchButton">Search</button>
+    </div>
+    <div id="optionsBlock">
+    </div>
+    <noscript>JavaScript must be enabled for this application.</noscript>
+    <div id="commentBlock">
+     Enter a command. For example: 
+
+     <a class="exampleCommandsItem" href="/project/tldr/command/mktemp/">mktemp</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/amass-enum/">amass enum</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/valac/">valac</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/od/">od</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/mailx/">mailx</a>.
+
+    </div>
+   </div>
+   <div id="content">
+    <!--<hr>-->
+   <div id="tldrPage">
+<h1>tlmgr</h1>
+<div class="emptyString">&nbsp;</div>
+<blockquote>Manages packages and configuration options of an existing TeX Live installation.
+Some subcommands such as <code>tlmgr paper</code> have their own usage documentation.
+More information: <a href="https://www.tug.org/texlive/tlmgr.html">https://www.tug.org/texlive/tlmgr.html</a>.
+</blockquote>
+<div class="emptyString">&nbsp;</div>
+<ul>
+<li>Install a package and its dependencies:
+<div class="emptyString">&nbsp;</div>
+<code>tlmgr install {{package}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Remove a package and its dependencies:
+<div class="emptyString">&nbsp;</div>
+<code>tlmgr remove {{package}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Display information about a package:
+<div class="emptyString">&nbsp;</div>
+<code>tlmgr info {{package}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Update all packages:
+<div class="emptyString">&nbsp;</div>
+<code>tlmgr update --all</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Show possible updates without updating anything:
+<div class="emptyString">&nbsp;</div>
+<code>tlmgr update --list</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Start a GUI version of tlmgr:
+<div class="emptyString">&nbsp;</div>
+<code>tlmgr gui</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>List all TeX Live configurations:
+<div class="emptyString">&nbsp;</div>
+<code>tlmgr conf</code>
+</li>
+</ul>
+
+   </div>
+
+   </div>
+   <hr>
+   <div class="headTitle">This is a <a href="/project/tldr/">tldr pages</a> (<a href="https://github.com/tldr-pages/tldr">source</a>, CC BY 4.0) web wrapper for <a href="/">cheat-sheets.org</a>. <a href="/project/tldr/command/special-all-language-commands/">All commands</a>, <a href="/project/tldr/command/special-top-commands/">popular commands</a>, <a href="/project/tldr/command/special-most-used-linux-commands/">most used linux commands</a>. <a href="/project/tldr/command/special-referrals/">Referrals</a>. <a href="https://www.cheat-sheets.org/project/tldr-pwa/">Progressive Web Application (PWA) version to install on your device</a>.</div>
+  </article>
+ </body>
+
+</html>
+
+

@@ -1,0 +1,54 @@
+# 2to3
+
+TLDR page cloned from https://www.cheat-sheets.org/project/tldr/command/2to3/.
+
+Upstream tldr pages are CC BY 4.0 (https://github.com/tldr-pages/tldr).
+
+TLDR
+Search
+JavaScript must be enabled for this application.
+Enter a command. For example:
+rubocop
+,
+asciinema
+,
+tmpmail
+,
+nload
+.
+2to3
+Automated Python 2 to 3 code conversion.
+More information:
+https://docs.python.org/3/library/2to3.html
+.
+Display the changes that would be performed without performing them (dry-run):
+2to3 {{path/to/file.py}}
+Convert a Python 2 file to Python 3:
+2to3 --write {{path/to/file.py}}
+Convert specific Python 2 language features to Python 3:
+2to3 --write {{path/to/file.py}} --fix={{raw_input}} --fix={{print}}
+Convert all Python 2 language features except the specified ones to Python 3:
+2to3 --write {{path/to/file.py}} --nofix={{has_key}} --nofix={{isinstance}}
+Display a list of all available language features that can be converted from Python 2 to Python 3:
+2to3 --list-fixes
+Convert all Python 2 files in a directory to Python 3:
+2to3 --output-dir={{path/to/python3_directory}} --write-unchanged-files --nobackups {{path/to/python2_directory}}
+Run 2to3 with multiple threads:
+2to3 --processes={{4}} --output-dir={{path/to/python3_directory}} --write --nobackups --no-diff {{path/to/python2_directory}}
+This is a
+tldr pages
+(
+source
+, CC BY 4.0) web wrapper for
+cheat-sheets.org
+.
+All commands
+,
+popular commands
+,
+most used linux commands
+.
+Referrals
+.
+Progressive Web Application (PWA) version to install on your device
+.

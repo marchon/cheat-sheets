@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <meta name="viewport" content="width=device-width">
+  <title>svn changelist TLDR page</title>
+  <meta name="description" content="svn-changelist collaborative tldr cheatsheet" />
+  <meta name="keywords" content="svn changelist, svn-changelist, tldr, tldr pages, tldr page, cheat sheet, cheatsheet, man, shell, console, documentation, terminal, command line, man page, examples, help, manual, hacktoberfest, manpages, man pages" />
+  <meta name="author" content="TLDR page team and Alexander Krassotkin" />
+  <meta name="revision" content="202209161450" />
+  <meta property="og:title" content="svn changelist TLDR page" />
+  <meta property="og:description" content="svn-changelist collaborative tldr cheatsheet" />
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="TLDR page team and Alexander Krassotkin" />
+  <meta property="article:published_time" content="2022-07-05T06:30:05Z" />
+  <meta property="article:modified_time" content="2022-09-16T11:48:45Z" />
+  <meta property="og:url" content="//www.cheat-sheets.org/project/tldr/command/svn-changelist/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="cheat-sheets.org" />
+  <style>
+article {
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:2em;
+ max-width:980px;
+}
+blockquote {
+ background-color: #F5F5F5;
+ border-left: 4px solid #eaecf0;
+ display: block;
+ padding: 0.25em 1em;
+}
+noscript {
+ font-weight:bold;
+ margin-left:auto;
+ margin-right:auto;
+ max-width:39em;
+ text-align:center;
+}
+#commentBlock {
+ text-align:left;
+ padding:1em;
+}
+#searchButton {
+ font-size:1.7em;
+}
+#searchInput {
+ font-size:1.7em;
+ margin:0.5em;
+ padding-left:0.2em;
+ padding-right:0.2em;
+}
+#searchTitle {
+ font-size:2.3em;
+}
+#topBlock {
+ margin:auto;
+ max-width:39em;
+ text-align:center;
+}
+#trafficTable {
+ text-align:right;
+}
+#trafficTable td {
+ padding-left:1em;
+}
+  </style>
+  <script>
+var baseURL = "/project/tldr/";
+var defaultLanguage = "en";
+var defaultOS = "common";
+var defaultVersion = "20220710";
+var language = "en";
+var os = "common";
+var previousCommand = "svn-changelist";
+var version = "20220710";
+
+var bu = ((baseURL === "&" + "baseURL;") ? "/project/tldr/" : baseURL);
+var lu = (language === defaultLanguage) ? "" : ("language/" + language + "/");
+var ou = (os === defaultOS) ? "" : ("os/" + os + "/");
+var vu = (version == defaultVersion) ? "" : ("version/" + version + "/");
+
+function search() {
+ var command = document.getElementById("searchInput").value.trim();
+ if(command.length == 0) return;
+ command = command.replace(/\s+/g, "-"); 
+ window.location.href = "//www.cheat-sheets.org" + bu + "command/" + command + "/" + ou + lu + vu;
+}
+
+window.addEventListener("load", (event) => {
+ var nsel = document.querySelector("noscript");
+ if(nsel) nsel.style.display = "none";
+ document.getElementById("searchButton").addEventListener("click", search);
+ var iel = document.getElementById("searchInput");
+ iel.addEventListener("keydown", function(event) {if(event.keyCode === 13) search();});
+ const end = iel.value.length;
+ iel.setSelectionRange(end, end);
+ iel.focus();
+ document.getElementById("searchTitle").addEventListener("click", function(event) {window.location.href = "https://www.cheat-sheets.org" + bu;});
+});
+  </script>
+ </head>
+
+ <body>
+  <article>
+   <div id="topBlock">
+    <div id="searhBlock">
+     <span id="searchTitle">TLDR</span>
+     <input type="search" id="searchInput" name="searhInput" value="svn changelist">
+     <button id="searchButton">Search</button>
+    </div>
+    <div id="optionsBlock">
+    </div>
+    <noscript>JavaScript must be enabled for this application.</noscript>
+    <div id="commentBlock">
+     Enter a command. For example: 
+
+     <a class="exampleCommandsItem" href="/project/tldr/command/nc/">nc</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/nm/">nm</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/calendar/">calendar</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/rtv/">rtv</a>, 
+     <a class="exampleCommandsItem" href="/project/tldr/command/git-stash/">git stash</a>.
+
+    </div>
+   </div>
+   <div id="content">
+    <!--<hr>-->
+   <div id="tldrPage">
+<h1>svn changelist</h1>
+<div class="emptyString">&nbsp;</div>
+<blockquote>Associate a changelist with a set of files.
+More information: <a href="http://svnbook.red-bean.com/en/1.7/svn.advanced.changelists.html">http://svnbook.red-bean.com/en/1.7/svn.advanced.changelists.html</a>.
+</blockquote>
+<div class="emptyString">&nbsp;</div>
+<ul>
+<li>Add files to a changelist, creating the changelist if it does not exist:
+<div class="emptyString">&nbsp;</div>
+<code>svn changelist {{changelist_name}} {{path/to/file1}} {{path/to/file2}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Remove files from a changelist:
+<div class="emptyString">&nbsp;</div>
+<code>svn changelist --remove {{path/to/file1}} {{path/to/file2}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Remove the whole changelist at once:
+<div class="emptyString">&nbsp;</div>
+<code>svn changelist --remove --recursive --changelist {{changelist_name}} .</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Add the contents of a space-separated list of directories to a changelist:
+<div class="emptyString">&nbsp;</div>
+<code>svn changelist --recursive {{changelist_name}} {{path/to/directory1}} {{path/to/directory2}}</code>
+<div class="emptyString">&nbsp;</div>
+</li>
+<li>Commit a changelist:
+<div class="emptyString">&nbsp;</div>
+<code>svn commit --changelist {{changelist_name}}</code>
+</li>
+</ul>
+
+   </div>
+
+   </div>
+   <hr>
+   <div class="headTitle">This is a <a href="/project/tldr/">tldr pages</a> (<a href="https://github.com/tldr-pages/tldr">source</a>, CC BY 4.0) web wrapper for <a href="/">cheat-sheets.org</a>. <a href="/project/tldr/command/special-all-language-commands/">All commands</a>, <a href="/project/tldr/command/special-top-commands/">popular commands</a>, <a href="/project/tldr/command/special-most-used-linux-commands/">most used linux commands</a>. <a href="/project/tldr/command/special-referrals/">Referrals</a>. <a href="https://www.cheat-sheets.org/project/tldr-pwa/">Progressive Web Application (PWA) version to install on your device</a>.</div>
+  </article>
+ </body>
+
+</html>
+
+
