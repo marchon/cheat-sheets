@@ -1,0 +1,404 @@
+
+% CVS Quick Reference Card
+% Copyright (c) 2002 Laurent Gregoire.
+% TeX Format
+
+% Note: Remove the following line and uncomment the three next for PDF
+% generation (command is pdftex cvsqrc.tex).
+\input outopt.tex
+
+% \pdfoutput=1
+% \pdfpageheight=21cm
+% \pdfpagewidth=29.7cm
+
+% Font definitions
+\font\bigbf=cmb12
+\font\smallrm=cmr8
+\font\smalltt=cmtt8
+\font\tinyit=cmmi5
+
+%\def\cm#1#2{{\parindent-1cm\leftskip1cm{\tt#1}\dotfill#2}\par}
+\def\cm#1#2{{\tt#1}\dotfill#2\par}
+%\def\cn#1{\hfill$\lfloor$ #1\par}
+\def\cn#1{\hfill#1\par}
+\def\co#1{\hskip2cm#1\par}
+\def\sect#1{\vskip0.4cm{\it#1}\par}
+
+% Characters definitions
+\def\bs{$\backslash$}
+\def\ctrl{{\rm\char94}\kern-1pt}
+\def\enter{$\hookleftarrow$}
+\def\or{\thinspace{\tinyit{or}}\thinspace}
+\def\key#1{$\langle${\rm{\it#1}}$\rangle$}
+\def\rapos{\char125}
+\def\lapos{\char123}
+\def\bs{\char92}
+\def\tild{\char126}
+\def\explainedsymbol{$\triangleright$}
+\def\explained{\setbox0=\hbox{\strut}\strut\vadjust{\kern-\dp0\vtop to \dp0
+	{\baselineskip\dp0\vss\rlap{\kern-.3cm\explainedsymbol}\null}}}
+\def\stickysymb{$\circ$}
+\def\sticky{\setbox0=\hbox{\strut}\strut\vadjust{\kern-\dp0\vtop to \dp0
+	{\baselineskip\dp0\vss\rlap{\kern-.3cm\stickysymb}\null}}}
+
+% Three columns definitions
+\parindent 0pt
+\nopagenumbers
+\hoffset=-1.56cm
+\voffset=-1.54cm
+\newdimen\fullhsize
+\fullhsize=27.9cm
+\hsize=8.5cm
+\vsize=19cm
+\def\fullline{\hbox to\fullhsize}
+\let\lr=L
+\newbox\leftcolumn
+\newbox\midcolumn
+\output={
+  \if L\lr
+    \global\setbox\leftcolumn=\columnbox
+    \global\let\lr=M
+  \else\if M\lr
+    \global\setbox\midcolumn=\columnbox
+    \global\let\lr=R
+  \else
+    \tripleformat
+    \global\let\lr=L
+  \fi\fi
+  \ifnum\outputpenalty>-20000
+  \else
+    \dosupereject
+  \fi}
+\def\tripleformat{
+  \shipout\vbox{\fullline{\box\leftcolumn\hfil\box\midcolumn\hfil\columnbox}}
+  \advancepageno}
+\def\columnbox{\leftline{\pagebody}}
+
+% Card content
+% Header
+%\hrule\vskip 3pt
+\hfil{\bf CVS QUICK REFERENCE CARD}\hfil\par
+\vskip 2pt\hrule
+
+\sect{Overview}
+CVS is a version control system aimed at keeping an history
+and managing multiple people working at the same time on a same
+source hierarchy. CVS keeps a single copy of the master sources,
+called the {\it repository\/}. Each person works on one's own copy
+of the repository, called the {\it sandbox\/}. CVS allows one
+to control the changes between its sandbox and the global repository.
+
+\sect{Synopsis}
+{\tt cvs} [{\it cvsopt\/}] {\it cmd\/} [{\it cmdopt\/}] {\it files...}\par
+\cm{{\it cvsopt}}{options controlling the overall CVS program}
+\cm{{\it cmd}}{particular action to perform on the repository}
+\cm{{\it cmdopt}}{options controlling the specific command}
+\cm{{\it files}}{files to act on, or specific arguments to {\it cmd}}
+If you do not specify any files, CVS will normally recurse
+into subdirectories and apply the command to each CVS files encountered.
+{\bf Warning}: the same option can mean different things depending
+on whether it is in the {\it cvsopt\/} or {\it cvscmd\/} group.\par
+
+\sect{Overall CVS options}
+This list describes all possible {\it cvsopt\/} available.\par
+\cm{-b {\it bindir}}{use {\it bindir\/} as location of RCS files}
+\cn{same as the {\tt RCSBIN} environment variable}
+\cm{-d {\it cvsdir}}{use {\it cvsdir\/} as location of repository}
+\cn{same as the {\tt CVSROOT} environment variable}
+\cm{-e {\it editor}}{use {\it editor} to enter log information}
+\cn{same as the {\tt CVSEDITOR} or {\tt EDITOR} variable}
+\cm{-f}{do not read the {\tt ~/.cvsrc} startup file}
+\cm{-H}{display a summary of all commands available}
+\cm{-H {\it cmd}}{display usage information about {\it cmd\/}}
+\cm{-l}{do not log the command in history}
+\cm{-q}{be quiet, suppress informational messages}
+\cm{-Q}{be {\sl really\/} quiet, output only serious problems}
+\cm{-n}{do not change any files, only simulate}
+\cm{-r}{make new working file read-only}
+\cn{same as if {\tt CVSREAD} variable is set}
+\cm{-t}{trace program execution, useful with {\tt -n} to explore}
+\cm{-v}{display version and copyright information}
+\cm{-w}{make new working file read-write (default)}
+\cm{-x}{encrypt communication between client \& server}
+\cm{-z {\it n}}{use {\it n\/} as compression level for transferring files}
+
+\sect{CVS command summary}
+This list summarizes all possible {\it cmd\/} available.
+Only {\it cmd\/} ticked with \explainedsymbol\ are detailed here.\par
+\explained\cm{add}{add new files or directories}
+\cm{admin}{control/administrate the repository}
+\explained\cm{checkout}{get a new sandbox from the repository}
+\explained\cm{commit}{apply changes, additions, deletions}
+\explained\cm{diff}{show differences between sandbox \& repository}
+\cm{export}{prepare copies for off-site shipment}
+\explained\cm{history}{show report on commands executed}
+\explained\cm{import}{incorporate a set of off-site updates}
+\cm{init}{initialize a new repository}
+\explained\cm{log}{show stored log information}
+\cm{rdiff}{prepare a collection of diffs as patch file}
+\cm{release}{cancel a {\tt checkout}, abandoning changes}
+\explained\cm{remove}{remove files from the source tree}
+\cm{rtag}{specify a symbolic tag for a revision}
+\explained\cm{status}{show current status of files}
+\explained\cm{tag}{specify a symbolic tag from a sandbox}
+\explained\cm{update}{get the changes from the repository}
+
+\vskip2cm
+
+\sect{Common command options}
+This list describes all possible {\it cmdopt\/} available,
+common for all {\it cmd\/}, except {\tt history}.
+Not all commands support all options, only when it makes sense.
+The \stickysymb\ symbol specifies a sticky option
+(CVS remembers the option on subsequent commands).\par
+\sticky\cm{-D{\it date}}{the most recent revision no later than {\it date\/}}
+\cn{{\tt 1 month ago}, {\tt 6/29/97 08:20:00 PST},}
+\cn{{\tt yesterday}, {\tt last Friday}, {\tt 18:30 GMT}...}
+\cm{-f}{use file even if it does not match tag or date}
+\sticky\cm{-kb}{set the file as binary (do not expand keywords)}
+\sticky\cm{-kv}{retain keyword information}
+\cm{-l}{disable recursion in sub-directories}
+\cm{-n}{do not run program associated with {\it cmd\/}}
+\cm{-P}{remove empty directories after {\tt checkout}/{\tt update}}
+\cm{-p}{pipe files from the repository to standard output}
+\sticky\cm{-r {\it tag}}{use the revision {\it tag\/} instead of head}
+\cn{use {\tt HEAD} for the latest version available}
+\cn{or {\tt BASE} for the file you last checked out}
+
+\sect{Checkout}
+{\tt cvs co} [{\tt -ANPRcflnps}]
+  [{\tt -r}{\it rev\/}$\vert${\tt -D}{\it date\/}]
+  [{\tt -d}{\it dir\/}]
+  [{\tt -j}{\it rev1\/}\par
+  \hskip 24pt [{\tt -j}{\it rev2\/}]]
+  [{\tt -k}{\it opt\/}]
+{\it module}...\par
+Obtain a new sandbox by getting files from {\it module\/}
+into the directory CVS creates. {\tt cvs co} in an already
+checked out module is identical to {\tt cvs upd -d}.\par
+\cm{-A}{reset any sticky (\stickysymb) tags, flags, dates}
+\cm{-j{\it v}}{merge changes from the revision {\it v\/}}
+\cm{-j{\it v1} -j{\it v2}}{merge changes from {\it v1\/} \& {\it v2\/}}
+\cm{-N}{avoid shortening modules paths}
+\cm{-c}{only list all module files to standard output}
+\cm{-d{\it dir}}{use {\it dir\/} for new directory instead of module}
+\cm{-s}{display status information for each module}
+
+\sect{Commit}
+{\tt cvs ci} [{\tt -nRlf}]
+  [{\tt -m'}{\it msg\/}{\tt'}$\vert${\tt -F}{\it file\/}]
+  [{\tt -r}{\it rev\/}]
+  {\it files}...\par
+Incorporate changes made locally in the sandbox
+back into the repository.\par
+\cm{-R}{force recursion when scanning for files}
+\cm{-l}{disable recursion in sub-directories}
+\cm{-f}{force commit even if no change has been made}
+\cm{-F{\it file}}{use content of {\it file\/} as log message}
+\cm{-m{\it msg}}{specify {\it msg\/} as log message}
+\cm{-r{\it rev}}{commit to specific revision {\it rev\/}}
+
+\sect{Update}
+{\tt cvs upd} [{\tt -APdflRp}]
+  [{\tt -r}{\it tag}$\vert${\tt -D} {\it date}]
+  [{\tt -j}{\it rev\/}]
+  [{\tt -I}{\it ign\/}]\par
+  \hskip 24pt [{\tt -k}{\it opt\/}]
+  [{\tt -W}{\it spec\/}]
+{\it files}...\par
+Update the sandbox with external changes made to the repository.\par
+\cm{-A}{reset any sticky (\stickysymb) tags, flags, dates}
+\cm{-j{\it rev}}{merge changes from the revision {\it rev\/}}
+\cm{-d}{create any new directories from the repository}
+\cm{-I{\it f}}{ignore file whose names match {\it f\/}}
+\cm{-I!}{avoid ignoring any file at all}
+\cm{-C}{overwrite locally modified files with clean copies}
+The {\tt cvs upd} prints a status flag for each file:\par
+\cm{U}{brought up to date with the repository}
+\cm{A}{added locally but not yet commited}
+\cm{R}{removed locally but not yet commited}
+\cm{M}{modified locally or merged with the repository}
+\cm{C}{conflicting merge that needs manual resolution}
+\cn{a backup copy is made under {\tt .\#}{\it file}{\tt.}{\it version}}
+\cm{?}{ignored local file which does not exist in repository}
+
+\sect{Remove}
+{\tt cvs remove} [{\tt-flR}] {\it files}...\par
+Remove files or directories from repository.\par
+\cm{-f}{delete the file before removing it}
+
+\vskip 3pt
+\sect{Add}
+{\tt cvs add} [{\tt-k}{\it kflag\/}]
+  [{\tt-m'}{\it msg\/}{\tt'}] {\it files}...\par
+Add new files or directories to repository.\par
+\cm{-k{\it kflag}}{use {\it kflag\/} for RCS}
+\cm{-m'{\it msg}'}{use {\it msg\/} as the creation log}
+
+\vskip 3pt
+\sect{Differences}
+{\tt cvs diff}
+  [{\tt-lNR}]
+%[{\it rcsopt\/}]
+  [{\tt-r}{\it r1\/} [{\tt-r}{\it r2\/}] $\vert$
+   {\tt-D}{\it d2\/} [{\tt-D}{\it d1\/}]]
+  {\it files}...\par
+Show differences between sandbox and repository.\par
+\cm{-D{\it d1}}{diff working file against date {\it d1\/}}
+\cm{-D{\it d1\/} -D{\it d2}}{diff date {\it d1\/} against date {\it d2\/}}
+\cm{-r{\it r1}}{diff working file against revision {\it r1\/}}
+\cm{-r{\it r1\/} -r{\it r2}}{diff revision {\it r1\/} against revision {\it r2\/}}
+\cm{-N}{include added/removed files}
+
+\vskip 3pt
+\sect{Log}
+{\tt cvs log}
+  [{\tt-lRhtNb}]
+  [{\tt-r}{\it r1\/}[{\tt;}{\it r2\/}]]
+  [{\tt-d}{\it d1\/}[{\tt}{\it d2\/}]]
+  [{\tt-s}{\it states\/}]\par
+  \hskip 24pt [{\tt-w}{\it logins\/}]
+  {\it files\/}...\par
+Show log information stored for some files.\par
+\cm{-R}{print name of RCS file only}
+\cm{-h}{print header only}
+\cm{-t}{print header and description only}
+\cm{-N}{do not list tags}
+\cm{-b}{list default branch revisions only}
+\cm{-r{\it revs\/}}{specify set of revisions to list}
+\cm{-d{\it dates\/}}{specify set of dates to list}
+\cm{-s{\it states\/}}{specify set of states to list}
+\cm{-w{\it logins\/}}{list only revisions checked in by users {\it logins\/}}
+
+\vskip 3pt
+\sect{Import}
+{\tt cvs import}
+ [{\tt-d}] [{\tt-b}{\it branch\/}]
+ [{\tt-I}{\it file}...]
+ {\it rep\/} {\it vendor\/} {\it release\/}\par
+Incorporate a new hierarchy of sources under CVS.\par
+\cm{{\it rep\/}}{directory path, eventually creates it}
+\cm{{\it vendor\/}}{tag used for the entire branch}
+\cm{{\it release\/}}{tag used for the imported files}
+\cm{-d}{use file's last modification time for check-in time}
+\cm{-b{\it branch\/}}{specify a branch {\it branch\/} other than {\tt 1.1.1}}
+\cm{-I{\it name\/}}{ignore file {\it name\/} for import}
+
+\sect{History}
+{\tt cvs hist}
+  [{\tt-Tcoealw}] [{\tt-m}{\it module\/}]
+  [{\it opts\/}] {\it files\/}...\par
+Show a report on CVS commands that you or others
+have executed on a particular file or directory in the source
+repository.
+{\bf Warning}: uses options in ways
+conflicting with common meaning.\par
+\cm{-T}{report on all tags}
+\cm{-c}{report on each commit}
+\cm{-o}{report on checked-out modules}
+\cm{-e}{report on everything}
+\cm{-a}{report data for all users}
+\cm{-l}{report on last modification only}
+\cm{-w}{report on the current directory only}
+\cm{-m{\it mod\/}}{report on module {\it mod\/}}
+\cm{-x{\it type}}{extract record {\it type}, a list of several letters:}
+% 2 columns in one...
+\hskip0.5cm\vrule\hskip0.2cm\vtop{
+  \hbox{{\tt O} checked-out}
+  \hbox{{\tt W} deleted during an update}
+  \hbox{{\tt U} copied from repository}
+  \hbox{{\tt G} merged with success}
+  \hbox{{\tt C} merged with conflict}}
+\hskip0.5cm\vrule\hskip0.2cm\vtop{
+  \hbox{{\tt A} first added}
+  \hbox{{\tt T} rtagged}
+  \hbox{{\tt M} modified}
+  \hbox{{\tt F} released}
+  \hbox{{\tt R} removed}}\par
+\vskip2pt
+\cm{-b{\it str\/}}{up to module/file/path matching {\it str\/}}
+\cm{-D{\it date\/}}{report since {\it date\/}}
+\cm{-p{\it rep\/}}{report for repository {\it rep\/}}
+\cm{-u{\it user\/}}{report for user {\it user\/}}
+
+\sect{Status}
+{\tt cvs status}
+ [{\tt-lRqQ}] [{\tt-v}] {\it files\/}...\par
+Display a brief report on the current status of {\it files\/}:
+latest version, version in working directory, whether the working
+version has been edited and, optionally, symbolic tags in the RCS file.\par
+\cm{-v}{display also RCS file symbolic tags}
+
+\sect{Tags}
+{\tt cvs tag}
+ [{\tt-lRqQ}] [{\tt-Fbd}]
+ [[{\tt-r}{\it tag\/} $\vert$ {\tt-D}{\it date\/}] [{\tt-f}]]
+ {\it tag\/} {\it files\/}...\par
+Specify a symbolic tag for files in the repository.
+By default tag the revision that were last synchronized
+with your working directory.
+Applied immediately to the repository.\par
+\cm{-r -D}{used to rename an already-existing tag}
+\cm{-f}{used with {\tt-r} \& {\tt-D}, force the tag}
+\cm{-F}{move the tag if it already exists}
+\cm{-b}{apply the tag as a new branch}
+\cm{-d}{delete the tag instead of adding it}
+
+\sect{Keywords}
+Embedded strings {\tt\$}{\it keyword\/}{\tt:}...{\tt\$} in text
+files are updated by CVS whenever getting a new revision.\par
+\cm{\$Author\$}{login name of the user who last checked in}
+\cm{\$Date\$}{UTC date \& time of the last check in}
+\cm{\$Header\$}{RCS file, rev., date, author, state, locker}
+\cm{\$Id\$}{same as {\tt\$Header\$} without path}
+\cm{\$Name\$}{tag name used to check out the file}
+\cm{\$Locker\$}{login name of the user who locked the file}
+\cm{\$Log\$}{log message preceded by a header (append)}
+\cm{\$RCSfile\$}{RCS file without a path}
+\cm{\$Revision\$}{current revision number}
+\cm{\$Source\$}{RCS file full pathname}
+\cm{\$State\$}{state assigned to the revision}
+
+\sect{Administrative files}
+Files that CVS keeps under {\tt CVS/}. Do not delete them.\par
+\cm{Entries}{list and status of working files}
+\cm{Entries.Static}{do not add more files on {\tt cvs upd}}
+\cm{Root}{pathname used if {\tt CVSROOT} is not defined}
+\cm{Repository}{pathname to the repository directory}
+\cm{Tag}{sticky date or tag per directory}
+\cm{Checkin.prog}{program to run on {\tt cvs ci}}
+\cm{Update.prog}{program to run on {\tt cvs upd}}
+
+\sect{Environment variables}
+Here is a list of environment variables that CVS uses.\par
+\cm{CVSROOT}{pathname to the repository root}
+\cm{CVSREAD}{if set, {\tt co} and {\tt upd} will make files read-only}
+\cm{CVSEDITOR}{program to use for commit log message}
+\cm{EDITOR}{used if {\tt CVSEDITOR} is not set}
+
+\sect{Ignoring special files}
+Contains a list of file patterns that CVS should ignore.\par
+\cm{{\tt CVSROOT/cvsignore}}{per-repository file}
+\cm{{\tt \~\//.cvsignore}}{per-user file in home directory}
+\cm{{\tt \$CVSIGNORE}}{environment variable}
+\cm{{\tt -I}{\it f}}{command-line option}
+\cm{{\tt .cvsignore}}{per-directory in sandbox, not recursive}
+\cm{{\tt !}}{clear current list, except per-directory {\tt .cvsignore}}
+
+% Footer
+\vfill \hrule\smallskip
+{\smallrm This card may be freely distributed under
+the terms of the GNU general public licence ---
+Copyright \copyright\ {\oldstyle 2006} by Laurent Gr\'egoire
+$\langle${\smalltt laurent.gregoire@icam.fr}$\rangle$ --- v0.4 ---
+The author assumes no responsability for any errors on this card.
+The latest version can be found at
+{\smalltt http://tnerual.eriogerg.free.fr/}}
+
+% Ending
+\supereject
+\if L\lr \else\null\vfill\eject\fi
+\if L\lr \else\null\vfill\eject\fi
+\bye
+
+% EOF
