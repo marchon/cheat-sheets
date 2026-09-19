@@ -16,6 +16,49 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Person",
+      "@id": "https://georgelambert.org/#person",
+      "name": "George Lambert",
+      "email": "mailto:marchon@gmail.com",
+      "url": "https://georgelambert.org/",
+      "description": "Created the grouping index, search UI, SEO markup, JSON-LD graph, and llms.txt for this archive. Not the author of the underlying cheat sheets."
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#indexing",
+      "name": "Cheat-sheet index, searchability, SEO, JSON-LD, and llms.txt",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "description": "George Lambert created only the catalog grouping, searchability, SEO, JSON-LD, and llms.txt. Source cheat sheets remain the work of cheat-sheets.org and their original authors; snapshots also exist at the Internet Archive.",
+      "creator": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "isBasedOn": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "license": "UNLICENSED",
+      "encoding": [
+        {
+          "@type": "MediaObject",
+          "url": "https://cheat-sheet-index.georgelambert.org/graph.jsonld",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "@type": "MediaObject",
+          "url": "https://cheat-sheet-index.georgelambert.org/llms.txt",
+          "encodingFormat": "text/plain"
+        }
+      ]
+    },
+    {
       "@type": "Organization",
       "@id": "https://cheat-sheets.org/#org",
       "name": "Cheat-Sheets.org",
@@ -40,15 +83,14 @@
       "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
       "inLanguage": "en",
       "publisher": {
-        "@type": "Person",
-        "name": "George Lambert"
+        "@id": "https://georgelambert.org/#person"
       },
       "sameAs": [
         "https://cheat-sheets.org/",
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -56,9 +98,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
@@ -77,8 +135,11 @@
       },
       "license": "https://www.cheat-sheets.org/",
       "creator": {
-        "@type": "Person",
-        "name": "George Lambert"
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "creator": {
+          "@id": "https://georgelambert.org/#person"
+        }
       },
       "hasPart": [
         {
@@ -166,7 +227,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -174,9 +235,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
-      "acquireLicensePage": "https://cheat-sheets.org/"
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      }
     },
     {
       "@type": [
@@ -251,7 +328,7 @@
       ],
       "numberOfItems": 19,
       "inLanguage": "en",
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -259,9 +336,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
-      "acquireLicensePage": "https://cheat-sheets.org/"
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      }
     },
     {
       "@type": [
@@ -287,7 +380,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -295,9 +388,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#saved-1"
@@ -405,7 +514,34 @@
       "sameAs": [
         "https://www.cheat-sheets.org/saved-copy/apache-refcard-a4.pdf"
       ],
-      "learningResourceType": "cheat sheet"
+      "learningResourceType": "cheat sheet",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      }
     },
     {
       "@type": "Article",
@@ -415,11 +551,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Apache_HTTP_Server"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_HTTP_Server",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -432,6 +594,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://www.petefreitag.com/cheatsheets/apache/"
     },
     {
@@ -444,6 +633,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://www.cheat-sheets.org/saved-copy/apache-refcard-a4.pdf"
     },
     {
@@ -470,7 +686,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -478,9 +694,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/#wikipedia-1"
@@ -513,11 +745,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Apache_Ant"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_Ant",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -530,6 +788,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/getting-started-apache-ant?oid=hom24765"
     },
     {
@@ -556,7 +841,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -564,9 +849,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/#wikipedia-1"
@@ -604,11 +905,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Apache_Camel"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_Camel",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -621,6 +948,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/enterprise-integration",
       "sameAs": [
         "https://en.wikipedia.org/wiki/Enterprise_Integration_Patterns"
@@ -650,7 +1004,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -658,9 +1012,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/#wikipedia-1"
@@ -698,11 +1068,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Apache_Solr"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_Solr",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -715,6 +1111,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/solr-essentials"
     },
     {
@@ -741,7 +1164,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -749,9 +1172,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/#wikipedia-1"
@@ -777,11 +1216,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Chef_(software)"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Chef_(software)",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -794,6 +1259,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/chef-open-source-tool-scalable"
     },
     {
@@ -819,7 +1311,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -827,9 +1319,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#wikipedia-1"
@@ -856,11 +1364,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Continuous_integration"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Continuous_integration",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -873,6 +1407,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/continuous-integration"
     },
     {
@@ -885,6 +1446,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/continuous-integration-servers"
     },
     {
@@ -910,7 +1498,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -918,9 +1506,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#saved-1"
@@ -951,7 +1555,34 @@
       "sameAs": [
         "https://www.cheat-sheets.org/saved-copy/docker_cheatsheet_20230106.pdf"
       ],
-      "learningResourceType": "cheat sheet"
+      "learningResourceType": "cheat sheet",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      }
     },
     {
       "@type": "LearningResource",
@@ -963,6 +1594,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://www.cheat-sheets.org/saved-copy/docker_cheatsheet_20230106.pdf",
       "sameAs": [
         "https://docs.docker.com/get-started/docker_cheatsheet.pdf"
@@ -978,6 +1636,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dockerlabs.collabnix.com/docker/cheatsheet/"
     },
     {
@@ -990,6 +1675,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/docker.sh"
     },
     {
@@ -1016,7 +1728,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -1024,9 +1736,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/#wikipedia-1"
@@ -1059,11 +1787,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/JBoss"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/JBoss",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -1076,6 +1830,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/getting-started-jboss"
     },
     {
@@ -1103,7 +1884,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -1111,9 +1892,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/#wikipedia-1"
@@ -1140,11 +1937,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Jetty_(Web_server)"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Jetty_(Web_server)",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -1157,6 +1980,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/jetty"
     },
     {
@@ -1183,7 +2033,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -1191,9 +2041,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#wikipedia-1"
@@ -1222,11 +2088,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Kubernetes"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Kubernetes",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -1239,6 +2131,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://kubernetes.io/docs/reference/kubectl/cheatsheet/"
     },
     {
@@ -1251,6 +2170,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/kubernetes.md"
     },
     {
@@ -1277,7 +2223,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -1285,9 +2231,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#wikipedia-1"
@@ -1328,11 +2290,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Lucene"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Lucene",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -1345,6 +2333,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/lucene"
     },
     {
@@ -1357,6 +2372,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "http://lucene.apache.org/java/docs/index.html"
     },
     {
@@ -1383,7 +2425,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -1391,9 +2433,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#wikipedia-1"
@@ -1434,11 +2492,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Apache_Maven"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_Maven",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -1451,6 +2535,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/apache-maven-2"
     },
     {
@@ -1463,6 +2574,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/getting-started-repository"
     },
     {
@@ -1489,7 +2627,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -1497,9 +2635,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/#wikipedia-1"
@@ -1532,11 +2686,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Mule_(software)"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Mule_(software)",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -1549,6 +2729,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/core-mule"
     },
     {
@@ -1574,7 +2781,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -1582,9 +2789,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/nginx/#sheet-1"
@@ -1604,6 +2827,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/nginx/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/nginx.sh"
     },
     {
@@ -1630,7 +2880,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -1638,9 +2888,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#wikipedia-1"
@@ -1680,11 +2946,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Scalability"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Scalability",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -1695,11 +2987,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/High_availability"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/High_availability",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -1712,6 +3030,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/scalability"
     },
     {
@@ -1724,6 +3069,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/getting-started-nosql-and-data"
     },
     {
@@ -1750,7 +3122,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -1758,9 +3130,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/#wikipedia-1"
@@ -1798,11 +3186,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Apache_ServiceMix"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_ServiceMix",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -1815,6 +3229,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/servicemix"
     },
     {
@@ -1840,7 +3281,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -1848,9 +3289,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#saved-1"
@@ -1881,7 +3338,34 @@
       "sameAs": [
         "https://www.cheat-sheets.org/saved-copy/2675288-Veritas-Cluster-Cheat-Sheet.pdf"
       ],
-      "learningResourceType": "cheat sheet"
+      "learningResourceType": "cheat sheet",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      }
     },
     {
       "@type": "Article",
@@ -1891,11 +3375,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Veritas_Cluster_File_System"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Veritas_Cluster_File_System",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -1908,6 +3418,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://www.cheat-sheets.org/saved-copy/2675288-Veritas-Cluster-Cheat-Sheet.pdf",
       "sameAs": [
         "http://www.scribd.com/doc/2675288/Veritas-Cluster-Cheat-Sheet"
@@ -1936,7 +3473,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -1944,9 +3481,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/#wikipedia-1"
@@ -1977,11 +3530,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/Virtual_machine"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/Virtual_machine",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -1994,6 +3573,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://dzone.com/refcardz/getting-started-virtualization"
     },
     {
@@ -2020,7 +3626,7 @@
         "https://www.cheat-sheets.org/",
         "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
       ],
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
       "isBasedOn": "https://cheat-sheets.org/",
       "citation": [
         {
@@ -2028,9 +3634,25 @@
         },
         {
           "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
         }
       ],
       "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "hasPart": [
         {
           "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#saved-1"
@@ -2070,7 +3692,34 @@
       "sameAs": [
         "https://www.cheat-sheets.org/saved-copy/vmreferenceVI3card1.2.1.pdf"
       ],
-      "learningResourceType": "cheat sheet"
+      "learningResourceType": "cheat sheet",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      }
     },
     {
       "@type": "Article",
@@ -2080,11 +3729,37 @@
       "sameAs": [
         "https://en.wikipedia.org/wiki/VMware"
       ],
-      "isBasedOn": "https://en.wikipedia.org/wiki/VMware",
+      "isBasedOn": "https://cheat-sheets.org/",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#topic"
+      },
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
       }
     },
     {
@@ -2097,6 +3772,33 @@
         "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#topic"
       },
       "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "contributor": {
+        "@type": "Role",
+        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
+        "contributor": {
+          "@id": "https://georgelambert.org/#person"
+        }
+      },
+      "sdPublisher": {
+        "@id": "https://georgelambert.org/#person"
+      },
+      "accountablePerson": {
+        "@id": "https://georgelambert.org/#person"
+      },
       "url": "https://www.cheat-sheets.org/saved-copy/vmreferenceVI3card1.2.1.pdf",
       "sameAs": [
         "http://www.vmreference.com/vi3-card/"
@@ -2152,7 +3854,7 @@ nav a { margin-inline-end: 0.75rem; }
     </ul>
   </main>
   <footer>
-    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+    Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
   </footer>
 </body>
 </html>

@@ -15,8 +15,14 @@ WAYBACK = "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/
 WIKI_LICENSE = "https://creativecommons.org/licenses/by-sa/4.0/"
 CREDIT_TEXT = (
     "Source: cheat-sheets.org. Internet Archive snapshots: "
-    "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+    "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. "
+    "Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert "
+    "<marchon@gmail.com>, https://georgelambert.org/. "
+    "George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets."
 )
+GEORGE_ID = "https://georgelambert.org/#person"
+INDEXING_ID = f"{BASE}/#indexing"
+INDEXER_ROLE = "Indexing, searchability, SEO, JSON-LD, and llms.txt only"
 
 MIME = {
     ".pdf": "application/pdf",
@@ -119,6 +125,52 @@ def wayback_node() -> dict:
     }
 
 
+def person_node() -> dict:
+    return {
+        "@type": "Person",
+        "@id": GEORGE_ID,
+        "name": "George Lambert",
+        "email": "mailto:marchon@gmail.com",
+        "url": "https://georgelambert.org/",
+        "description": (
+            "Created the grouping index, search UI, SEO markup, JSON-LD graph, and llms.txt "
+            "for this archive. Not the author of the underlying cheat sheets."
+        ),
+    }
+
+
+def indexing_work_node() -> dict:
+    return {
+        "@type": "CreativeWork",
+        "@id": INDEXING_ID,
+        "name": "Cheat-sheet index, searchability, SEO, JSON-LD, and llms.txt",
+        "url": f"{BASE}/",
+        "description": (
+            "George Lambert created only the catalog grouping, searchability, SEO, "
+            "JSON-LD, and llms.txt. Source cheat sheets remain the work of cheat-sheets.org "
+            "and their original authors; snapshots also exist at the Internet Archive."
+        ),
+        "creator": {"@id": GEORGE_ID},
+        "accountablePerson": {"@id": GEORGE_ID},
+        "sdPublisher": {"@id": GEORGE_ID},
+        "isBasedOn": SOURCE,
+        "sameAs": [SOURCE, SOURCE_WWW, WAYBACK],
+        "license": "UNLICENSED",
+        "encoding": [
+            {"@type": "MediaObject", "url": f"{BASE}/graph.jsonld", "encodingFormat": "application/ld+json"},
+            {"@type": "MediaObject", "url": f"{BASE}/llms.txt", "encodingFormat": "text/plain"},
+        ],
+    }
+
+
+def indexer_role() -> dict:
+    return {
+        "@type": "Role",
+        "roleName": INDEXER_ROLE,
+        "contributor": {"@id": GEORGE_ID},
+    }
+
+
 def credit_fields() -> dict:
     return {
         "creditText": CREDIT_TEXT,
@@ -126,8 +178,12 @@ def credit_fields() -> dict:
         "citation": [
             {"@id": f"{SOURCE}#org"},
             {"@id": f"{WAYBACK}#archive"},
+            {"@id": INDEXING_ID},
         ],
         "acquireLicensePage": SOURCE,
+        "contributor": indexer_role(),
+        "sdPublisher": {"@id": GEORGE_ID},
+        "accountablePerson": {"@id": GEORGE_ID},
     }
 
 
@@ -142,7 +198,7 @@ def website_node() -> dict:
             "websites, saved copies, and Wikipedia clones."
         ),
         "inLanguage": "en",
-        "publisher": {"@type": "Person", "name": "George Lambert"},
+        "publisher": {"@id": GEORGE_ID},
         "sameAs": [SOURCE, SOURCE_WWW, WAYBACK],
         **credit_fields(),
         "potentialAction": {
@@ -166,7 +222,11 @@ def catalog_node(catalog: dict, groups: list[dict]) -> dict:
         "inLanguage": "en",
         "isPartOf": {"@id": f"{BASE}/#website"},
         "license": "https://www.cheat-sheets.org/",
-        "creator": {"@type": "Person", "name": "George Lambert"},
+        "creator": {
+            "@type": "Role",
+            "roleName": INDEXER_ROLE,
+            "creator": {"@id": GEORGE_ID},
+        },
         "hasPart": [{"@id": group_id(g["id"])} for g in groups if g.get("topic_count")],
         "numberOfItems": catalog["topic_count"],
         "keywords": [g["title"] for g in groups if g.get("topic_count")],
@@ -201,6 +261,7 @@ def saved_node(topic: dict, sc: dict, index: int) -> dict:
         "isPartOf": {"@id": topic_id(topic)},
         "sameAs": [sc["url"]] if sc.get("url") else [],
         "learningResourceType": "cheat sheet",
+        **credit_fields(),
     }
 
 
@@ -216,6 +277,7 @@ def wiki_node(topic: dict, url: str, index: int) -> dict:
         "license": WIKI_LICENSE,
         "inLanguage": "en",
         "isPartOf": {"@id": topic_id(topic)},
+        **credit_fields(),
     }
 
 
@@ -229,6 +291,7 @@ def sheet_node(topic: dict, item: dict, index: int) -> dict:
         "educationalUse": "reference",
         "isPartOf": {"@id": topic_id(topic)},
         "inLanguage": "en",
+        **credit_fields(),
     }
     if hrefs:
         node["url"] = hrefs[0]
@@ -294,7 +357,14 @@ def topic_graph(topic: dict) -> list[dict]:
 
 
 def full_graph(catalog: dict, topics: list[dict], groups: list[dict]) -> dict:
-    graph = [source_org(), wayback_node(), website_node(), catalog_node(catalog, groups)]
+    graph = [
+        person_node(),
+        indexing_work_node(),
+        source_org(),
+        wayback_node(),
+        website_node(),
+        catalog_node(catalog, groups),
+    ]
     by_group = {g["id"]: [] for g in groups}
     for t in topics:
         by_group.setdefault(t["group"], []).append(t)
@@ -343,6 +413,8 @@ def homepage_graph(catalog: dict, topics: list[dict], groups: list[dict]) -> dic
     }
     webpage = {**webpage, **credit_fields(), "sameAs": [SOURCE, SOURCE_WWW, WAYBACK]}
     graph = [
+        person_node(),
+        indexing_work_node(),
         source_org(),
         wayback_node(),
         website_node(),

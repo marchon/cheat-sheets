@@ -17,7 +17,9 @@ from jsonld import (
     group_id,
     group_node,
     homepage_graph,
+    indexing_work_node,
     page_graph,
+    person_node,
     source_org,
     topic_graph,
     topic_id,
@@ -192,11 +194,15 @@ PAGE = """<!DOCTYPE html>
     <div id="dialog-body"></div>
   </dialog>
   <footer>
-    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>.
+    <p>Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>:
+    <a href="https://georgelambert.org/">George Lambert</a>
+    &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;.
+    That credit is for the index and searchability only, not for the underlying cheat sheets.</p>
+    <p>Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>.
     Internet Archive snapshots:
     <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>.
     Wikipedia extracts are CC BY-SA 4.0.
-    JSON-LD graph: <a href="/graph.jsonld">graph.jsonld</a>.
+    JSON-LD graph: <a href="/graph.jsonld">graph.jsonld</a>.</p>
   </footer>
   <script type="application/json" id="catalog-data">__CATALOG__</script>
   <script>
@@ -391,6 +397,10 @@ def slim_catalog(catalog: dict) -> dict:
 
 
 CREDIT_HTML = (
+    'Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: '
+    '<a href="https://georgelambert.org/">George Lambert</a> '
+    '&lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;. '
+    "That credit is for the index and searchability only, not for the underlying cheat sheets. "
     f'Source: <a href="{SOURCE}">cheat-sheets.org</a>. '
     f'Internet Archive snapshots: <a href="{WAYBACK}">Wayback Machine calendar for cheat-sheets.org</a>. '
     "Wikipedia extracts are CC BY-SA 4.0."
@@ -483,6 +493,8 @@ def write_static_files(root: Path, catalog: dict, slim: dict) -> None:
         body = f"    <ul>\n{items}\n    </ul>"
         ld = page_graph(
             [
+                person_node(),
+                indexing_work_node(),
                 source_org(),
                 wayback_node(),
                 website_node(),
@@ -557,7 +569,16 @@ def write_static_files(root: Path, catalog: dict, slim: dict) -> None:
             ),
             f'    <p class="meta">Group: <a href="/{t["group"]}/">{escape(GROUPS.get(t["group"], {}).get("title", t["group"]))}</a></p>',
         ]
-        ld = page_graph([source_org(), wayback_node(), website_node(), *topic_graph(t)])
+        ld = page_graph(
+            [
+                person_node(),
+                indexing_work_node(),
+                source_org(),
+                wayback_node(),
+                website_node(),
+                *topic_graph(t),
+            ]
+        )
         tdir = root / t["path"]
         tdir.mkdir(parents=True, exist_ok=True)
         (tdir / "index.html").write_text(
@@ -600,9 +621,13 @@ def write_static_files(root: Path, catalog: dict, slim: dict) -> None:
         f"JSON-LD: {BASE}/graph.jsonld",
         f"Sitemap: {BASE}/sitemap.xml",
         "",
+        "Indexing, searchability, SEO, JSON-LD, and this llms.txt file:",
+        "George Lambert <marchon@gmail.com>, https://georgelambert.org/.",
+        "That credit is for the index and searchability only, not for the underlying cheat sheets.",
+        "",
         "This archive indexes cheat-sheets.org topics in groups, with official websites,",
         "saved copies, and Wikipedia clones. Credit cheat-sheets.org and the Internet Archive",
-        "snapshots linked above.",
+        "snapshots linked above for the source material.",
         "",
         "## Groups",
         "",
