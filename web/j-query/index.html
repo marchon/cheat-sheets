@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="jQuery cheat sheets from cheat-sheets.org.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/web/j-query/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/web/j-query/">
+  <meta property="og:title" content="jQuery">
+  <meta property="og:description" content="jQuery cheat sheets from cheat-sheets.org.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/",
+      "name": "jQuery",
+      "headline": "jQuery",
+      "description": "jQuery cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#jQuery",
+        "https://en.wikipedia.org/wiki/JQuery",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-7"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "AJAX",
+          "identifier": "AJAX"
+        },
+        {
+          "@type": "Thing",
+          "name": "CSS",
+          "identifier": "CSS"
+        },
+        {
+          "@type": "Thing",
+          "name": "DOM",
+          "identifier": "DOM"
+        },
+        {
+          "@type": "Thing",
+          "name": "HTML",
+          "identifier": "HTML"
+        },
+        {
+          "@type": "Thing",
+          "name": "JavaScript",
+          "identifier": "JavaScript"
+        },
+        {
+          "@type": "Thing",
+          "name": "Prototype",
+          "identifier": "Prototype"
+        },
+        {
+          "@type": "Thing",
+          "name": "XHTML",
+          "identifier": "XHTML"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-1",
+      "name": "jquery-mega-cheat-sheet-20152.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jquery-mega-cheat-sheet-20152.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jquery-mega-cheat-sheet-20152.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-2",
+      "name": "jQuery-1.5-Visual-Cheat-Sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-3",
+      "name": "jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-4",
+      "name": "wsu-jquery-cheat-sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/wsu-jquery-cheat-sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/wsu-jquery-cheat-sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-5",
+      "name": "JQUERY-CHEAT-SHEET-a.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/JQUERY-CHEAT-SHEET-a.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/JQUERY-CHEAT-SHEET-a.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-6",
+      "name": "jquery12_colorcharge.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jquery12_colorcharge.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-7",
+      "name": "jquery12_colorcharge.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jquery12_colorcharge.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-8",
+      "name": "jquery12_colorcharge_bw.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jquery12_colorcharge_bw.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-9",
+      "name": "jquery12_colorcharge_bw.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jquery12_colorcharge_bw.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-10",
+      "name": "Jquery-Cheat-Sheet-1.2.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/Jquery-Cheat-Sheet-1.2.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Jquery-Cheat-Sheet-1.2.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#wikipedia-1",
+      "name": "jQuery (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/JQuery"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/JQuery",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-1",
+      "name": "The jQuery Mega Cheat Sheet 2015 by Jamie Spencer [html, jpg] (makeawebsitehub.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/jquery-mega-cheat-sheet-20152.jpg",
+      "sameAs": [
+        "http://makeawebsitehub.com/jquery-mega-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-2",
+      "name": "jQuery 1.5 Visual Cheat Sheet by Antonio Lupetti [pdf] (woorkup.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf",
+      "sameAs": [
+        "http://woorkup.com/2011/02/19/jquery-1-5-visual-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-3",
+      "name": "jQuery 1.3 Visual Cheat Sheet by Antonio Lupetti (WOORK) [pdf] (woork.blogspot.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-4",
+      "name": "Beginner’s essential jQuery Cheat Sheet by Robert Mening [pdf, png] (websitesetup.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/wsu-jquery-cheat-sheet.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/JQUERY-CHEAT-SHEET-a.png",
+        "https://websitesetup.org/wp-content/uploads/2017/01/wsu-jquery-cheat-sheet.pdf",
+        "https://websitesetup.org/wp-content/uploads/2017/01/JQUERY-CHEAT-SHEET-a.png"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-5",
+      "name": "jQuery 1.2 Cheat Sheet [pdf, png, bw pdf, bw png] (labs.colorcharge.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.png",
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-6",
+      "name": "jQuery 1.2 by Adrien Gibrat [pdf]",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Jquery-Cheat-Sheet-1.2.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-7",
+      "name": "jQuery Selectors by Bear Bibeault & Yehuda Katz [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/jquery-selectors"
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>jQuery</h1>
+    <p class="lede">jQuery cheat sheets from cheat-sheets.org.</p>
+  </header>
+  <main>
+    <p><a href="https://www.cheat-sheets.org/#jQuery">Original listing on cheat-sheets.org</a></p>
+    <h2>Official websites</h2>
+    <p>None listed.</p>
+    <h2>Wikipedia</h2>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/JQuery">https://en.wikipedia.org/wiki/JQuery</a> · <a href="wikipedia.md">local clone</a></li>
+    </ul>
+    <h2>Saved copies</h2>
+    <ul>
+      <li><a href="saved-copy/jquery-mega-cheat-sheet-20152.jpg">jquery-mega-cheat-sheet-20152.jpg</a> · <a href="https://www.cheat-sheets.org/saved-copy/jquery-mega-cheat-sheet-20152.jpg">source</a></li>
+      <li><a href="saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf">jQuery-1.5-Visual-Cheat-Sheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf">source</a></li>
+      <li><a href="saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf">jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf">source</a></li>
+      <li><a href="saved-copy/wsu-jquery-cheat-sheet.pdf">wsu-jquery-cheat-sheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/wsu-jquery-cheat-sheet.pdf">source</a></li>
+      <li><a href="saved-copy/JQUERY-CHEAT-SHEET-a.png">JQUERY-CHEAT-SHEET-a.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/JQUERY-CHEAT-SHEET-a.png">source</a></li>
+      <li><a href="saved-copy/jquery12_colorcharge.pdf">jquery12_colorcharge.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.pdf">source</a></li>
+      <li><a href="saved-copy/jquery12_colorcharge.png">jquery12_colorcharge.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.png">source</a></li>
+      <li><a href="saved-copy/jquery12_colorcharge_bw.pdf">jquery12_colorcharge_bw.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.pdf">source</a></li>
+      <li><a href="saved-copy/jquery12_colorcharge_bw.png">jquery12_colorcharge_bw.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.png">source</a></li>
+      <li><a href="saved-copy/Jquery-Cheat-Sheet-1.2.pdf">Jquery-Cheat-Sheet-1.2.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Jquery-Cheat-Sheet-1.2.pdf">source</a></li>
+    </ul>
+    <h2>Cheat sheets</h2>
+    <ul>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/jquery-mega-cheat-sheet-20152.jpg">The jQuery Mega Cheat Sheet 2015 by Jamie Spencer [html, jpg] (makeawebsitehub.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf">jQuery 1.5 Visual Cheat Sheet by Antonio Lupetti [pdf] (woorkup.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf">jQuery 1.3 Visual Cheat Sheet by Antonio Lupetti (WOORK) [pdf] (woork.blogspot.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/wsu-jquery-cheat-sheet.pdf">Beginner’s essential jQuery Cheat Sheet by Robert Mening [pdf, png] (websitesetup.org)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.pdf">jQuery 1.2 Cheat Sheet [pdf, png, bw pdf, bw png] (labs.colorcharge.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/Jquery-Cheat-Sheet-1.2.pdf">jQuery 1.2 by Adrien Gibrat [pdf]</a></li>
+      <li><a href="https://dzone.com/refcardz/jquery-selectors">jQuery Selectors by Bear Bibeault &amp; Yehuda Katz [pdf] (dzone.com)</a></li>
+    </ul>
+    <h2>See also</h2>
+    <ul>
+      <li><a href="/web/ajax/">AJAX</a></li>
+      <li><a href="/file-formats/css/">CSS</a></li>
+      <li><a href="/web/dom/">DOM</a></li>
+      <li><a href="/file-formats/html/">HTML</a></li>
+      <li><a href="/languages/java-script/">JavaScript</a></li>
+      <li><a href="/web/prototype/">Prototype</a></li>
+      <li><a href="/file-formats/xhtml/">XHTML</a></li>
+    </ul>
+    <p class="meta">Group: <a href="/web/">Web</a></p>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perl</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="Perl cheat sheets from cheat-sheets.org.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/languages/perl/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/languages/perl/">
+  <meta property="og:title" content="Perl">
+  <meta property="og:description" content="Perl cheat sheets from cheat-sheets.org.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/",
+      "name": "Perl",
+      "headline": "Perl",
+      "description": "Perl cheat sheets archived from cheat-sheets.org in the Languages group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Perl",
+        "https://en.wikipedia.org/wiki/Perl",
+        "http://www.perl.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-11"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-11"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-12"
+        }
+      ],
+      "significantLink": [
+        "http://www.perl.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Catalyst",
+          "identifier": "Catalyst"
+        },
+        {
+          "@type": "Thing",
+          "name": "mod_perl",
+          "identifier": "mod_perl"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-1",
+      "name": "perl-quick-reference-card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/perl-quick-reference-card.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/perl-quick-reference-card.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-2",
+      "name": "perl-regexp-refcard-a4.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/perl-regexp-refcard-a4.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/perl-regexp-refcard-a4.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-3",
+      "name": "PerlQuickRef.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/PerlQuickRef.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/PerlQuickRef.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-4",
+      "name": "perl.predefined.variables.doc",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/perl.predefined.variables.doc",
+      "encodingFormat": "application/msword",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/perl.predefined.variables.doc"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-5",
+      "name": "perl.predefined.variables.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/perl.predefined.variables.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/perl.predefined.variables.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-6",
+      "name": "perl.pack.unpack.printf.cheat.sheet.doc",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/perl.pack.unpack.printf.cheat.sheet.doc",
+      "encodingFormat": "application/msword",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/perl.pack.unpack.printf.cheat.sheet.doc"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-7",
+      "name": "perl.pack.unpack.printf.cheat.sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/perl.pack.unpack.printf.cheat.sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/perl.pack.unpack.printf.cheat.sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-8",
+      "name": "perl_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/perl_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/perl_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-9",
+      "name": "PERL Win32 Quick Reference.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/PERL%2520Win32%2520Quick%2520Reference.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/PERL%20Win32%20Quick%20Reference.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-10",
+      "name": "perl_refcard.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/perl_refcard.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/perl_refcard.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#saved-11",
+      "name": "perl_refcard.odt",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/saved-copy/perl_refcard.odt",
+      "encodingFormat": "application/vnd.oasis.opendocument.text",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/perl_refcard.odt"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#wikipedia-1",
+      "name": "Perl (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/perl/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Perl"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Perl",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-1",
+      "name": "perlcheat - Perl 5 Cheat Sheet by  [html] (perldoc.perl.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://perldoc.perl.org/perlcheat.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-2",
+      "name": "perlcheat (5.8.7) - Perl 5 Cheat Sheet [html] (cpan.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://search.cpan.org/~nwclark/perl-5.8.7/pod/perlcheat.pod"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-3",
+      "name": "Perl Cheat Sheet [html] (juerd.nl)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://juerd.nl/site.plp/perlcheat"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-4",
+      "name": "Perl Quick Reference Card [pdf] (johnbokma.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/perl-quick-reference-card.pdf",
+      "sameAs": [
+        "http://johnbokma.com/perl/perl-quick-reference-card.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-5",
+      "name": "Perl Regular Expressions by Iain Truskett [pdf] (refcards.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/perl-regexp-refcard-a4.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-6",
+      "name": "Perl Regular Expression - Quick Reference [pdf]",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/PerlQuickRef.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-7",
+      "name": "Perl Predefined Variables (perl's special variable cheat sheet) by Peteris Krumins [doc, pdf] (catonmat.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/perl.predefined.variables.doc",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/perl.predefined.variables.pdf",
+        "http://www.catonmat.net/blog/perls-special-variable-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-8",
+      "name": "Perl pack/unpack Summary (perl's pack/unpack and printf cheat sheet) by Peteris Krumins [doc, pdf] (catonmat.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/perl.pack.unpack.printf.cheat.sheet.doc",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/perl.pack.unpack.printf.cheat.sheet.pdf",
+        "http://www.catonmat.net/blog/perl-pack-unpack-printf-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-9",
+      "name": "Perl Scripting Language Quick Reference by Johan Vromans [pdf] (tiger.la.asu.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/perl_quickref.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-10",
+      "name": "PERL Win32 Quick Reference by Jialong He [pdf] (digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/PERL%20Win32%20Quick%20Reference.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-11",
+      "name": "Perl Reference Card by Michael Goerz [pdf, odt] (users.physik.fu-berlin.de/~goerz/)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/perl_refcard.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/perl_refcard.odt"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#sheet-12",
+      "name": "Perl Cheat Sheet by Hitesh Jethva (Hitesh J) [html] (pcwdld.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.pcwdld.com/perl-cheat-sheet"
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>Perl</h1>
+    <p class="lede">Perl cheat sheets from cheat-sheets.org.</p>
+  </header>
+  <main>
+    <p><a href="https://www.cheat-sheets.org/#Perl">Original listing on cheat-sheets.org</a></p>
+    <h2>Official websites</h2>
+    <ul>
+      <li><a href="http://www.perl.org/">http://www.perl.org/</a></li>
+    </ul>
+    <h2>Wikipedia</h2>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Perl">https://en.wikipedia.org/wiki/Perl</a> · <a href="wikipedia.md">local clone</a></li>
+    </ul>
+    <h2>Saved copies</h2>
+    <ul>
+      <li><a href="saved-copy/perl-quick-reference-card.pdf">perl-quick-reference-card.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/perl-quick-reference-card.pdf">source</a></li>
+      <li><a href="saved-copy/perl-regexp-refcard-a4.pdf">perl-regexp-refcard-a4.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/perl-regexp-refcard-a4.pdf">source</a></li>
+      <li><a href="saved-copy/PerlQuickRef.pdf">PerlQuickRef.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/PerlQuickRef.pdf">source</a></li>
+      <li><a href="saved-copy/perl.predefined.variables.doc">perl.predefined.variables.doc</a> · <a href="https://www.cheat-sheets.org/saved-copy/perl.predefined.variables.doc">source</a></li>
+      <li><a href="saved-copy/perl.predefined.variables.pdf">perl.predefined.variables.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/perl.predefined.variables.pdf">source</a></li>
+      <li><a href="saved-copy/perl.pack.unpack.printf.cheat.sheet.doc">perl.pack.unpack.printf.cheat.sheet.doc</a> · <a href="https://www.cheat-sheets.org/saved-copy/perl.pack.unpack.printf.cheat.sheet.doc">source</a></li>
+      <li><a href="saved-copy/perl.pack.unpack.printf.cheat.sheet.pdf">perl.pack.unpack.printf.cheat.sheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/perl.pack.unpack.printf.cheat.sheet.pdf">source</a></li>
+      <li><a href="saved-copy/perl_quickref.pdf">perl_quickref.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/perl_quickref.pdf">source</a></li>
+      <li><a href="saved-copy/PERL Win32 Quick Reference.pdf">PERL Win32 Quick Reference.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/PERL%20Win32%20Quick%20Reference.pdf">source</a></li>
+      <li><a href="saved-copy/perl_refcard.pdf">perl_refcard.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/perl_refcard.pdf">source</a></li>
+      <li><a href="saved-copy/perl_refcard.odt">perl_refcard.odt</a> · <a href="https://www.cheat-sheets.org/saved-copy/perl_refcard.odt">source</a></li>
+    </ul>
+    <h2>Cheat sheets</h2>
+    <ul>
+      <li><a href="http://perldoc.perl.org/perlcheat.html">perlcheat - Perl 5 Cheat Sheet by  [html] (perldoc.perl.org)</a></li>
+      <li><a href="http://search.cpan.org/~nwclark/perl-5.8.7/pod/perlcheat.pod">perlcheat (5.8.7) - Perl 5 Cheat Sheet [html] (cpan.org)</a></li>
+      <li><a href="http://juerd.nl/site.plp/perlcheat">Perl Cheat Sheet [html] (juerd.nl)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/perl-quick-reference-card.pdf">Perl Quick Reference Card [pdf] (johnbokma.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/perl-regexp-refcard-a4.pdf">Perl Regular Expressions by Iain Truskett [pdf] (refcards.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/PerlQuickRef.pdf">Perl Regular Expression - Quick Reference [pdf]</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/perl.predefined.variables.doc">Perl Predefined Variables (perl's special variable cheat sheet) by Peteris Krumins [doc, pdf] (catonmat.net)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/perl.pack.unpack.printf.cheat.sheet.doc">Perl pack/unpack Summary (perl's pack/unpack and printf cheat sheet) by Peteris Krumins [doc, pdf] (catonmat.net)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/perl_quickref.pdf">Perl Scripting Language Quick Reference by Johan Vromans [pdf] (tiger.la.asu.edu)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/PERL%20Win32%20Quick%20Reference.pdf">PERL Win32 Quick Reference by Jialong He [pdf] (digilife.be)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/perl_refcard.pdf">Perl Reference Card by Michael Goerz [pdf, odt] (users.physik.fu-berlin.de/~goerz/)</a></li>
+      <li><a href="https://www.pcwdld.com/perl-cheat-sheet">Perl Cheat Sheet by Hitesh Jethva (Hitesh J) [html] (pcwdld.com)</a></li>
+    </ul>
+    <h2>See also</h2>
+    <ul>
+      <li><a href="/frameworks-and-libraries/catalyst/">Catalyst</a></li>
+      <li><a href="/web/mod-perl/">mod_perl</a></li>
+    </ul>
+    <p class="meta">Group: <a href="/languages/">Languages</a></p>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Networking and protocols</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="Network protocols, mail, chat, and scanning tools.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/networking-and-protocols/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/networking-and-protocols/">
+  <meta property="og:title" content="Networking and protocols">
+  <meta property="og:description" content="Network protocols, mail, chat, and scanning tools.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "DataCatalog",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#catalog",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "285 cheat-sheet topics in 19 groups, archived from cheat-sheets.org with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#website"
+      },
+      "license": "https://www.cheat-sheets.org/",
+      "creator": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/applications/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/online-data-services/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/graphics-and-design/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/security/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/hardware-and-embedded/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/other/#collection"
+        }
+      ],
+      "numberOfItems": 285,
+      "keywords": [
+        "Languages",
+        "Databases",
+        "Applications",
+        "Business processes",
+        "GNU / Linux commands",
+        "File formats",
+        "Online data services",
+        "Web",
+        "Operating systems",
+        "Mathematics and science",
+        "Version control",
+        "Editors and IDEs",
+        "Networking and protocols",
+        "Cloud and DevOps",
+        "Graphics and design",
+        "Frameworks and libraries",
+        "Security",
+        "Hardware and embedded",
+        "Other"
+      ],
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "Collection",
+        "CollectionPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/",
+      "name": "Networking and protocols",
+      "description": "Network protocols, mail, chat, and scanning tools.",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#catalog"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tcp/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/#topic"
+        }
+      ],
+      "numberOfItems": 7,
+      "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/",
+      "name": "FTP - File Transfer Protocol",
+      "headline": "FTP - File Transfer Protocol",
+      "description": "FTP - File Transfer Protocol cheat sheets archived from cheat-sheets.org in the Networking and protocols group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#FTP",
+        "https://en.wikipedia.org/wiki/FTP",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#sheet-4"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#wikipedia-1",
+      "name": "FTP - File Transfer Protocol (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/FTP"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/FTP",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#sheet-1",
+      "name": "Basic FTP Commands [html] (cs.colostate.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.cs.colostate.edu/helpdocs/ftp.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#sheet-2",
+      "name": "List of FTP commands for the Microsoft command-line FTP client [html] (nsftools.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.nsftools.com/tips/MSFTP.htm"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#sheet-3",
+      "name": "tldr ftp [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://cheat-sheets.org/project/tldr/command/ftp/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#sheet-4",
+      "name": "tldr ftp (windows) [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/ftp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://cheat-sheets.org/project/tldr/command/ftp/os/windows/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/",
+      "name": "HAProxy",
+      "headline": "HAProxy",
+      "description": "HAProxy cheat sheets archived from cheat-sheets.org in the Networking and protocols group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#HAProxy",
+        "https://en.wikipedia.org/wiki/HAProxy",
+        "https://www.haproxy.org/",
+        "https://www.haproxy.com/blog/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#sheet-5"
+        }
+      ],
+      "significantLink": [
+        "https://www.haproxy.org/",
+        "https://www.haproxy.com/blog/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#saved-1",
+      "name": "HAPROXY-Configuration-Reference-Card-v1.0.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/saved-copy/HAPROXY-Configuration-Reference-Card-v1.0.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/HAPROXY-Configuration-Reference-Card-v1.0.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#saved-2",
+      "name": "HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/saved-copy/HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#wikipedia-1",
+      "name": "HAProxy (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/HAProxy"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/HAProxy",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#sheet-1",
+      "name": "HAProxy® Configuration Reference Card – version 1.0 by Zenetys [pdf] (zenetys.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/HAPROXY-Configuration-Reference-Card-v1.0.pdf",
+      "sameAs": [
+        "https://www.zenetys.com/wp-content/uploads/2020/03/HAPROXY-Configuration-Reference-Card-v1.0.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#sheet-2",
+      "name": "HAProxy® Troubleshooting Reference Card – version 1.0 by Zenetys [pdf] (zenetys.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf",
+      "sameAs": [
+        "https://www.zenetys.com/wp-content/uploads/2020/03/HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#sheet-3",
+      "name": "HAProxy version 2.2.7 - Starter Guide [html] (cbonte.github.io)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://cbonte.github.io/haproxy-dconv/2.2/intro.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#sheet-4",
+      "name": "HAProxy version 2.2.7 - Configuration Manual [html] (cbonte.github.io)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://cbonte.github.io/haproxy-dconv/2.2/configuration.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#sheet-5",
+      "name": "HAProxy version 2.2.7 - Management Guide [html] (cbonte.github.io)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/haproxy/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://cbonte.github.io/haproxy-dconv/2.2/management.html"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/",
+      "name": "IRC - Internet Relay Chat",
+      "headline": "IRC - Internet Relay Chat",
+      "description": "IRC - Internet Relay Chat cheat sheets archived from cheat-sheets.org in the Networking and protocols group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#IRC",
+        "https://en.wikipedia.org/wiki/Internet_Relay_Chat",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/#saved-1",
+      "name": "wikiHow_IRC_Cheat_Sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/saved-copy/wikiHow_IRC_Cheat_Sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/wikiHow_IRC_Cheat_Sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/#wikipedia-1",
+      "name": "IRC - Internet Relay Chat (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Internet_Relay_Chat"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Internet_Relay_Chat",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/#sheet-1",
+      "name": "wikiHow:IRC Cheat Sheet [html, pdf] (wikihow.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/irc/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/wikiHow_IRC_Cheat_Sheet.pdf",
+      "sameAs": [
+        "http://www.wikihow.com/wikiHow:IRC-Cheat-Sheet"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/",
+      "name": "NMAP",
+      "headline": "NMAP",
+      "description": "NMAP cheat sheets archived from cheat-sheets.org in the Networking and protocols group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#NMAP",
+        "https://en.wikipedia.org/wiki/Nmap",
+        "http://nmap.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://nmap.org/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#saved-1",
+      "name": "Nmap5.cheatsheet.eng.v1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/saved-copy/Nmap5.cheatsheet.eng.v1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Nmap5.cheatsheet.eng.v1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#saved-2",
+      "name": "Nmap5.cheatsheet.esp.v1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/saved-copy/Nmap5.cheatsheet.esp.v1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Nmap5.cheatsheet.esp.v1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#wikipedia-1",
+      "name": "NMAP (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Nmap"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Nmap",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#sheet-1",
+      "name": "NMAP quick reference by Alejandro Ramos [pdf (eng), pdf (esp)] (SecurityByDefault.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/nmap/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Nmap5.cheatsheet.eng.v1.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Nmap5.cheatsheet.esp.v1.pdf",
+        "http://sbdtools.googlecode.com/files/Nmap5%20cheatsheet%20eng%20v1.pdf",
+        "http://sbdtools.googlecode.com/files/Nmap5%20cheatsheet%20esp%20v1.pdf"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/",
+      "name": "Sendmail",
+      "headline": "Sendmail",
+      "description": "Sendmail cheat sheets archived from cheat-sheets.org in the Networking and protocols group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Sendmail",
+        "https://en.wikipedia.org/wiki/Sendmail",
+        "http://www.sendmail.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.sendmail.org/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/#saved-1",
+      "name": "Sendmail_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/saved-copy/Sendmail_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Sendmail_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/#wikipedia-1",
+      "name": "Sendmail (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Sendmail"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Sendmail",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/#sheet-1",
+      "name": "Sendmail Configuration Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/sendmail/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Sendmail_quickref.pdf"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tcp/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tcp/",
+      "name": "TCP - Transmission Control Protocol",
+      "headline": "TCP - Transmission Control Protocol",
+      "description": "TCP - Transmission Control Protocol cheat sheets archived from cheat-sheets.org in the Networking and protocols group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#TCP",
+        "https://en.wikipedia.org/wiki/Transmission_Control_Protocol",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tcp/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tcp/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tcp/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tcp/#wikipedia-1",
+      "name": "TCP - Transmission Control Protocol (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tcp/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tcp/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tcp/#sheet-1",
+      "name": "TCP Ports list [html] (refcards.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tcp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.gasmi.net/docs/tcp.html"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/",
+      "name": "TLS - Transport Layer Security; SSL - Secure Sockets Layer",
+      "headline": "TLS - Transport Layer Security; SSL - Secure Sockets Layer",
+      "description": "TLS - Transport Layer Security; SSL - Secure Sockets Layer cheat sheets archived from cheat-sheets.org in the Networking and protocols group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#TLS",
+        "https://en.wikipedia.org/wiki/Transport_Layer_Security",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/#saved-1",
+      "name": "Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/saved-copy/Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/#wikipedia-1",
+      "name": "TLS - Transport Layer Security; SSL - Secure Sockets Layer (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Transport_Layer_Security"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Transport_Layer_Security",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/#sheet-1",
+      "name": "SSL Handshake With Two Way Authentication with Certificates by Christian Friedrich [pdf]",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/tls/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf"
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>Networking and protocols</h1>
+    <p class="lede">Network protocols, mail, chat, and scanning tools.</p>
+  </header>
+  <main>
+    <ul>
+      <li><a href="/networking-and-protocols/ftp/">FTP - File Transfer Protocol</a></li>
+      <li><a href="/networking-and-protocols/haproxy/">HAProxy</a></li>
+      <li><a href="/networking-and-protocols/irc/">IRC - Internet Relay Chat</a></li>
+      <li><a href="/networking-and-protocols/nmap/">NMAP</a></li>
+      <li><a href="/networking-and-protocols/sendmail/">Sendmail</a></li>
+      <li><a href="/networking-and-protocols/tcp/">TCP - Transmission Control Protocol</a></li>
+      <li><a href="/networking-and-protocols/tls/">TLS - Transport Layer Security; SSL - Secure Sockets Layer</a></li>
+    </ul>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

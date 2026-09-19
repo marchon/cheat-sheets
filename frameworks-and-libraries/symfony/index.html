@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symfony</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="Symfony cheat sheets from cheat-sheets.org.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/">
+  <meta property="og:title" content="Symfony">
+  <meta property="og:description" content="Symfony cheat sheets from cheat-sheets.org.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/",
+      "name": "Symfony",
+      "headline": "Symfony",
+      "description": "Symfony cheat sheets archived from cheat-sheets.org in the Frameworks and libraries group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Symfony",
+        "https://en.wikipedia.org/wiki/Symfony",
+        "http://www.symfony-project.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-11"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-12"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-11"
+        }
+      ],
+      "significantLink": [
+        "http://www.symfony-project.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "PHP",
+          "identifier": "PHP"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-1",
+      "name": "sfAdminGeneratorRefCard.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/saved-copy/sfAdminGeneratorRefCard.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sfAdminGeneratorRefCard.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-2",
+      "name": "sfmodelcriteriacriterionrsrefcard_enus.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/saved-copy/sfmodelcriteriacriterionrsrefcard_enus.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sfmodelcriteriacriterionrsrefcard_enus.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-3",
+      "name": "sfmodelsecondpartrefcard.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/saved-copy/sfmodelsecondpartrefcard.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sfmodelsecondpartrefcard.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-4",
+      "name": "sfmodelfirstpartrefcard.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/saved-copy/sfmodelfirstpartrefcard.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sfmodelfirstpartrefcard.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-5",
+      "name": "sfviewsecondpartrefcard.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/saved-copy/sfviewsecondpartrefcard.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sfviewsecondpartrefcard.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-6",
+      "name": "sfviewfirstpartrefcard.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/saved-copy/sfviewfirstpartrefcard.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sfviewfirstpartrefcard.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-7",
+      "name": "sfservervalidationrefcard.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/saved-copy/sfservervalidationrefcard.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sfservervalidationrefcard.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-8",
+      "name": "cheatsymfony004forms.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/saved-copy/cheatsymfony004forms.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/cheatsymfony004forms.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-9",
+      "name": "cheatsymfony004forms.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/saved-copy/cheatsymfony004forms.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/cheatsymfony004forms.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-10",
+      "name": "cheatsymfonyjshelper_enus.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/saved-copy/cheatsymfonyjshelper_enus.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/cheatsymfonyjshelper_enus.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-11",
+      "name": "cheatsheetsymfony001_enus.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/saved-copy/cheatsheetsymfony001_enus.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/cheatsheetsymfony001_enus.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#saved-12",
+      "name": "cheatsheetsymfony001_enus.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/saved-copy/cheatsheetsymfony001_enus.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/cheatsheetsymfony001_enus.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#wikipedia-1",
+      "name": "Symfony (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Symfony"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Symfony",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-1",
+      "name": "Admin Generator cheat sheet [pdf] (symfony-project.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/sfAdminGeneratorRefCard.pdf",
+      "sameAs": [
+        "http://www.symfony-project.com/weblog/2006/04/25/admin-generator-cheat-sheet.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-2",
+      "name": "symfony cheat-sheet: Criteria/Criterion/RS by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/sfmodelcriteriacriterionrsrefcard_enus.pdf",
+      "sameAs": [
+        "http://andreiabohner.wordpress.com/2008/01/04/symfony-cheat-sheet-criteriacriterionrs/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-3",
+      "name": "Symfony Cheat-Sheet - Database Schema by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/sfmodelsecondpartrefcard.pdf",
+      "sameAs": [
+        "http://andreiabohner.wordpress.com/2007/09/01/symfony-cheat-sheet-schema/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-4",
+      "name": "Symfony Cheat-Sheet - Model (Modelo) by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/sfmodelfirstpartrefcard.pdf",
+      "sameAs": [
+        "http://andreiabohner.wordpress.com/2007/08/29/symfony-cheat-sheet-modelo/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-5",
+      "name": "Symfony Cheat-Sheet - View: partials, components, slots and component slots (DRY - Partials, Components, Slots e Component Slots do symfony) by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/sfviewsecondpartrefcard.pdf",
+      "sameAs": [
+        "http://andreiabohner.wordpress.com/2007/08/12/dry-partials-components-slots-e-component-slots-do-symfony/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-6",
+      "name": "Symfony Cheat-Sheet - View by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/sfviewfirstpartrefcard.pdf",
+      "sameAs": [
+        "http://andreiabohner.wordpress.com/2007/08/06/symfony-cheat-sheet-view/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-7",
+      "name": "Symfony Cheat-Sheet - Server Validation (Validação no Servidor) by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/sfservervalidationrefcard.pdf",
+      "sameAs": [
+        "http://andreiabohner.wordpress.com/2007/07/14/symfony-cheat-sheet-validacao-no-servidor/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-8",
+      "name": "Symfony Cheat-Sheet - Helpers Part 2 - FORMS (Form Helpers) by Andréia Bohner [pdf, jpg] (andreiabohner.wordpress.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/cheatsymfony004forms.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/cheatsymfony004forms.jpg",
+        "http://andreiabohner.wordpress.com/2007/06/28/symfony-cheat-sheet-form-helpers/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-9",
+      "name": "Symfony Cheat-Sheet - Helpers Part 1 - JAVASCRIP (JS) and AJAX (remote calls) (Helpers Javascript e Ajax) by Andréia Bohner [pdf] (andreiabohner.wordpress.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/cheatsymfonyjshelper_enus.pdf",
+      "sameAs": [
+        "http://andreiabohner.wordpress.com/2007/06/08/symfony-cheat-cheet-helpers-javascript-e-ajax/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-10",
+      "name": "Symfony Cheat Sheet - Directory Structure and CLI (Estrutura de diretório e CLI (linha de comando)) by Andréia Bohner [pdf, jpg] (andreiabohner.wordpress.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/cheatsheetsymfony001_enus.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/cheatsheetsymfony001_enus.jpg",
+        "http://andreiabohner.wordpress.com/2007/03/03/symfony-cheat-sheet-estrutura-de-diretorio-e-cli-linha-de-comando/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#sheet-11",
+      "name": "tldr *php* [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/symfony/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/command/*php*/"
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>Symfony</h1>
+    <p class="lede">Symfony cheat sheets from cheat-sheets.org.</p>
+  </header>
+  <main>
+    <p><a href="https://www.cheat-sheets.org/#Symfony">Original listing on cheat-sheets.org</a></p>
+    <h2>Official websites</h2>
+    <ul>
+      <li><a href="http://www.symfony-project.org/">http://www.symfony-project.org/</a></li>
+    </ul>
+    <h2>Wikipedia</h2>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Symfony">https://en.wikipedia.org/wiki/Symfony</a> · <a href="wikipedia.md">local clone</a></li>
+    </ul>
+    <h2>Saved copies</h2>
+    <ul>
+      <li><a href="saved-copy/sfAdminGeneratorRefCard.pdf">sfAdminGeneratorRefCard.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/sfAdminGeneratorRefCard.pdf">source</a></li>
+      <li><a href="saved-copy/sfmodelcriteriacriterionrsrefcard_enus.pdf">sfmodelcriteriacriterionrsrefcard_enus.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/sfmodelcriteriacriterionrsrefcard_enus.pdf">source</a></li>
+      <li><a href="saved-copy/sfmodelsecondpartrefcard.pdf">sfmodelsecondpartrefcard.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/sfmodelsecondpartrefcard.pdf">source</a></li>
+      <li><a href="saved-copy/sfmodelfirstpartrefcard.pdf">sfmodelfirstpartrefcard.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/sfmodelfirstpartrefcard.pdf">source</a></li>
+      <li><a href="saved-copy/sfviewsecondpartrefcard.pdf">sfviewsecondpartrefcard.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/sfviewsecondpartrefcard.pdf">source</a></li>
+      <li><a href="saved-copy/sfviewfirstpartrefcard.pdf">sfviewfirstpartrefcard.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/sfviewfirstpartrefcard.pdf">source</a></li>
+      <li><a href="saved-copy/sfservervalidationrefcard.pdf">sfservervalidationrefcard.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/sfservervalidationrefcard.pdf">source</a></li>
+      <li><a href="saved-copy/cheatsymfony004forms.pdf">cheatsymfony004forms.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/cheatsymfony004forms.pdf">source</a></li>
+      <li><a href="saved-copy/cheatsymfony004forms.jpg">cheatsymfony004forms.jpg</a> · <a href="https://www.cheat-sheets.org/saved-copy/cheatsymfony004forms.jpg">source</a></li>
+      <li><a href="saved-copy/cheatsymfonyjshelper_enus.pdf">cheatsymfonyjshelper_enus.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/cheatsymfonyjshelper_enus.pdf">source</a></li>
+      <li><a href="saved-copy/cheatsheetsymfony001_enus.pdf">cheatsheetsymfony001_enus.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/cheatsheetsymfony001_enus.pdf">source</a></li>
+      <li><a href="saved-copy/cheatsheetsymfony001_enus.jpg">cheatsheetsymfony001_enus.jpg</a> · <a href="https://www.cheat-sheets.org/saved-copy/cheatsheetsymfony001_enus.jpg">source</a></li>
+    </ul>
+    <h2>Cheat sheets</h2>
+    <ul>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/sfAdminGeneratorRefCard.pdf">Admin Generator cheat sheet [pdf] (symfony-project.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/sfmodelcriteriacriterionrsrefcard_enus.pdf">symfony cheat-sheet: Criteria/Criterion/RS by Andréia Bohner [pdf] (andreiabohner.wordpress.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/sfmodelsecondpartrefcard.pdf">Symfony Cheat-Sheet - Database Schema by Andréia Bohner [pdf] (andreiabohner.wordpress.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/sfmodelfirstpartrefcard.pdf">Symfony Cheat-Sheet - Model (Modelo) by Andréia Bohner [pdf] (andreiabohner.wordpress.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/sfviewsecondpartrefcard.pdf">Symfony Cheat-Sheet - View: partials, components, slots and component slots (DRY - Partials, Components, Slots e Component Slots do symfony) by Andréia Bohner [pdf] (andreiabohner.wordpress.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/sfviewfirstpartrefcard.pdf">Symfony Cheat-Sheet - View by Andréia Bohner [pdf] (andreiabohner.wordpress.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/sfservervalidationrefcard.pdf">Symfony Cheat-Sheet - Server Validation (Validação no Servidor) by Andréia Bohner [pdf] (andreiabohner.wordpress.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/cheatsymfony004forms.pdf">Symfony Cheat-Sheet - Helpers Part 2 - FORMS (Form Helpers) by Andréia Bohner [pdf, jpg] (andreiabohner.wordpress.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/cheatsymfonyjshelper_enus.pdf">Symfony Cheat-Sheet - Helpers Part 1 - JAVASCRIP (JS) and AJAX (remote calls) (Helpers Javascript e Ajax) by Andréia Bohner [pdf] (andreiabohner.wordpress.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/cheatsheetsymfony001_enus.pdf">Symfony Cheat Sheet - Directory Structure and CLI (Estrutura de diretório e CLI (linha de comando)) by Andréia Bohner [pdf, jpg] (andreiabohner.wordpress.com)</a></li>
+      <li><a href="https://cheat-sheets.org/project/tldr/command/*php*/">tldr *php* [html] (cheat-sheets.org)</a></li>
+    </ul>
+    <h2>See also</h2>
+    <ul>
+      <li><a href="/languages/php/">PHP</a></li>
+    </ul>
+    <p class="meta">Group: <a href="/frameworks-and-libraries/">Frameworks and libraries</a></p>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

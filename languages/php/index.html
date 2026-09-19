@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHP</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="PHP cheat sheets from cheat-sheets.org.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/languages/php/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/languages/php/">
+  <meta property="og:title" content="PHP">
+  <meta property="og:description" content="PHP cheat sheets from cheat-sheets.org.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/",
+      "name": "PHP",
+      "headline": "PHP",
+      "description": "PHP cheat sheets archived from cheat-sheets.org in the Languages group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#PHP",
+        "https://en.wikipedia.org/wiki/PHP",
+        "http://php.net/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-11"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-12"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-13"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-14"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-15"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-16"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-17"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-18"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-19"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-20"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-21"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-11"
+        }
+      ],
+      "significantLink": [
+        "http://php.net/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Doctrine",
+          "identifier": "Doctrine"
+        },
+        {
+          "@type": "Thing",
+          "name": "PHP Frameworks",
+          "identifier": "PHPFrameworks"
+        },
+        {
+          "@type": "Thing",
+          "name": "Symfony",
+          "identifier": "Symfony"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-1",
+      "name": "php_cheat_sheet.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/php_cheat_sheet.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/php_cheat_sheet.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-2",
+      "name": "php_cheat_sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/php_cheat_sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/php_cheat_sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-3",
+      "name": "phpbigbookpage1.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/phpbigbookpage1.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage1.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-4",
+      "name": "phpbigbookpage2.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/phpbigbookpage2.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage2.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-5",
+      "name": "phpbigbookpage3.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/phpbigbookpage3.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage3.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-6",
+      "name": "phpbigbookpage4.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/phpbigbookpage4.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage4.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-7",
+      "name": "phpbigbookpage5.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/phpbigbookpage5.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage5.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-8",
+      "name": "phpbigbookpage6.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/phpbigbookpage6.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage6.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-9",
+      "name": "phpbigbookpage7.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/phpbigbookpage7.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage7.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-10",
+      "name": "phpbigbookpage8.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/phpbigbookpage8.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage8.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-11",
+      "name": "PHPRefCard.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/PHPRefCard.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/PHPRefCard.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-12",
+      "name": "PHPRefCard.ps",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/PHPRefCard.ps",
+      "encodingFormat": "application/postscript",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/PHPRefCard.ps"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-13",
+      "name": "PHPRefCard.tex",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/PHPRefCard.tex",
+      "encodingFormat": "application/x-tex",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/PHPRefCard.tex"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-14",
+      "name": "PHP-cheatsheet.Daniel.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/PHP-cheatsheet.Daniel.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/PHP-cheatsheet.Daniel.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-15",
+      "name": "PHP-cheatsheet.Daniel.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/PHP-cheatsheet.Daniel.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/PHP-cheatsheet.Daniel.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-16",
+      "name": "Ultimate_PHP_Cheatsheet.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/Ultimate_PHP_Cheatsheet.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Ultimate_PHP_Cheatsheet.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-17",
+      "name": "HTML_CSS_PHP_cheat_sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-18",
+      "name": "SmartyCheatSheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/SmartyCheatSheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/SmartyCheatSheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-19",
+      "name": "135700437_bb5093e48c_o.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/135700437_bb5093e48c_o.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/135700437_bb5093e48c_o.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-20",
+      "name": "rc116-010d-coldfusionws_php.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/rc116-010d-coldfusionws_php.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/rc116-010d-coldfusionws_php.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#saved-21",
+      "name": "rc124-010d-phpunit_1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/saved-copy/rc124-010d-phpunit_1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/rc124-010d-phpunit_1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#wikipedia-1",
+      "name": "PHP (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/languages/php/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/PHP"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/PHP",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-1",
+      "name": "PHP Cheat Sheet by Dave Child [html, png, pdf] (cheatography.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/php_cheat_sheet.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/php_cheat_sheet.pdf",
+        "https://www.cheatography.com/davechild/cheat-sheets/php/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-2",
+      "name": "The VisiBone PHP Skinny Sheet [8.5\" x 11\" (A4) size Laminated , gif] (visibone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/phpbigbookpage1.gif",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage2.gif",
+        "https://www.cheat-sheets.org/saved-copy/phpbigbookpage3.gif",
+        "http://www.visibone.com/php/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-3",
+      "name": "PHP 4 Quick Reference Card by Steven R. Gould [pdf, ps, tex] (stevengould.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/PHPRefCard.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/PHPRefCard.ps",
+        "https://www.cheat-sheets.org/saved-copy/PHPRefCard.tex",
+        "http://www.stevengould.org/portfolio/independent.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-4",
+      "name": "PHP cheat sheet (Classes and objects, functions, output control, regex) by Daniel Dev [pdf, png]",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/PHP-cheatsheet.Daniel.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/PHP-cheatsheet.Daniel.png"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-5",
+      "name": "Ultimate PHO Cheatsheet by Matt Ahlgren [png, pdf] (websitehostingrating.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Ultimate_PHP_Cheatsheet.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf",
+        "https://www.websitehostingrating.com/html-css-php-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-6",
+      "name": "PHP Cheat Sheet with special php syntax [html] (blueshoes.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.blueshoes.org/en/developer/php_cheat_sheet/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-7",
+      "name": "PHP Variable Comparison, PHP Arithmetic Operations and PHP Variable Testing by Juliette Reinders Folmer [html] (phpcheatsheets.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://phpcheatsheets.com/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-8",
+      "name": "Smarty cheat sheet for template designers [pdf, gif] (somewherein.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/SmartyCheatSheet.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/135700437_bb5093e48c_o.gif"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-9",
+      "name": "Adobe® ColdFusion Web Services for PHP Programmers by Marco Tabini [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/rc116-010d-coldfusionws_php.pdf",
+      "sameAs": [
+        "https://dzone.com/refcardz/adobe-coldfusion-web-services-0"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-10",
+      "name": "PHPUnit: PHP Test-Driven Development Automated Tools to Improve Your PHP Code Quality by Giorgio Sironi [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/rc124-010d-phpunit_1.pdf",
+      "sameAs": [
+        "https://dzone.com/refcardz/phpunit-php-test-driven"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#sheet-11",
+      "name": "Awesome Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/languages/php/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/php.php"
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>PHP</h1>
+    <p class="lede">PHP cheat sheets from cheat-sheets.org.</p>
+  </header>
+  <main>
+    <p><a href="https://www.cheat-sheets.org/#PHP">Original listing on cheat-sheets.org</a></p>
+    <h2>Official websites</h2>
+    <ul>
+      <li><a href="http://php.net/">http://php.net/</a></li>
+    </ul>
+    <h2>Wikipedia</h2>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/PHP">https://en.wikipedia.org/wiki/PHP</a> · <a href="wikipedia.md">local clone</a></li>
+    </ul>
+    <h2>Saved copies</h2>
+    <ul>
+      <li><a href="saved-copy/php_cheat_sheet.png">php_cheat_sheet.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/php_cheat_sheet.png">source</a></li>
+      <li><a href="saved-copy/php_cheat_sheet.pdf">php_cheat_sheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/php_cheat_sheet.pdf">source</a></li>
+      <li><a href="saved-copy/phpbigbookpage1.gif">phpbigbookpage1.gif</a> · <a href="https://www.cheat-sheets.org/saved-copy/phpbigbookpage1.gif">source</a></li>
+      <li><a href="saved-copy/phpbigbookpage2.gif">phpbigbookpage2.gif</a> · <a href="https://www.cheat-sheets.org/saved-copy/phpbigbookpage2.gif">source</a></li>
+      <li><a href="saved-copy/phpbigbookpage3.gif">phpbigbookpage3.gif</a> · <a href="https://www.cheat-sheets.org/saved-copy/phpbigbookpage3.gif">source</a></li>
+      <li><a href="saved-copy/phpbigbookpage4.gif">phpbigbookpage4.gif</a> · <a href="https://www.cheat-sheets.org/saved-copy/phpbigbookpage4.gif">source</a></li>
+      <li><a href="saved-copy/phpbigbookpage5.gif">phpbigbookpage5.gif</a> · <a href="https://www.cheat-sheets.org/saved-copy/phpbigbookpage5.gif">source</a></li>
+      <li><a href="saved-copy/phpbigbookpage6.gif">phpbigbookpage6.gif</a> · <a href="https://www.cheat-sheets.org/saved-copy/phpbigbookpage6.gif">source</a></li>
+      <li><a href="saved-copy/phpbigbookpage7.gif">phpbigbookpage7.gif</a> · <a href="https://www.cheat-sheets.org/saved-copy/phpbigbookpage7.gif">source</a></li>
+      <li><a href="saved-copy/phpbigbookpage8.gif">phpbigbookpage8.gif</a> · <a href="https://www.cheat-sheets.org/saved-copy/phpbigbookpage8.gif">source</a></li>
+      <li><a href="saved-copy/PHPRefCard.pdf">PHPRefCard.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/PHPRefCard.pdf">source</a></li>
+      <li><a href="saved-copy/PHPRefCard.ps">PHPRefCard.ps</a> · <a href="https://www.cheat-sheets.org/saved-copy/PHPRefCard.ps">source</a></li>
+      <li><a href="saved-copy/PHPRefCard.tex">PHPRefCard.tex</a> · <a href="https://www.cheat-sheets.org/saved-copy/PHPRefCard.tex">source</a></li>
+      <li><a href="saved-copy/PHP-cheatsheet.Daniel.pdf">PHP-cheatsheet.Daniel.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/PHP-cheatsheet.Daniel.pdf">source</a></li>
+      <li><a href="saved-copy/PHP-cheatsheet.Daniel.png">PHP-cheatsheet.Daniel.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/PHP-cheatsheet.Daniel.png">source</a></li>
+      <li><a href="saved-copy/Ultimate_PHP_Cheatsheet.png">Ultimate_PHP_Cheatsheet.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/Ultimate_PHP_Cheatsheet.png">source</a></li>
+      <li><a href="saved-copy/HTML_CSS_PHP_cheat_sheet.pdf">HTML_CSS_PHP_cheat_sheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf">source</a></li>
+      <li><a href="saved-copy/SmartyCheatSheet.pdf">SmartyCheatSheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/SmartyCheatSheet.pdf">source</a></li>
+      <li><a href="saved-copy/135700437_bb5093e48c_o.gif">135700437_bb5093e48c_o.gif</a> · <a href="https://www.cheat-sheets.org/saved-copy/135700437_bb5093e48c_o.gif">source</a></li>
+      <li><a href="saved-copy/rc116-010d-coldfusionws_php.pdf">rc116-010d-coldfusionws_php.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/rc116-010d-coldfusionws_php.pdf">source</a></li>
+      <li><a href="saved-copy/rc124-010d-phpunit_1.pdf">rc124-010d-phpunit_1.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/rc124-010d-phpunit_1.pdf">source</a></li>
+    </ul>
+    <h2>Cheat sheets</h2>
+    <ul>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/php_cheat_sheet.png">PHP Cheat Sheet by Dave Child [html, png, pdf] (cheatography.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/phpbigbookpage1.gif">The VisiBone PHP Skinny Sheet [8.5&quot; x 11&quot; (A4) size Laminated , gif] (visibone.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/PHPRefCard.pdf">PHP 4 Quick Reference Card by Steven R. Gould [pdf, ps, tex] (stevengould.org)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/PHP-cheatsheet.Daniel.pdf">PHP cheat sheet (Classes and objects, functions, output control, regex) by Daniel Dev [pdf, png]</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/Ultimate_PHP_Cheatsheet.png">Ultimate PHO Cheatsheet by Matt Ahlgren [png, pdf] (websitehostingrating.com)</a></li>
+      <li><a href="http://www.blueshoes.org/en/developer/php_cheat_sheet/">PHP Cheat Sheet with special php syntax [html] (blueshoes.org)</a></li>
+      <li><a href="http://phpcheatsheets.com/">PHP Variable Comparison, PHP Arithmetic Operations and PHP Variable Testing by Juliette Reinders Folmer [html] (phpcheatsheets.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/SmartyCheatSheet.pdf">Smarty cheat sheet for template designers [pdf, gif] (somewherein.net)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/rc116-010d-coldfusionws_php.pdf">Adobe® ColdFusion Web Services for PHP Programmers by Marco Tabini [pdf] (dzone.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/rc124-010d-phpunit_1.pdf">PHPUnit: PHP Test-Driven Development Automated Tools to Improve Your PHP Code Quality by Giorgio Sironi [pdf] (dzone.com)</a></li>
+      <li><a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/php.php">Awesome Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)</a></li>
+    </ul>
+    <h2>See also</h2>
+    <ul>
+      <li><a href="/databases/doctrine/">Doctrine</a></li>
+      <li><a href="/frameworks-and-libraries/phpframeworks/">PHP Frameworks</a></li>
+      <li><a href="/frameworks-and-libraries/symfony/">Symfony</a></li>
+    </ul>
+    <p class="meta">Group: <a href="/languages/">Languages</a></p>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

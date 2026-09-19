@@ -1,0 +1,3683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="Web APIs, browsers' web stack, JS libraries, and HTTP-facing frameworks.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/web/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/web/">
+  <meta property="og:title" content="Web">
+  <meta property="og:description" content="Web APIs, browsers' web stack, JS libraries, and HTTP-facing frameworks.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "DataCatalog",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#catalog",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "285 cheat-sheet topics in 19 groups, archived from cheat-sheets.org with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#website"
+      },
+      "license": "https://www.cheat-sheets.org/",
+      "creator": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/applications/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/online-data-services/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/graphics-and-design/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/security/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/hardware-and-embedded/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/other/#collection"
+        }
+      ],
+      "numberOfItems": 285,
+      "keywords": [
+        "Languages",
+        "Databases",
+        "Applications",
+        "Business processes",
+        "GNU / Linux commands",
+        "File formats",
+        "Online data services",
+        "Web",
+        "Operating systems",
+        "Mathematics and science",
+        "Version control",
+        "Editors and IDEs",
+        "Networking and protocols",
+        "Cloud and DevOps",
+        "Graphics and design",
+        "Frameworks and libraries",
+        "Security",
+        "Hardware and embedded",
+        "Other"
+      ],
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "Collection",
+        "CollectionPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/",
+      "name": "Web",
+      "description": "Web APIs, browsers' web stack, JS libraries, and HTTP-facing frameworks.",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#catalog"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/blueprint/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/gwt/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/htaccess/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/http/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/nodejs/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/rest/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/wicket/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/#topic"
+        }
+      ],
+      "numberOfItems": 23,
+      "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/ajax/",
+      "name": "AJAX - Asynchronous JavaScript And XML",
+      "headline": "AJAX - Asynchronous JavaScript And XML",
+      "description": "AJAX - Asynchronous JavaScript And XML cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#AJAX",
+        "https://en.wikipedia.org/wiki/AJAX",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#sheet-4"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "CSS",
+          "identifier": "CSS"
+        },
+        {
+          "@type": "Thing",
+          "name": "DOM",
+          "identifier": "DOM"
+        },
+        {
+          "@type": "Thing",
+          "name": "GWT",
+          "identifier": "GWT"
+        },
+        {
+          "@type": "Thing",
+          "name": "JavaScript",
+          "identifier": "JavaScript"
+        },
+        {
+          "@type": "Thing",
+          "name": "jQuery",
+          "identifier": "jQuery"
+        },
+        {
+          "@type": "Thing",
+          "name": "Prototype",
+          "identifier": "Prototype"
+        },
+        {
+          "@type": "Thing",
+          "name": "RichFaces",
+          "identifier": "RichFaces"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#saved-1",
+      "name": "javascript_cheat_sheet.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/ajax/saved-copy/javascript_cheat_sheet.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/javascript_cheat_sheet.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#saved-2",
+      "name": "javascript_cheat_sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/ajax/saved-copy/javascript_cheat_sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/javascript_cheat_sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#wikipedia-1",
+      "name": "AJAX - Asynchronous JavaScript And XML (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/ajax/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/AJAX"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/AJAX",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#sheet-1",
+      "name": "Getting Started with Ajax by Dave Crane [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-ajax"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#sheet-2",
+      "name": "JavaScript in one page [html] (javascript.su)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/sites/javascript.su/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#sheet-3",
+      "name": "JavaScript Cheat Sheet by Dave Child [png, pdf] (addedbytes.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/javascript_cheat_sheet.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/javascript_cheat_sheet.pdf",
+        "https://www.addedbytes.com/cheat-sheets/javascript-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#sheet-4",
+      "name": "AJAX Activity Indicators [html] (ajax.su)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/ajax/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/sites/ajax.su/ajax_activity_indicators.html"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/asp/",
+      "name": "ASP - Active Server Pages",
+      "headline": "ASP - Active Server Pages",
+      "description": "ASP - Active Server Pages cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#ASP",
+        "https://en.wikipedia.org/wiki/Active_Server_Pages",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#sheet-4"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": ".NET",
+          "identifier": "DotNET"
+        },
+        {
+          "@type": "Thing",
+          "name": "WebMatrix",
+          "identifier": "WebMatrix"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#saved-1",
+      "name": "asp_cheat_sheet.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/asp/saved-copy/asp_cheat_sheet.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/asp_cheat_sheet.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#saved-2",
+      "name": "asp_cheat_sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/asp/saved-copy/asp_cheat_sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/asp_cheat_sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#saved-3",
+      "name": "aspnet-life-cycles-events.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/asp/saved-copy/aspnet-life-cycles-events.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/aspnet-life-cycles-events.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#wikipedia-1",
+      "name": "ASP - Active Server Pages (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/asp/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Active_Server_Pages"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Active_Server_Pages",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#sheet-1",
+      "name": "Core ASP.NET by Holger Schwichtenberg [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/core-aspnet"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#sheet-2",
+      "name": "ASP / VBScript Cheat Sheet by Dave Child [png, pdf] (addedbytes.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/asp_cheat_sheet.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/asp_cheat_sheet.pdf",
+        "http://www.addedbytes.com/asp/asp-vbscript-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#sheet-3",
+      "name": "ASP.NET 2.0 Page Life Cycle & Common Events [pdf] (john-sheehan.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/aspnet-life-cycles-events.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#sheet-4",
+      "name": "Getting Started with ASP.NET MVC 1.0 by Simone Chiaretta and Keyvan Nayyeri [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/asp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-aspnet-mvc-10"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/blueprint/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/blueprint/",
+      "name": "Blueprint - CSS framework",
+      "headline": "Blueprint - CSS framework",
+      "description": "Blueprint - CSS framework cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Blueprint",
+        "https://en.wikipedia.org/wiki/Blueprint",
+        "http://www.blueprintcss.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/blueprint/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/blueprint/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/blueprint/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.blueprintcss.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "CSS",
+          "identifier": "CSS"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/blueprint/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/blueprint/#saved-1",
+      "name": "BlueprintCSS.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/blueprint/saved-copy/BlueprintCSS.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/blueprint/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/BlueprintCSS.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/blueprint/#wikipedia-1",
+      "name": "Blueprint - CSS framework (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/blueprint/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Blueprint"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Blueprint",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/blueprint/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/blueprint/#sheet-1",
+      "name": "Blueprint CSS by Gareth J M Saunders, based on Help Sheet v.0.3 by Alejandro Vasquez [pdf] (garethjmsaunders.co.uk)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/blueprint/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/BlueprintCSS.pdf",
+      "sameAs": [
+        "http://www.scribd.com/doc/3592303/Blueprint-CSS-version-071-cheat-sheet"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/dom/",
+      "name": "DOM - Document Object Model",
+      "headline": "DOM - Document Object Model",
+      "description": "DOM - Document Object Model cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#DOM",
+        "https://en.wikipedia.org/wiki/Document_Object_Model",
+        "http://www.w3.org/DOM/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://www.w3.org/DOM/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "CSS",
+          "identifier": "CSS"
+        },
+        {
+          "@type": "Thing",
+          "name": "DTD",
+          "identifier": "DTD"
+        },
+        {
+          "@type": "Thing",
+          "name": "HTML",
+          "identifier": "HTML"
+        },
+        {
+          "@type": "Thing",
+          "name": "Selenium",
+          "identifier": "Selenium"
+        },
+        {
+          "@type": "Thing",
+          "name": "XHTML",
+          "identifier": "XHTML"
+        },
+        {
+          "@type": "Thing",
+          "name": "XML",
+          "identifier": "XML"
+        },
+        {
+          "@type": "Thing",
+          "name": "XML Schema",
+          "identifier": "XMLSchema"
+        },
+        {
+          "@type": "Thing",
+          "name": "XPath",
+          "identifier": "XPath"
+        },
+        {
+          "@type": "Thing",
+          "name": "XSL",
+          "identifier": "XSL"
+        },
+        {
+          "@type": "Thing",
+          "name": "XSLT",
+          "identifier": "XSLT"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#saved-1",
+      "name": "/sites/w3cdom.org/",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/dom/hosted/sites/w3cdom.org/index.html",
+      "encodingFormat": "application/octet-stream",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/sites/w3cdom.org/"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#saved-2",
+      "name": "Locators_table_1_0_2.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/dom/saved-copy/Locators_table_1_0_2.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Locators_table_1_0_2.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#saved-3",
+      "name": "Locators_groups_1_0_2.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/dom/saved-copy/Locators_groups_1_0_2.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Locators_groups_1_0_2.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#wikipedia-1",
+      "name": "DOM - Document Object Model (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/dom/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Document_Object_Model"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Document_Object_Model",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#sheet-1",
+      "name": "W3C DOM in one page [html] (w3cdom.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/sites/w3cdom.org/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#sheet-2",
+      "name": "XPath, CSS, DOM and Selenium: The Rosetta Stone by Michael Sorens [pdf: Locators table, Locators groups] (simple-talk.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/dom/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Locators_table_1_0_2.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Locators_groups_1_0_2.pdf",
+        "http://www.simple-talk.com/dotnet/.net-framework/xpath,-css,-dom-and-selenium-the-rosetta-stone/"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/gwt/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/gwt/",
+      "name": "GWT - Google Web Toolkit",
+      "headline": "GWT - Google Web Toolkit",
+      "description": "GWT - Google Web Toolkit cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#GWT",
+        "https://en.wikipedia.org/wiki/Google_Web_Toolkit",
+        "https://www.gwtproject.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/gwt/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/gwt/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "https://www.gwtproject.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "AJAX",
+          "identifier": "AJAX"
+        },
+        {
+          "@type": "Thing",
+          "name": "Google",
+          "identifier": "Google"
+        },
+        {
+          "@type": "Thing",
+          "name": "Java",
+          "identifier": "Java"
+        },
+        {
+          "@type": "Thing",
+          "name": "JavaScript",
+          "identifier": "JavaScript"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/gwt/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/gwt/#wikipedia-1",
+      "name": "GWT - Google Web Toolkit (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/gwt/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Google_Web_Toolkit"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Google_Web_Toolkit",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/gwt/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/gwt/#sheet-1",
+      "name": "GWT: Style, Configuration and JSNI Reference by Robert Hanson [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/gwt/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/gwt-style-configuration-and-js"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/htaccess/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/htaccess/",
+      "name": ".htaccess",
+      "headline": ".htaccess",
+      "description": ".htaccess cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#htaccess",
+        "https://en.wikipedia.org/wiki/Htaccess",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/htaccess/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/htaccess/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/htaccess/#sheet-2"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        },
+        {
+          "@type": "Thing",
+          "name": "mod_rewrite",
+          "identifier": "mod_rewrite"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/htaccess/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/htaccess/#wikipedia-1",
+      "name": ".htaccess (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/htaccess/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Htaccess"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Htaccess",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/htaccess/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/htaccess/#sheet-1",
+      "name": "htaccess Cheatsheet [html] (thejackol.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/htaccess/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.thejackol.com/htaccess-cheatsheet/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/htaccess/#sheet-2",
+      "name": ".htaccess Cheat Sheet by Steve [html] (htaccesscheatsheet.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/htaccess/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://htaccesscheatsheet.com/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/http/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/http/",
+      "name": "HTTP - Hypertext Transfer Protocol",
+      "headline": "HTTP - Hypertext Transfer Protocol",
+      "description": "HTTP - Hypertext Transfer Protocol cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#HTTP",
+        "https://en.wikipedia.org/wiki/Http",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/http/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/http/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/http/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/http/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/http/#saved-1",
+      "name": "http-response-codes-1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/http/saved-copy/http-response-codes-1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/http/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/http-response-codes-1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/http/#wikipedia-1",
+      "name": "HTTP - Hypertext Transfer Protocol (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/http/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Http"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Http",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/http/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/http/#sheet-1",
+      "name": "HTTP/1.1 Status Codes by Bryan English [html] (bluelinecity.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/http/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/http-response-codes-1.pdf"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/",
+      "name": "JavaServer Faces (JSF)",
+      "headline": "JavaServer Faces (JSF)",
+      "description": "JavaServer Faces (JSF) cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#JavaServerFaces",
+        "https://en.wikipedia.org/wiki/JavaServer_Faces",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/#sheet-2"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Java",
+          "identifier": "Java"
+        },
+        {
+          "@type": "Thing",
+          "name": "RichFaces",
+          "identifier": "RichFaces"
+        },
+        {
+          "@type": "Thing",
+          "name": "Seam",
+          "identifier": "Seam"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/#wikipedia-1",
+      "name": "JavaServer Faces (JSF) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/JavaServer_Faces"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/JavaServer_Faces",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/#sheet-1",
+      "name": "JavaServer Faces by Cay S. Horstmann [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/javaserver-faces"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/#sheet-2",
+      "name": "JavaServer Faces 2.0 by Cay Horstmann [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/java-server-faces/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/javaserver-faces-20"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/",
+      "name": "jQuery",
+      "headline": "jQuery",
+      "description": "jQuery cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#jQuery",
+        "https://en.wikipedia.org/wiki/JQuery",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-7"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "AJAX",
+          "identifier": "AJAX"
+        },
+        {
+          "@type": "Thing",
+          "name": "CSS",
+          "identifier": "CSS"
+        },
+        {
+          "@type": "Thing",
+          "name": "DOM",
+          "identifier": "DOM"
+        },
+        {
+          "@type": "Thing",
+          "name": "HTML",
+          "identifier": "HTML"
+        },
+        {
+          "@type": "Thing",
+          "name": "JavaScript",
+          "identifier": "JavaScript"
+        },
+        {
+          "@type": "Thing",
+          "name": "Prototype",
+          "identifier": "Prototype"
+        },
+        {
+          "@type": "Thing",
+          "name": "XHTML",
+          "identifier": "XHTML"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-1",
+      "name": "jquery-mega-cheat-sheet-20152.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jquery-mega-cheat-sheet-20152.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jquery-mega-cheat-sheet-20152.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-2",
+      "name": "jQuery-1.5-Visual-Cheat-Sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-3",
+      "name": "jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-4",
+      "name": "wsu-jquery-cheat-sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/wsu-jquery-cheat-sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/wsu-jquery-cheat-sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-5",
+      "name": "JQUERY-CHEAT-SHEET-a.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/JQUERY-CHEAT-SHEET-a.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/JQUERY-CHEAT-SHEET-a.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-6",
+      "name": "jquery12_colorcharge.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jquery12_colorcharge.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-7",
+      "name": "jquery12_colorcharge.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jquery12_colorcharge.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-8",
+      "name": "jquery12_colorcharge_bw.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jquery12_colorcharge_bw.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-9",
+      "name": "jquery12_colorcharge_bw.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/jquery12_colorcharge_bw.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#saved-10",
+      "name": "Jquery-Cheat-Sheet-1.2.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/saved-copy/Jquery-Cheat-Sheet-1.2.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Jquery-Cheat-Sheet-1.2.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#wikipedia-1",
+      "name": "jQuery (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/j-query/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/JQuery"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/JQuery",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-1",
+      "name": "The jQuery Mega Cheat Sheet 2015 by Jamie Spencer [html, jpg] (makeawebsitehub.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/jquery-mega-cheat-sheet-20152.jpg",
+      "sameAs": [
+        "http://makeawebsitehub.com/jquery-mega-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-2",
+      "name": "jQuery 1.5 Visual Cheat Sheet by Antonio Lupetti [pdf] (woorkup.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf",
+      "sameAs": [
+        "http://woorkup.com/2011/02/19/jquery-1-5-visual-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-3",
+      "name": "jQuery 1.3 Visual Cheat Sheet by Antonio Lupetti (WOORK) [pdf] (woork.blogspot.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-4",
+      "name": "Beginner’s essential jQuery Cheat Sheet by Robert Mening [pdf, png] (websitesetup.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/wsu-jquery-cheat-sheet.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/JQUERY-CHEAT-SHEET-a.png",
+        "https://websitesetup.org/wp-content/uploads/2017/01/wsu-jquery-cheat-sheet.pdf",
+        "https://websitesetup.org/wp-content/uploads/2017/01/JQUERY-CHEAT-SHEET-a.png"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-5",
+      "name": "jQuery 1.2 Cheat Sheet [pdf, png, bw pdf, bw png] (labs.colorcharge.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge.png",
+        "https://www.cheat-sheets.org/saved-copy/jquery12_colorcharge_bw.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-6",
+      "name": "jQuery 1.2 by Adrien Gibrat [pdf]",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Jquery-Cheat-Sheet-1.2.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#sheet-7",
+      "name": "jQuery Selectors by Bear Bibeault & Yehuda Katz [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/j-query/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/jquery-selectors"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/jsp/",
+      "name": "JSP - JavaServer Pages",
+      "headline": "JSP - JavaServer Pages",
+      "description": "JSP - JavaServer Pages cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#JSP",
+        "https://en.wikipedia.org/wiki/JavaServer_Pages",
+        "http://java.sun.com/products/jsp/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#sheet-5"
+        }
+      ],
+      "significantLink": [
+        "http://java.sun.com/products/jsp/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Java",
+          "identifier": "Java"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#saved-1",
+      "name": "card20.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/jsp/saved-copy/card20.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/card20.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#saved-2",
+      "name": "jspqr.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/jsp/saved-copy/jspqr.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/jspqr.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#saved-3",
+      "name": "JSP Syntax.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/jsp/saved-copy/JSP%2520Syntax.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/JSP%20Syntax.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#saved-4",
+      "name": "JSP Quick Reference Card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/jsp/saved-copy/JSP%2520Quick%2520Reference%2520Card.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/JSP%20Quick%20Reference%20Card.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#wikipedia-1",
+      "name": "JSP - JavaServer Pages (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/jsp/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/JavaServer_Pages"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/JavaServer_Pages",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#sheet-1",
+      "name": "JSP™ SYNTAX version 2.0 [pdf] (java.sun.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/card20.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#sheet-2",
+      "name": "JSP Quick Reference Card [pdf] (adobe.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/jspqr.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#sheet-3",
+      "name": "JSP Syntax [pdf] (digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/JSP%20Syntax.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#sheet-4",
+      "name": "JSP Quick Reference Card [pdf] (digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/JSP%20Quick%20Reference%20Card.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#sheet-5",
+      "name": "Essential JSP Expression Language by Bear Bibeault [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/jsp/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/essential-jsp-expression"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/",
+      "name": "mod_perl",
+      "headline": "mod_perl",
+      "description": "mod_perl cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#mod_perl",
+        "https://en.wikipedia.org/wiki/Mod_perl",
+        "http://perl.apache.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://perl.apache.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        },
+        {
+          "@type": "Thing",
+          "name": "Perl",
+          "identifier": "Perl"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/#saved-1",
+      "name": "mod_perl-refcard-a4.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/saved-copy/mod_perl-refcard-a4.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mod_perl-refcard-a4.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/#wikipedia-1",
+      "name": "mod_perl (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Mod_perl"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Mod_perl",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/#sheet-1",
+      "name": "Mod_perl Quick Reference Card by Andrew Ford [pdf] (refcards.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-perl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/mod_perl-refcard-a4.pdf"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/",
+      "name": "mod_rewrite",
+      "headline": "mod_rewrite",
+      "description": "mod_rewrite cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#mod_rewrite",
+        "https://en.wikipedia.org/wiki/Rewrite_engine",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        },
+        {
+          "@type": "Thing",
+          "name": "htaccess",
+          "identifier": "htaccess"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#saved-1",
+      "name": "mod_rewrite_cheat_sheet.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/saved-copy/mod_rewrite_cheat_sheet.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mod_rewrite_cheat_sheet.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#saved-2",
+      "name": "mod_rewrite_cheat_sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/saved-copy/mod_rewrite_cheat_sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mod_rewrite_cheat_sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#wikipedia-1",
+      "name": "mod_rewrite (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Rewrite_engine"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Rewrite_engine",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#sheet-1",
+      "name": "mod_rewrite Cheat Sheet by Dave Child [html, png, pdf] (cheatography.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/mod-rewrite/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/mod_rewrite_cheat_sheet.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mod_rewrite_cheat_sheet.pdf",
+        "https://www.cheatography.com/davechild/cheat-sheets/mod-rewrite/"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/",
+      "name": "MooTools",
+      "headline": "MooTools",
+      "description": "MooTools cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#MooTools",
+        "https://en.wikipedia.org/wiki/Mootools",
+        "http://mootools.net/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://mootools.net/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "AJAX",
+          "identifier": "AJAX"
+        },
+        {
+          "@type": "Thing",
+          "name": "JavaScript",
+          "identifier": "JavaScript"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#saved-1",
+      "name": "/blog/grab/mootools-1.3-cheat-sheet1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/saved-copy/mootools-1.3-cheat-sheet1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#topic"
+      },
+      "sameAs": [
+        "http://mediavrog.net/blog/grab/mootools-1.3-cheat-sheet1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#saved-2",
+      "name": "mootools-1.3-cheat-sheet1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/saved-copy/mootools-1.3-cheat-sheet1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mootools-1.3-cheat-sheet1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#saved-3",
+      "name": "/blog/wp-content/uploads/2008/06/mootools-12-cheat-sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/saved-copy/mootools-12-cheat-sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#topic"
+      },
+      "sameAs": [
+        "http://mediavrog.net/blog/wp-content/uploads/2008/06/mootools-12-cheat-sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#saved-4",
+      "name": "mootools-12-cheat-sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/saved-copy/mootools-12-cheat-sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mootools-12-cheat-sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#wikipedia-1",
+      "name": "MooTools (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Mootools"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Mootools",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#sheet-1",
+      "name": "mootools 1.3 cheat sheet [pdf] (mediavrog.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://mediavrog.net/blog/grab/mootools-1.3-cheat-sheet1.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mootools-1.3-cheat-sheet1.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#sheet-2",
+      "name": "mootools 1.2 cheat sheet [pdf] (mediavrog.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/moo-tools/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://mediavrog.net/blog/wp-content/uploads/2008/06/mootools-12-cheat-sheet.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mootools-12-cheat-sheet.pdf"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/nodejs/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/nodejs/",
+      "name": "Node.js",
+      "headline": "Node.js",
+      "description": "Node.js cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Nodejs",
+        "https://en.wikipedia.org/wiki/Nodejs",
+        "http://nodejs.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/nodejs/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/nodejs/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/nodejs/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://nodejs.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "JavaScript",
+          "identifier": "JavaScript"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/nodejs/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/nodejs/#wikipedia-1",
+      "name": "Node.js (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/nodejs/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Nodejs"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Nodejs",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/nodejs/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/nodejs/#sheet-1",
+      "name": "Node.js: Building for Scalability with Server-Side JavaScript by Todd Eichel [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/nodejs/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/nodejs-building-scalability"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/nodejs/#sheet-2",
+      "name": "tldr npm [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/nodejs/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/command/npm/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/prototype/",
+      "name": "Prototype",
+      "headline": "Prototype",
+      "description": "Prototype cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Prototype",
+        "https://en.wikipedia.org/wiki/Prototype_JavaScript_Framework",
+        "http://prototypejs.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://prototypejs.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "AJAX",
+          "identifier": "AJAX"
+        },
+        {
+          "@type": "Thing",
+          "name": "JavaScript",
+          "identifier": "JavaScript"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#saved-1",
+      "name": "prototype1280.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/prototype/saved-copy/prototype1280.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/prototype1280.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#saved-2",
+      "name": "prototype1440.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/prototype/saved-copy/prototype1440.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/prototype1440.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#saved-3",
+      "name": "prototype1280w.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/prototype/saved-copy/prototype1280w.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/prototype1280w.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#saved-4",
+      "name": "prototype1440w.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/prototype/saved-copy/prototype1440w.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/prototype1440w.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#wikipedia-1",
+      "name": "Prototype (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/prototype/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Prototype_JavaScript_Framework"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Prototype_JavaScript_Framework",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#sheet-1",
+      "name": "Prototype Dissected [png: 1280x960 on Black, 1440x900 on Black, 1280x960 on White, 1440x900 on White] (snook.ca)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/prototype/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/prototype1280.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/prototype1440.png",
+        "https://www.cheat-sheets.org/saved-copy/prototype1280w.png",
+        "http://www.snook.ca/archives/javascript/prototype_disse/"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/rest/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/rest/",
+      "name": "REST (Representational State Transfer)",
+      "headline": "REST (Representational State Transfer)",
+      "description": "REST (Representational State Transfer) cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#REST",
+        "https://en.wikipedia.org/wiki/Representational_State_Transfer",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/rest/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/rest/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/rest/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/rest/#wikipedia-1",
+      "name": "REST (Representational State Transfer) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/rest/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Representational_State_Transfer"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Representational_State_Transfer",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/rest/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/rest/#sheet-1",
+      "name": "REST: Foundations of RESTful Architecture by Brian Sletten [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/rest/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/rest-foundations-restful"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/",
+      "name": "RichFaces",
+      "headline": "RichFaces",
+      "description": "RichFaces cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#RichFaces",
+        "https://en.wikipedia.org/wiki/RichFaces",
+        "http://www.jboss.org/richfaces/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://www.jboss.org/richfaces/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "AJAX",
+          "identifier": "AJAX"
+        },
+        {
+          "@type": "Thing",
+          "name": "Java",
+          "identifier": "Java"
+        },
+        {
+          "@type": "Thing",
+          "name": "JavaServer Faces",
+          "identifier": "JavaServerFaces"
+        },
+        {
+          "@type": "Thing",
+          "name": "Seam",
+          "identifier": "Seam"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/#wikipedia-1",
+      "name": "RichFaces (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/RichFaces"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/RichFaces",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/#sheet-1",
+      "name": "RichFaces 4.0: A Next Generation JSF Framework by Nick Belaevski, Ilya Shailkovsky, Max Katz, and Jay Balunas [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/richfaces-40-next-generation"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/#sheet-2",
+      "name": "JBoss RichFaces by Nick Belaevski, Ilya Shaikovsky, Jay Balunas, and Max Katz [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/rich-faces/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/richfaces"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/selenium/",
+      "name": "Selenium",
+      "headline": "Selenium",
+      "description": "Selenium cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Selenium",
+        "https://en.wikipedia.org/wiki/Selenium_(software)",
+        "http://seleniumhq.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://seleniumhq.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "CSS",
+          "identifier": "CSS"
+        },
+        {
+          "@type": "Thing",
+          "name": "DOM",
+          "identifier": "DOM"
+        },
+        {
+          "@type": "Thing",
+          "name": "XPath",
+          "identifier": "XPath"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#saved-1",
+      "name": "Locators_table_1_0_2.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/selenium/saved-copy/Locators_table_1_0_2.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Locators_table_1_0_2.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#saved-2",
+      "name": "Locators_groups_1_0_2.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/selenium/saved-copy/Locators_groups_1_0_2.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Locators_groups_1_0_2.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#wikipedia-1",
+      "name": "Selenium (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/selenium/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Selenium_(software)"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Selenium_(software)",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#sheet-1",
+      "name": "Getting Started with Selenium by Frank Cohen [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-selenium"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#sheet-2",
+      "name": "XPath, CSS, DOM and Selenium: The Rosetta Stone by Michael Sorens [pdf: Locators table, Locators groups] (simple-talk.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/selenium/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Locators_table_1_0_2.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Locators_groups_1_0_2.pdf",
+        "http://www.simple-talk.com/dotnet/.net-framework/xpath,-css,-dom-and-selenium-the-rosetta-stone/"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/ssi/",
+      "name": "SSI - Server Side Includes (mod_include)",
+      "headline": "SSI - Server Side Includes (mod_include)",
+      "description": "SSI - Server Side Includes (mod_include) cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#SSI",
+        "https://en.wikipedia.org/wiki/Server_Side_Includes",
+        "http://httpd.apache.org/docs/2.2/mod/mod_include.html",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://httpd.apache.org/docs/2.2/mod/mod_include.html"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#saved-1",
+      "name": "/sites/ssi.su/",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/ssi/hosted/sites/ssi.su/index.html",
+      "encodingFormat": "application/octet-stream",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/sites/ssi.su/"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#saved-2",
+      "name": "ssiqr.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/ssi/saved-copy/ssiqr.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/ssiqr.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#wikipedia-1",
+      "name": "SSI - Server Side Includes (mod_include) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/ssi/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Server_Side_Includes"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Server_Side_Includes",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#sheet-1",
+      "name": "SSI in one page [html] (ssi.su)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/sites/ssi.su/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#sheet-2",
+      "name": "Server Side Includes Quick Reference Card [pdf] (explainth.at)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/ssi/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/ssiqr.pdf"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/web-gl/",
+      "name": "WebGL (Web-based Graphics Library)",
+      "headline": "WebGL (Web-based Graphics Library)",
+      "description": "WebGL (Web-based Graphics Library) cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#WebGL",
+        "https://en.wikipedia.org/wiki/WebGL",
+        "http://www.khronos.org/webgl/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#sheet-6"
+        }
+      ],
+      "significantLink": [
+        "http://www.khronos.org/webgl/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#saved-1",
+      "name": "webgl-reference-card-1_0.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/web-gl/saved-copy/webgl-reference-card-1_0.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/webgl-reference-card-1_0.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#saved-2",
+      "name": "WebGL_Cheat_Sheet.htm",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/web-gl/saved-copy/WebGL_Cheat_Sheet.htm",
+      "encodingFormat": "text/html",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/WebGL_Cheat_Sheet.htm"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#saved-3",
+      "name": "WebGL_Cheat_Sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/web-gl/saved-copy/WebGL_Cheat_Sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/WebGL_Cheat_Sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#wikipedia-1",
+      "name": "WebGL (Web-based Graphics Library) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/web-gl/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/WebGL"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/WebGL",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#sheet-1",
+      "name": "Official WebGL 1.0 API Quick Reference Card by Khronos Group & Miller & Mattson [pdf] (khronos.org/webgl/ & millermattson.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/webgl-reference-card-1_0.pdf",
+      "sameAs": [
+        "http://www.khronos.org/files/webgl/webgl-reference-card-1_0.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#sheet-2",
+      "name": "WebGL Cheat Sheet v0.2 by Jacob Seidelin [htm, pdf] (nihilogic.dk)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/WebGL_Cheat_Sheet.htm",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/WebGL_Cheat_Sheet.pdf",
+        "http://blog.nihilogic.dk/2010/02/webgl-cheat-sheet-update.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#sheet-3",
+      "name": "WebGL Specification Version 1.0 by Khronos Group [html] (khronos.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.khronos.org/registry/webgl/specs/1.0/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#sheet-4",
+      "name": "WebGL Public Wiki by Khronos Group  [html] (khronos.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.khronos.org/webgl/wiki/Main_Page"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#sheet-5",
+      "name": "WebGL articles by Mozilla [html] (mozilla.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://developer.mozilla.org/en/WebGL"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#sheet-6",
+      "name": "The series of lessons as a way of teaching myself WebGL by Giles [html] (learningwebgl.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-gl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://learningwebgl.com/blog/?page_id=1217"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/",
+      "name": "WebMatrix",
+      "headline": "WebMatrix",
+      "description": "WebMatrix cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#WebMatrix",
+        "https://en.wikipedia.org/wiki/Microsoft_WebMatrix",
+        "http://www.microsoft.com/web/webmatrix/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://www.microsoft.com/web/webmatrix/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "ASP",
+          "identifier": "ASP"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/#wikipedia-1",
+      "name": "WebMatrix (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Microsoft_WebMatrix"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Microsoft_WebMatrix",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/#sheet-1",
+      "name": "WebMatrix: Advanced Web Development Made Simple by James Sugrue [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/webmatrix"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/#sheet-2",
+      "name": "Learn WebMatrix [html] (microsoft.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/web-matrix/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.microsoft.com/web/category/learn"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/wicket/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/wicket/",
+      "name": "Wicket (Apache Wicket)",
+      "headline": "Wicket (Apache Wicket)",
+      "description": "Wicket (Apache Wicket) cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Wicket",
+        "https://en.wikipedia.org/wiki/Apache_Wicket",
+        "http://wicket.apache.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/wicket/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/wicket/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://wicket.apache.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/wicket/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/wicket/#wikipedia-1",
+      "name": "Wicket (Apache Wicket) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/wicket/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Apache_Wicket"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_Wicket",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/wicket/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/wicket/#sheet-1",
+      "name": "Getting Started with Apache Wicket by Andrew Lombardi [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/wicket/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-apache-wicket"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/",
+      "name": "Zen Coding",
+      "headline": "Zen Coding",
+      "description": "Zen Coding cheat sheets archived from cheat-sheets.org in the Web group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#ZenCoding",
+        "https://en.wikipedia.org/wiki/Zen_Coding",
+        "http://code.google.com/p/zen-coding/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://code.google.com/p/zen-coding/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/#saved-1",
+      "name": "ZenCodingCheatSheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/saved-copy/ZenCodingCheatSheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/ZenCodingCheatSheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/#wikipedia-1",
+      "name": "Zen Coding (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Zen_Coding"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Zen_Coding",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/#sheet-1",
+      "name": "Zen HTML Elements (Based on HTML 5 specification draft) [pdf] (code.google.com/p/zen-coding/)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/web/zen-coding/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/ZenCodingCheatSheet.pdf"
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>Web</h1>
+    <p class="lede">Web APIs, browsers' web stack, JS libraries, and HTTP-facing frameworks.</p>
+  </header>
+  <main>
+    <ul>
+      <li><a href="/web/ajax/">AJAX - Asynchronous JavaScript And XML</a></li>
+      <li><a href="/web/asp/">ASP - Active Server Pages</a></li>
+      <li><a href="/web/blueprint/">Blueprint - CSS framework</a></li>
+      <li><a href="/web/dom/">DOM - Document Object Model</a></li>
+      <li><a href="/web/gwt/">GWT - Google Web Toolkit</a></li>
+      <li><a href="/web/htaccess/">.htaccess</a></li>
+      <li><a href="/web/http/">HTTP - Hypertext Transfer Protocol</a></li>
+      <li><a href="/web/java-server-faces/">JavaServer Faces (JSF)</a></li>
+      <li><a href="/web/j-query/">jQuery</a></li>
+      <li><a href="/web/jsp/">JSP - JavaServer Pages</a></li>
+      <li><a href="/web/mod-perl/">mod_perl</a></li>
+      <li><a href="/web/mod-rewrite/">mod_rewrite</a></li>
+      <li><a href="/web/moo-tools/">MooTools</a></li>
+      <li><a href="/web/nodejs/">Node.js</a></li>
+      <li><a href="/web/prototype/">Prototype</a></li>
+      <li><a href="/web/rest/">REST (Representational State Transfer)</a></li>
+      <li><a href="/web/rich-faces/">RichFaces</a></li>
+      <li><a href="/web/selenium/">Selenium</a></li>
+      <li><a href="/web/ssi/">SSI - Server Side Includes (mod_include)</a></li>
+      <li><a href="/web/web-gl/">WebGL (Web-based Graphics Library)</a></li>
+      <li><a href="/web/web-matrix/">WebMatrix</a></li>
+      <li><a href="/web/wicket/">Wicket (Apache Wicket)</a></li>
+      <li><a href="/web/zen-coding/">Zen Coding</a></li>
+    </ul>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

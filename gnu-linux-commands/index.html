@@ -1,0 +1,3312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GNU / Linux commands</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="Unix/Linux command-line tools and shells (cat, less, awk, sed, ls, …), plus Linux/Unix overview sheets the site clusters via See also.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/">
+  <meta property="og:title" content="GNU / Linux commands">
+  <meta property="og:description" content="Unix/Linux command-line tools and shells (cat, less, awk, sed, ls, …), plus Linux/Unix overview sheets the site clusters via See also.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "DataCatalog",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#catalog",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "285 cheat-sheet topics in 19 groups, archived from cheat-sheets.org with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#website"
+      },
+      "license": "https://www.cheat-sheets.org/",
+      "creator": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/applications/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/online-data-services/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/graphics-and-design/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/security/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/hardware-and-embedded/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/other/#collection"
+        }
+      ],
+      "numberOfItems": 285,
+      "keywords": [
+        "Languages",
+        "Databases",
+        "Applications",
+        "Business processes",
+        "GNU / Linux commands",
+        "File formats",
+        "Online data services",
+        "Web",
+        "Operating systems",
+        "Mathematics and science",
+        "Version control",
+        "Editors and IDEs",
+        "Networking and protocols",
+        "Cloud and DevOps",
+        "Graphics and design",
+        "Frameworks and libraries",
+        "Security",
+        "Hardware and embedded",
+        "Other"
+      ],
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "Collection",
+        "CollectionPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/",
+      "name": "GNU / Linux commands",
+      "description": "Unix/Linux command-line tools and shells (cat, less, awk, sed, ls, …), plus Linux/Unix overview sheets the site clusters via See also.",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#catalog"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/apt/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/chmod/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/cron/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/curl/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+        }
+      ],
+      "numberOfItems": 16,
+      "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/apt/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/apt/",
+      "name": "APT - Advanced Packaging Tool",
+      "headline": "APT - Advanced Packaging Tool",
+      "description": "APT - Advanced Packaging Tool cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#APT",
+        "https://en.wikipedia.org/wiki/Advanced_Packaging_Tool",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/apt/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/apt/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Debian",
+          "identifier": "Debian"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/apt/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/apt/#wikipedia-1",
+      "name": "APT - Advanced Packaging Tool (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/apt/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Advanced_Packaging_Tool"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Advanced_Packaging_Tool",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/apt/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/apt/#sheet-1",
+      "name": "APT HOWTO [html] (debian.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/apt/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.debian.org/doc/manuals/apt-howto/index.en.html"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/",
+      "name": "AWK - Aho, Weinberger and Kernighan programming language",
+      "headline": "AWK - Aho, Weinberger and Kernighan programming language",
+      "description": "AWK - Aho, Weinberger and Kernighan programming language cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#AWK",
+        "https://en.wikipedia.org/wiki/AWK_%28programming_language%29",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#sheet-3"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#saved-1",
+      "name": "awk.cheat.sheet.doc",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/saved-copy/awk.cheat.sheet.doc",
+      "encodingFormat": "application/msword",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/awk.cheat.sheet.doc"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#saved-2",
+      "name": "awk.cheat.sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/saved-copy/awk.cheat.sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/awk.cheat.sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#saved-3",
+      "name": "awk.cheat.sheet.txt",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/saved-copy/awk.cheat.sheet.txt",
+      "encodingFormat": "text/plain",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/awk.cheat.sheet.txt"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#saved-4",
+      "name": "awk_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/saved-copy/awk_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/awk_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#wikipedia-1",
+      "name": "AWK - Aho, Weinberger and Kernighan programming language (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/AWK_%28programming_language%29"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/AWK_%28programming_language%29",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#sheet-1",
+      "name": "AWK (Aho, Weinberger and Kernighan) Summary (awk cheat sheet) by Peteris Krumins [doc, pdf, txt] (catonmat.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/awk.cheat.sheet.doc",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/awk.cheat.sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/awk.cheat.sheet.txt",
+        "http://www.catonmat.net/blog/awk-nawk-and-gawk-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#sheet-2",
+      "name": "awk Quick Ref compiled by Vincent Ledos [pdf]",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/awk_quickref.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#sheet-3",
+      "name": "tldr awk  [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/awk/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/command/AWK/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/chmod/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/chmod/",
+      "name": "chmod",
+      "headline": "chmod",
+      "description": "chmod cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#chmod",
+        "https://en.wikipedia.org/wiki/Chmod",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/chmod/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/chmod/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Linux",
+          "identifier": "Linux"
+        },
+        {
+          "@type": "Thing",
+          "name": "Unix",
+          "identifier": "Unix"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/chmod/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/chmod/#wikipedia-1",
+      "name": "chmod (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/chmod/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Chmod"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Chmod",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/chmod/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/chmod/#sheet-1",
+      "name": "Chmod chart [html] (draac.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/chmod/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.draac.com/chmodchart.html"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/cron/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/cron/",
+      "name": "Cron",
+      "headline": "Cron",
+      "description": "Cron cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Cron",
+        "https://en.wikipedia.org/wiki/Cron",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/cron/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/cron/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/cron/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/cron/#wikipedia-1",
+      "name": "Cron (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/cron/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Cron"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Cron",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/cron/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/cron/#sheet-1",
+      "name": "Cron cheatsheet by Rico (@rstacruz) [html] (devhints.io)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/cron/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://devhints.io/cron"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/curl/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/curl/",
+      "name": "curl (cURL, Curl)",
+      "headline": "curl (cURL, Curl)",
+      "description": "curl (cURL, Curl) cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Curl",
+        "https://curl.se/",
+        "https://github.com/curl",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/curl/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "https://curl.se/",
+        "https://github.com/curl"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/curl/#sheet-1",
+      "name": "Awesome Curl Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/curl/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/curl.sh"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/",
+      "name": "Ed - UNIX Text Editor",
+      "headline": "Ed - UNIX Text Editor",
+      "description": "Ed - UNIX Text Editor cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Ed",
+        "https://en.wikipedia.org/wiki/Ed_%28text_editor%29",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#sheet-2"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#saved-1",
+      "name": "ed.text.editor.cheat.sheet.doc",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/saved-copy/ed.text.editor.cheat.sheet.doc",
+      "encodingFormat": "application/msword",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/ed.text.editor.cheat.sheet.doc"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#saved-2",
+      "name": "ed.text.editor.cheat.sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/saved-copy/ed.text.editor.cheat.sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/ed.text.editor.cheat.sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#saved-3",
+      "name": "ed.unix.text.editor.cheat.sheet.txt",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/saved-copy/ed.unix.text.editor.cheat.sheet.txt",
+      "encodingFormat": "text/plain",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/ed.unix.text.editor.cheat.sheet.txt"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#wikipedia-1",
+      "name": "Ed - UNIX Text Editor (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Ed_%28text_editor%29"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Ed_%28text_editor%29",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#sheet-1",
+      "name": "Ed Text Editor Summary (ed cheat sheet) by Peteris Krumins [doc, pdf, txt] (catonmat.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/ed.text.editor.cheat.sheet.doc",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/ed.text.editor.cheat.sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/ed.unix.text.editor.cheat.sheet.txt",
+        "http://www.catonmat.net/blog/ed-unix-text-editor-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#sheet-2",
+      "name": "tldr ed [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/ed/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://cheat-sheets.org/project/tldr/command/ed/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/",
+      "name": "GDB - GNU Debugger",
+      "headline": "GDB - GNU Debugger",
+      "description": "GDB - GNU Debugger cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#GDB",
+        "https://en.wikipedia.org/wiki/GNU_Debugger",
+        "http://www.gnu.org/software/gdb/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://www.gnu.org/software/gdb/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "C",
+          "identifier": "C"
+        },
+        {
+          "@type": "Thing",
+          "name": "C++",
+          "identifier": "CPP"
+        },
+        {
+          "@type": "Thing",
+          "name": "Fortran",
+          "identifier": "Fortran"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#saved-1",
+      "name": "gdb-refcard-a4.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/saved-copy/gdb-refcard-a4.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/gdb-refcard-a4.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#wikipedia-1",
+      "name": "GDB - GNU Debugger (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/GNU_Debugger"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/GNU_Debugger",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#sheet-1",
+      "name": "GDB Refcard by Roland H. Pesch [pdf] (gnu.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/gdb-refcard-a4.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#sheet-2",
+      "name": "tldr gdb [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/gdb/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://cheat-sheets.org/project/tldr/command/gdb/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/",
+      "name": "less",
+      "headline": "less",
+      "description": "less cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#less",
+        "https://en.wikipedia.org/wiki/Less_(Unix)",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/#sheet-2"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/#wikipedia-1",
+      "name": "less (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Less_(Unix)"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Less_(Unix)",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/#sheet-1",
+      "name": "less cheat sheet by Mischa Poslawsky [html] (shiar.nl)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://sheet.shiar.nl/less"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/#sheet-2",
+      "name": "less tldr page [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/less/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/command/less/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/",
+      "name": "Linux",
+      "headline": "Linux",
+      "description": "Linux cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Linux",
+        "https://en.wikipedia.org/wiki/Linux",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-11"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-12"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-13"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-14"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-15"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-16"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-17"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-18"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-19"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-20"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-21"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-22"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-23"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-24"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-11"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-12"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-13"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-14"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-15"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-16"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-17"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-18"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-19"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-20"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-21"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "chmod",
+          "identifier": "chmod"
+        },
+        {
+          "@type": "Thing",
+          "name": "Debian",
+          "identifier": "Debian"
+        },
+        {
+          "@type": "Thing",
+          "name": "Fedora",
+          "identifier": "Fedora"
+        },
+        {
+          "@type": "Thing",
+          "name": "Red Hat",
+          "identifier": "RedHat"
+        },
+        {
+          "@type": "Thing",
+          "name": "Ubuntu",
+          "identifier": "Ubuntu"
+        },
+        {
+          "@type": "Thing",
+          "name": "Unix",
+          "identifier": "Unix"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-1",
+      "name": "fwunixref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/fwunixref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/fwunixref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-2",
+      "name": "10-Linux-Unix-Command-Cheat-Sheet-021.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-021.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-021.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-3",
+      "name": "The One Page Linux Manual.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/The%2520One%2520Page%2520Linux%2520Manual.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/The%20One%20Page%20Linux%20Manual.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-4",
+      "name": "linux_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/linux_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/linux_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-5",
+      "name": "Linux_Syscall_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/Linux_Syscall_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Linux_Syscall_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-6",
+      "name": "linux_security_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/linux_security_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/linux_security_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-7",
+      "name": "CliCommandsFull.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/CliCommandsFull.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/CliCommandsFull.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-8",
+      "name": "A.very.brief.guide.to.Linux.htm",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/A.very.brief.guide.to.Linux.htm",
+      "encodingFormat": "text/html",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/A.very.brief.guide.to.Linux.htm"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-9",
+      "name": "10-Linux-Unix-Command-Cheat-Sheet-011.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-011.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-011.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-10",
+      "name": "linux-cheat-sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/linux-cheat-sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-11",
+      "name": "linux-cheat-sheet.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/linux-cheat-sheet.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-12",
+      "name": "305883.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/305883.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/305883.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-13",
+      "name": "clicommandsfull.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/clicommandsfull.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/clicommandsfull.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-14",
+      "name": "linux-cheat-sheet-wallpapers_30985_1920x1080.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet-wallpapers_30985_1920x1080.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/linux-cheat-sheet-wallpapers_30985_1920x1080.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-15",
+      "name": "linux-command-line-cheat-sheet.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/linux-command-line-cheat-sheet.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/linux-command-line-cheat-sheet.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-16",
+      "name": "linuxcommands.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/linuxcommands.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/linuxcommands.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-17",
+      "name": "ubuntucheatsheet.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/ubuntucheatsheet.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/ubuntucheatsheet.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-18",
+      "name": "davechild_linux-command-line.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/davechild_linux-command-line.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/davechild_linux-command-line.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-19",
+      "name": "Muppix_Linux_commands_1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/Muppix_Linux_commands_1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Muppix_Linux_commands_1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-20",
+      "name": "Muppix_Linux_commands_2.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/Muppix_Linux_commands_2.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Muppix_Linux_commands_2.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-21",
+      "name": "Muppix.co_Basic_Linux_Commands.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/Muppix.co_Basic_Linux_Commands.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Muppix.co_Basic_Linux_Commands.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-22",
+      "name": "Muppix_Basic_Linux_commands.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/Muppix_Basic_Linux_commands.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Muppix_Basic_Linux_commands.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-23",
+      "name": "Muppix_Linux_terminal_navigation.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/Muppix_Linux_terminal_navigation.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Muppix_Linux_terminal_navigation.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#saved-24",
+      "name": "pcwdld.com-linux-commands-cheat-sheet-20211028.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/saved-copy/pcwdld.com-linux-commands-cheat-sheet-20211028.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/pcwdld.com-linux-commands-cheat-sheet-20211028.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#wikipedia-1",
+      "name": "Linux (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Linux"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Linux",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-1",
+      "name": "TLDR Pages [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-2",
+      "name": "Most used commands [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-3",
+      "name": "Linux Command Line Tips [html] (pixelbeat.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.pixelbeat.org/cmdline.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-4",
+      "name": "Linux Shortcuts and Commands [html] (linuxshortcuts.shtml)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.unixguide.net/linux/linuxshortcuts.shtml"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-5",
+      "name": "Unix/Linux Command Cheat Sheet by Jacob [pdf] (fosswire.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/fwunixref.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-021.jpg"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-6",
+      "name": "The One Page Linux Manual by Squadron [pdf] (homepage.powerup.com.au/~squadron/, digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/The%20One%20Page%20Linux%20Manual.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-7",
+      "name": "Linux Administrator's Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/linux_quickref.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-8",
+      "name": "Linux System Calls Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Linux_Syscall_quickref.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-9",
+      "name": "Linux Security Quick Reference by Dave Wreski & Benjamin Thomas [pdf] (tiger.la.asu.edu, digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/linux_security_quickref.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-10",
+      "name": "Command Line Interface Commands [jpg]",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/CliCommandsFull.jpg"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-11",
+      "name": "A very brief guide to Linux by C. J. Rennie [html] (www.physics.usyd.edu.au/~rennie/)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/A.very.brief.guide.to.Linux.htm"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-12",
+      "name": "Linux Tutorial - Cheat Sheet by Ryan Chadwick [html] (ryanstutorials.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://ryanstutorials.net/linuxtutorial/cheatsheet.php"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-13",
+      "name": "Unix/Linux Command Reference [jpg] (makeuseof.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-011.jpg"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-14",
+      "name": "Linux Commands Cheat Sheet in Black & White by Bobbin Zachariah [pdf] (linoxide.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/linux-cheat-sheet.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/linux-cheat-sheet.png",
+        "http://linoxide.com/linux-command/linux-commands-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-15",
+      "name": "[Linux|CLI|Ubuntu] Command line cheat sheet by Patrick Kerwood [gif] (linuxbloggen.dk)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/305883.jpg",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/clicommandsfull.jpg",
+        "https://www.cheat-sheets.org/saved-copy/linux-cheat-sheet-wallpapers_30985_1920x1080.jpg",
+        "https://linuxbloggen.dk/command-line-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-16",
+      "name": "Linux Command Line Cheat Sheet by DaveChild [pdf] (cheatography.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/davechild_linux-command-line.pdf",
+      "sameAs": [
+        "https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-17",
+      "name": "Linux Cheatsheet by Muppix [html, pdf] (muppix.co)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Muppix_Linux_commands_1.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Muppix_Linux_commands_2.pdf",
+        "http://muppix.co/linux-cheatsheet.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-18",
+      "name": "Basic Linux Commands by Muppix [html, pdf] (muppix.co)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Muppix.co_Basic_Linux_Commands.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Muppix_Basic_Linux_commands.pdf",
+        "http://muppix.co/basic-linux-commands.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-19",
+      "name": "Linux Essential Terminal Commands by Muppix [html, pdf] (muppix.co)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Muppix_Linux_terminal_navigation.pdf",
+      "sameAs": [
+        "http://muppix.co/essential-terminal-commands.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-20",
+      "name": "Linux Commands Cheat Sheet by Hitesh Jethva [html] (pcwdld.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/pcwdld.com-linux-commands-cheat-sheet-20211028.png",
+      "sameAs": [
+        "https://www.pcwdld.com/linux-commands-cheat-sheet"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#sheet-21",
+      "name": "Linux Shell Commands by Cardiff School of Computer Science & Informatics [html] (docs.cs.cf.ac.uk)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/linux/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://docs.cs.cf.ac.uk/notes/linux-shell-commands/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/",
+      "name": "Nano",
+      "headline": "Nano",
+      "description": "Nano cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Nano",
+        "https://en.wikipedia.org/wiki/GNU_nano",
+        "https://www.nano-editor.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "https://www.nano-editor.org/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#saved-1",
+      "name": "Nano_Cheat_Sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/saved-copy/Nano_Cheat_Sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#wikipedia-1",
+      "name": "Nano (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/GNU_nano"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/GNU_nano",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#sheet-1",
+      "name": "Nano Cheat Sheet by Hans Van Slooten [pdf]",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Nano_Cheat_Sheet.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#sheet-2",
+      "name": "tldr nano [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/nano/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/command/nano/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/",
+      "name": "OpenSSH - OpenBSD Secure Shell",
+      "headline": "OpenSSH - OpenBSD Secure Shell",
+      "description": "OpenSSH - OpenBSD Secure Shell cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#OpenSSH",
+        "https://en.wikipedia.org/wiki/OpenSSH",
+        "http://www.openssh.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.openssh.org/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/#saved-1",
+      "name": "OpenSSH_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/saved-copy/OpenSSH_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/OpenSSH_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/#wikipedia-1",
+      "name": "OpenSSH - OpenBSD Secure Shell (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/OpenSSH"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/OpenSSH",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/#sheet-1",
+      "name": "OpenSSH Configuration Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/open-ssh/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/OpenSSH_quickref.pdf"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/",
+      "name": "rpm - Red Hat Package Manager",
+      "headline": "rpm - Red Hat Package Manager",
+      "description": "rpm - Red Hat Package Manager cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#rpm",
+        "https://en.wikipedia.org/wiki/RPM_Package_Manager",
+        "http://www.rpm.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://www.rpm.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Linux",
+          "identifier": "Linux"
+        },
+        {
+          "@type": "Thing",
+          "name": "Fedora",
+          "identifier": "Fedora"
+        },
+        {
+          "@type": "Thing",
+          "name": "Red Hat",
+          "identifier": "RedHat"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/#wikipedia-1",
+      "name": "rpm - Red Hat Package Manager (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/RPM_Package_Manager"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/RPM_Package_Manager",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/#sheet-1",
+      "name": "rpm command cheat sheet for Linux [html] (cyberciti.biz)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.cyberciti.biz/howto/question/linux/linux-rpm-cheat-sheet.php"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/#sheet-2",
+      "name": "RPM Cheat Sheet [html] (michal.guerquin.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/rpm/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://michal.guerquin.com/rpmcheatsheet.html"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/",
+      "name": "Screen - Screen VT100/ANSI Terminal Emulator",
+      "headline": "Screen - Screen VT100/ANSI Terminal Emulator",
+      "description": "Screen - Screen VT100/ANSI Terminal Emulator cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Screen",
+        "https://en.wikipedia.org/wiki/GNU_Screen",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#saved-1",
+      "name": "screen.cheat.sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/saved-copy/screen.cheat.sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/screen.cheat.sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#saved-2",
+      "name": "screen.cheat.sheet.tex",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/saved-copy/screen.cheat.sheet.tex",
+      "encodingFormat": "application/x-tex",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/screen.cheat.sheet.tex"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#saved-3",
+      "name": "screen.cheat.sheet.txt",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/saved-copy/screen.cheat.sheet.txt",
+      "encodingFormat": "text/plain",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/screen.cheat.sheet.txt"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#wikipedia-1",
+      "name": "Screen - Screen VT100/ANSI Terminal Emulator (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/GNU_Screen"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/GNU_Screen",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#sheet-1",
+      "name": "Screen VT100/ANSI Terminal Emulator Cheat Sheet by Peteris Krumins [pdf, tex, txt] (catonmat.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/screen/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/screen.cheat.sheet.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/screen.cheat.sheet.tex",
+        "https://www.cheat-sheets.org/saved-copy/screen.cheat.sheet.txt",
+        "http://www.catonmat.net/blog/screen-terminal-emulator-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/",
+      "name": "Sed - Stream EDitor",
+      "headline": "Sed - Stream EDitor",
+      "description": "Sed - Stream EDitor cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Sed",
+        "https://en.wikipedia.org/wiki/Sed",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#saved-1",
+      "name": "sed.stream.editor.cheat.sheet.doc",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/saved-copy/sed.stream.editor.cheat.sheet.doc",
+      "encodingFormat": "application/msword",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sed.stream.editor.cheat.sheet.doc"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#saved-2",
+      "name": "sed.stream.editor.cheat.sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/saved-copy/sed.stream.editor.cheat.sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sed.stream.editor.cheat.sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#saved-3",
+      "name": "sed.stream.editor.cheat.sheet.txt",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/saved-copy/sed.stream.editor.cheat.sheet.txt",
+      "encodingFormat": "text/plain",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sed.stream.editor.cheat.sheet.txt"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#wikipedia-1",
+      "name": "Sed - Stream EDitor (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Sed"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Sed",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#sheet-1",
+      "name": "Sed Command Summary (sed cheat sheet) by Peteris Krumins [doc, pdf, txt] (catonmat.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/sed/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/sed.stream.editor.cheat.sheet.doc",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sed.stream.editor.cheat.sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/sed.stream.editor.cheat.sheet.txt",
+        "http://www.catonmat.net/blog/sed-stream-editor-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/",
+      "name": "Shell script",
+      "headline": "Shell script",
+      "description": "Shell script cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#ShellScript",
+        "https://en.wikipedia.org/wiki/Shell_script",
+        "https://en.wikipedia.org/wiki/Bash",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#wikipedia-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-9"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#wikipedia-2"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#saved-1",
+      "name": "shellscripcheatsheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/saved-copy/shellscripcheatsheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/shellscripcheatsheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#saved-2",
+      "name": "shellcheatsheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/saved-copy/shellcheatsheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/shellcheatsheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#saved-3",
+      "name": "bash_ref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/saved-copy/bash_ref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/bash_ref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#saved-4",
+      "name": "OSDC_cheatsheet-metacharacters-2023.02.09.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/saved-copy/OSDC_cheatsheet-metacharacters-2023.02.09.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/OSDC_cheatsheet-metacharacters-2023.02.09.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#saved-5",
+      "name": "OSDC_metacharacters-2023.02.09.txt",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/saved-copy/OSDC_metacharacters-2023.02.09.txt",
+      "encodingFormat": "text/plain",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/OSDC_metacharacters-2023.02.09.txt"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#wikipedia-1",
+      "name": "Shell script (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Shell_script"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Shell_script",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#wikipedia-2",
+      "name": "Shell script (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/wikipedia-2.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Bash"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Bash",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-1",
+      "name": "TLDR Pages [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-2",
+      "name": "Most used commands [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-3",
+      "name": "UNIX / Linux Shell Cheat Sheet by Steve Parker [pdf] (steve-parker.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/shellscripcheatsheet.pdf",
+      "sameAs": [
+        "http://steve-parker.org/sh/cheatsheet.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-4",
+      "name": "SHELL PROGRAMMING QUICK REFERENCE GUIDE by Michael Oliveri [pdf] (mikeoliveri.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/shellcheatsheet.pdf",
+      "sameAs": [
+        "http://www.mikeoliveri.com/utils/shellcheatsheet.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-5",
+      "name": "Bourne Shell Quick Reference Card by Hooman Baradaran [pdf] (hoomanb.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/bash_ref.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-6",
+      "name": "Unix/Linux shell script reference by  Alvin Alexander [html] (alvinalexander.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://alvinalexander.com/blog/post/linux-unix/unix-linux-shell-script-reference-cheat-sheet"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-7",
+      "name": "Advanced Bash-Scripting Guide [pdf] (linuxtopia.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/refcards.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-8",
+      "name": "Awesome Bash Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#sheet-9",
+      "name": "Linux metacharacters cheat sheet by Seth Kenlon, David Both, Don Watkins / CC BY-SA 4.0 [pdf, txt] (opensource.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/shell-script/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/OSDC_cheatsheet-metacharacters-2023.02.09.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/OSDC_metacharacters-2023.02.09.txt",
+        "https://opensource.com/downloads/linux-metacharacters-cheat-sheet"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/",
+      "name": "Unix",
+      "headline": "Unix",
+      "description": "Unix cheat sheets archived from cheat-sheets.org in the GNU / Linux commands group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Unix",
+        "https://en.wikipedia.org/wiki/Unix",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-9"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "chmod",
+          "identifier": "chmod"
+        },
+        {
+          "@type": "Thing",
+          "name": "Debian",
+          "identifier": "Debian"
+        },
+        {
+          "@type": "Thing",
+          "name": "Linux",
+          "identifier": "Linux"
+        },
+        {
+          "@type": "Thing",
+          "name": "Solaris",
+          "identifier": "Solaris"
+        },
+        {
+          "@type": "Thing",
+          "name": "Ubuntu",
+          "identifier": "Ubuntu"
+        },
+        {
+          "@type": "Thing",
+          "name": "Vi",
+          "identifier": "Vi"
+        },
+        {
+          "@type": "Thing",
+          "name": "Vim",
+          "identifier": "Vim"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-1",
+      "name": "unix_command_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/saved-copy/unix_command_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/unix_command_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-2",
+      "name": "UNIX commands reference card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/saved-copy/UNIX%2520commands%2520reference%2520card.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/UNIX%20commands%20reference%20card.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-3",
+      "name": "TB_Unix_Cheat_Sheet_20210701.html",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/saved-copy/TB_Unix_Cheat_Sheet_20210701.html",
+      "encodingFormat": "text/html",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/TB_Unix_Cheat_Sheet_20210701.html"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-4",
+      "name": "bash_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/saved-copy/bash_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/bash_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-5",
+      "name": "setops.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/saved-copy/setops.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/setops.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-6",
+      "name": "setops.txt",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/saved-copy/setops.txt",
+      "encodingFormat": "text/plain",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/setops.txt"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-7",
+      "name": "bash-history-cheat-sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/saved-copy/bash-history-cheat-sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/bash-history-cheat-sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-8",
+      "name": "bash-history-cheat-sheet.tex",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/saved-copy/bash-history-cheat-sheet.tex",
+      "encodingFormat": "application/x-tex",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/bash-history-cheat-sheet.tex"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-9",
+      "name": "bash-history-cheat-sheet.txt",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/saved-copy/bash-history-cheat-sheet.txt",
+      "encodingFormat": "text/plain",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/bash-history-cheat-sheet.txt"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#saved-10",
+      "name": "Unix_Systems_Programming_Cheat_Sheet_20210701.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/saved-copy/Unix_Systems_Programming_Cheat_Sheet_20210701.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Unix_Systems_Programming_Cheat_Sheet_20210701.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#wikipedia-1",
+      "name": "Unix (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Unix"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Unix",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-1",
+      "name": "TLDR Pages [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-2",
+      "name": "Most used commands [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-3",
+      "name": "Commonly used UNIX commands by Indiana Univ [pdf] (tiger.la.asu.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/unix_command_quickref.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-4",
+      "name": "UNIX commands reference card by University Technology Information Services [pdf] (digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/UNIX%20commands%20reference%20card.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-5",
+      "name": "Treebeard's Unix Cheat Sheet [html] by Marc Kummel (rain.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/TB_Unix_Cheat_Sheet_20210701.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-6",
+      "name": "UNIX BASH shell Quick Reference by Arnold Robbins [pdf] (tiger.la.asu.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/bash_quickref.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-7",
+      "name": "Set Operations in the Unix Shell Simplified by Peteris Krumins [html, pdf, txt] (catonmat.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/setops.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/setops.txt",
+        "https://catonmat.net/set-operations-in-unix-shell-simplified"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-8",
+      "name": "The Definitive Guide to Bash Command Line History by Peteris Krumins [html, pdf, tex, txt] (catonmat.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/bash-history-cheat-sheet.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/bash-history-cheat-sheet.tex",
+        "https://www.cheat-sheets.org/saved-copy/bash-history-cheat-sheet.txt",
+        "https://catonmat.net/the-definitive-guide-to-bash-command-line-history"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#sheet-9",
+      "name": "Unix Systems Programming Cheat Sheet by Jacob Strieb [github pdf] (github.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/unix/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Unix_Systems_Programming_Cheat_Sheet_20210701.pdf",
+      "sameAs": [
+        "https://github.com/jstrieb/systems-programming-cheat-sheet/",
+        "https://github.com/jstrieb/systems-programming-cheat-sheet/raw/master/Cheat%20Sheet.pdf"
+      ]
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>GNU / Linux commands</h1>
+    <p class="lede">Unix/Linux command-line tools and shells (cat, less, awk, sed, ls, …), plus Linux/Unix overview sheets the site clusters via See also.</p>
+  </header>
+  <main>
+    <ul>
+      <li><a href="/gnu-linux-commands/apt/">APT - Advanced Packaging Tool</a></li>
+      <li><a href="/gnu-linux-commands/awk/">AWK - Aho, Weinberger and Kernighan programming language</a></li>
+      <li><a href="/gnu-linux-commands/chmod/">chmod</a></li>
+      <li><a href="/gnu-linux-commands/cron/">Cron</a></li>
+      <li><a href="/gnu-linux-commands/curl/">curl (cURL, Curl)</a></li>
+      <li><a href="/gnu-linux-commands/ed/">Ed - UNIX Text Editor</a></li>
+      <li><a href="/gnu-linux-commands/gdb/">GDB - GNU Debugger</a></li>
+      <li><a href="/gnu-linux-commands/less/">less</a></li>
+      <li><a href="/gnu-linux-commands/linux/">Linux</a></li>
+      <li><a href="/gnu-linux-commands/nano/">Nano</a></li>
+      <li><a href="/gnu-linux-commands/open-ssh/">OpenSSH - OpenBSD Secure Shell</a></li>
+      <li><a href="/gnu-linux-commands/rpm/">rpm - Red Hat Package Manager</a></li>
+      <li><a href="/gnu-linux-commands/screen/">Screen - Screen VT100/ANSI Terminal Emulator</a></li>
+      <li><a href="/gnu-linux-commands/sed/">Sed - Stream EDitor</a></li>
+      <li><a href="/gnu-linux-commands/shell-script/">Shell script</a></li>
+      <li><a href="/gnu-linux-commands/unix/">Unix</a></li>
+    </ul>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

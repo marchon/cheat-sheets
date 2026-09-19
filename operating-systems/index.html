@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operating systems</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="Desktop/server OS families and distributions (See also: Linux, Unix).">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/operating-systems/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/operating-systems/">
+  <meta property="og:title" content="Operating systems">
+  <meta property="og:description" content="Desktop/server OS families and distributions (See also: Linux, Unix).">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "DataCatalog",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#catalog",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "285 cheat-sheet topics in 19 groups, archived from cheat-sheets.org with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#website"
+      },
+      "license": "https://www.cheat-sheets.org/",
+      "creator": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/applications/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/online-data-services/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/graphics-and-design/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/security/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/hardware-and-embedded/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/other/#collection"
+        }
+      ],
+      "numberOfItems": 285,
+      "keywords": [
+        "Languages",
+        "Databases",
+        "Applications",
+        "Business processes",
+        "GNU / Linux commands",
+        "File formats",
+        "Online data services",
+        "Web",
+        "Operating systems",
+        "Mathematics and science",
+        "Version control",
+        "Editors and IDEs",
+        "Networking and protocols",
+        "Cloud and DevOps",
+        "Graphics and design",
+        "Frameworks and libraries",
+        "Security",
+        "Hardware and embedded",
+        "Other"
+      ],
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "Collection",
+        "CollectionPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/",
+      "name": "Operating systems",
+      "description": "Desktop/server OS families and distributions (See also: Linux, Unix).",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#catalog"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/red-hat/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-communication-foundation/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#topic"
+        }
+      ],
+      "numberOfItems": 12,
+      "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/",
+      "name": "Debian",
+      "headline": "Debian",
+      "description": "Debian cheat sheets archived from cheat-sheets.org in the Operating systems group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Debian",
+        "https://en.wikipedia.org/wiki/Debian",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#sheet-3"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Linux",
+          "identifier": "Linux"
+        },
+        {
+          "@type": "Thing",
+          "name": "Unix",
+          "identifier": "Unix"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#saved-1",
+      "name": "refcard-en-a4.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/saved-copy/refcard-en-a4.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/refcard-en-a4.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#wikipedia-1",
+      "name": "Debian (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Debian"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Debian",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#sheet-1",
+      "name": "TLDR Pages [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#sheet-2",
+      "name": "Most used commands [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#sheet-3",
+      "name": "refcard [pdf] (people.debian.org/~debacle/)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/debian/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/refcard-en-a4.pdf"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/",
+      "name": "Fedora",
+      "headline": "Fedora",
+      "description": "Fedora cheat sheets archived from cheat-sheets.org in the Operating systems group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Fedora",
+        "https://en.wikipedia.org/wiki/Fedora_(operating_system)",
+        "http://fedoraproject.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#sheet-4"
+        }
+      ],
+      "significantLink": [
+        "http://fedoraproject.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Red Hat",
+          "identifier": "RedHat"
+        },
+        {
+          "@type": "Thing",
+          "name": "Linux",
+          "identifier": "Linux"
+        },
+        {
+          "@type": "Thing",
+          "name": "rpm",
+          "identifier": "rpm"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#saved-1",
+      "name": "yumcheat_01_0.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/saved-copy/yumcheat_01_0.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/yumcheat_01_0.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#saved-2",
+      "name": "yumcheat_02_0.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/saved-copy/yumcheat_02_0.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/yumcheat_02_0.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#saved-3",
+      "name": "rh_yum_cheatsheet_1214_jcs_print-1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/saved-copy/rh_yum_cheatsheet_1214_jcs_print-1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/rh_yum_cheatsheet_1214_jcs_print-1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#wikipedia-1",
+      "name": "Fedora (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Fedora_(operating_system)"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Fedora_(operating_system)",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#sheet-1",
+      "name": "TLDR Pages [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#sheet-2",
+      "name": "Most used commands [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#sheet-3",
+      "name": "RedHat/Fedora command cheat sheet [html] (jd40c.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://jd40c.com/linux.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#sheet-4",
+      "name": "Yum Command Cheat Sheet for Red Hat Enterprise Linux by Red Hat [html, gif, pdf] (redhat.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/fedora/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/yumcheat_01_0.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/yumcheat_02_0.png",
+        "https://www.cheat-sheets.org/saved-copy/rh_yum_cheatsheet_1214_jcs_print-1.pdf",
+        "https://access.redhat.com/articles/yum-cheat-sheet",
+        "https://access.redhat.com/sites/default/files/images/yumcheat_01_0.png",
+        "https://access.redhat.com/sites/default/files/images/yumcheat_02_0.png"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/",
+      "name": "Mac, Macintosh",
+      "headline": "Mac, Macintosh",
+      "description": "Mac, Macintosh cheat sheets archived from cheat-sheets.org in the Operating systems group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Mac",
+        "https://en.wikipedia.org/wiki/Macintosh",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Mac OS X",
+          "identifier": "OSX"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/#saved-1",
+      "name": "OSX_KeyCombo_Reference_Guide.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/saved-copy/OSX_KeyCombo_Reference_Guide.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/OSX_KeyCombo_Reference_Guide.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/#wikipedia-1",
+      "name": "Mac, Macintosh (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Macintosh"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Macintosh",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/#sheet-1",
+      "name": "Mac-friendly Terminal Cheat Sheet [pdf] (alexyoung.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/mac/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/OSX_KeyCombo_Reference_Guide.pdf",
+      "sameAs": [
+        "http://alexyoung.org/2006/09/06/macfriendly-terminal-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/",
+      "name": "Mac OS X",
+      "headline": "Mac OS X",
+      "description": "Mac OS X cheat sheets archived from cheat-sheets.org in the Operating systems group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#OSX",
+        "https://en.wikipedia.org/wiki/OS_X",
+        "http://www.apple.com/macosx/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://www.apple.com/macosx/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Cocoa",
+          "identifier": "Cocoa"
+        },
+        {
+          "@type": "Thing",
+          "name": "Macintosh",
+          "identifier": "Mac"
+        },
+        {
+          "@type": "Thing",
+          "name": "Objective-C",
+          "identifier": "Objective-C"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#saved-1",
+      "name": "OSX_KeyCombo_Reference_Guide.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/saved-copy/OSX_KeyCombo_Reference_Guide.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/OSX_KeyCombo_Reference_Guide.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#saved-2",
+      "name": "2084227-Mac-OS-X-Terminal-Commands-list.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/saved-copy/2084227-Mac-OS-X-Terminal-Commands-list.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/2084227-Mac-OS-X-Terminal-Commands-list.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#wikipedia-1",
+      "name": "Mac OS X (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/OS_X"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/OS_X",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#sheet-1",
+      "name": "The OS X Keyboard Cheat Sheet by Amduus Information Works, Inc. [pdf] (amduus.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/OSX_KeyCombo_Reference_Guide.pdf",
+      "sameAs": [
+        "http://www.extensions.in.th/post/rescue/OSX_KeyCombo_Reference_Guide.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#sheet-2",
+      "name": "Apple Mac OS X Terminal Commands list [pdf] (scribd.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/osx/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/2084227-Mac-OS-X-Terminal-Commands-list.pdf",
+      "sameAs": [
+        "http://www.scribd.com/doc/2084227/Mac-OS-X-Terminal-Commands-list"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/",
+      "name": "OpenVZ - Open operating system-level virtualization",
+      "headline": "OpenVZ - Open operating system-level virtualization",
+      "description": "OpenVZ - Open operating system-level virtualization cheat sheets archived from cheat-sheets.org in the Operating systems group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#OpenVZ",
+        "https://en.wikipedia.org/wiki/OpenVZ",
+        "http://openvz.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://openvz.org/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/#saved-1",
+      "name": "openvz-cheatsheet-v1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/saved-copy/openvz-cheatsheet-v1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/openvz-cheatsheet-v1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/#wikipedia-1",
+      "name": "OpenVZ - Open operating system-level virtualization (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/OpenVZ"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/OpenVZ",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/#sheet-1",
+      "name": "OpenVZ Cheatsheet by Jesse Keys [pdf] (teh.geekosphere.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/open-vz/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/openvz-cheatsheet-v1.pdf"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/red-hat/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/red-hat/",
+      "name": "Red Hat",
+      "headline": "Red Hat",
+      "description": "Red Hat cheat sheets archived from cheat-sheets.org in the Operating systems group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#RedHat",
+        "https://en.wikipedia.org/wiki/RedHat",
+        "http://www.redhat.com/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/red-hat/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/red-hat/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.redhat.com/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Fedora",
+          "identifier": "Fedora"
+        },
+        {
+          "@type": "Thing",
+          "name": "Linux",
+          "identifier": "Linux"
+        },
+        {
+          "@type": "Thing",
+          "name": "rpm",
+          "identifier": "rpm"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/red-hat/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/red-hat/#wikipedia-1",
+      "name": "Red Hat (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/red-hat/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/RedHat"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/RedHat",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/red-hat/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/red-hat/#sheet-1",
+      "name": "RedHat/Fedora command cheat sheet [html] (jd40c.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/red-hat/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://jd40c.com/linux.html"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/",
+      "name": "Solaris",
+      "headline": "Solaris",
+      "description": "Solaris cheat sheets archived from cheat-sheets.org in the Operating systems group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Solaris",
+        "https://en.wikipedia.org/wiki/Solaris_%28operating_system%29",
+        "http://sun.com/solaris/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://sun.com/solaris/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Unix",
+          "identifier": "Unix"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/#saved-1",
+      "name": "Solaris_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/saved-copy/Solaris_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Solaris_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/#wikipedia-1",
+      "name": "Solaris (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Solaris_%28operating_system%29"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Solaris_%28operating_system%29",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/#sheet-1",
+      "name": "Sun Solaris Administrator's Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/solaris/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Solaris_quickref.pdf"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/",
+      "name": "Ubuntu",
+      "headline": "Ubuntu",
+      "description": "Ubuntu cheat sheets archived from cheat-sheets.org in the Operating systems group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Ubuntu",
+        "https://en.wikipedia.org/wiki/Ubuntu_%28Linux_distribution%29",
+        "https://ubuntu.com/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#sheet-4"
+        }
+      ],
+      "significantLink": [
+        "https://ubuntu.com/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Linux",
+          "identifier": "Linux"
+        },
+        {
+          "@type": "Thing",
+          "name": "Unix",
+          "identifier": "Unix"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#saved-1",
+      "name": "ubunturef.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/saved-copy/ubunturef.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/ubunturef.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#wikipedia-1",
+      "name": "Ubuntu (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Ubuntu_%28Linux_distribution%29"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Ubuntu_%28Linux_distribution%29",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#sheet-1",
+      "name": "TLDR Pages [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#sheet-2",
+      "name": "Most used commands [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://cheat-sheets.org/project/tldr/command/special-most-used-linux-commands/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#sheet-3",
+      "name": "Ubuntu Cheat Sheet by Jacob Peddicord [html] (fosswire.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/ubunturef.pdf",
+      "sameAs": [
+        "http://fosswire.com/post/2008/04/ubuntu-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#sheet-4",
+      "name": "Awesome Ubuntu Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/ubuntu/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/ubuntu.sh"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/",
+      "name": "Windows",
+      "headline": "Windows",
+      "description": "Windows cheat sheets archived from cheat-sheets.org in the Operating systems group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Windows",
+        "https://en.wikipedia.org/wiki/Windows",
+        "http://www.microsoft.com/Windows/default.mspx",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#sheet-3"
+        }
+      ],
+      "significantLink": [
+        "http://www.microsoft.com/Windows/default.mspx"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#saved-1",
+      "name": "ResKit_Quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/saved-copy/ResKit_Quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/ResKit_Quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#saved-2",
+      "name": "Windows_folders_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/saved-copy/Windows_folders_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Windows_folders_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#wikipedia-1",
+      "name": "Windows (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Windows"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Windows",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#sheet-1",
+      "name": "An A-Z Index of the Windows NT/XP command line [html] (ss64.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.ss64.com/nt/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#sheet-2",
+      "name": "Windows Resources Kits Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/ResKit_Quickref.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#sheet-3",
+      "name": "Windows Important Directories and Files Quick Reference by Jialong He [pdf] (tiger.la.asu.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Windows_folders_quickref.pdf"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-communication-foundation/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-communication-foundation/",
+      "name": "Windows Communication Foundation (WCF)",
+      "headline": "Windows Communication Foundation (WCF)",
+      "description": "Windows Communication Foundation (WCF) cheat sheets archived from cheat-sheets.org in the Operating systems group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#WindowsCommunicationFoundation",
+        "https://en.wikipedia.org/wiki/Windows_Communication_Foundation",
+        "http://msdn.microsoft.com/en-us/netframework/aa663324.aspx",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-communication-foundation/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-communication-foundation/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://msdn.microsoft.com/en-us/netframework/aa663324.aspx"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Windows",
+          "identifier": "Windows"
+        },
+        {
+          "@type": "Thing",
+          "name": ".NET",
+          "identifier": "DotNET"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-communication-foundation/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-communication-foundation/#wikipedia-1",
+      "name": "Windows Communication Foundation (WCF) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-communication-foundation/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Windows_Communication_Foundation"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Windows_Communication_Foundation",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-communication-foundation/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-communication-foundation/#sheet-1",
+      "name": "Getting Started with Windows Communication Foundation 4.0 by Scott Seely [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-communication-foundation/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-windows-0"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/",
+      "name": "Windows Presentation Foundation (WPF)",
+      "headline": "Windows Presentation Foundation (WPF)",
+      "description": "Windows Presentation Foundation (WPF) cheat sheets archived from cheat-sheets.org in the Operating systems group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#WindowsPresentationFoundation",
+        "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation",
+        "http://msdn.microsoft.com/en-us/library/ms754130.aspx",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#sheet-5"
+        }
+      ],
+      "significantLink": [
+        "http://msdn.microsoft.com/en-us/library/ms754130.aspx"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Windows",
+          "identifier": "Windows"
+        },
+        {
+          "@type": "Thing",
+          "name": ".NET",
+          "identifier": "DotNET"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#saved-1",
+      "name": "WpfBinding.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/saved-copy/WpfBinding.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/WpfBinding.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#saved-2",
+      "name": "wpfcheatsheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/saved-copy/wpfcheatsheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/wpfcheatsheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#wikipedia-1",
+      "name": "Windows Presentation Foundation (WPF) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#sheet-1",
+      "name": "WPF Binding CheatSheet version 1.1 by NBD Tech [pdf] (nbdtech.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/WpfBinding.pdf",
+      "sameAs": [
+        "http://www.nbdtech.com/Blog/archive/2009/02/02/wpf-xaml-data-binding-cheat-sheet.aspx"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#sheet-2",
+      "name": "XAML for WPF Cheat Sheet by Blueboxes.co.uk [pdf] (blueboxes.co.uk)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/wpfcheatsheet.pdf",
+      "sameAs": [
+        "http://blog.blueboxes.co.uk/2009/02/03/xaml-for-wpf-cheatsheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#sheet-3",
+      "name": "Getting Started with Windows Presentation Foundation by Christopher Bennage and Rob Eisenberg [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-windows"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#sheet-4",
+      "name": "WPF Controls - A Visual Quick Start by Josh Fischer [html] (codeproject.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.codeproject.com/KB/WPF/WPFControlsQS.aspx"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#sheet-5",
+      "name": "WPF Wonders: An Alphabetical Compendium of WPF Controls by Rod Stephens [html] (devx.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-presentation-foundation/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.devx.com/dotnet/Article/41560/1954?pf=true"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/",
+      "name": "Windows PowerShell",
+      "headline": "Windows PowerShell",
+      "description": "Windows PowerShell cheat sheets archived from cheat-sheets.org in the Operating systems group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#WindowsPowerShell",
+        "https://en.wikipedia.org/wiki/Windows_PowerShell",
+        "http://www.microsoft.com/powershell",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://www.microsoft.com/powershell"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Windows",
+          "identifier": "Windows"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#saved-1",
+      "name": "windows_powershell2_cheat_sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/saved-copy/windows_powershell2_cheat_sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/windows_powershell2_cheat_sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#wikipedia-1",
+      "name": "Windows PowerShell (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Windows_PowerShell"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Windows_PowerShell",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#sheet-1",
+      "name": "Windows PowerShell 2 | Cheat Sheet by Markus Widl [pdf] (de - galileocomputing.de)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/windows_powershell2_cheat_sheet.pdf",
+      "sameAs": [
+        "http://www.galileocomputing.de/download/startseiten/windows_powershell2_cheat_sheet.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#sheet-2",
+      "name": "WindowsPowerShell by Bruce Payette [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/windows-power-shell/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/windows-powershell"
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>Operating systems</h1>
+    <p class="lede">Desktop/server OS families and distributions (See also: Linux, Unix).</p>
+  </header>
+  <main>
+    <ul>
+      <li><a href="/operating-systems/debian/">Debian</a></li>
+      <li><a href="/operating-systems/fedora/">Fedora</a></li>
+      <li><a href="/operating-systems/mac/">Mac, Macintosh</a></li>
+      <li><a href="/operating-systems/osx/">Mac OS X</a></li>
+      <li><a href="/operating-systems/open-vz/">OpenVZ - Open operating system-level virtualization</a></li>
+      <li><a href="/operating-systems/red-hat/">Red Hat</a></li>
+      <li><a href="/operating-systems/solaris/">Solaris</a></li>
+      <li><a href="/operating-systems/ubuntu/">Ubuntu</a></li>
+      <li><a href="/operating-systems/windows/">Windows</a></li>
+      <li><a href="/operating-systems/windows-communication-foundation/">Windows Communication Foundation (WCF)</a></li>
+      <li><a href="/operating-systems/windows-presentation-foundation/">Windows Presentation Foundation (WPF)</a></li>
+      <li><a href="/operating-systems/windows-power-shell/">Windows PowerShell</a></li>
+    </ul>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

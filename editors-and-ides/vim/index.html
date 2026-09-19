@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vim - Vi IMproved , Vi</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="Vim - Vi IMproved , Vi cheat sheets from cheat-sheets.org.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/">
+  <meta property="og:title" content="Vim - Vi IMproved , Vi">
+  <meta property="og:description" content="Vim - Vi IMproved , Vi cheat sheets from cheat-sheets.org.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/",
+      "name": "Vim - Vi IMproved , Vi",
+      "headline": "Vim - Vi IMproved , Vi",
+      "description": "Vim - Vi IMproved , Vi cheat sheets archived from cheat-sheets.org in the Editors and IDEs group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Vim",
+        "https://en.wikipedia.org/wiki/Vim_%28text_editor%29",
+        "https://en.wikipedia.org/wiki/Vi",
+        "http://www.vim.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-11"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-12"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-13"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-14"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-15"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-16"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-17"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-18"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-19"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-20"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-21"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-22"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-23"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-24"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-25"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#wikipedia-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-11"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-12"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-13"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-14"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-15"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-16"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-17"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-18"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-19"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-20"
+        }
+      ],
+      "significantLink": [
+        "http://www.vim.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Vi",
+          "identifier": "Vi"
+        },
+        {
+          "@type": "Thing",
+          "name": "LaTeX-Suite",
+          "identifier": "LaTeX-Suite"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#wikipedia-2"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-1",
+      "name": "vim-cheat-sheet.20210602.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vim-cheat-sheet.20210602.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vim-cheat-sheet.20210602.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-2",
+      "name": "vim-cheat-sheet.20210602.html",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vim-cheat-sheet.20210602.html",
+      "encodingFormat": "text/html",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vim-cheat-sheet.20210602.html"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-3",
+      "name": "Vim_Commands_Cheat_Sheet.20210602.html",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/Vim_Commands_Cheat_Sheet.20210602.html",
+      "encodingFormat": "text/html",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Vim_Commands_Cheat_Sheet.20210602.html"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-4",
+      "name": "vimqrc.html",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vimqrc.html",
+      "encodingFormat": "text/html",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vimqrc.html"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-5",
+      "name": "vimqrc.dvi",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vimqrc.dvi",
+      "encodingFormat": "application/x-dvi",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vimqrc.dvi"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-6",
+      "name": "vimqrc.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vimqrc.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vimqrc.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-7",
+      "name": "vimqrc.tex",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vimqrc.tex",
+      "encodingFormat": "application/x-tex",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vimqrc.tex"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-8",
+      "name": "vi-vim-tutorial-gif.zip",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi-vim-tutorial-gif.zip",
+      "encodingFormat": "application/zip",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-gif.zip"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-9",
+      "name": "vi-vim-tutorial-svg.zip",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi-vim-tutorial-svg.zip",
+      "encodingFormat": "application/zip",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-svg.zip"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-10",
+      "name": "vim-cheatsheet.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vim-cheatsheet.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vim-cheatsheet.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-11",
+      "name": "vimqrc1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vimqrc1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vimqrc1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-12",
+      "name": "vimqrc1.tex",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vimqrc1.tex",
+      "encodingFormat": "application/x-tex",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vimqrc1.tex"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-13",
+      "name": "vi-vim-cheat-sheet.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi-vim-cheat-sheet.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vi-vim-cheat-sheet.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-14",
+      "name": "Vi_Cheat_Sheet.html",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/Vi_Cheat_Sheet.html",
+      "encodingFormat": "text/html",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Vi_Cheat_Sheet.html"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-15",
+      "name": "Vi_Cheat_Sheet_Advanced.html",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/Vi_Cheat_Sheet_Advanced.html",
+      "encodingFormat": "text/html",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Vi_Cheat_Sheet_Advanced.html"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-16",
+      "name": "Vi Reference Card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/Vi%2520Reference%2520Card.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Vi%20Reference%20Card.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-17",
+      "name": "vi_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vi_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-18",
+      "name": "vi Reference Card (HP).pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi%2520Reference%2520Card%2520%28HP%29.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vi%20Reference%20Card%20(HP).pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-19",
+      "name": "vi Quick Reference.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi%2520Quick%2520Reference.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vi%20Quick%20Reference.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-20",
+      "name": "bash-vi-editing-mode-cheat-sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/bash-vi-editing-mode-cheat-sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/bash-vi-editing-mode-cheat-sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-21",
+      "name": "bash-vi-editing-mode-cheat-sheet.tex",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/bash-vi-editing-mode-cheat-sheet.tex",
+      "encodingFormat": "application/x-tex",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/bash-vi-editing-mode-cheat-sheet.tex"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-22",
+      "name": "bash-vi-editing-mode-cheat-sheet.txt",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/bash-vi-editing-mode-cheat-sheet.txt",
+      "encodingFormat": "text/plain",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/bash-vi-editing-mode-cheat-sheet.txt"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-23",
+      "name": "vi-vim-cheat-sheet.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi-vim-cheat-sheet.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vi-vim-cheat-sheet.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-24",
+      "name": "vi-vim-tutorial-gif.zip",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi-vim-tutorial-gif.zip",
+      "encodingFormat": "application/zip",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-gif.zip"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#saved-25",
+      "name": "vi-vim-tutorial-svg.zip",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/saved-copy/vi-vim-tutorial-svg.zip",
+      "encodingFormat": "application/zip",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-svg.zip"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#wikipedia-1",
+      "name": "Vim - Vi IMproved , Vi (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Vim_%28text_editor%29"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Vim_%28text_editor%29",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#wikipedia-2",
+      "name": "Vim - Vi IMproved , Vi (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/wikipedia-2.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Vi"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Vi",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-1",
+      "name": "The Beginner's Vim Cheat Sheet: Vim Cheat Sheet Infographic & Vim Commands Cheat Sheet, Copy-Pasteable by August R. Garcia [pdf] (256kilobytes.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/vim-cheat-sheet.20210602.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vim-cheat-sheet.20210602.html",
+        "https://www.256kilobytes.com/content/show/10487/infographic-the-beginners-vim-cheat-sheet"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-2",
+      "name": "Vim Commands Cheat Sheet [html] (bullium.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Vim_Commands_Cheat_Sheet.20210602.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-3",
+      "name": "VIM Quick Reference Card by Laurent Grégoire [html, dvi, pdf, tex] (tnerual.eriogerg.free.fr)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/vimqrc.html",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vimqrc.dvi",
+        "https://www.cheat-sheets.org/saved-copy/vimqrc.pdf",
+        "http://tnerual.eriogerg.free.fr/vim.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-4",
+      "name": "Graphical vi-vim Cheat Sheet and Tutorial [gif.zip, svg.zip] (viemu.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-gif.zip",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-svg.zip",
+        "http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-5",
+      "name": "Vim Cheatsheet by Andrea Benazzo [png] (qitty.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/vim-cheatsheet.png",
+      "sameAs": [
+        "http://www.qitty.net/lnx/vim-cheatsheet.png"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-6",
+      "name": "Vim Reference Card by Michael Goerz [pdf, TeX] (users.physik.fu-berlin.de/~goerz/)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/vimqrc1.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vimqrc1.tex",
+        "http://users.physik.fu-berlin.de/~goerz/refcards/vimqrc.pdf",
+        "http://users.physik.fu-berlin.de/~goerz/refcards/vimqrc.tex"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-7",
+      "name": "Graphical vi-vim Cheat Sheet and Tutorial [gif] (viemu.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/vi-vim-cheat-sheet.gif",
+      "sameAs": [
+        "http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html",
+        "http://www.viemu.com/vi-vim-cheat-sheet.gif"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-8",
+      "name": "The Vi Editor by Cardiff School of Computer Science & Informatics [html] (docs.cs.cf.ac.uk)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://docs.cs.cf.ac.uk/notes/the-vi-editor/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-9",
+      "name": "Basic VI Cheatsheet [html] (lagmonster.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Vi_Cheat_Sheet.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-10",
+      "name": "Advanced VI Cheatsheet [html] (lagmonster.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Vi_Cheat_Sheet_Advanced.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-11",
+      "name": "Don's other stuff by Donald J. Bindner [pdf]",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Vi%20Reference%20Card.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-12",
+      "name": "UNIX Vi Editor Quick Reference by Ying Zhang [pdf] (tiger.la.asu.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/vi_quickref.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-13",
+      "name": "vi Reference Card by HP [pdf] (digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/vi%20Reference%20Card%20(HP).pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-14",
+      "name": "vi Quick Reference [pdf] (digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/vi%20Quick%20Reference.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-15",
+      "name": "Working Productively in Bash’s Vi Command Line Editing Mode (with Cheat Sheet) by Peteris Krumins [html, pdf, tex, txt] (catonmat.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/bash-vi-editing-mode-cheat-sheet.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/bash-vi-editing-mode-cheat-sheet.tex",
+        "https://www.cheat-sheets.org/saved-copy/bash-vi-editing-mode-cheat-sheet.txt",
+        "http://www.catonmat.net/blog/bash-vi-editing-mode-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-16",
+      "name": "Graphical vi-vim Cheat Sheet and Tutorial [gif] (viemu.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/vi-vim-cheat-sheet.gif",
+      "sameAs": [
+        "http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html",
+        "http://www.viemu.com/vi-vim-cheat-sheet.gif"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-17",
+      "name": "Graphical vi-vim Cheat Sheet and Tutorial [gif.zip, svg.zip] (viemu.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-gif.zip",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-svg.zip",
+        "http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-18",
+      "name": "Vi/Ex Quick Reference by Cardiff School of Computer Science & Informatics [html] (docs.cs.cf.ac.uk)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://docs.cs.cf.ac.uk/notes/vi-and-ex-quick-reference/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-19",
+      "name": "vim TLDR page [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://cheat-sheets.org/project/tldr/command/vim/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#sheet-20",
+      "name": "Awesome VIM Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/vim/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/vim.txt"
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>Vim - Vi IMproved , Vi</h1>
+    <p class="lede">Vim - Vi IMproved , Vi cheat sheets from cheat-sheets.org.</p>
+  </header>
+  <main>
+    <p><a href="https://www.cheat-sheets.org/#Vim">Original listing on cheat-sheets.org</a></p>
+    <h2>Official websites</h2>
+    <ul>
+      <li><a href="http://www.vim.org/">http://www.vim.org/</a></li>
+    </ul>
+    <h2>Wikipedia</h2>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Vim_%28text_editor%29">https://en.wikipedia.org/wiki/Vim_%28text_editor%29</a> · <a href="wikipedia.md">local clone</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Vi">https://en.wikipedia.org/wiki/Vi</a></li>
+    </ul>
+    <h2>Saved copies</h2>
+    <ul>
+      <li><a href="saved-copy/vim-cheat-sheet.20210602.png">vim-cheat-sheet.20210602.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/vim-cheat-sheet.20210602.png">source</a></li>
+      <li><a href="saved-copy/vim-cheat-sheet.20210602.html">vim-cheat-sheet.20210602.html</a> · <a href="https://www.cheat-sheets.org/saved-copy/vim-cheat-sheet.20210602.html">source</a></li>
+      <li><a href="saved-copy/Vim_Commands_Cheat_Sheet.20210602.html">Vim_Commands_Cheat_Sheet.20210602.html</a> · <a href="https://www.cheat-sheets.org/saved-copy/Vim_Commands_Cheat_Sheet.20210602.html">source</a></li>
+      <li><a href="saved-copy/vimqrc.html">vimqrc.html</a> · <a href="https://www.cheat-sheets.org/saved-copy/vimqrc.html">source</a></li>
+      <li><a href="saved-copy/vimqrc.dvi">vimqrc.dvi</a> · <a href="https://www.cheat-sheets.org/saved-copy/vimqrc.dvi">source</a></li>
+      <li><a href="saved-copy/vimqrc.pdf">vimqrc.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/vimqrc.pdf">source</a></li>
+      <li><a href="saved-copy/vimqrc.tex">vimqrc.tex</a> · <a href="https://www.cheat-sheets.org/saved-copy/vimqrc.tex">source</a></li>
+      <li><a href="saved-copy/vi-vim-tutorial-gif.zip">vi-vim-tutorial-gif.zip</a> · <a href="https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-gif.zip">source</a></li>
+      <li><a href="saved-copy/vi-vim-tutorial-svg.zip">vi-vim-tutorial-svg.zip</a> · <a href="https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-svg.zip">source</a></li>
+      <li><a href="saved-copy/vim-cheatsheet.png">vim-cheatsheet.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/vim-cheatsheet.png">source</a></li>
+      <li><a href="saved-copy/vimqrc1.pdf">vimqrc1.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/vimqrc1.pdf">source</a></li>
+      <li><a href="saved-copy/vimqrc1.tex">vimqrc1.tex</a> · <a href="https://www.cheat-sheets.org/saved-copy/vimqrc1.tex">source</a></li>
+      <li><a href="saved-copy/vi-vim-cheat-sheet.gif">vi-vim-cheat-sheet.gif</a> · <a href="https://www.cheat-sheets.org/saved-copy/vi-vim-cheat-sheet.gif">source</a></li>
+      <li><a href="saved-copy/Vi_Cheat_Sheet.html">Vi_Cheat_Sheet.html</a> · <a href="https://www.cheat-sheets.org/saved-copy/Vi_Cheat_Sheet.html">source</a></li>
+      <li><a href="saved-copy/Vi_Cheat_Sheet_Advanced.html">Vi_Cheat_Sheet_Advanced.html</a> · <a href="https://www.cheat-sheets.org/saved-copy/Vi_Cheat_Sheet_Advanced.html">source</a></li>
+      <li><a href="saved-copy/Vi Reference Card.pdf">Vi Reference Card.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Vi%20Reference%20Card.pdf">source</a></li>
+      <li><a href="saved-copy/vi_quickref.pdf">vi_quickref.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/vi_quickref.pdf">source</a></li>
+      <li><a href="saved-copy/vi Reference Card (HP).pdf">vi Reference Card (HP).pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/vi%20Reference%20Card%20(HP).pdf">source</a></li>
+      <li><a href="saved-copy/vi Quick Reference.pdf">vi Quick Reference.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/vi%20Quick%20Reference.pdf">source</a></li>
+      <li><a href="saved-copy/bash-vi-editing-mode-cheat-sheet.pdf">bash-vi-editing-mode-cheat-sheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/bash-vi-editing-mode-cheat-sheet.pdf">source</a></li>
+      <li><a href="saved-copy/bash-vi-editing-mode-cheat-sheet.tex">bash-vi-editing-mode-cheat-sheet.tex</a> · <a href="https://www.cheat-sheets.org/saved-copy/bash-vi-editing-mode-cheat-sheet.tex">source</a></li>
+      <li><a href="saved-copy/bash-vi-editing-mode-cheat-sheet.txt">bash-vi-editing-mode-cheat-sheet.txt</a> · <a href="https://www.cheat-sheets.org/saved-copy/bash-vi-editing-mode-cheat-sheet.txt">source</a></li>
+      <li><a href="saved-copy/vi-vim-cheat-sheet.gif">vi-vim-cheat-sheet.gif</a> · <a href="https://www.cheat-sheets.org/saved-copy/vi-vim-cheat-sheet.gif">source</a></li>
+      <li><a href="saved-copy/vi-vim-tutorial-gif.zip">vi-vim-tutorial-gif.zip</a> · <a href="https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-gif.zip">source</a></li>
+      <li><a href="saved-copy/vi-vim-tutorial-svg.zip">vi-vim-tutorial-svg.zip</a> · <a href="https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-svg.zip">source</a></li>
+    </ul>
+    <h2>Cheat sheets</h2>
+    <ul>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/vim-cheat-sheet.20210602.png">The Beginner's Vim Cheat Sheet: Vim Cheat Sheet Infographic &amp; Vim Commands Cheat Sheet, Copy-Pasteable by August R. Garcia [pdf] (256kilobytes.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/Vim_Commands_Cheat_Sheet.20210602.html">Vim Commands Cheat Sheet [html] (bullium.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/vimqrc.html">VIM Quick Reference Card by Laurent Grégoire [html, dvi, pdf, tex] (tnerual.eriogerg.free.fr)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-gif.zip">Graphical vi-vim Cheat Sheet and Tutorial [gif.zip, svg.zip] (viemu.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/vim-cheatsheet.png">Vim Cheatsheet by Andrea Benazzo [png] (qitty.net)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/vimqrc1.pdf">Vim Reference Card by Michael Goerz [pdf, TeX] (users.physik.fu-berlin.de/~goerz/)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/vi-vim-cheat-sheet.gif">Graphical vi-vim Cheat Sheet and Tutorial [gif] (viemu.com)</a></li>
+      <li><a href="https://docs.cs.cf.ac.uk/notes/the-vi-editor/">The Vi Editor by Cardiff School of Computer Science &amp; Informatics [html] (docs.cs.cf.ac.uk)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/Vi_Cheat_Sheet.html">Basic VI Cheatsheet [html] (lagmonster.org)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/Vi_Cheat_Sheet_Advanced.html">Advanced VI Cheatsheet [html] (lagmonster.org)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/Vi%20Reference%20Card.pdf">Don's other stuff by Donald J. Bindner [pdf]</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/vi_quickref.pdf">UNIX Vi Editor Quick Reference by Ying Zhang [pdf] (tiger.la.asu.edu)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/vi%20Reference%20Card%20(HP).pdf">vi Reference Card by HP [pdf] (digilife.be)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/vi%20Quick%20Reference.pdf">vi Quick Reference [pdf] (digilife.be)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/bash-vi-editing-mode-cheat-sheet.pdf">Working Productively in Bash’s Vi Command Line Editing Mode (with Cheat Sheet) by Peteris Krumins [html, pdf, tex, txt] (catonmat.net)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/vi-vim-cheat-sheet.gif">Graphical vi-vim Cheat Sheet and Tutorial [gif] (viemu.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/vi-vim-tutorial-gif.zip">Graphical vi-vim Cheat Sheet and Tutorial [gif.zip, svg.zip] (viemu.com)</a></li>
+      <li><a href="https://docs.cs.cf.ac.uk/notes/vi-and-ex-quick-reference/">Vi/Ex Quick Reference by Cardiff School of Computer Science &amp; Informatics [html] (docs.cs.cf.ac.uk)</a></li>
+      <li><a href="http://cheat-sheets.org/project/tldr/command/vim/">vim TLDR page [html] (cheat-sheets.org)</a></li>
+      <li><a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/vim.txt">Awesome VIM Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)</a></li>
+    </ul>
+    <h2>See also</h2>
+    <ul>
+      <li>Vi</li>
+      <li><a href="/editors-and-ides/la-te-x-suite/">LaTeX-Suite</a></li>
+    </ul>
+    <p class="meta">Group: <a href="/editors-and-ides/">Editors and IDEs</a></p>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

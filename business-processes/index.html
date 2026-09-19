@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business processes</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="BPM/BPMN, BPEL, BI, modeling, and related process notations.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/business-processes/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/business-processes/">
+  <meta property="og:title" content="Business processes">
+  <meta property="og:description" content="BPM/BPMN, BPEL, BI, modeling, and related process notations.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "DataCatalog",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#catalog",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "285 cheat-sheet topics in 19 groups, archived from cheat-sheets.org with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#website"
+      },
+      "license": "https://www.cheat-sheets.org/",
+      "creator": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/applications/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/online-data-services/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/graphics-and-design/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/security/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/hardware-and-embedded/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/other/#collection"
+        }
+      ],
+      "numberOfItems": 285,
+      "keywords": [
+        "Languages",
+        "Databases",
+        "Applications",
+        "Business processes",
+        "GNU / Linux commands",
+        "File formats",
+        "Online data services",
+        "Web",
+        "Operating systems",
+        "Mathematics and science",
+        "Version control",
+        "Editors and IDEs",
+        "Networking and protocols",
+        "Cloud and DevOps",
+        "Graphics and design",
+        "Frameworks and libraries",
+        "Security",
+        "Hardware and embedded",
+        "Other"
+      ],
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "Collection",
+        "CollectionPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/",
+      "name": "Business processes",
+      "description": "BPM/BPMN, BPEL, BI, modeling, and related process notations.",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#catalog"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/birt/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/bpel/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/domain-driven-design/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/mvvm/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#topic"
+        }
+      ],
+      "numberOfItems": 8,
+      "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/birt/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/birt/",
+      "name": "BIRT - Business Intelligence and Reporting Tools Project (BIRT Project)",
+      "headline": "BIRT - Business Intelligence and Reporting Tools Project (BIRT Project)",
+      "description": "BIRT - Business Intelligence and Reporting Tools Project (BIRT Project) cheat sheets archived from cheat-sheets.org in the Business processes group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#BIRT",
+        "https://en.wikipedia.org/wiki/BIRT_Project",
+        "http://www.eclipse.org/birt/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/birt/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/birt/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.eclipse.org/birt/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Eclipse",
+          "identifier": "Eclipse"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/birt/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/birt/#wikipedia-1",
+      "name": "BIRT - Business Intelligence and Reporting Tools Project (BIRT Project) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/birt/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/BIRT_Project"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/BIRT_Project",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/birt/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/birt/#sheet-1",
+      "name": "Getting Started with BIRT by Virgil Dodson [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/birt/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/birt"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/bpel/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/bpel/",
+      "name": "BPEL - Web Services Business Process Execution Language (WS-BPEL)",
+      "headline": "BPEL - Web Services Business Process Execution Language (WS-BPEL)",
+      "description": "BPEL - Web Services Business Process Execution Language (WS-BPEL) cheat sheets archived from cheat-sheets.org in the Business processes group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#BPEL",
+        "https://en.wikipedia.org/wiki/Business_Process_Execution_Language",
+        "http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wsbpel",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/bpel/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/bpel/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wsbpel"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/bpel/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/bpel/#wikipedia-1",
+      "name": "BPEL - Web Services Business Process Execution Language (WS-BPEL) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/bpel/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Business_Process_Execution_Language"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Business_Process_Execution_Language",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/bpel/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/bpel/#sheet-1",
+      "name": "Core WS-BPEL: Business Process Execution Language by Matjaz B. Juric [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/bpel/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/core-ws-bpel-business-process"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/",
+      "name": "Business Process Modeling (BPM) and Business Process Modelling Notation (BPMN)",
+      "headline": "Business Process Modeling (BPM) and Business Process Modelling Notation (BPMN)",
+      "description": "Business Process Modeling (BPM) and Business Process Modelling Notation (BPMN) cheat sheets archived from cheat-sheets.org in the Business processes group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#BusinessProcessModeling",
+        "https://en.wikipedia.org/wiki/Business_process_modeling",
+        "https://en.wikipedia.org/wiki/Business_Process_Modeling_Notation",
+        "http://www.bpmn.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#wikipedia-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.bpmn.org/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#wikipedia-2"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#wikipedia-1",
+      "name": "Business Process Modeling (BPM) and Business Process Modelling Notation (BPMN) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Business_process_modeling"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Business_process_modeling",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#topic"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#wikipedia-2",
+      "name": "Business Process Modeling (BPM) and Business Process Modelling Notation (BPMN) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/wikipedia-2.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Business_Process_Modeling_Notation"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Business_Process_Modeling_Notation",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#sheet-1",
+      "name": "Effective Process Modeling with BPM & BPMN by Matjaz Juric and Ana Sasa [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/business-process-modeling/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/bpm-bpmn"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/",
+      "name": "Design Pattern",
+      "headline": "Design Pattern",
+      "description": "Design Pattern cheat sheets archived from cheat-sheets.org in the Business processes group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#DesignPattern",
+        "https://en.wikipedia.org/wiki/Design_pattern",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#sheet-3"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache Camel",
+          "identifier": "ApacheCamel"
+        },
+        {
+          "@type": "Thing",
+          "name": "Computer Science",
+          "identifier": "ComputerScience"
+        },
+        {
+          "@type": "Thing",
+          "name": "Tapestry",
+          "identifier": "Tapestry"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#saved-1",
+      "name": "designpatternscard1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/saved-copy/designpatternscard1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/designpatternscard1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#wikipedia-1",
+      "name": "Design Pattern (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Design_pattern"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Design_pattern",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#sheet-1",
+      "name": "Design Pattern Quick Reference by Jason S. McDonald [pdf] (mcdonaldland.info)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/designpatternscard1.pdf",
+      "sameAs": [
+        "http://www.mcdonaldland.info/2007/11/28/40/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#sheet-2",
+      "name": "Design Patterns by Jason McDonald [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/design-patterns"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#sheet-3",
+      "name": "Enterprise Integration Patterns W ^ with Apache Camel by Claus Ibsen [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/design-pattern/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/enterprise-integration",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Enterprise_Integration_Patterns"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/domain-driven-design/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/domain-driven-design/",
+      "name": "Domain-driven design (DDD)",
+      "headline": "Domain-driven design (DDD)",
+      "description": "Domain-driven design (DDD) cheat sheets archived from cheat-sheets.org in the Business processes group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#DomainDrivenDesign",
+        "https://en.wikipedia.org/wiki/Domain-driven_design",
+        "http://www.dddcommunity.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/domain-driven-design/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/domain-driven-design/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.dddcommunity.org/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/domain-driven-design/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/domain-driven-design/#wikipedia-1",
+      "name": "Domain-driven design (DDD) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/domain-driven-design/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Domain-driven_design"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Domain-driven_design",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/domain-driven-design/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/domain-driven-design/#sheet-1",
+      "name": "Getting Started with Domain-Driven Design by Aslam Khan [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/domain-driven-design/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-domain-driven"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/",
+      "name": "EJB - Enterprise JavaBean",
+      "headline": "EJB - Enterprise JavaBean",
+      "description": "EJB - Enterprise JavaBean cheat sheets archived from cheat-sheets.org in the Business processes group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#EJB",
+        "https://en.wikipedia.org/wiki/Enterprise_JavaBean",
+        "http://java.sun.com/products/ejb/index.jsp",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#sheet-3"
+        }
+      ],
+      "significantLink": [
+        "http://java.sun.com/products/ejb/index.jsp"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Java",
+          "identifier": "Java"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#saved-1",
+      "name": "EJB 2.0 Matrix.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/saved-copy/EJB%25202.0%2520Matrix.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/EJB%202.0%20Matrix.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#saved-2",
+      "name": "Exception Handling in EJB 2.0.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/saved-copy/Exception%2520Handling%2520in%2520EJB%25202.0.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Exception%20Handling%20in%20EJB%202.0.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#wikipedia-1",
+      "name": "EJB - Enterprise JavaBean (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Enterprise_JavaBean"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Enterprise_JavaBean",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#sheet-1",
+      "name": "EJB 2.0 Matrix by Eileen Sauer [pdf] (digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/EJB%202.0%20Matrix.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#sheet-2",
+      "name": "Exception Handling in EJB 2.0 by Eileen Sauer [pdf] (digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Exception%20Handling%20in%20EJB%202.0.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#sheet-3",
+      "name": "Dependency Injection in EJB 3 by Debu Panda [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/ejb/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/dependency-injection-in-ejb3"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/mvvm/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/mvvm/",
+      "name": "MVVM (Model View ViewModel)",
+      "headline": "MVVM (Model View ViewModel)",
+      "description": "MVVM (Model View ViewModel) cheat sheets archived from cheat-sheets.org in the Business processes group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#MVVM",
+        "https://en.wikipedia.org/wiki/Model_View_ViewModel",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/mvvm/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/mvvm/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/mvvm/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/mvvm/#wikipedia-1",
+      "name": "MVVM (Model View ViewModel) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/mvvm/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Model_View_ViewModel"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Model_View_ViewModel",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/mvvm/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/mvvm/#sheet-1",
+      "name": "The MVVM Design Pattern: A Formula for Elegant, Maintainable Mobile Apps by Colin Melia [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/mvvm/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/mvvm-design-pattern-formula"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/",
+      "name": "UML - Unified Modeling Language",
+      "headline": "UML - Unified Modeling Language",
+      "description": "UML - Unified Modeling Language cheat sheets archived from cheat-sheets.org in the Business processes group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#UML",
+        "https://en.wikipedia.org/wiki/Unified_Modeling_Language",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#sheet-3"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#saved-1",
+      "name": "UML Reference Card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/saved-copy/UML%2520Reference%2520Card.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/UML%20Reference%20Card.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#saved-2",
+      "name": "umlqrc.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/saved-copy/umlqrc.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/umlqrc.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#wikipedia-1",
+      "name": "UML - Unified Modeling Language (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Unified_Modeling_Language"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Unified_Modeling_Language",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#sheet-1",
+      "name": "Allen Holub's UML Quick Reference [html] (holub.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/UML%20Reference%20Card.pdf",
+      "sameAs": [
+        "http://www.holub.com/goodies/uml/index.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#sheet-2",
+      "name": "UML Quick Reference Card by Laurent Grégoire [pdf] (tnerual.eriogerg.free.fr)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/umlqrc.pdf",
+      "sameAs": [
+        "http://tnerual.eriogerg.free.fr/uml.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#sheet-3",
+      "name": "Getting Started with UML by James Sugrue [pdf zip] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/uml/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-uml"
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>Business processes</h1>
+    <p class="lede">BPM/BPMN, BPEL, BI, modeling, and related process notations.</p>
+  </header>
+  <main>
+    <ul>
+      <li><a href="/business-processes/birt/">BIRT - Business Intelligence and Reporting Tools Project (BIRT Project)</a></li>
+      <li><a href="/business-processes/bpel/">BPEL - Web Services Business Process Execution Language (WS-BPEL)</a></li>
+      <li><a href="/business-processes/business-process-modeling/">Business Process Modeling (BPM) and Business Process Modelling Notation (BPMN)</a></li>
+      <li><a href="/business-processes/design-pattern/">Design Pattern</a></li>
+      <li><a href="/business-processes/domain-driven-design/">Domain-driven design (DDD)</a></li>
+      <li><a href="/business-processes/ejb/">EJB - Enterprise JavaBean</a></li>
+      <li><a href="/business-processes/mvvm/">MVVM (Model View ViewModel)</a></li>
+      <li><a href="/business-processes/uml/">UML - Unified Modeling Language</a></li>
+    </ul>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

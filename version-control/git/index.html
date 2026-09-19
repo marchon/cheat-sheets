@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="Git cheat sheets from cheat-sheets.org.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/version-control/git/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/version-control/git/">
+  <meta property="og:title" content="Git">
+  <meta property="og:description" content="Git cheat sheets from cheat-sheets.org.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/",
+      "name": "Git",
+      "headline": "Git",
+      "description": "Git cheat sheets archived from cheat-sheets.org in the Version control group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Git",
+        "https://en.wikipedia.org/wiki/Git_(software)",
+        "http://git-scm.com/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-11"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-12"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-13"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-14"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-15"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-16"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-17"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-18"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-19"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-20"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-21"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-11"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-12"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-13"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-14"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-15"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-16"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-17"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-18"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-19"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-20"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-21"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-22"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-23"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-24"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-25"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-26"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-27"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-28"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-29"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-30"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-31"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-32"
+        }
+      ],
+      "significantLink": [
+        "http://git-scm.com/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Bazaar",
+          "identifier": "Bazaar"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVS",
+          "identifier": "CVS"
+        },
+        {
+          "@type": "Thing",
+          "name": "SVN",
+          "identifier": "SVN"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-1",
+      "name": "git-cheat-sheet-education.20211117.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/git-cheat-sheet-education.20211117.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-education.20211117.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-2",
+      "name": "git-cheat-sheet-large.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/git-cheat-sheet-large.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-large.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-3",
+      "name": "git-cheat-sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/git-cheat-sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-4",
+      "name": "git-cheat-sheet.svg",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/git-cheat-sheet.svg",
+      "encodingFormat": "image/svg+xml",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet.svg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-5",
+      "name": "git-cheat-sheet-v2-front.svg",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/git-cheat-sheet-v2-front.svg",
+      "encodingFormat": "image/svg+xml",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-front.svg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-6",
+      "name": "git-cheat-sheet-v2-back.svg",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/git-cheat-sheet-v2-back.svg",
+      "encodingFormat": "image/svg+xml",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-back.svg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-7",
+      "name": "git-cheat-sheet-v2.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/git-cheat-sheet-v2.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-8",
+      "name": "git-cheat-sheet-v2.zip",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/git-cheat-sheet-v2.zip",
+      "encodingFormat": "application/zip",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2.zip"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-9",
+      "name": "Git_Quick_Reference.2011-09-04.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/Git_Quick_Reference.2011-09-04.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Git_Quick_Reference.2011-09-04.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-10",
+      "name": "Git_Cheat_Sheet_grey.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/Git_Cheat_Sheet_grey.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Git_Cheat_Sheet_grey.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-11",
+      "name": "Top_20_Git_Commands_With_Examples.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/Top_20_Git_Commands_With_Examples.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Top_20_Git_Commands_With_Examples.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-12",
+      "name": "github-git-cheat-sheet-20220806.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/github-git-cheat-sheet-20220806.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/github-git-cheat-sheet-20220806.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-13",
+      "name": "Git_for_Subversion_Users.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/Git_for_Subversion_Users.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Git_for_Subversion_Users.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-14",
+      "name": "12_git_cheat_sheet.20210604.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/12_git_cheat_sheet.20210604.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/12_git_cheat_sheet.20210604.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-15",
+      "name": "Basic_Git_commands_20211117.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/Basic_Git_commands_20211117.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Basic_Git_commands_20211117.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-16",
+      "name": "GIT_Bash_Commands.20211117.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/GIT_Bash_Commands.20211117.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-17",
+      "name": "GIT_Bash_Commands.20211117.md",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/GIT_Bash_Commands.20211117.md",
+      "encodingFormat": "text/markdown",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.md"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-18",
+      "name": "git.memory.knots.html",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/git.memory.knots.html",
+      "encodingFormat": "text/html",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/git.memory.knots.html"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-19",
+      "name": "SWTM-2088_Atlassian-Git-Cheatsheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-20",
+      "name": "gitlab-git-cheat-sheet-20220806.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/gitlab-git-cheat-sheet-20220806.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/gitlab-git-cheat-sheet-20220806.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#saved-21",
+      "name": "progit.20211117.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/saved-copy/progit.20211117.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/progit.20211117.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#wikipedia-1",
+      "name": "Git (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/version-control/git/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Git_(software)"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Git_(software)",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-1",
+      "name": "Git cheat sheet (the most important and commonly used Git commands for easy reference) [pdf] (education.github.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-education.20211117.pdf",
+      "sameAs": [
+        "https://education.github.com/git-cheat-sheet-education.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-2",
+      "name": "GitCheatSheet by Zack Rusin [html, png, pdf, svg] (git.or.cz)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-large.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet.svg",
+        "http://git.or.cz/gitwiki/GitCheatSheet"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-3",
+      "name": "Git cheat sheet, extended edition prepared by Jan Krueger [svg front, svg back, pdf, pdf.zip] (git.or.cz)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-front.svg",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-back.svg",
+        "https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2.pdf",
+        "http://jan-krueger.net/development/git-cheat-sheet-extended-edition"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-4",
+      "name": "Git Quick Reference by Juan Pablo Justiniano [pdf] (jpjustiniano.wordpress.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Git_Quick_Reference.2011-09-04.pdf",
+      "sameAs": [
+        "http://jpjustiniano.wordpress.com/2011/05/22/git-quick-reference/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-5",
+      "name": "Git cheat sheet [pdf] (git-tower.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Git_Cheat_Sheet_grey.pdf",
+      "sameAs": [
+        "http://www.git-tower.com/files/cheatsheet/Git_Cheat_Sheet_grey.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-6",
+      "name": "Getting Started with Git by Matthew McCullough [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-git"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-7",
+      "name": "Top 20 Git Commands With Examples by  Sahiti Kappagantula [html] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Top_20_Git_Commands_With_Examples.png",
+      "sameAs": [
+        "https://dzone.com/articles/top-20-git-commands-with-examples"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-8",
+      "name": "Git Cheat Sheet - GitHub Training [pdf] (training.github.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/github-git-cheat-sheet-20220806.pdf",
+      "sameAs": [
+        "https://training.github.com/downloads/github-git-cheat-sheet.pdf",
+        "https://training.github.com/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-9",
+      "name": "Git for Subversion Users - A Cheat Sheet by Tobias Günther [pdf] (git-tower.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Git_for_Subversion_Users.pdf",
+      "sameAs": [
+        "https://www.git-tower.com/blog/git-for-subversion-users-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-10",
+      "name": "The Simple Git Cheat Sheet – A Helpful Illustrated Guide [pdf] (finxter.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/12_git_cheat_sheet.20210604.pdf",
+      "sameAs": [
+        "https://blog.finxter.com/wp-content/uploads/2019/05/12_git_cheat_sheet.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-11",
+      "name": "Basic Git commands  [html] (atlassian.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Basic_Git_commands_20211117.png",
+      "sameAs": [
+        "https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-12",
+      "name": "Git for the lazy [html] (spheredev.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://wiki.spheredev.org/index.php/Git_for_the_lazy"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-13",
+      "name": "Git from the inside out by Mary Rose Cook [html] (codewords.recurse.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://codewords.recurse.com/issues/two/git-from-the-inside-out"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-14",
+      "name": "Common Git Commands by Brian Kerr [html] (guides.beanstalkapp.com/)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://guides.beanstalkapp.com/version-control/common-git-commands.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-15",
+      "name": "13 Git Commands Every Developer Must Know by Vikash Koushik [html] (rovitpm.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://rovitpm.com/13-git-commands/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-16",
+      "name": "GIT Bash Commands by Adam Lusted /etoxin/ [html, md] (github.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.md",
+        "https://gist.github.com/etoxin/1acb257550b1de60fe99"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-17",
+      "name": "git memory knots (git commands extremely short cheat sheet) by Alexander Krassotkin [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/git.memory.knots.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-18",
+      "name": "Git Cheat Sheet [pdf] (atlassian.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf",
+      "sameAs": [
+        "https://wac-cdn.atlassian.com/dam/jcr:e7e22f25-bba2-4ef1-a197-53f46b6df4a5/SWTM-2088_Atlassian-Git-Cheatsheet.pdf",
+        "https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-19",
+      "name": "Git Cheat Sheet by GitLab [pdf] (gitlab.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/gitlab-git-cheat-sheet-20220806.pdf",
+      "sameAs": [
+        "https://about.gitlab.com/images/press/git-cheat-sheet.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-20",
+      "name": "Yet Another Git Cheatsheet by Dumb Down Demistifying Dev (henryong92) [html] (dev.to)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dev.to/henryong92/yet-another-git-cheatsheet-4gjk"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-21",
+      "name": "Start a new git repository by Karl Broman [html] (kbroman.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://kbroman.org/github_tutorial/pages/init.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-22",
+      "name": "Oh Shit, Git!?! by Katie Sylor-Miller (ksylor) [html] (ohshitgit.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://ohshitgit.com/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-23",
+      "name": "Git: Cheat Sheet (advanced) by Maxence Poutord (maxpou) [html] (dev.to)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dev.to/maxpou/git-cheat-sheet-advanced-3a17"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-24",
+      "name": "Git Cheat Sheet: Commands and Best Practices by Simon Maple [html] (jrebel.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.jrebel.com/blog/git-cheat-sheet"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-25",
+      "name": "tldr git [html] (cheat-sheets.org) See also: git init , git clone , git add , git status , git commit , git remote , git push , git pull , etc.",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://cheat-sheets.org/project/tldr/command/git/",
+      "sameAs": [
+        "http://cheat-sheets.org/project/tldr/command/git-init/",
+        "http://cheat-sheets.org/project/tldr/command/git-clone/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-26",
+      "name": "Awesome Git Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/git.sh"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-27",
+      "name": "Git /The official Git site/  [html] (git-scm.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://git-scm.com/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-28",
+      "name": "Pro Git book, written by Scott Chacon and Ben Straub [pdf] (git-scm.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/progit.20211117.pdf",
+      "sameAs": [
+        "https://git-scm.com/book/en/v2"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-29",
+      "name": "Official Git tutorial [html] (kernel.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-30",
+      "name": "Everyday GIT With 20 Commands Or So [html] (kernel.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.kernel.org/pub/software/scm/git/docs/giteveryday.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-31",
+      "name": "Git User’s Manual (for version 1.5.3 or newer) [html] (kernel.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.kernel.org/pub/software/scm/git/docs/user-manual.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#sheet-32",
+      "name": "Start using Git on the command line [html] (gitlab.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/version-control/git/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html"
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>Git</h1>
+    <p class="lede">Git cheat sheets from cheat-sheets.org.</p>
+  </header>
+  <main>
+    <p><a href="https://www.cheat-sheets.org/#Git">Original listing on cheat-sheets.org</a></p>
+    <h2>Official websites</h2>
+    <ul>
+      <li><a href="http://git-scm.com/">git-scm.com</a></li>
+    </ul>
+    <h2>Wikipedia</h2>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Git_(software)">https://en.wikipedia.org/wiki/Git_(software)</a> · <a href="wikipedia.md">local clone</a></li>
+    </ul>
+    <h2>Saved copies</h2>
+    <ul>
+      <li><a href="saved-copy/git-cheat-sheet-education.20211117.pdf">git-cheat-sheet-education.20211117.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-education.20211117.pdf">source</a></li>
+      <li><a href="saved-copy/git-cheat-sheet-large.png">git-cheat-sheet-large.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-large.png">source</a></li>
+      <li><a href="saved-copy/git-cheat-sheet.pdf">git-cheat-sheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf">source</a></li>
+      <li><a href="saved-copy/git-cheat-sheet.svg">git-cheat-sheet.svg</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet.svg">source</a></li>
+      <li><a href="saved-copy/git-cheat-sheet-v2-front.svg">git-cheat-sheet-v2-front.svg</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-front.svg">source</a></li>
+      <li><a href="saved-copy/git-cheat-sheet-v2-back.svg">git-cheat-sheet-v2-back.svg</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-back.svg">source</a></li>
+      <li><a href="saved-copy/git-cheat-sheet-v2.pdf">git-cheat-sheet-v2.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2.pdf">source</a></li>
+      <li><a href="saved-copy/git-cheat-sheet-v2.zip">git-cheat-sheet-v2.zip</a> · <a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2.zip">source</a></li>
+      <li><a href="saved-copy/Git_Quick_Reference.2011-09-04.pdf">Git_Quick_Reference.2011-09-04.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Git_Quick_Reference.2011-09-04.pdf">source</a></li>
+      <li><a href="saved-copy/Git_Cheat_Sheet_grey.pdf">Git_Cheat_Sheet_grey.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Git_Cheat_Sheet_grey.pdf">source</a></li>
+      <li><a href="saved-copy/Top_20_Git_Commands_With_Examples.png">Top_20_Git_Commands_With_Examples.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/Top_20_Git_Commands_With_Examples.png">source</a></li>
+      <li><a href="saved-copy/github-git-cheat-sheet-20220806.pdf">github-git-cheat-sheet-20220806.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/github-git-cheat-sheet-20220806.pdf">source</a></li>
+      <li><a href="saved-copy/Git_for_Subversion_Users.pdf">Git_for_Subversion_Users.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Git_for_Subversion_Users.pdf">source</a></li>
+      <li><a href="saved-copy/12_git_cheat_sheet.20210604.pdf">12_git_cheat_sheet.20210604.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/12_git_cheat_sheet.20210604.pdf">source</a></li>
+      <li><a href="saved-copy/Basic_Git_commands_20211117.png">Basic_Git_commands_20211117.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/Basic_Git_commands_20211117.png">source</a></li>
+      <li><a href="saved-copy/GIT_Bash_Commands.20211117.png">GIT_Bash_Commands.20211117.png</a> · <a href="https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.png">source</a></li>
+      <li><a href="saved-copy/GIT_Bash_Commands.20211117.md">GIT_Bash_Commands.20211117.md</a> · <a href="https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.md">source</a></li>
+      <li><a href="saved-copy/git.memory.knots.html">git.memory.knots.html</a> · <a href="https://www.cheat-sheets.org/saved-copy/git.memory.knots.html">source</a></li>
+      <li><a href="saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf">SWTM-2088_Atlassian-Git-Cheatsheet.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf">source</a></li>
+      <li><a href="saved-copy/gitlab-git-cheat-sheet-20220806.pdf">gitlab-git-cheat-sheet-20220806.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/gitlab-git-cheat-sheet-20220806.pdf">source</a></li>
+      <li><a href="saved-copy/progit.20211117.pdf">progit.20211117.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/progit.20211117.pdf">source</a></li>
+    </ul>
+    <h2>Cheat sheets</h2>
+    <ul>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-education.20211117.pdf">Git cheat sheet (the most important and commonly used Git commands for easy reference) [pdf] (education.github.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-large.png">GitCheatSheet by Zack Rusin [html, png, pdf, svg] (git.or.cz)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/git-cheat-sheet-v2-front.svg">Git cheat sheet, extended edition prepared by Jan Krueger [svg front, svg back, pdf, pdf.zip] (git.or.cz)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/Git_Quick_Reference.2011-09-04.pdf">Git Quick Reference by Juan Pablo Justiniano [pdf] (jpjustiniano.wordpress.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/Git_Cheat_Sheet_grey.pdf">Git cheat sheet [pdf] (git-tower.com)</a></li>
+      <li><a href="https://dzone.com/refcardz/getting-started-git">Getting Started with Git by Matthew McCullough [pdf] (dzone.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/Top_20_Git_Commands_With_Examples.png">Top 20 Git Commands With Examples by  Sahiti Kappagantula [html] (dzone.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/github-git-cheat-sheet-20220806.pdf">Git Cheat Sheet - GitHub Training [pdf] (training.github.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/Git_for_Subversion_Users.pdf">Git for Subversion Users - A Cheat Sheet by Tobias Günther [pdf] (git-tower.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/12_git_cheat_sheet.20210604.pdf">The Simple Git Cheat Sheet – A Helpful Illustrated Guide [pdf] (finxter.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/Basic_Git_commands_20211117.png">Basic Git commands  [html] (atlassian.com)</a></li>
+      <li><a href="https://wiki.spheredev.org/index.php/Git_for_the_lazy">Git for the lazy [html] (spheredev.org)</a></li>
+      <li><a href="https://codewords.recurse.com/issues/two/git-from-the-inside-out">Git from the inside out by Mary Rose Cook [html] (codewords.recurse.com)</a></li>
+      <li><a href="http://guides.beanstalkapp.com/version-control/common-git-commands.html">Common Git Commands by Brian Kerr [html] (guides.beanstalkapp.com/)</a></li>
+      <li><a href="https://rovitpm.com/13-git-commands/">13 Git Commands Every Developer Must Know by Vikash Koushik [html] (rovitpm.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/GIT_Bash_Commands.20211117.png">GIT Bash Commands by Adam Lusted /etoxin/ [html, md] (github.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/git.memory.knots.html">git memory knots (git commands extremely short cheat sheet) by Alexander Krassotkin [html] (cheat-sheets.org)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf">Git Cheat Sheet [pdf] (atlassian.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/gitlab-git-cheat-sheet-20220806.pdf">Git Cheat Sheet by GitLab [pdf] (gitlab.com)</a></li>
+      <li><a href="https://dev.to/henryong92/yet-another-git-cheatsheet-4gjk">Yet Another Git Cheatsheet by Dumb Down Demistifying Dev (henryong92) [html] (dev.to)</a></li>
+      <li><a href="https://kbroman.org/github_tutorial/pages/init.html">Start a new git repository by Karl Broman [html] (kbroman.org)</a></li>
+      <li><a href="https://ohshitgit.com/">Oh Shit, Git!?! by Katie Sylor-Miller (ksylor) [html] (ohshitgit.com)</a></li>
+      <li><a href="https://dev.to/maxpou/git-cheat-sheet-advanced-3a17">Git: Cheat Sheet (advanced) by Maxence Poutord (maxpou) [html] (dev.to)</a></li>
+      <li><a href="https://www.jrebel.com/blog/git-cheat-sheet">Git Cheat Sheet: Commands and Best Practices by Simon Maple [html] (jrebel.com)</a></li>
+      <li><a href="http://cheat-sheets.org/project/tldr/command/git/">tldr git [html] (cheat-sheets.org) See also: git init , git clone , git add , git status , git commit , git remote , git push , git pull , etc.</a></li>
+      <li><a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/git.sh">Awesome Git Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)</a></li>
+      <li><a href="https://git-scm.com/">Git /The official Git site/  [html] (git-scm.com)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/progit.20211117.pdf">Pro Git book, written by Scott Chacon and Ben Straub [pdf] (git-scm.com)</a></li>
+      <li><a href="http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html">Official Git tutorial [html] (kernel.org)</a></li>
+      <li><a href="https://www.kernel.org/pub/software/scm/git/docs/giteveryday.html">Everyday GIT With 20 Commands Or So [html] (kernel.org)</a></li>
+      <li><a href="http://www.kernel.org/pub/software/scm/git/docs/user-manual.html">Git User’s Manual (for version 1.5.3 or newer) [html] (kernel.org)</a></li>
+      <li><a href="https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html">Start using Git on the command line [html] (gitlab.com)</a></li>
+    </ul>
+    <h2>See also</h2>
+    <ul>
+      <li><a href="/version-control/bazaar/">Bazaar</a></li>
+      <li><a href="/version-control/cvs/">CVS</a></li>
+      <li><a href="/version-control/svn/">SVN</a></li>
+    </ul>
+    <p class="meta">Group: <a href="/version-control/">Version control</a></p>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

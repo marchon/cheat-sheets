@@ -1,0 +1,2158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud and DevOps</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="Servers, containers, orchestration, CI, and infrastructure tools.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/cloud-and-devops/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/cloud-and-devops/">
+  <meta property="og:title" content="Cloud and DevOps">
+  <meta property="og:description" content="Servers, containers, orchestration, CI, and infrastructure tools.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "DataCatalog",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#catalog",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "285 cheat-sheet topics in 19 groups, archived from cheat-sheets.org with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#website"
+      },
+      "license": "https://www.cheat-sheets.org/",
+      "creator": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/applications/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/online-data-services/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/graphics-and-design/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/security/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/hardware-and-embedded/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/other/#collection"
+        }
+      ],
+      "numberOfItems": 285,
+      "keywords": [
+        "Languages",
+        "Databases",
+        "Applications",
+        "Business processes",
+        "GNU / Linux commands",
+        "File formats",
+        "Online data services",
+        "Web",
+        "Operating systems",
+        "Mathematics and science",
+        "Version control",
+        "Editors and IDEs",
+        "Networking and protocols",
+        "Cloud and DevOps",
+        "Graphics and design",
+        "Frameworks and libraries",
+        "Security",
+        "Hardware and embedded",
+        "Other"
+      ],
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "Collection",
+        "CollectionPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/",
+      "name": "Cloud and DevOps",
+      "description": "Servers, containers, orchestration, CI, and infrastructure tools.",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#catalog"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/nginx/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#topic"
+        }
+      ],
+      "numberOfItems": 19,
+      "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/",
+      "name": "Apache",
+      "headline": "Apache",
+      "description": "Apache cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Apache",
+        "https://en.wikipedia.org/wiki/Apache_HTTP_Server",
+        "http://httpd.apache.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://httpd.apache.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "htaccess",
+          "identifier": "htaccess"
+        },
+        {
+          "@type": "Thing",
+          "name": "mod_perl",
+          "identifier": "mod_perl"
+        },
+        {
+          "@type": "Thing",
+          "name": "mod_rewrite",
+          "identifier": "mod_rewrite"
+        },
+        {
+          "@type": "Thing",
+          "name": "Apache Ant",
+          "identifier": "ApacheAnt"
+        },
+        {
+          "@type": "Thing",
+          "name": "Apache Camel",
+          "identifier": "ApacheCamel"
+        },
+        {
+          "@type": "Thing",
+          "name": "Apache Hadoop",
+          "identifier": "Hadoop"
+        },
+        {
+          "@type": "Thing",
+          "name": "Apache HBase",
+          "identifier": "HBase"
+        },
+        {
+          "@type": "Thing",
+          "name": "Apache Maven",
+          "identifier": "Maven"
+        },
+        {
+          "@type": "Thing",
+          "name": "Apache ServiceMix",
+          "identifier": "ServiceMix"
+        },
+        {
+          "@type": "Thing",
+          "name": "Apache Solr",
+          "identifier": "ApacheSolr"
+        },
+        {
+          "@type": "Thing",
+          "name": "Apache Wicket",
+          "identifier": "Wicket"
+        },
+        {
+          "@type": "Thing",
+          "name": "Lucene",
+          "identifier": "Lucene"
+        },
+        {
+          "@type": "Thing",
+          "name": "SSI",
+          "identifier": "SSI"
+        },
+        {
+          "@type": "Thing",
+          "name": "Tapestry",
+          "identifier": "Tapestry"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#saved-1",
+      "name": "apache-refcard-a4.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/saved-copy/apache-refcard-a4.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/apache-refcard-a4.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#wikipedia-1",
+      "name": "Apache (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Apache_HTTP_Server"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_HTTP_Server",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#sheet-1",
+      "name": "Apache Cheat Sheet [html] (petefreitag.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.petefreitag.com/cheatsheets/apache/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#sheet-2",
+      "name": "Apache 1.3 Quick Reference Card by Andrew Ford [png, pdf] (refcards.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/apache-refcard-a4.pdf"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/",
+      "name": "Apache Ant",
+      "headline": "Apache Ant",
+      "description": "Apache Ant cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#ApacheAnt",
+        "https://en.wikipedia.org/wiki/Apache_Ant",
+        "http://ant.apache.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://ant.apache.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/#wikipedia-1",
+      "name": "Apache Ant (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Apache_Ant"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_Ant",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/#sheet-1",
+      "name": "Getting Started with Apache Ant by James Sugrue [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-ant/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-apache-ant?oid=hom24765"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/",
+      "name": "Apache Camel",
+      "headline": "Apache Camel",
+      "description": "Apache Camel cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#ApacheCamel",
+        "https://en.wikipedia.org/wiki/Apache_Camel",
+        "http://camel.apache.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://camel.apache.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        },
+        {
+          "@type": "Thing",
+          "name": "Design Pattern",
+          "identifier": "DesignPattern"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/#wikipedia-1",
+      "name": "Apache Camel (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Apache_Camel"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_Camel",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/#sheet-1",
+      "name": "Enterprise Integration Patterns W ^ with Apache Camel by Claus Ibsen [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-camel/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/enterprise-integration",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Enterprise_Integration_Patterns"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/",
+      "name": "Apache Solr",
+      "headline": "Apache Solr",
+      "description": "Apache Solr cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#ApacheSolr",
+        "https://en.wikipedia.org/wiki/Apache_Solr",
+        "http://lucene.apache.org/solr/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://lucene.apache.org/solr/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        },
+        {
+          "@type": "Thing",
+          "name": "Lucene",
+          "identifier": "Lucene"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/#wikipedia-1",
+      "name": "Apache Solr (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Apache_Solr"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_Solr",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/#sheet-1",
+      "name": "Apache Solr: Getting Optimal Search Results by Chris Hostetter [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/apache-solr/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/solr-essentials"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/",
+      "name": "Chef",
+      "headline": "Chef",
+      "description": "Chef cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Chef",
+        "https://en.wikipedia.org/wiki/Chef_(software)",
+        "http://www.opscode.com/chef/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.opscode.com/chef/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/#wikipedia-1",
+      "name": "Chef (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Chef_(software)"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Chef_(software)",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/#sheet-1",
+      "name": "Chef: An Open Source Tool for Scalable Cloud and Data Center Automation by Jeffrey Hulten [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/chef/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/chef-open-source-tool-scalable"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/",
+      "name": "Continuous Integration (CI)",
+      "headline": "Continuous Integration (CI)",
+      "description": "Continuous Integration (CI) cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#ContinuousIntegration",
+        "https://en.wikipedia.org/wiki/Continuous_integration",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#sheet-2"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#wikipedia-1",
+      "name": "Continuous Integration (CI) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Continuous_integration"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Continuous_integration",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#sheet-1",
+      "name": "Continuous Integration: Patterns and Anti-Patterns by Paul M. Duvall [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/continuous-integration"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#sheet-2",
+      "name": "Continuous Integration: Servers and Tools by Paul M. Duvall [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/continuous-integration/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/continuous-integration-servers"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/",
+      "name": "Docker",
+      "headline": "Docker",
+      "description": "Docker cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Docker",
+        "https://www.docker.com/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#sheet-3"
+        }
+      ],
+      "significantLink": [
+        "https://www.docker.com/"
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#saved-1",
+      "name": "docker_cheatsheet_20230106.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/saved-copy/docker_cheatsheet_20230106.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/docker_cheatsheet_20230106.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#sheet-1",
+      "name": "Docker CLI Cheat Sheet by Docker [pdf] (docker.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/docker_cheatsheet_20230106.pdf",
+      "sameAs": [
+        "https://docs.docker.com/get-started/docker_cheatsheet.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#sheet-2",
+      "name": "The Ultimate Docker Cheat Sheet by @collabnix [html] (dockerlabs.collabnix.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dockerlabs.collabnix.com/docker/cheatsheet/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#sheet-3",
+      "name": "Awesome Docker Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/docker/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/docker.sh"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/",
+      "name": "JBoss",
+      "headline": "JBoss",
+      "description": "JBoss cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#JBoss",
+        "https://en.wikipedia.org/wiki/JBoss",
+        "http://www.jboss.com/products/platforms/application/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.jboss.com/products/platforms/application/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Java",
+          "identifier": "Java"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/#wikipedia-1",
+      "name": "JBoss (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/JBoss"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/JBoss",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/#sheet-1",
+      "name": "Getting Started with JBoss Enterprise Application Platform 5 by Scott Marlow, Jaikiran Pai, Shelly McGowan, Brian Stansberry, and Len DiMaggio [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jboss/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-jboss"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/",
+      "name": "Jetty",
+      "headline": "Jetty",
+      "description": "Jetty cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Jetty",
+        "https://en.wikipedia.org/wiki/Jetty_(Web_server)",
+        "http://www.eclipse.org/jetty/",
+        "http://jetty.codehaus.org/jetty/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.eclipse.org/jetty/",
+        "http://jetty.codehaus.org/jetty/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/#wikipedia-1",
+      "name": "Jetty (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Jetty_(Web_server)"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Jetty_(Web_server)",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/#sheet-1",
+      "name": "Jetty: A Lightweight, Open-Source Web Server and Servlet Container by Jos Dirksen [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/jetty/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/jetty"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/",
+      "name": "Kubernetes",
+      "headline": "Kubernetes",
+      "description": "Kubernetes cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Kubernetes",
+        "https://en.wikipedia.org/wiki/Kubernetes",
+        "https://kubernetes.io/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "https://kubernetes.io/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#wikipedia-1",
+      "name": "Kubernetes (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Kubernetes"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Kubernetes",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#sheet-1",
+      "name": "kubectl Cheat Sheet [html] (kubernetes.io)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://kubernetes.io/docs/reference/kubectl/cheatsheet/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#sheet-2",
+      "name": "Awesome Kubernetes Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/kubernetes/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/kubernetes.md"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/",
+      "name": "Lucene",
+      "headline": "Lucene",
+      "description": "Lucene cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Lucene",
+        "https://en.wikipedia.org/wiki/Lucene",
+        "https://lucene.apache.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "https://lucene.apache.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        },
+        {
+          "@type": "Thing",
+          "name": "Apache Solr",
+          "identifier": "ApacheSolr"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#wikipedia-1",
+      "name": "Lucene (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Lucene"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Lucene",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#sheet-1",
+      "name": "Understanding Lucene (Powering Better Search Results) by Erik Hatcher [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/lucene"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#sheet-2",
+      "name": "Official Documentation [html] (lucene.apache.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/lucene/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://lucene.apache.org/java/docs/index.html"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/",
+      "name": "Maven (Apache Maven)",
+      "headline": "Maven (Apache Maven)",
+      "description": "Maven (Apache Maven) cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Maven",
+        "https://en.wikipedia.org/wiki/Apache_Maven",
+        "http://maven.apache.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://maven.apache.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        },
+        {
+          "@type": "Thing",
+          "name": "Java",
+          "identifier": "Java"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#wikipedia-1",
+      "name": "Maven (Apache Maven) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Apache_Maven"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_Maven",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#sheet-1",
+      "name": "Apache Maven 2 by Matthew McCullough [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/apache-maven-2"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#sheet-2",
+      "name": "Getting Started with Maven Repository Management by Jason Van Zyl [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/maven/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-repository"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/",
+      "name": "Mule",
+      "headline": "Mule",
+      "description": "Mule cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Mule",
+        "https://en.wikipedia.org/wiki/Mule_(software)",
+        "http://www.mulesoft.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.mulesoft.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "ServiceMix",
+          "identifier": "ServiceMix"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/#wikipedia-1",
+      "name": "Mule (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Mule_(software)"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Mule_(software)",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/#sheet-1",
+      "name": "Core Mule by Jos Dirksen [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/mule/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/core-mule"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/nginx/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/nginx/",
+      "name": "Nginx",
+      "headline": "Nginx",
+      "description": "Nginx cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Nginx",
+        "https://nginx.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/nginx/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "https://nginx.org/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/nginx/#sheet-1",
+      "name": "Awesome Nginx Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/nginx/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/nginx.sh"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/",
+      "name": "Scalability and High Availability",
+      "headline": "Scalability and High Availability",
+      "description": "Scalability and High Availability cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#ScalabilityHighAvailability",
+        "https://en.wikipedia.org/wiki/Scalability",
+        "https://en.wikipedia.org/wiki/High_availability",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#wikipedia-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#sheet-2"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Cloud Computing",
+          "identifier": "CloudComputing"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#wikipedia-2"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#wikipedia-1",
+      "name": "Scalability and High Availability (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Scalability"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Scalability",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#topic"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#wikipedia-2",
+      "name": "Scalability and High Availability (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/wikipedia-2.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/High_availability"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/High_availability",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#sheet-1",
+      "name": "Scalability & High Availability by Eugene Ciurana [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/scalability"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#sheet-2",
+      "name": "Getting Started with NoSQL and Data Scalability by Eugene Ciurana [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/scalability-high-availability/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-nosql-and-data"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/",
+      "name": "ServiceMix (Apache ServiceMix)",
+      "headline": "ServiceMix (Apache ServiceMix)",
+      "description": "ServiceMix (Apache ServiceMix) cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#ServiceMix",
+        "https://en.wikipedia.org/wiki/Apache_ServiceMix",
+        "http://servicemix.apache.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://servicemix.apache.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        },
+        {
+          "@type": "Thing",
+          "name": "Mule",
+          "identifier": "Mule"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/#wikipedia-1",
+      "name": "ServiceMix (Apache ServiceMix) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Apache_ServiceMix"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_ServiceMix",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/#sheet-1",
+      "name": "ServiceMix 4.2: The Apache Open Source ESB by Jos Dirksen [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/service-mix/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/servicemix"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/",
+      "name": "VxCFS, VCS - Veritas Cluster File System",
+      "headline": "VxCFS, VCS - Veritas Cluster File System",
+      "description": "VxCFS, VCS - Veritas Cluster File System cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#VeritasCluster",
+        "https://en.wikipedia.org/wiki/Veritas_Cluster_File_System",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#saved-1",
+      "name": "2675288-Veritas-Cluster-Cheat-Sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/saved-copy/2675288-Veritas-Cluster-Cheat-Sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/2675288-Veritas-Cluster-Cheat-Sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#wikipedia-1",
+      "name": "VxCFS, VCS - Veritas Cluster File System (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Veritas_Cluster_File_System"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Veritas_Cluster_File_System",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#sheet-1",
+      "name": "Veritas Cluster Cheat sheet [pdf] (scribd.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/veritas-cluster/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/2675288-Veritas-Cluster-Cheat-Sheet.pdf",
+      "sameAs": [
+        "http://www.scribd.com/doc/2675288/Veritas-Cluster-Cheat-Sheet"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/",
+      "name": "Virtualization",
+      "headline": "Virtualization",
+      "description": "Virtualization cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Virtualization",
+        "https://en.wikipedia.org/wiki/Virtual_machine",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "VMware",
+          "identifier": "VMware"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/#wikipedia-1",
+      "name": "Virtualization (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Virtual_machine"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Virtual_machine",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/#sheet-1",
+      "name": "Getting Started with Virtualization by Edward L. Haletky [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/virtualization/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-virtualization"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/",
+      "name": "VMware (VI)",
+      "headline": "VMware (VI)",
+      "description": "VMware (VI) cheat sheets archived from cheat-sheets.org in the Cloud and DevOps group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#VMware",
+        "https://en.wikipedia.org/wiki/VMware",
+        "http://www.vmware.com/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.vmware.com/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Virtualization",
+          "identifier": "Virtualization"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#saved-1",
+      "name": "vmreferenceVI3card1.2.1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/saved-copy/vmreferenceVI3card1.2.1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/vmreferenceVI3card1.2.1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#wikipedia-1",
+      "name": "VMware (VI) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/VMware"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/VMware",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#sheet-1",
+      "name": "VI3 card - VMware's Virtual Infrastructure 3 (VI3) ESX environments by Forbes [pdf] (vmreference.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/vmware/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/vmreferenceVI3card1.2.1.pdf",
+      "sameAs": [
+        "http://www.vmreference.com/vi3-card/"
+      ]
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>Cloud and DevOps</h1>
+    <p class="lede">Servers, containers, orchestration, CI, and infrastructure tools.</p>
+  </header>
+  <main>
+    <ul>
+      <li><a href="/cloud-and-devops/apache/">Apache</a></li>
+      <li><a href="/cloud-and-devops/apache-ant/">Apache Ant</a></li>
+      <li><a href="/cloud-and-devops/apache-camel/">Apache Camel</a></li>
+      <li><a href="/cloud-and-devops/apache-solr/">Apache Solr</a></li>
+      <li><a href="/cloud-and-devops/chef/">Chef</a></li>
+      <li><a href="/cloud-and-devops/continuous-integration/">Continuous Integration (CI)</a></li>
+      <li><a href="/cloud-and-devops/docker/">Docker</a></li>
+      <li><a href="/cloud-and-devops/jboss/">JBoss</a></li>
+      <li><a href="/cloud-and-devops/jetty/">Jetty</a></li>
+      <li><a href="/cloud-and-devops/kubernetes/">Kubernetes</a></li>
+      <li><a href="/cloud-and-devops/lucene/">Lucene</a></li>
+      <li><a href="/cloud-and-devops/maven/">Maven (Apache Maven)</a></li>
+      <li><a href="/cloud-and-devops/mule/">Mule</a></li>
+      <li><a href="/cloud-and-devops/nginx/">Nginx</a></li>
+      <li><a href="/cloud-and-devops/scalability-high-availability/">Scalability and High Availability</a></li>
+      <li><a href="/cloud-and-devops/service-mix/">ServiceMix (Apache ServiceMix)</a></li>
+      <li><a href="/cloud-and-devops/veritas-cluster/">VxCFS, VCS - Veritas Cluster File System</a></li>
+      <li><a href="/cloud-and-devops/virtualization/">Virtualization</a></li>
+      <li><a href="/cloud-and-devops/vmware/">VMware (VI)</a></li>
+    </ul>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

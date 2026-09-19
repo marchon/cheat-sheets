@@ -1,0 +1,3156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Databases</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="SQL and NoSQL databases, query languages, and data-access APIs.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/databases/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/databases/">
+  <meta property="og:title" content="Databases">
+  <meta property="og:description" content="SQL and NoSQL databases, query languages, and data-access APIs.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "DataCatalog",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#catalog",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "285 cheat-sheet topics in 19 groups, archived from cheat-sheets.org with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#website"
+      },
+      "license": "https://www.cheat-sheets.org/",
+      "creator": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/languages/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/applications/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/business-processes/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/online-data-services/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/web/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/operating-systems/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/version-control/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/editors-and-ides/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/networking-and-protocols/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/cloud-and-devops/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/graphics-and-design/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/security/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/hardware-and-embedded/#collection"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/other/#collection"
+        }
+      ],
+      "numberOfItems": 285,
+      "keywords": [
+        "Languages",
+        "Databases",
+        "Applications",
+        "Business processes",
+        "GNU / Linux commands",
+        "File formats",
+        "Online data services",
+        "Web",
+        "Operating systems",
+        "Mathematics and science",
+        "Version control",
+        "Editors and IDEs",
+        "Networking and protocols",
+        "Cloud and DevOps",
+        "Graphics and design",
+        "Frameworks and libraries",
+        "Security",
+        "Hardware and embedded",
+        "Other"
+      ],
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "Collection",
+        "CollectionPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/",
+      "name": "Databases",
+      "description": "SQL and NoSQL databases, query languages, and data-access APIs.",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/#catalog"
+      },
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/adonet/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/apache-cassandra/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/berkeley-db/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/db4o/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hbase/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hibernate/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/jdbc/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/redis/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#topic"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sybase/#topic"
+        }
+      ],
+      "numberOfItems": 19,
+      "inLanguage": "en",
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/adonet/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/adonet/",
+      "name": "ADO.NET",
+      "headline": "ADO.NET",
+      "description": "ADO.NET cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#ADONET",
+        "https://en.wikipedia.org/wiki/ADO.NET",
+        "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/adonet/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/adonet/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": ".NET",
+          "identifier": "DotNET"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/adonet/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/adonet/#wikipedia-1",
+      "name": "ADO.NET (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/adonet/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/ADO.NET"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/ADO.NET",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/adonet/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/adonet/#sheet-1",
+      "name": "ADO.NET Entity Framework: Object-Relational Mapping and Data Access by Dane Morgridge [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/adonet/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/adonet-entity-framework-object"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/apache-cassandra/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/apache-cassandra/",
+      "name": "Apache Cassandra",
+      "headline": "Apache Cassandra",
+      "description": "Apache Cassandra cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#ApacheCassandra",
+        "https://en.wikipedia.org/wiki/Apache_Cassandra",
+        "http://cassandra.apache.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/apache-cassandra/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/apache-cassandra/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://cassandra.apache.org/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/apache-cassandra/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/apache-cassandra/#wikipedia-1",
+      "name": "Apache Cassandra (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/apache-cassandra/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Apache_Cassandra"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Apache_Cassandra",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/apache-cassandra/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/apache-cassandra/#sheet-1",
+      "name": "Apache Cassandra: A Fault-Tolerant, Massively Scalable NoSQL Database by Brian O’Neill [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/apache-cassandra/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/apache-cassandra"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/berkeley-db/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/berkeley-db/",
+      "name": "Berkeley DB (BDB, Oracle Berkeley DB)",
+      "headline": "Berkeley DB (BDB, Oracle Berkeley DB)",
+      "description": "Berkeley DB (BDB, Oracle Berkeley DB) cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#BerkeleyDB",
+        "https://en.wikipedia.org/wiki/Berkeley_DB",
+        "http://www.oracle.com/database/berkeley-db/db/index.html",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/berkeley-db/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/berkeley-db/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.oracle.com/database/berkeley-db/db/index.html"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/berkeley-db/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/berkeley-db/#wikipedia-1",
+      "name": "Berkeley DB (BDB, Oracle Berkeley DB) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/berkeley-db/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Berkeley_DB"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Berkeley_DB",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/berkeley-db/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/berkeley-db/#sheet-1",
+      "name": "Getting Started with Oracle Berkeley DB by Masoud Kalali [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/berkeley-db/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-oracle"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/db2/",
+      "name": "DB2 (IBM DB2)",
+      "headline": "DB2 (IBM DB2)",
+      "description": "DB2 (IBM DB2) cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#DB2",
+        "https://en.wikipedia.org/wiki/IBM_DB2",
+        "http://www-01.ibm.com/software/data/db2/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#sheet-3"
+        }
+      ],
+      "significantLink": [
+        "http://www-01.ibm.com/software/data/db2/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "MySQL",
+          "identifier": "MySQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "Oracle",
+          "identifier": "Oracle"
+        },
+        {
+          "@type": "Thing",
+          "name": "PostgreSQL",
+          "identifier": "PostgreSQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQL",
+          "identifier": "SQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQLite",
+          "identifier": "SQLite"
+        },
+        {
+          "@type": "Thing",
+          "name": "Sybase",
+          "identifier": "Sybase"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#saved-1",
+      "name": "Db2CheatSheetForDev20210323.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/db2/saved-copy/Db2CheatSheetForDev20210323.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Db2CheatSheetForDev20210323.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#wikipedia-1",
+      "name": "DB2 (IBM DB2) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/db2/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/IBM_DB2"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/IBM_DB2",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#sheet-1",
+      "name": "Db2 Cheat Sheet for development by Andres Gomez Casanova [pdf] (github.com/angoca/)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Db2CheatSheetForDev20210323.pdf",
+      "sameAs": [
+        "https://github.com/angoca/db2-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#sheet-2",
+      "name": "DB2 cheat sheet by Alex Staveley [pdf] (dublintech.blogspot.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://dublintech.blogspot.com/2011/10/db2-cheat-sheet.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#sheet-3",
+      "name": "The A to Z of DB2 by Alex Staveley [pdf] (dublintech.blogspot.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/db2/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://dublintech.blogspot.com/2011/10/a-to-z-of-db2.html"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/db4o/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/db4o/",
+      "name": "db4o",
+      "headline": "db4o",
+      "description": "db4o cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#db4o",
+        "https://en.wikipedia.org/wiki/Db4o",
+        "http://www.db4o.com/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/db4o/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/db4o/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.db4o.com/"
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/db4o/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/db4o/#wikipedia-1",
+      "name": "db4o (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/db4o/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Db4o"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Db4o",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/db4o/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/db4o/#sheet-1",
+      "name": "Getting Started with db4o: Persisting .NET Object Data by Stefan Edlich and Eric Falsken [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/db4o/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-db4o"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/",
+      "name": "Doctrine",
+      "headline": "Doctrine",
+      "description": "Doctrine cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Doctrine",
+        "https://en.wikipedia.org/wiki/Doctrine_(PHP)",
+        "http://www.doctrine-project.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.doctrine-project.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "PHP",
+          "identifier": "PHP"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/#saved-1",
+      "name": "Doctrine-Cheat-Sheet-1.1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/saved-copy/Doctrine-Cheat-Sheet-1.1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Doctrine-Cheat-Sheet-1.1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/#wikipedia-1",
+      "name": "Doctrine (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Doctrine_(PHP)"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Doctrine_(PHP)",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/#sheet-1",
+      "name": "Doctrine Cheat Sheet  [pdf] (phpdoctrine.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/doctrine/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Doctrine-Cheat-Sheet-1.1.pdf"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/",
+      "name": "Hadoop",
+      "headline": "Hadoop",
+      "description": "Hadoop cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Hadoop",
+        "https://en.wikipedia.org/wiki/Hadoop",
+        "http://hadoop.apache.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/#sheet-2"
+        }
+      ],
+      "significantLink": [
+        "http://hadoop.apache.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/#wikipedia-1",
+      "name": "Hadoop (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Hadoop"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Hadoop",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/#sheet-1",
+      "name": "Getting Started with Apache Hadoop by Eugene Ciurana and Masoud Kalali [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-apache-hadoop"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/#sheet-2",
+      "name": "Apache Hadoop Deployment: A Blueprint for Reliable Distributed Computing by Eugene Ciurana [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/hadoop/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/deploying-hadoop"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/hbase/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/hbase/",
+      "name": "HBase",
+      "headline": "HBase",
+      "description": "HBase cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#HBase",
+        "https://en.wikipedia.org/wiki/HBase",
+        "http://hbase.apache.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hbase/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hbase/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://hbase.apache.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Apache",
+          "identifier": "Apache"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hbase/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/hbase/#wikipedia-1",
+      "name": "HBase (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/hbase/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/HBase"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/HBase",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/hbase/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/hbase/#sheet-1",
+      "name": "Apache HBase: The NoSQL Database for Hadoop and Big Data by Alex Baranau and Otis Gospodnetic [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/hbase/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/hbase"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/hibernate/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/hibernate/",
+      "name": "Hibernate",
+      "headline": "Hibernate",
+      "description": "Hibernate cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Hibernate",
+        "https://en.wikipedia.org/wiki/Hibernate_(Java)",
+        "http://www.hibernate.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hibernate/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hibernate/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.hibernate.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Java",
+          "identifier": "Java"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/hibernate/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/hibernate/#wikipedia-1",
+      "name": "Hibernate (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/hibernate/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Hibernate_(Java)"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Hibernate_(Java)",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/hibernate/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/hibernate/#sheet-1",
+      "name": "Getting Started with Hibernate Search by John Griffin [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/hibernate/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-with-hibernate"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/",
+      "name": "Java Persistence API (JPA)",
+      "headline": "Java Persistence API (JPA)",
+      "description": "Java Persistence API (JPA) cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#JavaPersistenceAPI",
+        "https://en.wikipedia.org/wiki/Java_Persistence_API",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#sheet-3"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Java",
+          "identifier": "Java"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#wikipedia-1",
+      "name": "Java Persistence API (JPA) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Java_Persistence_API"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Java_Persistence_API",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#sheet-1",
+      "name": "Getting Started with JPA by Mike Keith [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/getting-started-with-jpa"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#sheet-2",
+      "name": "What's New in JPA 2.0 by Mike Keith [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/whats-new-jpa-20"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#sheet-3",
+      "name": "EclipseLink JPA: An Advanced ORM Persistence Framework by Gordon Yorke [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/java-persistence-api/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/eclipselink-jpa"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/jdbc/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/jdbc/",
+      "name": "JDBC - Java Database Connectivity",
+      "headline": "JDBC - Java Database Connectivity",
+      "description": "JDBC - Java Database Connectivity cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#JDBC",
+        "https://en.wikipedia.org/wiki/Java_Database_Connectivity",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/jdbc/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/jdbc/#sheet-1"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Java",
+          "identifier": "Java"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/jdbc/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/jdbc/#wikipedia-1",
+      "name": "JDBC - Java Database Connectivity (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/jdbc/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Java_Database_Connectivity"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Java_Database_Connectivity",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/jdbc/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/jdbc/#sheet-1",
+      "name": "JDBC Best Practices by Jesse Davis [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/jdbc/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/jdbc-best-practices"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/",
+      "name": "MySQL",
+      "headline": "MySQL",
+      "description": "MySQL cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#MySQL",
+        "https://en.wikipedia.org/wiki/MySQL",
+        "https://www.mysql.com/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-11"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-9"
+        }
+      ],
+      "significantLink": [
+        "https://www.mysql.com/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "DB2",
+          "identifier": "DB2"
+        },
+        {
+          "@type": "Thing",
+          "name": "Oracle",
+          "identifier": "Oracle"
+        },
+        {
+          "@type": "Thing",
+          "name": "PostgreSQL",
+          "identifier": "PostgreSQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQL",
+          "identifier": "SQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQLite",
+          "identifier": "SQLite"
+        },
+        {
+          "@type": "Thing",
+          "name": "Sybase",
+          "identifier": "Sybase"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-1",
+      "name": "/sites/sql.su/",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/hosted/sites/sql.su/index.html",
+      "encodingFormat": "application/octet-stream",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/sites/sql.su/"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-2",
+      "name": "mysql_cheat_sheet.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/saved-copy/mysql_cheat_sheet.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mysql_cheat_sheet.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-3",
+      "name": "mysql_cheat_sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/saved-copy/mysql_cheat_sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mysql_cheat_sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-4",
+      "name": "mysqlstatchart_1180.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/saved-copy/mysqlstatchart_1180.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mysqlstatchart_1180.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-5",
+      "name": "mysqlfuncchart_1180.jpg",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/saved-copy/mysqlfuncchart_1180.jpg",
+      "encodingFormat": "image/jpeg",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mysqlfuncchart_1180.jpg"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-6",
+      "name": "MySQL-Neal-Parikh.html",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/saved-copy/MySQL-Neal-Parikh.html",
+      "encodingFormat": "text/html",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/MySQL-Neal-Parikh.html"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-7",
+      "name": "MySQL_QuickRef.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/saved-copy/MySQL_QuickRef.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/MySQL_QuickRef.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-8",
+      "name": "MySQL-Cheat-Sheet-websitesetup.org_.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/saved-copy/MySQL-Cheat-Sheet-websitesetup.org_.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/MySQL-Cheat-Sheet-websitesetup.org_.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-9",
+      "name": "MySQL-Cheat-Sheet-Summary.webp",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/saved-copy/MySQL-Cheat-Sheet-Summary.webp",
+      "encodingFormat": "image/webp",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/MySQL-Cheat-Sheet-Summary.webp"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-10",
+      "name": "rc029-010d-essential-admin-mysql5.5_1.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/saved-copy/rc029-010d-essential-admin-mysql5.5_1.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/rc029-010d-essential-admin-mysql5.5_1.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#saved-11",
+      "name": "rc157-010d-dbpartitioning_2.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/saved-copy/rc157-010d-dbpartitioning_2.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/rc157-010d-dbpartitioning_2.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#wikipedia-1",
+      "name": "MySQL (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/MySQL"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/MySQL",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-1",
+      "name": "SQL (Structured Query Language) in one page by Alexander Krassotkin [html] (cheat-sheets.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/sites/sql.su/",
+      "sameAs": [
+        "http://cheat-sheets.org/sites/sql.su/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-2",
+      "name": "MySQL Cheat Sheet by Dave Child [html, png, pdf] (cheatography.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/mysql_cheat_sheet.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mysql_cheat_sheet.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-3",
+      "name": "MySQL cheatsheets by Bob Stein, VisiBone [two wall posters 43cmx61cm or 61cmx87cm, jpg] (visibone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/mysqlstatchart_1180.jpg",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/mysqlfuncchart_1180.jpg",
+        "http://www.visibone.com/sql/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-4",
+      "name": "MySQL Cheat Sheet [html] (nparikh.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/MySQL-Neal-Parikh.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-5",
+      "name": "MySQL Database Quick Reference by DeepX [pdf] (deepX.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/MySQL_QuickRef.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-6",
+      "name": "MySQL Cheat Sheet: Complete Cheat Sheet by Nick Schäferhoff (Editor in Chief) [pdf, webp] (websitesetup.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/MySQL-Cheat-Sheet-websitesetup.org_.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/MySQL-Cheat-Sheet-Summary.webp",
+        "https://websitesetup.org/mysql-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-7",
+      "name": "Essential MySQL by W. Jason Gilmore [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/rc029-010d-essential-admin-mysql5.5_1.pdf",
+      "sameAs": [
+        "https://dzone.com/refcardz/essential-mysql"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-8",
+      "name": "Database Partitioning with MySQL: Improving Performance, Availability, and Manageability by Narayana Maruvada [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/rc157-010d-dbpartitioning_2.pdf",
+      "sameAs": [
+        "https://dzone.com/refcardz/database-partitioning"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#sheet-9",
+      "name": "Awesome MySQL Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/my-sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/databases/mysql.sh"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/oracle/",
+      "name": "Oracle",
+      "headline": "Oracle",
+      "description": "Oracle cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Oracle",
+        "https://en.wikipedia.org/wiki/Oracle_database",
+        "http://www.oracle.com/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-8"
+        }
+      ],
+      "significantLink": [
+        "http://www.oracle.com/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "DB2",
+          "identifier": "DB2"
+        },
+        {
+          "@type": "Thing",
+          "name": "MySQL",
+          "identifier": "MySQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "PostgreSQL",
+          "identifier": "PostgreSQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQL",
+          "identifier": "SQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQLite",
+          "identifier": "SQLite"
+        },
+        {
+          "@type": "Thing",
+          "name": "Sybase",
+          "identifier": "Sybase"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#saved-1",
+      "name": "oracle_sql_reference.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/oracle/saved-copy/oracle_sql_reference.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/oracle_sql_reference.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#saved-2",
+      "name": "ORACLE Server Architecture.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/oracle/saved-copy/ORACLE%2520Server%2520Architecture.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/ORACLE%20Server%20Architecture.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#saved-3",
+      "name": "ORACLE Server 8i Quick Reference Card.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/oracle/saved-copy/ORACLE%2520Server%25208i%2520Quick%2520Reference%2520Card.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/ORACLE%20Server%208i%20Quick%20Reference%20Card.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#saved-4",
+      "name": "9iquickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/oracle/saved-copy/9iquickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/9iquickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#wikipedia-1",
+      "name": "Oracle (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/oracle/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Oracle_database"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Oracle_database",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-1",
+      "name": "Oracle PL/SQL Cheatsheet [html] (yagc.ndo.co.uk)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.yagc.ndo.co.uk/cheatsheets/plsql_cheatsheet.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-2",
+      "name": "Oracle Relational SQL Cheatsheet [html] (yagc.ndo.co.uk)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.yagc.ndo.co.uk/cheatsheets/sql_cheatsheet.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-3",
+      "name": "Oracle Cheat Sheet [html] (vttoth.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.vttoth.com/oracle.htm"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-4",
+      "name": "Oracle SQL quick reference by EM Group [pdf] (tiger.la.asu.edu)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/oracle_sql_reference.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-5",
+      "name": "Oracle Server Architecture by Dr. Lars Ditzel [pdf] (digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/ORACLE%20Server%20Architecture.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-6",
+      "name": "ORACLE Server 8i Quick Reference Card by Dr. Lars Ditzel [pdf] (digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/ORACLE%20Server%208i%20Quick%20Reference%20Card.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-7",
+      "name": "Oracle Server 9i - Quick Reference Guide [pdf] (digilife.be)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/9iquickref.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#sheet-8",
+      "name": "Cheat sheet 8",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/oracle/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://radio.weblogs.com/0128037/stories/2003/10/21/oracleScmInstallationCheatSheet.html"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/",
+      "name": "PostgreSQL",
+      "headline": "PostgreSQL",
+      "description": "PostgreSQL cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#PostgreSQL",
+        "https://en.wikipedia.org/wiki/PostgreSQL",
+        "http://www.postgresql.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#sheet-3"
+        }
+      ],
+      "significantLink": [
+        "http://www.postgresql.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "DB2",
+          "identifier": "DB2"
+        },
+        {
+          "@type": "Thing",
+          "name": "MySQL",
+          "identifier": "MySQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "Oracle",
+          "identifier": "Oracle"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQL",
+          "identifier": "SQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQLite",
+          "identifier": "SQLite"
+        },
+        {
+          "@type": "Thing",
+          "name": "Sybase",
+          "identifier": "Sybase"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#saved-1",
+      "name": "postgresql-cheat-sheet.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/saved-copy/postgresql-cheat-sheet.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/postgresql-cheat-sheet.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#saved-2",
+      "name": "postgresql-cheat-sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/saved-copy/postgresql-cheat-sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/postgresql-cheat-sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#saved-3",
+      "name": "postgresql-cheat-sheet.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/saved-copy/postgresql-cheat-sheet.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/postgresql-cheat-sheet.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#wikipedia-1",
+      "name": "PostgreSQL (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/PostgreSQL"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/PostgreSQL",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#sheet-1",
+      "name": "PostgreSQL [html] (petefreitag.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.petefreitag.com/cheatsheets/postgresql/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#sheet-2",
+      "name": "Lorenzo Alberton. PostgreSQL cheat sheet [gif, pdf, png] (alberton.info)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/postgresql-cheat-sheet.gif",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/postgresql-cheat-sheet.pdf",
+        "https://www.cheat-sheets.org/saved-copy/postgresql-cheat-sheet.png",
+        "http://www.alberton.info/postgresql_cheat_sheet.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#sheet-3",
+      "name": "Essential PostgreSQL by Leo Hsu and Regina Obe [pdf] (dzone.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/postgre-sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://dzone.com/refcardz/essential-postgresql"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/redis/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/redis/",
+      "name": "Redis",
+      "headline": "Redis",
+      "description": "Redis cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Redis",
+        "https://redis.io/",
+        "https://github.com/redis",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/redis/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "https://redis.io/",
+        "https://github.com/redis"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "",
+          "identifier": ""
+        }
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/redis/#sheet-1",
+      "name": "Awesome Redis Cheatsheet by Julien Le Coupanec @LeCoupa [html] (github.com/LeCoupa)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/redis/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://github.com/LeCoupa/awesome-cheatsheets/blob/master/databases/mysql.sh"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sql/",
+      "name": "SQL - Structured Query Language",
+      "headline": "SQL - Structured Query Language",
+      "description": "SQL - Structured Query Language cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#SQL",
+        "https://en.wikipedia.org/wiki/SQL",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#saved-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-10"
+        }
+      ],
+      "significantLink": [],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "DB2",
+          "identifier": "DB2"
+        },
+        {
+          "@type": "Thing",
+          "name": "MySQL",
+          "identifier": "MySQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "Oracle",
+          "identifier": "Oracle"
+        },
+        {
+          "@type": "Thing",
+          "name": "PostgreSQL",
+          "identifier": "PostgreSQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQL Server",
+          "identifier": "SQLServer"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQLite",
+          "identifier": "SQLite"
+        },
+        {
+          "@type": "Thing",
+          "name": "Sybase",
+          "identifier": "Sybase"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#saved-1",
+      "name": "/sites/sql.su/",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sql/hosted/sites/sql.su/index.html",
+      "encodingFormat": "application/octet-stream",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/sites/sql.su/"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#saved-2",
+      "name": "SQL_Cheatsheet.html",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sql/saved-copy/SQL_Cheatsheet.html",
+      "encodingFormat": "text/html",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/SQL_Cheatsheet.html"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#saved-3",
+      "name": "sqlcheetsheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sql/saved-copy/sqlcheetsheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sqlcheetsheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#saved-4",
+      "name": "sqlcheetsheet.gif",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sql/saved-copy/sqlcheetsheet.gif",
+      "encodingFormat": "image/gif",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sqlcheetsheet.gif"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#saved-5",
+      "name": "SQL-Cheat-Sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sql/saved-copy/SQL-Cheat-Sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/SQL-Cheat-Sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#saved-6",
+      "name": "Muppix_SQL_commands.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sql/saved-copy/Muppix_SQL_commands.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Muppix_SQL_commands.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#wikipedia-1",
+      "name": "SQL - Structured Query Language (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sql/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/SQL"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/SQL",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-1",
+      "name": "SQL in one page [html] (sql.su)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/sites/sql.su/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-2",
+      "name": "SQL Cheatsheet [html] (3gwt.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/SQL_Cheatsheet.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-3",
+      "name": "SQL Cheat Sheet [pdf, gif] (sqltutorial.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/sqlcheetsheet.pdf",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sqlcheetsheet.gif",
+        "http://www.sqltutorial.org/sql-cheat-sheet.aspx"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-4",
+      "name": "SQL Cheat Sheet  [pdf] (sql-tutorial.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/SQL-Cheat-Sheet.pdf",
+      "sameAs": [
+        "http://www.sql-tutorial.net/SQL-Cheat-Sheet.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-5",
+      "name": "SQL Tutorial - Learn SQL  [html] (sql-tutorial.net)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.sql-tutorial.net/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-6",
+      "name": "SQL Commands by Muppix [html, pdf] (muppix.co)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Muppix_SQL_commands.pdf"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-7",
+      "name": "SQL Injection Cheat Sheet [html] (netsparker.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-8",
+      "name": "SQL Injection Cheat Sheet [html] (invicti.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-9",
+      "name": "SQL Injection  [html] (websec.ca)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.websec.ca/kb/sql_injection"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#sheet-10",
+      "name": "SQL Injection [html] (hacktricks.xyz)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sql/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://book.hacktricks.xyz/pentesting-web/sql-injection"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/",
+      "name": "SQL Server",
+      "headline": "SQL Server",
+      "description": "SQL Server cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#SQLServer",
+        "https://en.wikipedia.org/wiki/Microsoft_SQL_Server",
+        "http://www.microsoft.com/sql/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.microsoft.com/sql/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "DB2",
+          "identifier": "DB2"
+        },
+        {
+          "@type": "Thing",
+          "name": "MySQL",
+          "identifier": "MySQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "Oracle",
+          "identifier": "Oracle"
+        },
+        {
+          "@type": "Thing",
+          "name": "PostgreSQL",
+          "identifier": "PostgreSQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQL",
+          "identifier": "SQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQLite",
+          "identifier": "SQLite"
+        },
+        {
+          "@type": "Thing",
+          "name": "Sybase",
+          "identifier": "Sybase"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#saved-1",
+      "name": "sql-server-cheat-sheet.png",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/saved-copy/sql-server-cheat-sheet.png",
+      "encodingFormat": "image/png",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sql-server-cheat-sheet.png"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#saved-2",
+      "name": "sql-server-cheat-sheet.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/saved-copy/sql-server-cheat-sheet.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sql-server-cheat-sheet.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#wikipedia-1",
+      "name": "SQL Server (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Microsoft_SQL_Server"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Microsoft_SQL_Server",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#sheet-1",
+      "name": "SQL Server Cheat Sheet by Dave Child [html, png, pdf] (cheatography.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlserver/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/sql-server-cheat-sheet.png",
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sql-server-cheat-sheet.pdf",
+        "https://www.cheatography.com/davechild/cheat-sheets/sql-server/",
+        "http://www.addedbytes.com/cheat-sheets/sql-server-cheat-sheet/"
+      ]
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/",
+      "name": "SQLite",
+      "headline": "SQLite",
+      "description": "SQLite cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#SQLite",
+        "https://en.wikipedia.org/wiki/SQLite",
+        "http://www.sqlite.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#sheet-3"
+        }
+      ],
+      "significantLink": [
+        "http://www.sqlite.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "DB2",
+          "identifier": "DB2"
+        },
+        {
+          "@type": "Thing",
+          "name": "MySQL",
+          "identifier": "MySQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "Oracle",
+          "identifier": "Oracle"
+        },
+        {
+          "@type": "Thing",
+          "name": "PostgreSQL",
+          "identifier": "PostgreSQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQL",
+          "identifier": "SQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQL Server",
+          "identifier": "SQLServer"
+        },
+        {
+          "@type": "Thing",
+          "name": "Sybase",
+          "identifier": "Sybase"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#saved-1",
+      "name": "/own/sqlite/Syntax.Diagrams.For.SQLite.html",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/hosted/own/sqlite/Syntax.Diagrams.For.SQLite.html",
+      "encodingFormat": "text/html",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/own/sqlite/Syntax.Diagrams.For.SQLite.html"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#wikipedia-1",
+      "name": "SQLite (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/SQLite"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/SQLite",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#sheet-1",
+      "name": "Syntax Diagrams For SQLite  [html] (sqlite.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/own/sqlite/Syntax.Diagrams.For.SQLite.html",
+      "sameAs": [
+        "http://www.sqlite.org/syntaxdiagrams.html"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#sheet-2",
+      "name": "Categorical Index Of SQLite Documents  [html] (sqlite.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.sqlite.org/docs.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#sheet-3",
+      "name": "SQLite In 5 Minutes Or Less  [html] (sqlite.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sqlite/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.sqlite.org/quickstart.html"
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sybase/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sybase/",
+      "name": "Sybase",
+      "headline": "Sybase",
+      "description": "Sybase cheat sheets archived from cheat-sheets.org in the Databases group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#Sybase",
+        "https://en.wikipedia.org/wiki/Sybase_SQL_Server",
+        "http://www.sybase.com/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sybase/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sybase/#sheet-1"
+        }
+      ],
+      "significantLink": [
+        "http://www.sybase.com/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "DB2",
+          "identifier": "DB2"
+        },
+        {
+          "@type": "Thing",
+          "name": "MySQL",
+          "identifier": "MySQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "Oracle",
+          "identifier": "Oracle"
+        },
+        {
+          "@type": "Thing",
+          "name": "PostgreSQL",
+          "identifier": "PostgreSQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQL",
+          "identifier": "SQL"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQL Server",
+          "identifier": "SQLServer"
+        },
+        {
+          "@type": "Thing",
+          "name": "SQLite",
+          "identifier": "SQLite"
+        },
+        {
+          "@type": "Thing",
+          "name": "Sybase",
+          "identifier": "Sybase"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/databases/sybase/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sybase/#wikipedia-1",
+      "name": "Sybase (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/databases/sybase/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Sybase_SQL_Server"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/Sybase_SQL_Server",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sybase/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/databases/sybase/#sheet-1",
+      "name": "Sybase SQL Server 11 [html] (selectorweb.com)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/databases/sybase/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.selectorweb.com/sql_sybase.html"
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>Databases</h1>
+    <p class="lede">SQL and NoSQL databases, query languages, and data-access APIs.</p>
+  </header>
+  <main>
+    <ul>
+      <li><a href="/databases/adonet/">ADO.NET</a></li>
+      <li><a href="/databases/apache-cassandra/">Apache Cassandra</a></li>
+      <li><a href="/databases/berkeley-db/">Berkeley DB (BDB, Oracle Berkeley DB)</a></li>
+      <li><a href="/databases/db2/">DB2 (IBM DB2)</a></li>
+      <li><a href="/databases/db4o/">db4o</a></li>
+      <li><a href="/databases/doctrine/">Doctrine</a></li>
+      <li><a href="/databases/hadoop/">Hadoop</a></li>
+      <li><a href="/databases/hbase/">HBase</a></li>
+      <li><a href="/databases/hibernate/">Hibernate</a></li>
+      <li><a href="/databases/java-persistence-api/">Java Persistence API (JPA)</a></li>
+      <li><a href="/databases/jdbc/">JDBC - Java Database Connectivity</a></li>
+      <li><a href="/databases/my-sql/">MySQL</a></li>
+      <li><a href="/databases/oracle/">Oracle</a></li>
+      <li><a href="/databases/postgre-sql/">PostgreSQL</a></li>
+      <li><a href="/databases/redis/">Redis</a></li>
+      <li><a href="/databases/sql/">SQL - Structured Query Language</a></li>
+      <li><a href="/databases/sqlserver/">SQL Server</a></li>
+      <li><a href="/databases/sqlite/">SQLite</a></li>
+      <li><a href="/databases/sybase/">Sybase</a></li>
+    </ul>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>

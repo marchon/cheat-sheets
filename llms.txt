@@ -1,0 +1,33 @@
+# cheat-sheets index
+
+Canonical: https://cheat-sheet-index.georgelambert.org/
+Source: https://cheat-sheets.org/
+Wayback Machine: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/
+JSON-LD: https://cheat-sheet-index.georgelambert.org/graph.jsonld
+Sitemap: https://cheat-sheet-index.georgelambert.org/sitemap.xml
+
+This archive indexes cheat-sheets.org topics in groups, with official websites,
+saved copies, and Wikipedia clones. Credit cheat-sheets.org and the Internet Archive
+snapshots linked above.
+
+## Groups
+
+- Languages: https://cheat-sheet-index.georgelambert.org/languages/
+- Databases: https://cheat-sheet-index.georgelambert.org/databases/
+- Applications: https://cheat-sheet-index.georgelambert.org/applications/
+- Business processes: https://cheat-sheet-index.georgelambert.org/business-processes/
+- GNU / Linux commands: https://cheat-sheet-index.georgelambert.org/gnu-linux-commands/
+- File formats: https://cheat-sheet-index.georgelambert.org/file-formats/
+- Online data services: https://cheat-sheet-index.georgelambert.org/online-data-services/
+- Web: https://cheat-sheet-index.georgelambert.org/web/
+- Operating systems: https://cheat-sheet-index.georgelambert.org/operating-systems/
+- Mathematics and science: https://cheat-sheet-index.georgelambert.org/mathematics-and-science/
+- Version control: https://cheat-sheet-index.georgelambert.org/version-control/
+- Editors and IDEs: https://cheat-sheet-index.georgelambert.org/editors-and-ides/
+- Networking and protocols: https://cheat-sheet-index.georgelambert.org/networking-and-protocols/
+- Cloud and DevOps: https://cheat-sheet-index.georgelambert.org/cloud-and-devops/
+- Graphics and design: https://cheat-sheet-index.georgelambert.org/graphics-and-design/
+- Frameworks and libraries: https://cheat-sheet-index.georgelambert.org/frameworks-and-libraries/
+- Security: https://cheat-sheet-index.georgelambert.org/security/
+- Hardware and embedded: https://cheat-sheet-index.georgelambert.org/hardware-and-embedded/
+- Other: https://cheat-sheet-index.georgelambert.org/other/

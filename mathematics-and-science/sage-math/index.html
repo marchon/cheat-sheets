@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SageMath (Sage, SAGE)</title>
+  <!-- search-index-tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="SageMath (Sage, SAGE) cheat sheets from cheat-sheets.org.">
+  <link rel="canonical" href="https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/">
+  <meta property="og:title" content="SageMath (Sage, SAGE)">
+  <meta property="og:description" content="SageMath (Sage, SAGE) cheat sheets from cheat-sheets.org.">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cheat-sheets.org/#org",
+      "name": "Cheat-Sheets.org",
+      "url": "https://cheat-sheets.org/",
+      "sameAs": [
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive",
+      "name": "Internet Archive snapshots of Cheat-Sheets.org",
+      "url": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cheat-sheet-index.georgelambert.org/#website",
+      "url": "https://cheat-sheet-index.georgelambert.org/",
+      "name": "cheat-sheets index",
+      "description": "Searchable index of cheat-sheets.org topics, grouped with official websites, saved copies, and Wikipedia clones.",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Person",
+        "name": "George Lambert"
+      },
+      "sameAs": [
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cheat-sheet-index.georgelambert.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": [
+        "LearningResource",
+        "WebPage"
+      ],
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic",
+      "url": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/",
+      "name": "SageMath (Sage, SAGE)",
+      "headline": "SageMath (Sage, SAGE)",
+      "description": "SageMath (Sage, SAGE) cheat sheets archived from cheat-sheets.org in the Mathematics and science group.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/#collection"
+      },
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "sameAs": [
+        "https://www.cheat-sheets.org/#SageMath",
+        "https://en.wikipedia.org/wiki/SageMath",
+        "http://www.sagemath.org/",
+        "https://cheat-sheets.org/",
+        "https://www.cheat-sheets.org/",
+        "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
+      ],
+      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/",
+      "isBasedOn": "https://cheat-sheets.org/",
+      "citation": [
+        {
+          "@id": "https://cheat-sheets.org/#org"
+        },
+        {
+          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
+        }
+      ],
+      "acquireLicensePage": "https://cheat-sheets.org/",
+      "hasPart": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#wikipedia-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-1"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-2"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-3"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-4"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-5"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-6"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-7"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-8"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-9"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-10"
+        },
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-11"
+        }
+      ],
+      "significantLink": [
+        "http://www.sagemath.org/"
+      ],
+      "mentions": [
+        {
+          "@type": "Thing",
+          "name": "Algebra",
+          "identifier": "Maple"
+        },
+        {
+          "@type": "Thing",
+          "name": "Maple",
+          "identifier": "Maple"
+        },
+        {
+          "@type": "Thing",
+          "name": "Math",
+          "identifier": "Math"
+        },
+        {
+          "@type": "Thing",
+          "name": "Mathematica",
+          "identifier": "Mathematica"
+        },
+        {
+          "@type": "Thing",
+          "name": "MATLAB",
+          "identifier": "MATLAB"
+        },
+        {
+          "@type": "Thing",
+          "name": "Mathomatic",
+          "identifier": "Mathomatic"
+        },
+        {
+          "@type": "Thing",
+          "name": "Maxima",
+          "identifier": "Maxima"
+        },
+        {
+          "@type": "Thing",
+          "name": "PARI/GP",
+          "identifier": "PARIGP"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#wikipedia-1"
+        }
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-1",
+      "name": "sage_quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/saved-copy/sage_quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sage_quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-2",
+      "name": "quickref-linalg.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/saved-copy/quickref-linalg.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/quickref-linalg.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-3",
+      "name": "quickref-nt.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/saved-copy/quickref-nt.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/quickref-nt.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-4",
+      "name": "quickref-calc.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/saved-copy/quickref-calc.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/quickref-calc.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-5",
+      "name": "Basic_Math_sage-quickref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/saved-copy/Basic_Math_sage-quickref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/Basic_Math_sage-quickref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-6",
+      "name": "quickref-graphtheory.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/saved-copy/quickref-graphtheory.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/quickref-graphtheory.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-7",
+      "name": "sage-quickref-algebra.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/saved-copy/sage-quickref-algebra.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/sage-quickref-algebra.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#saved-8",
+      "name": "dynamics_ref.pdf",
+      "url": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/saved-copy/dynamics_ref.pdf",
+      "encodingFormat": "application/pdf",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "sameAs": [
+        "https://www.cheat-sheets.org/saved-copy/dynamics_ref.pdf"
+      ],
+      "learningResourceType": "cheat sheet"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#wikipedia-1",
+      "name": "SageMath (Sage, SAGE) (Wikipedia clone)",
+      "url": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/wikipedia.md",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/SageMath"
+      ],
+      "isBasedOn": "https://en.wikipedia.org/wiki/SageMath",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-1",
+      "name": "Sage Quick Reference by William Stein (based on work of P. Jipsen) [pdf] (wiki.sagemath.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/sage_quickref.pdf",
+      "sameAs": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=quickref.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-2",
+      "name": "Sage Quick Reference: Linear Algebra by Robert A. Beezer (Based on work by Peter Jipsen, William Stein)  [pdf] (wiki.sagemath.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/quickref-linalg.pdf",
+      "sameAs": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=quickref-linalg.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-3",
+      "name": "Sage Quick Reference: Elementary Number Theory by William Stein [pdf] (wiki.sagemath.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/quickref-nt.pdf",
+      "sameAs": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=quickref-nt.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-4",
+      "name": "Sage Quick Reference: Calculus by William Stein [pdf] (wiki.sagemath.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/quickref-calc.pdf",
+      "sameAs": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=quickref-calc.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-5",
+      "name": "Sage Quick Reference (Basic Math) by Peter Jipsen [pdf] (wiki.sagemath.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/Basic_Math_sage-quickref.pdf",
+      "sameAs": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=sage-quickref.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-6",
+      "name": "Sage Quick Reference: Graph Theory by Steven Rafael Turner [pdf] (wiki.sagemath.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/quickref-graphtheory.pdf",
+      "sameAs": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=quickref-graphtheory.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-7",
+      "name": "Sage Quick Reference: Abstract Algebra by B. Balof, T. W. Judson, D. Perkinson, R. Potluri (based on work by P. Jipsen, W. Stein, R. Beezer) [pdf] (wiki.sagemath.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/sage-quickref-algebra.pdf",
+      "sameAs": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=quickref-algebra.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-8",
+      "name": "Sage Dynamics Ref Card v3.0 by B. Hutz, J. Silverman [pdf] (wiki.sagemath.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://www.cheat-sheets.org/saved-copy/dynamics_ref.pdf",
+      "sameAs": [
+        "https://wiki.sagemath.org/quickref?action=AttachFile&do=get&target=dynamics_ref.pdf"
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-9",
+      "name": "Sage Quick Reference Cards in different languages [html -> pdf] (wiki.sagemath.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "inLanguage": "en",
+      "url": "https://wiki.sagemath.org/quickref/"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-10",
+      "name": "SageMath Help [html] (sagemath.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://www.sagemath.org/help.html"
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#sheet-11",
+      "name": "SageMath Documentation [html] (doc.sagemath.org)",
+      "learningResourceType": "cheat sheet",
+      "educationalUse": "reference",
+      "isPartOf": {
+        "@id": "https://cheat-sheet-index.georgelambert.org/mathematics-and-science/sage-math/#topic"
+      },
+      "inLanguage": "en",
+      "url": "http://doc.sagemath.org/"
+    }
+  ]
+}</script>
+  <!-- /search-index-tags -->
+  <style>
+:root { color-scheme: light dark; --bg:#f6f3ee; --ink:#1c1916; --muted:#5c564e; --paper:#fffdf8; --line:#d9d2c6; --accent:#8a3b12; --focus:#0b57d0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161513; --ink:#ece7df; --muted:#b3aaa0; --paper:#221f1c; --line:#3a3530; --accent:#e0a070; --focus:#8ab4f8; } }
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); }
+body { margin: 0; font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+header, footer, main { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header { padding-block: 1.5rem 1rem; }
+h1 { font-size: 1.6rem; margin: 0 0 0.4rem; }
+.lede, .meta, footer { color: var(--muted); }
+main ul { padding-inline-start: 1.2rem; }
+footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
+nav a { margin-inline-end: 0.75rem; }
+</style>
+</head>
+<body>
+  <header>
+    <nav><a href="/">Index</a></nav>
+    <h1>SageMath (Sage, SAGE)</h1>
+    <p class="lede">SageMath (Sage, SAGE) cheat sheets from cheat-sheets.org.</p>
+  </header>
+  <main>
+    <p><a href="https://www.cheat-sheets.org/#SageMath">Original listing on cheat-sheets.org</a></p>
+    <h2>Official websites</h2>
+    <ul>
+      <li><a href="http://www.sagemath.org/">sagemath.org</a></li>
+    </ul>
+    <h2>Wikipedia</h2>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/SageMath">https://en.wikipedia.org/wiki/SageMath</a> · <a href="wikipedia.md">local clone</a></li>
+    </ul>
+    <h2>Saved copies</h2>
+    <ul>
+      <li><a href="saved-copy/sage_quickref.pdf">sage_quickref.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/sage_quickref.pdf">source</a></li>
+      <li><a href="saved-copy/quickref-linalg.pdf">quickref-linalg.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/quickref-linalg.pdf">source</a></li>
+      <li><a href="saved-copy/quickref-nt.pdf">quickref-nt.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/quickref-nt.pdf">source</a></li>
+      <li><a href="saved-copy/quickref-calc.pdf">quickref-calc.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/quickref-calc.pdf">source</a></li>
+      <li><a href="saved-copy/Basic_Math_sage-quickref.pdf">Basic_Math_sage-quickref.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/Basic_Math_sage-quickref.pdf">source</a></li>
+      <li><a href="saved-copy/quickref-graphtheory.pdf">quickref-graphtheory.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/quickref-graphtheory.pdf">source</a></li>
+      <li><a href="saved-copy/sage-quickref-algebra.pdf">sage-quickref-algebra.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/sage-quickref-algebra.pdf">source</a></li>
+      <li><a href="saved-copy/dynamics_ref.pdf">dynamics_ref.pdf</a> · <a href="https://www.cheat-sheets.org/saved-copy/dynamics_ref.pdf">source</a></li>
+    </ul>
+    <h2>Cheat sheets</h2>
+    <ul>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/sage_quickref.pdf">Sage Quick Reference by William Stein (based on work of P. Jipsen) [pdf] (wiki.sagemath.org)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/quickref-linalg.pdf">Sage Quick Reference: Linear Algebra by Robert A. Beezer (Based on work by Peter Jipsen, William Stein)  [pdf] (wiki.sagemath.org)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/quickref-nt.pdf">Sage Quick Reference: Elementary Number Theory by William Stein [pdf] (wiki.sagemath.org)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/quickref-calc.pdf">Sage Quick Reference: Calculus by William Stein [pdf] (wiki.sagemath.org)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/Basic_Math_sage-quickref.pdf">Sage Quick Reference (Basic Math) by Peter Jipsen [pdf] (wiki.sagemath.org)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/quickref-graphtheory.pdf">Sage Quick Reference: Graph Theory by Steven Rafael Turner [pdf] (wiki.sagemath.org)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/sage-quickref-algebra.pdf">Sage Quick Reference: Abstract Algebra by B. Balof, T. W. Judson, D. Perkinson, R. Potluri (based on work by P. Jipsen, W. Stein, R. Beezer) [pdf] (wiki.sagemath.org)</a></li>
+      <li><a href="https://www.cheat-sheets.org/saved-copy/dynamics_ref.pdf">Sage Dynamics Ref Card v3.0 by B. Hutz, J. Silverman [pdf] (wiki.sagemath.org)</a></li>
+      <li><a href="https://wiki.sagemath.org/quickref/">Sage Quick Reference Cards in different languages [html -&gt; pdf] (wiki.sagemath.org)</a></li>
+      <li><a href="http://www.sagemath.org/help.html">SageMath Help [html] (sagemath.org)</a></li>
+      <li><a href="http://doc.sagemath.org/">SageMath Documentation [html] (doc.sagemath.org)</a></li>
+    </ul>
+    <h2>See also</h2>
+    <ul>
+      <li><a href="/mathematics-and-science/maple/">Algebra</a></li>
+      <li><a href="/mathematics-and-science/maple/">Maple</a></li>
+      <li><a href="/mathematics-and-science/math/">Math</a></li>
+      <li><a href="/mathematics-and-science/mathematica/">Mathematica</a></li>
+      <li><a href="/mathematics-and-science/matlab/">MATLAB</a></li>
+      <li><a href="/mathematics-and-science/mathomatic/">Mathomatic</a></li>
+      <li><a href="/mathematics-and-science/maxima/">Maxima</a></li>
+      <li><a href="/mathematics-and-science/parigp/">PARI/GP</a></li>
+    </ul>
+    <p class="meta">Group: <a href="/mathematics-and-science/">Mathematics and science</a></p>
+  </main>
+  <footer>
+    Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.
+  </footer>
+</body>
+</html>
