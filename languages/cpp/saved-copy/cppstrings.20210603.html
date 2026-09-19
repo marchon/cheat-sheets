@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title>Shifting from C to C++ strings</title>
+ </head>
+
+ <body>
+<a href="http://www.cheat-sheets.org/">&lt;&lt; Cheat-Sheets</a>
+
+<!--- *********************** Top *********************************** -->
+<h1>Shifting from C to C++ strings</h1>
+
+<!--- ********************* Content ********************************* -->
+<div id="main">
+<p>
+
+<!-- $START$  -->
+Shifting from C to C++ strings<br>
+</p><dl>
+<h4>   Why change? </h4>
+<dd>
+   Avoid memory corruption errors<br>
+   Easier to maintain<br>
+   Simple to use<br>
+   Should be fast (is reference counted)<br>
+   Supports wide, narrow, anything-else characters<br>
+   Standard<br>
+   Cross-platform<br>
+</dd></dl>
+<dl>
+<h4> C++ std::basic_string </h4>
+<dd>
+   Available in two flavours
+ <li> <code>std::string</code> for storing narrow characters
+ </li><li> <code>std::wstring</code> for storing wide characters
+</li></dd></dl>
+<dl>
+
+<dd>
+ <dl>
+    Not normally needed, but if wanted you can instantiate basic_string for your own character type
+ <dd>
+      E.g.  <code>basic_string&lt;MyCharacterClass&gt;</code>
+ </dd></dl>
+</dd></dl>
+<h4> Comparing C and C++ </h4>
+<blockquote>
+<table> <tbody><tr> <td> <pre>#include &lt;string.h&gt;
+#include &lt;assert.h&gt;
+
+int main()
+{
+   char name[15]; // !!!
+   strcpy(name, "David");
+   int len = strlen(name);
+   strcat(name, " Moore");
+   name[5] = 'J';
+   assert(strcmp(name, "Oliver"));
+
+   return 0;
+}
+</pre>
+</td>
+<td>
+<pre>#include &lt;string&gt;
+#include &lt;assert.h&gt;
+
+int main()
+{
+   std::string name;
+   name = "David";
+   int len = name.length();
+   name += " Moore";
+   name[5] = 'J';
+   assert(name != "Oliver");
+
+   return 0;
+}
+</pre> 
+</td> </tr> 
+</tbody></table>
+</blockquote>
+
+<dl>
+<h4> Interoperability between C and C++ </h4>
+<dd>
+ <dl>
+    A C++ string can be constructed from a C character pointer
+ <dd>
+  <dl><dd>
+         <code>char* p = "David";<br>
+         std::string str = p;</code>
+  </dd></dl>
+ </dd></dl>
+</dd></dl>
+<dl>
+
+<dd>
+ <dl>
+    A C++ string can return a C character pointer to its contents.   But...
+ <dd>
+      Not possible to change the string with this pointer<br>
+  <dl>
+        Don't use the pointer after the string has been destroyed
+  <dd>
+         <code>std::string str = "Cocacola";<br>
+         char* p = str.c_str(); </code>
+  </dd></dl>
+ </dd></dl>
+</dd></dl>
+<dl>
+<h4> Searching within a string </h4>
+<dd>
+   Many different search functions<br>
+<br>
+   Find substring<br>
+ <li> <code>find</code>
+ </li><li> <code>rfind</code>
+</li></dd></dl>
+<dl>
+<dd>
+   Find character<br>
+ <li> <code>find_first_of</code>
+ </li><li> <code>find_last_of</code>
+ </li><li> <code>find_first_not_of</code>
+ </li><li> <code>find_last_not_of</code>
+</li></dd></dl>
+<dl>
+
+<dd>
+   Special value <code>string::npos</code> means "not in the string"
+</dd></dl>
+<dl>
+<h4>   Searching example </h4>
+<dd>
+<pre>std::string line = "abcd    Apple butter chicken delicious    $0.62"; 
+
+// abcd
+string::size_type codeEnd = line.find_first_of(" \t");
+string code = line.substr(0, codeEnd);
+
+// 0.62
+string::size_type priceBegin = line.find_last_of('$');
+Double price = atof(line.substr(priceBegin + 1).c_str());
+
+// Apple butter chicken delicous
+string::size_type descBegin = line.find_first_not_of(" \t", codeEnd);
+string::size_type descEnd   = line.find_last_not_of(" \t", priceBegin - 1);
+string desc = line.substr(descBegin, descEnd - descBegin + 1);
+</pre>
+</dd></dl>
+
+<dl>
+<h4> Sub-strings </h4>
+<dd>
+   <code>substr(i, n)</code><br>
+   returns a new string object of n characters starting from i<br>
+ <dl>
+    n defaults to being to the end of the string
+ <dd>
+<code>
+std::wstring str = L"Cocacola";<br>
+std::wcout &lt;&lt; str.substr(4) &lt;&lt; std::endl;</code>
+ </dd></dl>
+</dd></dl>
+<dl>
+<h4>Replace / Insert / Erase</h4>
+<dd>
+   Easy to change the contents of a string
+<pre>std::string name("David Moore");
+name.replace(3, 2, "e");          // Dave Moore
+name.insert(0, "Mr. ");           // Mr. Dave Moore
+name.erase(4, 5);                 // Mr. Moore
+</pre>
+</dd></dl>
+<dl>
+<h4>String I/O</h4>
+<dd>
+   C++ strings support streaming
+<p>
+   Output<br>
+   <code>std::cout &lt;&lt;  name &lt;&lt;  std::endl;</code>
+</p><p>
+   Input a word<br>
+   <code>std::cin &gt;&gt; name;</code>
+</p><p>
+   Input a whole line<br>
+   <code>getline(cin, line);</code><br>
+</p></dd></dl>
+<dl>
+<h4>Some other operations</h4>
+<dd><pre>std::string a = "Coca";
+std::string b = "cola";
+std::string c = a + b;
+c += "(R)";
+
+int v = c.compare("Pepsi");</pre>
+</dd></dl>
+<dl>
+<h4>Strings as collections </h4>
+<dd>
+   A C++ string object looks a lot like a C++ collection (of characters)<br>
+   Has iterators, <code>begin(), end(), push_back()</code> etc.<br>
+   Can be used with generic algorithms<br>
+<pre>std::transform(str.begin(),
+               str.end(),
+               str.begin(),
+               tolower);
+</pre>
+</dd></dl>
+
+</body></html>

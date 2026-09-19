@@ -1,0 +1,2022 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title>C++ Containers Cheat Sheet</title>
+ <style>
+
+#main table { 
+   border:        #0033ff solid thin; 
+   color:         #ffffff;
+   background:    #3366ff; 
+}
+#main table b { 
+   color:         #ffffff;
+   background:    #3366ff; 
+}
+#main td { 
+   padding:       0px;
+   color:         #ffffff;
+   border:        #0033ff solid thin; 
+}
+#main th { 
+   text-align:    center;
+   color:         #ffffff;
+   padding:       0px;
+   border:        #0033ff solid thin; 
+}
+</style>
+<script src="cppcontainers.20210603_files/quicklink.js"></script>
+</head>
+
+<body>
+ <a href="http://www.cheat-sheets.org/">&lt;&lt; All Cheat Sheets</a>
+
+<!--- ********************** Title ********************************** -->
+<h1>C++ Containers Cheat Sheet</h1>
+<p>
+
+
+</p><div id="main">
+<!--- ******************* Key *************************************** -->
+<h2>Key</h2>
+
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td><code>X &nbsp;</code></td>
+<td>= container class &nbsp;</td>
+<td><code>a, b &nbsp;</code></td>
+<td>= objects of class X</td>
+</tr>
+<tr>
+<td><code>T &nbsp;</code></td>
+<td>= class which is stored in X  &nbsp; </td>
+<td><code>t &nbsp;</code></td>
+<td>= object of class T</td>
+</tr>
+<tr>
+<td><code>n &nbsp;</code></td>
+<td>= number &nbsp;</td>
+<td><code>i, j &nbsp;</code></td>
+<td>= iterators of any type &nbsp;</td>
+</tr>
+<tr>
+<td><code>p, q, hint&nbsp;</code></td>
+<td>= iterators of type X&nbsp;</td>
+<td><code>key&nbsp;</code> </td>
+<td>= object of key class for X</td>
+</tr>
+<tr>
+<td><code>comp&nbsp;</code> </td>
+<td>= comparator object&nbsp; </td>
+<td><code>pred&nbsp;</code> </td>
+<td>= predicate object</td>
+</tr>
+<tr>
+<td><code>bin_pred&nbsp;</code> </td>
+<td>= binary predicate object&nbsp; </td>
+<td><code>c&nbsp;</code> </td>
+<td>= container object being adapted</td>
+</tr>
+</tbody></table>
+ 
+ 
+<p>
+<!--- ******************* Container Types *************************** -->
+</p><h2>Containers</h2>
+
+<code>
+template&lt;class T, class A=allocator&lt;T&gt; &gt; class <b>vector</b><br>
+template&lt;class T, class A=allocator&lt;T&gt; &gt; class <b>list</b><br>
+template&lt;class T, class
+A=allocator&lt;T&gt; &gt; class <b>deque</b><br>
+template&lt;class T, class
+Compare=less&lt;T&gt;, class A=allocator&lt;T&gt; &gt; class
+<b>set</b><br>
+template&lt;class T, class
+Compare=less&lt;T&gt;, class A=allocator&lt;T&gt; &gt; class
+<b>multiset</b><br>
+template&lt;class Key, class Mapped, class
+Compare=less&lt;Key&gt;, class A=allocator&lt;Mapped&gt; &gt; class
+<b>map</b><br>
+template&lt;class Key, class Mapped, class
+Compare=less&lt;Key&gt;, class A=allocator&lt;Mapped&gt; &gt; class
+<b>multimap</b><br>
+template&lt;class T, class
+Traits=char_traits&lt;T&gt;, class A=allocator&lt;T&gt; &gt; class
+<b>basic_string</b><br>
+template&lt;class T, class
+Hash=hash&lt;T&gt;, class Eq=equal_to&lt;T&gt;, class
+A=allocator&lt;T&gt; &gt; class <b>hash_set</b><br>
+template&lt;class T, class
+Hash=hash&lt;T&gt;, class Eq=equal_to&lt;T&gt;, class
+A=allocator&lt;T&gt; &gt; class <b>hash_multiset</b><br>
+template&lt;class Key, class Mapped, class
+Hash=hash&lt;Key&gt;, class Eq=equal_to&lt;Key&gt;, class
+A=allocator&lt;Mapped&gt; &gt; class <b>hash_map</b><br>
+template&lt;class Key, class Mapped, class
+Hash=hash&lt;Key&gt;, class Eq=equal_to&lt;Key&gt;, class
+A=allocator&lt;Mapped&gt; &gt; class <b>hash_multimap</b><br>
+template&lt;class T, class
+Container=deque&lt;T&gt; &gt; class <b>stack</b><br>
+template&lt;class T, class
+Container=deque&lt;T&gt; &gt; class <b>queue</b><br>
+template&lt;class T, class
+Container=vector&lt;T&gt;, class Compare=less&lt;class
+Container::value_type&gt; &gt; class <b>priority_queue</b><br>
+</code>
+
+<p>
+Expressions grouped by container requirements, &nbsp;&nbsp;&nbsp;&nbsp;
+* = non-standard container<br>
+
+<!--- ******************* Container ********************************* -->
+
+</p><h3>Container</h3>
+<table cellspacing="0" cellpadding="0" border="1">
+
+<tbody><tr>
+<th valign="top">Expression</th>
+<th valign="top">Return type</th>
+<th valign="top">vector</th>
+<th valign="top">list&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th valign="top">deque</th>
+<th valign="top">basic string</th>
+<th valign="top">set&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th valign="top">multi&nbsp; set</th>
+<th valign="top">map&nbsp;&nbsp;</th>
+<th valign="top">multi&nbsp; map</th>
+<th valign="top">hash&nbsp; set*</th>
+<th valign="top">hash&nbsp; multi set*</th>
+<th valign="top">hash&nbsp; map*</th>
+<th valign="top">hash&nbsp; multi map*</th>
+<th valign="top">stack</th>
+<th valign="top">queue</th>
+<th valign="top">priority queue
+</th>
+</tr>
+
+<tr>
+<td valign="top"> <code>X::value_type</code></td>
+<td valign="top"> <code>T</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+</tr>
+
+<tr>
+<td valign="top"> <code>X::reference</code></td>
+<td valign="top"> lvaue of <code>T</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top"> <code>X::const_reference</code></td>
+<td valign="top"> const lvalue of <code>T</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top"> <code>X::iterator</code></td>
+<td valign="top"> iterator to <code>T</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top"> <code>X::const_iterator</code></td>
+<td valign="top"> iterator to <code>const T</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+
+<tr>
+<td valign="top"> <code>X::difference_type</code></td>
+<td valign="top"> signed integral type</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>X::size_type</code></td>
+<td valign="top"> unsigned integral type</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>X a</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+
+<tr>
+<td valign="top"> <code>X a(b)</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>a.~X()</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>a = b</code></td>
+<td valign="top"> <code>X&amp;</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>swap(a, b)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a == b</code></td>
+<td valign="top"> convertible to <code>bool</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>a &lt; b</code></td>
+<td valign="top"> convertible to <code>bool</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>a.begin()</code></td>
+<td valign="top"> <code>iterator</code> or <code>const_iterator</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.end()</code></td>
+<td valign="top"> <code>iterator</code> or <code>const_iterator</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.size()</code></td>
+<td valign="top"> <code>size_type</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>a.max_size()</code></td>
+<td valign="top"> <code>size_type</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.empty()</code></td>
+<td valign="top"> convertible to <code>bool</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>a.swap(b)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+</tbody></table>
+
+<!--- ******************* Reversable Container ************************* -->
+
+<h3>Reversable Container</h3>
+<table cellspacing="0" cellpadding="0" border="1">
+
+<tbody><tr>
+<th valign="top">Expression</th>
+<th valign="top">Return type</th>
+<th valign="top">vector</th>
+<th valign="top">list&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th valign="top">deque</th>
+<th valign="top">basic string</th>
+<th valign="top">set&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th valign="top">multi&nbsp; set</th>
+<th valign="top">map&nbsp;&nbsp;</th>
+<th valign="top">multi&nbsp; map</th>
+<th valign="top">hash&nbsp; set*</th>
+<th valign="top">hash&nbsp; multi set*</th>
+<th valign="top">hash&nbsp; map*</th>
+<th valign="top">hash&nbsp; multi map*</th>
+<th valign="top">stack</th>
+<th valign="top">queue</th>
+<th valign="top">priority queue
+</th>
+</tr>
+
+<tr>
+<td valign="top"> <code>X::reverse_iterator</code></td>
+<td valign="top"> iterator to <code>T</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>X::const_reverse_iterator</code></td>
+<td valign="top"> iterator to <code>const T</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.rbegin()</code></td>
+<td valign="top"> <code>reverse_iterator</code> or
+<code>const_reverse_iterator</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.rend()</code></td>
+<td valign="top"> <code>reverse_iterator</code> or
+<code>const_reverse_iterator</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+</tbody></table>
+
+<!--- ******************* Sequence ********************************** -->
+<h3>Sequence</h3>
+<table cellspacing="0" cellpadding="0" border="1">
+
+<tbody><tr>
+<th valign="top">Expression</th>
+<th valign="top">Return type</th>
+<th valign="top">vector</th>
+<th valign="top">list&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th valign="top">deque</th>
+<th valign="top">basic string</th>
+<th valign="top">set&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th valign="top">multi&nbsp; set</th>
+<th valign="top">map&nbsp;&nbsp;</th>
+<th valign="top">multi&nbsp; map</th>
+<th valign="top">hash&nbsp; set*</th>
+<th valign="top">hash&nbsp; multi set*</th>
+<th valign="top">hash&nbsp; map*</th>
+<th valign="top">hash&nbsp; multi map*</th>
+<th valign="top">stack</th>
+<th valign="top">queue</th>
+<th valign="top">priority queue
+</th>
+</tr>
+
+<tr>
+<td valign="top">
+<code>X a(n, t)</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>X a(i, j)</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<code>a.insert(p, t)</code></td>
+<td valign="top"> <code>iterator</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<code>a.insert(p, n, t)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.insert(p, i, j)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.erase(q)</code></td>
+<td valign="top"> <code>iterator</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.erase(p, q)</code></td>
+<td valign="top"> <code>iterator</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.clear()</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.back()</code></td>
+<td valign="top"> <code>reference</code> or <code>const_reference</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.push_back(t)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.pop_back()</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.front()</code></td>
+<td valign="top"> <code>reference</code> or <code>const_reference</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.push_front(t)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.pop_front()</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a[n]</code></td>
+<td valign="top"> <code>reference</code> or <code>const_reference</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.at(n)</code></td>
+<td valign="top"> <code>reference </code>or <code>const_reference</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+</tbody></table>
+
+<!--- ******************* Associative Container ********************* -->
+<h3>Associative Container</h3>
+<table cellspacing="0" cellpadding="0" border="1">
+
+<tbody><tr>
+<th valign="top">Expression</th>
+<th valign="top">Return type</th>
+<th valign="top">vector</th>
+<th valign="top">list&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th valign="top">deque</th>
+<th valign="top">basic string</th>
+<th valign="top">set&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th valign="top">multi&nbsp; set</th>
+<th valign="top">map&nbsp;&nbsp;</th>
+<th valign="top">multi&nbsp; map</th>
+<th valign="top">hash&nbsp; set*</th>
+<th valign="top">hash&nbsp; multi set*</th>
+<th valign="top">hash&nbsp; map*</th>
+<th valign="top">hash&nbsp; multi map*</th>
+<th valign="top">stack</th>
+<th valign="top">queue</th>
+<th valign="top">priority queue </th>
+</tr>
+
+<tr>
+<td valign="top"> <code>X::key_type</code></td>
+<td valign="top"> <code>Key</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>X::key_compare</code></td>
+<td valign="top"> <code>Compare</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>X::value_compare</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>X a(comp)</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>X a</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top">
+<code>X a(i, j, comp)</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>X a(i, j)</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>a.key_comp()</code></td>
+<td valign="top"> <code>key_compare</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.value_comp()</code></td>
+<td valign="top"> <code>value_compare</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td rowspan="2" valign="top"> <code>a.insert(t)</code></td>
+<td valign="top"> <code>pair&lt;iterator, bool&gt;</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>iterator</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.insert(hint, t)</code></td>
+<td valign="top"> <code>iterator</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.insert(i, j)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.erase(key)</code></td>
+<td valign="top"> <code>size_type</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.erase(q)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.erase(p, q)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.clear()</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.find(key)</code></td>
+<td valign="top"> <code>iterator</code> or <code>const_iterator</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.count(key)</code></td>
+<td valign="top"> <code>size_type</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top">
+&nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.lower_bound(k)</code></td>
+<td valign="top"> <code>iterator</code> or <code>const_iterator</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.upper_bound(k)</code></td>
+<td valign="top"> <code>iterator</code> or <code>const_iterator</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.equal_range(k)</code></td>
+<td valign="top"> <code>pair&lt;iterator,</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp; iterator&gt; or
+<code>pair&lt;const_iterator,</code><br> &nbsp;&nbsp;&nbsp;&nbsp;
+<code>const_iterator&gt;</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+</tbody></table>
+
+<!--- ******************* Container Specific ********************* -->
+<h3>Container Specific</h3>
+<table cellspacing="0" cellpadding="0" border="1">
+
+<tbody><tr>
+<th valign="top">Expression</th>
+<th valign="top">Return type</th>
+<th valign="top">vector</th>
+<th valign="top">list&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th valign="top">deque</th>
+<th valign="top">basic string</th>
+<th valign="top">set&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th valign="top">multi&nbsp; set</th>
+<th valign="top">map&nbsp;&nbsp;</th>
+<th valign="top">multi&nbsp; map</th>
+<th valign="top">hash&nbsp; set*</th>
+<th valign="top">hash&nbsp; multi set*</th>
+<th valign="top">hash&nbsp; map*</th>
+<th valign="top">hash&nbsp; multi map*</th>
+<th valign="top">stack</th>
+<th valign="top">queue</th>
+<th valign="top">priority queue </th>
+</tr>
+
+<tr>
+<td valign="top"> <code>a.get_allocator()</code></td>
+<td valign="top"> <code>allocator_type</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.assign(p, q)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.resize(n)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.resize(n, t)</code></td> 
+<td valign="top"> <code>void</code></td> 
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<code>a.assign(n, t)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.capacity()</code></td>
+<td valign="top"> <code>size_type</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.reserve(n)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top">
+<code>a.splice(p, b)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.splice(p, b, i)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.splice(p, b, i,</code>
+<code>j)</code></td> <td valign="top">
+<code>void</code></td> <td valign="top">
+&nbsp;</td> <td valign="top">
+<img src="dot.20210603.png" alt="O"></td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td></tr>
+
+<tr>
+<td valign="top"> 
+<code>a.remove(t)</code></td> <td valign="top">
+<code>void</code></td> <td valign="top">
+&nbsp;</td> <td valign="top">
+<img src="dot.20210603.png" alt="O"></td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td></tr>
+
+<tr>
+<td valign="top"> 
+<code>a.remove_if(pred)</code></td> <td valign="top">
+<code>void</code></td> <td valign="top">
+&nbsp;</td> <td valign="top">
+<img src="dot.20210603.png" alt="O"></td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.unique()</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.unique(bin_pred)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> 
+<code>a.merge(b)</code></td> <td valign="top">
+<code>void</code></td> <td valign="top">
+&nbsp;</td> <td valign="top">
+<img src="dot.20210603.png" alt="O"></td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.merge(b,</code>
+<code>comp)</code></td> <td valign="top">
+<code>void</code></td> <td valign="top">
+&nbsp;</td> <td valign="top">
+<img src="dot.20210603.png" alt="O"></td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td> <td valign="top">
+&nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.reverse()</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.sort(comp)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>X::mapped_type</code></td>
+<td valign="top"> <code>Mapped (T.second)</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a[key]</code></td>
+<td valign="top"> <code>mapped_type</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>X::container_type</code></td>
+<td valign="top"> <code>Container</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>X a(c)</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>X a(comp, c)</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>X a(i, j, comp, c)</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>a.push(t)</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>a.pop()</code></td>
+<td valign="top"> <code>void</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>a.top()</code></td>
+<td valign="top"> <code>T&amp;</code> or <code>const T&amp;</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td></tr>
+
+<tr>
+<td valign="top"> <code>a.front()</code></td>
+<td valign="top"> <code>T&amp;</code> or <code>const T&amp;</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> <code>a.back()</code></td>
+<td valign="top"> <code>T&amp;</code> or <code>const T&amp;</code></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> <img src="dot.20210603.png" alt="O"></td>
+<td valign="top"> &nbsp;</td>
+<td valign="top"> &nbsp;</td></tr>
+</tbody></table>
+
+
+<!--- ******************* Choosing a Container ********************* -->
+<h3>Choosing a Container</h3>
+
+<img src="containerchoice.20210603.png" alt="" border="2">
+<p>
+
+
+</body></html>

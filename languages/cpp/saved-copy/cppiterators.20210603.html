@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>C++ Iterators &amp; Algorithms Cheat Sheet</title>
+<style>
+#main table { 
+   border:        #0033ff solid thin; 
+   color:         #ffffff;
+   background:    #3366ff; 
+}
+#main table b { 
+   color:         #ffffff;
+   background:    #3366ff; 
+}
+#main td { 
+   padding:       0px;
+   color:         #ffffff;
+   border:        #0033ff solid thin; 
+}
+#main th { 
+   text-align:    center;
+   color:         #ffffff;
+   padding:       0px;
+   border:        #0033ff solid thin; 
+}
+</style>
+<script src="cppiterators.20210603_files/quicklink.js"></script>
+</head>
+
+<body>
+<a href="http://www.cheat-sheets.org/">&lt;&lt; Cheat-Sheets</a>
+
+<!--- ********************** Title ********************************** -->
+<h1>C++ Iterators &amp; Algorithms Cheat Sheet</h1>
+<p>
+
+
+</p><div id="main">
+<!--- ******************* Key *************************************** -->
+<!--
+<h2>Key</h2>
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><code>X &nbsp;</code></td>
+<td>= container class &nbsp;</code></td>
+<td><code>a, b &nbsp;</code></td>
+<td>= objects of class X</td>
+</tr>
+<tr>
+<td><code>T &nbsp;</code></td>
+<td>= class which is stored in X  &nbsp;</code> </td>
+<td><code>t &nbsp;</code></td>
+<td>= object of class T</td>
+</tr>
+<tr>
+<td><code>n &nbsp;</code></td>
+<td>= number &nbsp;</code></td>
+<td><code>i, j &nbsp;</code></td>
+<td>= iterators of any type &nbsp;</code></td>
+</tr>
+<tr>
+<td><code>p, q, hint&nbsp;</code></td>
+<td>= iterators of type X&nbsp;</code></td>
+<td><code>key&nbsp;</code> </td>
+<td>= object of key class for X</td>
+</tr>
+<tr>
+<td><code>comp&nbsp;</code> </td>
+<td>= comparator object&nbsp;</code> </td>
+<td><code>pred&nbsp;</code> </td>
+<td>= predicate object</td>
+</tr>
+<tr>
+<td><code>bin_pred&nbsp;</code> </td>
+<td>= binary predicate object&nbsp;</code> </td>
+<td><code>c&nbsp;</code> </td>
+<td>= container object being adapted</td>
+</tr>
+</table>
+ 
+--> 
+
+<!--- ******************* Iterators ******************************** -->
+<h2>Iterators</h2>
+
+<table cellspacing="0" cellpadding="0" border="1">
+<tbody><tr>
+<th valign="top"> Category</th>
+<th valign="top"> Tag</th>
+<th valign="top"> Valid operations</th>
+<th valign="top"> Notes</th>
+</tr>
+
+<tr>
+<td valign="top"> Input Iterator</td>
+<td valign="top"> <code>input_iterator_tag</code></td>
+<td valign="top"> <code>I i(j); i=j; i==j; *j; j-&gt;m; ++j; j++; *j++;</code>
+</td>
+<td valign="top"> <code>i==j</code> does not imply <code>++i==++j;</code><br>
+single pass only</td></tr>
+
+<tr>
+<td valign="top"> Output Iterator</td>
+<td valign="top"> <code>output_iterator_tag</code></td>
+<td valign="top"> <code>I i(j); i=j; ++j; j++; *j=t; *j++=t;</code></td>
+<td valign="top"> <code>t=*j;</code> is not valid<br>
+single pass only</td></tr>
+
+<tr>
+<td valign="top"> Forward Iterator</td>
+<td valign="top"> <code>forward_iterator_tag</code></td>
+<td valign="top"> <code>I i; I i(j); i=j; i==j; *j; j-&gt;m; ++j; j++; 
+                  *j++; *j=t; *j++=t;</code></td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> Bidirectional Iterator</td>
+<td valign="top"> <code>bidirectional_iterator_tag</code></td>
+<td valign="top"> In addition to those for Forward Iterator<br>
+<code>--j; j--; *j--;</code></td>
+<td valign="top"> &nbsp;</td></tr>
+
+<tr>
+<td valign="top"> Random Access Iterator</td>
+<td valign="top"> <code>random_access_iterator_tag</code></td>
+<td valign="top"> In addition to those for Bidirectional Iterator<br>
+<code>j+=n; j+n; n+j; n=i-j; j[n]; i&lt;j; i&gt;j; i&gt;=j; i&lt;=j;</code></td>
+<td valign="top"> &nbsp;</td></tr>
+</tbody></table>
+
+<!--- ******************* Useful Iterator Templates ********************* -->
+<h3>Useful Iterator Templates</h3>
+
+<p>
+
+<code>
+template &lt;class Category,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; class
+Tp,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; class
+Distance&nbsp; = ptrdiff_t,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; class
+Pointer&nbsp;&nbsp; = T*,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; class
+Reference = T&amp;&gt;<br>
+struct <b>iterator</b><br>
+{<br>
+&nbsp; typedef Category&nbsp; iterator_category;<br>
+&nbsp; typedef T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+value_type;<br>
+&nbsp; typedef Distance&nbsp; difference_type;<br>
+&nbsp; typedef Pointer&nbsp;&nbsp; pointer;<br>
+&nbsp; typedef Reference reference;<br>
+}
+</code>
+</p><p>
+
+<code>
+template &lt;class I&gt;<br>
+struct <b>iterator_traits</b><br>
+{<br>
+&nbsp; typedef typename I::iterator_category
+iterator_category;<br>
+&nbsp; typedef typename
+I::value_type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+value_type;<br>
+&nbsp; typedef typename I::difference_type&nbsp;&nbsp;
+difference_type;<br>
+&nbsp; typedef typename
+T::pointer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+pointer;<br>
+&nbsp; typedef typename
+I::reference&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+reference;<br>
+};<br>
+&nbsp;<br>
+template &lt;class T&gt; struct
+<b>iterator_traits&lt;T*&gt;</b>;<br>
+template &lt;class T&gt; struct <b>iterator_traits&lt;const
+T*&gt;</b>;
+</code>
+
+<!--- ******************* Iterator Adaptors ********************* -->
+</p><h3>Iterator Adaptors</h3>
+
+<p>
+
+
+<table cellspacing="0" cellpadding="0" border="1">
+<tbody><tr>
+<th width="55%"> Adaptor </th>
+<th> Description </th>
+</tr>
+
+<tr>
+<td valign="top">
+<code>template &lt;class Iter&gt; class <b>reverse_iterator</b>&nbsp;</code>
+</td> 
+<td valign="top">
+Iterates in the reverse direction to the iterator it adapts
+</td> </tr> 
+
+<tr>
+<td valign="top">
+<code><b>reverse_iterator</b>(Iter I)</code>
+</td> 
+<td valign="top">
+Constructor
+</td> </tr> 
+
+<tr>
+<td valign="top">
+<code>template &lt;class Seq&gt; class <b>back_insert_iterator</b></code>
+</td> 
+<td valign="top">
+Does a.push_back(t) into the sequence with every assignment
+</td> </tr> 
+
+<tr> 
+<td valign="top">
+<code>front_insert_iterator&lt;Seq&gt; <b>back_inserter</b>(Seq&amp; x)</code>
+</td> 
+<td valign="top">
+Helper creation function
+</td> </tr> 
+
+<tr> 
+<td valign="top">
+<code>template &lt;class Seq&gt; class <b>front_insert_iterator</b></code>
+</td> 
+<td valign="top">
+Does a.push_front(t) into the sequence with every assignment
+</td> </tr> 
+
+<tr> 
+<td valign="top">
+<code>front_insert_iterator&lt;Seq&gt; <b>front_inserter</b>(Seq&amp; x)</code>
+</td> 
+<td valign="top">
+Helper creation function<br>
+</td> </tr> 
+
+<tr> 
+<td valign="top">
+<code>insert_iterator &lt;class Container, class I&gt; class
+<b>insert_iterator</b></code>&nbsp;
+</td>
+<td valign="top">
+Does a.insert(i, t) into the sequence with every assignment
+</td> </tr>
+
+<tr> 
+<td valign="top">
+<code>inserter&lt;Container&gt; <b>inserter</b>&lt;Container&amp; x, I i)</code>
+</td>
+<td valign="top">
+Helper creation function
+</td> </tr>
+
+<tr> 
+<td valign="top">
+<code>template &lt;class T, class Ch=char, class Traits=char_traits&lt;Ch&gt;,
+class Dist=ptrdiff_t&gt; class <b>istream_iterator;</b></code>
+</td>
+<td valign="top">
+Each reference reads T objects from an input stream
+</td> </tr>
+
+<tr> 
+<td valign="top">
+<code><b>istream_iterator</b>(basic_istream&lt;Ch, Traits&gt;&amp; s);</code>
+</td>
+<td valign="top">
+Constructor
+</td> </tr>
+
+<tr> 
+<td valign="top">
+<code>template &lt;class T, class Ch=char, class 
+Traits=char_traits&lt;Ch&gt; &gt; class <b>ostream_iterator</b></code>
+</td>
+<td valign="top">
+Each assignment writes to an output stream
+</td> </tr>
+
+<tr> 
+<td valign="top">
+<code><b>ostream_iterator</b>(basic_istream&lt;Ch,
+Traits&gt;&amp; s, const Ch* delim) </code>
+</td>
+<td valign="top">
+Constructor
+</td> </tr>
+
+<tr> 
+<td valign="top">
+<code> template&lt;class CharT, class Traits&gt; class
+<b>istreambuf_iterator</b></code>
+</td>
+<td valign="top">
+Each reference reads from an input stream
+</td> </tr>
+
+<tr> 
+<td valign="top">
+<code>template&lt;class CharT, class Traits&gt; class
+o<b>streambuf_iterator</b></code>
+</td>
+<td valign="top">
+Each reference writes to an input stream
+</td> </tr>
+
+<tr> 
+<td valign="top">
+<code>template &lt;class ForwardIter, class T&gt; class
+<b>raw_storage_iterator</b></code>
+</td><td valign="top">
+Raw memory iterator
+</td> </tr>
+</tbody></table>
+
+
+<!--- ******************* Functors ****************************** -->
+</p><h2>Functors</h2>
+
+<h3>Useful Functor Templates</h3>
+<code>
+template &lt;class Arg, class Result&gt;<br>
+struct <b>unary_function</b><br>
+{<br>
+&nbsp;&nbsp; typedef Arg&nbsp;&nbsp;&nbsp;&nbsp;
+argument_type;<br>
+&nbsp;&nbsp; typedef Result&nbsp; result_type;<br>
+};
+</code>
+<p>
+<code>
+template &lt;class Arg1, class Arg2, class Result&gt;<br>
+struct <b>binary_function</b><br>
+{<br>
+&nbsp;&nbsp; typedef Arg1&nbsp;&nbsp;&nbsp;
+first_argument_type;<br>
+&nbsp;&nbsp; typedef Arg2&nbsp;&nbsp;&nbsp;
+second_argument_type;<br>
+&nbsp;&nbsp; typedef Result&nbsp; result_type;<br>
+};
+</code>
+</p><p>
+</p><h3>Functors </h3>
+
+<dl>
+<dt>
+Arithmetic operations
+</dt>
+<dd>
+<code><b>plus minus multiplies divides modulus negate</b></code>
+</dd>
+<p>
+</p><dt>
+Comparisons
+</dt>
+<dd>
+<code><b>equal_to not_equal_to less greater less_equal greater_equal</b></code>
+</dd>
+<p>
+</p><dt>
+Logical operations
+</dt>
+<dd>
+<code><b>logical_and logical_or logical_not</b></code>
+</dd>
+<p>
+</p><dt>
+Hash function
+</dt>
+<dd>
+<code><b>hash</b></code>
+</dd>
+<p>
+</p><dt>
+Negators
+</dt>
+<dd>
+<code><b>not1</b>(const Pred&amp; pred);</code><br>
+<code><b>not2</b>(const BinPred&amp; bin_pred);</code><br>
+</dd>
+<p>
+</p><dt>
+Binders
+</dt>
+<dd>
+<code><b>bind1st</b>(const Op&amp; op, const T&amp; bound_value);</code><br>
+<code><b>bind2nd</b>(const Op&amp; op, const T&amp; bound_value);</code><br>
+</dd>
+<p>
+</p><dt>
+Adaptors
+</dt>
+<dd>
+<code><b>ptr_fun</b>(FunctionPtr f);</code>
+<dl> <dd>
+Converts a function pointer to a functor.<br>
+Unary function if f takes one argument, binary function if f takes two.
+</dd> </dl>
+
+</dd><dd>
+<code><b>mem_fun</b>(PtrToMember mf);</code>
+<dl> <dd>
+Converts a pointer to member to a functor whose first arg is a <b>pointer</b>
+to the object.<br>
+Unary function if mf takes no arguments, binary function if mf
+takes an argument.
+</dd> </dl>
+</dd><dd>
+<code><b>mem_fun_ref</b>(PtrToMember mf);</code>
+<dl> <dd>
+Converts a pointer to member to a functor whose first arg is a <b>reference</b> to the
+object.<br>
+Unary function if mf takes no arguments, binary function if mf
+takes one argument.
+</dd> </dl>
+</dd>
+
+</dl>
+
+<p>
+
+<!--- ******************* Algorithms **************************** -->
+</p><h2>Algorithms</h2>
+<code>
+distance_type n = <b>distance</b>(first, last);<br>
+<b>advance</b>(i, n);<br>
+Function result = <b>for_each</b>(first, last, func);<br>
+InputIter loc = <b>find</b>(first, last, target);<br>
+InputIter loc = <b>find_if</b>(first, last, pred);<br>
+ForwardIter loc = <b>adjacent_find</b>(first, last[, bin_pred]);<br>
+ForwardIter loc = <b>find_first_of</b>(first, last, targets_first,
+targets_last[, bin_pred]);<br>
+ForwardIter loc = <b>search</b>(first, last, subseq_first, subseq_last[,
+bin_pred]);<br>
+ForwardIter loc = <b>search_n</b>(first, last, count, target[, bin_pred]);<br>
+ForwardIter loc = <b>find_end</b>(first, last, subseq_first, subseq_last[,
+bin_pred]);<br>
+difference_type n = <b>count</b>(first, last, value);<br>
+difference_type n = <b>count_if</b>(first, last, value, pred);<br>
+pair&lt;InputIter1, InputIter2&gt; differ = <b>mismatch</b>(first1, last1,
+first2[, bin_pred]);<br>
+bool is_equal = <b>equal</b>(first1, last1, first2[, bin_pred]);<br>
+OutputIter result_end = <b>copy</b>(first, last, result);<br>
+BidirectionalIter result_begin = <b>copy_backward</b>(first, last,
+result_end);<br>
+<b>swap</b>(a, b); <br>
+ForwardIter2 new_last2 = <b>swap_ranges</b>(first1, last1, first2);<br>
+OutputIter result_end = <b>transform</b>(first, last, result, op);<br>
+OutputIter result_end = <b>transform</b>(first1, last2, first2, result,
+bin_op);<br>
+<b>replace</b> (first, last, old_value, new_value);<br>
+<b>replace_if</b>(first, last, pred, new_value);<br>
+OutputIter result_end = <b>replace_copy</b>(first, last, result, old_value,
+new_value);<br>
+OutputIter result_end = <b>replace_copy_if</b>(first, last, result, pred,
+new_value);<br>
+<b>fill</b>(first, last, value);<br>
+<b>fill_n</b>(first, count, value);<br>
+<b>generate</b>(first, last, generator);<br>
+<b>generate_n</b>(first, count, generator);<br>
+ForwardIter new_last <b>remove</b>(first, last, value);<br>
+ForwardIter new_last <b>remove_if</b>(first, last, pred);<br>
+OutputIter result_end <b>remove_copy</b>(first, last, result, value);<br>
+OutputIter result_end <b>remove_copy_if</b>(first, last, result, pred);<br>
+ForwardIter new_last = <b>unique</b>(first, last[, bin_pred]);<br>
+ForwardIter result_end = <b>unique_copy</b>(first, last[, bin_pred]);<br>
+<b>reverse</b>(first, last);<br>
+OutputIter result_end = <b>reverse_copy</b>(first, last, result);<br>
+<b>rotate</b>(first, middle, last);<br>
+OutputIter result_end = <b>rotate_copy</b>(first, middle, last, result);<br>
+<b>random_shuffle</b>(first, last[, rand]);<br>
+BidirectionalIter middle = <b>partition</b>(first, last, pred);<br>
+BidirectionalIter middle = <b>stable_partition</b>(first, last, pred);<br>
+<b>sort</b>(first, last[, comp]);<br>
+<b>stable_sort</b>(first, last[, comp]);<br>
+<b>partial_sort</b>(first, middle, last[, comp]);<br>
+RandomAccessIter result_end = <b>partial_sort_copy</b>(first, middle, last,
+result_first, result_last[, comp]);<br>
+<b>nth_element</b>(first, nth, last[, comp]);<br>
+ForwardIter loc = <b>lower_bound</b>(first, last, value[, comp]);<br>
+ForwardIter loc = <b>upper_bound</b>(first, last, value[, comp]);<br>
+pair&lt;ForwardIter, ForwardIter&gt; loc_range =
+<b>equal_range</b>(first, last, value[, comp]);<br>
+bool is_present = <b>binary_search</b>(first, last, value[, comp]);<br>
+OutputIter result_end = <b>merge</b>(first1, last1, first2, last2, result[,
+comp]);<br>
+<b>inplace_merge</b>(first, middle, last[, comp]);<br>
+bool is_included = <b>includes</b>(first, last, subseq_first, subseq_last[,
+comp]);<br>
+OutputIter result_end = <b>set_union</b>(first1, last1, first2, last2, result[,
+comp]);<br>
+OutputIter result_end = <b>set_intersection</b>(first1, last1, first2, last2,
+result[, comp]);<br>
+OutputIter result_end = <b>set_difference</b>(first1, last1, first2, last2,
+result[, comp]);<br>
+OutputIter result_end = <b>set_symetric_difference</b>(first1, last1, first2,
+last2, result[, comp]);<br>
+minimum = <b>min</b>(a, b); <br>
+maximum = <b>max</b>(a, b);<br>
+ForwardIter loc = <b>min_element</b>(first, last[, bin_pred]);<br>
+ForwardIter loc = <b>max_element</b>(first, last[, bin_pred]);<br>
+bool is_less = <b>lexicographical_compare</b>(first1, last1, first2, last2[,
+bin_pred]);<br>
+bool <b>next_permutation</b>(first, last[, comp]);<br>
+bool <b>prev_permutation</b>(first, last[, comp]);<br>
+T total = <b>accumulate</b>(first, last, init_total[, bin_op]);<br>
+T prod = <b>inner_product</b>(first1, last1, first2, init[, bin_op1,
+bin_op2]);<br>
+OutputIter result_end = <b>partial_sum</b>(first, last, result[, bin_op]);<br>
+OutputIter result_end = <b>adjacent_difference</b>(first, last, result[,
+bin_op]);<br>
+RandomAccessIter result_end = <b>random_sample</b>(first, last, out_first,
+out_last[, rand])<br>
+RandomAccessIter result_end = <b>random_sample_n</b>(first, last, out_first,
+count[, rand])<br>
+bool is_inorder = <b>is_sorted</b>(first, last[, comp]);<br>
+</code>
+</body></html>

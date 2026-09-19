@@ -1,0 +1,655 @@
+% Reference Card for PHP
+
+% Copyright (c) 2002 Steven R. Gould. May be freely distributed.
+% Created January 2002
+
+%**start of header
+\newcount\columnsperpage
+
+% This file can be printed with 1, 2, or 3 columns per page (see below).
+% [For 2 or 3 columns, you'll need 6 and 8 point fonts.]
+% Specify how many you want here.  Nothing else needs to be changed.
+
+\columnsperpage=3
+
+% Copyright (c) 2002 Steven R. Gould
+
+% This reference card is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+
+% This file is intended to be processed by plain TeX (TeX82).
+%
+% The final reference card has six columns, three on each side.
+% This file can be used to produce it in any of three ways:
+% 1 column per page
+%    produces six separate pages, each of which needs to be reduced to 80%.
+%    This gives the best resolution.
+% 2 columns per page
+%    produces three already-reduced pages.
+%    You will still need to cut and paste.
+% 3 columns per page
+%    produces two pages which must be printed sideways to make a
+%    ready-to-use 8.5 x 11 inch reference card.
+%    For this you need a dvi device driver that can print sideways.
+% Which mode to use is controlled by setting \columnsperpage above.
+%
+% Author:
+%  Steven R. Gould
+%  Publishing Writes
+%  7259 Dogwood Creek Lane
+%  Dallas, TX 75252 USA
+%  Internet:  sgould@publishingwrites.com
+%
+% Thanks:
+%  Reference card macros due to Stephen Gildea.
+%
+% History:
+%  Version 1.0 - 5 January 2002, first general distribution
+
+\def\versionnumber{1.0}  % Version of this reference card
+\def\year{2002}
+\def\month{January}
+\def\version{\month\ \year\ v\versionnumber}
+
+\def\shortcopyrightnotice{\vskip .5ex plus 2 fill
+  \centerline{\small \copyright\ \year\ Steven R. Gould
+  Permissions on back.  v\versionnumber}}
+
+\def\copyrightnotice{
+\vskip 1ex plus 100 fill\begingroup\small
+\centerline{\version. Copyright \copyright\ \year\ Steven R. Gould}
+
+Permission is granted to make and distribute copies of
+this card provided the copyright notice and this permission notice
+are preserved on all copies.
+
+Send comments and corrections to Steven R. Gould, Publishing Writes,
+Dallas, TX 75252, USA. 
+$\langle$sgould@publishingwrites.com$\rangle$
+
+\endgroup}
+
+% make \bye not \outer so that the \def\bye in the \else clause below
+% can be scanned without complaint.
+\def\bye{\par\vfill\supereject\end}
+
+\newdimen\intercolumnskip
+\newbox\columna
+\newbox\columnb
+
+\def\ncolumns{\the\columnsperpage}
+
+\message{[\ncolumns\space 
+  column\if 1\ncolumns\else s\fi\space per page]}
+
+\def\scaledmag#1{ scaled \magstep #1}
+
+% This multi-way format was designed by Stephen Gildea
+% October 1986.
+\if 1\ncolumns
+  \hsize 4in
+  \vsize 10in
+  \voffset -.7in
+  \font\titlefont=\fontname\tenbf \scaledmag3
+  \font\headingfont=\fontname\tenbf \scaledmag2
+		\font\headingfonttt=\fontname\tentt \scaledmag2
+  \font\smallfont=\fontname\sevenrm
+  \font\smallsy=\fontname\sevensy
+
+  \footline{\hss\folio\hss}
+  \def\makefootline{\baselineskip10pt\hsize4in\line{\the\footline}}
+\else
+  \hsize 3.2in
+  \vsize 7.95in
+  \hoffset -.75in
+  \voffset -.745in
+  \font\titlefont=cmbx10 \scaledmag2
+  \font\headingfont=cmbx10 \scaledmag1
+		\font\headingfonttt=cmtt10 \scaledmag1
+  \font\smallfont=cmr6
+  \font\smallsy=cmsy6
+  \font\eightrm=cmr8
+  \font\eightbf=cmbx8
+  \font\eightit=cmti8
+  \font\eighttt=cmtt8
+  \font\eightsy=cmsy8
+  \font\eightsl=cmsl8
+  \font\eighti=cmmi8
+  \font\eightex=cmex10 at 8pt
+  \textfont0=\eightrm  
+  \textfont1=\eighti
+  \textfont2=\eightsy
+  \textfont3=\eightex
+  \def\rm{\fam0 \eightrm}
+  \def\bf{\eightbf}
+  \def\it{\eightit}
+  \def\tt{\eighttt}
+  \def\sl{\eightsl}
+  \normalbaselineskip=.8\normalbaselineskip
+  \normallineskip=.8\normallineskip
+  \normallineskiplimit=.8\normallineskiplimit
+  \normalbaselines\rm		%make definitions take effect
+
+  \if 2\ncolumns
+    \let\maxcolumn=b
+    \footline{\hss\rm\folio\hss}
+    \def\makefootline{\vskip 2in \hsize=6.86in\line{\the\footline}}
+  \else \if 3\ncolumns
+    \let\maxcolumn=c
+    \nopagenumbers
+  \else
+    \errhelp{You must set \columnsperpage equal to 1, 2, or 3.}
+    \errmessage{Illegal number of columns per page}
+  \fi\fi
+
+  \intercolumnskip=.46in
+  \def\abc{a}
+  \output={%
+      % This next line is useful when designing the layout.
+      %\immediate\write16{Column \folio\abc\space starts with \firstmark}
+      \if \maxcolumn\abc \multicolumnformat \global\def\abc{a}
+      \else\if a\abc
+	\global\setbox\columna\columnbox \global\def\abc{b}
+        %% in case we never use \columnb (two-column mode)
+        \global\setbox\columnb\hbox to -\intercolumnskip{}
+      \else
+	\global\setbox\columnb\columnbox \global\def\abc{c}\fi\fi}
+  \def\multicolumnformat{\shipout\vbox{\makeheadline
+      \hbox{\box\columna\hskip\intercolumnskip
+        \box\columnb\hskip\intercolumnskip\columnbox}
+      \makefootline}\advancepageno}
+  \def\columnbox{\leftline{\pagebody}}
+
+  \def\bye{\par\vfill\supereject
+    \if a\abc \else\null\vfill\eject\fi
+    \if a\abc \else\null\vfill\eject\fi
+    \end}  
+\fi
+
+% we won't be using math mode much, so redefine some of the characters
+% we might want to talk about
+\catcode`\^=12
+%\catcode`\_=12
+\catcode`\~=12
+
+\chardef\\=`\\
+\chardef\{=`\{
+\chardef\}=`\}
+\chardef\underscore=`\_
+\chardef\'="0D % These are upright quote marks
+
+
+\hyphenation{}
+
+\parindent 0pt
+\parskip .85ex plus .35ex minus .5ex
+
+\def\small{\smallfont\textfont2=\smallsy\baselineskip=.8\baselineskip}
+
+\outer\def\newcolumn{\vfill\eject}
+
+\outer\def\title#1{{\titlefont\centerline{#1}}\vskip 1ex plus .5ex}
+
+\outer\def\section#1{\par\filbreak
+  \vskip .5ex  minus .1ex {\headingfont #1}\mark{#1}%
+  \vskip .3ex  minus .1ex}
+
+\outer\def\librarysection#1#2{\par\filbreak
+  \vskip .5ex  minus .1ex {\headingfont #1}\quad{\headingfonttt<#2>}\mark{#1}%
+  \vskip .3ex  minus .1ex}
+
+
+\newdimen\keyindent
+
+\def\beginindentedkeys{\keyindent=1em}
+\def\endindentedkeys{\keyindent=0em}
+\def\begindoubleindentedkeys{\keyindent=2em}
+\def\enddoubleindentedkeys{\keyindent=1em}
+\endindentedkeys
+
+\def\paralign{\vskip\parskip\halign}
+
+\def\<#1>{$\langle${\rm #1}$\rangle$}
+
+\def\kbd#1{{\tt#1}\null}	%\null so not an abbrev even if period follows
+
+\def\beginexample{\par\vskip1\jot
+\hrule width.5\hsize
+\vskip1\jot
+\begingroup\parindent=2em
+  \obeylines\obeyspaces\parskip0pt\tt}
+{\obeyspaces\global\let =\ }
+\def\endexample{\endgroup}
+
+\def\Example{\qquad{\sl Example\/}.\enspace\ignorespaces}
+
+\def\key#1#2{\leavevmode\hbox to \hsize{\vtop
+  {\hsize=.75\hsize\rightskip=1em
+  \hskip\keyindent\relax#1}\kbd{#2}\hfil}}
+
+\newbox\metaxbox
+\setbox\metaxbox\hbox{\kbd{M-x }}
+\newdimen\metaxwidth
+\metaxwidth=\wd\metaxbox
+
+\def\metax#1#2{\leavevmode\hbox to \hsize{\hbox to .75\hsize
+  {\hskip\keyindent\relax#1\hfil}%
+  \hskip -\metaxwidth minus 1fil
+  \kbd{#2}\hfil}}
+
+\def\threecol#1#2#3{\hskip\keyindent\relax#1\hfil&\kbd{#2}\quad
+  &\kbd{#3}\quad\cr}
+
+% Define Italic Names
+\def\makedef#1 {%
+\expandafter\edef\csname#1\endcsname{\hbox{\it#1\/}}}
+\makedef arg
+\makedef base
+\makedef chr
+\makedef const
+\makedef declarations
+\makedef default
+\makedef dest
+\makedef dim
+\makedef dir
+\makedef dsn
+\makedef expr
+\makedef field
+\makedef filename
+\makedef fnc
+\makedef format
+\makedef fp
+\makedef index
+\makedef id
+\makedef label
+\makedef lastarg
+\makedef len
+\makedef max
+\makedef member
+\makedef min
+\makedef mode
+\makedef name
+\makedef object
+\makedef offset
+\makedef pointer
+\makedef pwd
+\makedef query
+\makedef result
+\makedef row
+\makedef src
+\makedef start
+\makedef statement
+\makedef statements
+\makedef str
+\makedef string
+\makedef tag
+\makedef text
+\makedef type
+\makedef user
+\makedef value
+\makedef var
+\makedef whence
+
+%**end of header
+
+
+\title{PHP 4 Reference Card}
+\centerline{by Steven R. Gould}
+\centerline{}
+
+\section{Escaping HTML}
+\key{preferred format}{<?php \dots ?>}
+\metax{verbose}{<script language=\"\space php\"\space>\dots</script>}
+
+\key{Less portable, may be disabled in php.ini:}{}
+\key{short-form}{<?\dots?>}
+\key{short-form expression}{<?=\expr ?>}
+\key{ASP-style}{<\%\dots\%>}
+\key{ASP-style expression}{<\%=\expr\%>}
+
+\section{Basic syntax}
+\key{statement terminator}{;}
+\key{C-style comments}{/*\dots*/}
+\key{C++-style comments}{//\dots}
+\key{shell-script-style comments}{\# \dots}
+\key{block delimiters}{\{ \}}
+\key{octal integers (prefix zero)}{0}
+\key{hexadecimal integers (prefix zero-ex)}{0x {\rm or} 0X}
+\metax{newline, cr, tab, backspace}{\\n, \\r, \\t, \\b}
+\metax{special characters}{\\\\, \\?, \\\', \\", \\\$}
+%\$  <-- To stop xemacs colorizing incorrectly!
+
+\section{Data Types}
+\key{boolean}{TRUE/FALSE}
+\key{integer}{-101, 23, 69}
+\key{floating point}{3.141592}
+\key{character string (parsed)}{\"\dots\"\space}
+\key{character string (unparsed)}{'\dots'}
+\metax{class}{class \name\space\{\dots\}}
+\metax{resource (refer to PHP manual for details)}{}
+\metax{array}{array([\index =>]\value,\dots )}
+\metax{\space where \index\space can be non-negative int or string}{}
+
+\section{Predefined PHP variables}
+\leftline{Many variables are defined that are specific to the web}
+\leftline{server and OS. Run {\tt phpinfo()} for a complete list of these.}
+\halign{\tt#\hfil&\qquad#\hfil\cr
+\$argv&array of arguments passed to script\cr  %$
+\$argc&number of arguments in {\tt \$argv}\cr  %$
+\$PHP\_SELF&filename of currently executing script\cr  %$
+}
+\key{}{}
+\leftline{The following are only available if {\tt track\_vars=On} in {\tt php.ini}}
+\key{}{}
+\halign{\tt#\hfil&\qquad#\hfil\cr
+\$HTTP\_COOKIE\_VARS&array of variables passed via cookies\cr  %$
+\$HTTP\_GET\_VARS&array of variables passed via GET\cr  %$
+\$HTTP\_POST\_VARS&array of variables passed via POST\cr  %$
+\$HTTP\_POST\_FILES&array of files uploaded via POST\cr  %$
+\$HTTP\_ENV\_VARS&array of variables from parent environment\cr  %$
+\$HTTP\_SERVER\_VARS&array of variables from HTTP server\cr  %$
+}
+
+\section{Control Structures}
+\halign{\tt#\hfil&\qquad#\hfil\cr
+include \filename&include named file (only if executed)\cr
+include\_once \filename&include named file (at most once)\cr
+require \filename&include named file, like C/C++ {\tt\#include}\cr
+require\_once \filename&include named file, if not already included\cr
+}
+
+% ****************************************
+% This goes at the bottom of page 1
+\shortcopyrightnotice
+
+\newcolumn
+
+\section{Flow of Control}
+\key{exit from \kbd{switch}, \kbd{while}, \kbd{do}, \kbd{for}}{break}
+\key{next iteration of \kbd{while}, \kbd{do}, \kbd{for}}{continue}
+\key{go to (avoid if possible!)}{goto \label}
+\key{label}{\label:}
+\key{return value from function}{return \expr}
+\key{terminate execution}{exit(\arg)}
+
+\metax{{\bf Flow Constructions} ({\tt if/while/for/do/switch})\hidewidth}{}
+\beginexample
+if (\expr)\quad\statement
+else if (\expr)\quad\statement
+else\quad\statement
+\endexample
+\beginexample
+for (\expr$_1$; \expr$_2$; \expr$_3$)
+\quad\statement
+\endexample
+\beginexample
+while (\expr)
+\quad\statement
+\endexample
+\beginexample
+do\quad \statement
+while(\expr);
+\endexample
+\beginexample
+switch (\expr) \{
+\quad case \const$_1$: \statement$_1$ break;
+\quad case \const$_2$: \statement$_2$ break;
+\quad default: \statement
+\}
+\endexample
+
+\section{Functions}
+\halign{\tt\qquad#\hfil&\qquad\qquad#\hidewidth\hfil\cr
+function \name([\arg,\dots,\arg[=\default]]) \{&\cr
+\quad\statement&\cr
+\quad return [\value];&\cr
+\}&\cr
+}
+
+\section{Classes and objects}
+\leftline{A ``class'' is a collection of related variables and functions}
+\leftline{{\bf Note}$_1$: constructors in derived classes do not call constructors}
+\leftline{in base classes! You must do this, if you want this behavior.}
+\leftline{{\bf Note}$_2$: all members are public}
+\key{}{}
+\leftline{\bf Class definition}
+\halign{\tt\qquad#\hfil&\qquad\qquad#\hidewidth\hfil\cr
+class \name\ [extends \base]\{&\cr
+\quad var \name;&declare member variables\cr
+\quad function \name\ \{\dots\}&function declarations\cr
+\};&end of class definition\cr
+}
+\key{}{}
+\leftline{\bf Using classes}
+\metax{create new instance of class}{\var\ = new \name[(\arg,\dots)]}
+\metax{accessing member variable}{\object->\member}
+\metax{calling member function}{\object->\fnc([\arg,\dots])}
+\metax{current object, from within class}{\$this}
+\metax{to reference parent class from base class}{parent::}
+\metax{to access members without class instance}{::}
+
+\section{Operators (decreasing precedence)}
+\hrule % Separator
+\metax{new operator}{new}
+\hrule % Separator
+\metax{array member accessor}{[]}
+\hrule % Separator
+\metax{not [logical operator]}{!}
+\metax{ones compliment [bit operator]}{~}
+\metax{increment, decrement}{++, --}
+\metax{error control operator}{@}
+\hrule
+\metax{multiply, divide, modulus (remainder)}{*, /, \%}
+\hrule % Separator
+\metax{addition, subtraction}{+, -, .}
+\hrule % Separator
+\metax{left, right shift [bit operations]}{<<, >>}
+\hrule % Separator
+\metax{comparison operators}{>, >=, <, <=}
+\hrule % Separator
+\metax{equality operators}{==, !=, ===, !==}
+\hrule % Separator
+\metax{bitwise and}{\&}
+\hrule % Separator
+\metax{bitwise exclusive-or (xor)}{^}
+\hrule % Separator
+\metax{bitwise or (inclusive-or)}{|}
+\hrule % Separator
+\metax{logical and}{\&\&}
+\hrule % Separator
+\metax{logical or}{||}
+\hrule % Separator
+\metax{conditional expression}{\expr$_1${?}\expr$_2${:}\expr$_3$}
+\hrule % Separator
+\metax{assignment operators}{=, +=, -=, *=, \dots}
+\hrule % Separator
+\metax{print operation}{print}
+\hrule % Separator
+\metax{logical and}{and}
+\hrule % Separator
+\metax{logical xor (exclusive-or)}{xor}
+\hrule % Separator
+\metax{logical or (inclusive-or)}{or}
+\hrule % Separator
+\metax{list operator}{,}
+\hrule % Separator
+\key{}{}
+
+\section{Predefined Apache variables}
+\leftline{More commonly used variables defined by Apache web server}
+\leftline{are listed below. Run {\tt phpinfo()} for a complete list.}
+\halign{\tt#\hfil&\qquad#\hfil\cr
+\$SERVER\_NAME&name of the web server\cr  %$
+\$SERVER\_SOFTWARE&server ID string, used in HTTP response\cr  %$
+\$SERVER\_PROTOCOL&HTTP protocol used to request page\cr  %$
+\$REQUEST\_METHOD&request method: {\tt GET}, {\tt HEAD}, {\tt POST}, {\tt PUT}\cr  %$
+\$QUERY\_STRING&query string via which page was accessed\cr  %$
+\$DOCUMENT\_ROOT&root directory under which script is running\cr  %$
+\$HTTP\_REFERER&referring URL\cr  %$
+\$HTTP\_USER\_AGENT&user's browser string\cr  %$
+\$HTTP\_REMOTE\_ADDR&user's IP address\cr  %$
+\$HTTP\_REMOTE\_PORT&port used on user's machine\cr  %$
+\$SCRIPT\_FILENAME&absolute path name of script\cr  %$
+\$SERVER\_ADMIN&server administrator's e-mail address\cr  %$
+\$SERVER\_PORT&port on server; e.g. {\tt HTTP 80}, {\tt HTTPS 443}\cr  %$
+\$PATH\_TRANSLATED&path of script relative to filesystem\cr  %$
+\$SCRIPT\_NAME&path of script relative to document root\cr  %$
+\$REQUEST\_URI&the requested URI; e.g. {\tt '/index.html'}\cr  %$
+}
+
+\newcolumn
+
+% This goes at the top of page 4 (=1st column on back of reference card)
+\title{PHP 4 Reference Card}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% LIBRARIES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\librarysection{String Functions}{string}
+\metax{return specific character}{chr(n)}
+\metax{return ASCII value of character}{ord(c)}
+\metax{length of string}{strlen(s)}
+
+\metax{\bf String formatting/output}{}
+\metax{output string(s)}{echo(s[,\dots])}
+\metax{output string}{print(s)}
+\metax{output formatted string}{printf(s[,\arg])}
+\metax{return a formatted string}{sprintf(s[,\arg])}
+
+\metax{\bf String comparison}{}
+\metax{binary safe case-sensitive compare}{strcmp(s$_1$,s$_2$)}
+\metax{binary safe case-sensitive compare}{strncmp(s$_1$,s$_2$,len)}
+\metax{binary safe case-insensitive compare}{strcasecmp(s$_1$,s$_2$)}
+\metax{binary safe case-insensitive compare}{strncasecmp(s$_1$,s$_2$,len)}
+
+\metax{\bf Searching strings}{}
+\metax{find position of 1st occurrence of char.}{strpos(h,n[,offset])}
+\metax{find position of last occurrence of char.}{strrpos(h,n)}
+\metax{find first occurrence of string}{strstr(h,n)}
+\metax{case-insensitive version of strstr}{stristr(h,n)}
+\metax{find last occurrence of char.}{strrchr(h,n)}
+
+\metax{\bf String manipulation}{}
+\metax{convert to upper/lower case}{strtoupper(s)/strtolower(s)}
+\metax{trim whitespace from start of string}{ltrim(s[,w])}
+\metax{trim whitespace from end of string}{rtrim(s[,w])}
+\metax{trim whitespace from start \& end}{trim(s[,w])}
+\metax{strip HTML\&PHP tags from string}{strip\_tags(s[,allow])}
+\metax{reverse a string}{strrev(s)}
+\metax{replace s$_1$ with s$_2$ in str}{str\_replace(s$_1$,s$_2$,\str)}
+\metax{translate characters}{strtr(\str,s$_1$,s$_2$)}
+\metax{extract part of a string}{substr(s,\start[,\len])}
+
+\librarysection{Filesystem Functions}{filesystem}
+\metax{open file}{fopen(\filename,\mode)}
+\metax{\qquad modes: \kbd{r} (read from beginning), \kbd{w} (overwrite), \kbd{a} (append)\hidewidth}{}
+\metax{\qquad modifiers: \kbd{+} (open for read \& write), \kbd{b} (binary mode)\hidewidth}{}
+\metax{close file}{fclose(\fp)}
+\metax{retrieve current position in file}{ftell(\fp)}
+\metax{jump to position in file}{fseek(\fp,\offset[,\whence])}
+
+\metax{get next character from file}{fgetc(\fp)}
+\metax{get line from file}{fgets(\fp[,\len])}
+\metax{read entire file into array}{file(\filename)}
+\metax{test for End Of File}{feof(\fp)}
+\metax{binary-safe file read}{fread(\fp,\len)}
+
+\metax{write to file}{fputs(\fp,s,\len)}
+\metax{flush output buffer}{fflush(\fp)}
+\metax{parse input from file}{fscanf(\fp,\format[,\var\dots])}
+\metax{binary-safe write to file}{fwrite(\fp,s,\len)}
+
+\metax{copy a file}{copy(\src,\dest)}
+\metax{available disk space}{diskfreespace(\dir)}
+\metax{test for existence of file}{file\_exists(\filename)}
+\metax{echo all remaining data}{fpassthru(\fp)}
+\metax{is file readable?}{is\_readable(\filename)}
+\metax{is file writable?}{is\_writeable(\filename)}
+
+\librarysection{Mathematical Functions}{math}
+\metax{trig functions}{sin(x), cos(x), tan(x)}
+\metax{inverse trig functions}{asin(x), acos(x), atan(x)}
+\metax{arctan$(y/x)$}{atan2(y,x)}
+\metax{hyperbolic trig functions}{sinh(x), cosh(x), tanh(x)}
+\metax{exponentials \& logs}{exp(x), log(x), log10(x)}
+\metax{powers}{pow(x,y), sqrt(x)}
+\metax{rounding}{ceil(x), floor(x), abs(x)}
+\metax{minimum, maximum}{min(x,\dots), max(x,\dots)}
+\metax{random number}{rand(),rand(\min,\max)}
+%
+%\metax{decimal/hex conversion}{dechex(x),hexdec(s)}
+%\metax{decimal/octal conversion}{decoct(x),octdec(s)}
+%\metax{decimal/binary conversion}{decbin(x),bindec(s)}
+%\metax{arbitrary base conversion}{base\_convert(x,f,t)}
+
+\librarysection{Unified ODBC Functions}{odbc}
+\metax{connect to data source}{odbc\_connect(\dsn,\user,\pwd)}
+\metax{close connection(s)}{odbc\_close(\id),odbc\_close\_all()}
+\metax{retrieve last error/msg}{odbc\_error(),odbc\_errormsg()}
+
+\metax{prepare SQL statement}{odbc\_prepare(\id,\query)}
+\metax{execute prepared SQL statement}{odbc\_execute(\id[,\arg])}
+\metax{prepare \& execute SQL statement}{odbc\_exec(\id,\query)}
+
+\metax{get row as an array}{odbc\_fetch\_into(\id[,\row,\result])}
+\metax{fetch a result row}{odbc\_fetch\_row(\id[,\row])}
+\metax{get result from a field}{odbc\_result(\id,\field)}
+\metax{free result resources}{odbc\_free\_result(\id)}
+\metax{number of rows in result}{odbc\_num\_rows(\id)}
+\metax{output results in HTML table}{odbc\_result\_all(\id[,\format])}
+
+\metax{\bf Transactions}{}
+\metax{toggle autocommit on/off}{odbc\_autocommit(\id)}
+\metax{commit transaction}{odbc\_commit(\id)}
+\metax{rollback transaction}{odbc\_rollback(\id)}
+%
+%\librarysection{PDF Functions}{}
+%\metax{}{}
+
+\librarysection{Session Handling Functions}{session}
+\metax{initialize session data}{session\_start()}
+\metax{destroy current session data}{session\_destroy()}
+\metax{get/set session name}{session\_name([s])}
+\metax{get/set session ID}{session\_id([s])}
+\metax{register variables in session}{session\_register(\name[,\dots])}
+\metax{unregister variable}{session\_unregister(\name)}
+\metax{variable is registered?}{session\_is\_registered(\name)}
+\metax{get cookie parameters}{session\_get\_cookie\_params()}
+\metax{set cookie params}{session\_set\_cookie\_params(l[,p[,s]])}
+\metax{write data \& close session}{session\_write\_close()}
+
+\librarysection{Miscellaneous Functions}{misc}
+\metax{evaluate string as PHP code}{eval(s)}
+\metax{terminate script}{exit(x),exit(s)}
+
+\metax{\bf Date/Time functions}{}
+\metax{format a local date/time}{date(format[,timestamp])}
+\metax{current time in secs. since Jan.1, 1970}{time()}
+\metax{current time in microseconds}{microtime()}
+
+\metax{\bf External program execution}{}
+\leftline{The following can be used to execute an external program.\hidewidth}{}
+\leftline{They differ in their handling of the output.\hidewidth}{}
+\metax{output returned in result array}{exec(prg[,result,status])}
+\metax{output returned as string}{shell\_exec(prg)}
+\metax{display output}{system(prg[,status])}
+\metax{display raw output}{passthru(prg[,status])}
+
+\section{Reference}
+\metax{PHP web site}{http://www.php.net/}
+\metax{Zend Technologies}{http://www.zend.com/}
+\metax{PHP Builder}{http://www.phpbuilder.com/}
+\metax{Knowledge Base}{http://php.faqts.com/}
+\metax{Apache web server}{http://httpd.apache.org/}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% END LIBRARIES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% This goes at the bottom of the last page (column 6)
+\copyrightnotice
+%
+
+\bye
+
+% Local variables:
+% compile-command: "tex PHPRefCard ; dvips -t landscape PHPRefCard"
+% End:
