@@ -13,11 +13,14 @@ SOURCE = "https://cheat-sheets.org/"
 SOURCE_WWW = "https://www.cheat-sheets.org/"
 WAYBACK = "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/"
 WIKI_LICENSE = "https://creativecommons.org/licenses/by-sa/4.0/"
+GITHUB_PROFILE = "https://github.com/marchon"
+GITHUB_REPO = "https://github.com/marchon/cheat-sheets"
 CREDIT_TEXT = (
     "Source: cheat-sheets.org. Internet Archive snapshots: "
     "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. "
     "Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert "
-    "<marchon@gmail.com>, https://georgelambert.org/. "
+    "<marchon@gmail.com>, https://georgelambert.org/, https://github.com/marchon, "
+    "https://github.com/marchon/cheat-sheets. "
     "George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets."
 )
 GEORGE_ID = "https://georgelambert.org/#person"
@@ -132,6 +135,11 @@ def person_node() -> dict:
         "name": "George Lambert",
         "email": "mailto:marchon@gmail.com",
         "url": "https://georgelambert.org/",
+        "sameAs": [GITHUB_PROFILE, GITHUB_REPO],
+        "identifier": [
+            {"@type": "PropertyValue", "propertyID": "GitHub", "value": GITHUB_PROFILE},
+            {"@type": "PropertyValue", "propertyID": "GitHub repository", "value": GITHUB_REPO},
+        ],
         "description": (
             "Created the grouping index, search UI, SEO markup, JSON-LD graph, and llms.txt "
             "for this archive. Not the author of the underlying cheat sheets."
@@ -154,7 +162,7 @@ def indexing_work_node() -> dict:
         "accountablePerson": {"@id": GEORGE_ID},
         "sdPublisher": {"@id": GEORGE_ID},
         "isBasedOn": SOURCE,
-        "sameAs": [SOURCE, SOURCE_WWW, WAYBACK],
+        "sameAs": [SOURCE, SOURCE_WWW, WAYBACK, GITHUB_REPO],
         "license": "UNLICENSED",
         "encoding": [
             {"@type": "MediaObject", "url": f"{BASE}/graph.jsonld", "encodingFormat": "application/ld+json"},
@@ -199,7 +207,7 @@ def website_node() -> dict:
         ),
         "inLanguage": "en",
         "publisher": {"@id": GEORGE_ID},
-        "sameAs": [SOURCE, SOURCE_WWW, WAYBACK],
+        "sameAs": [SOURCE, SOURCE_WWW, WAYBACK, GITHUB_REPO],
         **credit_fields(),
         "potentialAction": {
             "@type": "SearchAction",
@@ -230,7 +238,7 @@ def catalog_node(catalog: dict, groups: list[dict]) -> dict:
         "hasPart": [{"@id": group_id(g["id"])} for g in groups if g.get("topic_count")],
         "numberOfItems": catalog["topic_count"],
         "keywords": [g["title"] for g in groups if g.get("topic_count")],
-        "sameAs": [SOURCE, SOURCE_WWW, WAYBACK],
+        "sameAs": [SOURCE, SOURCE_WWW, WAYBACK, GITHUB_REPO],
         **credit_fields(),
     }
 
@@ -332,7 +340,7 @@ def topic_node(topic: dict) -> dict:
         "isPartOf": {"@id": group_id(topic["group"])},
         "learningResourceType": "cheat sheet",
         "educationalUse": "reference",
-        "sameAs": same_as + [SOURCE, SOURCE_WWW, WAYBACK],
+        "sameAs": same_as + [SOURCE, SOURCE_WWW, WAYBACK, GITHUB_PROFILE, GITHUB_REPO],
         **credit_fields(),
         "hasPart": [{"@id": p} for p in parts],
         "significantLink": [ow["url"] for ow in topic.get("official_websites") or [] if ow.get("url")],
@@ -411,7 +419,7 @@ def homepage_graph(catalog: dict, topics: list[dict], groups: list[dict]) -> dic
         "inLanguage": "en",
         "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lede"]},
     }
-    webpage = {**webpage, **credit_fields(), "sameAs": [SOURCE, SOURCE_WWW, WAYBACK]}
+    webpage = {**webpage, **credit_fields(), "sameAs": [SOURCE, SOURCE_WWW, WAYBACK, GITHUB_PROFILE, GITHUB_REPO]}
     graph = [
         person_node(),
         indexing_work_node(),

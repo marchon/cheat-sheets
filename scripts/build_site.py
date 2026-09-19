@@ -196,7 +196,9 @@ PAGE = """<!DOCTYPE html>
   <footer>
     <p>Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>:
     <a href="https://georgelambert.org/">George Lambert</a>
-    &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;.
+    &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;,
+    <a href="https://github.com/marchon">github.com/marchon</a>,
+    <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>.
     That credit is for the index and searchability only, not for the underlying cheat sheets.</p>
     <p>Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>.
     Internet Archive snapshots:
@@ -399,7 +401,9 @@ def slim_catalog(catalog: dict) -> dict:
 CREDIT_HTML = (
     'Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: '
     '<a href="https://georgelambert.org/">George Lambert</a> '
-    '&lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;. '
+    '&lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, '
+    '<a href="https://github.com/marchon">github.com/marchon</a>, '
+    '<a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. '
     "That credit is for the index and searchability only, not for the underlying cheat sheets. "
     f'Source: <a href="{SOURCE}">cheat-sheets.org</a>. '
     f'Internet Archive snapshots: <a href="{WAYBACK}">Wayback Machine calendar for cheat-sheets.org</a>. '
@@ -622,7 +626,8 @@ def write_static_files(root: Path, catalog: dict, slim: dict) -> None:
         f"Sitemap: {BASE}/sitemap.xml",
         "",
         "Indexing, searchability, SEO, JSON-LD, and this llms.txt file:",
-        "George Lambert <marchon@gmail.com>, https://georgelambert.org/.",
+        "George Lambert <marchon@gmail.com>, https://georgelambert.org/,",
+        "https://github.com/marchon, https://github.com/marchon/cheat-sheets.",
         "That credit is for the index and searchability only, not for the underlying cheat sheets.",
         "",
         "This archive indexes cheat-sheets.org topics in groups, with official websites,",

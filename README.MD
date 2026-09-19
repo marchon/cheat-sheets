@@ -82,10 +82,18 @@ Catalog snapshot: 285 topics, 668 saved copies, 276 Wikipedia links, 203 officia
 - [Other](other/) — 1 topics, 0 saved copies, 1 Wikipedia entries
 
 Machine-readable catalog: [catalog/catalog.json](catalog/catalog.json).
+Live index: [https://cheat-sheet-index.georgelambert.org/](https://cheat-sheet-index.georgelambert.org/).
+GitHub: [https://github.com/marchon/cheat-sheets](https://github.com/marchon/cheat-sheets).
+
+Indexing, search, SEO, JSON-LD, and llms.txt: George Lambert
+&lt;marchon@gmail.com&gt;, [georgelambert.org](https://georgelambert.org/),
+[github.com/marchon](https://github.com/marchon). That credit is for the index
+and searchability only, not for the underlying cheat sheets.
 
 ## Contributing
 
-Questions: open an issue in this repository. Pull requests that fix catalog grouping or add missing saved copies are welcome.
+Questions: open an issue at [github.com/marchon/cheat-sheets](https://github.com/marchon/cheat-sheets/issues).
+Pull requests that fix catalog grouping or add missing saved copies are welcome.
 
 ## License
 

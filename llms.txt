@@ -7,7 +7,8 @@ JSON-LD: https://cheat-sheet-index.georgelambert.org/graph.jsonld
 Sitemap: https://cheat-sheet-index.georgelambert.org/sitemap.xml
 
 Indexing, searchability, SEO, JSON-LD, and this llms.txt file:
-George Lambert <marchon@gmail.com>, https://georgelambert.org/.
+George Lambert <marchon@gmail.com>, https://georgelambert.org/,
+https://github.com/marchon, https://github.com/marchon/cheat-sheets.
 That credit is for the index and searchability only, not for the underlying cheat sheets.
 
 This archive indexes cheat-sheets.org topics in groups, with official websites,
