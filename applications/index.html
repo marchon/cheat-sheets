@@ -6696,7 +6696,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -6706,70 +6713,191 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">End-user applications, browsers, CMS, office, and mail.</p>
   </header>
   <main>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/applications/android/saved-copy/Android_Classes.pdf">Android — Android_Classes.pdf</a></li>
-      <li><a href="/applications/blogger/saved-copy/Blogger-Cheat-Sheet.pdf">Blogger — Blogger-Cheat-Sheet.pdf</a></li>
-      <li><a href="/applications/drupal/saved-copy/drupal-6-theming-cheat-sheet.pdf">Drupal — drupal-6-theming-cheat-sheet.pdf</a></li>
-      <li><a href="/applications/firefox/saved-copy/firefox-shortcuts.pdf">Firefox — firefox-shortcuts.pdf</a></li>
-      <li><a href="/applications/firefox/saved-copy/firefox-cheat-sheet.pdf">Firefox — firefox-cheat-sheet.pdf</a></li>
-      <li><a href="/applications/firefox/saved-copy/firefox-cheat-sheet.png">Firefox — firefox-cheat-sheet.png</a></li>
-      <li><a href="/applications/firefox-add-ons/saved-copy/dhffkc6q_97fsjrgmd7.gif">Firefox Add-ons — dhffkc6q_97fsjrgmd7.gif</a></li>
-      <li><a href="/applications/firefox-add-ons/saved-copy/vimperator_cheatsheet.pdf">Firefox Add-ons — vimperator_cheatsheet.pdf</a></li>
-      <li><a href="/applications/google-chrome/saved-copy/ChromePlus_Mouse_Gestures_CheatSheet_version_1.0.jpg">Google Chrome — ChromePlus_Mouse_Gestures_CheatSheet_version_1.0.jpg</a></li>
-      <li><a href="/applications/guitar/saved-copy/Tom-s-guitar-cheatsheet.gif">Guitar — Tom-s-guitar-cheatsheet.gif</a></li>
-      <li><a href="/applications/guitar/saved-copy/Tom-s-guitar-cheatsheet.pdf">Guitar — Tom-s-guitar-cheatsheet.pdf</a></li>
-      <li><a href="/applications/microsoft-excel/saved-copy/excel300.pdf">Microsoft Excel - Microsoft Office Excel and VBA - Visual Basic for Applications — excel300.pdf</a></li>
-      <li><a href="/applications/microsoft-excel/saved-copy/Excel_VBA_Programming_Functions_1.pdf">Microsoft Excel - Microsoft Office Excel and VBA - Visual Basic for Applications — Excel_VBA_Programming_Functions_1.pdf</a></li>
-      <li><a href="/applications/microsoft-office/saved-copy/quick_reference_math_in_microsoft_office.pdf">Microsoft Office — quick_reference_math_in_microsoft_office.pdf</a></li>
-      <li><a href="/applications/microsoft-office/saved-copy/quick_reference_math_in_microsoft_office.docx">Microsoft Office — quick_reference_math_in_microsoft_office.docx</a></li>
-      <li><a href="/applications/microsoft-project/saved-copy/project-quick-reference-2007.pdf">Microsoft Project (MSP) — project-quick-reference-2007.pdf</a></li>
-      <li><a href="/applications/thunderbird/saved-copy/thunderbirdcheatsheet-1.pdf">Mozilla Thunderbird — thunderbirdcheatsheet-1.pdf</a></li>
-      <li><a href="/applications/music/saved-copy/musictheory.pdf">Music — musictheory.pdf</a></li>
-      <li><a href="/applications/quicksilver/saved-copy/QSRef.pdf">Quicksilver — QSRef.pdf</a></li>
-      <li><a href="/applications/social-media/saved-copy/social-media-image-sizes-2016.jpg">Social media — social-media-image-sizes-2016.jpg</a></li>
-      <li><a href="/applications/twitter/saved-copy/Twitter.Cheat.Sheet.pdf">Twitter — Twitter.Cheat.Sheet.pdf</a></li>
-      <li><a href="/applications/unreal-engine/saved-copy/UnrealScript_Cheat_Sheet.png">Unreal Engine — UnrealScript_Cheat_Sheet.png</a></li>
-      <li><a href="/applications/vvvv/saved-copy/vvvv.dontpanic_45beta25_1_0.2012010500.pdf">vvvv — vvvv.dontpanic_45beta25_1_0.2012010500.pdf</a></li>
-      <li><a href="/applications/vvvv/saved-copy/vvvv.illustrated.beta_ENG.2012010500.pdf">vvvv — vvvv.illustrated.beta_ENG.2012010500.pdf</a></li>
-      <li><a href="/applications/vvvv/saved-copy/vvvv.illustrated.beta_RUS.2012010500.pdf">vvvv — vvvv.illustrated.beta_RUS.2012010500.pdf</a></li>
-      <li><a href="/applications/wikipedia/saved-copy/Wiki-refcard.png">Wikipedia — Wiki-refcard.png</a></li>
-      <li><a href="/applications/wikipedia/saved-copy/User_contributions_detail.png">Wikipedia — User_contributions_detail.png</a></li>
-      <li><a href="/applications/wikipedia/saved-copy/Wiki-refcard.pdf">Wikipedia — Wiki-refcard.pdf</a></li>
-      <li><a href="/applications/wikipedia/saved-copy/Wiki-refcard_v0.93d.PNG">Wikipedia — Wiki-refcard_v0.93d.PNG</a></li>
-      <li><a href="/applications/wikipedia/saved-copy/Cheatsheet-mediawiki.pdf">Wikipedia — Cheatsheet-mediawiki.pdf</a></li>
-      <li><a href="/applications/word-press/saved-copy/wpcs.png">WordPress — wpcs.png</a></li>
-      <li><a href="/applications/word-press/saved-copy/wptcs.png">WordPress — wptcs.png</a></li>
-      <li><a href="/applications/word-press/saved-copy/WordPress_Cheatsheet_v1.pdf">WordPress — WordPress_Cheatsheet_v1.pdf</a></li>
-      <li><a href="/applications/word-press/saved-copy/wpcs_headzoo.png">WordPress — wpcs_headzoo.png</a></li>
-    </ul>
-    <h2>Topics</h2>
-    <ul>
-      <li><a href="/applications/android/">Android</a></li>
-      <li><a href="/applications/blogger/">Blogger</a></li>
-      <li><a href="/applications/camera/">Camera</a></li>
-      <li><a href="/applications/drupal/">Drupal</a></li>
-      <li><a href="/applications/firefox/">Firefox</a></li>
-      <li><a href="/applications/firefox-add-ons/">Firefox Add-ons</a></li>
-      <li><a href="/applications/freeware/">Freeware</a></li>
-      <li><a href="/applications/gift/">Gift</a></li>
-      <li><a href="/applications/gmail/">Gmail</a></li>
-      <li><a href="/applications/google-chrome/">Google Chrome</a></li>
-      <li><a href="/applications/guitar/">Guitar</a></li>
-      <li><a href="/applications/lotus-domino/">Lotus Domino</a></li>
-      <li><a href="/applications/microsoft-excel/">Microsoft Excel - Microsoft Office Excel and VBA - Visual Basic for Applications</a></li>
-      <li><a href="/applications/microsoft-office/">Microsoft Office</a></li>
-      <li><a href="/applications/microsoft-project/">Microsoft Project (MSP)</a></li>
-      <li><a href="/applications/thunderbird/">Mozilla Thunderbird</a></li>
-      <li><a href="/applications/music/">Music</a></li>
-      <li><a href="/applications/quicksilver/">Quicksilver</a></li>
-      <li><a href="/applications/social-media/">Social media</a></li>
-      <li><a href="/applications/twitter/">Twitter</a></li>
-      <li><a href="/applications/unreal-engine/">Unreal Engine</a></li>
-      <li><a href="/applications/vvvv/">vvvv</a></li>
-      <li><a href="/applications/wikipedia/">Wikipedia</a></li>
-      <li><a href="/applications/word-press/">WordPress</a></li>
-    </ul>
+    <div class="topics">
+    <article class="item-block">
+      <h3>Android</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/android/saved-copy/Android_Classes.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Android_Classes.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/android/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Blogger</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/blogger/saved-copy/Blogger-Cheat-Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Blogger-Cheat-Sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/blogger/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Camera</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/camera/">Open local files for Camera</a>
+      </div>
+      <a class="support-ref" href="/applications/camera/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Drupal</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/drupal/saved-copy/drupal-6-theming-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">drupal-6-theming-cheat-sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/drupal/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Firefox</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/firefox/saved-copy/firefox-shortcuts.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">firefox-shortcuts.pdf</span></a>
+        <a class="sheet-main" href="/applications/firefox/saved-copy/firefox-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">firefox-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/applications/firefox/saved-copy/firefox-cheat-sheet.png"><img src="/applications/firefox/saved-copy/firefox-cheat-sheet.png" alt="Firefox — firefox-cheat-sheet.png"><span class="sheet-name">firefox-cheat-sheet.png</span></a>
+      </div>
+      <a class="support-ref" href="/applications/firefox/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Firefox Add-ons</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/firefox-add-ons/saved-copy/dhffkc6q_97fsjrgmd7.gif"><img src="/applications/firefox-add-ons/saved-copy/dhffkc6q_97fsjrgmd7.gif" alt="Firefox Add-ons — dhffkc6q_97fsjrgmd7.gif"><span class="sheet-name">dhffkc6q_97fsjrgmd7.gif</span></a>
+        <a class="sheet-main" href="/applications/firefox-add-ons/saved-copy/vimperator_cheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">vimperator_cheatsheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/firefox-add-ons/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Freeware</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/freeware/">Open local files for Freeware</a>
+      </div>
+      <a class="support-ref" href="/applications/freeware/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Gift</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/gift/">Open local files for Gift</a>
+      </div>
+      <a class="support-ref" href="/applications/gift/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Gmail</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/gmail/">Open local files for Gmail</a>
+      </div>
+      <a class="support-ref" href="/applications/gmail/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Google Chrome</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/google-chrome/saved-copy/ChromePlus_Mouse_Gestures_CheatSheet_version_1.0.jpg"><img src="/applications/google-chrome/saved-copy/ChromePlus_Mouse_Gestures_CheatSheet_version_1.0.jpg" alt="Google Chrome — ChromePlus_Mouse_Gestures_CheatSheet_version_1.0.jpg"><span class="sheet-name">ChromePlus_Mouse_Gestures_CheatSheet_version_1.0.jpg</span></a>
+      </div>
+      <a class="support-ref" href="/applications/google-chrome/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Guitar</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/guitar/saved-copy/Tom-s-guitar-cheatsheet.gif"><img src="/applications/guitar/saved-copy/Tom-s-guitar-cheatsheet.gif" alt="Guitar — Tom-s-guitar-cheatsheet.gif"><span class="sheet-name">Tom-s-guitar-cheatsheet.gif</span></a>
+        <a class="sheet-main" href="/applications/guitar/saved-copy/Tom-s-guitar-cheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Tom-s-guitar-cheatsheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/guitar/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Lotus Domino</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/lotus-domino/">Open local files for Lotus Domino</a>
+      </div>
+      <a class="support-ref" href="/applications/lotus-domino/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Microsoft Excel - Microsoft Office Excel and VBA - Visual Basic for Applications</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/microsoft-excel/saved-copy/excel300.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">excel300.pdf</span></a>
+        <a class="sheet-main" href="/applications/microsoft-excel/saved-copy/Excel_VBA_Programming_Functions_1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Excel_VBA_Programming_Functions_1.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/microsoft-excel/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Microsoft Office</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/microsoft-office/saved-copy/quick_reference_math_in_microsoft_office.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">quick_reference_math_in_microsoft_office.pdf</span></a>
+        <a class="sheet-main" href="/applications/microsoft-office/saved-copy/quick_reference_math_in_microsoft_office.docx"><span class="sheet-kind">DOCX</span> <span class="sheet-name">quick_reference_math_in_microsoft_office.docx</span></a>
+      </div>
+      <a class="support-ref" href="/applications/microsoft-office/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Microsoft Project (MSP)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/microsoft-project/saved-copy/project-quick-reference-2007.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">project-quick-reference-2007.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/microsoft-project/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Mozilla Thunderbird</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/thunderbird/saved-copy/thunderbirdcheatsheet-1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">thunderbirdcheatsheet-1.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/thunderbird/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Music</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/music/saved-copy/musictheory.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">musictheory.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/music/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Quicksilver</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/quicksilver/saved-copy/QSRef.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">QSRef.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/quicksilver/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Social media</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/social-media/saved-copy/social-media-image-sizes-2016.jpg"><img src="/applications/social-media/saved-copy/social-media-image-sizes-2016.jpg" alt="Social media — social-media-image-sizes-2016.jpg"><span class="sheet-name">social-media-image-sizes-2016.jpg</span></a>
+      </div>
+      <a class="support-ref" href="/applications/social-media/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Twitter</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/twitter/saved-copy/Twitter.Cheat.Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Twitter.Cheat.Sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/twitter/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Unreal Engine</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/unreal-engine/saved-copy/UnrealScript_Cheat_Sheet.png"><img src="/applications/unreal-engine/saved-copy/UnrealScript_Cheat_Sheet.png" alt="Unreal Engine — UnrealScript_Cheat_Sheet.png"><span class="sheet-name">UnrealScript_Cheat_Sheet.png</span></a>
+      </div>
+      <a class="support-ref" href="/applications/unreal-engine/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>vvvv</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/vvvv/saved-copy/vvvv.dontpanic_45beta25_1_0.2012010500.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">vvvv.dontpanic_45beta25_1_0.2012010500.pdf</span></a>
+        <a class="sheet-main" href="/applications/vvvv/saved-copy/vvvv.illustrated.beta_ENG.2012010500.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">vvvv.illustrated.beta_ENG.2012010500.pdf</span></a>
+        <a class="sheet-main" href="/applications/vvvv/saved-copy/vvvv.illustrated.beta_RUS.2012010500.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">vvvv.illustrated.beta_RUS.2012010500.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/vvvv/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Wikipedia</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/wikipedia/saved-copy/Wiki-refcard.png"><img src="/applications/wikipedia/saved-copy/Wiki-refcard.png" alt="Wikipedia — Wiki-refcard.png"><span class="sheet-name">Wiki-refcard.png</span></a>
+        <a class="sheet-main" href="/applications/wikipedia/saved-copy/User_contributions_detail.png"><img src="/applications/wikipedia/saved-copy/User_contributions_detail.png" alt="Wikipedia — User_contributions_detail.png"><span class="sheet-name">User_contributions_detail.png</span></a>
+        <a class="sheet-main" href="/applications/wikipedia/saved-copy/Wiki-refcard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Wiki-refcard.pdf</span></a>
+        <a class="sheet-main" href="/applications/wikipedia/saved-copy/Wiki-refcard_v0.93d.PNG"><img src="/applications/wikipedia/saved-copy/Wiki-refcard_v0.93d.PNG" alt="Wikipedia — Wiki-refcard_v0.93d.PNG"><span class="sheet-name">Wiki-refcard_v0.93d.PNG</span></a>
+        <a class="sheet-main" href="/applications/wikipedia/saved-copy/Cheatsheet-mediawiki.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Cheatsheet-mediawiki.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/applications/wikipedia/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>WordPress</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/applications/word-press/saved-copy/wpcs.png"><img src="/applications/word-press/saved-copy/wpcs.png" alt="WordPress — wpcs.png"><span class="sheet-name">wpcs.png</span></a>
+        <a class="sheet-main" href="/applications/word-press/saved-copy/wptcs.png"><img src="/applications/word-press/saved-copy/wptcs.png" alt="WordPress — wptcs.png"><span class="sheet-name">wptcs.png</span></a>
+        <a class="sheet-main" href="/applications/word-press/saved-copy/WordPress_Cheatsheet_v1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">WordPress_Cheatsheet_v1.pdf</span></a>
+        <a class="sheet-main" href="/applications/word-press/saved-copy/wpcs_headzoo.png"><img src="/applications/word-press/saved-copy/wpcs_headzoo.png" alt="WordPress — wpcs_headzoo.png"><span class="sheet-name">wpcs_headzoo.png</span></a>
+      </div>
+      <a class="support-ref" href="/applications/word-press/">Reference: sources and additional information</a>
+    </article>
+    </div>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

@@ -7358,7 +7358,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -7368,75 +7375,194 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Web APIs, browsers' web stack, JS libraries, and HTTP-facing frameworks.</p>
   </header>
   <main>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/web/ajax/saved-copy/javascript_cheat_sheet.png">AJAX - Asynchronous JavaScript And XML — javascript_cheat_sheet.png</a></li>
-      <li><a href="/web/ajax/saved-copy/javascript_cheat_sheet.pdf">AJAX - Asynchronous JavaScript And XML — javascript_cheat_sheet.pdf</a></li>
-      <li><a href="/web/asp/saved-copy/asp_cheat_sheet.png">ASP - Active Server Pages — asp_cheat_sheet.png</a></li>
-      <li><a href="/web/asp/saved-copy/asp_cheat_sheet.pdf">ASP - Active Server Pages — asp_cheat_sheet.pdf</a></li>
-      <li><a href="/web/asp/saved-copy/aspnet-life-cycles-events.pdf">ASP - Active Server Pages — aspnet-life-cycles-events.pdf</a></li>
-      <li><a href="/web/blueprint/saved-copy/BlueprintCSS.pdf">Blueprint - CSS framework — BlueprintCSS.pdf</a></li>
-      <li><a href="/web/dom/saved-copy/Locators_table_1_0_2.pdf">DOM - Document Object Model — Locators_table_1_0_2.pdf</a></li>
-      <li><a href="/web/dom/saved-copy/Locators_groups_1_0_2.pdf">DOM - Document Object Model — Locators_groups_1_0_2.pdf</a></li>
-      <li><a href="/web/http/saved-copy/http-response-codes-1.pdf">HTTP - Hypertext Transfer Protocol — http-response-codes-1.pdf</a></li>
-      <li><a href="/web/j-query/saved-copy/jquery-mega-cheat-sheet-20152.jpg">jQuery — jquery-mega-cheat-sheet-20152.jpg</a></li>
-      <li><a href="/web/j-query/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf">jQuery — jQuery-1.5-Visual-Cheat-Sheet.pdf</a></li>
-      <li><a href="/web/j-query/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf">jQuery — jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf</a></li>
-      <li><a href="/web/j-query/saved-copy/wsu-jquery-cheat-sheet.pdf">jQuery — wsu-jquery-cheat-sheet.pdf</a></li>
-      <li><a href="/web/j-query/saved-copy/JQUERY-CHEAT-SHEET-a.png">jQuery — JQUERY-CHEAT-SHEET-a.png</a></li>
-      <li><a href="/web/j-query/saved-copy/jquery12_colorcharge.pdf">jQuery — jquery12_colorcharge.pdf</a></li>
-      <li><a href="/web/j-query/saved-copy/jquery12_colorcharge.png">jQuery — jquery12_colorcharge.png</a></li>
-      <li><a href="/web/j-query/saved-copy/jquery12_colorcharge_bw.pdf">jQuery — jquery12_colorcharge_bw.pdf</a></li>
-      <li><a href="/web/j-query/saved-copy/jquery12_colorcharge_bw.png">jQuery — jquery12_colorcharge_bw.png</a></li>
-      <li><a href="/web/j-query/saved-copy/Jquery-Cheat-Sheet-1.2.pdf">jQuery — Jquery-Cheat-Sheet-1.2.pdf</a></li>
-      <li><a href="/web/jsp/saved-copy/card20.pdf">JSP - JavaServer Pages — card20.pdf</a></li>
-      <li><a href="/web/jsp/saved-copy/jspqr.pdf">JSP - JavaServer Pages — jspqr.pdf</a></li>
-      <li><a href="/web/jsp/saved-copy/JSP%20Syntax.pdf">JSP - JavaServer Pages — JSP Syntax.pdf</a></li>
-      <li><a href="/web/jsp/saved-copy/JSP%20Quick%20Reference%20Card.pdf">JSP - JavaServer Pages — JSP Quick Reference Card.pdf</a></li>
-      <li><a href="/web/mod-perl/saved-copy/mod_perl-refcard-a4.pdf">mod_perl — mod_perl-refcard-a4.pdf</a></li>
-      <li><a href="/web/mod-rewrite/saved-copy/mod_rewrite_cheat_sheet.png">mod_rewrite — mod_rewrite_cheat_sheet.png</a></li>
-      <li><a href="/web/mod-rewrite/saved-copy/mod_rewrite_cheat_sheet.pdf">mod_rewrite — mod_rewrite_cheat_sheet.pdf</a></li>
-      <li><a href="/web/moo-tools/saved-copy/mootools-1.3-cheat-sheet1.pdf">MooTools — mootools-1.3-cheat-sheet1.pdf</a></li>
-      <li><a href="/web/moo-tools/saved-copy/mootools-1.3-cheat-sheet1.pdf">MooTools — mootools-1.3-cheat-sheet1.pdf</a></li>
-      <li><a href="/web/moo-tools/saved-copy/mootools-12-cheat-sheet.pdf">MooTools — mootools-12-cheat-sheet.pdf</a></li>
-      <li><a href="/web/moo-tools/saved-copy/mootools-12-cheat-sheet.pdf">MooTools — mootools-12-cheat-sheet.pdf</a></li>
-      <li><a href="/web/prototype/saved-copy/prototype1280.png">Prototype — prototype1280.png</a></li>
-      <li><a href="/web/prototype/saved-copy/prototype1440.png">Prototype — prototype1440.png</a></li>
-      <li><a href="/web/prototype/saved-copy/prototype1280w.png">Prototype — prototype1280w.png</a></li>
-      <li><a href="/web/prototype/saved-copy/prototype1440w.png">Prototype — prototype1440w.png</a></li>
-      <li><a href="/web/selenium/saved-copy/Locators_table_1_0_2.pdf">Selenium — Locators_table_1_0_2.pdf</a></li>
-      <li><a href="/web/selenium/saved-copy/Locators_groups_1_0_2.pdf">Selenium — Locators_groups_1_0_2.pdf</a></li>
-      <li><a href="/web/ssi/saved-copy/ssiqr.pdf">SSI - Server Side Includes (mod_include) — ssiqr.pdf</a></li>
-      <li><a href="/web/web-gl/saved-copy/webgl-reference-card-1_0.pdf">WebGL (Web-based Graphics Library) — webgl-reference-card-1_0.pdf</a></li>
-      <li><a href="/web/web-gl/saved-copy/WebGL_Cheat_Sheet.pdf">WebGL (Web-based Graphics Library) — WebGL_Cheat_Sheet.pdf</a></li>
-      <li><a href="/web/zen-coding/saved-copy/ZenCodingCheatSheet.pdf">Zen Coding — ZenCodingCheatSheet.pdf</a></li>
-    </ul>
-    <h2>Topics</h2>
-    <ul>
-      <li><a href="/web/ajax/">AJAX - Asynchronous JavaScript And XML</a></li>
-      <li><a href="/web/asp/">ASP - Active Server Pages</a></li>
-      <li><a href="/web/blueprint/">Blueprint - CSS framework</a></li>
-      <li><a href="/web/dom/">DOM - Document Object Model</a></li>
-      <li><a href="/web/gwt/">GWT - Google Web Toolkit</a></li>
-      <li><a href="/web/htaccess/">.htaccess</a></li>
-      <li><a href="/web/http/">HTTP - Hypertext Transfer Protocol</a></li>
-      <li><a href="/web/java-server-faces/">JavaServer Faces (JSF)</a></li>
-      <li><a href="/web/j-query/">jQuery</a></li>
-      <li><a href="/web/jsp/">JSP - JavaServer Pages</a></li>
-      <li><a href="/web/mod-perl/">mod_perl</a></li>
-      <li><a href="/web/mod-rewrite/">mod_rewrite</a></li>
-      <li><a href="/web/moo-tools/">MooTools</a></li>
-      <li><a href="/web/nodejs/">Node.js</a></li>
-      <li><a href="/web/prototype/">Prototype</a></li>
-      <li><a href="/web/rest/">REST (Representational State Transfer)</a></li>
-      <li><a href="/web/rich-faces/">RichFaces</a></li>
-      <li><a href="/web/selenium/">Selenium</a></li>
-      <li><a href="/web/ssi/">SSI - Server Side Includes (mod_include)</a></li>
-      <li><a href="/web/web-gl/">WebGL (Web-based Graphics Library)</a></li>
-      <li><a href="/web/web-matrix/">WebMatrix</a></li>
-      <li><a href="/web/wicket/">Wicket (Apache Wicket)</a></li>
-      <li><a href="/web/zen-coding/">Zen Coding</a></li>
-    </ul>
+    <div class="topics">
+    <article class="item-block">
+      <h3>AJAX - Asynchronous JavaScript And XML</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/ajax/saved-copy/javascript_cheat_sheet.png"><img src="/web/ajax/saved-copy/javascript_cheat_sheet.png" alt="AJAX - Asynchronous JavaScript And XML — javascript_cheat_sheet.png"><span class="sheet-name">javascript_cheat_sheet.png</span></a>
+        <a class="sheet-main" href="/web/ajax/saved-copy/javascript_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">javascript_cheat_sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/ajax/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>ASP - Active Server Pages</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/asp/saved-copy/asp_cheat_sheet.png"><img src="/web/asp/saved-copy/asp_cheat_sheet.png" alt="ASP - Active Server Pages — asp_cheat_sheet.png"><span class="sheet-name">asp_cheat_sheet.png</span></a>
+        <a class="sheet-main" href="/web/asp/saved-copy/asp_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">asp_cheat_sheet.pdf</span></a>
+        <a class="sheet-main" href="/web/asp/saved-copy/aspnet-life-cycles-events.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">aspnet-life-cycles-events.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/asp/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Blueprint - CSS framework</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/blueprint/saved-copy/BlueprintCSS.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">BlueprintCSS.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/blueprint/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>DOM - Document Object Model</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/dom/saved-copy/Locators_table_1_0_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Locators_table_1_0_2.pdf</span></a>
+        <a class="sheet-main" href="/web/dom/saved-copy/Locators_groups_1_0_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Locators_groups_1_0_2.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/dom/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>GWT - Google Web Toolkit</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/gwt/">Open local files for GWT - Google Web Toolkit</a>
+      </div>
+      <a class="support-ref" href="/web/gwt/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>.htaccess</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/htaccess/">Open local files for .htaccess</a>
+      </div>
+      <a class="support-ref" href="/web/htaccess/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>HTTP - Hypertext Transfer Protocol</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/http/saved-copy/http-response-codes-1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">http-response-codes-1.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/http/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>JavaServer Faces (JSF)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/java-server-faces/">Open local files for JavaServer Faces (JSF)</a>
+      </div>
+      <a class="support-ref" href="/web/java-server-faces/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>jQuery</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/j-query/saved-copy/jquery-mega-cheat-sheet-20152.jpg"><img src="/web/j-query/saved-copy/jquery-mega-cheat-sheet-20152.jpg" alt="jQuery — jquery-mega-cheat-sheet-20152.jpg"><span class="sheet-name">jquery-mega-cheat-sheet-20152.jpg</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">jQuery-1.5-Visual-Cheat-Sheet.pdf</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/wsu-jquery-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">wsu-jquery-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/JQUERY-CHEAT-SHEET-a.png"><img src="/web/j-query/saved-copy/JQUERY-CHEAT-SHEET-a.png" alt="jQuery — JQUERY-CHEAT-SHEET-a.png"><span class="sheet-name">JQUERY-CHEAT-SHEET-a.png</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/jquery12_colorcharge.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">jquery12_colorcharge.pdf</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/jquery12_colorcharge.png"><img src="/web/j-query/saved-copy/jquery12_colorcharge.png" alt="jQuery — jquery12_colorcharge.png"><span class="sheet-name">jquery12_colorcharge.png</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/jquery12_colorcharge_bw.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">jquery12_colorcharge_bw.pdf</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/jquery12_colorcharge_bw.png"><img src="/web/j-query/saved-copy/jquery12_colorcharge_bw.png" alt="jQuery — jquery12_colorcharge_bw.png"><span class="sheet-name">jquery12_colorcharge_bw.png</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/Jquery-Cheat-Sheet-1.2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Jquery-Cheat-Sheet-1.2.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/j-query/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>JSP - JavaServer Pages</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/jsp/saved-copy/card20.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">card20.pdf</span></a>
+        <a class="sheet-main" href="/web/jsp/saved-copy/jspqr.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">jspqr.pdf</span></a>
+        <a class="sheet-main" href="/web/jsp/saved-copy/JSP%20Syntax.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">JSP Syntax.pdf</span></a>
+        <a class="sheet-main" href="/web/jsp/saved-copy/JSP%20Quick%20Reference%20Card.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">JSP Quick Reference Card.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/jsp/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>mod_perl</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/mod-perl/saved-copy/mod_perl-refcard-a4.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">mod_perl-refcard-a4.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/mod-perl/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>mod_rewrite</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/mod-rewrite/saved-copy/mod_rewrite_cheat_sheet.png"><img src="/web/mod-rewrite/saved-copy/mod_rewrite_cheat_sheet.png" alt="mod_rewrite — mod_rewrite_cheat_sheet.png"><span class="sheet-name">mod_rewrite_cheat_sheet.png</span></a>
+        <a class="sheet-main" href="/web/mod-rewrite/saved-copy/mod_rewrite_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">mod_rewrite_cheat_sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/mod-rewrite/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>MooTools</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/moo-tools/saved-copy/mootools-1.3-cheat-sheet1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">mootools-1.3-cheat-sheet1.pdf</span></a>
+        <a class="sheet-main" href="/web/moo-tools/saved-copy/mootools-1.3-cheat-sheet1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">mootools-1.3-cheat-sheet1.pdf</span></a>
+        <a class="sheet-main" href="/web/moo-tools/saved-copy/mootools-12-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">mootools-12-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/web/moo-tools/saved-copy/mootools-12-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">mootools-12-cheat-sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/moo-tools/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Node.js</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/nodejs/">Open local files for Node.js</a>
+      </div>
+      <a class="support-ref" href="/web/nodejs/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Prototype</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/prototype/saved-copy/prototype1280.png"><img src="/web/prototype/saved-copy/prototype1280.png" alt="Prototype — prototype1280.png"><span class="sheet-name">prototype1280.png</span></a>
+        <a class="sheet-main" href="/web/prototype/saved-copy/prototype1440.png"><img src="/web/prototype/saved-copy/prototype1440.png" alt="Prototype — prototype1440.png"><span class="sheet-name">prototype1440.png</span></a>
+        <a class="sheet-main" href="/web/prototype/saved-copy/prototype1280w.png"><img src="/web/prototype/saved-copy/prototype1280w.png" alt="Prototype — prototype1280w.png"><span class="sheet-name">prototype1280w.png</span></a>
+        <a class="sheet-main" href="/web/prototype/saved-copy/prototype1440w.png"><img src="/web/prototype/saved-copy/prototype1440w.png" alt="Prototype — prototype1440w.png"><span class="sheet-name">prototype1440w.png</span></a>
+      </div>
+      <a class="support-ref" href="/web/prototype/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>REST (Representational State Transfer)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/rest/">Open local files for REST (Representational State Transfer)</a>
+      </div>
+      <a class="support-ref" href="/web/rest/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>RichFaces</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/rich-faces/">Open local files for RichFaces</a>
+      </div>
+      <a class="support-ref" href="/web/rich-faces/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Selenium</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/selenium/saved-copy/Locators_table_1_0_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Locators_table_1_0_2.pdf</span></a>
+        <a class="sheet-main" href="/web/selenium/saved-copy/Locators_groups_1_0_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Locators_groups_1_0_2.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/selenium/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>SSI - Server Side Includes (mod_include)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/ssi/saved-copy/ssiqr.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">ssiqr.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/ssi/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>WebGL (Web-based Graphics Library)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/web-gl/saved-copy/webgl-reference-card-1_0.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">webgl-reference-card-1_0.pdf</span></a>
+        <a class="sheet-main" href="/web/web-gl/saved-copy/WebGL_Cheat_Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">WebGL_Cheat_Sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/web-gl/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>WebMatrix</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/web-matrix/">Open local files for WebMatrix</a>
+      </div>
+      <a class="support-ref" href="/web/web-matrix/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Wicket (Apache Wicket)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/wicket/">Open local files for Wicket (Apache Wicket)</a>
+      </div>
+      <a class="support-ref" href="/web/wicket/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Zen Coding</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/web/zen-coding/saved-copy/ZenCodingCheatSheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">ZenCodingCheatSheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/web/zen-coding/">Reference: sources and additional information</a>
+    </article>
+    </div>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

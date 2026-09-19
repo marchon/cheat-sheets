@@ -2264,7 +2264,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -2275,46 +2282,44 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/gnu-linux-commands/">GNU / Linux commands</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/gnu-linux-commands/linux/saved-copy/fwunixref.pdf">fwunixref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-021.jpg">10-Linux-Unix-Command-Cheat-Sheet-021.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/The%20One%20Page%20Linux%20Manual.pdf">The One Page Linux Manual.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linux_quickref.pdf">linux_quickref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/Linux_Syscall_quickref.pdf">Linux_Syscall_quickref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linux_security_quickref.pdf">linux_security_quickref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/CliCommandsFull.jpg">CliCommandsFull.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-011.jpg">10-Linux-Unix-Command-Cheat-Sheet-011.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet.pdf">linux-cheat-sheet.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet.png">linux-cheat-sheet.png</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/305883.jpg">305883.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/clicommandsfull.jpg">clicommandsfull.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet-wallpapers_30985_1920x1080.jpg">linux-cheat-sheet-wallpapers_30985_1920x1080.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linux-command-line-cheat-sheet.png">linux-command-line-cheat-sheet.png</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linuxcommands.png">linuxcommands.png</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/ubuntucheatsheet.jpg">ubuntucheatsheet.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/davechild_linux-command-line.pdf">davechild_linux-command-line.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/Muppix_Linux_commands_1.pdf">Muppix_Linux_commands_1.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/Muppix_Linux_commands_2.pdf">Muppix_Linux_commands_2.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/Muppix.co_Basic_Linux_Commands.png">Muppix.co_Basic_Linux_Commands.png</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/Muppix_Basic_Linux_commands.pdf">Muppix_Basic_Linux_commands.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/Muppix_Linux_terminal_navigation.pdf">Muppix_Linux_terminal_navigation.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/pcwdld.com-linux-commands-cheat-sheet-20211028.png">pcwdld.com-linux-commands-cheat-sheet-20211028.png</a></li>
-    </ul>
-    <h2>Other local files</h2>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/fwunixref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">fwunixref.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-021.jpg"><img src="/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-021.jpg" alt="Linux — 10-Linux-Unix-Command-Cheat-Sheet-021.jpg"><span class="sheet-name">10-Linux-Unix-Command-Cheat-Sheet-021.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/The%20One%20Page%20Linux%20Manual.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">The One Page Linux Manual.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linux_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">linux_quickref.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/Linux_Syscall_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Linux_Syscall_quickref.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linux_security_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">linux_security_quickref.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/CliCommandsFull.jpg"><img src="/gnu-linux-commands/linux/saved-copy/CliCommandsFull.jpg" alt="Linux — CliCommandsFull.jpg"><span class="sheet-name">CliCommandsFull.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-011.jpg"><img src="/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-011.jpg" alt="Linux — 10-Linux-Unix-Command-Cheat-Sheet-011.jpg"><span class="sheet-name">10-Linux-Unix-Command-Cheat-Sheet-011.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">linux-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet.png"><img src="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet.png" alt="Linux — linux-cheat-sheet.png"><span class="sheet-name">linux-cheat-sheet.png</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/305883.jpg"><img src="/gnu-linux-commands/linux/saved-copy/305883.jpg" alt="Linux — 305883.jpg"><span class="sheet-name">305883.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/clicommandsfull.jpg"><img src="/gnu-linux-commands/linux/saved-copy/clicommandsfull.jpg" alt="Linux — clicommandsfull.jpg"><span class="sheet-name">clicommandsfull.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet-wallpapers_30985_1920x1080.jpg"><img src="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet-wallpapers_30985_1920x1080.jpg" alt="Linux — linux-cheat-sheet-wallpapers_30985_1920x1080.jpg"><span class="sheet-name">linux-cheat-sheet-wallpapers_30985_1920x1080.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linux-command-line-cheat-sheet.png"><img src="/gnu-linux-commands/linux/saved-copy/linux-command-line-cheat-sheet.png" alt="Linux — linux-command-line-cheat-sheet.png"><span class="sheet-name">linux-command-line-cheat-sheet.png</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linuxcommands.png"><img src="/gnu-linux-commands/linux/saved-copy/linuxcommands.png" alt="Linux — linuxcommands.png"><span class="sheet-name">linuxcommands.png</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/ubuntucheatsheet.jpg"><img src="/gnu-linux-commands/linux/saved-copy/ubuntucheatsheet.jpg" alt="Linux — ubuntucheatsheet.jpg"><span class="sheet-name">ubuntucheatsheet.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/davechild_linux-command-line.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">davechild_linux-command-line.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/Muppix_Linux_commands_1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Muppix_Linux_commands_1.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/Muppix_Linux_commands_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Muppix_Linux_commands_2.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/Muppix.co_Basic_Linux_Commands.png"><img src="/gnu-linux-commands/linux/saved-copy/Muppix.co_Basic_Linux_Commands.png" alt="Linux — Muppix.co_Basic_Linux_Commands.png"><span class="sheet-name">Muppix.co_Basic_Linux_Commands.png</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/Muppix_Basic_Linux_commands.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Muppix_Basic_Linux_commands.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/Muppix_Linux_terminal_navigation.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Muppix_Linux_terminal_navigation.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/pcwdld.com-linux-commands-cheat-sheet-20211028.png"><img src="/gnu-linux-commands/linux/saved-copy/pcwdld.com-linux-commands-cheat-sheet-20211028.png" alt="Linux — pcwdld.com-linux-commands-cheat-sheet-20211028.png"><span class="sheet-name">pcwdld.com-linux-commands-cheat-sheet-20211028.png</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
     <ul>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
       <li><a href="/gnu-linux-commands/linux/saved-copy/A.very.brief.guide.to.Linux.htm">A.very.brief.guide.to.Linux.htm</a></li>
-    </ul>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
-    <ul>
-      <li><a href="/gnu-linux-commands/chmod/">chmod</a></li>
-      <li><a href="/operating-systems/debian/">Debian</a></li>
-      <li><a href="/operating-systems/fedora/">Fedora</a></li>
-      <li><a href="/operating-systems/red-hat/">Red Hat</a></li>
-      <li><a href="/operating-systems/ubuntu/">Ubuntu</a></li>
-      <li><a href="/gnu-linux-commands/unix/">Unix</a></li>
+      <li><a href="/gnu-linux-commands/chmod/">chmod (related topic)</a></li>
+      <li><a href="/operating-systems/debian/">Debian (related topic)</a></li>
+      <li><a href="/operating-systems/fedora/">Fedora (related topic)</a></li>
+      <li><a href="/operating-systems/red-hat/">Red Hat (related topic)</a></li>
+      <li><a href="/operating-systems/ubuntu/">Ubuntu (related topic)</a></li>
+      <li><a href="/gnu-linux-commands/unix/">Unix (related topic)</a></li>
     </ul>
   </main>
   <footer>

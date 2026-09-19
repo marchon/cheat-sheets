@@ -3880,7 +3880,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -3890,35 +3897,141 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Servers, containers, orchestration, CI, and infrastructure tools.</p>
   </header>
   <main>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/cloud-and-devops/apache/saved-copy/apache-refcard-a4.pdf">Apache — apache-refcard-a4.pdf</a></li>
-      <li><a href="/cloud-and-devops/docker/saved-copy/docker_cheatsheet_20230106.pdf">Docker — docker_cheatsheet_20230106.pdf</a></li>
-      <li><a href="/cloud-and-devops/veritas-cluster/saved-copy/2675288-Veritas-Cluster-Cheat-Sheet.pdf">VxCFS, VCS - Veritas Cluster File System — 2675288-Veritas-Cluster-Cheat-Sheet.pdf</a></li>
-      <li><a href="/cloud-and-devops/vmware/saved-copy/vmreferenceVI3card1.2.1.pdf">VMware (VI) — vmreferenceVI3card1.2.1.pdf</a></li>
-    </ul>
-    <h2>Topics</h2>
-    <ul>
-      <li><a href="/cloud-and-devops/apache/">Apache</a></li>
-      <li><a href="/cloud-and-devops/apache-ant/">Apache Ant</a></li>
-      <li><a href="/cloud-and-devops/apache-camel/">Apache Camel</a></li>
-      <li><a href="/cloud-and-devops/apache-solr/">Apache Solr</a></li>
-      <li><a href="/cloud-and-devops/chef/">Chef</a></li>
-      <li><a href="/cloud-and-devops/continuous-integration/">Continuous Integration (CI)</a></li>
-      <li><a href="/cloud-and-devops/docker/">Docker</a></li>
-      <li><a href="/cloud-and-devops/jboss/">JBoss</a></li>
-      <li><a href="/cloud-and-devops/jetty/">Jetty</a></li>
-      <li><a href="/cloud-and-devops/kubernetes/">Kubernetes</a></li>
-      <li><a href="/cloud-and-devops/lucene/">Lucene</a></li>
-      <li><a href="/cloud-and-devops/maven/">Maven (Apache Maven)</a></li>
-      <li><a href="/cloud-and-devops/mule/">Mule</a></li>
-      <li><a href="/cloud-and-devops/nginx/">Nginx</a></li>
-      <li><a href="/cloud-and-devops/scalability-high-availability/">Scalability and High Availability</a></li>
-      <li><a href="/cloud-and-devops/service-mix/">ServiceMix (Apache ServiceMix)</a></li>
-      <li><a href="/cloud-and-devops/veritas-cluster/">VxCFS, VCS - Veritas Cluster File System</a></li>
-      <li><a href="/cloud-and-devops/virtualization/">Virtualization</a></li>
-      <li><a href="/cloud-and-devops/vmware/">VMware (VI)</a></li>
-    </ul>
+    <div class="topics">
+    <article class="item-block">
+      <h3>Apache</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/apache/saved-copy/apache-refcard-a4.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">apache-refcard-a4.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/apache/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Apache Ant</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/apache-ant/">Open local files for Apache Ant</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/apache-ant/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Apache Camel</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/apache-camel/">Open local files for Apache Camel</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/apache-camel/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Apache Solr</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/apache-solr/">Open local files for Apache Solr</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/apache-solr/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Chef</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/chef/">Open local files for Chef</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/chef/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Continuous Integration (CI)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/continuous-integration/">Open local files for Continuous Integration (CI)</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/continuous-integration/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Docker</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/docker/saved-copy/docker_cheatsheet_20230106.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">docker_cheatsheet_20230106.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/docker/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>JBoss</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/jboss/">Open local files for JBoss</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/jboss/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Jetty</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/jetty/">Open local files for Jetty</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/jetty/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Kubernetes</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/kubernetes/">Open local files for Kubernetes</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/kubernetes/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Lucene</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/lucene/">Open local files for Lucene</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/lucene/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Maven (Apache Maven)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/maven/">Open local files for Maven (Apache Maven)</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/maven/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Mule</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/mule/">Open local files for Mule</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/mule/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Nginx</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/nginx/">Open local files for Nginx</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/nginx/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Scalability and High Availability</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/scalability-high-availability/">Open local files for Scalability and High Availability</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/scalability-high-availability/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>ServiceMix (Apache ServiceMix)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/service-mix/">Open local files for ServiceMix (Apache ServiceMix)</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/service-mix/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>VxCFS, VCS - Veritas Cluster File System</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/veritas-cluster/saved-copy/2675288-Veritas-Cluster-Cheat-Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">2675288-Veritas-Cluster-Cheat-Sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/veritas-cluster/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Virtualization</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/virtualization/">Open local files for Virtualization</a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/virtualization/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>VMware (VI)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/cloud-and-devops/vmware/saved-copy/vmreferenceVI3card1.2.1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">vmreferenceVI3card1.2.1.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/cloud-and-devops/vmware/">Reference: sources and additional information</a>
+    </article>
+    </div>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

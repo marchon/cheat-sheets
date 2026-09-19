@@ -351,7 +351,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -362,16 +369,16 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/frameworks-and-libraries/">Frameworks and libraries</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/frameworks-and-libraries/mfc/saved-copy/MFC_QuickRef.pdf">MFC_QuickRef.pdf</a></li>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/mfc/saved-copy/MFC_QuickRef.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">MFC_QuickRef.pdf</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
+    <ul>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
     </ul>
-    <h2>Other local files</h2>
-    <p>None stored locally.</p>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
-    <p>None listed.</p>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

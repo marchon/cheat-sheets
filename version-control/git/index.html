@@ -2606,7 +2606,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -2617,40 +2624,38 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/version-control/">Version control</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-education.20211117.pdf">git-cheat-sheet-education.20211117.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-large.png">git-cheat-sheet-large.png</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet.pdf">git-cheat-sheet.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet.svg">git-cheat-sheet.svg</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-v2-front.svg">git-cheat-sheet-v2-front.svg</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-v2-back.svg">git-cheat-sheet-v2-back.svg</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-v2.pdf">git-cheat-sheet-v2.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/Git_Quick_Reference.2011-09-04.pdf">Git_Quick_Reference.2011-09-04.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/Git_Cheat_Sheet_grey.pdf">Git_Cheat_Sheet_grey.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/Top_20_Git_Commands_With_Examples.png">Top_20_Git_Commands_With_Examples.png</a></li>
-      <li><a href="/version-control/git/saved-copy/github-git-cheat-sheet-20220806.pdf">github-git-cheat-sheet-20220806.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/Git_for_Subversion_Users.pdf">Git_for_Subversion_Users.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/12_git_cheat_sheet.20210604.pdf">12_git_cheat_sheet.20210604.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/Basic_Git_commands_20211117.png">Basic_Git_commands_20211117.png</a></li>
-      <li><a href="/version-control/git/saved-copy/GIT_Bash_Commands.20211117.png">GIT_Bash_Commands.20211117.png</a></li>
-      <li><a href="/version-control/git/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf">SWTM-2088_Atlassian-Git-Cheatsheet.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/gitlab-git-cheat-sheet-20220806.pdf">gitlab-git-cheat-sheet-20220806.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/progit.20211117.pdf">progit.20211117.pdf</a></li>
-    </ul>
-    <h2>Other local files</h2>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet-education.20211117.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">git-cheat-sheet-education.20211117.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet-large.png"><img src="/version-control/git/saved-copy/git-cheat-sheet-large.png" alt="Git — git-cheat-sheet-large.png"><span class="sheet-name">git-cheat-sheet-large.png</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">git-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet.svg"><img src="/version-control/git/saved-copy/git-cheat-sheet.svg" alt="Git — git-cheat-sheet.svg"><span class="sheet-name">git-cheat-sheet.svg</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet-v2-front.svg"><img src="/version-control/git/saved-copy/git-cheat-sheet-v2-front.svg" alt="Git — git-cheat-sheet-v2-front.svg"><span class="sheet-name">git-cheat-sheet-v2-front.svg</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet-v2-back.svg"><img src="/version-control/git/saved-copy/git-cheat-sheet-v2-back.svg" alt="Git — git-cheat-sheet-v2-back.svg"><span class="sheet-name">git-cheat-sheet-v2-back.svg</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet-v2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">git-cheat-sheet-v2.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/Git_Quick_Reference.2011-09-04.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Git_Quick_Reference.2011-09-04.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/Git_Cheat_Sheet_grey.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Git_Cheat_Sheet_grey.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/Top_20_Git_Commands_With_Examples.png"><img src="/version-control/git/saved-copy/Top_20_Git_Commands_With_Examples.png" alt="Git — Top_20_Git_Commands_With_Examples.png"><span class="sheet-name">Top_20_Git_Commands_With_Examples.png</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/github-git-cheat-sheet-20220806.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">github-git-cheat-sheet-20220806.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/Git_for_Subversion_Users.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Git_for_Subversion_Users.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/12_git_cheat_sheet.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">12_git_cheat_sheet.20210604.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/Basic_Git_commands_20211117.png"><img src="/version-control/git/saved-copy/Basic_Git_commands_20211117.png" alt="Git — Basic_Git_commands_20211117.png"><span class="sheet-name">Basic_Git_commands_20211117.png</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/GIT_Bash_Commands.20211117.png"><img src="/version-control/git/saved-copy/GIT_Bash_Commands.20211117.png" alt="Git — GIT_Bash_Commands.20211117.png"><span class="sheet-name">GIT_Bash_Commands.20211117.png</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">SWTM-2088_Atlassian-Git-Cheatsheet.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/gitlab-git-cheat-sheet-20220806.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">gitlab-git-cheat-sheet-20220806.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/progit.20211117.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">progit.20211117.pdf</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
     <ul>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
       <li><a href="/version-control/git/saved-copy/git-cheat-sheet-v2.zip">git-cheat-sheet-v2.zip</a></li>
       <li><a href="/version-control/git/saved-copy/GIT_Bash_Commands.20211117.md">GIT_Bash_Commands.20211117.md</a></li>
       <li><a href="/version-control/git/saved-copy/git.memory.knots.html">git.memory.knots.html</a></li>
-    </ul>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
-    <ul>
-      <li><a href="/version-control/bazaar/">Bazaar</a></li>
-      <li><a href="/version-control/cvs/">CVS</a></li>
-      <li><a href="/version-control/svn/">SVN</a></li>
+      <li><a href="/version-control/bazaar/">Bazaar (related topic)</a></li>
+      <li><a href="/version-control/cvs/">CVS (related topic)</a></li>
+      <li><a href="/version-control/svn/">SVN (related topic)</a></li>
     </ul>
   </main>
   <footer>

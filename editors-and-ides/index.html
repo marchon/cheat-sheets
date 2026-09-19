@@ -5262,7 +5262,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -5272,47 +5279,96 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Text editors, IDEs, and related tooling.</p>
   </header>
   <main>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/editors-and-ides/eclipse/saved-copy/eclipse_cdt_6_0_cheatsheet_0.1.pdf">Eclipse — eclipse_cdt_6_0_cheatsheet_0.1.pdf</a></li>
-      <li><a href="/editors-and-ides/eclipse/saved-copy/eclipse_cdt_cheatsheet_300dpi.png">Eclipse — eclipse_cdt_cheatsheet_300dpi.png</a></li>
-      <li><a href="/editors-and-ides/eclipse/saved-copy/eclipse_cdt_cheatsheet_600dpi.png">Eclipse — eclipse_cdt_cheatsheet_600dpi.png</a></li>
-      <li><a href="/editors-and-ides/eclipse/saved-copy/EclipseEmacsKeybindings_3_1.pdf">Eclipse — EclipseEmacsKeybindings_3_1.pdf</a></li>
-      <li><a href="/editors-and-ides/eclipse/saved-copy/EclipseEmacsKeybindings_3_1.rtf">Eclipse — EclipseEmacsKeybindings_3_1.rtf</a></li>
-      <li><a href="/editors-and-ides/eclipse/saved-copy/eclipseCDT8.0-cheatsheet.pdf">Eclipse — eclipseCDT8.0-cheatsheet.pdf</a></li>
-      <li><a href="/editors-and-ides/emacs/saved-copy/emacs-refcard-a4.pdf">Emacs — emacs-refcard-a4.pdf</a></li>
-      <li><a href="/editors-and-ides/emacs/saved-copy/readline-emacs-editing-mode-cheat-sheet.pdf">Emacs — readline-emacs-editing-mode-cheat-sheet.pdf</a></li>
-      <li><a href="/editors-and-ides/la-te-x-suite/saved-copy/vimlatexqrc.pdf">LaTeX-Suite (aka Vim-LaTeX) — vimlatexqrc.pdf</a></li>
-      <li><a href="/editors-and-ides/notepad%2B%2B/saved-copy/Notepad%2B%2B_Cheat_Sheet.pdf">Notepad++ — Notepad++_Cheat_Sheet.pdf</a></li>
-      <li><a href="/editors-and-ides/orgmode/saved-copy/orgcard.pdf">org-mode — orgcard.pdf</a></li>
-      <li><a href="/editors-and-ides/orgmode/saved-copy/org-mode.pdf">org-mode — org-mode.pdf</a></li>
-      <li><a href="/editors-and-ides/vim/saved-copy/vim-cheat-sheet.20210602.png">Vim - Vi IMproved , Vi — vim-cheat-sheet.20210602.png</a></li>
-      <li><a href="/editors-and-ides/vim/saved-copy/vimqrc.dvi">Vim - Vi IMproved , Vi — vimqrc.dvi</a></li>
-      <li><a href="/editors-and-ides/vim/saved-copy/vimqrc.pdf">Vim - Vi IMproved , Vi — vimqrc.pdf</a></li>
-      <li><a href="/editors-and-ides/vim/saved-copy/vim-cheatsheet.png">Vim - Vi IMproved , Vi — vim-cheatsheet.png</a></li>
-      <li><a href="/editors-and-ides/vim/saved-copy/vimqrc1.pdf">Vim - Vi IMproved , Vi — vimqrc1.pdf</a></li>
-      <li><a href="/editors-and-ides/vim/saved-copy/vi-vim-cheat-sheet.gif">Vim - Vi IMproved , Vi — vi-vim-cheat-sheet.gif</a></li>
-      <li><a href="/editors-and-ides/vim/saved-copy/Vi%20Reference%20Card.pdf">Vim - Vi IMproved , Vi — Vi Reference Card.pdf</a></li>
-      <li><a href="/editors-and-ides/vim/saved-copy/vi_quickref.pdf">Vim - Vi IMproved , Vi — vi_quickref.pdf</a></li>
-      <li><a href="/editors-and-ides/vim/saved-copy/vi%20Reference%20Card%20%28HP%29.pdf">Vim - Vi IMproved , Vi — vi Reference Card (HP).pdf</a></li>
-      <li><a href="/editors-and-ides/vim/saved-copy/vi%20Quick%20Reference.pdf">Vim - Vi IMproved , Vi — vi Quick Reference.pdf</a></li>
-      <li><a href="/editors-and-ides/vim/saved-copy/bash-vi-editing-mode-cheat-sheet.pdf">Vim - Vi IMproved , Vi — bash-vi-editing-mode-cheat-sheet.pdf</a></li>
-      <li><a href="/editors-and-ides/vim/saved-copy/vi-vim-cheat-sheet.gif">Vim - Vi IMproved , Vi — vi-vim-cheat-sheet.gif</a></li>
-      <li><a href="/editors-and-ides/xcode/saved-copy/xcode-cheat-sheet.pdf">Xcode — xcode-cheat-sheet.pdf</a></li>
-    </ul>
-    <h2>Topics</h2>
-    <ul>
-      <li><a href="/editors-and-ides/eclipse/">Eclipse</a></li>
-      <li><a href="/editors-and-ides/emacs/">Emacs</a></li>
-      <li><a href="/editors-and-ides/intelli-jidea/">IntelliJ IDEA</a></li>
-      <li><a href="/editors-and-ides/la-te-x-suite/">LaTeX-Suite (aka Vim-LaTeX)</a></li>
-      <li><a href="/editors-and-ides/microsoft-visual-studio/">Microsoft Visual Studio</a></li>
-      <li><a href="/editors-and-ides/net-beans/">NetBeans</a></li>
-      <li><a href="/editors-and-ides/notepad++/">Notepad++</a></li>
-      <li><a href="/editors-and-ides/orgmode/">org-mode</a></li>
-      <li><a href="/editors-and-ides/vim/">Vim - Vi IMproved , Vi</a></li>
-      <li><a href="/editors-and-ides/xcode/">Xcode</a></li>
-    </ul>
+    <div class="topics">
+    <article class="item-block">
+      <h3>Eclipse</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/editors-and-ides/eclipse/saved-copy/eclipse_cdt_6_0_cheatsheet_0.1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">eclipse_cdt_6_0_cheatsheet_0.1.pdf</span></a>
+        <a class="sheet-main" href="/editors-and-ides/eclipse/saved-copy/eclipse_cdt_cheatsheet_300dpi.png"><img src="/editors-and-ides/eclipse/saved-copy/eclipse_cdt_cheatsheet_300dpi.png" alt="Eclipse — eclipse_cdt_cheatsheet_300dpi.png"><span class="sheet-name">eclipse_cdt_cheatsheet_300dpi.png</span></a>
+        <a class="sheet-main" href="/editors-and-ides/eclipse/saved-copy/eclipse_cdt_cheatsheet_600dpi.png"><img src="/editors-and-ides/eclipse/saved-copy/eclipse_cdt_cheatsheet_600dpi.png" alt="Eclipse — eclipse_cdt_cheatsheet_600dpi.png"><span class="sheet-name">eclipse_cdt_cheatsheet_600dpi.png</span></a>
+        <a class="sheet-main" href="/editors-and-ides/eclipse/saved-copy/EclipseEmacsKeybindings_3_1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">EclipseEmacsKeybindings_3_1.pdf</span></a>
+        <a class="sheet-main" href="/editors-and-ides/eclipse/saved-copy/EclipseEmacsKeybindings_3_1.rtf"><span class="sheet-kind">RTF</span> <span class="sheet-name">EclipseEmacsKeybindings_3_1.rtf</span></a>
+        <a class="sheet-main" href="/editors-and-ides/eclipse/saved-copy/eclipseCDT8.0-cheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">eclipseCDT8.0-cheatsheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/editors-and-ides/eclipse/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Emacs</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/editors-and-ides/emacs/saved-copy/emacs-refcard-a4.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">emacs-refcard-a4.pdf</span></a>
+        <a class="sheet-main" href="/editors-and-ides/emacs/saved-copy/readline-emacs-editing-mode-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">readline-emacs-editing-mode-cheat-sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/editors-and-ides/emacs/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>IntelliJ IDEA</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/editors-and-ides/intelli-jidea/">Open local files for IntelliJ IDEA</a>
+      </div>
+      <a class="support-ref" href="/editors-and-ides/intelli-jidea/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>LaTeX-Suite (aka Vim-LaTeX)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/editors-and-ides/la-te-x-suite/saved-copy/vimlatexqrc.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">vimlatexqrc.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/editors-and-ides/la-te-x-suite/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Microsoft Visual Studio</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/editors-and-ides/microsoft-visual-studio/">Open local files for Microsoft Visual Studio</a>
+      </div>
+      <a class="support-ref" href="/editors-and-ides/microsoft-visual-studio/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>NetBeans</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/editors-and-ides/net-beans/">Open local files for NetBeans</a>
+      </div>
+      <a class="support-ref" href="/editors-and-ides/net-beans/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Notepad++</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/editors-and-ides/notepad%2B%2B/saved-copy/Notepad%2B%2B_Cheat_Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Notepad++_Cheat_Sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/editors-and-ides/notepad++/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>org-mode</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/editors-and-ides/orgmode/saved-copy/orgcard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">orgcard.pdf</span></a>
+        <a class="sheet-main" href="/editors-and-ides/orgmode/saved-copy/org-mode.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">org-mode.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/editors-and-ides/orgmode/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Vim - Vi IMproved , Vi</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/editors-and-ides/vim/saved-copy/vim-cheat-sheet.20210602.png"><img src="/editors-and-ides/vim/saved-copy/vim-cheat-sheet.20210602.png" alt="Vim - Vi IMproved , Vi — vim-cheat-sheet.20210602.png"><span class="sheet-name">vim-cheat-sheet.20210602.png</span></a>
+        <a class="sheet-main" href="/editors-and-ides/vim/saved-copy/vimqrc.dvi"><span class="sheet-kind">DVI</span> <span class="sheet-name">vimqrc.dvi</span></a>
+        <a class="sheet-main" href="/editors-and-ides/vim/saved-copy/vimqrc.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">vimqrc.pdf</span></a>
+        <a class="sheet-main" href="/editors-and-ides/vim/saved-copy/vim-cheatsheet.png"><img src="/editors-and-ides/vim/saved-copy/vim-cheatsheet.png" alt="Vim - Vi IMproved , Vi — vim-cheatsheet.png"><span class="sheet-name">vim-cheatsheet.png</span></a>
+        <a class="sheet-main" href="/editors-and-ides/vim/saved-copy/vimqrc1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">vimqrc1.pdf</span></a>
+        <a class="sheet-main" href="/editors-and-ides/vim/saved-copy/vi-vim-cheat-sheet.gif"><img src="/editors-and-ides/vim/saved-copy/vi-vim-cheat-sheet.gif" alt="Vim - Vi IMproved , Vi — vi-vim-cheat-sheet.gif"><span class="sheet-name">vi-vim-cheat-sheet.gif</span></a>
+        <a class="sheet-main" href="/editors-and-ides/vim/saved-copy/Vi%20Reference%20Card.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Vi Reference Card.pdf</span></a>
+        <a class="sheet-main" href="/editors-and-ides/vim/saved-copy/vi_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">vi_quickref.pdf</span></a>
+        <a class="sheet-main" href="/editors-and-ides/vim/saved-copy/vi%20Reference%20Card%20%28HP%29.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">vi Reference Card (HP).pdf</span></a>
+        <a class="sheet-main" href="/editors-and-ides/vim/saved-copy/vi%20Quick%20Reference.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">vi Quick Reference.pdf</span></a>
+        <a class="sheet-main" href="/editors-and-ides/vim/saved-copy/bash-vi-editing-mode-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">bash-vi-editing-mode-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/editors-and-ides/vim/saved-copy/vi-vim-cheat-sheet.gif"><img src="/editors-and-ides/vim/saved-copy/vi-vim-cheat-sheet.gif" alt="Vim - Vi IMproved , Vi — vi-vim-cheat-sheet.gif"><span class="sheet-name">vi-vim-cheat-sheet.gif</span></a>
+      </div>
+      <a class="support-ref" href="/editors-and-ides/vim/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Xcode</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/editors-and-ides/xcode/saved-copy/xcode-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">xcode-cheat-sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/editors-and-ides/xcode/">Reference: sources and additional information</a>
+    </article>
+    </div>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

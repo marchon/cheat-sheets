@@ -1051,7 +1051,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -1062,32 +1069,31 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/web/">Web</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/web/j-query/saved-copy/jquery-mega-cheat-sheet-20152.jpg">jquery-mega-cheat-sheet-20152.jpg</a></li>
-      <li><a href="/web/j-query/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf">jQuery-1.5-Visual-Cheat-Sheet.pdf</a></li>
-      <li><a href="/web/j-query/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf">jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf</a></li>
-      <li><a href="/web/j-query/saved-copy/wsu-jquery-cheat-sheet.pdf">wsu-jquery-cheat-sheet.pdf</a></li>
-      <li><a href="/web/j-query/saved-copy/JQUERY-CHEAT-SHEET-a.png">JQUERY-CHEAT-SHEET-a.png</a></li>
-      <li><a href="/web/j-query/saved-copy/jquery12_colorcharge.pdf">jquery12_colorcharge.pdf</a></li>
-      <li><a href="/web/j-query/saved-copy/jquery12_colorcharge.png">jquery12_colorcharge.png</a></li>
-      <li><a href="/web/j-query/saved-copy/jquery12_colorcharge_bw.pdf">jquery12_colorcharge_bw.pdf</a></li>
-      <li><a href="/web/j-query/saved-copy/jquery12_colorcharge_bw.png">jquery12_colorcharge_bw.png</a></li>
-      <li><a href="/web/j-query/saved-copy/Jquery-Cheat-Sheet-1.2.pdf">Jquery-Cheat-Sheet-1.2.pdf</a></li>
-    </ul>
-    <h2>Other local files</h2>
-    <p>None stored locally.</p>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/web/j-query/saved-copy/jquery-mega-cheat-sheet-20152.jpg"><img src="/web/j-query/saved-copy/jquery-mega-cheat-sheet-20152.jpg" alt="jQuery — jquery-mega-cheat-sheet-20152.jpg"><span class="sheet-name">jquery-mega-cheat-sheet-20152.jpg</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/jQuery-1.5-Visual-Cheat-Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">jQuery-1.5-Visual-Cheat-Sheet.pdf</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">jQuery.1.3.Visual.Cheat.Sheet.by.WOORK.pdf</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/wsu-jquery-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">wsu-jquery-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/JQUERY-CHEAT-SHEET-a.png"><img src="/web/j-query/saved-copy/JQUERY-CHEAT-SHEET-a.png" alt="jQuery — JQUERY-CHEAT-SHEET-a.png"><span class="sheet-name">JQUERY-CHEAT-SHEET-a.png</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/jquery12_colorcharge.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">jquery12_colorcharge.pdf</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/jquery12_colorcharge.png"><img src="/web/j-query/saved-copy/jquery12_colorcharge.png" alt="jQuery — jquery12_colorcharge.png"><span class="sheet-name">jquery12_colorcharge.png</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/jquery12_colorcharge_bw.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">jquery12_colorcharge_bw.pdf</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/jquery12_colorcharge_bw.png"><img src="/web/j-query/saved-copy/jquery12_colorcharge_bw.png" alt="jQuery — jquery12_colorcharge_bw.png"><span class="sheet-name">jquery12_colorcharge_bw.png</span></a>
+        <a class="sheet-main" href="/web/j-query/saved-copy/Jquery-Cheat-Sheet-1.2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Jquery-Cheat-Sheet-1.2.pdf</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
     <ul>
-      <li><a href="/web/ajax/">AJAX</a></li>
-      <li><a href="/file-formats/css/">CSS</a></li>
-      <li><a href="/web/dom/">DOM</a></li>
-      <li><a href="/file-formats/html/">HTML</a></li>
-      <li><a href="/languages/java-script/">JavaScript</a></li>
-      <li><a href="/web/prototype/">Prototype</a></li>
-      <li><a href="/file-formats/xhtml/">XHTML</a></li>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
+      <li><a href="/web/ajax/">AJAX (related topic)</a></li>
+      <li><a href="/file-formats/css/">CSS (related topic)</a></li>
+      <li><a href="/web/dom/">DOM (related topic)</a></li>
+      <li><a href="/file-formats/html/">HTML (related topic)</a></li>
+      <li><a href="/languages/java-script/">JavaScript (related topic)</a></li>
+      <li><a href="/web/prototype/">Prototype (related topic)</a></li>
+      <li><a href="/file-formats/xhtml/">XHTML (related topic)</a></li>
     </ul>
   </main>
   <footer>

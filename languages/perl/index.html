@@ -1282,7 +1282,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -1293,28 +1300,27 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/languages/">Languages</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/languages/perl/saved-copy/perl-quick-reference-card.pdf">perl-quick-reference-card.pdf</a></li>
-      <li><a href="/languages/perl/saved-copy/perl-regexp-refcard-a4.pdf">perl-regexp-refcard-a4.pdf</a></li>
-      <li><a href="/languages/perl/saved-copy/PerlQuickRef.pdf">PerlQuickRef.pdf</a></li>
-      <li><a href="/languages/perl/saved-copy/perl.predefined.variables.doc">perl.predefined.variables.doc</a></li>
-      <li><a href="/languages/perl/saved-copy/perl.predefined.variables.pdf">perl.predefined.variables.pdf</a></li>
-      <li><a href="/languages/perl/saved-copy/perl.pack.unpack.printf.cheat.sheet.doc">perl.pack.unpack.printf.cheat.sheet.doc</a></li>
-      <li><a href="/languages/perl/saved-copy/perl.pack.unpack.printf.cheat.sheet.pdf">perl.pack.unpack.printf.cheat.sheet.pdf</a></li>
-      <li><a href="/languages/perl/saved-copy/perl_quickref.pdf">perl_quickref.pdf</a></li>
-      <li><a href="/languages/perl/saved-copy/PERL%20Win32%20Quick%20Reference.pdf">PERL Win32 Quick Reference.pdf</a></li>
-      <li><a href="/languages/perl/saved-copy/perl_refcard.pdf">perl_refcard.pdf</a></li>
-      <li><a href="/languages/perl/saved-copy/perl_refcard.odt">perl_refcard.odt</a></li>
-    </ul>
-    <h2>Other local files</h2>
-    <p>None stored locally.</p>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/languages/perl/saved-copy/perl-quick-reference-card.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">perl-quick-reference-card.pdf</span></a>
+        <a class="sheet-main" href="/languages/perl/saved-copy/perl-regexp-refcard-a4.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">perl-regexp-refcard-a4.pdf</span></a>
+        <a class="sheet-main" href="/languages/perl/saved-copy/PerlQuickRef.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">PerlQuickRef.pdf</span></a>
+        <a class="sheet-main" href="/languages/perl/saved-copy/perl.predefined.variables.doc"><span class="sheet-kind">DOC</span> <span class="sheet-name">perl.predefined.variables.doc</span></a>
+        <a class="sheet-main" href="/languages/perl/saved-copy/perl.predefined.variables.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">perl.predefined.variables.pdf</span></a>
+        <a class="sheet-main" href="/languages/perl/saved-copy/perl.pack.unpack.printf.cheat.sheet.doc"><span class="sheet-kind">DOC</span> <span class="sheet-name">perl.pack.unpack.printf.cheat.sheet.doc</span></a>
+        <a class="sheet-main" href="/languages/perl/saved-copy/perl.pack.unpack.printf.cheat.sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">perl.pack.unpack.printf.cheat.sheet.pdf</span></a>
+        <a class="sheet-main" href="/languages/perl/saved-copy/perl_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">perl_quickref.pdf</span></a>
+        <a class="sheet-main" href="/languages/perl/saved-copy/PERL%20Win32%20Quick%20Reference.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">PERL Win32 Quick Reference.pdf</span></a>
+        <a class="sheet-main" href="/languages/perl/saved-copy/perl_refcard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">perl_refcard.pdf</span></a>
+        <a class="sheet-main" href="/languages/perl/saved-copy/perl_refcard.odt"><span class="sheet-kind">ODT</span> <span class="sheet-name">perl_refcard.odt</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
     <ul>
-      <li><a href="/frameworks-and-libraries/catalyst/">Catalyst</a></li>
-      <li><a href="/web/mod-perl/">mod_perl</a></li>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
+      <li><a href="/frameworks-and-libraries/catalyst/">Catalyst (related topic)</a></li>
+      <li><a href="/web/mod-perl/">mod_perl (related topic)</a></li>
     </ul>
   </main>
   <footer>

@@ -165,6 +165,60 @@ PAGE = """<!DOCTYPE html>
       border-radius: 0.35rem;
     }
     .printables a:hover { border-color: var(--accent); color: var(--accent); }
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+      gap: 0.75rem;
+    }
+    .item-block {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      border-radius: 0.5rem;
+      min-height: 12rem;
+    }
+    .item-block h3 {
+      margin: 0;
+      padding: 0.7rem 0.8rem 0.25rem;
+      font-size: 1.05rem;
+    }
+    .sheet-mains {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      padding: 0.4rem 0.75rem 0.6rem;
+      flex: 1;
+    }
+    .sheet-main {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      min-height: 48px;
+      padding: 0.45rem;
+      border: 1px solid var(--line);
+      border-radius: 0.35rem;
+      text-decoration: none;
+      color: inherit;
+      background: var(--bg);
+    }
+    .sheet-main img {
+      width: 100%;
+      max-height: 12rem;
+      object-fit: contain;
+      background: #fff;
+    }
+    .sheet-kind {
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+    .support-ref {
+      margin-top: auto;
+      padding: 0.65rem 0.8rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.9rem;
+    }
     .meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.8rem; }
     .topics {
       display: grid;
@@ -209,11 +263,6 @@ PAGE = """<!DOCTYPE html>
     <p class="status" id="status" aria-live="polite"></p>
   </header>
   <main id="groups"></main>
-  <dialog id="topic-dialog" closedby="any" aria-labelledby="dialog-title">
-    <form method="dialog"><button class="close" value="close">Close</button></form>
-    <h1 id="dialog-title"></h1>
-    <div id="dialog-body"></div>
-  </dialog>
   <footer>
     <p>Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>:
     <a href="https://georgelambert.org/">George Lambert</a>
@@ -234,9 +283,6 @@ PAGE = """<!DOCTYPE html>
     const groupsEl = document.getElementById("groups");
     const navEl = document.getElementById("group-nav");
     const statusEl = document.getElementById("status");
-    const dialog = document.getElementById("topic-dialog");
-    const dialogTitle = document.getElementById("dialog-title");
-    const dialogBody = document.getElementById("dialog-body");
     const form = document.getElementById("filter-form");
     const q = document.getElementById("q");
 
@@ -258,6 +304,7 @@ PAGE = """<!DOCTYPE html>
     }
 
     const PRINTABLE = new Set([".pdf", ".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".ps", ".dvi", ".odt", ".doc", ".docx", ".rtf", ".epub"]);
+    const IMAGE = new Set([".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg"]);
 
     function localSaved(topic, file) {
       const url = file.url || "";
@@ -284,17 +331,33 @@ PAGE = """<!DOCTYPE html>
       return PRINTABLE.has(ext);
     }
 
-    function printableList(members) {
-      const items = [];
-      for (const t of members) {
-        for (const s of t.saved_copies || []) {
-          if (!isPrintable(s)) continue;
-          const label = (s.filename || "file").split("/").pop();
-          items.push(`<li><a href="${localSaved(t, s)}">${escapeHtml(t.title)} — ${escapeHtml(label)}</a></li>`);
-        }
+    function fileLabel(file) {
+      return (file.filename || "file").split("/").pop();
+    }
+
+    function sheetMain(topic, file) {
+      const href = localSaved(topic, file);
+      const name = fileLabel(file);
+      const ext = name.includes(".") ? ("." + name.split(".").pop().toLowerCase()) : "";
+      if (IMAGE.has(ext)) {
+        return `<a class="sheet-main" href="${href}"><img src="${href}" alt="${escapeHtml(topic.title + " — " + name)}"><span class="sheet-name">${escapeHtml(name)}</span></a>`;
       }
-      if (!items.length) return "";
-      return `<h3>Printable quick references</h3><ul class="printables">${items.join("")}</ul>`;
+      const kind = ext ? ext.slice(1).toUpperCase() : "FILE";
+      return `<a class="sheet-main" href="${href}"><span class="sheet-kind">${escapeHtml(kind)}</span><span class="sheet-name">${escapeHtml(name)}</span></a>`;
+    }
+
+    function itemBlock(t) {
+      const prints = (t.saved_copies || []).filter(isPrintable);
+      const support = `/${t.path}/`;
+      const mains = prints.length
+        ? prints.map((s) => sheetMain(t, s)).join("")
+        : `<a class="sheet-main" href="${support}">Open local files for ${escapeHtml(t.title)}</a>`;
+      const text = [t.title, t.id, ...prints.map(fileLabel)].join(" ").toLowerCase();
+      return `<article class="item-block" data-topic="${escapeHtml(t.id)}" data-text="${escapeHtml(text)}">
+        <h3>${escapeHtml(t.title)}</h3>
+        <div class="sheet-mains">${mains}</div>
+        <a class="support-ref" href="${support}">Reference: sources and additional information</a>
+      </article>`;
     }
 
     function render() {
@@ -304,52 +367,14 @@ PAGE = """<!DOCTYPE html>
         .join("");
       groupsEl.innerHTML = catalog.groups.filter((g) => g.topic_count).map((g) => {
         const members = catalog.topics.filter((t) => t.group === g.id);
-        const cards = members.map((t) => `
-          <article data-topic="${escapeHtml(t.id)}" data-text="${escapeHtml((t.title + " " + t.id + " " + (t.official_websites || []).map((o) => o.label || o.url).join(" ")).toLowerCase())}">
-            <button type="button" class="topic" data-open="${escapeHtml(t.id)}">${escapeHtml(t.title)}</button>
-          </article>`).join("");
+        const cards = members.map(itemBlock).join("");
         return `<section class="group" id="${g.id}">
           <h2>${escapeHtml(g.title)}</h2>
           <p class="meta">${escapeHtml(g.description)} · ${g.topic_count} topics · ${g.saved_copy_count} saved copies</p>
-          ${printableList(members)}
           <div class="topics">${cards}</div>
         </section>`;
       }).join("");
       statusEl.textContent = `${catalog.topic_count} topics in ${catalog.group_count} groups.`;
-    }
-
-    function openTopic(id) {
-      const t = byId[id];
-      if (!t) return;
-      dialogTitle.textContent = t.title;
-      const copies = t.saved_copies || [];
-      const printable = copies.filter(isPrintable).map((s) => {
-        const label = (s.filename || "file").split("/").pop();
-        return `<li><a href="${localSaved(t, s)}">${escapeHtml(label)}</a></li>`;
-      }).join("");
-      const otherLocal = copies.filter((s) => !isPrintable(s)).map((s) => {
-        const label = (s.filename || "file").split("/").pop();
-        return `<li><a href="${localSaved(t, s)}">${escapeHtml(label)}</a></li>`;
-      }).join("");
-      const see = (t.see_also || []).map((s) => {
-        const other = byId[s.id];
-        if (other) {
-          return `<li><button type="button" class="topic" data-open="${escapeHtml(other.id)}">${escapeHtml(s.label || other.title)}</button></li>`;
-        }
-        return `<li>${escapeHtml(s.label || s.id)}</li>`;
-      }).join("");
-      dialogBody.innerHTML = `
-        <p><a href="/${t.path}/">Open local topic page</a></p>
-        <h2>Printable quick references</h2>
-        ${printable ? `<ul class="printables">${printable}</ul>` : "<p>None stored locally.</p>"}
-        <h2>Other local files</h2>
-        ${otherLocal ? `<ul>${otherLocal}</ul>` : "<p>None stored locally.</p>"}
-        <h2>Wikipedia (local)</h2>
-        ${t.wikipedia ? `<p><a href="/${t.path}/wikipedia.md">Local Wikipedia clone</a></p>` : "<p>None stored locally.</p>"}
-        <h2>See also</h2>
-        ${see ? "<ul>" + see + "</ul>" : "<p>None listed.</p>"}
-      `;
-      dialog.showModal();
     }
 
     function applyFilter(term) {
@@ -368,14 +393,6 @@ PAGE = """<!DOCTYPE html>
         : `${catalog.topic_count} topics in ${catalog.group_count} groups.`;
     }
 
-    groupsEl.addEventListener("click", (event) => {
-      const btn = event.target.closest("[data-open]");
-      if (btn) openTopic(btn.dataset.open);
-    });
-    dialogBody.addEventListener("click", (event) => {
-      const btn = event.target.closest("[data-open]");
-      if (btn) openTopic(btn.dataset.open);
-    });
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       applyFilter(q.value);
@@ -384,9 +401,6 @@ PAGE = """<!DOCTYPE html>
       queueMicrotask(() => applyFilter(""));
     });
     q.addEventListener("input", () => applyFilter(q.value));
-    dialog.addEventListener("click", (event) => {
-      if (event.target === dialog) dialog.close();
-    });
     render();
     const params = new URLSearchParams(location.search);
     if (params.has("q")) {
@@ -468,6 +482,7 @@ PRINTABLE_EXTS = {
     ".rtf",
     ".epub",
 }
+IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg"}
 
 
 def is_printable(sc: dict) -> bool:
@@ -507,6 +522,48 @@ def sorted_saved(copies: list[dict]) -> tuple[list[dict], list[dict]]:
     return printable, other
 
 
+def existing_saved(root: Path, topic: dict, copies: list[dict]) -> list[dict]:
+    kept = []
+    for s in copies:
+        if (root / local_asset_path(topic, s)).exists():
+            kept.append(s)
+    return kept
+
+
+def sheet_anchor(topic: dict, sc: dict) -> str:
+    href = href_for(local_asset_path(topic, sc))
+    name = display_name(sc)
+    ext = Path(name).suffix.lower()
+    if ext in IMAGE_EXTS:
+        return (
+            f'<a class="sheet-main" href="{escape(href)}">'
+            f'<img src="{escape(href)}" alt="{escape(topic["title"] + " — " + name)}">'
+            f'<span class="sheet-name">{escape(name)}</span></a>'
+        )
+    kind = ext[1:].upper() if ext else "FILE"
+    return (
+        f'<a class="sheet-main" href="{escape(href)}">'
+        f'<span class="sheet-kind">{escape(kind)}</span> '
+        f'<span class="sheet-name">{escape(name)}</span></a>'
+    )
+
+
+def item_block_html(topic: dict, copies: list[dict]) -> str:
+    printable, _other = sorted_saved(copies)
+    support = f'/{topic["path"]}/'
+    if printable:
+        mains = "\n        ".join(sheet_anchor(topic, s) for s in printable)
+    else:
+        mains = f'<a class="sheet-main" href="{escape(support)}">Open local files for {escape(topic["title"])}</a>'
+    return f'''    <article class="item-block">
+      <h3>{escape(topic["title"])}</h3>
+      <div class="sheet-mains">
+        {mains}
+      </div>
+      <a class="support-ref" href="{escape(support)}">Reference: sources and additional information</a>
+    </article>'''
+
+
 CREDIT_HTML = (
     'Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: '
     '<a href="https://georgelambert.org/">George Lambert</a> '
@@ -535,7 +592,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 """
 
 
@@ -602,22 +666,11 @@ def write_static_files(root: Path, catalog: dict, slim: dict) -> None:
 
     for g in groups:
         members = by_group.get(g["id"], [])
-        printable_links = []
+        blocks = []
         for t in members:
-            for s in t.get("saved_copies") or []:
-                if is_printable(s):
-                    printable_links.append(
-                        f'      <li><a href="{escape(href_for(local_asset_path(t, s)))}">{escape(t["title"])} — {escape(display_name(s))}</a></li>'
-                    )
-        topic_links = "\n".join(
-            f'      <li><a href="/{t["path"]}/">{escape(t["title"])}</a></li>' for t in members
-        )
-        body = ""
-        if printable_links:
-            body += "    <h2>Printable quick references</h2>\n    <ul class=\"printables\">\n"
-            body += "\n".join(printable_links)
-            body += "\n    </ul>\n"
-        body += "    <h2>Topics</h2>\n    <ul>\n" + topic_links + "\n    </ul>"
+            copies = existing_saved(root, t, t.get("saved_copies") or [])
+            blocks.append(item_block_html(t, copies))
+        body = '    <div class="topics">\n' + "\n".join(blocks) + "\n    </div>"
         ld = page_graph(
             [
                 person_node(),
@@ -646,10 +699,11 @@ def write_static_files(root: Path, catalog: dict, slim: dict) -> None:
 
     for t in topics:
         wiki_urls = t.get("wikipedia_urls") or ([t["wikipedia"]] if t.get("wikipedia") else [])
-        saved = t.get("saved_copies") or []
+        saved = existing_saved(root, t, t.get("saved_copies") or [])
         see = t.get("see_also") or []
         by_id = {x["id"]: x for x in topics}
         printable, other = sorted_saved(saved)
+        tdir = root / t["path"]
 
         def ul(entries: list[str], cls: str = "") -> str:
             if not entries:
@@ -657,28 +711,32 @@ def write_static_files(root: Path, catalog: dict, slim: dict) -> None:
             cls_attr = f' class="{cls}"' if cls else ""
             return f"    <ul{cls_attr}>\n" + "\n".join(f"      <li>{e}</li>" for e in entries) + "\n    </ul>"
 
-        def local_link(s: dict) -> str:
-            return f'<a href="{escape(href_for(local_asset_path(t, s)))}">{escape(display_name(s))}</a>'
+        sheet_mains = "\n        ".join(sheet_anchor(t, s) for s in printable) if printable else ""
+        support = []
+        if (tdir / "README.md").exists():
+            support.append('<a href="README.md">Topic notes (README)</a>')
+        if (tdir / "topic.json").exists():
+            support.append('<a href="topic.json">Catalog record (JSON)</a>')
+        if (tdir / "wikipedia.md").exists():
+            support.append('<a href="wikipedia.md">Wikipedia clone</a>')
+        for s in other:
+            support.append(
+                f'<a href="{escape(href_for(local_asset_path(t, s)))}">{escape(display_name(s))}</a>'
+            )
+        for s in see:
+            if s.get("id") in by_id:
+                support.append(
+                    f'<a href="/{by_id[s["id"]]["path"]}/">{escape(s.get("label") or s["id"])} (related topic)</a>'
+                )
 
         body_parts = [
             f'    <p class="meta">Group: <a href="/{t["group"]}/">{escape(GROUPS.get(t["group"], {}).get("title", t["group"]))}</a></p>',
-            "    <h2>Printable quick references</h2>",
-            ul([local_link(s) for s in printable], "printables"),
-            "    <h2>Other local files</h2>",
-            ul([local_link(s) for s in other]),
-            "    <h2>Wikipedia (local)</h2>",
-            ("    <p><a href=\"wikipedia.md\">Local Wikipedia clone</a></p>" if wiki_urls else "    <p>None stored locally.</p>"),
-            "    <h2>See also</h2>",
-            ul(
-                [
-                    f'<a href="/{by_id[s["id"]]["path"]}/">{escape(s.get("label") or s["id"])}</a>'
-                    if s.get("id") in by_id
-                    else escape(s.get("label") or s.get("id"))
-                    for s in see
-                ]
-            )
-            if see
-            else "    <p>None listed.</p>",
+            "    <h2>Cheat sheets</h2>",
+            f'    <div class="sheet-mains">\n        {sheet_mains}\n    </div>'
+            if sheet_mains
+            else "    <p>No local PDF or image cheat sheet is stored for this topic.</p>",
+            '    <h2>Reference: sources and additional information</h2>',
+            ul(support) if support else "    <p>None stored locally.</p>",
         ]
         ld = page_graph(
             [
@@ -753,6 +811,8 @@ def main() -> None:
     root = Path(__file__).resolve().parents[1]
     catalog = json.loads((root / "catalog" / "catalog.json").read_text(encoding="utf-8"))
     slim = slim_catalog(catalog)
+    for t in slim["topics"]:
+        t["saved_copies"] = existing_saved(root, t, t.get("saved_copies") or [])
     payload = json.dumps(slim, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     ld = jsonld_script(homepage_graph(catalog, slim["topics"], slim["groups"]))
     html = PAGE.replace("__CATALOG__", payload).replace("__JSONLD__", ld)

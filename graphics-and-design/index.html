@@ -2931,7 +2931,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -2941,35 +2948,73 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Graphics suites, drawing tools, and visual design (See also: Adobe).</p>
   </header>
   <main>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/graphics-and-design/adobe/saved-copy/2015-ultimate-adobe-cc-keyboard-shortcuts-cheatsheet.jpg">Adobe Systems — 2015-ultimate-adobe-cc-keyboard-shortcuts-cheatsheet.jpg</a></li>
-      <li><a href="/graphics-and-design/adobe/saved-copy/adobe-cc-cheat-sheet-for-web-developers-2016.jpg">Adobe Systems — adobe-cc-cheat-sheet-for-web-developers-2016.jpg</a></li>
-      <li><a href="/graphics-and-design/adobe/saved-copy/adobe-cc-keyboard-shortcuts-cheat-sheet-for-photographers-2016.jpg">Adobe Systems — adobe-cc-keyboard-shortcuts-cheat-sheet-for-photographers-2016.jpg</a></li>
-      <li><a href="/graphics-and-design/adobe-acrobat/saved-copy/acrobat-quick-reference-8.pdf">Adobe Acrobat — acrobat-quick-reference-8.pdf</a></li>
-      <li><a href="/graphics-and-design/adobe-acrobat/saved-copy/2015-acrobat-dc-cheat-sheet.jpg">Adobe Acrobat — 2015-acrobat-dc-cheat-sheet.jpg</a></li>
-      <li><a href="/graphics-and-design/adobe-acrobat/saved-copy/acrobat_DC_Pro_Win.pdf">Adobe Acrobat — acrobat_DC_Pro_Win.pdf</a></li>
-      <li><a href="/graphics-and-design/gimp/saved-copy/Gimp.pdf">Gimp — Gimp.pdf</a></li>
-      <li><a href="/graphics-and-design/illustrator/saved-copy/illustrator_CC2015_Win.pdf">Illustrator — illustrator_CC2015_Win.pdf</a></li>
-      <li><a href="/graphics-and-design/in-design/saved-copy/indesign_CC2015_Win.pdf">InDesign — indesign_CC2015_Win.pdf</a></li>
-      <li><a href="/graphics-and-design/photoshop/saved-copy/Photoshop.pdf">Photoshop — Photoshop.pdf</a></li>
-      <li><a href="/graphics-and-design/photoshop/saved-copy/PSCS2_Shortcuts_Windows.pdf">Photoshop — PSCS2_Shortcuts_Windows.pdf</a></li>
-      <li><a href="/graphics-and-design/photoshop/saved-copy/PSCS2_Shortcuts_Mac.pdf">Photoshop — PSCS2_Shortcuts_Mac.pdf</a></li>
-      <li><a href="/graphics-and-design/photoshop/saved-copy/photoshop_2024_nl_20241206.pdf">Photoshop — photoshop_2024_nl_20241206.pdf</a></li>
-      <li><a href="/graphics-and-design/photoshop/saved-copy/photoshop_CC2015_Win.pdf">Photoshop — photoshop_CC2015_Win.pdf</a></li>
-      <li><a href="/graphics-and-design/photoshop/saved-copy/2015-adobe-photoshop-keyboard-shortcuts-cheat-sheet.jpg">Photoshop — 2015-adobe-photoshop-keyboard-shortcuts-cheat-sheet.jpg</a></li>
-    </ul>
-    <h2>Topics</h2>
-    <ul>
-      <li><a href="/graphics-and-design/adobe/">Adobe Systems</a></li>
-      <li><a href="/graphics-and-design/adobe-acrobat/">Adobe Acrobat</a></li>
-      <li><a href="/graphics-and-design/gimp/">Gimp</a></li>
-      <li><a href="/graphics-and-design/illustrator/">Illustrator</a></li>
-      <li><a href="/graphics-and-design/in-design/">InDesign</a></li>
-      <li><a href="/graphics-and-design/inkscape/">Inkscape</a></li>
-      <li><a href="/graphics-and-design/open-scad/">OpenSCAD</a></li>
-      <li><a href="/graphics-and-design/photoshop/">Photoshop</a></li>
-    </ul>
+    <div class="topics">
+    <article class="item-block">
+      <h3>Adobe Systems</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/graphics-and-design/adobe/saved-copy/2015-ultimate-adobe-cc-keyboard-shortcuts-cheatsheet.jpg"><img src="/graphics-and-design/adobe/saved-copy/2015-ultimate-adobe-cc-keyboard-shortcuts-cheatsheet.jpg" alt="Adobe Systems — 2015-ultimate-adobe-cc-keyboard-shortcuts-cheatsheet.jpg"><span class="sheet-name">2015-ultimate-adobe-cc-keyboard-shortcuts-cheatsheet.jpg</span></a>
+        <a class="sheet-main" href="/graphics-and-design/adobe/saved-copy/adobe-cc-cheat-sheet-for-web-developers-2016.jpg"><img src="/graphics-and-design/adobe/saved-copy/adobe-cc-cheat-sheet-for-web-developers-2016.jpg" alt="Adobe Systems — adobe-cc-cheat-sheet-for-web-developers-2016.jpg"><span class="sheet-name">adobe-cc-cheat-sheet-for-web-developers-2016.jpg</span></a>
+        <a class="sheet-main" href="/graphics-and-design/adobe/saved-copy/adobe-cc-keyboard-shortcuts-cheat-sheet-for-photographers-2016.jpg"><img src="/graphics-and-design/adobe/saved-copy/adobe-cc-keyboard-shortcuts-cheat-sheet-for-photographers-2016.jpg" alt="Adobe Systems — adobe-cc-keyboard-shortcuts-cheat-sheet-for-photographers-2016.jpg"><span class="sheet-name">adobe-cc-keyboard-shortcuts-cheat-sheet-for-photographers-2016.jpg</span></a>
+      </div>
+      <a class="support-ref" href="/graphics-and-design/adobe/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Adobe Acrobat</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/graphics-and-design/adobe-acrobat/saved-copy/acrobat-quick-reference-8.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">acrobat-quick-reference-8.pdf</span></a>
+        <a class="sheet-main" href="/graphics-and-design/adobe-acrobat/saved-copy/2015-acrobat-dc-cheat-sheet.jpg"><img src="/graphics-and-design/adobe-acrobat/saved-copy/2015-acrobat-dc-cheat-sheet.jpg" alt="Adobe Acrobat — 2015-acrobat-dc-cheat-sheet.jpg"><span class="sheet-name">2015-acrobat-dc-cheat-sheet.jpg</span></a>
+        <a class="sheet-main" href="/graphics-and-design/adobe-acrobat/saved-copy/acrobat_DC_Pro_Win.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">acrobat_DC_Pro_Win.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/graphics-and-design/adobe-acrobat/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Gimp</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/graphics-and-design/gimp/saved-copy/Gimp.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Gimp.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/graphics-and-design/gimp/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Illustrator</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/graphics-and-design/illustrator/saved-copy/illustrator_CC2015_Win.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">illustrator_CC2015_Win.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/graphics-and-design/illustrator/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>InDesign</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/graphics-and-design/in-design/saved-copy/indesign_CC2015_Win.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">indesign_CC2015_Win.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/graphics-and-design/in-design/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Inkscape</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/graphics-and-design/inkscape/">Open local files for Inkscape</a>
+      </div>
+      <a class="support-ref" href="/graphics-and-design/inkscape/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>OpenSCAD</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/graphics-and-design/open-scad/">Open local files for OpenSCAD</a>
+      </div>
+      <a class="support-ref" href="/graphics-and-design/open-scad/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Photoshop</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/graphics-and-design/photoshop/saved-copy/Photoshop.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Photoshop.pdf</span></a>
+        <a class="sheet-main" href="/graphics-and-design/photoshop/saved-copy/PSCS2_Shortcuts_Windows.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">PSCS2_Shortcuts_Windows.pdf</span></a>
+        <a class="sheet-main" href="/graphics-and-design/photoshop/saved-copy/PSCS2_Shortcuts_Mac.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">PSCS2_Shortcuts_Mac.pdf</span></a>
+        <a class="sheet-main" href="/graphics-and-design/photoshop/saved-copy/photoshop_2024_nl_20241206.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">photoshop_2024_nl_20241206.pdf</span></a>
+        <a class="sheet-main" href="/graphics-and-design/photoshop/saved-copy/photoshop_CC2015_Win.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">photoshop_CC2015_Win.pdf</span></a>
+        <a class="sheet-main" href="/graphics-and-design/photoshop/saved-copy/2015-adobe-photoshop-keyboard-shortcuts-cheat-sheet.jpg"><img src="/graphics-and-design/photoshop/saved-copy/2015-adobe-photoshop-keyboard-shortcuts-cheat-sheet.jpg" alt="Photoshop — 2015-adobe-photoshop-keyboard-shortcuts-cheat-sheet.jpg"><span class="sheet-name">2015-adobe-photoshop-keyboard-shortcuts-cheat-sheet.jpg</span></a>
+      </div>
+      <a class="support-ref" href="/graphics-and-design/photoshop/">Reference: sources and additional information</a>
+    </article>
+    </div>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

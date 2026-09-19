@@ -2648,7 +2648,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -2659,45 +2666,43 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/languages/">Languages</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/languages/python/saved-copy/PQRC-2.4-A4-latest.odt">PQRC-2.4-A4-latest.odt</a></li>
-      <li><a href="/languages/python/saved-copy/PQRC-2.4-A4-latest.pdf">PQRC-2.4-A4-latest.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/python-cheat-sheet-v1.png">python-cheat-sheet-v1.png</a></li>
-      <li><a href="/languages/python/saved-copy/python-cheat-sheet-v1.pdf">python-cheat-sheet-v1.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/python.pdf">python.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/mementopython3-english.20210604.pdf">mementopython3-english.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/beginners_python_cheat_sheet_pcc_all.20210604.pdf">beginners_python_cheat_sheet_pcc_all.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/Finxter_WorldsMostDensePythonCheatSheet.20210604.pdf">Finxter_WorldsMostDensePythonCheatSheet.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/CheatSheet-Python-1-Keywords-1.20210604.pdf">CheatSheet-Python-1-Keywords-1.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/CheatSheet-Python-2_-Data-Structures.20210604.pdf">CheatSheet-Python-2_-Data-Structures.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/CheatSheet-Python-3_-Complex-Data-Types.20210604.pdf">CheatSheet-Python-3_-Complex-Data-Types.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/Python-List-Methods-Cheat-Sheet.20210604.pdf">Python-List-Methods-Cheat-Sheet.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/Python-Set-Methods-Cheat-Sheet.20210604.pdf">Python-Set-Methods-Cheat-Sheet.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/CheatSheet-Python-8_-OO-Terminology.20210604.pdf">CheatSheet-Python-8_-OO-Terminology.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/CheatSheet-Python-4_-Classes.20210604.pdf">CheatSheet-Python-4_-Classes.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/CheatSheet-Python-5_-Functions-and-Tricks.20210604.pdf">CheatSheet-Python-5_-Functions-and-Tricks.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/CheatSheet-Python-6_-Coding-Interview-Questions.20210604.pdf">CheatSheet-Python-6_-Coding-Interview-Questions.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/CheatSheet-Python-7_-NumPy-1.20210604.pdf">CheatSheet-Python-7_-NumPy-1.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/PythonForDataScience.20210604.pdf">PythonForDataScience.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/python_refcard.pdf">python_refcard.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/python_refcard.odt">python_refcard.odt</a></li>
-      <li><a href="/languages/python/saved-copy/python-cheat-sheet-basic.20210604.pdf">python-cheat-sheet-basic.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/python-cheat-sheet-intermediate.20210604.pdf">python-cheat-sheet-intermediate.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/python-regular-expressions-cheat-sheet.20210604.pdf">python-regular-expressions-cheat-sheet.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/numpy-cheat-sheet.20210604.pdf">numpy-cheat-sheet.20210604.pdf</a></li>
-      <li><a href="/languages/python/saved-copy/Network-Programming-with-Python-Cheat-Sheet-5.jpg">Network-Programming-with-Python-Cheat-Sheet-5.jpg</a></li>
-      <li><a href="/languages/python/saved-copy/NumPy_SciPy_Pandas_Quandl_Cheat_Sheet.pdf">NumPy_SciPy_Pandas_Quandl_Cheat_Sheet.pdf</a></li>
-    </ul>
-    <h2>Other local files</h2>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/languages/python/saved-copy/PQRC-2.4-A4-latest.odt"><span class="sheet-kind">ODT</span> <span class="sheet-name">PQRC-2.4-A4-latest.odt</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/PQRC-2.4-A4-latest.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">PQRC-2.4-A4-latest.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/python-cheat-sheet-v1.png"><img src="/languages/python/saved-copy/python-cheat-sheet-v1.png" alt="Python — python-cheat-sheet-v1.png"><span class="sheet-name">python-cheat-sheet-v1.png</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/python-cheat-sheet-v1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">python-cheat-sheet-v1.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/python.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">python.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/mementopython3-english.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">mementopython3-english.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/beginners_python_cheat_sheet_pcc_all.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">beginners_python_cheat_sheet_pcc_all.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/Finxter_WorldsMostDensePythonCheatSheet.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Finxter_WorldsMostDensePythonCheatSheet.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/CheatSheet-Python-1-Keywords-1.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">CheatSheet-Python-1-Keywords-1.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/CheatSheet-Python-2_-Data-Structures.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">CheatSheet-Python-2_-Data-Structures.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/CheatSheet-Python-3_-Complex-Data-Types.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">CheatSheet-Python-3_-Complex-Data-Types.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/Python-List-Methods-Cheat-Sheet.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Python-List-Methods-Cheat-Sheet.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/Python-Set-Methods-Cheat-Sheet.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Python-Set-Methods-Cheat-Sheet.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/CheatSheet-Python-8_-OO-Terminology.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">CheatSheet-Python-8_-OO-Terminology.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/CheatSheet-Python-4_-Classes.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">CheatSheet-Python-4_-Classes.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/CheatSheet-Python-5_-Functions-and-Tricks.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">CheatSheet-Python-5_-Functions-and-Tricks.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/CheatSheet-Python-6_-Coding-Interview-Questions.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">CheatSheet-Python-6_-Coding-Interview-Questions.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/CheatSheet-Python-7_-NumPy-1.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">CheatSheet-Python-7_-NumPy-1.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/PythonForDataScience.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">PythonForDataScience.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/python_refcard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">python_refcard.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/python_refcard.odt"><span class="sheet-kind">ODT</span> <span class="sheet-name">python_refcard.odt</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/python-cheat-sheet-basic.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">python-cheat-sheet-basic.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/python-cheat-sheet-intermediate.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">python-cheat-sheet-intermediate.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/python-regular-expressions-cheat-sheet.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">python-regular-expressions-cheat-sheet.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/numpy-cheat-sheet.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">numpy-cheat-sheet.20210604.pdf</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/Network-Programming-with-Python-Cheat-Sheet-5.jpg"><img src="/languages/python/saved-copy/Network-Programming-with-Python-Cheat-Sheet-5.jpg" alt="Python — Network-Programming-with-Python-Cheat-Sheet-5.jpg"><span class="sheet-name">Network-Programming-with-Python-Cheat-Sheet-5.jpg</span></a>
+        <a class="sheet-main" href="/languages/python/saved-copy/NumPy_SciPy_Pandas_Quandl_Cheat_Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">NumPy_SciPy_Pandas_Quandl_Cheat_Sheet.pdf</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
     <ul>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
       <li><a href="/languages/python/saved-copy/Python%202.6%20Quick%20Reference.htm">Python 2.6 Quick Reference.htm</a></li>
-    </ul>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
-    <ul>
-      <li><a href="/frameworks-and-libraries/django/">Django</a></li>
+      <li><a href="/frameworks-and-libraries/django/">Django (related topic)</a></li>
     </ul>
   </main>
   <footer>

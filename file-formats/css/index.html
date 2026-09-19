@@ -1691,7 +1691,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -1702,37 +1709,35 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/file-formats/">File formats</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/file-formats/css/saved-copy/CSS1.pdf">CSS1.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/css2.pdf">css2.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/css-cheat-sheet-2016.jpg">css-cheat-sheet-2016.jpg</a></li>
-      <li><a href="/file-formats/css/saved-copy/css_cheat_sheet.png">css_cheat_sheet.png</a></li>
-      <li><a href="/file-formats/css/saved-copy/css_cheat_sheet.pdf">css_cheat_sheet.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/qrg0007.pdf">qrg0007.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/cssquick.pdf">cssquick.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/Cascading%20Style%20Sheets%201.0.pdf">Cascading Style Sheets 1.0.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/Locators_table_1_0_2.pdf">Locators_table_1_0_2.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/Locators_groups_1_0_2.pdf">Locators_groups_1_0_2.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/Ultimate_CSS_Cheatsheet.png">Ultimate_CSS_Cheatsheet.png</a></li>
-      <li><a href="/file-formats/css/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf">HTML_CSS_PHP_cheat_sheet.pdf</a></li>
-    </ul>
-    <h2>Other local files</h2>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/css/saved-copy/CSS1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">CSS1.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/css2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">css2.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/css-cheat-sheet-2016.jpg"><img src="/file-formats/css/saved-copy/css-cheat-sheet-2016.jpg" alt="CSS - Cascading Style Sheets — css-cheat-sheet-2016.jpg"><span class="sheet-name">css-cheat-sheet-2016.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/css_cheat_sheet.png"><img src="/file-formats/css/saved-copy/css_cheat_sheet.png" alt="CSS - Cascading Style Sheets — css_cheat_sheet.png"><span class="sheet-name">css_cheat_sheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/css_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">css_cheat_sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/qrg0007.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">qrg0007.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/cssquick.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">cssquick.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/Cascading%20Style%20Sheets%201.0.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Cascading Style Sheets 1.0.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/Locators_table_1_0_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Locators_table_1_0_2.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/Locators_groups_1_0_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Locators_groups_1_0_2.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/Ultimate_CSS_Cheatsheet.png"><img src="/file-formats/css/saved-copy/Ultimate_CSS_Cheatsheet.png" alt="CSS - Cascading Style Sheets — Ultimate_CSS_Cheatsheet.png"><span class="sheet-name">Ultimate_CSS_Cheatsheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML_CSS_PHP_cheat_sheet.pdf</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
     <ul>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
       <li><a href="/file-formats/css/hosted/sites/css.su/index.html">css.su</a></li>
       <li><a href="/file-formats/css/saved-copy/CSS_Cheat_Sheet.zip">CSS_Cheat_Sheet.zip</a></li>
-    </ul>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
-    <ul>
-      <li><a href="/web/blueprint/">Blueprint</a></li>
-      <li><a href="/web/dom/">DOM</a></li>
-      <li><a href="/file-formats/html/">HTML</a></li>
-      <li><a href="/languages/java-script/">JavaScript</a></li>
-      <li><a href="/web/selenium/">Selenium</a></li>
-      <li><a href="/file-formats/xhtml/">XHTML</a></li>
-      <li><a href="/file-formats/xpath/">XPath</a></li>
+      <li><a href="/web/blueprint/">Blueprint (related topic)</a></li>
+      <li><a href="/web/dom/">DOM (related topic)</a></li>
+      <li><a href="/file-formats/html/">HTML (related topic)</a></li>
+      <li><a href="/languages/java-script/">JavaScript (related topic)</a></li>
+      <li><a href="/web/selenium/">Selenium (related topic)</a></li>
+      <li><a href="/file-formats/xhtml/">XHTML (related topic)</a></li>
+      <li><a href="/file-formats/xpath/">XPath (related topic)</a></li>
     </ul>
   </main>
   <footer>

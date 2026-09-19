@@ -196,9 +196,6 @@
       },
       "hasPart": [
         {
-          "@id": "https://cheat-sheet-index.georgelambert.org/languages/groovy/#saved-1"
-        },
-        {
           "@id": "https://cheat-sheet-index.georgelambert.org/languages/groovy/#wikipedia-1"
         },
         {
@@ -220,47 +217,6 @@
           "@id": "https://cheat-sheet-index.georgelambert.org/languages/groovy/#wikipedia-1"
         }
       ]
-    },
-    {
-      "@type": "DigitalDocument",
-      "@id": "https://cheat-sheet-index.georgelambert.org/languages/groovy/#saved-1",
-      "name": "https:/dzone.com/refcardz/groovy",
-      "url": "https://cheat-sheet-index.georgelambert.org/languages/groovy/saved-copy/https%3A/dzone.com/refcardz/groovy/index.html",
-      "encodingFormat": "application/octet-stream",
-      "isPartOf": {
-        "@id": "https://cheat-sheet-index.georgelambert.org/languages/groovy/#topic"
-      },
-      "sameAs": [
-        "https://www.cheat-sheets.org/saved-copy/https:/dzone.com/refcardz/groovy"
-      ],
-      "learningResourceType": "cheat sheet",
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/, https://github.com/marchon, https://github.com/marchon/cheat-sheets. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
-      "isBasedOn": "https://cheat-sheets.org/",
-      "citation": [
-        {
-          "@id": "https://cheat-sheets.org/#org"
-        },
-        {
-          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
-        },
-        {
-          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
-        }
-      ],
-      "acquireLicensePage": "https://cheat-sheets.org/",
-      "contributor": {
-        "@type": "Role",
-        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
-        "contributor": {
-          "@id": "https://georgelambert.org/#person"
-        }
-      },
-      "sdPublisher": {
-        "@id": "https://georgelambert.org/#person"
-      },
-      "accountablePerson": {
-        "@id": "https://georgelambert.org/#person"
-      }
     },
     {
       "@type": "Article",
@@ -364,7 +320,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -375,17 +338,14 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/languages/">Languages</a></p>
-    <h2>Printable quick references</h2>
-    <p>None stored locally.</p>
-    <h2>Other local files</h2>
+    <h2>Cheat sheets</h2>
+    <p>No local PDF or image cheat sheet is stored for this topic.</p>
+    <h2>Reference: sources and additional information</h2>
     <ul>
-      <li><a href="/languages/groovy/saved-copy/https%3A/dzone.com/refcardz/groovy/index.html">groovy</a></li>
-    </ul>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
-    <ul>
-      <li><a href="/languages/java/">Java</a></li>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
+      <li><a href="/languages/java/">Java (related topic)</a></li>
     </ul>
   </main>
   <footer>

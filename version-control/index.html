@@ -4416,7 +4416,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -4426,48 +4433,69 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Revision-control systems (See also: Git).</p>
   </header>
   <main>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/version-control/bazaar/saved-copy/quick-start-summary.pdf">Bazaar (formerly Bazaar-NG, commandline tool bzr) - distributed revision control system — quick-start-summary.pdf</a></li>
-      <li><a href="/version-control/bazaar/saved-copy/quick-start-summary.png">Bazaar (formerly Bazaar-NG, commandline tool bzr) - distributed revision control system — quick-start-summary.png</a></li>
-      <li><a href="/version-control/bazaar/saved-copy/quick-start-summary.svg">Bazaar (formerly Bazaar-NG, commandline tool bzr) - distributed revision control system — quick-start-summary.svg</a></li>
-      <li><a href="/version-control/cvs/saved-copy/cvs-refcard-a4.pdf">CVS - Concurrent Versions System — cvs-refcard-a4.pdf</a></li>
-      <li><a href="/version-control/cvs/saved-copy/cvsqrc.dvi">CVS - Concurrent Versions System — cvsqrc.dvi</a></li>
-      <li><a href="/version-control/cvs/saved-copy/cvsqrc.pdf">CVS - Concurrent Versions System — cvsqrc.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-education.20211117.pdf">Git — git-cheat-sheet-education.20211117.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-large.png">Git — git-cheat-sheet-large.png</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet.pdf">Git — git-cheat-sheet.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet.svg">Git — git-cheat-sheet.svg</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-v2-front.svg">Git — git-cheat-sheet-v2-front.svg</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-v2-back.svg">Git — git-cheat-sheet-v2-back.svg</a></li>
-      <li><a href="/version-control/git/saved-copy/git-cheat-sheet-v2.pdf">Git — git-cheat-sheet-v2.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/Git_Quick_Reference.2011-09-04.pdf">Git — Git_Quick_Reference.2011-09-04.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/Git_Cheat_Sheet_grey.pdf">Git — Git_Cheat_Sheet_grey.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/Top_20_Git_Commands_With_Examples.png">Git — Top_20_Git_Commands_With_Examples.png</a></li>
-      <li><a href="/version-control/git/saved-copy/github-git-cheat-sheet-20220806.pdf">Git — github-git-cheat-sheet-20220806.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/Git_for_Subversion_Users.pdf">Git — Git_for_Subversion_Users.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/12_git_cheat_sheet.20210604.pdf">Git — 12_git_cheat_sheet.20210604.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/Basic_Git_commands_20211117.png">Git — Basic_Git_commands_20211117.png</a></li>
-      <li><a href="/version-control/git/saved-copy/GIT_Bash_Commands.20211117.png">Git — GIT_Bash_Commands.20211117.png</a></li>
-      <li><a href="/version-control/git/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf">Git — SWTM-2088_Atlassian-Git-Cheatsheet.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/gitlab-git-cheat-sheet-20220806.pdf">Git — gitlab-git-cheat-sheet-20220806.pdf</a></li>
-      <li><a href="/version-control/git/saved-copy/progit.20211117.pdf">Git — progit.20211117.pdf</a></li>
-      <li><a href="/version-control/perforce/saved-copy/p4v-card.pdf">Perforce — p4v-card.pdf</a></li>
-      <li><a href="/version-control/svn/saved-copy/subversion-cheat-sheet-v1.pdf">SVN (Apache Subversion) - version control system — subversion-cheat-sheet-v1.pdf</a></li>
-      <li><a href="/version-control/svn/saved-copy/subversion-cheat-sheet-v1.png">SVN (Apache Subversion) - version control system — subversion-cheat-sheet-v1.png</a></li>
-      <li><a href="/version-control/svn/saved-copy/svn-refcard.pdf">SVN (Apache Subversion) - version control system — svn-refcard.pdf</a></li>
-      <li><a href="/version-control/svn/saved-copy/Cheat%20Sheet%20Subversion.pdf">SVN (Apache Subversion) - version control system — Cheat Sheet Subversion.pdf</a></li>
-      <li><a href="/version-control/svn/saved-copy/CollabNet_SVNQuickReferenceCard.pdf">SVN (Apache Subversion) - version control system — CollabNet_SVNQuickReferenceCard.pdf</a></li>
-      <li><a href="/version-control/svn/saved-copy/Git_for_Subversion_Users.pdf">SVN (Apache Subversion) - version control system — Git_for_Subversion_Users.pdf</a></li>
-    </ul>
-    <h2>Topics</h2>
-    <ul>
-      <li><a href="/version-control/bazaar/">Bazaar (formerly Bazaar-NG, commandline tool bzr) - distributed revision control system</a></li>
-      <li><a href="/version-control/cvs/">CVS - Concurrent Versions System</a></li>
-      <li><a href="/version-control/git/">Git</a></li>
-      <li><a href="/version-control/perforce/">Perforce</a></li>
-      <li><a href="/version-control/svn/">SVN (Apache Subversion) - version control system</a></li>
-    </ul>
+    <div class="topics">
+    <article class="item-block">
+      <h3>Bazaar (formerly Bazaar-NG, commandline tool bzr) - distributed revision control system</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/version-control/bazaar/saved-copy/quick-start-summary.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">quick-start-summary.pdf</span></a>
+        <a class="sheet-main" href="/version-control/bazaar/saved-copy/quick-start-summary.png"><img src="/version-control/bazaar/saved-copy/quick-start-summary.png" alt="Bazaar (formerly Bazaar-NG, commandline tool bzr) - distributed revision control system — quick-start-summary.png"><span class="sheet-name">quick-start-summary.png</span></a>
+        <a class="sheet-main" href="/version-control/bazaar/saved-copy/quick-start-summary.svg"><img src="/version-control/bazaar/saved-copy/quick-start-summary.svg" alt="Bazaar (formerly Bazaar-NG, commandline tool bzr) - distributed revision control system — quick-start-summary.svg"><span class="sheet-name">quick-start-summary.svg</span></a>
+      </div>
+      <a class="support-ref" href="/version-control/bazaar/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>CVS - Concurrent Versions System</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/version-control/cvs/saved-copy/cvs-refcard-a4.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">cvs-refcard-a4.pdf</span></a>
+        <a class="sheet-main" href="/version-control/cvs/saved-copy/cvsqrc.dvi"><span class="sheet-kind">DVI</span> <span class="sheet-name">cvsqrc.dvi</span></a>
+        <a class="sheet-main" href="/version-control/cvs/saved-copy/cvsqrc.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">cvsqrc.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/version-control/cvs/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Git</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet-education.20211117.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">git-cheat-sheet-education.20211117.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet-large.png"><img src="/version-control/git/saved-copy/git-cheat-sheet-large.png" alt="Git — git-cheat-sheet-large.png"><span class="sheet-name">git-cheat-sheet-large.png</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">git-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet.svg"><img src="/version-control/git/saved-copy/git-cheat-sheet.svg" alt="Git — git-cheat-sheet.svg"><span class="sheet-name">git-cheat-sheet.svg</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet-v2-front.svg"><img src="/version-control/git/saved-copy/git-cheat-sheet-v2-front.svg" alt="Git — git-cheat-sheet-v2-front.svg"><span class="sheet-name">git-cheat-sheet-v2-front.svg</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet-v2-back.svg"><img src="/version-control/git/saved-copy/git-cheat-sheet-v2-back.svg" alt="Git — git-cheat-sheet-v2-back.svg"><span class="sheet-name">git-cheat-sheet-v2-back.svg</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/git-cheat-sheet-v2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">git-cheat-sheet-v2.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/Git_Quick_Reference.2011-09-04.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Git_Quick_Reference.2011-09-04.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/Git_Cheat_Sheet_grey.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Git_Cheat_Sheet_grey.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/Top_20_Git_Commands_With_Examples.png"><img src="/version-control/git/saved-copy/Top_20_Git_Commands_With_Examples.png" alt="Git — Top_20_Git_Commands_With_Examples.png"><span class="sheet-name">Top_20_Git_Commands_With_Examples.png</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/github-git-cheat-sheet-20220806.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">github-git-cheat-sheet-20220806.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/Git_for_Subversion_Users.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Git_for_Subversion_Users.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/12_git_cheat_sheet.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">12_git_cheat_sheet.20210604.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/Basic_Git_commands_20211117.png"><img src="/version-control/git/saved-copy/Basic_Git_commands_20211117.png" alt="Git — Basic_Git_commands_20211117.png"><span class="sheet-name">Basic_Git_commands_20211117.png</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/GIT_Bash_Commands.20211117.png"><img src="/version-control/git/saved-copy/GIT_Bash_Commands.20211117.png" alt="Git — GIT_Bash_Commands.20211117.png"><span class="sheet-name">GIT_Bash_Commands.20211117.png</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/SWTM-2088_Atlassian-Git-Cheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">SWTM-2088_Atlassian-Git-Cheatsheet.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/gitlab-git-cheat-sheet-20220806.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">gitlab-git-cheat-sheet-20220806.pdf</span></a>
+        <a class="sheet-main" href="/version-control/git/saved-copy/progit.20211117.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">progit.20211117.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/version-control/git/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Perforce</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/version-control/perforce/saved-copy/p4v-card.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">p4v-card.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/version-control/perforce/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>SVN (Apache Subversion) - version control system</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/version-control/svn/saved-copy/subversion-cheat-sheet-v1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">subversion-cheat-sheet-v1.pdf</span></a>
+        <a class="sheet-main" href="/version-control/svn/saved-copy/subversion-cheat-sheet-v1.png"><img src="/version-control/svn/saved-copy/subversion-cheat-sheet-v1.png" alt="SVN (Apache Subversion) - version control system — subversion-cheat-sheet-v1.png"><span class="sheet-name">subversion-cheat-sheet-v1.png</span></a>
+        <a class="sheet-main" href="/version-control/svn/saved-copy/svn-refcard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">svn-refcard.pdf</span></a>
+        <a class="sheet-main" href="/version-control/svn/saved-copy/Cheat%20Sheet%20Subversion.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Cheat Sheet Subversion.pdf</span></a>
+        <a class="sheet-main" href="/version-control/svn/saved-copy/CollabNet_SVNQuickReferenceCard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">CollabNet_SVNQuickReferenceCard.pdf</span></a>
+        <a class="sheet-main" href="/version-control/svn/saved-copy/Git_for_Subversion_Users.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Git_for_Subversion_Users.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/version-control/svn/">Reference: sources and additional information</a>
+    </article>
+    </div>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

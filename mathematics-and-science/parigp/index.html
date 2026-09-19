@@ -1510,7 +1510,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -1521,37 +1528,35 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/mathematics-and-science/">Mathematics and science</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/mathematics-and-science/parigp/saved-copy/Basic_GP_refcard.pdf">Basic_GP_refcard.pdf</a></li>
-      <li><a href="/mathematics-and-science/parigp/saved-copy/refcard-nf.pdf">refcard-nf.pdf</a></li>
-      <li><a href="/mathematics-and-science/parigp/saved-copy/refcard-ell.pdf">refcard-ell.pdf</a></li>
-      <li><a href="/mathematics-and-science/parigp/saved-copy/refcard-lfun.pdf">refcard-lfun.pdf</a></li>
-      <li><a href="/mathematics-and-science/parigp/saved-copy/refcard-mf.pdf">refcard-mf.pdf</a></li>
-      <li><a href="/mathematics-and-science/parigp/saved-copy/Users_Guide_to_PARIGP_users.pdf">Users_Guide_to_PARIGP_users.pdf</a></li>
-      <li><a href="/mathematics-and-science/parigp/saved-copy/libpari.pdf">libpari.pdf</a></li>
-      <li><a href="/mathematics-and-science/parigp/saved-copy/Developer_s_Guide_to_the_PARI_library_develop.pdf">Developer_s_Guide_to_the_PARI_library_develop.pdf</a></li>
-      <li><a href="/mathematics-and-science/parigp/saved-copy/Installation_Guide_PARI_GP_INSTALL.pdf">Installation_Guide_PARI_GP_INSTALL.pdf</a></li>
-      <li><a href="/mathematics-and-science/parigp/saved-copy/GP_Tutorial_tutorial.pdf">GP_Tutorial_tutorial.pdf</a></li>
-      <li><a href="/mathematics-and-science/parigp/saved-copy/tutorial-mf.pdf">tutorial-mf.pdf</a></li>
-      <li><a href="/mathematics-and-science/parigp/saved-copy/parallel_GP.pdf">parallel_GP.pdf</a></li>
-    </ul>
-    <h2>Other local files</h2>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/mathematics-and-science/parigp/saved-copy/Basic_GP_refcard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Basic_GP_refcard.pdf</span></a>
+        <a class="sheet-main" href="/mathematics-and-science/parigp/saved-copy/refcard-nf.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">refcard-nf.pdf</span></a>
+        <a class="sheet-main" href="/mathematics-and-science/parigp/saved-copy/refcard-ell.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">refcard-ell.pdf</span></a>
+        <a class="sheet-main" href="/mathematics-and-science/parigp/saved-copy/refcard-lfun.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">refcard-lfun.pdf</span></a>
+        <a class="sheet-main" href="/mathematics-and-science/parigp/saved-copy/refcard-mf.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">refcard-mf.pdf</span></a>
+        <a class="sheet-main" href="/mathematics-and-science/parigp/saved-copy/Users_Guide_to_PARIGP_users.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Users_Guide_to_PARIGP_users.pdf</span></a>
+        <a class="sheet-main" href="/mathematics-and-science/parigp/saved-copy/libpari.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">libpari.pdf</span></a>
+        <a class="sheet-main" href="/mathematics-and-science/parigp/saved-copy/Developer_s_Guide_to_the_PARI_library_develop.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Developer_s_Guide_to_the_PARI_library_develop.pdf</span></a>
+        <a class="sheet-main" href="/mathematics-and-science/parigp/saved-copy/Installation_Guide_PARI_GP_INSTALL.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Installation_Guide_PARI_GP_INSTALL.pdf</span></a>
+        <a class="sheet-main" href="/mathematics-and-science/parigp/saved-copy/GP_Tutorial_tutorial.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">GP_Tutorial_tutorial.pdf</span></a>
+        <a class="sheet-main" href="/mathematics-and-science/parigp/saved-copy/tutorial-mf.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">tutorial-mf.pdf</span></a>
+        <a class="sheet-main" href="/mathematics-and-science/parigp/saved-copy/parallel_GP.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">parallel_GP.pdf</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
     <ul>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
       <li><a href="/mathematics-and-science/parigp/saved-copy/PARIGP_Online_User%27s_Guide_html-stable.tgz">PARIGP_Online_User's_Guide_html-stable.tgz</a></li>
-    </ul>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
-    <ul>
-      <li><a href="/mathematics-and-science/maple/">Algebra</a></li>
-      <li><a href="/mathematics-and-science/maple/">Maple</a></li>
-      <li><a href="/mathematics-and-science/math/">Math</a></li>
-      <li><a href="/mathematics-and-science/mathematica/">Mathematica</a></li>
-      <li><a href="/mathematics-and-science/matlab/">MATLAB</a></li>
-      <li><a href="/mathematics-and-science/mathomatic/">Mathomatic</a></li>
-      <li><a href="/mathematics-and-science/maxima/">Maxima</a></li>
-      <li><a href="/mathematics-and-science/sage-math/">SageMath</a></li>
+      <li><a href="/mathematics-and-science/maple/">Algebra (related topic)</a></li>
+      <li><a href="/mathematics-and-science/maple/">Maple (related topic)</a></li>
+      <li><a href="/mathematics-and-science/math/">Math (related topic)</a></li>
+      <li><a href="/mathematics-and-science/mathematica/">Mathematica (related topic)</a></li>
+      <li><a href="/mathematics-and-science/matlab/">MATLAB (related topic)</a></li>
+      <li><a href="/mathematics-and-science/mathomatic/">Mathomatic (related topic)</a></li>
+      <li><a href="/mathematics-and-science/maxima/">Maxima (related topic)</a></li>
+      <li><a href="/mathematics-and-science/sage-math/">SageMath (related topic)</a></li>
     </ul>
   </main>
   <footer>

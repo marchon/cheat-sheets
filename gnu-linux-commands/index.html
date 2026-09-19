@@ -7172,7 +7172,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -7182,72 +7189,154 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Unix/Linux command-line tools and shells (cat, less, awk, sed, ls, …), plus Linux/Unix overview sheets the site clusters via See also.</p>
   </header>
   <main>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/gnu-linux-commands/awk/saved-copy/awk.cheat.sheet.doc">AWK - Aho, Weinberger and Kernighan programming language — awk.cheat.sheet.doc</a></li>
-      <li><a href="/gnu-linux-commands/awk/saved-copy/awk.cheat.sheet.pdf">AWK - Aho, Weinberger and Kernighan programming language — awk.cheat.sheet.pdf</a></li>
-      <li><a href="/gnu-linux-commands/awk/saved-copy/awk_quickref.pdf">AWK - Aho, Weinberger and Kernighan programming language — awk_quickref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/ed/saved-copy/ed.text.editor.cheat.sheet.doc">Ed - UNIX Text Editor — ed.text.editor.cheat.sheet.doc</a></li>
-      <li><a href="/gnu-linux-commands/ed/saved-copy/ed.text.editor.cheat.sheet.pdf">Ed - UNIX Text Editor — ed.text.editor.cheat.sheet.pdf</a></li>
-      <li><a href="/gnu-linux-commands/gdb/saved-copy/gdb-refcard-a4.pdf">GDB - GNU Debugger — gdb-refcard-a4.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/fwunixref.pdf">Linux — fwunixref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-021.jpg">Linux — 10-Linux-Unix-Command-Cheat-Sheet-021.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/The%20One%20Page%20Linux%20Manual.pdf">Linux — The One Page Linux Manual.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linux_quickref.pdf">Linux — linux_quickref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/Linux_Syscall_quickref.pdf">Linux — Linux_Syscall_quickref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linux_security_quickref.pdf">Linux — linux_security_quickref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/CliCommandsFull.jpg">Linux — CliCommandsFull.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-011.jpg">Linux — 10-Linux-Unix-Command-Cheat-Sheet-011.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet.pdf">Linux — linux-cheat-sheet.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet.png">Linux — linux-cheat-sheet.png</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/305883.jpg">Linux — 305883.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/clicommandsfull.jpg">Linux — clicommandsfull.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet-wallpapers_30985_1920x1080.jpg">Linux — linux-cheat-sheet-wallpapers_30985_1920x1080.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linux-command-line-cheat-sheet.png">Linux — linux-command-line-cheat-sheet.png</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/linuxcommands.png">Linux — linuxcommands.png</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/ubuntucheatsheet.jpg">Linux — ubuntucheatsheet.jpg</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/davechild_linux-command-line.pdf">Linux — davechild_linux-command-line.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/Muppix_Linux_commands_1.pdf">Linux — Muppix_Linux_commands_1.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/Muppix_Linux_commands_2.pdf">Linux — Muppix_Linux_commands_2.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/Muppix.co_Basic_Linux_Commands.png">Linux — Muppix.co_Basic_Linux_Commands.png</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/Muppix_Basic_Linux_commands.pdf">Linux — Muppix_Basic_Linux_commands.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/Muppix_Linux_terminal_navigation.pdf">Linux — Muppix_Linux_terminal_navigation.pdf</a></li>
-      <li><a href="/gnu-linux-commands/linux/saved-copy/pcwdld.com-linux-commands-cheat-sheet-20211028.png">Linux — pcwdld.com-linux-commands-cheat-sheet-20211028.png</a></li>
-      <li><a href="/gnu-linux-commands/nano/saved-copy/Nano_Cheat_Sheet.pdf">Nano — Nano_Cheat_Sheet.pdf</a></li>
-      <li><a href="/gnu-linux-commands/open-ssh/saved-copy/OpenSSH_quickref.pdf">OpenSSH - OpenBSD Secure Shell — OpenSSH_quickref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/screen/saved-copy/screen.cheat.sheet.pdf">Screen - Screen VT100/ANSI Terminal Emulator — screen.cheat.sheet.pdf</a></li>
-      <li><a href="/gnu-linux-commands/sed/saved-copy/sed.stream.editor.cheat.sheet.doc">Sed - Stream EDitor — sed.stream.editor.cheat.sheet.doc</a></li>
-      <li><a href="/gnu-linux-commands/sed/saved-copy/sed.stream.editor.cheat.sheet.pdf">Sed - Stream EDitor — sed.stream.editor.cheat.sheet.pdf</a></li>
-      <li><a href="/gnu-linux-commands/shell-script/saved-copy/shellscripcheatsheet.pdf">Shell script — shellscripcheatsheet.pdf</a></li>
-      <li><a href="/gnu-linux-commands/shell-script/saved-copy/shellcheatsheet.pdf">Shell script — shellcheatsheet.pdf</a></li>
-      <li><a href="/gnu-linux-commands/shell-script/saved-copy/bash_ref.pdf">Shell script — bash_ref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/shell-script/saved-copy/OSDC_cheatsheet-metacharacters-2023.02.09.pdf">Shell script — OSDC_cheatsheet-metacharacters-2023.02.09.pdf</a></li>
-      <li><a href="/gnu-linux-commands/unix/saved-copy/unix_command_quickref.pdf">Unix — unix_command_quickref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/unix/saved-copy/UNIX%20commands%20reference%20card.pdf">Unix — UNIX commands reference card.pdf</a></li>
-      <li><a href="/gnu-linux-commands/unix/saved-copy/bash_quickref.pdf">Unix — bash_quickref.pdf</a></li>
-      <li><a href="/gnu-linux-commands/unix/saved-copy/setops.pdf">Unix — setops.pdf</a></li>
-      <li><a href="/gnu-linux-commands/unix/saved-copy/bash-history-cheat-sheet.pdf">Unix — bash-history-cheat-sheet.pdf</a></li>
-      <li><a href="/gnu-linux-commands/unix/saved-copy/Unix_Systems_Programming_Cheat_Sheet_20210701.pdf">Unix — Unix_Systems_Programming_Cheat_Sheet_20210701.pdf</a></li>
-    </ul>
-    <h2>Topics</h2>
-    <ul>
-      <li><a href="/gnu-linux-commands/apt/">APT - Advanced Packaging Tool</a></li>
-      <li><a href="/gnu-linux-commands/awk/">AWK - Aho, Weinberger and Kernighan programming language</a></li>
-      <li><a href="/gnu-linux-commands/chmod/">chmod</a></li>
-      <li><a href="/gnu-linux-commands/cron/">Cron</a></li>
-      <li><a href="/gnu-linux-commands/curl/">curl (cURL, Curl)</a></li>
-      <li><a href="/gnu-linux-commands/ed/">Ed - UNIX Text Editor</a></li>
-      <li><a href="/gnu-linux-commands/gdb/">GDB - GNU Debugger</a></li>
-      <li><a href="/gnu-linux-commands/less/">less</a></li>
-      <li><a href="/gnu-linux-commands/linux/">Linux</a></li>
-      <li><a href="/gnu-linux-commands/nano/">Nano</a></li>
-      <li><a href="/gnu-linux-commands/open-ssh/">OpenSSH - OpenBSD Secure Shell</a></li>
-      <li><a href="/gnu-linux-commands/rpm/">rpm - Red Hat Package Manager</a></li>
-      <li><a href="/gnu-linux-commands/screen/">Screen - Screen VT100/ANSI Terminal Emulator</a></li>
-      <li><a href="/gnu-linux-commands/sed/">Sed - Stream EDitor</a></li>
-      <li><a href="/gnu-linux-commands/shell-script/">Shell script</a></li>
-      <li><a href="/gnu-linux-commands/unix/">Unix</a></li>
-    </ul>
+    <div class="topics">
+    <article class="item-block">
+      <h3>APT - Advanced Packaging Tool</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/apt/">Open local files for APT - Advanced Packaging Tool</a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/apt/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>AWK - Aho, Weinberger and Kernighan programming language</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/awk/saved-copy/awk.cheat.sheet.doc"><span class="sheet-kind">DOC</span> <span class="sheet-name">awk.cheat.sheet.doc</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/awk/saved-copy/awk.cheat.sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">awk.cheat.sheet.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/awk/saved-copy/awk_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">awk_quickref.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/awk/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>chmod</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/chmod/">Open local files for chmod</a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/chmod/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Cron</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/cron/">Open local files for Cron</a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/cron/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>curl (cURL, Curl)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/curl/">Open local files for curl (cURL, Curl)</a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/curl/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Ed - UNIX Text Editor</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/ed/saved-copy/ed.text.editor.cheat.sheet.doc"><span class="sheet-kind">DOC</span> <span class="sheet-name">ed.text.editor.cheat.sheet.doc</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/ed/saved-copy/ed.text.editor.cheat.sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">ed.text.editor.cheat.sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/ed/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>GDB - GNU Debugger</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/gdb/saved-copy/gdb-refcard-a4.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">gdb-refcard-a4.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/gdb/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>less</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/less/">Open local files for less</a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/less/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Linux</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/fwunixref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">fwunixref.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-021.jpg"><img src="/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-021.jpg" alt="Linux — 10-Linux-Unix-Command-Cheat-Sheet-021.jpg"><span class="sheet-name">10-Linux-Unix-Command-Cheat-Sheet-021.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/The%20One%20Page%20Linux%20Manual.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">The One Page Linux Manual.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linux_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">linux_quickref.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/Linux_Syscall_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Linux_Syscall_quickref.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linux_security_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">linux_security_quickref.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/CliCommandsFull.jpg"><img src="/gnu-linux-commands/linux/saved-copy/CliCommandsFull.jpg" alt="Linux — CliCommandsFull.jpg"><span class="sheet-name">CliCommandsFull.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-011.jpg"><img src="/gnu-linux-commands/linux/saved-copy/10-Linux-Unix-Command-Cheat-Sheet-011.jpg" alt="Linux — 10-Linux-Unix-Command-Cheat-Sheet-011.jpg"><span class="sheet-name">10-Linux-Unix-Command-Cheat-Sheet-011.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">linux-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet.png"><img src="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet.png" alt="Linux — linux-cheat-sheet.png"><span class="sheet-name">linux-cheat-sheet.png</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/305883.jpg"><img src="/gnu-linux-commands/linux/saved-copy/305883.jpg" alt="Linux — 305883.jpg"><span class="sheet-name">305883.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/clicommandsfull.jpg"><img src="/gnu-linux-commands/linux/saved-copy/clicommandsfull.jpg" alt="Linux — clicommandsfull.jpg"><span class="sheet-name">clicommandsfull.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet-wallpapers_30985_1920x1080.jpg"><img src="/gnu-linux-commands/linux/saved-copy/linux-cheat-sheet-wallpapers_30985_1920x1080.jpg" alt="Linux — linux-cheat-sheet-wallpapers_30985_1920x1080.jpg"><span class="sheet-name">linux-cheat-sheet-wallpapers_30985_1920x1080.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linux-command-line-cheat-sheet.png"><img src="/gnu-linux-commands/linux/saved-copy/linux-command-line-cheat-sheet.png" alt="Linux — linux-command-line-cheat-sheet.png"><span class="sheet-name">linux-command-line-cheat-sheet.png</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/linuxcommands.png"><img src="/gnu-linux-commands/linux/saved-copy/linuxcommands.png" alt="Linux — linuxcommands.png"><span class="sheet-name">linuxcommands.png</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/ubuntucheatsheet.jpg"><img src="/gnu-linux-commands/linux/saved-copy/ubuntucheatsheet.jpg" alt="Linux — ubuntucheatsheet.jpg"><span class="sheet-name">ubuntucheatsheet.jpg</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/davechild_linux-command-line.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">davechild_linux-command-line.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/Muppix_Linux_commands_1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Muppix_Linux_commands_1.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/Muppix_Linux_commands_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Muppix_Linux_commands_2.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/Muppix.co_Basic_Linux_Commands.png"><img src="/gnu-linux-commands/linux/saved-copy/Muppix.co_Basic_Linux_Commands.png" alt="Linux — Muppix.co_Basic_Linux_Commands.png"><span class="sheet-name">Muppix.co_Basic_Linux_Commands.png</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/Muppix_Basic_Linux_commands.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Muppix_Basic_Linux_commands.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/Muppix_Linux_terminal_navigation.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Muppix_Linux_terminal_navigation.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/linux/saved-copy/pcwdld.com-linux-commands-cheat-sheet-20211028.png"><img src="/gnu-linux-commands/linux/saved-copy/pcwdld.com-linux-commands-cheat-sheet-20211028.png" alt="Linux — pcwdld.com-linux-commands-cheat-sheet-20211028.png"><span class="sheet-name">pcwdld.com-linux-commands-cheat-sheet-20211028.png</span></a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/linux/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Nano</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/nano/saved-copy/Nano_Cheat_Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Nano_Cheat_Sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/nano/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>OpenSSH - OpenBSD Secure Shell</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/open-ssh/saved-copy/OpenSSH_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">OpenSSH_quickref.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/open-ssh/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>rpm - Red Hat Package Manager</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/rpm/">Open local files for rpm - Red Hat Package Manager</a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/rpm/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Screen - Screen VT100/ANSI Terminal Emulator</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/screen/saved-copy/screen.cheat.sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">screen.cheat.sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/screen/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Sed - Stream EDitor</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/sed/saved-copy/sed.stream.editor.cheat.sheet.doc"><span class="sheet-kind">DOC</span> <span class="sheet-name">sed.stream.editor.cheat.sheet.doc</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/sed/saved-copy/sed.stream.editor.cheat.sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sed.stream.editor.cheat.sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/sed/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Shell script</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/shell-script/saved-copy/shellscripcheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">shellscripcheatsheet.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/shell-script/saved-copy/shellcheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">shellcheatsheet.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/shell-script/saved-copy/bash_ref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">bash_ref.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/shell-script/saved-copy/OSDC_cheatsheet-metacharacters-2023.02.09.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">OSDC_cheatsheet-metacharacters-2023.02.09.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/shell-script/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Unix</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/gnu-linux-commands/unix/saved-copy/unix_command_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">unix_command_quickref.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/unix/saved-copy/UNIX%20commands%20reference%20card.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">UNIX commands reference card.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/unix/saved-copy/bash_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">bash_quickref.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/unix/saved-copy/setops.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">setops.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/unix/saved-copy/bash-history-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">bash-history-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/gnu-linux-commands/unix/saved-copy/Unix_Systems_Programming_Cheat_Sheet_20210701.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Unix_Systems_Programming_Cheat_Sheet_20210701.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/gnu-linux-commands/unix/">Reference: sources and additional information</a>
+    </article>
+    </div>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

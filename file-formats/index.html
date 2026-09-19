@@ -10461,9 +10461,6 @@
           "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-7"
         },
         {
-          "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-8"
-        },
-        {
           "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#wikipedia-1"
         },
         {
@@ -10708,47 +10705,6 @@
     {
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-6",
-      "name": "ReferenceCards/AMSTeXRefCard.v1.3.tex",
-      "url": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/saved-copy/ReferenceCards/AMSTeXRefCard.v1.3.tex",
-      "encodingFormat": "application/x-tex",
-      "isPartOf": {
-        "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#topic"
-      },
-      "sameAs": [
-        "https://www.cheat-sheets.org/saved-copy/ReferenceCards/AMSTeXRefCard.v1.3.tex"
-      ],
-      "learningResourceType": "cheat sheet",
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/, https://github.com/marchon, https://github.com/marchon/cheat-sheets. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
-      "isBasedOn": "https://cheat-sheets.org/",
-      "citation": [
-        {
-          "@id": "https://cheat-sheets.org/#org"
-        },
-        {
-          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
-        },
-        {
-          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
-        }
-      ],
-      "acquireLicensePage": "https://cheat-sheets.org/",
-      "contributor": {
-        "@type": "Role",
-        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
-        "contributor": {
-          "@id": "https://georgelambert.org/#person"
-        }
-      },
-      "sdPublisher": {
-        "@id": "https://georgelambert.org/#person"
-      },
-      "accountablePerson": {
-        "@id": "https://georgelambert.org/#person"
-      }
-    },
-    {
-      "@type": "DigitalDocument",
-      "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-7",
       "name": "tex-refcard-a4.pdf",
       "url": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/saved-copy/tex-refcard-a4.pdf",
       "encodingFormat": "application/pdf",
@@ -10789,7 +10745,7 @@
     },
     {
       "@type": "DigitalDocument",
-      "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-8",
+      "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-7",
       "name": "AMSTeX Reference Card 1.3.pdf",
       "url": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/saved-copy/AMSTeX%20Reference%20Card%201.3.pdf",
       "encodingFormat": "application/pdf",
@@ -14180,7 +14136,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -14190,131 +14153,285 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Encodings, markup, document types, and file-extension references.</p>
   </header>
   <main>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/file-formats/ascii/saved-copy/ascii_a4.pdf">ASCII - American Standard Code for Information Interchange — ascii_a4.pdf</a></li>
-      <li><a href="/file-formats/ascii/saved-copy/ascii_letter.pdf">ASCII - American Standard Code for Information Interchange — ascii_letter.pdf</a></li>
-      <li><a href="/file-formats/ascii/saved-copy/ascii.png">ASCII - American Standard Code for Information Interchange — ascii.png</a></li>
-      <li><a href="/file-formats/characters/saved-copy/characters_cheat_sheet.png">Characters — characters_cheat_sheet.png</a></li>
-      <li><a href="/file-formats/characters/saved-copy/characters_cheat_sheet.pdf">Characters — characters_cheat_sheet.pdf</a></li>
-      <li><a href="/file-formats/colour/saved-copy/colourchart.png">Colour — colourchart.png</a></li>
-      <li><a href="/file-formats/colour/saved-copy/card_800.gif">Colour — card_800.gif</a></li>
-      <li><a href="/file-formats/colour/saved-copy/fc_800.jpg">Colour — fc_800.jpg</a></li>
-      <li><a href="/file-formats/colour/saved-copy/post1092.jpg">Colour — post1092.jpg</a></li>
-      <li><a href="/file-formats/colour/saved-copy/chart_847.gif">Colour — chart_847.gif</a></li>
-      <li><a href="/file-formats/colour/saved-copy/kilochart_900.jpg">Colour — kilochart_900.jpg</a></li>
-      <li><a href="/file-formats/colour/saved-copy/hexagon_800.gif">Colour — hexagon_800.gif</a></li>
-      <li><a href="/file-formats/colour/saved-copy/gamutgrid.pdf">Colour — gamutgrid.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/CSS1.pdf">CSS - Cascading Style Sheets — CSS1.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/css2.pdf">CSS - Cascading Style Sheets — css2.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/css-cheat-sheet-2016.jpg">CSS - Cascading Style Sheets — css-cheat-sheet-2016.jpg</a></li>
-      <li><a href="/file-formats/css/saved-copy/css_cheat_sheet.png">CSS - Cascading Style Sheets — css_cheat_sheet.png</a></li>
-      <li><a href="/file-formats/css/saved-copy/css_cheat_sheet.pdf">CSS - Cascading Style Sheets — css_cheat_sheet.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/qrg0007.pdf">CSS - Cascading Style Sheets — qrg0007.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/cssquick.pdf">CSS - Cascading Style Sheets — cssquick.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/Cascading%20Style%20Sheets%201.0.pdf">CSS - Cascading Style Sheets — Cascading Style Sheets 1.0.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/Locators_table_1_0_2.pdf">CSS - Cascading Style Sheets — Locators_table_1_0_2.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/Locators_groups_1_0_2.pdf">CSS - Cascading Style Sheets — Locators_groups_1_0_2.pdf</a></li>
-      <li><a href="/file-formats/css/saved-copy/Ultimate_CSS_Cheatsheet.png">CSS - Cascading Style Sheets — Ultimate_CSS_Cheatsheet.png</a></li>
-      <li><a href="/file-formats/css/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf">CSS - Cascading Style Sheets — HTML_CSS_PHP_cheat_sheet.pdf</a></li>
-      <li><a href="/file-formats/dotlanguage/saved-copy/dot.language.2011-12-09.pdf">DOT language — dot.language.2011-12-09.pdf</a></li>
-      <li><a href="/file-formats/fonts/saved-copy/card_800.gif">Fonts — card_800.gif</a></li>
-      <li><a href="/file-formats/fonts/saved-copy/fc_800.jpg">Fonts — fc_800.jpg</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML5-mega-cheat-sheet.jpg">HTML - HyperText Markup Language — HTML5-mega-cheat-sheet.jpg</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf">HTML - HyperText Markup Language — HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/html1_quickref.pdf">HTML - HyperText Markup Language — html1_quickref.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/htmlcheatsheet.pdf">HTML - HyperText Markup Language — htmlcheatsheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML5_Canvas_Cheat_Sheet.pdf">HTML - HyperText Markup Language — HTML5_Canvas_Cheat_Sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML5_Canvas_Cheat_Sheet.png">HTML - HyperText Markup Language — HTML5_Canvas_Cheat_Sheet.png</a></li>
-      <li><a href="/file-formats/html/saved-copy/html-cheat-sheet.png">HTML - HyperText Markup Language — html-cheat-sheet.png</a></li>
-      <li><a href="/file-formats/html/saved-copy/html-cheat-sheet.pdf">HTML - HyperText Markup Language — html-cheat-sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML-XHTML_Tag_Sheet.pdf">HTML - HyperText Markup Language — HTML-XHTML_Tag_Sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/html5-cheat-sheet-1.png">HTML - HyperText Markup Language — html5-cheat-sheet-1.png</a></li>
-      <li><a href="/file-formats/html/saved-copy/html5-cheat-sheet.pdf">HTML - HyperText Markup Language — html5-cheat-sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/html5spanish-page-001.jpg">HTML - HyperText Markup Language — html5spanish-page-001.jpg</a></li>
-      <li><a href="/file-formats/html/saved-copy/html5spanish.pdf">HTML - HyperText Markup Language — html5spanish.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/html5-cheat-sheet.png">HTML - HyperText Markup Language — html5-cheat-sheet.png</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML5-cheat-sheet.pdf">HTML - HyperText Markup Language — HTML5-cheat-sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/html-chatsheet.20210604.jpg">HTML - HyperText Markup Language — html-chatsheet.20210604.jpg</a></li>
-      <li><a href="/file-formats/html/saved-copy/html-chatsheet.20210604.pdf">HTML - HyperText Markup Language — html-chatsheet.20210604.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/6847784-rc-123-html5.pdf">HTML - HyperText Markup Language — 6847784-rc-123-html5.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/rc064-010d-core_html_1.pdf">HTML - HyperText Markup Language — rc064-010d-core_html_1.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/rc151-010d-html5-canvas.pdf">HTML - HyperText Markup Language — rc151-010d-html5-canvas.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/rc152-010d-websocket_2.pdf">HTML - HyperText Markup Language — rc152-010d-websocket_2.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/hf-html-cheat-sheet.pdf">HTML - HyperText Markup Language — hf-html-cheat-sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML_CHEAT_SHEET_PNG.png">HTML - HyperText Markup Language — HTML_CHEAT_SHEET_PNG.png</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML_5_Cheat_Sheet.jpg">HTML - HyperText Markup Language — HTML_5_Cheat_Sheet.jpg</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML5-Cheat-Sheet.pdf">HTML - HyperText Markup Language — HTML5-Cheat-Sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/Ultimate_HTML_Cheatsheet.png">HTML - HyperText Markup Language — Ultimate_HTML_Cheatsheet.png</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf">HTML - HyperText Markup Language — HTML_CSS_PHP_cheat_sheet.pdf</a></li>
-      <li><a href="/file-formats/image/saved-copy/jpg-png-gif-bmp-tiff-mega-cheat-sheet1.jpg">Image — jpg-png-gif-bmp-tiff-mega-cheat-sheet1.jpg</a></li>
-      <li><a href="/file-formats/international-phonetic-alphabet/saved-copy/IPA_chart_2020.svg">International Phonetic Alphabet — IPA_chart_2020.svg</a></li>
-      <li><a href="/file-formats/la-te-x/saved-copy/latexsheet.pdf">LaTeX — latexsheet.pdf</a></li>
-      <li><a href="/file-formats/la-te-x/saved-copy/latexsheet.ps">LaTeX — latexsheet.ps</a></li>
-      <li><a href="/file-formats/la-te-x/saved-copy/latexsheet-0.png">LaTeX — latexsheet-0.png</a></li>
-      <li><a href="/file-formats/la-te-x/saved-copy/latexsheet-1.png">LaTeX — latexsheet-1.png</a></li>
-      <li><a href="/file-formats/la-te-x/saved-copy/LaTeX_cheat_sheet.pdf">LaTeX — LaTeX_cheat_sheet.pdf</a></li>
-      <li><a href="/file-formats/la-te-x/saved-copy/LaTeXRefCard.v2.0.pdf">LaTeX — LaTeXRefCard.v2.0.pdf</a></li>
-      <li><a href="/file-formats/la-te-x/saved-copy/LaTeXRefCard.v2.0.dvi">LaTeX — LaTeXRefCard.v2.0.dvi</a></li>
-      <li><a href="/file-formats/markdown/saved-copy/markdown-cheatsheet-online.pdf">Markdown (CommonMark) — markdown-cheatsheet-online.pdf</a></li>
-      <li><a href="/file-formats/math-ml/saved-copy/sheet_mathML_el_attr.pdf">MathML - Mathematical Markup Language — sheet_mathML_el_attr.pdf</a></li>
-      <li><a href="/file-formats/microformats/saved-copy/microformats_cheat_sheet.png">Microformats — microformats_cheat_sheet.png</a></li>
-      <li><a href="/file-formats/microformats/saved-copy/microformats_cheat_sheet.pdf">Microformats — microformats_cheat_sheet.pdf</a></li>
-      <li><a href="/file-formats/microformats/saved-copy/microformats.cheatsheet.pdf">Microformats — microformats.cheatsheet.pdf</a></li>
-      <li><a href="/file-formats/te-x/saved-copy/TeXRefCard.v1.5.pdf">TeX — TeXRefCard.v1.5.pdf</a></li>
-      <li><a href="/file-formats/te-x/saved-copy/TeXRefCard.v1.5.dvi">TeX — TeXRefCard.v1.5.dvi</a></li>
-      <li><a href="/file-formats/te-x/saved-copy/AMSTeXRefCard.v1.3.pdf">TeX — AMSTeXRefCard.v1.3.pdf</a></li>
-      <li><a href="/file-formats/te-x/saved-copy/AMSTeXRefCard.v1.3.dvi">TeX — AMSTeXRefCard.v1.3.dvi</a></li>
-      <li><a href="/file-formats/te-x/saved-copy/tex-refcard-a4.pdf">TeX — tex-refcard-a4.pdf</a></li>
-      <li><a href="/file-formats/te-x/saved-copy/AMSTeX%20Reference%20Card%201.3.pdf">TeX — AMSTeX Reference Card 1.3.pdf</a></li>
-      <li><a href="/file-formats/tlds/saved-copy/countrychart_4080.jpg">TLDs - Top-level domains — countrychart_4080.jpg</a></li>
-      <li><a href="/file-formats/voice-xml/saved-copy/sheet_voiceXML_el_attr.pdf">VoiceXML - Voice Markup Language — sheet_voiceXML_el_attr.pdf</a></li>
-      <li><a href="/file-formats/xhtml/saved-copy/htmlcheatsheet.pdf">XHTML - eXtensible HyperText Markup Language — htmlcheatsheet.pdf</a></li>
-      <li><a href="/file-formats/xhtml/saved-copy/HTML-XHTML_Tag_Sheet.pdf">XHTML - eXtensible HyperText Markup Language — HTML-XHTML_Tag_Sheet.pdf</a></li>
-      <li><a href="/file-formats/xml/saved-copy/XMLquickref.pdf">XML - eXtensible Markup Language — XMLquickref.pdf</a></li>
-      <li><a href="/file-formats/xmlschema/saved-copy/SchemaStructuresQR-2.pdf">XML Schema — SchemaStructuresQR-2.pdf</a></li>
-      <li><a href="/file-formats/xmlschema/saved-copy/SchemaDataTypesQR-2.pdf">XML Schema — SchemaDataTypesQR-2.pdf</a></li>
-      <li><a href="/file-formats/xpath/saved-copy/XSLT_1quickref-v2.pdf">XPath — XSLT_1quickref-v2.pdf</a></li>
-      <li><a href="/file-formats/xpath/saved-copy/XPath-1.0.pdf">XPath — XPath-1.0.pdf</a></li>
-      <li><a href="/file-formats/xpath/saved-copy/Locators_table_1_0_2.pdf">XPath — Locators_table_1_0_2.pdf</a></li>
-      <li><a href="/file-formats/xpath/saved-copy/Locators_groups_1_0_2.pdf">XPath — Locators_groups_1_0_2.pdf</a></li>
-      <li><a href="/file-formats/xsl/saved-copy/Extensible%20Stylesheet%20Language%20%28XSL%29%201.0.pdf">XSL - Extensible Stylesheet Language — Extensible Stylesheet Language (XSL) 1.0.pdf</a></li>
-      <li><a href="/file-formats/xslt/saved-copy/XSLT_1quickref-v2.pdf">XSLT - Extensible Stylesheet Language Transformations — XSLT_1quickref-v2.pdf</a></li>
-      <li><a href="/file-formats/xslt/saved-copy/XSLT-1.0.pdf">XSLT - Extensible Stylesheet Language Transformations — XSLT-1.0.pdf</a></li>
-    </ul>
-    <h2>Topics</h2>
-    <ul>
-      <li><a href="/file-formats/ascii/">ASCII - American Standard Code for Information Interchange</a></li>
-      <li><a href="/file-formats/characters/">Characters</a></li>
-      <li><a href="/file-formats/colour/">Colour</a></li>
-      <li><a href="/file-formats/css/">CSS - Cascading Style Sheets</a></li>
-      <li><a href="/file-formats/doctypes/">Doctypes</a></li>
-      <li><a href="/file-formats/dotlanguage/">DOT language</a></li>
-      <li><a href="/file-formats/dtd/">DTD - Document Type Declaration</a></li>
-      <li><a href="/file-formats/feed/">Feed (Web Feed) : Atom , RSS</a></li>
-      <li><a href="/file-formats/file/">File</a></li>
-      <li><a href="/file-formats/fonts/">Fonts</a></li>
-      <li><a href="/file-formats/html/">HTML - HyperText Markup Language</a></li>
-      <li><a href="/file-formats/image/">Image</a></li>
-      <li><a href="/file-formats/international-phonetic-alphabet/">International Phonetic Alphabet</a></li>
-      <li><a href="/file-formats/la-te-x/">LaTeX</a></li>
-      <li><a href="/file-formats/markdown/">Markdown (CommonMark)</a></li>
-      <li><a href="/file-formats/math-ml/">MathML - Mathematical Markup Language</a></li>
-      <li><a href="/file-formats/microformats/">Microformats</a></li>
-      <li><a href="/file-formats/mime/">MIME - Multipurpose Internet Mail Extensions</a></li>
-      <li><a href="/file-formats/open-graph/">The Open Graph protocol (og:)</a></li>
-      <li><a href="/file-formats/svg/">SVG - Scalable Vector Graphics</a></li>
-      <li><a href="/file-formats/te-x/">TeX</a></li>
-      <li><a href="/file-formats/tlds/">TLDs - Top-level domains</a></li>
-      <li><a href="/file-formats/unicode/">Unicode</a></li>
-      <li><a href="/file-formats/voice-xml/">VoiceXML - Voice Markup Language</a></li>
-      <li><a href="/file-formats/xhtml/">XHTML - eXtensible HyperText Markup Language</a></li>
-      <li><a href="/file-formats/xml/">XML - eXtensible Markup Language</a></li>
-      <li><a href="/file-formats/xmlschema/">XML Schema</a></li>
-      <li><a href="/file-formats/xpath/">XPath</a></li>
-      <li><a href="/file-formats/xsl/">XSL - Extensible Stylesheet Language</a></li>
-      <li><a href="/file-formats/xslt/">XSLT - Extensible Stylesheet Language Transformations</a></li>
-    </ul>
+    <div class="topics">
+    <article class="item-block">
+      <h3>ASCII - American Standard Code for Information Interchange</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/ascii/saved-copy/ascii_a4.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">ascii_a4.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/ascii/saved-copy/ascii_letter.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">ascii_letter.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/ascii/saved-copy/ascii.png"><img src="/file-formats/ascii/saved-copy/ascii.png" alt="ASCII - American Standard Code for Information Interchange — ascii.png"><span class="sheet-name">ascii.png</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/ascii/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Characters</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/characters/saved-copy/characters_cheat_sheet.png"><img src="/file-formats/characters/saved-copy/characters_cheat_sheet.png" alt="Characters — characters_cheat_sheet.png"><span class="sheet-name">characters_cheat_sheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/characters/saved-copy/characters_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">characters_cheat_sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/characters/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Colour</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/colour/saved-copy/colourchart.png"><img src="/file-formats/colour/saved-copy/colourchart.png" alt="Colour — colourchart.png"><span class="sheet-name">colourchart.png</span></a>
+        <a class="sheet-main" href="/file-formats/colour/saved-copy/card_800.gif"><img src="/file-formats/colour/saved-copy/card_800.gif" alt="Colour — card_800.gif"><span class="sheet-name">card_800.gif</span></a>
+        <a class="sheet-main" href="/file-formats/colour/saved-copy/fc_800.jpg"><img src="/file-formats/colour/saved-copy/fc_800.jpg" alt="Colour — fc_800.jpg"><span class="sheet-name">fc_800.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/colour/saved-copy/post1092.jpg"><img src="/file-formats/colour/saved-copy/post1092.jpg" alt="Colour — post1092.jpg"><span class="sheet-name">post1092.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/colour/saved-copy/chart_847.gif"><img src="/file-formats/colour/saved-copy/chart_847.gif" alt="Colour — chart_847.gif"><span class="sheet-name">chart_847.gif</span></a>
+        <a class="sheet-main" href="/file-formats/colour/saved-copy/kilochart_900.jpg"><img src="/file-formats/colour/saved-copy/kilochart_900.jpg" alt="Colour — kilochart_900.jpg"><span class="sheet-name">kilochart_900.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/colour/saved-copy/hexagon_800.gif"><img src="/file-formats/colour/saved-copy/hexagon_800.gif" alt="Colour — hexagon_800.gif"><span class="sheet-name">hexagon_800.gif</span></a>
+        <a class="sheet-main" href="/file-formats/colour/saved-copy/gamutgrid.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">gamutgrid.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/colour/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>CSS - Cascading Style Sheets</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/css/saved-copy/CSS1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">CSS1.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/css2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">css2.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/css-cheat-sheet-2016.jpg"><img src="/file-formats/css/saved-copy/css-cheat-sheet-2016.jpg" alt="CSS - Cascading Style Sheets — css-cheat-sheet-2016.jpg"><span class="sheet-name">css-cheat-sheet-2016.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/css_cheat_sheet.png"><img src="/file-formats/css/saved-copy/css_cheat_sheet.png" alt="CSS - Cascading Style Sheets — css_cheat_sheet.png"><span class="sheet-name">css_cheat_sheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/css_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">css_cheat_sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/qrg0007.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">qrg0007.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/cssquick.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">cssquick.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/Cascading%20Style%20Sheets%201.0.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Cascading Style Sheets 1.0.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/Locators_table_1_0_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Locators_table_1_0_2.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/Locators_groups_1_0_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Locators_groups_1_0_2.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/Ultimate_CSS_Cheatsheet.png"><img src="/file-formats/css/saved-copy/Ultimate_CSS_Cheatsheet.png" alt="CSS - Cascading Style Sheets — Ultimate_CSS_Cheatsheet.png"><span class="sheet-name">Ultimate_CSS_Cheatsheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/css/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML_CSS_PHP_cheat_sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/css/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Doctypes</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/doctypes/">Open local files for Doctypes</a>
+      </div>
+      <a class="support-ref" href="/file-formats/doctypes/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>DOT language</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/dotlanguage/saved-copy/dot.language.2011-12-09.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">dot.language.2011-12-09.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/dotlanguage/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>DTD - Document Type Declaration</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/dtd/">Open local files for DTD - Document Type Declaration</a>
+      </div>
+      <a class="support-ref" href="/file-formats/dtd/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Feed (Web Feed) : Atom , RSS</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/feed/">Open local files for Feed (Web Feed) : Atom , RSS</a>
+      </div>
+      <a class="support-ref" href="/file-formats/feed/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>File</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/file/">Open local files for File</a>
+      </div>
+      <a class="support-ref" href="/file-formats/file/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Fonts</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/fonts/saved-copy/card_800.gif"><img src="/file-formats/fonts/saved-copy/card_800.gif" alt="Fonts — card_800.gif"><span class="sheet-name">card_800.gif</span></a>
+        <a class="sheet-main" href="/file-formats/fonts/saved-copy/fc_800.jpg"><img src="/file-formats/fonts/saved-copy/fc_800.jpg" alt="Fonts — fc_800.jpg"><span class="sheet-name">fc_800.jpg</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/fonts/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>HTML - HyperText Markup Language</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML5-mega-cheat-sheet.jpg"><img src="/file-formats/html/saved-copy/HTML5-mega-cheat-sheet.jpg" alt="HTML - HyperText Markup Language — HTML5-mega-cheat-sheet.jpg"><span class="sheet-name">HTML5-mega-cheat-sheet.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html1_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">html1_quickref.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/htmlcheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">htmlcheatsheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML5_Canvas_Cheat_Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML5_Canvas_Cheat_Sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML5_Canvas_Cheat_Sheet.png"><img src="/file-formats/html/saved-copy/HTML5_Canvas_Cheat_Sheet.png" alt="HTML - HyperText Markup Language — HTML5_Canvas_Cheat_Sheet.png"><span class="sheet-name">HTML5_Canvas_Cheat_Sheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html-cheat-sheet.png"><img src="/file-formats/html/saved-copy/html-cheat-sheet.png" alt="HTML - HyperText Markup Language — html-cheat-sheet.png"><span class="sheet-name">html-cheat-sheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">html-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML-XHTML_Tag_Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML-XHTML_Tag_Sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html5-cheat-sheet-1.png"><img src="/file-formats/html/saved-copy/html5-cheat-sheet-1.png" alt="HTML - HyperText Markup Language — html5-cheat-sheet-1.png"><span class="sheet-name">html5-cheat-sheet-1.png</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html5-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">html5-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html5spanish-page-001.jpg"><img src="/file-formats/html/saved-copy/html5spanish-page-001.jpg" alt="HTML - HyperText Markup Language — html5spanish-page-001.jpg"><span class="sheet-name">html5spanish-page-001.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html5spanish.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">html5spanish.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html5-cheat-sheet.png"><img src="/file-formats/html/saved-copy/html5-cheat-sheet.png" alt="HTML - HyperText Markup Language — html5-cheat-sheet.png"><span class="sheet-name">html5-cheat-sheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML5-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML5-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html-chatsheet.20210604.jpg"><img src="/file-formats/html/saved-copy/html-chatsheet.20210604.jpg" alt="HTML - HyperText Markup Language — html-chatsheet.20210604.jpg"><span class="sheet-name">html-chatsheet.20210604.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html-chatsheet.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">html-chatsheet.20210604.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/6847784-rc-123-html5.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">6847784-rc-123-html5.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/rc064-010d-core_html_1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">rc064-010d-core_html_1.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/rc151-010d-html5-canvas.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">rc151-010d-html5-canvas.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/rc152-010d-websocket_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">rc152-010d-websocket_2.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/hf-html-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">hf-html-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML_CHEAT_SHEET_PNG.png"><img src="/file-formats/html/saved-copy/HTML_CHEAT_SHEET_PNG.png" alt="HTML - HyperText Markup Language — HTML_CHEAT_SHEET_PNG.png"><span class="sheet-name">HTML_CHEAT_SHEET_PNG.png</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML_5_Cheat_Sheet.jpg"><img src="/file-formats/html/saved-copy/HTML_5_Cheat_Sheet.jpg" alt="HTML - HyperText Markup Language — HTML_5_Cheat_Sheet.jpg"><span class="sheet-name">HTML_5_Cheat_Sheet.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML5-Cheat-Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML5-Cheat-Sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/Ultimate_HTML_Cheatsheet.png"><img src="/file-formats/html/saved-copy/Ultimate_HTML_Cheatsheet.png" alt="HTML - HyperText Markup Language — Ultimate_HTML_Cheatsheet.png"><span class="sheet-name">Ultimate_HTML_Cheatsheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML_CSS_PHP_cheat_sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/html/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Image</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/image/saved-copy/jpg-png-gif-bmp-tiff-mega-cheat-sheet1.jpg"><img src="/file-formats/image/saved-copy/jpg-png-gif-bmp-tiff-mega-cheat-sheet1.jpg" alt="Image — jpg-png-gif-bmp-tiff-mega-cheat-sheet1.jpg"><span class="sheet-name">jpg-png-gif-bmp-tiff-mega-cheat-sheet1.jpg</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/image/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>International Phonetic Alphabet</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/international-phonetic-alphabet/saved-copy/IPA_chart_2020.svg"><img src="/file-formats/international-phonetic-alphabet/saved-copy/IPA_chart_2020.svg" alt="International Phonetic Alphabet — IPA_chart_2020.svg"><span class="sheet-name">IPA_chart_2020.svg</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/international-phonetic-alphabet/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>LaTeX</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/la-te-x/saved-copy/latexsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">latexsheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/la-te-x/saved-copy/latexsheet.ps"><span class="sheet-kind">PS</span> <span class="sheet-name">latexsheet.ps</span></a>
+        <a class="sheet-main" href="/file-formats/la-te-x/saved-copy/latexsheet-0.png"><img src="/file-formats/la-te-x/saved-copy/latexsheet-0.png" alt="LaTeX — latexsheet-0.png"><span class="sheet-name">latexsheet-0.png</span></a>
+        <a class="sheet-main" href="/file-formats/la-te-x/saved-copy/latexsheet-1.png"><img src="/file-formats/la-te-x/saved-copy/latexsheet-1.png" alt="LaTeX — latexsheet-1.png"><span class="sheet-name">latexsheet-1.png</span></a>
+        <a class="sheet-main" href="/file-formats/la-te-x/saved-copy/LaTeX_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">LaTeX_cheat_sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/la-te-x/saved-copy/LaTeXRefCard.v2.0.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">LaTeXRefCard.v2.0.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/la-te-x/saved-copy/LaTeXRefCard.v2.0.dvi"><span class="sheet-kind">DVI</span> <span class="sheet-name">LaTeXRefCard.v2.0.dvi</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/la-te-x/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Markdown (CommonMark)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/markdown/saved-copy/markdown-cheatsheet-online.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">markdown-cheatsheet-online.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/markdown/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>MathML - Mathematical Markup Language</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/math-ml/saved-copy/sheet_mathML_el_attr.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sheet_mathML_el_attr.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/math-ml/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Microformats</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/microformats/saved-copy/microformats_cheat_sheet.png"><img src="/file-formats/microformats/saved-copy/microformats_cheat_sheet.png" alt="Microformats — microformats_cheat_sheet.png"><span class="sheet-name">microformats_cheat_sheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/microformats/saved-copy/microformats_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">microformats_cheat_sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/microformats/saved-copy/microformats.cheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">microformats.cheatsheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/microformats/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>MIME - Multipurpose Internet Mail Extensions</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/mime/">Open local files for MIME - Multipurpose Internet Mail Extensions</a>
+      </div>
+      <a class="support-ref" href="/file-formats/mime/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>The Open Graph protocol (og:)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/open-graph/">Open local files for The Open Graph protocol (og:)</a>
+      </div>
+      <a class="support-ref" href="/file-formats/open-graph/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>SVG - Scalable Vector Graphics</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/svg/">Open local files for SVG - Scalable Vector Graphics</a>
+      </div>
+      <a class="support-ref" href="/file-formats/svg/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>TeX</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/te-x/saved-copy/TeXRefCard.v1.5.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">TeXRefCard.v1.5.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/te-x/saved-copy/TeXRefCard.v1.5.dvi"><span class="sheet-kind">DVI</span> <span class="sheet-name">TeXRefCard.v1.5.dvi</span></a>
+        <a class="sheet-main" href="/file-formats/te-x/saved-copy/AMSTeXRefCard.v1.3.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">AMSTeXRefCard.v1.3.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/te-x/saved-copy/AMSTeXRefCard.v1.3.dvi"><span class="sheet-kind">DVI</span> <span class="sheet-name">AMSTeXRefCard.v1.3.dvi</span></a>
+        <a class="sheet-main" href="/file-formats/te-x/saved-copy/tex-refcard-a4.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">tex-refcard-a4.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/te-x/saved-copy/AMSTeX%20Reference%20Card%201.3.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">AMSTeX Reference Card 1.3.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/te-x/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>TLDs - Top-level domains</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/tlds/saved-copy/countrychart_4080.jpg"><img src="/file-formats/tlds/saved-copy/countrychart_4080.jpg" alt="TLDs - Top-level domains — countrychart_4080.jpg"><span class="sheet-name">countrychart_4080.jpg</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/tlds/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Unicode</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/unicode/">Open local files for Unicode</a>
+      </div>
+      <a class="support-ref" href="/file-formats/unicode/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>VoiceXML - Voice Markup Language</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/voice-xml/saved-copy/sheet_voiceXML_el_attr.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sheet_voiceXML_el_attr.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/voice-xml/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>XHTML - eXtensible HyperText Markup Language</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/xhtml/saved-copy/htmlcheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">htmlcheatsheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/xhtml/saved-copy/HTML-XHTML_Tag_Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML-XHTML_Tag_Sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/xhtml/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>XML - eXtensible Markup Language</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/xml/saved-copy/XMLquickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">XMLquickref.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/xml/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>XML Schema</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/xmlschema/saved-copy/SchemaStructuresQR-2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">SchemaStructuresQR-2.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/xmlschema/saved-copy/SchemaDataTypesQR-2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">SchemaDataTypesQR-2.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/xmlschema/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>XPath</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/xpath/saved-copy/XSLT_1quickref-v2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">XSLT_1quickref-v2.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/xpath/saved-copy/XPath-1.0.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">XPath-1.0.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/xpath/saved-copy/Locators_table_1_0_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Locators_table_1_0_2.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/xpath/saved-copy/Locators_groups_1_0_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Locators_groups_1_0_2.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/xpath/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>XSL - Extensible Stylesheet Language</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/xsl/saved-copy/Extensible%20Stylesheet%20Language%20%28XSL%29%201.0.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Extensible Stylesheet Language (XSL) 1.0.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/xsl/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>XSLT - Extensible Stylesheet Language Transformations</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/xslt/saved-copy/XSLT_1quickref-v2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">XSLT_1quickref-v2.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/xslt/saved-copy/XSLT-1.0.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">XSLT-1.0.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/file-formats/xslt/">Reference: sources and additional information</a>
+    </article>
+    </div>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

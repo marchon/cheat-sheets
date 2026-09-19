@@ -2014,7 +2014,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -2024,26 +2031,59 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Network protocols, mail, chat, and scanning tools.</p>
   </header>
   <main>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/networking-and-protocols/haproxy/saved-copy/HAPROXY-Configuration-Reference-Card-v1.0.pdf">HAProxy — HAPROXY-Configuration-Reference-Card-v1.0.pdf</a></li>
-      <li><a href="/networking-and-protocols/haproxy/saved-copy/HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf">HAProxy — HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf</a></li>
-      <li><a href="/networking-and-protocols/irc/saved-copy/wikiHow_IRC_Cheat_Sheet.pdf">IRC - Internet Relay Chat — wikiHow_IRC_Cheat_Sheet.pdf</a></li>
-      <li><a href="/networking-and-protocols/nmap/saved-copy/Nmap5.cheatsheet.eng.v1.pdf">NMAP — Nmap5.cheatsheet.eng.v1.pdf</a></li>
-      <li><a href="/networking-and-protocols/nmap/saved-copy/Nmap5.cheatsheet.esp.v1.pdf">NMAP — Nmap5.cheatsheet.esp.v1.pdf</a></li>
-      <li><a href="/networking-and-protocols/sendmail/saved-copy/Sendmail_quickref.pdf">Sendmail — Sendmail_quickref.pdf</a></li>
-      <li><a href="/networking-and-protocols/tls/saved-copy/Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf">TLS - Transport Layer Security; SSL - Secure Sockets Layer — Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf</a></li>
-    </ul>
-    <h2>Topics</h2>
-    <ul>
-      <li><a href="/networking-and-protocols/ftp/">FTP - File Transfer Protocol</a></li>
-      <li><a href="/networking-and-protocols/haproxy/">HAProxy</a></li>
-      <li><a href="/networking-and-protocols/irc/">IRC - Internet Relay Chat</a></li>
-      <li><a href="/networking-and-protocols/nmap/">NMAP</a></li>
-      <li><a href="/networking-and-protocols/sendmail/">Sendmail</a></li>
-      <li><a href="/networking-and-protocols/tcp/">TCP - Transmission Control Protocol</a></li>
-      <li><a href="/networking-and-protocols/tls/">TLS - Transport Layer Security; SSL - Secure Sockets Layer</a></li>
-    </ul>
+    <div class="topics">
+    <article class="item-block">
+      <h3>FTP - File Transfer Protocol</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/networking-and-protocols/ftp/">Open local files for FTP - File Transfer Protocol</a>
+      </div>
+      <a class="support-ref" href="/networking-and-protocols/ftp/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>HAProxy</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/networking-and-protocols/haproxy/saved-copy/HAPROXY-Configuration-Reference-Card-v1.0.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HAPROXY-Configuration-Reference-Card-v1.0.pdf</span></a>
+        <a class="sheet-main" href="/networking-and-protocols/haproxy/saved-copy/HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HAPROXY-Troubleshooting-Reference-Card-v1.0.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/networking-and-protocols/haproxy/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>IRC - Internet Relay Chat</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/networking-and-protocols/irc/saved-copy/wikiHow_IRC_Cheat_Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">wikiHow_IRC_Cheat_Sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/networking-and-protocols/irc/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>NMAP</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/networking-and-protocols/nmap/saved-copy/Nmap5.cheatsheet.eng.v1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Nmap5.cheatsheet.eng.v1.pdf</span></a>
+        <a class="sheet-main" href="/networking-and-protocols/nmap/saved-copy/Nmap5.cheatsheet.esp.v1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Nmap5.cheatsheet.esp.v1.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/networking-and-protocols/nmap/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Sendmail</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/networking-and-protocols/sendmail/saved-copy/Sendmail_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Sendmail_quickref.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/networking-and-protocols/sendmail/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>TCP - Transmission Control Protocol</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/networking-and-protocols/tcp/">Open local files for TCP - Transmission Control Protocol</a>
+      </div>
+      <a class="support-ref" href="/networking-and-protocols/tcp/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>TLS - Transport Layer Security; SSL - Secure Sockets Layer</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/networking-and-protocols/tls/saved-copy/Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Ssl_handshake_with_two_way_authentication_with_certificates-1.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/networking-and-protocols/tls/">Reference: sources and additional information</a>
+    </article>
+    </div>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

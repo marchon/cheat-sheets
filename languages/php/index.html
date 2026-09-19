@@ -1701,7 +1701,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -1712,40 +1719,38 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/languages/">Languages</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/languages/php/saved-copy/php_cheat_sheet.png">php_cheat_sheet.png</a></li>
-      <li><a href="/languages/php/saved-copy/php_cheat_sheet.pdf">php_cheat_sheet.pdf</a></li>
-      <li><a href="/languages/php/saved-copy/phpbigbookpage1.gif">phpbigbookpage1.gif</a></li>
-      <li><a href="/languages/php/saved-copy/phpbigbookpage2.gif">phpbigbookpage2.gif</a></li>
-      <li><a href="/languages/php/saved-copy/phpbigbookpage3.gif">phpbigbookpage3.gif</a></li>
-      <li><a href="/languages/php/saved-copy/phpbigbookpage4.gif">phpbigbookpage4.gif</a></li>
-      <li><a href="/languages/php/saved-copy/phpbigbookpage5.gif">phpbigbookpage5.gif</a></li>
-      <li><a href="/languages/php/saved-copy/phpbigbookpage6.gif">phpbigbookpage6.gif</a></li>
-      <li><a href="/languages/php/saved-copy/phpbigbookpage7.gif">phpbigbookpage7.gif</a></li>
-      <li><a href="/languages/php/saved-copy/phpbigbookpage8.gif">phpbigbookpage8.gif</a></li>
-      <li><a href="/languages/php/saved-copy/PHPRefCard.pdf">PHPRefCard.pdf</a></li>
-      <li><a href="/languages/php/saved-copy/PHPRefCard.ps">PHPRefCard.ps</a></li>
-      <li><a href="/languages/php/saved-copy/PHP-cheatsheet.Daniel.pdf">PHP-cheatsheet.Daniel.pdf</a></li>
-      <li><a href="/languages/php/saved-copy/PHP-cheatsheet.Daniel.png">PHP-cheatsheet.Daniel.png</a></li>
-      <li><a href="/languages/php/saved-copy/Ultimate_PHP_Cheatsheet.png">Ultimate_PHP_Cheatsheet.png</a></li>
-      <li><a href="/languages/php/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf">HTML_CSS_PHP_cheat_sheet.pdf</a></li>
-      <li><a href="/languages/php/saved-copy/SmartyCheatSheet.pdf">SmartyCheatSheet.pdf</a></li>
-      <li><a href="/languages/php/saved-copy/135700437_bb5093e48c_o.gif">135700437_bb5093e48c_o.gif</a></li>
-      <li><a href="/languages/php/saved-copy/rc116-010d-coldfusionws_php.pdf">rc116-010d-coldfusionws_php.pdf</a></li>
-      <li><a href="/languages/php/saved-copy/rc124-010d-phpunit_1.pdf">rc124-010d-phpunit_1.pdf</a></li>
-    </ul>
-    <h2>Other local files</h2>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/languages/php/saved-copy/php_cheat_sheet.png"><img src="/languages/php/saved-copy/php_cheat_sheet.png" alt="PHP — php_cheat_sheet.png"><span class="sheet-name">php_cheat_sheet.png</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/php_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">php_cheat_sheet.pdf</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/phpbigbookpage1.gif"><img src="/languages/php/saved-copy/phpbigbookpage1.gif" alt="PHP — phpbigbookpage1.gif"><span class="sheet-name">phpbigbookpage1.gif</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/phpbigbookpage2.gif"><img src="/languages/php/saved-copy/phpbigbookpage2.gif" alt="PHP — phpbigbookpage2.gif"><span class="sheet-name">phpbigbookpage2.gif</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/phpbigbookpage3.gif"><img src="/languages/php/saved-copy/phpbigbookpage3.gif" alt="PHP — phpbigbookpage3.gif"><span class="sheet-name">phpbigbookpage3.gif</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/phpbigbookpage4.gif"><img src="/languages/php/saved-copy/phpbigbookpage4.gif" alt="PHP — phpbigbookpage4.gif"><span class="sheet-name">phpbigbookpage4.gif</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/phpbigbookpage5.gif"><img src="/languages/php/saved-copy/phpbigbookpage5.gif" alt="PHP — phpbigbookpage5.gif"><span class="sheet-name">phpbigbookpage5.gif</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/phpbigbookpage6.gif"><img src="/languages/php/saved-copy/phpbigbookpage6.gif" alt="PHP — phpbigbookpage6.gif"><span class="sheet-name">phpbigbookpage6.gif</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/phpbigbookpage7.gif"><img src="/languages/php/saved-copy/phpbigbookpage7.gif" alt="PHP — phpbigbookpage7.gif"><span class="sheet-name">phpbigbookpage7.gif</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/phpbigbookpage8.gif"><img src="/languages/php/saved-copy/phpbigbookpage8.gif" alt="PHP — phpbigbookpage8.gif"><span class="sheet-name">phpbigbookpage8.gif</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/PHPRefCard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">PHPRefCard.pdf</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/PHPRefCard.ps"><span class="sheet-kind">PS</span> <span class="sheet-name">PHPRefCard.ps</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/PHP-cheatsheet.Daniel.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">PHP-cheatsheet.Daniel.pdf</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/PHP-cheatsheet.Daniel.png"><img src="/languages/php/saved-copy/PHP-cheatsheet.Daniel.png" alt="PHP — PHP-cheatsheet.Daniel.png"><span class="sheet-name">PHP-cheatsheet.Daniel.png</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/Ultimate_PHP_Cheatsheet.png"><img src="/languages/php/saved-copy/Ultimate_PHP_Cheatsheet.png" alt="PHP — Ultimate_PHP_Cheatsheet.png"><span class="sheet-name">Ultimate_PHP_Cheatsheet.png</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML_CSS_PHP_cheat_sheet.pdf</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/SmartyCheatSheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">SmartyCheatSheet.pdf</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/135700437_bb5093e48c_o.gif"><img src="/languages/php/saved-copy/135700437_bb5093e48c_o.gif" alt="PHP — 135700437_bb5093e48c_o.gif"><span class="sheet-name">135700437_bb5093e48c_o.gif</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/rc116-010d-coldfusionws_php.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">rc116-010d-coldfusionws_php.pdf</span></a>
+        <a class="sheet-main" href="/languages/php/saved-copy/rc124-010d-phpunit_1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">rc124-010d-phpunit_1.pdf</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
     <ul>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
       <li><a href="/languages/php/saved-copy/PHPRefCard.tex">PHPRefCard.tex</a></li>
-    </ul>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
-    <ul>
-      <li><a href="/databases/doctrine/">Doctrine</a></li>
-      <li><a href="/frameworks-and-libraries/phpframeworks/">PHP Frameworks</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/">Symfony</a></li>
+      <li><a href="/databases/doctrine/">Doctrine (related topic)</a></li>
+      <li><a href="/frameworks-and-libraries/phpframeworks/">PHP Frameworks (related topic)</a></li>
+      <li><a href="/frameworks-and-libraries/symfony/">Symfony (related topic)</a></li>
     </ul>
   </main>
   <footer>

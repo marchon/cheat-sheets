@@ -7826,7 +7826,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -7836,74 +7843,205 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">Application frameworks, libraries, and language ecosystems.</p>
   </header>
   <main>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/frameworks-and-libraries/catalyst/saved-copy/Catalyst-Quick-Reference-Card.2011-12-12.pdf">Catalyst — Catalyst-Quick-Reference-Card.2011-12-12.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/catalyst/saved-copy/catalyst-refcard-a4.2011-12-12.pdf">Catalyst — catalyst-refcard-a4.2011-12-12.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/cocoa/saved-copy/Cocoa_iOS_3.0_cheatsheet.pdf">Cocoa — Cocoa_iOS_3.0_cheatsheet.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/django/saved-copy/django_reference_sheet.pdf">Django — django_reference_sheet.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/junit/saved-copy/JUnit%20Quick%20Reference.pdf">JUnit — JUnit Quick Reference.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/mfc/saved-copy/MFC_QuickRef.pdf">MFC - Microsoft Foundation Class Library — MFC_QuickRef.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/open-cv/saved-copy/opencv_cheatsheet.pdf">OpenCV — opencv_cheatsheet.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/phpframeworks/saved-copy/cs.png">PHP Frameworks — cs.png</a></li>
-      <li><a href="/frameworks-and-libraries/phpframeworks/saved-copy/cs.jpg">PHP Frameworks — cs.jpg</a></li>
-      <li><a href="/frameworks-and-libraries/phpframeworks/saved-copy/cs.pdf">PHP Frameworks — cs.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/phpframeworks/saved-copy/behat-cheat-sheet-en.pdf">PHP Frameworks — behat-cheat-sheet-en.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/qt/saved-copy/qtcreator.pdf">Qt , Qt Creator — qtcreator.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/quarkus/saved-copy/quarkus-cheat-sheet.pdf">Quarkus — quarkus-cheat-sheet.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/quarkus/saved-copy/14667762-refcard-319-getting-started-with-quarkus-2021.pdf">Quarkus — 14667762-refcard-319-getting-started-with-quarkus-2021.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/regular-expressions/saved-copy/regular_expressions_cheat_sheet.png">Regular Expressions — regular_expressions_cheat_sheet.png</a></li>
-      <li><a href="/frameworks-and-libraries/regular-expressions/saved-copy/regular_expressions_cheat_sheet.pdf">Regular Expressions — regular_expressions_cheat_sheet.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/ruby-rails/saved-copy/ruby_on_rails_cheat_sheet.png">Ruby on Rails — ruby_on_rails_cheat_sheet.png</a></li>
-      <li><a href="/frameworks-and-libraries/ruby-rails/saved-copy/ruby_on_rails_cheat_sheet.pdf">Ruby on Rails — ruby_on_rails_cheat_sheet.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/ruby-rails/saved-copy/RubyOnRails-Cheatsheet-BlaineKendall.pdf">Ruby on Rails — RubyOnRails-Cheatsheet-BlaineKendall.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/ruby-rails/saved-copy/form_helpers.pdf">Ruby on Rails — form_helpers.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/ruby-rails/saved-copy/rails_files_cheatsheet.pdf">Ruby on Rails — rails_files_cheatsheet.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/sandcastle/saved-copy/sandcastle-wallchart.pdf">Sandcastle — sandcastle-wallchart.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/sandcastle/saved-copy/Taming-Sandcastle.pdf">Sandcastle — Taming-Sandcastle.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/saved-copy/sfAdminGeneratorRefCard.pdf">Symfony — sfAdminGeneratorRefCard.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/saved-copy/sfmodelcriteriacriterionrsrefcard_enus.pdf">Symfony — sfmodelcriteriacriterionrsrefcard_enus.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/saved-copy/sfmodelsecondpartrefcard.pdf">Symfony — sfmodelsecondpartrefcard.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/saved-copy/sfmodelfirstpartrefcard.pdf">Symfony — sfmodelfirstpartrefcard.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/saved-copy/sfviewsecondpartrefcard.pdf">Symfony — sfviewsecondpartrefcard.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/saved-copy/sfviewfirstpartrefcard.pdf">Symfony — sfviewfirstpartrefcard.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/saved-copy/sfservervalidationrefcard.pdf">Symfony — sfservervalidationrefcard.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/saved-copy/cheatsymfony004forms.pdf">Symfony — cheatsymfony004forms.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/saved-copy/cheatsymfony004forms.jpg">Symfony — cheatsymfony004forms.jpg</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/saved-copy/cheatsymfonyjshelper_enus.pdf">Symfony — cheatsymfonyjshelper_enus.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/saved-copy/cheatsheetsymfony001_enus.pdf">Symfony — cheatsheetsymfony001_enus.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/saved-copy/cheatsheetsymfony001_enus.jpg">Symfony — cheatsheetsymfony001_enus.jpg</a></li>
-      <li><a href="/frameworks-and-libraries/ttcn-3/saved-copy/TTCN3QRC_viewme.pdf">TTCN-3 (Testing and Test Control Notation version 3) — TTCN3QRC_viewme.pdf</a></li>
-      <li><a href="/frameworks-and-libraries/vaadin/saved-copy/book-of-vaadin.6.4.pdf">Vaadin — book-of-vaadin.6.4.pdf</a></li>
-    </ul>
-    <h2>Topics</h2>
-    <ul>
-      <li><a href="/frameworks-and-libraries/catalyst/">Catalyst</a></li>
-      <li><a href="/frameworks-and-libraries/cocoa/">Cocoa</a></li>
-      <li><a href="/frameworks-and-libraries/cold-fusion/">ColdFusion</a></li>
-      <li><a href="/frameworks-and-libraries/django/">Django</a></li>
-      <li><a href="/frameworks-and-libraries/fit-nesse/">FitNesse</a></li>
-      <li><a href="/frameworks-and-libraries/grails/">Grails</a></li>
-      <li><a href="/frameworks-and-libraries/griffon/">Griffon</a></li>
-      <li><a href="/frameworks-and-libraries/java-ee/">Java EE - Java Platform, Enterprise Edition</a></li>
-      <li><a href="/frameworks-and-libraries/junit/">JUnit</a></li>
-      <li><a href="/frameworks-and-libraries/mfc/">MFC - Microsoft Foundation Class Library</a></li>
-      <li><a href="/frameworks-and-libraries/open-cv/">OpenCV</a></li>
-      <li><a href="/frameworks-and-libraries/phpframeworks/">PHP Frameworks</a></li>
-      <li><a href="/frameworks-and-libraries/play-framework/">Play Framework</a></li>
-      <li><a href="/frameworks-and-libraries/qt/">Qt , Qt Creator</a></li>
-      <li><a href="/frameworks-and-libraries/quarkus/">Quarkus</a></li>
-      <li><a href="/frameworks-and-libraries/regular-expressions/">Regular Expressions</a></li>
-      <li><a href="/frameworks-and-libraries/ruby-rails/">Ruby on Rails</a></li>
-      <li><a href="/frameworks-and-libraries/sandcastle/">Sandcastle</a></li>
-      <li><a href="/frameworks-and-libraries/seam/">Seam</a></li>
-      <li><a href="/frameworks-and-libraries/spring-framework/">Spring Framework</a></li>
-      <li><a href="/frameworks-and-libraries/spring-roo/">Spring Roo</a></li>
-      <li><a href="/frameworks-and-libraries/symfony/">Symfony</a></li>
-      <li><a href="/frameworks-and-libraries/tapestry/">Tapestry</a></li>
-      <li><a href="/frameworks-and-libraries/ttcn-3/">TTCN-3 (Testing and Test Control Notation version 3)</a></li>
-      <li><a href="/frameworks-and-libraries/vaadin/">Vaadin</a></li>
-    </ul>
+    <div class="topics">
+    <article class="item-block">
+      <h3>Catalyst</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/catalyst/saved-copy/Catalyst-Quick-Reference-Card.2011-12-12.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Catalyst-Quick-Reference-Card.2011-12-12.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/catalyst/saved-copy/catalyst-refcard-a4.2011-12-12.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">catalyst-refcard-a4.2011-12-12.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/catalyst/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Cocoa</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/cocoa/saved-copy/Cocoa_iOS_3.0_cheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Cocoa_iOS_3.0_cheatsheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/cocoa/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>ColdFusion</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/cold-fusion/">Open local files for ColdFusion</a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/cold-fusion/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Django</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/django/saved-copy/django_reference_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">django_reference_sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/django/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>FitNesse</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/fit-nesse/">Open local files for FitNesse</a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/fit-nesse/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Grails</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/grails/">Open local files for Grails</a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/grails/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Griffon</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/griffon/">Open local files for Griffon</a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/griffon/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Java EE - Java Platform, Enterprise Edition</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/java-ee/">Open local files for Java EE - Java Platform, Enterprise Edition</a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/java-ee/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>JUnit</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/junit/saved-copy/JUnit%20Quick%20Reference.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">JUnit Quick Reference.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/junit/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>MFC - Microsoft Foundation Class Library</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/mfc/saved-copy/MFC_QuickRef.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">MFC_QuickRef.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/mfc/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>OpenCV</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/open-cv/saved-copy/opencv_cheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">opencv_cheatsheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/open-cv/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>PHP Frameworks</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/phpframeworks/saved-copy/cs.png"><img src="/frameworks-and-libraries/phpframeworks/saved-copy/cs.png" alt="PHP Frameworks — cs.png"><span class="sheet-name">cs.png</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/phpframeworks/saved-copy/cs.jpg"><img src="/frameworks-and-libraries/phpframeworks/saved-copy/cs.jpg" alt="PHP Frameworks — cs.jpg"><span class="sheet-name">cs.jpg</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/phpframeworks/saved-copy/cs.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">cs.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/phpframeworks/saved-copy/behat-cheat-sheet-en.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">behat-cheat-sheet-en.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/phpframeworks/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Play Framework</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/play-framework/">Open local files for Play Framework</a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/play-framework/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Qt , Qt Creator</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/qt/saved-copy/qtcreator.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">qtcreator.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/qt/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Quarkus</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/quarkus/saved-copy/quarkus-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">quarkus-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/quarkus/saved-copy/14667762-refcard-319-getting-started-with-quarkus-2021.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">14667762-refcard-319-getting-started-with-quarkus-2021.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/quarkus/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Regular Expressions</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/regular-expressions/saved-copy/regular_expressions_cheat_sheet.png"><img src="/frameworks-and-libraries/regular-expressions/saved-copy/regular_expressions_cheat_sheet.png" alt="Regular Expressions — regular_expressions_cheat_sheet.png"><span class="sheet-name">regular_expressions_cheat_sheet.png</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/regular-expressions/saved-copy/regular_expressions_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">regular_expressions_cheat_sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/regular-expressions/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Ruby on Rails</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/ruby-rails/saved-copy/ruby_on_rails_cheat_sheet.png"><img src="/frameworks-and-libraries/ruby-rails/saved-copy/ruby_on_rails_cheat_sheet.png" alt="Ruby on Rails — ruby_on_rails_cheat_sheet.png"><span class="sheet-name">ruby_on_rails_cheat_sheet.png</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/ruby-rails/saved-copy/ruby_on_rails_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">ruby_on_rails_cheat_sheet.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/ruby-rails/saved-copy/RubyOnRails-Cheatsheet-BlaineKendall.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">RubyOnRails-Cheatsheet-BlaineKendall.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/ruby-rails/saved-copy/form_helpers.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">form_helpers.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/ruby-rails/saved-copy/rails_files_cheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">rails_files_cheatsheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/ruby-rails/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Sandcastle</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/sandcastle/saved-copy/sandcastle-wallchart.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sandcastle-wallchart.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/sandcastle/saved-copy/Taming-Sandcastle.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Taming-Sandcastle.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/sandcastle/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Seam</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/seam/">Open local files for Seam</a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/seam/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Spring Framework</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/spring-framework/">Open local files for Spring Framework</a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/spring-framework/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Spring Roo</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/spring-roo/">Open local files for Spring Roo</a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/spring-roo/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Symfony</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/symfony/saved-copy/sfAdminGeneratorRefCard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sfAdminGeneratorRefCard.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/symfony/saved-copy/sfmodelcriteriacriterionrsrefcard_enus.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sfmodelcriteriacriterionrsrefcard_enus.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/symfony/saved-copy/sfmodelsecondpartrefcard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sfmodelsecondpartrefcard.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/symfony/saved-copy/sfmodelfirstpartrefcard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sfmodelfirstpartrefcard.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/symfony/saved-copy/sfviewsecondpartrefcard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sfviewsecondpartrefcard.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/symfony/saved-copy/sfviewfirstpartrefcard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sfviewfirstpartrefcard.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/symfony/saved-copy/sfservervalidationrefcard.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sfservervalidationrefcard.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/symfony/saved-copy/cheatsymfony004forms.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">cheatsymfony004forms.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/symfony/saved-copy/cheatsymfony004forms.jpg"><img src="/frameworks-and-libraries/symfony/saved-copy/cheatsymfony004forms.jpg" alt="Symfony — cheatsymfony004forms.jpg"><span class="sheet-name">cheatsymfony004forms.jpg</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/symfony/saved-copy/cheatsymfonyjshelper_enus.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">cheatsymfonyjshelper_enus.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/symfony/saved-copy/cheatsheetsymfony001_enus.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">cheatsheetsymfony001_enus.pdf</span></a>
+        <a class="sheet-main" href="/frameworks-and-libraries/symfony/saved-copy/cheatsheetsymfony001_enus.jpg"><img src="/frameworks-and-libraries/symfony/saved-copy/cheatsheetsymfony001_enus.jpg" alt="Symfony — cheatsheetsymfony001_enus.jpg"><span class="sheet-name">cheatsheetsymfony001_enus.jpg</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/symfony/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Tapestry</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/tapestry/">Open local files for Tapestry</a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/tapestry/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>TTCN-3 (Testing and Test Control Notation version 3)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/ttcn-3/saved-copy/TTCN3QRC_viewme.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">TTCN3QRC_viewme.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/ttcn-3/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Vaadin</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/frameworks-and-libraries/vaadin/saved-copy/book-of-vaadin.6.4.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">book-of-vaadin.6.4.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/frameworks-and-libraries/vaadin/">Reference: sources and additional information</a>
+    </article>
+    </div>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

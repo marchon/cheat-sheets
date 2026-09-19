@@ -463,7 +463,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -474,21 +481,20 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/version-control/">Version control</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/version-control/bazaar/saved-copy/quick-start-summary.pdf">quick-start-summary.pdf</a></li>
-      <li><a href="/version-control/bazaar/saved-copy/quick-start-summary.png">quick-start-summary.png</a></li>
-      <li><a href="/version-control/bazaar/saved-copy/quick-start-summary.svg">quick-start-summary.svg</a></li>
-    </ul>
-    <h2>Other local files</h2>
-    <p>None stored locally.</p>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/version-control/bazaar/saved-copy/quick-start-summary.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">quick-start-summary.pdf</span></a>
+        <a class="sheet-main" href="/version-control/bazaar/saved-copy/quick-start-summary.png"><img src="/version-control/bazaar/saved-copy/quick-start-summary.png" alt="Bazaar (formerly Bazaar-NG, commandline tool bzr) - distributed revision control system — quick-start-summary.png"><span class="sheet-name">quick-start-summary.png</span></a>
+        <a class="sheet-main" href="/version-control/bazaar/saved-copy/quick-start-summary.svg"><img src="/version-control/bazaar/saved-copy/quick-start-summary.svg" alt="Bazaar (formerly Bazaar-NG, commandline tool bzr) - distributed revision control system — quick-start-summary.svg"><span class="sheet-name">quick-start-summary.svg</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
     <ul>
-      <li><a href="/version-control/cvs/">CVS</a></li>
-      <li><a href="/version-control/git/">Git</a></li>
-      <li><a href="/version-control/svn/">SVN</a></li>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
+      <li><a href="/version-control/cvs/">CVS (related topic)</a></li>
+      <li><a href="/version-control/git/">Git (related topic)</a></li>
+      <li><a href="/version-control/svn/">SVN (related topic)</a></li>
     </ul>
   </main>
   <footer>

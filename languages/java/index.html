@@ -1181,7 +1181,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -1192,40 +1199,38 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/languages/">Languages</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/languages/java/saved-copy/java_quickref.pdf">java_quickref.pdf</a></li>
-      <li><a href="/languages/java/saved-copy/JAVA%20Programming%20Guide%20-%20Quick%20Reference.pdf">JAVA Programming Guide - Quick Reference.pdf</a></li>
-      <li><a href="/languages/java/saved-copy/SAX%202.0%20for%20Java%20%28Core%29.pdf">SAX 2.0 for Java (Core).pdf</a></li>
-      <li><a href="/languages/java/saved-copy/SAX%202.0%20for%20Java%20%28Extensions%20and%20Helpers%29.pdf">SAX 2.0 for Java (Extensions and Helpers).pdf</a></li>
-      <li><a href="/languages/java/saved-copy/JQREF.pdf">JQREF.pdf</a></li>
-    </ul>
-    <h2>Other local files</h2>
-    <p>None stored locally.</p>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/languages/java/saved-copy/java_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">java_quickref.pdf</span></a>
+        <a class="sheet-main" href="/languages/java/saved-copy/JAVA%20Programming%20Guide%20-%20Quick%20Reference.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">JAVA Programming Guide - Quick Reference.pdf</span></a>
+        <a class="sheet-main" href="/languages/java/saved-copy/SAX%202.0%20for%20Java%20%28Core%29.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">SAX 2.0 for Java (Core).pdf</span></a>
+        <a class="sheet-main" href="/languages/java/saved-copy/SAX%202.0%20for%20Java%20%28Extensions%20and%20Helpers%29.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">SAX 2.0 for Java (Extensions and Helpers).pdf</span></a>
+        <a class="sheet-main" href="/languages/java/saved-copy/JQREF.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">JQREF.pdf</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
     <ul>
-      <li><a href="/editors-and-ides/eclipse/">Eclipse</a></li>
-      <li><a href="/business-processes/ejb/">EJB</a></li>
-      <li>GlassFish</li>
-      <li><a href="/frameworks-and-libraries/grails/">Grails</a></li>
-      <li><a href="/web/gwt/">GWT</a></li>
-      <li><a href="/databases/hibernate/">Hibernate</a></li>
-      <li><a href="/editors-and-ides/intelli-jidea/">IntelliJ IDEA</a></li>
-      <li><a href="/databases/java-persistence-api/">Java Persistence API</a></li>
-      <li><a href="/frameworks-and-libraries/java-ee/">Java EE</a></li>
-      <li><a href="/web/java-server-faces/">JavaServer Faces</a></li>
-      <li><a href="/cloud-and-devops/jboss/">JBoss</a></li>
-      <li><a href="/databases/jdbc/">JDBC</a></li>
-      <li><a href="/web/jsp/">JSP</a></li>
-      <li><a href="/frameworks-and-libraries/junit/">JUnit</a></li>
-      <li><a href="/cloud-and-devops/maven/">Maven</a></li>
-      <li><a href="/editors-and-ides/net-beans/">NetBeans</a></li>
-      <li><a href="/web/rich-faces/">RichFaces</a></li>
-      <li><a href="/frameworks-and-libraries/spring-framework/">Spring Framework</a></li>
-      <li><a href="/frameworks-and-libraries/spring-roo/">Spring Roo</a></li>
-      <li><a href="/frameworks-and-libraries/tapestry/">Tapestry</a></li>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
+      <li><a href="/editors-and-ides/eclipse/">Eclipse (related topic)</a></li>
+      <li><a href="/business-processes/ejb/">EJB (related topic)</a></li>
+      <li><a href="/frameworks-and-libraries/grails/">Grails (related topic)</a></li>
+      <li><a href="/web/gwt/">GWT (related topic)</a></li>
+      <li><a href="/databases/hibernate/">Hibernate (related topic)</a></li>
+      <li><a href="/editors-and-ides/intelli-jidea/">IntelliJ IDEA (related topic)</a></li>
+      <li><a href="/databases/java-persistence-api/">Java Persistence API (related topic)</a></li>
+      <li><a href="/frameworks-and-libraries/java-ee/">Java EE (related topic)</a></li>
+      <li><a href="/web/java-server-faces/">JavaServer Faces (related topic)</a></li>
+      <li><a href="/cloud-and-devops/jboss/">JBoss (related topic)</a></li>
+      <li><a href="/databases/jdbc/">JDBC (related topic)</a></li>
+      <li><a href="/web/jsp/">JSP (related topic)</a></li>
+      <li><a href="/frameworks-and-libraries/junit/">JUnit (related topic)</a></li>
+      <li><a href="/cloud-and-devops/maven/">Maven (related topic)</a></li>
+      <li><a href="/editors-and-ides/net-beans/">NetBeans (related topic)</a></li>
+      <li><a href="/web/rich-faces/">RichFaces (related topic)</a></li>
+      <li><a href="/frameworks-and-libraries/spring-framework/">Spring Framework (related topic)</a></li>
+      <li><a href="/frameworks-and-libraries/spring-roo/">Spring Roo (related topic)</a></li>
+      <li><a href="/frameworks-and-libraries/tapestry/">Tapestry (related topic)</a></li>
     </ul>
   </main>
   <footer>

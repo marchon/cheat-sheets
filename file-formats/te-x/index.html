@@ -217,9 +217,6 @@
           "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-7"
         },
         {
-          "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-8"
-        },
-        {
           "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#wikipedia-1"
         },
         {
@@ -464,47 +461,6 @@
     {
       "@type": "DigitalDocument",
       "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-6",
-      "name": "ReferenceCards/AMSTeXRefCard.v1.3.tex",
-      "url": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/saved-copy/ReferenceCards/AMSTeXRefCard.v1.3.tex",
-      "encodingFormat": "application/x-tex",
-      "isPartOf": {
-        "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#topic"
-      },
-      "sameAs": [
-        "https://www.cheat-sheets.org/saved-copy/ReferenceCards/AMSTeXRefCard.v1.3.tex"
-      ],
-      "learningResourceType": "cheat sheet",
-      "creditText": "Source: cheat-sheets.org. Internet Archive snapshots: https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/. Indexing, searchability, SEO, JSON-LD, and llms.txt: George Lambert \u003cmarchon@gmail.com>, https://georgelambert.org/, https://github.com/marchon, https://github.com/marchon/cheat-sheets. George Lambert takes credit only for indexing and searchability, not for the underlying cheat sheets.",
-      "isBasedOn": "https://cheat-sheets.org/",
-      "citation": [
-        {
-          "@id": "https://cheat-sheets.org/#org"
-        },
-        {
-          "@id": "https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/#archive"
-        },
-        {
-          "@id": "https://cheat-sheet-index.georgelambert.org/#indexing"
-        }
-      ],
-      "acquireLicensePage": "https://cheat-sheets.org/",
-      "contributor": {
-        "@type": "Role",
-        "roleName": "Indexing, searchability, SEO, JSON-LD, and llms.txt only",
-        "contributor": {
-          "@id": "https://georgelambert.org/#person"
-        }
-      },
-      "sdPublisher": {
-        "@id": "https://georgelambert.org/#person"
-      },
-      "accountablePerson": {
-        "@id": "https://georgelambert.org/#person"
-      }
-    },
-    {
-      "@type": "DigitalDocument",
-      "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-7",
       "name": "tex-refcard-a4.pdf",
       "url": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/saved-copy/tex-refcard-a4.pdf",
       "encodingFormat": "application/pdf",
@@ -545,7 +501,7 @@
     },
     {
       "@type": "DigitalDocument",
-      "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-8",
+      "@id": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/#saved-7",
       "name": "AMSTeX Reference Card 1.3.pdf",
       "url": "https://cheat-sheet-index.georgelambert.org/file-formats/te-x/saved-copy/AMSTeX%20Reference%20Card%201.3.pdf",
       "encodingFormat": "application/pdf",
@@ -814,7 +770,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -825,26 +788,23 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/file-formats/">File formats</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/file-formats/te-x/saved-copy/TeXRefCard.v1.5.pdf">TeXRefCard.v1.5.pdf</a></li>
-      <li><a href="/file-formats/te-x/saved-copy/TeXRefCard.v1.5.dvi">TeXRefCard.v1.5.dvi</a></li>
-      <li><a href="/file-formats/te-x/saved-copy/AMSTeXRefCard.v1.3.pdf">AMSTeXRefCard.v1.3.pdf</a></li>
-      <li><a href="/file-formats/te-x/saved-copy/AMSTeXRefCard.v1.3.dvi">AMSTeXRefCard.v1.3.dvi</a></li>
-      <li><a href="/file-formats/te-x/saved-copy/tex-refcard-a4.pdf">tex-refcard-a4.pdf</a></li>
-      <li><a href="/file-formats/te-x/saved-copy/AMSTeX%20Reference%20Card%201.3.pdf">AMSTeX Reference Card 1.3.pdf</a></li>
-    </ul>
-    <h2>Other local files</h2>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/te-x/saved-copy/TeXRefCard.v1.5.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">TeXRefCard.v1.5.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/te-x/saved-copy/TeXRefCard.v1.5.dvi"><span class="sheet-kind">DVI</span> <span class="sheet-name">TeXRefCard.v1.5.dvi</span></a>
+        <a class="sheet-main" href="/file-formats/te-x/saved-copy/AMSTeXRefCard.v1.3.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">AMSTeXRefCard.v1.3.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/te-x/saved-copy/AMSTeXRefCard.v1.3.dvi"><span class="sheet-kind">DVI</span> <span class="sheet-name">AMSTeXRefCard.v1.3.dvi</span></a>
+        <a class="sheet-main" href="/file-formats/te-x/saved-copy/tex-refcard-a4.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">tex-refcard-a4.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/te-x/saved-copy/AMSTeX%20Reference%20Card%201.3.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">AMSTeX Reference Card 1.3.pdf</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
     <ul>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
       <li><a href="/file-formats/te-x/saved-copy/TeXRefCard.v1.5.tex">TeXRefCard.v1.5.tex</a></li>
-      <li><a href="/file-formats/te-x/saved-copy/ReferenceCards/AMSTeXRefCard.v1.3.tex">AMSTeXRefCard.v1.3.tex</a></li>
-    </ul>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
-    <ul>
-      <li><a href="/file-formats/la-te-x/">LaTeX</a></li>
-      <li><a href="/file-formats/math-ml/">MathML</a></li>
+      <li><a href="/file-formats/la-te-x/">LaTeX (related topic)</a></li>
+      <li><a href="/file-formats/math-ml/">MathML (related topic)</a></li>
     </ul>
   </main>
   <footer>

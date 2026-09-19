@@ -6228,7 +6228,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -6238,55 +6245,158 @@ nav a { margin-inline-end: 0.75rem; }
     <p class="lede">SQL and NoSQL databases, query languages, and data-access APIs.</p>
   </header>
   <main>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/databases/db2/saved-copy/Db2CheatSheetForDev20210323.pdf">DB2 (IBM DB2) — Db2CheatSheetForDev20210323.pdf</a></li>
-      <li><a href="/databases/doctrine/saved-copy/Doctrine-Cheat-Sheet-1.1.pdf">Doctrine — Doctrine-Cheat-Sheet-1.1.pdf</a></li>
-      <li><a href="/databases/my-sql/saved-copy/mysql_cheat_sheet.png">MySQL — mysql_cheat_sheet.png</a></li>
-      <li><a href="/databases/my-sql/saved-copy/mysql_cheat_sheet.pdf">MySQL — mysql_cheat_sheet.pdf</a></li>
-      <li><a href="/databases/my-sql/saved-copy/mysqlstatchart_1180.jpg">MySQL — mysqlstatchart_1180.jpg</a></li>
-      <li><a href="/databases/my-sql/saved-copy/mysqlfuncchart_1180.jpg">MySQL — mysqlfuncchart_1180.jpg</a></li>
-      <li><a href="/databases/my-sql/saved-copy/MySQL_QuickRef.pdf">MySQL — MySQL_QuickRef.pdf</a></li>
-      <li><a href="/databases/my-sql/saved-copy/MySQL-Cheat-Sheet-websitesetup.org_.pdf">MySQL — MySQL-Cheat-Sheet-websitesetup.org_.pdf</a></li>
-      <li><a href="/databases/my-sql/saved-copy/MySQL-Cheat-Sheet-Summary.webp">MySQL — MySQL-Cheat-Sheet-Summary.webp</a></li>
-      <li><a href="/databases/my-sql/saved-copy/rc029-010d-essential-admin-mysql5.5_1.pdf">MySQL — rc029-010d-essential-admin-mysql5.5_1.pdf</a></li>
-      <li><a href="/databases/my-sql/saved-copy/rc157-010d-dbpartitioning_2.pdf">MySQL — rc157-010d-dbpartitioning_2.pdf</a></li>
-      <li><a href="/databases/oracle/saved-copy/oracle_sql_reference.pdf">Oracle — oracle_sql_reference.pdf</a></li>
-      <li><a href="/databases/oracle/saved-copy/ORACLE%20Server%20Architecture.pdf">Oracle — ORACLE Server Architecture.pdf</a></li>
-      <li><a href="/databases/oracle/saved-copy/ORACLE%20Server%208i%20Quick%20Reference%20Card.pdf">Oracle — ORACLE Server 8i Quick Reference Card.pdf</a></li>
-      <li><a href="/databases/oracle/saved-copy/9iquickref.pdf">Oracle — 9iquickref.pdf</a></li>
-      <li><a href="/databases/postgre-sql/saved-copy/postgresql-cheat-sheet.gif">PostgreSQL — postgresql-cheat-sheet.gif</a></li>
-      <li><a href="/databases/postgre-sql/saved-copy/postgresql-cheat-sheet.pdf">PostgreSQL — postgresql-cheat-sheet.pdf</a></li>
-      <li><a href="/databases/postgre-sql/saved-copy/postgresql-cheat-sheet.png">PostgreSQL — postgresql-cheat-sheet.png</a></li>
-      <li><a href="/databases/sql/saved-copy/sqlcheetsheet.pdf">SQL - Structured Query Language — sqlcheetsheet.pdf</a></li>
-      <li><a href="/databases/sql/saved-copy/sqlcheetsheet.gif">SQL - Structured Query Language — sqlcheetsheet.gif</a></li>
-      <li><a href="/databases/sql/saved-copy/SQL-Cheat-Sheet.pdf">SQL - Structured Query Language — SQL-Cheat-Sheet.pdf</a></li>
-      <li><a href="/databases/sql/saved-copy/Muppix_SQL_commands.pdf">SQL - Structured Query Language — Muppix_SQL_commands.pdf</a></li>
-      <li><a href="/databases/sqlserver/saved-copy/sql-server-cheat-sheet.png">SQL Server — sql-server-cheat-sheet.png</a></li>
-      <li><a href="/databases/sqlserver/saved-copy/sql-server-cheat-sheet.pdf">SQL Server — sql-server-cheat-sheet.pdf</a></li>
-    </ul>
-    <h2>Topics</h2>
-    <ul>
-      <li><a href="/databases/adonet/">ADO.NET</a></li>
-      <li><a href="/databases/apache-cassandra/">Apache Cassandra</a></li>
-      <li><a href="/databases/berkeley-db/">Berkeley DB (BDB, Oracle Berkeley DB)</a></li>
-      <li><a href="/databases/db2/">DB2 (IBM DB2)</a></li>
-      <li><a href="/databases/db4o/">db4o</a></li>
-      <li><a href="/databases/doctrine/">Doctrine</a></li>
-      <li><a href="/databases/hadoop/">Hadoop</a></li>
-      <li><a href="/databases/hbase/">HBase</a></li>
-      <li><a href="/databases/hibernate/">Hibernate</a></li>
-      <li><a href="/databases/java-persistence-api/">Java Persistence API (JPA)</a></li>
-      <li><a href="/databases/jdbc/">JDBC - Java Database Connectivity</a></li>
-      <li><a href="/databases/my-sql/">MySQL</a></li>
-      <li><a href="/databases/oracle/">Oracle</a></li>
-      <li><a href="/databases/postgre-sql/">PostgreSQL</a></li>
-      <li><a href="/databases/redis/">Redis</a></li>
-      <li><a href="/databases/sql/">SQL - Structured Query Language</a></li>
-      <li><a href="/databases/sqlserver/">SQL Server</a></li>
-      <li><a href="/databases/sqlite/">SQLite</a></li>
-      <li><a href="/databases/sybase/">Sybase</a></li>
-    </ul>
+    <div class="topics">
+    <article class="item-block">
+      <h3>ADO.NET</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/adonet/">Open local files for ADO.NET</a>
+      </div>
+      <a class="support-ref" href="/databases/adonet/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Apache Cassandra</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/apache-cassandra/">Open local files for Apache Cassandra</a>
+      </div>
+      <a class="support-ref" href="/databases/apache-cassandra/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Berkeley DB (BDB, Oracle Berkeley DB)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/berkeley-db/">Open local files for Berkeley DB (BDB, Oracle Berkeley DB)</a>
+      </div>
+      <a class="support-ref" href="/databases/berkeley-db/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>DB2 (IBM DB2)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/db2/saved-copy/Db2CheatSheetForDev20210323.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Db2CheatSheetForDev20210323.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/databases/db2/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>db4o</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/db4o/">Open local files for db4o</a>
+      </div>
+      <a class="support-ref" href="/databases/db4o/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Doctrine</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/doctrine/saved-copy/Doctrine-Cheat-Sheet-1.1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Doctrine-Cheat-Sheet-1.1.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/databases/doctrine/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Hadoop</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/hadoop/">Open local files for Hadoop</a>
+      </div>
+      <a class="support-ref" href="/databases/hadoop/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>HBase</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/hbase/">Open local files for HBase</a>
+      </div>
+      <a class="support-ref" href="/databases/hbase/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Hibernate</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/hibernate/">Open local files for Hibernate</a>
+      </div>
+      <a class="support-ref" href="/databases/hibernate/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Java Persistence API (JPA)</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/java-persistence-api/">Open local files for Java Persistence API (JPA)</a>
+      </div>
+      <a class="support-ref" href="/databases/java-persistence-api/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>JDBC - Java Database Connectivity</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/jdbc/">Open local files for JDBC - Java Database Connectivity</a>
+      </div>
+      <a class="support-ref" href="/databases/jdbc/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>MySQL</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/my-sql/saved-copy/mysql_cheat_sheet.png"><img src="/databases/my-sql/saved-copy/mysql_cheat_sheet.png" alt="MySQL — mysql_cheat_sheet.png"><span class="sheet-name">mysql_cheat_sheet.png</span></a>
+        <a class="sheet-main" href="/databases/my-sql/saved-copy/mysql_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">mysql_cheat_sheet.pdf</span></a>
+        <a class="sheet-main" href="/databases/my-sql/saved-copy/mysqlstatchart_1180.jpg"><img src="/databases/my-sql/saved-copy/mysqlstatchart_1180.jpg" alt="MySQL — mysqlstatchart_1180.jpg"><span class="sheet-name">mysqlstatchart_1180.jpg</span></a>
+        <a class="sheet-main" href="/databases/my-sql/saved-copy/mysqlfuncchart_1180.jpg"><img src="/databases/my-sql/saved-copy/mysqlfuncchart_1180.jpg" alt="MySQL — mysqlfuncchart_1180.jpg"><span class="sheet-name">mysqlfuncchart_1180.jpg</span></a>
+        <a class="sheet-main" href="/databases/my-sql/saved-copy/MySQL_QuickRef.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">MySQL_QuickRef.pdf</span></a>
+        <a class="sheet-main" href="/databases/my-sql/saved-copy/MySQL-Cheat-Sheet-websitesetup.org_.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">MySQL-Cheat-Sheet-websitesetup.org_.pdf</span></a>
+        <a class="sheet-main" href="/databases/my-sql/saved-copy/MySQL-Cheat-Sheet-Summary.webp"><img src="/databases/my-sql/saved-copy/MySQL-Cheat-Sheet-Summary.webp" alt="MySQL — MySQL-Cheat-Sheet-Summary.webp"><span class="sheet-name">MySQL-Cheat-Sheet-Summary.webp</span></a>
+        <a class="sheet-main" href="/databases/my-sql/saved-copy/rc029-010d-essential-admin-mysql5.5_1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">rc029-010d-essential-admin-mysql5.5_1.pdf</span></a>
+        <a class="sheet-main" href="/databases/my-sql/saved-copy/rc157-010d-dbpartitioning_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">rc157-010d-dbpartitioning_2.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/databases/my-sql/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Oracle</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/oracle/saved-copy/oracle_sql_reference.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">oracle_sql_reference.pdf</span></a>
+        <a class="sheet-main" href="/databases/oracle/saved-copy/ORACLE%20Server%20Architecture.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">ORACLE Server Architecture.pdf</span></a>
+        <a class="sheet-main" href="/databases/oracle/saved-copy/ORACLE%20Server%208i%20Quick%20Reference%20Card.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">ORACLE Server 8i Quick Reference Card.pdf</span></a>
+        <a class="sheet-main" href="/databases/oracle/saved-copy/9iquickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">9iquickref.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/databases/oracle/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>PostgreSQL</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/postgre-sql/saved-copy/postgresql-cheat-sheet.gif"><img src="/databases/postgre-sql/saved-copy/postgresql-cheat-sheet.gif" alt="PostgreSQL — postgresql-cheat-sheet.gif"><span class="sheet-name">postgresql-cheat-sheet.gif</span></a>
+        <a class="sheet-main" href="/databases/postgre-sql/saved-copy/postgresql-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">postgresql-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/databases/postgre-sql/saved-copy/postgresql-cheat-sheet.png"><img src="/databases/postgre-sql/saved-copy/postgresql-cheat-sheet.png" alt="PostgreSQL — postgresql-cheat-sheet.png"><span class="sheet-name">postgresql-cheat-sheet.png</span></a>
+      </div>
+      <a class="support-ref" href="/databases/postgre-sql/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Redis</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/redis/">Open local files for Redis</a>
+      </div>
+      <a class="support-ref" href="/databases/redis/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>SQL - Structured Query Language</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/sql/saved-copy/sqlcheetsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sqlcheetsheet.pdf</span></a>
+        <a class="sheet-main" href="/databases/sql/saved-copy/sqlcheetsheet.gif"><img src="/databases/sql/saved-copy/sqlcheetsheet.gif" alt="SQL - Structured Query Language — sqlcheetsheet.gif"><span class="sheet-name">sqlcheetsheet.gif</span></a>
+        <a class="sheet-main" href="/databases/sql/saved-copy/SQL-Cheat-Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">SQL-Cheat-Sheet.pdf</span></a>
+        <a class="sheet-main" href="/databases/sql/saved-copy/Muppix_SQL_commands.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">Muppix_SQL_commands.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/databases/sql/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>SQL Server</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/sqlserver/saved-copy/sql-server-cheat-sheet.png"><img src="/databases/sqlserver/saved-copy/sql-server-cheat-sheet.png" alt="SQL Server — sql-server-cheat-sheet.png"><span class="sheet-name">sql-server-cheat-sheet.png</span></a>
+        <a class="sheet-main" href="/databases/sqlserver/saved-copy/sql-server-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">sql-server-cheat-sheet.pdf</span></a>
+      </div>
+      <a class="support-ref" href="/databases/sqlserver/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>SQLite</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/sqlite/">Open local files for SQLite</a>
+      </div>
+      <a class="support-ref" href="/databases/sqlite/">Reference: sources and additional information</a>
+    </article>
+    <article class="item-block">
+      <h3>Sybase</h3>
+      <div class="sheet-mains">
+        <a class="sheet-main" href="/databases/sybase/">Open local files for Sybase</a>
+      </div>
+      <a class="support-ref" href="/databases/sybase/">Reference: sources and additional information</a>
+    </article>
+    </div>
   </main>
   <footer>
     Indexing, search, SEO, JSON-LD, and <a href="/llms.txt">llms.txt</a>: <a href="https://georgelambert.org/">George Lambert</a> &lt;<a href="mailto:marchon@gmail.com">marchon@gmail.com</a>&gt;, <a href="https://github.com/marchon">github.com/marchon</a>, <a href="https://github.com/marchon/cheat-sheets">github.com/marchon/cheat-sheets</a>. That credit is for the index and searchability only, not for the underlying cheat sheets. Source: <a href="https://cheat-sheets.org/">cheat-sheets.org</a>. Internet Archive snapshots: <a href="https://web.archive.org/web/20260000000000*/https://cheat-sheets.org/">Wayback Machine calendar for cheat-sheets.org</a>. Wikipedia extracts are CC BY-SA 4.0.

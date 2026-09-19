@@ -2620,7 +2620,14 @@ main ul { padding-inline-start: 1.2rem; }
 footer { padding-block: 1.5rem 2.5rem; font-size: 0.95rem; }
 nav a { margin-inline-end: 0.75rem; }
 .printables { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.4rem; list-style: none; padding: 0; }
-.printables a { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.printables a, .sheet-main { display: block; min-height: 48px; padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--paper); text-decoration: none; color: var(--ink); border-radius: 0.35rem; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 0.75rem; }
+.item-block { display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); border-radius: 0.5rem; }
+.item-block h2, .item-block h3 { margin: 0; padding: 0.7rem 0.8rem 0.25rem; font-size: 1.05rem; }
+.sheet-mains { display: flex; flex-direction: column; gap: 0.4rem; padding: 0.4rem 0.75rem 0.6rem; flex: 1; }
+.sheet-main img { width: 100%; max-height: 14rem; object-fit: contain; background: #fff; }
+.sheet-kind { font-size: 0.75rem; color: var(--muted); }
+.support-ref { margin-top: auto; padding: 0.65rem 0.8rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -2631,47 +2638,46 @@ nav a { margin-inline-end: 0.75rem; }
   </header>
   <main>
     <p class="meta">Group: <a href="/file-formats/">File formats</a></p>
-    <h2>Printable quick references</h2>
-    <ul class="printables">
-      <li><a href="/file-formats/html/saved-copy/HTML5-mega-cheat-sheet.jpg">HTML5-mega-cheat-sheet.jpg</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf">HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/html1_quickref.pdf">html1_quickref.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/htmlcheatsheet.pdf">htmlcheatsheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML5_Canvas_Cheat_Sheet.pdf">HTML5_Canvas_Cheat_Sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML5_Canvas_Cheat_Sheet.png">HTML5_Canvas_Cheat_Sheet.png</a></li>
-      <li><a href="/file-formats/html/saved-copy/html-cheat-sheet.png">html-cheat-sheet.png</a></li>
-      <li><a href="/file-formats/html/saved-copy/html-cheat-sheet.pdf">html-cheat-sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML-XHTML_Tag_Sheet.pdf">HTML-XHTML_Tag_Sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/html5-cheat-sheet-1.png">html5-cheat-sheet-1.png</a></li>
-      <li><a href="/file-formats/html/saved-copy/html5-cheat-sheet.pdf">html5-cheat-sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/html5spanish-page-001.jpg">html5spanish-page-001.jpg</a></li>
-      <li><a href="/file-formats/html/saved-copy/html5spanish.pdf">html5spanish.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/html5-cheat-sheet.png">html5-cheat-sheet.png</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML5-cheat-sheet.pdf">HTML5-cheat-sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/html-chatsheet.20210604.jpg">html-chatsheet.20210604.jpg</a></li>
-      <li><a href="/file-formats/html/saved-copy/html-chatsheet.20210604.pdf">html-chatsheet.20210604.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/6847784-rc-123-html5.pdf">6847784-rc-123-html5.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/rc064-010d-core_html_1.pdf">rc064-010d-core_html_1.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/rc151-010d-html5-canvas.pdf">rc151-010d-html5-canvas.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/rc152-010d-websocket_2.pdf">rc152-010d-websocket_2.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/hf-html-cheat-sheet.pdf">hf-html-cheat-sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML_CHEAT_SHEET_PNG.png">HTML_CHEAT_SHEET_PNG.png</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML_5_Cheat_Sheet.jpg">HTML_5_Cheat_Sheet.jpg</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML5-Cheat-Sheet.pdf">HTML5-Cheat-Sheet.pdf</a></li>
-      <li><a href="/file-formats/html/saved-copy/Ultimate_HTML_Cheatsheet.png">Ultimate_HTML_Cheatsheet.png</a></li>
-      <li><a href="/file-formats/html/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf">HTML_CSS_PHP_cheat_sheet.pdf</a></li>
-    </ul>
-    <h2>Other local files</h2>
-    <p>None stored locally.</p>
-    <h2>Wikipedia (local)</h2>
-    <p><a href="wikipedia.md">Local Wikipedia clone</a></p>
-    <h2>See also</h2>
+    <h2>Cheat sheets</h2>
+    <div class="sheet-mains">
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML5-mega-cheat-sheet.jpg"><img src="/file-formats/html/saved-copy/HTML5-mega-cheat-sheet.jpg" alt="HTML - HyperText Markup Language — HTML5-mega-cheat-sheet.jpg"><span class="sheet-name">HTML5-mega-cheat-sheet.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML5-Mega-Cheat-Sheet-A4-Print-ready.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html1_quickref.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">html1_quickref.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/htmlcheatsheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">htmlcheatsheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML5_Canvas_Cheat_Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML5_Canvas_Cheat_Sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML5_Canvas_Cheat_Sheet.png"><img src="/file-formats/html/saved-copy/HTML5_Canvas_Cheat_Sheet.png" alt="HTML - HyperText Markup Language — HTML5_Canvas_Cheat_Sheet.png"><span class="sheet-name">HTML5_Canvas_Cheat_Sheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html-cheat-sheet.png"><img src="/file-formats/html/saved-copy/html-cheat-sheet.png" alt="HTML - HyperText Markup Language — html-cheat-sheet.png"><span class="sheet-name">html-cheat-sheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">html-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML-XHTML_Tag_Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML-XHTML_Tag_Sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html5-cheat-sheet-1.png"><img src="/file-formats/html/saved-copy/html5-cheat-sheet-1.png" alt="HTML - HyperText Markup Language — html5-cheat-sheet-1.png"><span class="sheet-name">html5-cheat-sheet-1.png</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html5-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">html5-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html5spanish-page-001.jpg"><img src="/file-formats/html/saved-copy/html5spanish-page-001.jpg" alt="HTML - HyperText Markup Language — html5spanish-page-001.jpg"><span class="sheet-name">html5spanish-page-001.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html5spanish.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">html5spanish.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html5-cheat-sheet.png"><img src="/file-formats/html/saved-copy/html5-cheat-sheet.png" alt="HTML - HyperText Markup Language — html5-cheat-sheet.png"><span class="sheet-name">html5-cheat-sheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML5-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML5-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html-chatsheet.20210604.jpg"><img src="/file-formats/html/saved-copy/html-chatsheet.20210604.jpg" alt="HTML - HyperText Markup Language — html-chatsheet.20210604.jpg"><span class="sheet-name">html-chatsheet.20210604.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/html-chatsheet.20210604.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">html-chatsheet.20210604.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/6847784-rc-123-html5.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">6847784-rc-123-html5.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/rc064-010d-core_html_1.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">rc064-010d-core_html_1.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/rc151-010d-html5-canvas.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">rc151-010d-html5-canvas.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/rc152-010d-websocket_2.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">rc152-010d-websocket_2.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/hf-html-cheat-sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">hf-html-cheat-sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML_CHEAT_SHEET_PNG.png"><img src="/file-formats/html/saved-copy/HTML_CHEAT_SHEET_PNG.png" alt="HTML - HyperText Markup Language — HTML_CHEAT_SHEET_PNG.png"><span class="sheet-name">HTML_CHEAT_SHEET_PNG.png</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML_5_Cheat_Sheet.jpg"><img src="/file-formats/html/saved-copy/HTML_5_Cheat_Sheet.jpg" alt="HTML - HyperText Markup Language — HTML_5_Cheat_Sheet.jpg"><span class="sheet-name">HTML_5_Cheat_Sheet.jpg</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML5-Cheat-Sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML5-Cheat-Sheet.pdf</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/Ultimate_HTML_Cheatsheet.png"><img src="/file-formats/html/saved-copy/Ultimate_HTML_Cheatsheet.png" alt="HTML - HyperText Markup Language — Ultimate_HTML_Cheatsheet.png"><span class="sheet-name">Ultimate_HTML_Cheatsheet.png</span></a>
+        <a class="sheet-main" href="/file-formats/html/saved-copy/HTML_CSS_PHP_cheat_sheet.pdf"><span class="sheet-kind">PDF</span> <span class="sheet-name">HTML_CSS_PHP_cheat_sheet.pdf</span></a>
+    </div>
+    <h2>Reference: sources and additional information</h2>
     <ul>
-      <li><a href="/file-formats/characters/">Characters</a></li>
-      <li><a href="/file-formats/css/">CSS</a></li>
-      <li><a href="/languages/java-script/">JavaScript</a></li>
-      <li><a href="/file-formats/open-graph/">Open Graph</a></li>
-      <li><a href="/file-formats/xhtml/">XHTML</a></li>
+      <li><a href="README.md">Topic notes (README)</a></li>
+      <li><a href="topic.json">Catalog record (JSON)</a></li>
+      <li><a href="wikipedia.md">Wikipedia clone</a></li>
+      <li><a href="/file-formats/characters/">Characters (related topic)</a></li>
+      <li><a href="/file-formats/css/">CSS (related topic)</a></li>
+      <li><a href="/languages/java-script/">JavaScript (related topic)</a></li>
+      <li><a href="/file-formats/open-graph/">Open Graph (related topic)</a></li>
+      <li><a href="/file-formats/xhtml/">XHTML (related topic)</a></li>
     </ul>
   </main>
   <footer>
