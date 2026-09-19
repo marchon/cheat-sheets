@@ -330,9 +330,14 @@ def slim_catalog(catalog: dict) -> dict:
         if not g["topic_count"]:
             continue
         meta = GROUPS.get(g["id"], {})
+        clean_topics = [
+            {**tt, "title": re.sub(r"\s+W$", "", tt["title"]).strip()}
+            for tt in g.get("topics") or []
+        ]
         groups.append(
             {
                 **g,
+                "topics": clean_topics,
                 "description": meta.get("description", g.get("description", "")),
             }
         )
