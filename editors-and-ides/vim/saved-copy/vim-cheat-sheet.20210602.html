@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en" itemscope itemtype="http://schema.org/">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <title>Vim Commands Cheat Sheet, Copy-Pasteable</title>
+ </head>
+
+ <body>
+  <div><a href="http://www.cheat-sheets.org/">&lt;&lt;Cheat Sheets</a></div>
+  <h2>Vim Commands&nbsp;Cheat Sheet, Copy-Pasteable</h2>
+  <h3>Exiting Vim</h3>
+  <ul><li><code>:w &nbsp;- Write (Save)</code></li><li><code>:wq - Write and quit</code></li><li><code>:q &nbsp;- Quit, fails if unsaved</code></li><li><code>:q! - Quit, even if unsaved</code></li></ul>
+  <h3>Modes</h3>
+  <ul><li><code>ESC &nbsp; &nbsp;- Return to normal mode</code></li><li><code>i &nbsp; &nbsp; &nbsp;- Insert at cursor position</code></li><li><code>a &nbsp; &nbsp; &nbsp;- Insert after cursor position</code></li><li><code>o &nbsp; &nbsp; &nbsp;- Insert on line below cursor</code></li><li><code>v &nbsp; &nbsp; &nbsp;- Enter visual mode</code></li><li><code>ctrl+v - Enter visual mode (vertical)</code></li><li><code>V &nbsp; &nbsp; &nbsp;- Enter visual mode (full lines)</code></li></ul>
+  <h3>Toggling Case</h3>
+  <ul><li><code>u [in visual mode] - To lowercase</code></li><li><code>U [in visual mode] - To uppercase</code></li><li><code>Undo/Redo</code></li><li><code>u &nbsp; &nbsp; &nbsp;- Undo</code></li><li><code>ctrl+r - Redo</code></li></ul>
+  <h3>Movement</h3>
+  <ul><li><code>$ &nbsp; &nbsp; - Jump to end of line</code></li><li><code>^ &nbsp; &nbsp; - Jump to start of line</code></li><li><code>h &nbsp; &nbsp; - Move left</code></li><li><code>j &nbsp; &nbsp; - Move down</code></li><li><code>k &nbsp; &nbsp; - Move up</code></li><li><code>l &nbsp; &nbsp; - Move right</code></li><li><code>H &nbsp; &nbsp; - Move to top of screen</code></li><li><code>M &nbsp; &nbsp; - Move to middle of screen</code></li><li><code>L &nbsp; &nbsp; - Move to bottom of screen</code></li><li><code>gg &nbsp; &nbsp;- Move to start of file</code></li><li><code>G &nbsp; &nbsp; - Move to end of file</code></li><li><code>420gg - Move to line 420</code></li><li><code>w&nbsp; &nbsp; &nbsp;- Jump to start of next word</code></li><li><code>b&nbsp; &nbsp; &nbsp;- Jump to start of prev word</code></li></ul><p>Search</p><ul><li><code>/something &nbsp; &nbsp;- Search for string</code></li><li><code>n &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - Jump to next match</code></li><li><code>N &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - Jump to prev match</code></li><li><code>/something\c &nbsp;- Case insensitive search</code></li></ul>
+  <h3>Copy-Pasting</h3>
+  <ul><li><code>y &nbsp;[in visual mode] - Copy highlighted text</code></li><li><code>yy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- Copy the current line</code></li><li><code>d &nbsp;[in visual mode] - Cut highlighted text</code></li><li><code>dd &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- Cut the current line</code></li><li><code>Ctrl+Shift+V &nbsp; &nbsp; &nbsp; &nbsp;- Paste from external clipboard</code></li></ul>
+  <h3>Find-and-Replace</h3>
+  <ul><li>Find and Replace All in Document
+	<ul><li><code>:%s/find/replace/g</code></li></ul></li><li>Find and Replace All on Current Line
+	<ul><li><code>:s/find/replace/g &nbsp;[in visual mode]&nbsp;&nbsp;</code></li></ul></li><li>Find and Replace All in Highlighted Section
+	<ul><li><code>:'&lt;,'&gt;s/find/replace/g &nbsp;[in visual mode]&nbsp;</code></li></ul></li><li>Find and Replace All in Document
+	<ul><li><code>:%s/address/replace/g</code></li></ul></li></ul>
+  <h3>Important Regular Expression (REGEX) Characters</h3>
+  <ul><li><code>. - Any single character</code></li><li><code>* - Up to unlimited characters</code></li></ul>
+ </body>
+
+</html>
+
