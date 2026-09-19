@@ -1,0 +1,862 @@
+<html lang="en">
+
+ <head>
+  <title>XML in one page : XML.SU</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+  <meta name="description" content="XML (Extensible Markup Language) in one page : XML.SU" />
+  <meta name="keywords" content="XML (Extensible Markup Language) in one page : XML.SU" />
+  <link rel="stylesheet" type="text/css" href="xml.css" />
+ </head>
+
+ <body>
+  <table align="center">
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+   </tr>
+	 
+   <tr><td colspan="5" class="bigtitle">XML&nbsp;(eXtensible&nbsp;Markup&nbsp;Language)&nbsp;in&nbsp;one&nbsp;page</td></tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td colspan="4" class="contents">
+	 <b>Contents:</b><br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;<b>Review:</b> <a href="#well_formed">Well-Formed Document (well formedness)</a>, 
+	 <a href="#valid">Valid XML document</a>, <a href="#structure">Structure of XML Document</a>;<br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;<b>Components:</b> <a href="#xml_declaration">XML Declaration</a>, 
+	 <a href="#doctype">DOCTYPE Declaration &amp; DTDs</a>, <a href="/dtd.html">DTD (DocType Declaration) in one page</a>, 
+	 <a href="#comments">Comments</a>, <a href="#processing">Processing Instruction</a>, <a href="#cdata">CDATA Section</a>;<br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;<b>Other:</b> <a href="#references">Related References (Review, Documentation, etc.)</a>, <a href="#tools">Tools (Validators, etc.)</a>, 
+	 <a href="#themes">Related themes</a>, <a href="#miscellaneous">Miscellaneous</a>.
+	</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+   </tr>
+	 
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td rowspan="15" colspan="2" align="center"></td>
+    <td colspan="2" class="title">Structure of XML Document <a name="structure">&nbsp;</a></td>
+   </tr>
+	  
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col--> 
+    <td class="code">&lt;?xml version="<em>1.0</em>" encoding="<em>UTF-8</em>" standalone="<em>no</em>" ?&gt;</td>
+    <td class="description">XML Declaration</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col--> 
+    <td class="code">&nbsp;</td>
+    <td class="description">White space characters (space, carriage return, line feed, tab, etc)</td> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col-->  
+    <td class="code">&lt;!-- <em>Comments</em> --&gt;</td>
+    <td class="description">Comments</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col-->  
+    <td class="code">&lt;?xml-stylesheet type="text/css" href="<em>your_documents_css.css</em>" ?&gt;</td>
+    <td class="description">External style sheet for browse your xml document</td>
+   </tr>
+	  
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col-->
+    <td class="code">&lt;?<em>word document="test.doc"</em> ?&gt;</td>
+    <td class="description">Processing Instruction</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col-->  
+    <td class="code">&lt;!DOCTYPE&nbsp;<em>root_element</em>&nbsp;[&nbsp;&nbsp;&lt;!ELEMENT&nbsp;<em>root_element</em>&nbsp;(#PCDATA)&gt;&nbsp;&nbsp;]&gt;</td>
+    <td class="description">Internal DOCTYPE Declaration, and/or</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col-->  
+    <td class="code">&lt;!DOCTYPE <em>root_element</em> SYSTEM "<em>your_documents_dtd.dtd</em>"&gt;</td>
+    <td class="description">External DOCTYPE Declaration</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col--> 
+    <td class="code">&lt;<em>root_element</em>&gt;</td>
+    <td class="description">Open tag of "<em>root_element</em>"</td> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col-->  
+    <td class="code">&nbsp;&nbsp;&lt;<em>subElement</em>&gt;</td>
+    <td class="description">Open tag of "<em>subElement</em>"</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col-->  
+    <td class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>...text...</em></td>
+    <td class="description">Data</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col-->  
+    <td class="code">&nbsp;&nbsp;&nbsp;&nbsp;&lt;<em>subSubElement</em> <em>attr_name="attr_value"</em>&gt;</td>
+    <td class="description">Open tag of "<em>subSubElement</em>" with attribute "<em>attr_name</em>" equal "<em>attr_value</em>"</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col-->  
+    <td class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[&nbsp;&nbsp;<em>...any characters (including markup)...</em>&nbsp;&nbsp;]]&gt;</td>
+    <td class="description">CDATA Section</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col-->  
+    <td class="code">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<em>subSubElement</em>&gt;</td>
+    <td class="description">Close tag of "<em>subSubElemen</em><em>t</em>"</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--2 col-->  
+    <td class="code">&nbsp;&nbsp;&lt;/<em>subElement</em>&gt;</td>
+    <td class="description">Close tag of "<em>subElement</em>"</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="title"><a name="well_formed">&nbsp;</a>Well-Formed&nbsp;Document&nbsp;(well&nbsp;formedness)</td>
+    <td class="code">&nbsp;&nbsp;&lt;<em>emptyElement</em>/&gt;</td>
+    <td class="description">Tag of empty element</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="description">Has a single root element</td>
+    <td rowspan="2" class="code">&nbsp;&nbsp;&lt;<em>anotherSubElement</em> xmlns="<em>http://www.xml.su/shema1</em>"&gt;</td>
+    <td rowspan="2" class="description">Open&nbsp;tag&nbsp;of&nbsp;"<em>anotherSubElement</em>" with&nbsp;namespace&nbsp;"<em>http://www.xml.su/shema1</em>"&nbsp;as&nbsp;default</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="description">All other element are correctly nested:</td>
+    <!--2 col-->  
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="description">- all other elements are children of the root element</td>
+    <td class="code">&nbsp;&nbsp;&nbsp;&nbsp;&lt;<em>element1</em>&gt;</td>
+    <td class="description">Open tag of "<em>element1</em>" from namespace "<em>http://www.xml.su/shema1</em>"</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="description">- all elements are correctly paired</td>
+    <td class="code">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<em>element1</em>&gt;</td>
+    <td class="description">Close tag of "<em>element1</em>"</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="description">- the element name in a start-tag and an end-tag are exactly the same</td>
+    <td class="code">&nbsp;&nbsp;&nbsp;&nbsp;&lt;<em>element2</em> xmlns:sh="<em>http://www.xml.su/shema2</em>"&gt;</td>
+    <td class="description">Open&nbsp;tag&nbsp;of&nbsp;"<em>element2</em>"&nbsp;with&nbsp;namespace&nbsp;"<em>http://www.xml.su/shema2</em>"&nbsp;for&nbsp;<em>sh</em>&nbsp;preffix</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="description">-&nbsp;attribute&nbsp;names&nbsp;are&nbsp;used&nbsp;only&nbsp;once&nbsp;within&nbsp;the&nbsp;same&nbsp;element</td>
+    <td class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<em>sh:emptyElement</em>/&gt;</td>
+    <td class="description">Empty&nbsp;tag&nbsp;of&nbsp;"<em>sh:emptyElement</em>"&nbsp;from&nbsp;namespace&nbsp;"<em>http://www.xml.su/shema2</em>" </td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="title"><a name="valid">&nbsp;</a>Valid XML document</td>
+    <td class="code">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<em>element2</em>&gt;</td>
+    <td class="description">Close tag of "<em>element2</em>"</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="description">Abide&nbsp;by&nbsp;the&nbsp;constraints&nbsp;placed&nbsp;on&nbsp;each&nbsp;element's&nbsp;position&nbsp;in&nbsp;the&nbsp;document</td>
+    <td class="code">&nbsp;&nbsp;&lt;/<em>anotherSubElemen</em>&gt;</td>
+    <td class="description">Close tag of "<em>anotherSubElemen</em>"</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="description">Abide by the constaints placed on the attributes of each element</td>
+    <td class="code">&nbsp;&nbsp;<em>...</em></td>
+    <td rowspan="2" class="description">Any supperposition of <em>elements</em> (corrected nested), <em>empty elements</em>, <em>text data</em>, 
+	<em>CDATA</em>, <em>comments</em> and <em>white space</em></td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td rowspan="2" colspan="2" class="description">Require a Document Type Definition or XML Schema to specify the constraints</td>
+    <td class="code">&nbsp;&nbsp;<em>...</em></td>
+    <!--1 cell-->
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>   
+    <!--2 cell-->
+    <td class="code">&lt;/<em>root_element</em>&gt;</td>
+    <td class="description">Close tag of "<em>root_element</em>"</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>   
+    <td colspan="2" class="title"><a name="xml_declaration">&nbsp;</a>XML Declaration</td>
+    <td colspan="2" class="title">Comments<a name="comments">&nbsp;</a></td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>   
+    <td rowspan="17" class="code">
+	 &lt;?xml<br />
+	 &nbsp;version="version_number"<br />
+	 &nbsp;encoding="encoding_declaration"<br />
+	 &nbsp;standalone="standalone_status"<br />
+	 ?&gt;
+	</td>
+    <td rowspan="17" class="description">
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;XML&nbsp;declaration&nbsp;is&nbsp;a&nbsp;processing&nbsp;instruction&nbsp;that&nbsp;identifies&nbsp;the&nbsp;document as being XML. 
+	  All XML documents should begin with an XML declaration.
+	 </p>
+      <span class="rules">Rules:</span>
+      <ul>
+	   <li>If the XML declaration is included, it must be situated at the first position of the first line in the XML documentwell-formedness constraint.</li>
+	   <li>If the XML declaration is included, it must contain the version number attributewell-formedness constraint.</li>
+	   <li>If all of the attributesglossary are declared in an XML declaration, they must be placed in the order shown abovewell-formedness constraint.</li>
+	   <li>If any elements, attributes, or entities are used in the XML document that are referenced or defined in an external DTD, standalone="no" must be 
+	   includedvalidity constraint.</li>
+	   <li>The XML declaration must be in lower case (except for the encoding declarations)well-formedness constraint.</li>
+	  </ul>
+      <span class="note">Note:</span>
+      <ul>
+	   <li>The XML declaration has no closing tag, that is &lt;/?xml&gt; well-formedness constraint.</li>
+	  </ul>
+	</td>
+    <td rowspan="10" class="code">&lt;!-- Comments --&gt;</td>
+    <td rowspan="10" class="description">
+	 <p>
+	  Comments are used to hide text from the end user when the output document is displayed. 
+	  They are useful as notes to the author of the document, or other authors who may modify the document.
+	 </p>
+      <span class="rules">Rules:</span>
+	  <ul>
+	   <li>Comments may be placed anywhere after the XML declaration.</li>
+	   <li>Comments may not be placed inside a tagglossary, but may be placed inside a document type declaration.</li>
+	   <li>Double dashes '--' are not allowed inside a commentwell-formedness constraint.</li>
+	   <li>markupglossary may be used inside a comment.</li>
+	   <li>Nested comments are not allowed.</li>
+	  </ul>
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell--> 
+    <td colspan="2" class="title">Processing Instruction<a name="processing">&nbsp;</a></td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <td rowspan="2" colspan="2" class="description">
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Processing instructions are used to embed information intended for proprietary applications. 
+	  The XML declaration is an example of a processing instruction. Processing instructions beginning with 'xml' or 'XML' have been reserved for standardization 
+	  in the XML Version 1.0 specification and onwards.
+	 </p>
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <td rowspan="7" class="code">&lt;?<em>PI-target</em> ?&gt;</td>
+    <td rowspan="7" class="description">
+	<p>
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>PI-target</em>: any name that does not contain the letters 'X' or 'x', 'M' or 'm', or 'L' or 'l' in that order.
+	</p>
+	<span class="rules">Rules:</span>
+	<ul>
+	 <li>The string '?>' cannot be placed within a processing instruction, therefore, nested processing instructions are not allowed</li>
+	</ul>
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->     
+    <!--2 cell-->   
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->    
+    <!--2 cell-->   
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->    
+    <!--2 cell-->   
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="11" colspan="2" class="description">
+	 <table class="xml_declaration_table">
+	  <caption>List of the possible attributes that may be used in the XML declaration.</caption>
+	  <tr><th>Attribute Name:</th><th>Possible Attribute Value:</th><th>Attribute Description:</th></tr>
+	  <tr><td>version</td><td>1.0</td><td>Specifies the version of the XML standard that the XML document conforms to. The version attribute must be included if the XML declaration is declared</td></tr>
+	  <tr><td>encoding</td><td>UTF-8, UTF-16, ISO-10646-UCS-2, ISO-10646-UCS-4, ISO-8859-1 to ISO-8859-9, ISO-2022-JP, Shift_JIS, EUC-JP</td><td>These are the encoding namesglossary of the most common character sets in use today. For a full list of encodings check the IANA'sglossary website.</td></tr>
+	  <tr><td>standalone</td><td>yes, no</td><td>Use 'yes' if the XML document has an internal DTD.<br />Use 'no' if the XML document is linked to an external DTD, or any external entity referencesvalidity constraint.</td></tr>
+	 </table>
+	</td>  
+    <!--2 cell-->   
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->    
+    <!--2 cell-->   
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->    
+    <!--2 cell-->   
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->
+	<td colspan="2" class="title">CDATA Section<a name="cdata">&nbsp;</a></td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <td rowspan="2" colspan="2" class="description">
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA sections are used to display markup without the XML processor trying to interpret that markup. 
+	 They are particularly useful when you want to display sections of XML code.
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->    
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <td rowspan="5" class="code">
+	 &lt;![CDATA[<br /><br />
+	 &nbsp;&nbsp;<em>...any characters (including markup)...</em><br /><br />
+	 ]]&gt;
+	</td>
+    <td rowspan="5" class="description">
+	 <span class="rules">Rules:</span>
+	 <ul>
+	  <li>The string ']]&gt;' cannot be placed within a CDATA section, therefore, nested CDATA sections are not allowedwell-formedness constraint.</li>
+	 </ul>
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->   
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="title"><a name="doctype">&nbsp;</a>DOCTYPE Declaration &amp; DTDs</td>
+    <td class="title">Related References<a name="references">&nbsp;</a></td>
+    <td class="title">Tools<a name="tools">&nbsp;</a></td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="7" colspan="2" class="description">
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The document type (DOCTYPE) declaration consists of an internal, or references an external Document Type Definition (DTD). 
+	  It can also have a combination of both internal and external DTDs. The DTD defines the constraints on the structure of an XML document. 
+	  It declares all of the document's element typesglossary, children element types, and the order and number of each element type. 
+	  It also declares any attributes, entities, notations, processing instructions, comments, and PE references in the document.
+	 </p>
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A document can use both internal and external DTD subsets. The internal DTD subset is specified between 
+	  the square brackets of the DOCTYPE declaration. The declaration for the external DTD subset is placed before the square brackets immediately after the SYSTEM keyword.
+	 </p>
+	</td>
+    <td rowspan="24" class="description">
+	 <b>Important:</b>
+	 <ul>
+	  <li>DTD (DocType Declaration) in one page <a href="/dtd.html">&gt;&gt;&gt;</a></li>
+	 </ul>
+	 <b>Documentations:</b>
+	 <ul>
+	  <li>Extensible Markup Language (XML) <a href="http://www.w3.org/XML/">&gt;&gt;&gt;</a></li>
+	  <li>Extensible Markup Language (XML) 1.0 (Third Edition) <a href="http://www.w3.org/TR/REC-xml/">&gt;&gt;&gt;</a></li>
+	  <li>The Extensible Stylesheet Language Family (XSL) <a href="http://www.w3.org/Style/XSL/">&gt;&gt;&gt;</a></li>
+	  <li>W3C XML Pointer, XML Base and XML Linking (XLink) <a href="http://www.w3.org/XML/Linking">&gt;&gt;&gt;</a></li>
+	  <li>W3C XML Query (XQuery) <a href="http://www.w3.org/XML/Query/">&gt;&gt;&gt;</a></li>
+	  <li>XML Schema <a href="http://www.w3.org/XML/Schema">&gt;&gt;&gt;</a></li>
+	  <li>XML Processing Model Working Group <a href="http://www.w3.org/XML/Processing/">&gt;&gt;&gt;</a></li>
+	  <li>XML Binary Characterization Working Group Public Page <a href="http://www.w3.org/XML/Binary/">&gt;&gt;&gt;</a></li>
+	  <li>Efficient XML Interchange Working Group Public Page <a href="http://www.w3.org/XML/EXI/">&gt;&gt;&gt;</a></li>
+	 </ul>
+	</td>
+    <td rowspan="24" class="description">
+	    <b>Validators:</b><br />
+		<ul>
+	     <li>W3C MarkUp Validator. - Also known as the HTML validator, it helps check Web documents in formats like HTML and XHTML, SVG or MathML <a href="http://validator.w3.org/">&gt;&gt;</a></li>
+	     <li>Checklink - Checks anchors (hyperlinks) in a HTML/XHTML document. Useful to find broken links, etc. <a href="http://validator.w3.org/checklink">&gt;&gt;</a></li>
+	     <li>CSS Validator - validates CSS stylesheets or documents using CSS stylesheets. <a href="http://jigsaw.w3.org/css-validator/">&gt;&gt;</a></li>
+	     <li>RDF Validator <a href="http://www.w3.org/RDF/Validator/">&gt;&gt;</a></li>
+	     <li>Feed Validator. - it helps check newsfeeds in formats like ATOM, RSS of various flavors. <a href="http://validator.w3.org/feed/">&gt;&gt;</a></li>
+	     <li>P3P Validator - Checks whether a site is P3P  enabled and controls protocol and syntax of Policy-Reference-File and Policy <a href="http://www.w3.org/P3P/validator">&gt;&gt;</a></li>
+	     <li>XML Schema Validator <a href="http://www.w3.org/2001/03/webdata/xsv">&gt;&gt;</a></li>
+	     <li>MUTAT - a human-centered testing tool (framework) <a href="http://www.w3.org/QA/Tools/MUTAT/">&gt;&gt;</a></li>
+		</ul>
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="7" class="code">
+	 <span class="note">The Internal DTD:</span><br /><br />
+	 &lt;!DOCTYPE root_element [<br />
+	 &nbsp;&nbsp;Document Type Definition (DTD):<br />
+	 &nbsp;&nbsp;elements/attributes/entities/notations/processing&nbsp;instructions/comments/PE&nbsp;references<br />
+	 ]&gt;
+	</td>
+    <td rowspan="7" class="description">
+	 <span class="rules">Rules:</span>
+	 <ul>
+	  <li>The document type declaration must be placed between the XML declaration and the first element (root element) in the documentwell-formedness constraint.</li>
+	  <li>The keyword DOCTYPE must be followed by the name of the root element in the XML documentvalidity constraint.</li>
+	  <li>The keyword DOCTYPE must be in upper casewell-formedness constraint.</li>
+	 </ul>
+	</td>
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="4" class="code">
+	 <span class="note">"Private" External DTDs:</span><br /><br />
+	 &lt;!DOCTYPE&nbsp;root_element&nbsp;SYSTEM&nbsp;"<em>DTD_location</em>"&gt;
+	</td>
+    <td rowspan="25" class="description">
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;External DTDs are useful for creating a common DTD that can be shared between multiple documents. 
+	  Any changes that are made to the external DTD automatically updates all the documents that reference it. 
+	  There are two types of external DTDs: private, and public.
+	 </p>	
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Private external DTDs are identified by the keyword SYSTEM, and are intended for use by a single author or group of authors.
+	 </p> 
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public external DTDs are identified by the keyword PUBLIC and are intended for broad use. 
+	  The "DTD_location" is used to find the public DTD if it cannot be located by the "DTD_name".
+	 </p>
+	 <span class="rules">Rules:</span>
+	 <ul>
+	  <li>If any elements, attributes, or entities are used in the XML document that are referenced or defined in an external DTD, 
+	  standalone="no" must be included in the XML declarationvalidity constraint.</li>
+	 </ul>
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>DTD_location</em>: relative or absolute URL<br />
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>DTD_name</em> follows the syntax:<br />
+	  "<em>prefix</em>//owner_of_the_DTD//description_of_the_DTD//ISO&nbsp;639_language_identifier"
+	 </p>	
+	 <table class="xml_declaration_table" align="center">
+	  <caption>Prefixes are allowed in the DTD name.</caption>
+	  <tr><th>Prefix:</th><th>Definition:</th></tr>
+	  <tr><td>ISO</td><td>The DTD is an ISO standard. All ISO standards are approved.</td></tr>
+	  <tr><td>+</td><td>The DTD is an approved non-ISO standard.</td></tr>
+	  <tr><td>-</td><td>The DTD is an unapproved non-ISO standard.</td></tr>
+	 </table>
+    </td>
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="21" class="code">
+	 <span class="note">"Public" External DTDs:</span><br /><br />
+	 &lt;!DOCTYPE root_element PUBLIC "<em>DTD_name</em>" "<em>DTD_location</em>"&gt;
+	</td>  
+    <!--1 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <td class="title">Related themes<a name="themes">&nbsp;</a></td>
+    <td class="title">Miscellaneous<a name="miscellaneous">&nbsp;</a></td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <td rowspan="15" class="code">
+	 <a href="dtd.html">DTD</a><br />
+	 <a href="../html.su">HTML</a><br />
+	 <a href="../css.su">CSS</a><br />
+	</td>
+    <td rowspan="15" class="description">
+	 <table align="center" width="100%">
+	  <tr><td colspan="3" align="center">Public Domain 2006-2015 <a href="http://www.krassotkin.com/">Alexander Krassotkin</a></td></tr>
+	  <tr><td colspan="3" align="center">&nbsp;</td></tr>
+	  <tr>
+	   <td align="center"><a href="http://validator.w3.org/check?uri=http://www.xml.su/index.html"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" /></a></td>
+	   <td align="center">&nbsp;</td>
+	   <td align="center"><a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.xml.su/index.html"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a></td>
+	  </tr>
+	 </table>
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--2 cell-->  
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" id="link_dtd"><b>More about <a href="dtd.html">DOCTYPE Declaration &amp; DTDs</a></b></td>
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td colspan="5" class="servo_title">&nbsp;</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+   </tr>
+   
+  </table>
+
+ </body>
+
+</html>

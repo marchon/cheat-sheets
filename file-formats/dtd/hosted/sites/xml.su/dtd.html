@@ -1,0 +1,3113 @@
+<html lang="en">
+
+ <head>
+  <title>DTD in one page (DTDs)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+  <meta name="description" content="DTD (DocType Declaration) in one page  (DTDs)" />
+  <meta name="keywords" content="DTD (DocType Declaration) in one page  (DTDs)" />
+  <link rel="stylesheet" type="text/css" href="dtd.css" />
+ </head>
+
+ <body>
+  <table align="center">
+   <tr>
+    <td><div class="empty">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+   </tr>
+	 
+   <tr><td colspan="13" class="bigtitle">DTD (DocType Declaration) in one page </td></tr>
+   
+   <tr>
+    <td><div class="empty">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+    <td><div class="norm">&nbsp;</div></td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td colspan="8" class="contents">
+	 <b>Contents:</b><br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;<b>Review:</b> <a href="#doctype">DOCTYPE Declaration &amp; DTDs</a>,  <a href="#dtd_example">DTD Example</a>;<br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;<b>Declarations:</b> <a href="#element">ELEMENT Type Declaration</a>, <a href="#attlist">ATTLIST Declaration</a>,
+	 <a href="#entity">ENTITY Declaration</a>, <a href="#notation">NOTATION Declaration</a>,
+	 <a href="#conditonal">Conditonal Section</a>;<br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;<b>Other:</b> <a href="#glossary">DTD Guide Glossary</a>, 
+	 <a href="#references">Related References (Review, Documentation, etc.)</a>, 
+	 <a href="#themes">Related themes</a>, <a href="#miscellaneous">Miscellaneous</a>.
+	</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+    <td class="norm">&nbsp;</td>
+   </tr>
+	 
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <td rowspan="15" colspan="6" align="center">
+	</td>
+    <td colspan="6" class="title">DTD Example <a name="dtd_example">&nbsp;</a></td>
+   </tr>
+	  
+   <tr>
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="54" colspan="6" class="code">
+	 <span class="note">XML example:</span><br />
+	 <p>
+	  &lt;?xml version="1.0" encoding="UTF-8" standalone="no" ?&gt;<br />
+  	  &lt;!-- Comments --&gt;<br />
+  	  &lt;?xml-stylesheet type="text/css" href="your_documents_css.css" ?&gt;<br />
+  	  &lt;?word document="test.doc" ?&gt;<br />
+	  &lt;!--<br />
+	  <em>For internal DTD:</em><br />
+  	  &lt;!DOCTYPE root_element [ &lt;!ELEMENT root_element (#PCDATA)&gt; ]&gt;<br />
+	  --&gt;<br />
+  	  &lt;!DOCTYPE root_element SYSTEM "your_documents_dtd.dtd"&gt;<br />
+  	  &lt;element_0&gt;<br />
+  	  &nbsp;&nbsp;&lt;element_1&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;element_1_1&gt;...text...&lt;/element_1_1&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;element_1_2&gt;...text...&lt;/element_1_2&gt;<br />
+  	  &nbsp;&nbsp;&lt;/element_1&gt;<br />
+  	  &nbsp;&nbsp;&lt;element_1&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;element_1_1&gt;...text...&lt;/element_1_1&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;element_1_2&gt;...text...&lt;/element_1_2&gt;<br />
+  	  &nbsp;&nbsp;&lt;/element_1&gt;<br />
+  	  &nbsp;&nbsp;&lt;element_2&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;element_2_1&gt;&lt;/element_2_1&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;element_2_2 /&gt;<br />
+  	  &nbsp;&nbsp;&lt;/element_2&gt;<br />
+  	  &nbsp;&nbsp;&lt;element_3&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;element_3_1 att_3_1_1="...value..."&gt;...text...&lt;/element_3_1&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;element_3_2 att_3_2_1="...value..." att_3_2_2="...value..."&gt;...text...;&lt;/element_3_2&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;element_3_3 att_3_3_1="ent1 ent2"&gt;...text...&lt;/element_3_1&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;element_3_4 att_3_4_1="...value..." /&gt;<br />
+  	  &nbsp;&nbsp;&lt;/element_3&gt;<br />
+  	  &nbsp;&nbsp;&lt;element_4&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[ ...cdata... ]]&gt;<br />
+  	  &nbsp;&nbsp;&lt;/element_4&gt;<br />
+  	  &nbsp;&nbsp;&lt;element_5&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;element_3_1 att_3_3_1="...value..."&gt;...text...&lt;/element_3_1&gt;<br />
+  	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;![CDATA[ ...cdata... ]]&gt;<br />
+  	  &nbsp;&nbsp;&lt;/element_2&gt;<br />
+  	  &lt;/element_0&gt;
+	 </p>
+	 <span class="note">DTDs ("your_documents_dtd.dtd") example:</span><br />
+	 <p>
+	  &lt;!ELEMENT element_0 (element_1, element_2, element_3, element_4, element_5)&gt;<br />
+	  &nbsp;&nbsp;&lt;!ELEMENT element_1 (element_1_1, element_1_2)&gt;<br />
+	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;!ELEMENT element_1_1 (#PCDATA)&gt;<br />
+	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;!ELEMENT element_1_2 (#PCDATA)&gt;<br />
+	  &nbsp;&nbsp;&lt;!ELEMENT element_2 (element_2_1, element_2_2)&gt;<br />
+	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;!ELEMENT element_2_1 EMPTY&gt;<br />
+	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;!ELEMENT element_2_2 EMPTY&gt;<br />
+	  &nbsp;&nbsp;&lt;!ELEMENT element_3 (element_3_1, element_3_2, element_3_3, element_3_4)&gt;<br />
+	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;!ELEMENT element_3_1 (#PCDATA)&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!ATTLIST element_3_1 att_3_1_1 CDATA&gt;<br />
+	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;!ELEMENT element_3_2 (#PCDATA)&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!ATTLIST element_3_2 att_3_2_1 CDATA "...default_value..."&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!ATTLIST element_3_2 att_3_2_2 CDATA #REQUIRED&gt;<br />
+	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;!ELEMENT element_3_3 (#PCDATA)&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!ATTLIST element_3_3 att_3_3_1  ENTITIES #REQUIRED&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!ENTITY ent1 SYSTEM "http://www.html.su/"&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!ENTITY ent2 SYSTEM "http://www.css.su/"&gt;<br />
+	  &nbsp;&nbsp;&nbsp;&nbsp;&lt;!ELEMENT element_3_4 EMPTY&gt;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!ATTLIST element_3_4 att_3_4_1 CDATA #IMPLIED&gt;<br />
+	  &nbsp;&nbsp;&lt;!ELEMENT element_4 (#PCDATA)&gt;<br />
+	  &nbsp;&nbsp;&lt;!ELEMENT element_5 ANY&gt;<br />
+	 </p>
+	</td>
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+   <tr>
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+   
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="6" class="title"><a name="doctype">&nbsp;</a>DOCTYPE Declaration &amp; DTDs</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="7" colspan="6" class="description">
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The document type (DOCTYPE) declaration consists of an internal, or references an external Document Type Definition (DTD). 
+	  It can also have a combination of both internal and external DTDs. The DTD defines the constraints on the structure of an XML document. 
+	  It declares all of the document's element typesglossary, children element types, and the order and number of each element type. 
+	  It also declares any attributes, entities, notations, processing instructions, comments, and PE references in the document.
+	 </p>
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A document can use both internal and external DTD subsets. The internal DTD subset is specified between 
+	  the square brackets of the DOCTYPE declaration. The declaration for the external DTD subset is placed before the square brackets immediately after the SYSTEM keyword.
+	 </p>
+	</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="7" colspan="3" class="code">
+	 <span class="note">The Internal DTD:</span><br /><br />
+	 &lt;!DOCTYPE root_element [<br />
+	 &nbsp;&nbsp;Document Type Definition (DTD):<br />
+	 &nbsp;&nbsp;elements/attributes/entities/notations/<br />
+	 processing instructions/comments/PE references<br />
+	 ]&gt;
+	</td>
+    <td rowspan="7" colspan="3" class="description">
+	 <span class="rules">Rules:</span>
+	 <ul>
+	  <li>The document type declaration must be placed between the XML declaration and the first element (root element) in the documentwell-formedness constraint.</li>
+	  <li>The keyword DOCTYPE must be followed by the name of the root element in the XML documentvalidity constraint.</li>
+	  <li>The keyword DOCTYPE must be in upper casewell-formedness constraint.</li>
+	 </ul>
+	</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="4" colspan="3" class="code">
+	 <span class="note">"Private" External DTDs:</span><br /><br />
+	 &lt;!DOCTYPE root_element SYSTEM "<em>DTD_location</em>"&gt;
+	</td>
+    <td rowspan="25" colspan="3" class="description">
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;External DTDs are useful for creating a common DTD that can be shared between multiple documents. 
+	  Any changes that are made to the external DTD automatically updates all the documents that reference it. 
+	  There are two types of external DTDs: private, and public.
+	 </p>	
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Private external DTDs are identified by the keyword SYSTEM, and are intended for use by a single author or group of authors.
+	 </p> 
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public external DTDs are identified by the keyword PUBLIC and are intended for broad use. 
+	  The "DTD_location" is used to find the public DTD if it cannot be located by the "DTD_name".
+	 </p>
+	 <span class="rules">Rules:</span>
+	 <ul>
+	  <li>If any elements, attributes, or entities are used in the XML document that are referenced or defined in an external DTD, 
+	  standalone="no" must be included in the XML declarationvalidity constraint.</li>
+	 </ul>
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>DTD_location</em>: relative or absolute URL<br />
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>DTD_name</em> follows the syntax:<br />
+	  "<em>prefix</em>//owner_of_the_DTD//description_of_the_DTD//ISO 639_language_identifier"
+	 </p>	
+	 <table class="xml_declaration_table" align="center">
+	  <caption>Prefixes are allowed in the DTD name.</caption>
+	  <tr><th>Prefix:</th><th>Definition:</th></tr>
+	  <tr><td>ISO</td><td>The&nbsp;DTD&nbsp;is&nbsp;an&nbsp;ISO&nbsp;standard.&nbsp;All&nbsp;ISO&nbsp;standards&nbsp;are&nbsp;approved.</td></tr>
+	  <tr><td>+</td><td>The DTD is an approved non-ISO standard.</td></tr>
+	  <tr><td>-</td><td>The DTD is an unapproved non-ISO standard.</td></tr>
+	 </table>
+    </td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="21" colspan="3" class="code">
+	 <span class="note">"Public" External DTDs:</span><br /><br />
+	 &lt;!DOCTYPE root_element PUBLIC "<em>DTD_name</em>" "<em>DTD_location</em>"&gt;
+	</td>  
+    <!--1 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>     
+    <!--6 cell-->   
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="6" class="title"><a name="element">&nbsp;</a>ELEMENT Type Declaration</td>
+    <td colspan="6" class="title">ATTLIST Declaration<a name="attlist">&nbsp;</a></td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="2" colspan="6" class="description">
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Element type declarations set the rules for the type and number of elements that may appear in an XML document, 
+	  what elements may appear inside each other, and what order they must appear in.
+	 </p>
+	</td>
+    <td rowspan="3" colspan="6" class="description">
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attributes are additional information associated with an element typeglossary. They are intended for interpretation by an application. 
+	  The ATTLIST declarations identify which element types may have attributes, what type of attributes they may be, and what the default value of the 
+	  attributes are.
+	 </p>
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="17" colspan="2" class="code">&lt;!ELEMENT <em>name_element</em> <em>allowable_contents</em>&gt;</td>
+    <td rowspan="17" colspan="2" class="description">
+	 <span class="rules">Rules:</span>
+     <ul>
+	  <li>All element typesglossary used in an XML document must be declared in the Document Type Definition (DTD) 
+	  using an Element Type Declarationvalidity constraint.</li>
+	  <li>An element type cannot be declared more than oncevalidity constraint.</li>
+	  <li>The name in the element type's end tagglossary must match the name in the element type's start tagglossarywell-formedness constraint. 
+	  Element names are case sensitive.</li>
+	  <li>The keyword ELEMENT must be in upper casewell-formedness constraint.</li>
+	 </ul>
+	 <span class="note">Note:</span>
+     <ul>
+	  <li>The allowable contents of an element type is EMPTY, ANY, Mixed, or children element types.</li>
+	 </ul>
+	</td>
+    <td colspan="2" class="example">&lt;!ELEMENT foo (#PCDATA)&gt;</td>  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--4 cell-->  
+    <td rowspan="16" colspan="2" class="example">&lt;!ELEMENT img EMPTY&gt;</td> 
+    <td rowspan="20" colspan="2" class="code">
+	 &lt;!ATTLIST <em>element_name</em> <em>attribute_name</em> <em>attribute_type</em> <em>default_value</em>&gt;
+	</td>
+    <td rowspan="20" colspan="2" class="description">
+	 <p><em>element_name:</em> name of the element to which the attribute applies.</p>	 
+	 <span class="rules">Rules:</span><br />
+     <ul>
+	  <li>All attributes used in an XML document must be declared in the Document Type Definition (DTD) using an Attribute-List Declarationvalidity constraint.</li>
+	  <li>Attributes may only appear in startglossary or emptyglossary tagswell-formedness constraint.</li>
+	  <li>The keyword ATTLIST must be in upper casewell-formedness constraint.</li>
+	 </ul><br />
+	 <span class="note">Note:</span><br />
+     <ul>
+	  <li>There are three main attribute types; a string type, tokenized types, and enumerated types. They are classified as follows.</li>
+	 </ul>
+	</td>
+    <td rowspan="20" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE image [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT image EMPTY&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST image height CDATA #REQUIRED&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST image width CDATA #REQUIRED&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;image height="32" width="32"/&gt;<br />
+	</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td> 
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="12" colspan="6" class="description">	 
+	 <table class="xml_declaration_table" align="center">
+	  <caption>Allowable Contents.</caption>
+	  <tr><th>Allowable Contents:</th><th>Definition:</th></tr>
+	  <tr><td>EMPTY</td><td>Refers&nbsp;to&nbsp;tags&nbsp;that&nbsp;are&nbsp;empty.&nbsp;For&nbsp;example,&nbsp;the&nbsp;empty&nbsp;IMG&nbsp;tag&nbsp;from&nbsp;HTML&nbsp;may&nbsp;be&nbsp;represented&nbsp;in&nbsp;either&nbsp;of&nbsp;the&nbsp;following&nbsp;ways: &lt;img src="cat.gif"/&gt;, or &lt;img src="cat.gif"&gt;&lt;/img&gt;well-formedness constraint.</td></tr>
+	  <tr><td>ANY</td><td>Refers to anything at all, as long as XML rules are followed. ANY is useful to use when you have yet to decide the allowable contents of the element.</td></tr>
+	  <tr><td>children elements</td><td>You can place any number of element types within another element type. These are called children elements, and the elements they are placed in are called parent elements.</td></tr>
+	  <tr><td>Mixed content</td><td>Refers to a combination of (#PCDATA) and children elements. PCDATA stands for parsed character data, that is, text that is not markup. Therefore, an element that has the allowable content (#PCDATA) may not contain any children. </td></tr>
+	 </table>
+	</td>
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="28" colspan="6" class="description">	
+	 <table class="xml_declaration_table" align="center" width="100%">
+	  <caption>String Attribute Type</caption>
+	  <tr><th>String Attribute Type:</th><th>Attribute Description:</th></tr>
+	  <tr><td>CDATA</td><td>CDATA stands for character data, that is, text that does not form markup. (<a href="#cdata_example">example</a>)</td></tr>
+	  <tr><th colspan="2" class="capt">Tokenized Attribute Type:</th></tr>
+	  <tr>
+	    <th>Tokenized Attribute Types:</th>
+	    <th>Attribute Description:</th></tr>
+	  <tr><td>ID</td><td>ID&nbsp;is&nbsp;a&nbsp;unique&nbsp;identifier&nbsp;of&nbsp;the&nbsp;attribute.&nbsp;IDs&nbsp;of&nbsp;a&nbsp;particular&nbsp;value&nbsp;should&nbsp;not&nbsp;appear&nbsp;more&nbsp;than&nbsp;once&nbsp;in&nbsp;an&nbsp;XML&nbsp;documentvalidity 
+	  constraint. An element type may only have one ID attributevalidity constraint. An ID attribute can only have an #IMPLIED or #REQUIRED default valuevalidity 
+	  constraint. The first character of an ID value must be a letter, '_', or ':'validity constraint. (<a href="#id_example">example</a>)</td></tr>
+	  <tr><td>IDREF</td><td>IDREF is used to establish connections between elements. The IDREF value of the attribute must refer to an ID value declared elsewhere in 
+	  the documentvalidity constraint. The first character of an ID value must be a letter, '_', or ':'validity constraint. (<a href="#idref_example">example</a>)</td></tr>
+	  <tr><td>IDREFS</td><td>Allows multiple ID values separated by whitespacevalidity constraint.</td></tr>
+	  <tr><td>ENTITY</td><td>ENTITYs are used to reference data that act as an abbreviation or can be found at an external location. The first character of 
+	  an ENTITY value must be a letter, '_', or ':'validity constraint. (<a href="#entity_example">example</a>)</td></tr>
+	  <tr><td>ENTITIES</td><td>Allows multiple ENTITY names separated by whitespacevalidity constraint. (<a href="#entities_example">example</a>)</td></tr>
+	  <tr><td>NMTOKEN</td><td>The first character of an NMTOKEN value must be a letter, digit, '.', '-', '_', or ':'validity constraint. (<a href="#nmtoken_example">example</a>)</td></tr>
+	  <tr><td>NMTOKENS</td><td>Allows multiple NMTOKEN names separated by whitespacevalidity constraint.</td></tr>
+	  <tr><th colspan="2" class="capt">Enumerated Attribute Types:</th></tr>
+	  <tr>
+	    <th>Enumerated Attribute Types:</th>
+	    <th>Attribute Description:</th></tr>
+	  <tr><td>NOTATION</td><td>NOTATIONs are useful when text needs to be interpreted in a particular way, for example, by another application. 
+	  The first character of a NOTATION name must be a letter, '_', or ':'validity constraint. (<a href="#notation_example">example</a>)</td></tr>
+	  <tr><td>Enumerated</td><td>Enumerated attribute types allow you to make a choice between different attribute values. 
+	  The first character of an Enumerated value must be a letter, digit, '.', '-', '_', or ':'validity constraint. (<a href="#enumerated_example">example</a>)</td></tr>
+	 </table>
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="7" colspan="2" class="code">
+	 &lt;!ELEMENT ELEMENT element_name EMPTY&gt;
+	</td>
+    <td rowspan="7" colspan="2" class="description">
+	 <p>
+	  <span class="note">Declaring Empty Elements:</span><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Empty elements are declared with the category keyword EMPTY.
+	 </p>
+	</td>
+    <td rowspan="7" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+     &lt;!DOCTYPE student [<br />
+     &nbsp;&nbsp;&lt;!ELEMENT br EMPTY&gt;<br />
+     ]&gt;<br /><br />
+     &lt;br /&gt;<br />
+     &lt;br&gt;&lt;/br&gt;
+	</td> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="7" colspan="2" class="code">
+	 &lt;!ELEMENT element_name (#PCDATA)&gt;
+	</td>
+    <td rowspan="7" colspan="2" class="description">
+	 <p>
+	  <span class="note">Declaring Elements With Only Character Data:</span><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elements with only character data are declared with #PCDATA inside parentheses.
+	 </p>
+	</td>
+    <td rowspan="7" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+     &lt;!DOCTYPE student [<br />
+     &nbsp;&nbsp;&lt;!ELEMENT country (#PCDATA)&gt;<br />
+     ]&gt;<br /><br />
+     &lt;country&gt;USA&lt;/country&gt;
+	</td> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="7" colspan="2" class="code">
+	 &lt;!ELEMENT element_name ANY&gt;
+	</td>
+    <td rowspan="7" colspan="2" class="description">
+	 <p>
+	  <span class="note">Declaring Elements With Any Contents:</span><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elements declared with the category keyword ANY, can contain any combination of parsable data.
+	 </p>
+	</td>
+    <td rowspan="7" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+     &lt;!DOCTYPE student [<br />
+     &nbsp;&nbsp;&lt;!!ELEMENT note ANY&gt;<br />
+     &nbsp;&nbsp;&lt;!ELEMENT title (#PCDATA)&gt;<br />
+     ]&gt;<br /><br />
+     &lt;note&gt;Manual &lt;title&gt;DTD&lt;/title&gt;&lt;/note&gt;
+	</td> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="2" colspan="6" class="description">
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The "default_value" signifies whether an attribute is required or not, and if not, what default value should be displayed. The possible 
+	 default values are listed in below.</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="11" colspan="2" class="code">
+	 &lt;!ELEMENT parent_name (child_name)&gt;<br />
+	 &lt;!ELEMENT child_name allowable_contents&gt;
+	</td>
+    <td rowspan="11" colspan="2" class="description">
+	 <p>
+	  <span class="note">Declaring Children:</span><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Children element types are declared using parentheses in the parent element type's declaration.
+	 </p>
+	 <span class="rules">Rules:</span>
+     <ul>
+	  <li>The child element must be declared in a separate element type declarationvalidity constraint.</li>
+	 </ul>
+	</td>
+    <td rowspan="11" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+     &lt;!DOCTYPE student [<br />
+     &nbsp;&nbsp;&lt;!--'student' must have one child element type 'id'--&gt;<br />
+     &nbsp;&nbsp;&lt;!ELEMENT student (id)&gt;<br />
+     &nbsp;&nbsp;&lt;!--'id' may only contain text that is not markup in its content--&gt;<br />
+     &nbsp;&nbsp;&lt;!ELEMENT id (#PCDATA)&gt;<br />
+     ]&gt;<br /><br />
+     &lt;student&gt;&lt;id&gt;9216735&lt;/id&gt;&lt;/student&gt;
+	</td> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="10" colspan="6" class="description">	 
+	 <table class="xml_declaration_table" align="center" width="100%">
+	  <caption>Default Values:</caption>
+	  <tr><th>Default Value:</th><th>Description:</th></tr>
+	  <tr><td>#REQUIRED</td><td>The attribute must always be includedvalidity constraint. (<a href="#required_example">example</a>)</td></tr>
+	  <tr><td>#IMPLIED</td><td>The attribute does not have to be included. (<a href="#implied_example">example</a>)</td></tr>
+	  <tr><td>#FIXED "<em>Default_Value</em>"</td><td>The&nbsp;attribute&nbsp;must&nbsp;always&nbsp;have&nbsp;the&nbsp;default&nbsp;value&nbsp;that&nbsp;is&nbsp;specifiedvalidity&nbsp;constraint.&nbsp;If&nbsp;the&nbsp;attribute&nbsp;is&nbsp;not&nbsp;physically&nbsp;added
+	   to the element tag in the XML document, the XML processor will behave as though the default value does exist. The first character of a default value can be any 
+	   character except for '&amp;', '&lt;', '"'. It can also be an entity reference (i.e. '&amp;Name;'), or a character referencevalidity constraint. (<a href="#fixed_example">example</a>)</td></tr>
+	 </table>
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="16" colspan="2" class="code">
+	 &lt;!ELEMENT parent_name (child1_name,child2_name,child3_name)&gt;<br />
+	 &lt;!ELEMENT child1_name allowable_contents&gt;<br />
+	 &lt;!ELEMENT child2_name allowable_contents&gt;<br />
+	 &lt;!ELEMENT child3_name allowable_contents&gt;
+	</td>
+    <td rowspan="16" colspan="2" class="description">
+	 <p>
+	  <span class="note">Declaring Multiple Children (Sequence):</span><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiple children are declared using commas (,). Commas fix the sequence in which the children 
+	  are allowed to appear in the XML document.
+	 </p>
+	 <span class="rules">Rules:</span>
+     <ul>
+	  <li>All of the children elements must be declared in a separate element type declaration.</li>
+	 </ul>
+	</td>
+    <td rowspan="16" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE student [<br />
+	 &nbsp;&nbsp;&lt;!--'student' must contain three child elements in the order listed--&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT student (id,surname,firstname)&gt;<br />
+	 &nbsp;&nbsp;&lt;!--the elements listed below may only contain text that is not markup--&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT id (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT firstname (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT surname (#PCDATA)&gt;<br />
+     ]&gt;&gt;<br /><br />
+	 &lt;student&gt;<br />
+	 &nbsp;&nbsp;&lt;id&gt;9216735&lt;/id&gt;<br />
+	 &nbsp;&nbsp;&lt;surname&gt;Smith&lt;/surname&gt;<br />
+	 &nbsp;&nbsp;&lt;firstname&gt;Jo&lt;/firstname&gt;<br />
+	 &lt;/student&gt;
+	</td> 
+    <td rowspan="9" colspan="6" class="description">	  
+	 <table class="xml_declaration_table" align="center" width="100%">
+	  <caption>
+	  Predefined Attributes:
+	  </caption>
+	  <tr><th>Predefined attribute:</th><th>Description:</th></tr>
+	  <tr><td>xml:lang</td><td>Defines&nbsp;the&nbsp;language&nbsp;code&nbsp;in&nbsp;which&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;element&nbsp;is&nbsp;written&nbsp;in.&nbsp;The&nbsp;attribute&nbsp;values&nbsp;of&nbsp;xml:lang&nbsp;should&nbsp;follow 
+	  ISO-639 if they are two-letter codes, and ISO-3166 if they contain two-letter subcodes. Language identifiers registered with the IANAglossary should contain 
+	  the prefix "I-" or "i-". Any privately used codes should contain the prefix "X-" or "x-".</td></tr>
+	  <tr><td>xml:space</td><td>Preserves&nbsp;white&nbsp;space&nbsp;within&nbsp;a&nbsp;document,&nbsp;that&nbsp;is,&nbsp;passes&nbsp;all&nbsp;white&nbsp;space&nbsp;to&nbsp;the&nbsp;application&nbsp;unchanged.&nbsp;Useful&nbsp;when&nbsp;displaying&nbsp;text&nbsp;such&nbsp;as program source code.</td></tr>
+	 </table>
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td colspan="2" class="title"><a name="cdata_example">&nbsp;</a>CDATA Example:</td>
+    <td colspan="2" class="title">ID Example:<a name="id_example">&nbsp;</a></td>
+    <td colspan="2" class="title">IDREF Example:<a name="idref_example">&nbsp;</a></td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="12" colspan="2" class="example">
+     &lt;?xml version="1.0"?&gt;<br /><br />
+     &lt;!DOCTYPE image [<br />
+     &nbsp;&nbsp;&lt;!ELEMENT image EMPTY&gt;<br />
+     &nbsp;&nbsp;&lt;!ATTLIST image height CDATA #REQUIRED&gt;<br />
+     &nbsp;&nbsp;&lt;!ATTLIST image width CDATA #REQUIRED&gt;<br />
+     ]&gt;<br /><br />
+     &lt;image height="32" width="32"/&gt;	
+	</td>
+    <td rowspan="12" colspan="2" class="example">
+     &lt;?xml version="1.0"?&gt;<br /><br />
+     &lt;!DOCTYPE student_name [<br />
+     &nbsp;&nbsp;&lt;!ELEMENT student_name (#PCDATA)&gt;<br />
+     &nbsp;&nbsp;&lt;!ATTLIST student_name student_no ID #REQUIRED&gt;<br />
+     ]&gt;<br /><br />
+     &lt;student_name student_no="a9216735"&gt;<br />
+	 &nbsp;&nbsp;Jo Smith<br />
+	 &lt;/student_name&gt;	
+	</td>
+    <td rowspan="20" colspan="2" class="example">
+     &lt;?xml version="1.0" standalone="yes"?&gt;<br /><br />
+     &lt;!DOCTYPE lab_group [<br />
+     &nbsp;&nbsp;&lt;!ELEMENT lab_group (student_name)*&gt;<br />
+     &nbsp;&nbsp;&lt;!ELEMENT student_name (#PCDATA)&gt;<br />
+     &nbsp;&nbsp;&lt;!ATTLIST student_name student_no ID #REQUIRED&gt;<br />
+     &nbsp;&nbsp;&lt;!ATTLIST student_name tutor_1 IDREF #IMPLIED&gt;<br />
+     &nbsp;&nbsp;&lt;!ATTLIST student_name tutor_2 IDREF #IMPLIED&gt;<br />
+     ]&gt;<br /><br />
+     &lt;lab_group&gt;<br />
+     &nbsp;&nbsp;&lt;student_name student_no="a8904885"&gt;Alex Foo&lt;/student_name&gt;<br />
+     &nbsp;&nbsp;&lt;student_name student_no="a9011133"&gt;Sarah Bar&lt;/student_name&gt;<br />
+     &nbsp;&nbsp;&lt;student_name student_no="a9216735" tutor_1="a9011133" tutor_2="a8904885"&gt;Jo Smith&lt;/student_name&gt;<br />
+     &lt;/lab_group&gt;	
+	</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="11" colspan="2" class="code">
+	 &lt;!ELEMENT parent_name (child_name?)&gt;<br />
+	 &lt;!ELEMENT child's_name allowable_contents&gt;
+	</td>
+    <td rowspan="11" colspan="2" class="description">
+	 <p>
+	  <span class="note">Declaring Optional Children:</span><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Optional children are declared using the (?) operator. Optional means zero or one times.
+	 </p>
+	 <span class="rules">Rules:</span>
+     <ul>
+	  <li>If the child element is used in the XML document it must be declared in a separate element type declaration.</li>
+	 </ul>
+	</td>
+    <td rowspan="11" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE student [<br />
+	 &nbsp;&nbsp;&lt;!--'student' can have zero or one child element of type 'dob'--&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT student (dob?)><br />
+     &nbsp;&nbsp;&lt;!--'dob' may only contain text that is not markup in its content--&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT dob (#PCDATA)><br />
+     ]&gt;<br /><br />
+	 &lt;student&gt;&lt;dob&gt;19.06.74&lt;/dob&gt;&lt;/student&gt;
+	</td> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td colspan="2" class="title">ENTITY Example:<a name="entity_example">&nbsp;</a></td>
+    <td colspan="2" class="title">ENTITIES Example:<a name="entities_example">&nbsp;</a></td>
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="13" colspan="2" class="example">
+	 &lt;?xml version="1.0" standalone="no"?&gt;<br /><br />
+	 &lt;!DOCTYPE experiment_a [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT experiment_a (results)*&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT results EMPTY&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST results image ENTITY #REQUIRED&gt;<br />
+	 &nbsp;&nbsp;&lt;!ENTITY a SYSTEM "http://www.xml.su/dtd.gif"&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;experiment_a&gt;<br />
+	 &nbsp;&nbsp;&lt;results image="a"/&gt;<br />
+	 &lt;experiment_a&gt;	
+	</td>
+    <td rowspan="16" colspan="2" class="example">
+	 &lt;?xml version="1.0" standalone="no"?&gt;<br /><br />
+	 &lt;!DOCTYPE experiment_a [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT experiment_a (results)*&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT results EMPTY&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST results images ENTITIES #REQUIRED&gt;<br />
+	 &nbsp;&nbsp;&lt;!ENTITY a1 SYSTEM "http://www.xml.su/dtd_1.gif"&gt;<br />
+	 &nbsp;&nbsp;&lt;!ENTITY a2 SYSTEM "http://www.xml.su/dtd_2.gif"&gt;<br />
+	 &nbsp;&nbsp;&lt;!ENTITY a3 SYSTEM "http://www.xml.su/dtd_3.gif"&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;experiment_a&gt;<br />
+	 &nbsp;&nbsp;&lt;results images="a1 a2 a3"/&gt;<br />
+	 &lt;/experiment_a&gt;
+	</td>
+    <!--2 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="14" colspan="2" class="code">
+	 &lt;!ELEMENT parent_name (child_name*)&gt;<br />
+	 &lt;!ELEMENT child_name allowable_contents&gt;<br />
+	</td>
+    <td rowspan="14" colspan="2" class="description">
+	 <p>
+	  <span class="note">Declaring Zero or More Children:</span><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zero or more children are declared using the (*) operator.
+	 </p>
+	 <span class="rules">Rules:</span>
+     <ul>
+	  <li>If the child element is used in the XML document it must be declared in a separate element type declaration.</li>
+	 </ul>
+	</td>
+    <td rowspan="14" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE student [<br />
+	 &nbsp;&nbsp;&lt;!--'student' can have zero or more child elements of type 'subject'--&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT student (subject*)&gt;<br />
+	 &nbsp;&nbsp;&lt;!--'subject' may only contain text that is not markup in its content--&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT subject (#PCDATA)&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;student&gt;<br />
+	 &nbsp;&nbsp;&lt;subject&gt;Mathematics&lt;/subject&gt;<br />
+	 &nbsp;&nbsp;&lt;subject&gt;Physics&lt;/subject&gt;<br />
+	 &nbsp;&nbsp;&lt;subject&gt;Chemistry&lt;/subject&gt;<br />
+	 &lt;/student&gt;<br />
+	</td> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--4 cell-->
+    <td colspan="2" class="title">NMTOKEN Example:<a name="nmtoken_example">&nbsp;</a></td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--4 cell-->
+    <td rowspan="10" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE student_name [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT student_name (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST student_name student_no NMTOKEN #REQUIRED&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;student_name student_no="9216735"&gt;<br />
+	 &nbsp;&nbsp;Jo Smith<br />
+	 &lt;/student_name&gt;
+	</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td colspan="2" class="title">NOTATION Example:<a name="notation_example">&nbsp;</a></td>
+    <!--4 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="11" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &nbsp;&nbsp;&lt;!DOCTYPE code [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT code (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!NOTATION vrml PUBLIC "VRML 1.0"&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST code lang NOTATION (vrml) #REQUIRED&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;code lang="vrml"&gt;<br />
+	 &nbsp;&nbsp;Some VRML instructions<br />
+	 &lt;/code&gt;
+	</td>
+    <!--4 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+	<!--2 cell-->
+    <!--4 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+	<!--2 cell-->
+    <td colspan="2" class="title">Enumerated Example:<a name="enumerated_example">&nbsp;</a></td>
+    <!--2 cell-->
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+	<!--2 cell-->
+    <td rowspan="12" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE ToDoList [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT ToDoList (task)*&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT task (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST task status (important|normal) #REQUIRED&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;ToDoList&gt;<br />
+	 &nbsp;&nbsp;&lt;task status="important"&gt;This is an important task that must be completed&lt;/task&gt;<br />
+	 &nbsp;&nbsp;&lt;task status="normal"&gt;This task can wait&lt;/task&gt;<br />
+	 &lt;/ToDoList&gt;
+	</td>
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="11" colspan="2" class="code">
+	 &lt;!ELEMENT parent_name (child_name+)&gt;<br />
+	 &lt;!ELEMENT child_name allowable_contents&gt;
+	</td>
+    <td rowspan="11" colspan="2" class="description">
+	 <p>
+	  <span class="note">Declaring One or More Children:</span><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One or more children are declared using the (+) operator.
+	 </p>
+	 <span class="rules">Rules:</span>
+     <ul>
+	  <li>The child element must be declared in a separate element type declaration.</li>
+	 </ul>
+	</td>
+    <td rowspan="11" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE student [<br />
+	 &nbsp;&nbsp;&lt;!--'student' must have at least one child element of type 'subject'--&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT student (subject+)&gt;<br />
+	 &nbsp;&nbsp;&lt;!--'subject' may only contain text that is not markup in its content--&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT subject (#PCDATA)&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;student&gt;&lt;subject&gt;Mathematics&lt;/subject&gt;&lt;/student&gt;<br />
+	</td> 
+	<!--2 cell-->
+    <!--2 cell--> 
+    <td colspan="2" class="title">Predefined Attributes Example:<a name="predefined_example">&nbsp;</a></td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+	<!--2 cell-->
+    <!--2 cell--> 
+    <td rowspan="22" colspan="2" class="example">
+	 &lt;?xml version="1.0" standalone="yes"?&gt;<br /><br />
+	 &lt;!DOCTYPE document [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT document (description,code)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT description (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST description xml:lang NMTOKEN #FIXED "en"&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT code (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST code xml:space (default|preserve) "preserve"&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;document&gt;<br />
+	 &nbsp;&nbsp;&lt;description xml:lang="en"&gt;<br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;The following section of code displays the menu of user choices and gets the user's request.<br />
+	 &nbsp;&nbsp;&lt;/description&gt;<br />
+	 &nbsp;&nbsp;&lt;code&gt;<br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;do {<br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do { <br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disp_menu();<br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf(" %d", &amp;ans);<br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} while ((ans&lt;1) || (ans&gt;3));<br />
+	 &nbsp;&nbsp;&nbsp;&nbsp;};<br />
+	 &nbsp;&nbsp;&lt;/code&gt;<br />
+	 &lt;/document&gt;
+	</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+	<!--2 cell-->
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+	<!--2 cell-->
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+	<!--2 cell-->
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+	<!--2 cell-->
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+	<!--2 cell-->
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td colspan="2" class="title">Default Value Example 1:<a name="default_example_1">&nbsp;</a></td>
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="15" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE ToDoList [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT ToDoList (task)*&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT task (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST task status (important|normal) "normal"&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;ToDoList&gt;<br />
+	 &nbsp;&nbsp;&lt;task status="important"&gt;This is an important task.&lt;/task&gt;<br />
+	 &nbsp;&nbsp;&lt;task&gt;This is by default a task that has a normal status.&lt;/task&gt;<br />
+	 &lt;/ToDoList&gt;
+	</td>
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="11" colspan="2" class="code">
+	 &lt;!ELEMENT parent_name (child1_name|child2_name)&gt;<br />
+	 &lt;!ELEMENT child1_name allowable_contents&gt;<br />
+	 &lt;!ELEMENT child2_name allowable_contents&gt;
+	</td>
+    <td rowspan="11" colspan="2" class="description">
+	 <p>
+	  <span class="note">Combinations of Children (Choice):</span><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A choice between children element types is declared using the (|) operator.
+	 </p>
+	 <span class="rules">Rules:</span>
+     <ul>
+	  <li>The child element used in the XML document must be declared in a separate element type declaration.</li>
+	 </ul>
+	</td>
+    <td rowspan="11" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE student [<br />
+	 &nbsp;&nbsp;&lt;!--'student' must have 'id' or 'surname' as its child element--&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT student (id|surname)&gt;<br />
+	 &nbsp;&nbsp;&lt;!--the elements listed below may only contain text that is not markup--&gt;<br />
+	 &lt;!ELEMENT id (#PCDATA)&gt;<br />
+	 &lt;!ELEMENT surname (#PCDATA)&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;student&gt;&lt;id&gt;9216735&lt;/id&gt;&lt;/student&gt;
+	</td> 
+    <!--2 cell--> 
+    <td colspan="2" class="title">Default Value Example 2:<a name="default_example_2">&nbsp;</a></td>
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--2 cell--> 
+    <td rowspan="11" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE ToDoList [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT ToDoList (task)*&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT task (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST task status NMTOKEN #FIXED "monthly"&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;ToDoList&gt;<br />
+	 &nbsp;&nbsp;&lt;task&gt;go to the bank&lt;/task&gt;<br />
+	 &nbsp;&nbsp;&lt;task&gt;pay the phone bill&lt;/task&gt;<br />
+	 &lt;/ToDoList&gt;
+	</td>
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="30" colspan="2" class="code">
+	 &lt;!!ELEMENT parent_name (#PCDATA|child1_name)*&gt;<br />
+	</td>
+    <td rowspan="30" colspan="2" class="description">
+	 <p>
+	  <span class="note">Mixed Content:</span><br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mixed content is used to declare elements that contain a mixture of children elements and text (PCDATAglossary).
+	 </p>
+	 <span class="rules">Rules:</span>
+     <ul>
+	  <li>The same child element typeglossary may only appear once in a mixed content declarationvalidity constraint.</li>
+	  <li>If a child element is used in the XML document, it must be declared in a separate element type declarationvalidity constraint.</li>
+	  <li>The (#PCDATA) and children element declarations must be separated by the (|) operatorwell-formedness constraint.</li>
+	  <li>(#PCDATA) must come first in the mixed content declarationwell-formedness constraint.</li>
+	  <li>The operator (*) must follow the mixed content declaration if children elements are includedwell-formedness constraint.</li>
+	 </ul>
+	 <span class="note">Note:</span>
+     <ul>
+	  <li>Non-markup text (PCDATA) can be placed anywhere (before, between or after children elements).</li>
+	  <li>The children elements can be placed in any order.</li>
+	 </ul>
+	</td>
+    <td rowspan="30" colspan="2" class="example">
+	 <span class="note">Example 1:</span><br /><br />
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE student [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT student (#PCDATA|id)*&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT id (#PCDATA)&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;student&gt;<br />
+	 &nbsp;&nbsp;Here's a bit of text mixed up with the child element.<br />
+	 &nbsp;&nbsp;&lt;id&gt;9216735&lt;/id&gt;<br />
+	 &nbsp;&nbsp;You can put text anywhere, before or after the child element.<br />
+	 &nbsp;&nbsp;You don't even have to include the 'id' element.<br />
+	 &lt;/student&gt;<br /><br />
+	 <span class="note">Example 2:</span><br /><br />	 
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE student [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT student (#PCDATA|id|surname|dob)*&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT id (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT surname (#PCDATA)&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;student&gt;<br />
+	 &nbsp;&nbsp;You can put text anywhere. You can also put the elements in any order in the document. <br />
+	 &nbsp;&nbsp;&lt;surname&gt;Smith&lt;/surname&gt;<br />
+	 &nbsp;&nbsp;And, you don't have to include all the elements listed in the element declaration.<br />
+	 &nbsp;&nbsp;&lt;id&gt;9216735&lt;/id&gt;<br />
+	 &lt;/student&gt;
+	</td> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+    <!--2 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td colspan="2" class="title">#IMPLIED Example:<a name="implied_example">&nbsp;</a></td> 
+    <td colspan="2" class="title">#REQUIRED Example:<a name="required_example">&nbsp;</a></td>
+    <td colspan="2" class="title">#FIXED Example:<a name="fixed_example">&nbsp;</a></td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="14" colspan="2" class="example">	 
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE contacts [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT contact EMPTY&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST contact fax CDATA #IMPLIED)&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;contacts&gt;<br />
+	 &nbsp;&nbsp;&lt;--Valid XML:--&gt; <br />
+	 &nbsp;&nbsp;&lt;contact fax="555-667788" /&gt;<br /><br />
+	 &nbsp;&nbsp;&lt;--Valid XML:--&gt; <br />
+	 &nbsp;&nbsp;&lt;contact /&gt;<br />
+	 &lt;/contacts&gt;
+	</td>
+    <td rowspan="14" colspan="2" class="example"> 
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE contacts [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT contact EMPTY&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST person number CDATA #REQUIRED&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;contacts&gt;<br />
+	 &nbsp;&nbsp;&lt;--Valid XML:--&gt; <br />
+	 &nbsp;&nbsp;&lt;person number="5677" /&gt;<br /><br />
+	 &lt;--Invalid XML:<br />
+	 &nbsp;&nbsp;&lt;person /&gt;<br />
+	 --&gt;<br />
+	 &lt;/contacts&gt;
+	</td>
+    <td rowspan="14" colspan="2" class="example">
+	 &lt;?xml version="1.0"?&gt;<br /><br />
+	 &lt;!DOCTYPE contacts [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT contact EMPTY&gt;<br />
+	 &nbsp;&nbsp;&lt;!ATTLIST sender company CDATA #FIXED "IBM"&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;contacts&gt;<br />
+	 &nbsp;&nbsp;&lt;--Valid XML:--&gt; <br />
+	 &nbsp;&nbsp;&lt;sender company="IBM" /&gt;<br /><br />
+	 &lt;--Invalid XML:<br />
+	 &nbsp;&nbsp;&lt;sender company="Microsoft" /&gt;<br />
+	 --&gt;<br />
+	 &lt;/contacts&gt;
+	</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td colspan="6" class="title">ENTITY Declaration<a name="entity">&nbsp;</a></td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="3" colspan="6" class="description">
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entities reference data that act as an abbreviation or can be found at an external location. 
+	  Entities help to reduce the entry of repetitive information 
+	  and also allow for easier editing (by reducing the number of occurrences of data to edit). There are two types of entity declarations: 
+	  <span class="note">GENERAL</span> entity declarations, and <span class="note">PARAMETER</span> entity declarations.
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="9" colspan="3" class="description">
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The types of general entities include:
+	  <ul>
+	   <li>INTERNAL (PARSED)</li>
+	   <li>EXTERNAL (PARSED)</li>
+	   <li>EXTERNAL (UNPARSED)</li>
+	  </ul>
+	</td>
+    <td rowspan="9" colspan="3" class="description">
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The types of parameter entities include:
+	  <ul>
+	   <li>INTERNAL (PARSED)</li>
+	   <li>EXTERNAL (PARSED)</li>
+	  </ul>
+	  <span class="rules">Rules:</span>
+	  <ul>
+	   <li>Parameter entity references may not be used within markup in an internal DTDwell-formedness constraint.</li>
+	  </ul>
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell-->  
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="9" colspan="2" class="code">
+     &lt;!ENTITY name "<em>entity_value</em>"&gt;
+	</td>
+    <td rowspan="9" colspan="2" class="description">
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="note">INTERNAL (PARSED) GENERAL ENTITY Declaration:</span>
+      Internal parsed entities generally reference text. The correct definition is that they refer to data that an XML processor has to parse.
+	 </p>
+     <em>entity_value</em>: any character that is not an '&amp;', '%' or ' " ', a parameter entity reference ('%Name;'), an entity reference ('&amp;Name;') 
+	 or a Unicodeglossary character reference.
+	</td>
+    <td rowspan="9" colspan="2" class="example">
+	 &lt;?xml version="1.0" standalone="yes" ?&gt;<br /><br />
+	 &lt;!DOCTYPE author [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT author (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ENTITY js "Jo Smith"&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;author&gt;&amp;js;&lt;/author&gt;
+	</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="6" class="title">NOTATION Declaration<a name="notation">&nbsp;</a></td> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="23" colspan="2" class="code">
+	 &lt;!NOTATION name SYSTEM "<em>URI</em>"&gt;<br /><br />
+	 &lt;!NOTATION name PUBLIC "<em>public_ID</em>"&gt;<br /><br />
+	 &lt;!NOTATION name PUBLIC "<em>public_ID</em>" "<em>URI</em>"&gt;<br /><br />
+
+	</td>
+    <td rowspan="23" colspan="2" class="description">
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="note">NOTATIONS</span> are used to identify the format of unparsed entities (non-XML data), 
+	 elements with a notation attribute, or specific processing instructions.
+	 <ul>
+	  <li><em>URI:</em> In practice, this is a URL where the external notation can be found.</li>
+	  <li><em>public_ID:</em> This may be used by an XML processor to generate an alternate URI where the external notation can be found. 
+	  If it cannot be found at this URI, the XML processor must use the normal URI.</li>
+	 </ul>
+	</td>
+    <td rowspan="23" colspan="2" class="example">
+	 <span class="note">Unparsed Entity Example:</span>
+	 <p>
+     &lt;?xml version="1.0" standalone="no" ?&gt;<br /><br />
+     &lt;!DOCTYPE img [<br />
+     &nbsp;&nbsp;&lt;!ELEMENT img EMPTY&gt;<br />
+     &nbsp;&nbsp;&lt;!ATTLIST img src ENTITY #REQUIRED&gt;<br />
+     &nbsp;&nbsp;&lt;!ENTITY logo SYSTEM "http://www.xml.su/logo.gif" NDATA gif&gt;<br />
+     &nbsp;&nbsp;&lt;!NOTATION gif PUBLIC "gif viewer"&gt;<br />
+     ]&gt;<br /><br />
+     &lt;img src="logo"/&gt;<br />
+	 </p>
+     <span class="note">Notation Attribute Example:</span>
+	 <p>
+     &lt;?xml version="1.0"?&gt;<br /><br />
+     &lt;!DOCTYPE code [<br />
+     &nbsp;&nbsp;&lt;!ELEMENT code (#PCDATA)&gt;<br />
+     &nbsp;&nbsp;&lt;!NOTATION vrml PUBLIC "VRML 1.0"&gt;<br />
+     &nbsp;&nbsp;&lt;!ATTLIST code lang NOTATION (vrml) #REQUIRED&gt;<br />
+     ]&gt;<br /><br />
+     &lt;code lang="vrml"&gt;Some VRML instructions&lt;/code&gt;
+	 </p>
+	</td> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="20" colspan="2" class="code">
+	 &lt;!ENTITY name SYSTEM "<em>URI</em>"&gt;<br />
+	 &lt;!ENTITY name PUBLIC "<em>public_ID</em>" "<em>URI</em>"&gt;
+	</td>
+    <td rowspan="20" colspan="2" class="description">
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="note">EXTERNAL (PARSED) GENERAL ENTITY Declaration:</span>
+      External parsed entities generally reference text. The correct definition is that they refer to data that an XML processor has to parse. 
+	  External entities are useful for creating a common reference that can be shared between multiple documents. 
+	  Any changes that are made to external entities are automatically updated in the documents they are referenced. 
+	  There are two types of external entities: private, and public. 
+	  Private external entities are identified by the keyword SYSTEM, and are intended for use by a single author or group of authors. 
+	  Public external entities are identified by the keyword PUBLIC and are intended for broad use.
+	  <ul>
+	   <li><em>URI</em>: In practice, this is a URL where the external parsed entity can be found.</li>
+	   <li><em>public_ID</em>: This may be used by an XML processor to generate an alternate URI where the external parsed entity can be found. 
+	   If it cannot be found at this URI, the XML processor must use the normal URI.</li>
+	  </ul>
+	</td>
+    <td rowspan="20" colspan="2" class="example">
+	 <div class="note">Example 1:</div>
+	 &lt;?xml version="1.0" standalone="no" ?&gt;<br /><br />
+	 &lt;!DOCTYPE copyright [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT copyright (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ENTITY c SYSTEM "http://www.xml.sut/copyright.xml"&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;copyright&gt;&amp;c;&lt;/copyright&gt;<br /><br />
+	 <div class="note">Example 2:</div>
+	 &lt;?xml version="1.0" standalone="no" ?&gt;<br /><br />
+	 &lt;!DOCTYPE copyright [<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT copyright (#PCDATA)&gt;<br />
+	 &nbsp;&nbsp;&lt;!ENTITY c PUBLIC "-//W3C//TEXT copyright//EN"<br />
+    "http://www.w3.org/xmlspec/copyright.xml"&gt;<br />
+	 ]&gt;<br /><br />
+	 &lt;copyright&gt;&amp;c;&lt;/copyright&gt;
+	</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="6" class="title">Conditonal Section<a name="conditonal">&nbsp;</a></td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="25" colspan="2" class="code">
+	 &lt;![ IGNORE [<br />
+	 <em>markup declarations</em><br />
+	 ]]&gt;<br /><br />
+	 &lt;![ INCLUDE [<br />
+	 <em>markup declarations</em><br />
+	 ]]&gt;
+	</td>
+    <td rowspan="25" colspan="2" class="description">
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A way of including or excluding sections in the DTD is to use conditional sections. 
+	 Conditional sections are of most use when linked to a parameter entity reference, and may only be used in an external DTD subset. 
+	 The two conditional section statements are IGNORE and INCLUDE.<br />	 
+	 <span class="rules">Rules:</span><br />
+	 <ul>
+	  <li>Conditional sections may only be used in external DTD subsetswell-formedness constraint.</li>
+	  <li>Conditional sections must wrap around entire declarationswell-formedness constraint.</li>
+	 </ul>
+	 <span class="note">Note:</span><br />
+	 <ul>
+	  <li>The IGNORE declaration takes precedence over INCLUDE. If an IGNORE statement is nested inside an INCLUDE statement, 
+	  the contents of the IGNORE statement will still be ignored.</li>
+	 </ul>
+	</td>
+    <td rowspan="25" colspan="2" class="example">
+	 &lt;!ENTITY % draft "INCLUDE"&gt;<br />
+	 &lt;!ENTITY % final "IGNORE"&gt;<br /><br />
+	 &lt;![%draft;[<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT book (title,author,summary)&gt;<br />
+	 ]]&gt;<br /><br />
+	 &lt;![%final;[<br />
+	 &nbsp;&nbsp;&lt;!ELEMENT book (comments*,title,author,summary)&gt;<br />
+	 ]]&gt;<br /><br />
+	 &lt;!ELEMENT comments (#PCDATA)&gt;<br />
+	 &lt;!ELEMENT title (#PCDATA)&gt;<br />
+	 &lt;!ELEMENT author (#PCDATA)&gt;<br />
+	 &lt;!ELEMENT summary (#PCDATA)&gt;
+	</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="24" colspan="2" class="code">
+	 &lt;!ENTITY name SYSTEM "<em>URI</em>" NDATA name&gt;<br />
+	 &lt;!ENTITY name PUBLIC "<em>public_ID</em>" "<em>URI</em>" NDATA name"&gt;
+	</td>
+    <td rowspan="24" colspan="2" class="description">
+	  &nbsp;&nbsp;&nbsp;&nbsp;<span class="note">EXTERNAL (UNPARSED) GENERAL ENTITY Declaration:</span>
+      External unparsed entities generally reference non-XML data. The 100% correct definition is that they refer to data that an XML processor does not have to parse.
+	  <ul>
+	   <li><em>URI</em>: In practice, this is a URL where the external parsed entity can be found.</li>
+	   <li><em>public_ID</em>: This may be used by an XML processor to generate an alternate URI where the external parsed entity can be found. 
+	   If it cannot be found at this URI, the XML processor must use the normal URI.</li>
+	  </ul>
+	</td>
+    <td rowspan="24" colspan="2" class="example">
+	 <div class="note">Example 1:</div>
+	  &lt;?xml version="1.0" standalone="no" ?&gt;<br /><br />
+	  &lt;!DOCTYPE img [<br />
+	  &nbsp;&nbsp;&lt;!ELEMENT img EMPTY&gt;<br />
+	  &nbsp;&nbsp;&lt;!ATTLIST img src ENTITY #REQUIRED&gt; <br />
+	  &nbsp;&nbsp;&lt;!ENTITY logo SYSTEM "http://www.xml.su/logo.gif" NDATA gif&gt;<br />
+	  &nbsp;&nbsp;&lt;!NOTATION gif PUBLIC "gif viewer"&gt;<br />
+	  ]&gt;<br /><br />
+	  &lt;img src="logo"/&gt;<br /><br />
+	 <div class="note">Example 2:</div>
+	  &lt;?xml version="1.0" standalone="no" ?&gt;<br /><br />
+	  &lt;!DOCTYPE img [<br />
+	  &nbsp;&nbsp;&lt;!ELEMENT img EMPTY&gt;<br />
+	  &nbsp;&nbsp;&lt;!ATTLIST img src ENTITY #REQUIRED&gt; <br />
+	  &nbsp;&nbsp;&lt;!ENTITY logo PUBLIC  "-//W3C//GIF logo//EN" "http://www.w3.org/logo.gif" NDATA gif&gt;<br />
+	  &nbsp;&nbsp;&lt;!NOTATION gif PUBLIC "gif viewer"&gt;<br />
+	  ]&gt;<br /><br />
+	  &lt;img src="logo"/&gt;
+	</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="6" class="title">DTD Guide Glossary<a name="glossary">&nbsp;</a></td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="3" colspan="2" class="code">application</td>
+    <td rowspan="3" colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A self-contained program that performs a specific function directly for the user. 
+	An example of an application is XMLwriter. It is a standalone program that allows you to edit XML files as well as other text files.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="24" colspan="2" class="code">
+	 &lt;!ENTITY % name "<em>entity_value</em>"&gt;
+	</td>
+    <td rowspan="24" colspan="2" class="description">
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="note">INTERNAL (PARSED) PARAMETER ENTITY Declaration:</span>
+      Internal parameter entity references are used to declare entities existing only in the DTD.
+	  <ul>
+	   <li><em>entity_value:</em>: any character that is not an '&amp;', '%' or ' " ', a parameter entity reference ('%Name;'),
+	   an entity reference ('&amp;Name;') or a Unicodeglossary character reference.</li>
+	  </ul>
+	  <span class="note">Note:</span>
+	  <ul>
+	   <li>Note the use of external DTD examples above. Parameter entity references may not be used within markup in an internal DTDwell-formedness constraint.</li>
+	  </ul>
+	</td>
+    <td rowspan="24" colspan="2" class="example">
+	  <div class="note">Example 1:</div><br />
+	  &lt;!--external DTD example--&gt;<br />
+	  &lt;!ENTITY % p "(#PCDATA)"&gt;<br />
+	  &lt;!ELEMENT student (id,surname,firstname,dob,(subject)*)&gt;<br />
+	  &lt;!ELEMENT id %p;&gt;<br />
+	  &lt;!ELEMENT surname %p;&gt;<br />
+	  &lt;!ELEMENT firstname %p;&gt;<br />
+	  &lt;!ELEMENT dob %p;&gt;<br />
+	  &lt;!ELEMENT subject %p;&gt;<br /><br />
+	  <div class="note">Example 2:</div>
+	  &lt;!--external DTD example--&gt;<br />
+	  &lt;!ELEMENT author (#PCDATA)&gt;<br />
+	  &lt;!ENTITY % js "Jo Smith"&gt;<br /><br />
+	  &lt;!--note that the general entity statement below is used to reference a parameter entity--&gt;<br />
+	  &lt;!ENTITY wb "written by %js;"&gt;<br /><br />
+	  <div class="note">Example 3:</div>	 
+	  &lt;!--external DTD example--&gt;<br />
+	  &lt;!ENTITY % info "(id,surname,firstname)"&gt;<br />
+	  &lt;!ELEMENT lab_group_A %info;&gt;<br />
+	  &lt;!ELEMENT lab_group_B %info;&gt;<br />
+	  &lt;!ELEMENT lab_group_C %info;&gt; <br />
+	</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="4" colspan="2" class="code">attribute</td>
+    <td rowspan="4" colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attributes are inserted in start or empty element tags in the form attribute_name="attribute_value". 
+	They are additional information about an element, intended for interpretation by an application. An example of an attribute is &lt;img src="logo.gif"/&gt;, 
+	where src is the attribute_name, and logo.gif is the attribute_value.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="3" colspan="2" class="code">attribute-list (ATTLIST) declaration</td>
+    <td rowspan="3" colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attribute-list declarations are placed inside a DTD. They specify what attributes 
+	are allowed in an XML document, to which element they belong, and what the default value of an attribute may be. 
+	An example of an ATTLIST declaration is &lt;!ATTLIST img src EMPTY&gt;.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="2" colspan="2" class="code">CDATA</td>
+    <td rowspan="2" colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Character data, or text that does not need to be parsed. Markup within 
+	CDATA sections will not be interpreted as markup.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="5" colspan="2" class="code">child element</td>
+    <td rowspan="5" colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An element nested inside another (parent) element. For example:<br />
+     &lt;parent_element&gt;<br />
+     &nbsp;&nbsp;&lt;child_element&gt;<br />
+     &nbsp;&nbsp;&lt;/child_element&gt;<br />
+     &lt;/parent_element>
+    </td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="code">document type (DOCTYPE) declaration</td>
+    <td colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to contain an internal DTD, or point to an external DTD.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="2" colspan="2" class="code">Document Type Definition</td>
+    <td rowspan="2" colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A set of rules describing the structure of an XML document. The document must conform to 
+	these rules in order to be valid.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="code">DTD</td>
+    <td colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;See Document Type Definition.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="2" colspan="2" class="code">empty tag</td>
+    <td rowspan="2" colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An element that has no content. In XML, an empty tag follows the syntax: 
+	&lt;name&gt;&lt;/name&gt; or &lt;name/&gt;.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="2" colspan="2" class="code">end tag</td>
+    <td rowspan="2" colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The closing tag of an element. It follows the syntax: &lt;/name&gt;, and must match the name in the 
+	start tag to be well-formed XML.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="6" colspan="2" class="code">element type</td>
+    <td rowspan="6" colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The name that appears in a start, end or empty tag. 
+	 In the following example there are three elements but only two element types:<br />
+     &lt;scholar&gt;<br />
+     &nbsp;&lt;sex&gt;girl&lt;/sex&gt;<br />
+     &nbsp;&lt;sex&gt;boy&lt;/sex&gt;<br />
+     &lt;/scholar&gt;
+    </td>
+    <td rowspan="16" colspan="2" class="code">
+	 &lt;!ENTITY % name SYSTEM "<em>URI</em>"><br />
+	 %name;<br /><br />
+	 &lt;!ENTITY % name PUBLIC "<em>public_ID</em>" "<em>URI</em>""&gt;<br />
+	 %name;
+	</td>
+    <td rowspan="16" colspan="2" class="description">
+	 <p>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<span class="note">EXTERNAL&nbsp;(PARSED)&nbsp;PARAMETER ENTITY Declaration:</span>
+      External parameter entity references are used to link external DTDs. There are two types of external entities: private, and public. 
+	  Private external entities are identified by the keyword SYSTEM, and are intended for use by a single author or group of authors. 
+	  Public external entities are identified by the keyword PUBLIC and are intended for broad use.
+	 </p>
+	 <ul>
+	  <li><em>URI:</em> In practice, this is a URL where the external parameter entity can be found.</li>
+	  <li><em>public_ID:</em> This may be used by an XML processor to generate an alternate URI where the external parameter entity can be found. 
+	  If it cannot be found at this URI, the XML processor must use the normal URI.</li>
+	 </ul>
+	</td>
+    <td rowspan="16" colspan="2" class="example">
+	 &lt;?xml version="1.0" standalone="no"?&gt;<br /><br />
+	 &lt;!DOCTYPE student [<br />
+	 &nbsp;&nbsp;&lt;!ENTITY % student SYSTEM "http://www.university.com/student.dtd"&gt;<br />
+	 &nbsp;&nbsp;%student;<br />
+	 ]&gt;
+	</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="3" colspan="2" class="code">ELEMENT type declaration</td>
+    <td rowspan="3" colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Element type declarations are placed inside a DTD. 
+	They specify what elements are allowed in an XML document, and what their content may be. An example of an ELEMENT declaration is 
+	&lt;!ELEMENT student (id,surname)&gt;.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="3" colspan="2" class="code">ENTITY declaration</td>
+    <td rowspan="3" colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Entity declarations are placed inside a DTD. They contain the abbreviation to be used for an entity, 
+	and the text to be substituted for that abbreviation. They may also contain a URI if the text or data is stored at a remote location. 
+	An example of an ENTITY declaration is &lt;!ENTITY js "Jo Smith"&gt;.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="code">external DTD</td>
+    <td colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A DTD that is contained in another file which may reside at a remote location.</td>
+    <td colspan="2" class="example">&nbsp;</td> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="code">general entity reference</td>
+    <td colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An entity used in the content of an XML document. General entities follow the syntax '&amp;name;'.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="code">internal DTD</td>
+    <td colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A DTD that is located within the XML document.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="3" colspan="2" class="code">NOTATION declaration</td>
+    <td rowspan="3" colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notation declarations are placed inside a DTD. They are used to identify the format of non-XML data, 
+	and name (or point to) applications that will interpret the data. An example of a NOTATION declaration is &lt;!NOTATION gif PUBLIC "gif viewer"&gt;.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td colspan="6" class="title"><a name="within">&nbsp;</a>Using Entities Within Entities:<a name="within">&nbsp;</a></td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <td rowspan="12" colspan="4" class="example">
+	<p><span class="note">CORRECT Example:</span></p>
+     &lt;?xml version="1.0"?&gt;<br /><br />
+     &lt;!DOCTYPE author [<br />
+     &nbsp;&nbsp;&lt;!ELEMENT author (#PCDATA)&gt;<br />
+     &nbsp;&nbsp;&lt;!ENTITY email "josmith@theworldaccordingtojosmith.com"&gt;<br />
+     &nbsp;&nbsp;&lt;!--the following use of a general entity is legal if it is used in the XML document--&gt;<br />
+     &nbsp;&nbsp;&lt;!ENTITY js "Jo Smith &amp;email;"&gt;<br />
+     ]&gt;<br /><br />
+     &lt;author&gt;&amp;js;&lt;/author&gt;<br /><br />
+	</td> 
+    <td rowspan="12" colspan="2" class="example">
+	<p><span class="note">INCORRECT Example:</span></p>
+     &lt;!--the two entity statements are infinitely recursive--&gt;<br />
+     &lt;!ENTITY email "user@user.com &amp;js;"&gt;<br />
+     &lt;!ENTITY js "Jo Smith &amp;email;"&gt;
+	</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="code">PCDATA</td>
+    <td colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parsed character data. Text that is not markup that is processed by a parser.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="2" class="code">start tag</td>
+    <td colspan="4" class="description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The opening tag of an element. It follows the syntax: &lt;name&gt;, and must match the name in the end tag to be 
+	well-formed XML.</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="6" class="title">Related References<a name="references">&nbsp;</a></td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="8" colspan="3" class="description">
+	 <span class="note">Documentation</span>
+	 <ul>
+	  <li>Extensible Markup Language (XML) 1.0 (Third Edition) <a href="http://www.w3.org/TR/REC-xml/">&gt;&gt;&gt;</a></li>
+	  <li>HTML 4 Document Type Definition <a href="http://www.w3.org/TR/html4/sgml/dtd.html">&gt;&gt;&gt;</a></li>
+	  <li>XHTML 1.0 DTDs <a href="http://www.w3.org/TR/xhtml1/dtds.html">&gt;&gt;&gt;</a></li>
+	 </ul>
+	</td>
+    <td rowspan="8" colspan="3" class="description">&nbsp;</td>
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td colspan="4" class="title"><a name="themes">&nbsp;</a>Related themes</td>
+    <td colspan="4" class="title"><a name="miscellaneous">&nbsp;</a>Miscellaneous</td> 
+    <td colspan="4" class="title"><a name="predefined">&nbsp;</a>Predefined GENERAL Entities:</td> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <td rowspan="9" colspan="4" class="servo">
+	 <a href="../xml.su">XML</a><br />
+	 <a href="../html.su">HTML</a><br />
+	 <a href="../css.su">CSS</a><br />
+	</td>
+    <td rowspan="9" colspan="4" class="servo" valign="bottom">
+	 <table align="center" width="100%">
+	  <tr><td colspan="3" align="center">Public Domain 2006-2015 <a href="http://www.krassotkin.com/">Alexander Krassotkin</a></td></tr>
+	  <tr><td colspan="3" align="center">&nbsp;</td></tr>
+	  <tr>
+	   <td align="center"><a href="http://validator.w3.org/check?uri=http://www.xml.su/dtd.html"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" /></a></td>
+	   <td align="center">&nbsp;</td>
+	   <td align="center"><a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.xml.su/dtd.html"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a></td>
+	  </tr>
+	 </table>
+	</td>
+    <td rowspan="9" colspan="4" class="description">	 
+	 <table class="xml_declaration_table" align="center" width="100%">
+	  <tr><th>&nbsp;Symbol:&nbsp;</th><th>&nbsp;&nbsp;Predefined&nbsp;Entities:&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How&nbsp;to&nbsp;Declare&nbsp;These&nbsp;Entities&nbsp;in&nbsp;a&nbsp;DTD:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
+	  <tr><td>&nbsp;&lt;</td><td>&nbsp;&amp;lt;</td><td>&nbsp;&lt;!ENTITY lt "&amp;#38;#60;"&gt;</td></tr>
+	  <tr><td>&nbsp;&gt;</td><td>&nbsp;&amp;gt;</td><td>&nbsp;&lt;!ENTITY gt "&amp;#62;"&gt;</td></tr>
+	  <tr><td>&nbsp;&amp;</td><td>&nbsp;&amp;amp;</td><td>&nbsp;&lt;!ENTITY amp "&amp;#38;#38;"&gt;</td></tr>
+	  <tr><td>&nbsp;&apos;</td><td>&nbsp;&amp;apos;</td><td>&nbsp;&lt;!ENTITY apos "&amp;#39;"&gt;</td></tr>
+	  <tr><td>&nbsp;&quot;</td><td>&nbsp;&amp;quot;</td><td>&nbsp;&lt;!ENTITY quot "&amp;#34;"&gt;</td></tr>
+	 </table>
+	</td>
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell-->     
+	<!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell-->  
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td class="empty">&nbsp;</td>
+    <!--6 cell--> 
+    <!--6 cell--> 
+   </tr>
+	  
+   <tr>	
+    <td colspan="13" class="servo_title">&nbsp;</td>
+   </tr>
+   
+  </table>
+
+ </body>
+
+</html>

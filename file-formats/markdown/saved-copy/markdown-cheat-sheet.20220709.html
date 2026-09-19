@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+ <head>
+  <meta charset="utf-8">
+  <!--«•—©» encoding force-->
+  <title>Markdown Cheat Sheet</title>
+  <meta name="description" content="Simple markdown cheat sheet. " />
+  <meta name="keywords" content="markdown, markdown extra, cheat sheet, round-up, quick referenc, quick reference card, quick reference guide, quick reference sheet" />
+  <meta name="revision" content="202207090853" />
+  <style>
+article {
+ margin-bottom:1em;
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:2em;
+ max-width: 100%;
+ width:640px;
+}  
+.com {
+ color:#96183c;
+}
+.kwd {
+ color:#291f9f;
+}
+.lit {
+ color:#1f9d9b;
+}
+.pun {
+ color:#575757;
+}
+.str {
+ color:#47db93;
+}
+.typ {
+ color:#8b00ff;
+}
+  </style>
+ </head>
+ 
+ <body>
+  <article>
+   <div><a href="http://www.cheat-sheets.org/">Cheat-Sheets.org</a><a href="http://www.cheat-sheets.org/#Markdown">#Markdown</a></div>
+
+   <h1>Markdown Cheat Sheet</h1>
+   
+   <p>A cheatsheet of Markdown and <a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra</a>. See the the complete <a href="http://daringfireball.net/projects/markdown/syntax">Markdown syntax</a> for extra tasty details, and remember that Markdown Extra isn’t Markdown (but it’s sometimes handy).</p>
+   
+   <pre class="prettyprint prettyprinted" style="">
+<span class="com"># Header 1 #</span><span class="pln">
+</span><span class="com">## Header 2 ##</span><span class="pln">
+</span><span class="com">### Header 3 ###             (Hashes on right are optional)</span><span class="pln">
+</span><span class="com">#### Header 4 ####</span><span class="pln">
+</span><span class="com">##### Header 5 #####</span><span class="pln">
+
+</span><span class="com">## Markdown plus h2 with a custom ID ##         {#id-goes-here}</span><span class="pln">
+</span><span class="pun">[</span><span class="typ">Link</span><span class="pln"> back to H2</span><span class="pun">](#</span><span class="pln">id</span><span class="pun">-</span><span class="pln">goes</span><span class="pun">-</span><span class="pln">here</span><span class="pun">)</span><span class="pln">
+
+</span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> a paragraph</span><span class="pun">,</span><span class="pln"> which </span><span class="kwd">is</span><span class="pln"> text surrounded </span><span class="kwd">by</span><span class="pln"> whitespace</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Paragraphs</span><span class="pln"> can be on one 
+line </span><span class="pun">(</span><span class="kwd">or</span><span class="pln"> many</span><span class="pun">),</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> can drone on </span><span class="kwd">for</span><span class="pln"> hours</span><span class="pun">.</span><span class="pln">  
+
+</span><span class="typ">Here</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> a </span><span class="typ">Markdown</span><span class="pln"> link to </span><span class="pun">[</span><span class="typ">Warped</span><span class="pun">] (</span><span class="com">http://www.cheat-sheets.org/</span>)<span>, and a literal &lt;http://cheat-sheets.org/&gt;. </span><span class="pln">
+</span><span class="typ">Now</span><span class="pln"> some </span><span class="typ">SimpleLinks</span><span class="pun">,</span><span class="pln"> like one to </span><span class="pun">[</span><span class="pln">google</span><span class="pun">]</span><span class="pln"> </span><span class="pun">(</span><span class="pln">automagically links to are</span><span class="pun">-</span><span class="pln">you</span><span class="pun">-</span><span class="pln">
+feeling</span><span class="pun">-</span><span class="pln">lucky</span><span class="pun">),</span><span class="pln"> a </span><span class="pun">[</span><span class="pln">wiki</span><span class="pun">:</span><span class="pln"> test</span><span class="pun">]</span><span class="pln"> link to a </span><span class="typ">Wikipedia</span><span class="pln"> page</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> a link to 
+</span><span class="pun">[</span><span class="pln">foldoc</span><span class="pun">:</span><span class="pln"> CPU</span><span class="pun">]</span><span class="pln">s at foldoc</span><span class="pun">.</span><span class="pln">  
+
+</span><span class="typ">Now</span><span class="pln"> some </span><span class="kwd">inline</span><span class="pln"> markup like _italics_</span><span class="pun">,</span><span class="pln">  </span><span class="pun">**</span><span class="pln">bold</span><span class="pun">**,</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> </span><span class="str">`code()`</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Note</span><span class="pln"> that underscores </span><span class="kwd">in</span><span class="pln"> 
+words are ignored </span><span class="kwd">in</span><span class="pln"> </span><span class="typ">Markdown</span><span class="pln"> </span><span class="typ">Extra</span><span class="pun">.</span><span class="pln">
+
+</span><span class="pun">![</span><span class="pln">picture alt</span><span class="pun">](</span><span class="str">/images/</span><span class="pln">photo</span><span class="pun">.</span><span class="pln">jpeg </span><span class="str">"Title is optional"</span><span class="pun">)</span><span class="pln">     
+
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">Blockquotes</span><span class="pln"> are like quoted text </span><span class="kwd">in</span><span class="pln"> email replies
+</span><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="typ">And</span><span class="pun">,</span><span class="pln"> they can be nested
+
+</span><span class="pun">*</span><span class="pln"> </span><span class="typ">Bullet</span><span class="pln"> lists are easy too
+</span><span class="pun">-</span><span class="pln"> </span><span class="typ">Another</span><span class="pln"> one
+</span><span class="pun">+</span><span class="pln"> </span><span class="typ">Another</span><span class="pln"> one
+
+</span><span class="lit">1.</span><span class="pln"> A numbered list
+</span><span class="lit">2.</span><span class="pln"> </span><span class="typ">Which</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> numbered
+</span><span class="lit">3.</span><span class="pln"> </span><span class="typ">With</span><span class="pln"> periods </span><span class="kwd">and</span><span class="pln"> a space
+
+</span><span class="typ">And</span><span class="pln"> now some code</span><span class="pun">:</span><span class="pln">
+
+    </span><span class="com">// Code is just text indented a bit</span><span class="pln">
+    which</span><span class="pun">(</span><span class="pln">is_easy</span><span class="pun">)</span><span class="pln"> to_remember</span><span class="pun">();</span><span class="pln">
+
+</span><span class="pun">~~~</span><span class="pln">
+
+</span><span class="com">// Markdown extra adds un-indented code blocks too</span><span class="pln">
+
+</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">this_is_more_code </span><span class="pun">==</span><span class="pln"> </span><span class="kwd">true</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">!</span><span class="pln">indented</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// tild wrapped code blocks, also not indented</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">~~~</span><span class="pln">
+
+</span><span class="typ">Text</span><span class="pln"> </span><span class="kwd">with</span><span class="pln">  
+two trailing spaces  
+</span><span class="pun">(</span><span class="pln">on the right</span><span class="pun">)</span><span class="pln">  
+can be used  
+</span><span class="kwd">for</span><span class="pln"> things like poems  
+
+</span><span class="com">### Horizontal rules</span><span class="pln">
+
+</span><span class="pun">*</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="pun">*</span><span class="pln">
+</span><span class="pun">****</span><span class="pln">
+</span><span class="pun">--------------------------</span><span class="pln">
+
+</span><span class="pun">&lt;</span><span class="pln">div </span><span class="kwd">class</span><span class="pun">=</span><span class="str">"custom-class"</span><span class="pln"> markdown</span><span class="pun">=</span><span class="str">"1"</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> a div wrapping some </span><span class="typ">Markdown</span><span class="pln"> plus</span><span class="pun">.</span><span class="pln">  </span><span class="typ">Without</span><span class="pln"> the DIV attribute</span><span class="pun">,</span><span class="pln"> it ignores the 
+block</span><span class="pun">.</span><span class="pln"> 
+</span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span><span class="pln">
+
+</span><span class="com">## Markdown plus tables ##</span><span class="pln">
+
+</span><span class="pun">|</span><span class="pln"> </span><span class="typ">Header</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Header</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Right</span><span class="pln">  </span><span class="pun">|</span><span class="pln">
+</span><span class="pun">|</span><span class="pln"> </span><span class="pun">------</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="pun">------</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="pun">-----:</span><span class="pln"> </span><span class="pun">|</span><span class="pln">
+</span><span class="pun">|</span><span class="pln">  </span><span class="typ">Cell</span><span class="pln">  </span><span class="pun">|</span><span class="pln">  </span><span class="typ">Cell</span><span class="pln">  </span><span class="pun">|</span><span class="pln">   $10  </span><span class="pun">|</span><span class="pln">
+</span><span class="pun">|</span><span class="pln">  </span><span class="typ">Cell</span><span class="pln">  </span><span class="pun">|</span><span class="pln">  </span><span class="typ">Cell</span><span class="pln">  </span><span class="pun">|</span><span class="pln">   $20  </span><span class="pun">|</span><span class="pln">
+
+</span><span class="pun">*</span><span class="pln"> </span><span class="typ">Outer</span><span class="pln"> pipes on tables are optional
+</span><span class="pun">*</span><span class="pln"> </span><span class="typ">Colon</span><span class="pln"> used </span><span class="kwd">for</span><span class="pln"> alignment </span><span class="pun">(</span><span class="pln">right versus left</span><span class="pun">)</span><span class="pln">
+
+</span><span class="com">## Markdown plus definition lists ##</span><span class="pln">
+
+</span><span class="typ">Bottled</span><span class="pln"> water
+</span><span class="pun">:</span><span class="pln"> $ </span><span class="lit">1.25</span><span class="pln">
+</span><span class="pun">:</span><span class="pln"> $ </span><span class="lit">1.55</span><span class="pln"> </span><span class="pun">(</span><span class="typ">Large</span><span class="pun">)</span><span class="pln">
+
+</span><span class="typ">Milk</span><span class="pln">
+</span><span class="typ">Pop</span><span class="pln">
+</span><span class="pun">:</span><span class="pln"> $ </span><span class="lit">1.75</span><span class="pln">
+
+</span><span class="pun">*</span><span class="pln"> </span><span class="typ">Multiple</span><span class="pln"> definitions </span><span class="kwd">and</span><span class="pln"> terms are possible
+</span><span class="pun">*</span><span class="pln"> </span><span class="typ">Definitions</span><span class="pln"> can include multiple paragraphs too
+
+</span><span class="pun">*[</span><span class="pln">ABBR</span><span class="pun">]:</span><span class="pln"> </span><span class="typ">Markdown</span><span class="pln"> plus abbreviations </span><span class="pun">(</span><span class="pln">produces an </span><span class="str">&lt;abbr&gt;</span><span class="pln"> tag</span><span class="pun">)</span>
+   </pre>
+   <hr>
+  </article>
+  <!-- source: https://web.archive.org/web/20210116173708/http://warpedvisions.org/projects/markdown-cheat-sheet/ -->
+ </body>
+</html>
